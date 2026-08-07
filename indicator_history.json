@@ -1,6 +1,6 @@
 {
-  "next_date": "2025-02-03T03:00:59-05:00",
-  "episode_count": 87,
+  "next_date": "2024-09-18T18:42:29-04:00",
+  "episode_count": 144,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -784,6 +784,519 @@
       "audio_id": "1265855851",
       "player_url": "https://www.npr.org/player/embed/1228912520/1265855851",
       "description": "President Donald Trump had promised new tariffs on Canada, Mexico and China. However, after negotiations with both Mexico and Canada on Monday tariffs against those countries are paused for at least a month. He said tariffs are not a negotiating tool, but he's used them as one as recently as January in a dispute with Colombia. Today, we dissect the game theory behind Trump's use of tariffs. Related episodes: Canada's key resource against Trump's potential trade war (Apple / Spotify) How tariffs have been used throughout US History (Apple / Spotify) The game theory that led to nuclear standoffs (Apple / Spotify) For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Fact-checking by Sierra Juarez. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "The reality stopping water pipelines to the parched western US",
+      "date": "2025-02-03T03:00:59-05:00",
+      "npr_url": "https://www.npr.org/2025/02/03/1228844210/reality-check-water-pipeline-western-us",
+      "story_id": "1228844210",
+      "audio_id": "1265707533",
+      "player_url": "https://www.npr.org/player/embed/1228844210/1265707533",
+      "description": "With so much water in the eastern U.S., why can't the region pipe some of it to its drought-prone neighbors in the West? This perennial question nags climate journalists and western water managers alike. We break down why building a pipeline is unrealistic right now for the Colorado River. Related episodes:How Colorado towns are trying to get some water certainty The trouble with water discounts For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Running the numbers on deportation, interest rates and math",
+      "date": "2025-01-31T03:00:59-05:00",
+      "npr_url": "https://www.npr.org/2025/01/31/1228085799/federal-reserve-ice-deportations-student-report-card",
+      "story_id": "1228085799",
+      "audio_id": "1265662710",
+      "player_url": "https://www.npr.org/player/embed/1228085799/1265662710",
+      "description": "Why haven't American 8th graders' math scores recovered? Does Immigration and Customs Enforcement (ICE) actually have the resources to make all the deportations Trump's promised? And what's the path for interest rates in the Trump economy? All that on Indicators of the Week. Related Episodes:The U.S. once banned Chinese immigrants — and it paid an economic price Why Is The Fed So Boring?For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Fact-checking by Sierra Juarez. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Canada's key resource against Trump's potential trade war",
+      "date": "2025-01-30T03:00:59-05:00",
+      "npr_url": "https://www.npr.org/2025/01/30/1227850886/the-indicator-from-planet-money-draft-01-30-2025",
+      "story_id": "1227850886",
+      "audio_id": "1265598083",
+      "player_url": "https://www.npr.org/player/embed/1227850886/1265598083",
+      "description": "Canadians have a key leverage point if President Trump makes good on his threat to impose 25% tariffs: oil. We talk to a business journalist with the Canadian Broadcasting Corporation on why oil would be the \"biggest arrow in the quiver\" should Canada and the U.S. descend into a trade war — but only as a last resort. Listen to CBC's Cost of Living with Paul Haavardstrud here. Related episodes: I will PAY you to take my natural gas Oil prices and the Israel-Hamas war For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Fact-checking by Sierra Juarez. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Federal hiring is about to get the Trump treatment",
+      "date": "2025-01-29T03:00:59-05:00",
+      "npr_url": "https://www.npr.org/2025/01/29/1227543282/federal-hiring-is-about-to-get-the-trump-treatment",
+      "story_id": "1227543282",
+      "audio_id": "1265503297",
+      "player_url": "https://www.npr.org/player/embed/1227543282/1265503297",
+      "description": "President Trump is making big moves to shrink and reshape the federal workforce. He's offered buyouts, instituted a hiring freeze, and called for prioritizing job seekers who are \"passionate about the ideals of our American Republic.\" While his actions have drawn criticism, some see an opportunity for the new administration to improve the federal hiring process. Today on the show, Jennifer Pahlka, Senior Fellow at the Niskanen Center, tells us why, in her view, government hiring has been broken for a long time while sharing her thoughts on Trump's proposals to fix it. Related episodes:What happens when Social Security runs out of money? (Apple / Spotify)Why Trump's potential tariffs are making business owners anxious (Apple / Spotify)For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Fact-checking by Sierra Juarez. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "The cautionary tale of a recovering day trading addict",
+      "date": "2025-01-28T06:47:13-05:00",
+      "npr_url": "https://www.npr.org/2025/01/28/1227458687/day-trading-addict-stock-market-robinhood-webull",
+      "story_id": "1227458687",
+      "audio_id": "1265431434",
+      "player_url": "https://www.npr.org/player/embed/1227458687/1265431434",
+      "description": "The story of a man who started buying and selling stocks as a hobby ... and got seriously addicted. We also speak with a neuroeconomist about the human brain on day trading.Related episodes: The young trolls of Wall Street are growing up Invest like a Congress member For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "How GoFundMe can affect your FEMA eligibility",
+      "date": "2025-01-27T03:00:59-05:00",
+      "npr_url": "https://www.npr.org/2025/01/27/1227405343/how-gofundme-can-affect-your-fema-eligibility",
+      "story_id": "1227405343",
+      "audio_id": "1265345774",
+      "player_url": "https://www.npr.org/player/embed/1227405343/1265345774",
+      "description": "With the LA wildfires still burning, we were left with a lot of questions. Today, we answer two of them: whether GoFundMe campaigns could interfere with receiving federal assistance and how much of those \"proceeds\" from special product sales actually go to wildfire victims. Related episodes:After the fires (Apple / Spotify) Why is insurance so expensive right now? And more listener questions (Apple / Spotify) For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Fact-checking by Sierra Juarez. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Why China's DeepSeek AI is such a big deal",
+      "date": "2025-01-24T03:00:59-05:00",
+      "npr_url": "https://www.npr.org/2025/01/24/1226561700/indicators-of-week-trump-ai-deepseek-prince-harry",
+      "story_id": "1226561700",
+      "audio_id": "1265277374",
+      "player_url": "https://www.npr.org/player/embed/1226561700/1265277374",
+      "description": "Indicators of the Week unpacks numbers from the news. This week, we delve into what President Trump's first AI announcement reveals about the economics of the industry, a Chinese company's answer to OpenAI, and the reason why Prince Harry may have settled with Rupert Murdoch's media empire. Related listening: Is AI overrated or underrated? (Apple / Spotify) AI creates, transforms and destroys... jobs For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Fact-checking by Sierra Juarez. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Why Trump's potential tariffs are making business owners anxious",
+      "date": "2025-01-23T03:00:32-05:00",
+      "npr_url": "https://www.npr.org/2025/01/23/1226281124/trump-tariffs-economy-china-mexico-canada-farmers-imports-exports",
+      "story_id": "1226281124",
+      "audio_id": "1265209928",
+      "player_url": "https://www.npr.org/player/embed/1226281124/1265209928",
+      "description": "A freshly re-inaugurated President Trump is reportedly considering making his first moves on tariffs: a 10% tariff on Chinese imports and a 25% tariff on imports from Canada and Mexico, both of which he says could start as early as next week. If the U.S. slaps tariffs on foreign products, U.S companies that import foreign goods, and their customers, will bear the cost. But, before any of that happens, businesses can also face a less tangible cost—uncertainty. Today on the show, we hear from a couple business owners who experienced Trump's first trade war. And we'll learn how the uncertainty from tariffs, or just the threat of them, can have ripple effects throughout the economy.Related episodes: How Trump's tariffs plan might work Trump's contradictory trade policiesFor sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Go ask ALICE about grocery prices",
+      "date": "2025-01-22T03:00:59-05:00",
+      "npr_url": "https://www.npr.org/2025/01/22/1226038393/the-indicator-from-planet-money-alice-grocery-inflation-01-22-2025",
+      "story_id": "1226038393",
+      "audio_id": "1265132738",
+      "player_url": "https://www.npr.org/player/embed/1226038393/1265132738",
+      "description": "Grocery prices have gone up 27 percent since before the pandemic. And high prices are especially painful for lower income households, who have less wiggle room to adjust their spending. But their experience isn't always reflected in broad measures of inflation.Today on the show, we look at a different way of measuring price increases that's designed to capture the pain that many households feel daily, including at the supermarket.Read more about the ALICE Essentials Index.Related Episodes:A food fight over free school lunchFeeling inflation in the grocery storeFor sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Fact-checking by Sierra Juarez. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Add to cart: Greenland",
+      "date": "2025-01-21T03:00:59-05:00",
+      "npr_url": "https://www.npr.org/2025/01/21/1225890655/add-to-cart-greenland",
+      "story_id": "1225890655",
+      "audio_id": "1264988903",
+      "player_url": "https://www.npr.org/player/embed/1225890655/1264988903",
+      "description": "President Donald Trump's proposal that the United States take \"ownership\" of Greenland has raised a lot of eyebrows. Can the U.S. just buy itself this big territory? Is that a thing? Turns out if you look at U.S. history, it's absolutely a thing.Today on the show: how massive land deals called \"sovereignty purchases\" have shaped the country we live in today, and why the idea of the U.S. buying Greenland is a lot more complicated than it would have been in the past. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Fact-checking by Sierra Juarez. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Help us pick the indicator of the year!",
+      "date": "2024-12-20T03:00:59-05:00",
+      "npr_url": "https://www.npr.org/2024/12/20/1220579271/bitcoin-economy-inflation-consumer-sentiment-family-feud",
+      "story_id": "1220579271",
+      "audio_id": "1263833912",
+      "player_url": "https://www.npr.org/player/embed/1220579271/1263833912",
+      "description": "2024 was a wild year for the U.S. economy: The economy did well in terms of inflation and unemployment, but vibes ruled the roost. (Mostly didn't feel great!) Additionally, Bitcoin went to the moon and some wacky stuff was happening with unemployment and job opening rates, showing that we might have achieved an economic soft landing.So ... which of these economic stories defined the year? Our hosts from Planet Money and The Indicator duke it out in ... Family Feud!Tell us who you think won today's episode by submitting your vote to Planet Money's Instagram or email us with \"Family Feud\" in the subject line. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter. Related Episodes: Is the financial media making us miserable about the economy?What's behind Bitcoin's bullrun? What the Beveridge curve tells us about jobs"
+    },
+    {
+      "title": "Can empty-nesters boost housing affordability?",
+      "date": "2024-12-19T03:00:59-05:00",
+      "npr_url": "https://www.npr.org/2024/12/19/1220280833/the-indicator-from-planet-money-empty-nesters-housing-affordability-12-19-2024",
+      "story_id": "1220280833",
+      "audio_id": "1263765110",
+      "player_url": "https://www.npr.org/player/embed/1220280833/1263765110",
+      "description": "The \"silver tsunami\" of aging Americans is often seen as a potential way to alleviate the country's housing affordability woes. However, the data suggests that an influx of empty-nester homes coming on the market won't have much of an impact on the problem—because of a geographical mismatch. Today on the show, we speak to an economist who's looked into the silver tsunami's impact on the housing market and thinks this theory might be more of a red herring.This episode was fact checked by Sierra Juarez Related episodes:The graying of AmericaWhat would it take to fix retirement?How big is the US housing shortage?The highs and lows of US rentsFor sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Trump's contradictory trade policies",
+      "date": "2024-12-18T03:00:57-05:00",
+      "npr_url": "https://www.npr.org/2024/12/18/1219982262/trumps-contradictory-trade-policies",
+      "story_id": "1219982262",
+      "audio_id": "1263702562",
+      "player_url": "https://www.npr.org/player/embed/1219982262/1263702562",
+      "description": "President-elect Donald Trump has called for a weaker dollar given it would be good for American exporters. But tariffs, a staple of his economic policy, would actually strengthen the dollar. Today on the show, we explain tariffs and currencies by following one bag manufacturer from New Jersey.Related episodes: How Trump's tariffs plan might work (Apple / Spotify) Worst. Tariffs. Ever. (update) (Apple / Spotify) For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Do job references matter?",
+      "date": "2024-12-17T03:00:59-05:00",
+      "npr_url": "https://www.npr.org/2024/12/17/1219887500/do-job-references-matter",
+      "story_id": "1219887500",
+      "audio_id": "1263663693",
+      "player_url": "https://www.npr.org/player/embed/1219887500/1263663693",
+      "description": "In the not-so-distant past, serving as someone's job reference meant answering a few questions over the phone. Nowadays, that process is often more involved, with prospective employers asking references for written responses or to fill out a form online. What's behind this shift? On today's show, we check in on reference checks, and ask whether they still matter. Related episodes: Ghost jobs (Apple / Spotify) For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "There are a lot of billionaires in Trump's coming administration",
+      "date": "2024-12-16T03:00:59-05:00",
+      "npr_url": "https://www.npr.org/2024/12/16/1219830879/there-are-a-lot-of-billionaires-in-trumps-coming-administration",
+      "story_id": "1219830879",
+      "audio_id": "1263575196",
+      "player_url": "https://www.npr.org/player/embed/1219830879/1263575196",
+      "description": "President-elect Donald Trump's administration picks are shaping up to be a very affluent bunch. If all are confirmed, Trump's incoming administration would be the wealthiest in the nation's history with a combined net worth upwards of $300 billion.Today on the show, we talk to a few experts about how massive amounts of wealth in high levels of government can impact policy. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "A supermarket beef, a quantum leap, and Christmas trees for cheap",
+      "date": "2024-12-13T03:00:53-05:00",
+      "npr_url": "https://www.npr.org/2024/12/13/1219032788/google-quantum-computing-kroger-albertsons-christmas-trump",
+      "story_id": "1219032788",
+      "audio_id": "1263529737",
+      "player_url": "https://www.npr.org/player/embed/1219032788/1263529737",
+      "description": "It's the most wonderful time of year, er, week, because it's that time when we look at the most fascinating economic numbers from the news. On today's Indicators of the Week: A messy grocery store breakup, a quantum leap in subatomic computing and an unexpected change to the Christmas tree market. Happy holidays! Related Episodes: The Efficient Christmas: Why Economists Hate Gifts We buy a lot of Christmas trees Can an old law bring down grocery prices? For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "An economist's role in the fall of Syria's government",
+      "date": "2024-12-12T03:00:45-05:00",
+      "npr_url": "https://www.npr.org/2024/12/12/1218737987/an-economists-role-in-the-fall-of-syrias-government",
+      "story_id": "1218737987",
+      "audio_id": "1263464360",
+      "player_url": "https://www.npr.org/player/embed/1218737987/1263464360",
+      "description": "In 2012, Karam Shaar had to leave his home country of Syria due to the civil war. But he still wanted to make a difference. Through his economic analysis, he uncovered concerning patterns about how the Assad regime and its cronies were siphoning money from humanitarian aid. Today on the show, the story of how one Syrian exile contributed to the resistance while on the other side of the world. Related episodes: The cost of a dollar in Ukraine (Apple / Spotify) For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "The brewing recovery in Western North Carolina",
+      "date": "2024-12-11T03:00:59-05:00",
+      "npr_url": "https://www.npr.org/2024/12/11/1218506697/beigie-awards-hurricane-helene-wnc-asheville",
+      "story_id": "1218506697",
+      "audio_id": "1263408842",
+      "player_url": "https://www.npr.org/player/embed/1218506697/1263408842",
+      "description": "The Federal Reserve's last Beige Book of 2024 is like Spotify Wrapped but for the economy. There's a little bit of everything inside — labor markets, inflation and even natural disasters. On today's show, we spotlight Western North Carolina's challenging recovery after Hurricane Helene, and check in with an Asheville malt manufacturer on the impact to local businesses. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "The Tuna Bonds Scandal and the fishy business of hidden debt",
+      "date": "2024-12-10T03:00:59-05:00",
+      "npr_url": "https://www.npr.org/2024/12/10/1218437700/mozambique-tuna-bonds-hidden-debts-credit-suisse",
+      "story_id": "1218437700",
+      "audio_id": "1263365052",
+      "player_url": "https://www.npr.org/player/embed/1218437700/1263365052",
+      "description": "Back in 2016, the economy of Mozambique tipped into crisis. The culprit was a government corruption scandal linked to more than $1 billion that officials borrowed in secret. This was a high-profile example of hidden debt, but it's far from the only example. In fact, this kind of secret borrowing is a large and common problem among countries. Today on the show, a pair of economists share their new research on hidden debt and how it affects everyday people.Related Episodes: Why a debt tsunami is coming for the global economyWhat looks like a bond and acts like a bond but isn't a bond?For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "How influence actually works",
+      "date": "2024-12-09T05:50:05-05:00",
+      "npr_url": "https://www.npr.org/2024/12/09/1218396327/the-indicator-from-planet-money-how-to-influence-in-the-office-12-09-2024",
+      "story_id": "1218396327",
+      "audio_id": "1263281243",
+      "player_url": "https://www.npr.org/player/embed/1218396327/1263281243",
+      "description": "Influence. The ability to persuade, motivate, or connect with other people. It's one of these skills that's hard to measure, but incredibly important in the office. However, some would argue that we often misunderstand how influence works. Today on the show, we talk to Steve Martin, Faculty Director of Behavioral Science at Columbia Business School, about the unspoken rules of influence in the workplace. Steve is author of a recently published book titled, \"Influence at Work\".For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Men without college degrees aren't doing well",
+      "date": "2024-12-06T11:54:54-05:00",
+      "npr_url": "https://www.npr.org/2024/12/06/1217547167/the-indicator-from-planet-money-men-without-college-degrees-wages-12-06-2024",
+      "story_id": "1217547167",
+      "audio_id": "1263258332",
+      "player_url": "https://www.npr.org/player/embed/1217547167/1263258332",
+      "description": "Many men in America don't feel like they're doing as well as their fathers. But what does the data say? Today on the show, we speak to Richard Reeves from the American Institute for Boys and Men about what's really going on with men's wages and what potential solutions could look like. Related episodes: Jobs Friday: Why apprenticeships could make a comeback Getting more men into so-called pink-collar jobs For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "What a second Trump term could mean for SpaceX",
+      "date": "2024-12-05T03:00:59-05:00",
+      "npr_url": "https://www.npr.org/2024/12/05/1217308652/spacex-launches-texas-ecosystem-musk-trump",
+      "story_id": "1217308652",
+      "audio_id": "1263161163",
+      "player_url": "https://www.npr.org/player/embed/1217308652/1263161163",
+      "description": "SpaceX is capping off a busy 2024, with more than 100 rocket launches, including its vaunted Starship. NPR Science Correspondent Geoff Brumfiel attended the November launch of Starship alongside SpaceX founder Elon Musk and president-elect Donald Trump. He spoke with NPR's Short Wave about the environmental impact of these launches in south Texas — and what a second Trump administration could mean for the company. Related episode: Elon's giant rocket For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "What a difference a one-day strike makes",
+      "date": "2024-12-04T03:00:17-05:00",
+      "npr_url": "https://www.npr.org/2024/12/04/1216966374/one-day-strikes-labor-starbucks-walmart-nurses-unions",
+      "story_id": "1216966374",
+      "audio_id": "1263116597",
+      "player_url": "https://www.npr.org/player/embed/1216966374/1263116597",
+      "description": "From retail to fast food to nursing, one-day strikes have been a growing trend over the last decade. But what makes one-day strikes more or less effective than longer strikes? Do they achieve the same goals? On today's show, what do short strikes say about union power in the US and what can you accomplish with only 24 hours on the picket line.Related Episodes:What the data reveal about U.S. labor unrest The Indicator Quiz: Labor Edition The never-ending strikeFor sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Boeing's biggest blunder? Financial engineering.",
+      "date": "2024-12-03T03:00:01-05:00",
+      "npr_url": "https://www.npr.org/2024/12/03/1216842312/boeing-financial-engineering-machinists-strike",
+      "story_id": "1216842312",
+      "audio_id": "1263068381",
+      "player_url": "https://www.npr.org/player/embed/1216842312/1263068381",
+      "description": "Boeing continues to struggle. Safety concerns, a door blowing off mid-flight, a labor strike, impending layoffs ... and that's just the past year. What's gone wrong at Boeing? For many observers, the mistake was shifting focus from engineering to financial engineering.Today on the show we explain what financial engineering is and why this cultural change at Boeing may have led to the company's current problems.Related Episodes: Help Wanted at Boeing Boeing's woes, Bilt jilts, and the Indicator's stock rallyFor sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "How Trump's tariffs plan might work",
+      "date": "2024-12-02T03:00:59-05:00",
+      "npr_url": "https://www.npr.org/2024/12/02/1216727936/trump-tariffs-china-exports",
+      "story_id": "1216727936",
+      "audio_id": "1262894815",
+      "player_url": "https://www.npr.org/player/embed/1216727936/1262894815",
+      "description": "President-elect Donald Trump made a lot of economic promises on the campaign trail, but none as sweeping as his plan to enact tariffs. Trump believes taxing imports from other countries will help reduce the U.S. trade deficit and raise money for things like tax cuts. Today on the show, how might these tariffs work and will they work? Or is everything about to get more expensive? Find more of Kyla Scanlon's work on YouTube and TikTok. Related episodes: What are Trump's economic plans (Apple / Spotify) Why tariffs are SO back (Apple / Spotify) Trade wars and talent shortages (Apple / Spotify) A brief history of tariffs For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Cool, cool, cooling jobs",
+      "date": "2024-11-01T15:42:59-04:00",
+      "npr_url": "https://www.npr.org/2024/11/01/1211597682/cool-cool-cooling-jobs",
+      "story_id": "1211597682",
+      "audio_id": "1261485326",
+      "player_url": "https://www.npr.org/player/embed/1211597682/1261485326",
+      "description": "The Bureau of Labor Statistics reported the unemployment rate remained steady at 4.1% and 12,000 jobs were added to the U.S. economy during October. It's a lower-than-expected jobs number, from a period that saw two significant hurricanes in the southeast and a strike from workers at Boeing. Today on the show, we explain the complexities of calculating the monthly job numbers, and why the Bureau of Labor Statistics can be trusted.Related episodes: Behind the scenes of Jobs Friday (Apple / Spotify / NPR) For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "The U.S. once banned Chinese immigrants — and it paid an economic price",
+      "date": "2024-10-31T16:07:13-04:00",
+      "npr_url": "https://www.npr.org/2024/10/31/1211597550/the-u-s-once-banned-chinese-immigrants-and-it-paid-an-economic-price",
+      "story_id": "1211597550",
+      "audio_id": "1261418227",
+      "player_url": "https://www.npr.org/player/embed/1211597550/1261418227",
+      "description": "In 1880, the Chinese were the biggest group of immigrants in the western U.S. But Sinophobic sentiments crystallized into racist policies and eventually the Chinese Exclusion Act of 1882. The rationale was that banning Chinese laborers would boost job opportunities for U.S.-born workers. Today, an economist explains how the Chinese exclusion laws affected the economies of western states and what it says about our current debate over immigration and jobs.Read the working paper co-authored by Nancy Qian.A digital scan of the photo album in the California Historical Society's collections is available here.For more on this period of history, check out At America's Gates: Chinese Immigration during the Exclusion Era, 1882-1943 by Erika Lee.Related episodes:What's missing in the immigration debate (Apple / Spotify) For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "What's missing in the immigration debate",
+      "date": "2024-10-30T17:55:03-04:00",
+      "npr_url": "https://www.npr.org/2024/10/30/1211597499/indicator-immigration-investment-us-economy",
+      "story_id": "1211597499",
+      "audio_id": "1261364431",
+      "player_url": "https://www.npr.org/player/embed/1211597499/1261364431",
+      "description": "Immigration is a top concern among U.S. voters this election cycle. But Zeke Hernandez, a professor at the University of Pennsylvania who studies immigration,thinks politicians and the media aren't giving the public the full story. Too often, he argues, they paint immigrants as objects of pity or fear, when the reality is much more complex — and positive. Today on the show, we look beyond the binary and explore the less talked about ways documented and undocumented immigrants shape the U.S. economy. Zeke's book is called The Truth About Immigration: Why Successful Societies Welcome Newcomers. Related listening: Is the border crisis really a labor market crisis? (Apple / Spotify) Do immigrants really take jobs and lower wages? (Apple / Spotify) Welcome to the USA! Now get to work (Apple / Spotify) For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "What happens when Social Security runs out of money?",
+      "date": "2024-10-29T18:13:07-04:00",
+      "npr_url": "https://www.npr.org/2024/10/29/1211597322/social-security-trump-harris-federal-debt",
+      "story_id": "1211597322",
+      "audio_id": "1261302496",
+      "player_url": "https://www.npr.org/player/embed/1211597322/1261302496",
+      "description": "Social Security has thus far been self-sustaining—payroll taxes go into this big fund, which then pays out monthly checks. But the problem we have now is the money coming into that fund is not keeping up with the money going out. The election hasn't been great for people concerned about the government's finances. The Committee for a Responsible Federal Budget estimates that Donald Trump's election proposals will speed up the rundown in the Social Security fund by a few years. So, when Social Security runs out of money as it's projected to do ... could we just borrow more money? And if so, what would that mean for the already rising government's debt?Today on the show, how worried should we be about Social Security and the federal debt? We explain a fresh indicator to assess whether or not America's getting too far in the red.Related Episodes: What does the next era of Social Security look like?Iceberg ahead for Social Security For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "What looks like a bond and acts like a bond but isn't a bond?",
+      "date": "2024-10-28T14:18:48-04:00",
+      "npr_url": "https://www.npr.org/2024/10/28/1211597308/the-indicator-from-planet-money-maldives-sukuk-islamic-finance-10-28-2024",
+      "story_id": "1211597308",
+      "audio_id": "1261217879",
+      "player_url": "https://www.npr.org/player/embed/1211597308/1261217879",
+      "description": "The Maldives is a small island nation struggling with a heavy debt load. Its borrowing includes $500 million worth of something called sukuk. These are bond-like investments that don't pay interest, to be in line with Islamic law. Today on the show, we explain how sukuk works, how it fits into the larger world of Islamic finance and what might happen if the Maldives can't pay back its debt.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "An economist answers your questions on love",
+      "date": "2024-10-25T15:00:54-04:00",
+      "npr_url": "https://www.npr.org/2024/10/25/1211597247/an-economist-answers-your-questions-on-love",
+      "story_id": "1211597247",
+      "audio_id": "1261088816",
+      "player_url": "https://www.npr.org/player/embed/1211597247/1261088816",
+      "description": "We ask economists for their expertise all the time on The Indicator, so why not their tips on love? On our final installment of Love Week, we ask economist Tim Harford to answer listeners' relationship quandaries, from paying for a first date to alternatives to saying, 'I love you.' Thanks to Grant-Lee Phillps for composing our Love Week theme song and Kaitlin Brito for artwork. Related episodes: Trying to fix the dating app backlash (Apple / Spotify)How American heiresses became Dollar Princesses (Apple / Spotify) Why the publishing industry is hot (and bothered) for romance (Apple / Spotify) It's Love Week! How the TV holiday rom-com got so successful (Apple / Spotify) For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Trying to fix the dating app backlash",
+      "date": "2024-10-24T15:08:44-04:00",
+      "npr_url": "https://www.npr.org/2024/10/24/1211597183/love-week-online-dating-hinge-ceo-justin-mcleod",
+      "story_id": "1211597183",
+      "audio_id": "1261035362",
+      "player_url": "https://www.npr.org/player/embed/1211597183/1261035362",
+      "description": "Unanswered messages. Endless swiping. An opaque algorithm. The backlash to online dating feels like it's reached a fever pitch recently. For today's Love Week episode, why people are unhappy with online dating and what Hinge's CEO is trying to do about it. Also, a Nobel Prize economist delivers a little tough love. Related listening:How American heiresses became Dollar Princesses (Apple / Spotify)Why the publishing industry is hot (and bothered) for romance (Apple / Spotify) It's Love Week! How the TV holiday rom-com got so successful (Apple / Spotify) Hinge: Justin McLeod (How I Built This) The dating app paradox The economics behind sorority rush Special thanks to Grant-Lee Phillips for our Love Week theme song and Kaitlin Brito for episode artwork. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Romance on the screen and on the page: Two Indicators",
+      "date": "2024-10-23T17:24:24-04:00",
+      "npr_url": "https://www.npr.org/2024/10/23/1210942150/indicator-love-week-rom-com-romance-novels",
+      "story_id": "1210942150",
+      "audio_id": "1260985685",
+      "player_url": "https://www.npr.org/player/embed/1210942150/1260985685",
+      "description": "On today's show, we have two stories from The Indicator, Planet Money's daily podcast. They just launched Love Week, a weeklong series exploring the business and economic side of romance.First, hosts Wailin Wong and Adrian Ma fire up the gas logs and pour a mug of cocoa to discuss the made-for-TV rom-com machine, and how television executives learned to mass produce seasonal romance.Then, Wailin and host Darian Woods discuss another romance medium: the romance novel. Once relegated to supermarket aisles, these books are now mainstream. And authors, an often-maligned group within publishing, have found greater commercial success than many writers in other genres. We find out how romance novelists rode the e-book wave and networked with each other to achieve their happily-for-now status in the industry.This episode is hosted by Erika Beras, Wailin Wong, Adrian Ma, and Darian Woods. These episodes of The Indicator were originally produced by Julia Ritchey and engineered by Kwesi Lee. They were fact-checked by Sierra Juarez. Kate Concannon is The Indicator's Editor.You can listen to the rest of the series at The Indicator's feed, or at npr.org/loveHelp support Planet Money and hear our bonus episodes by subscribing to Planet Money+ in Apple Podcasts or at plus.npr.org/planetmoney."
+    },
+    {
+      "title": "How American heiresses became Dollar Princesses",
+      "date": "2024-10-23T14:59:11-04:00",
+      "npr_url": "https://www.npr.org/2024/10/23/1211597140/love-week-how-american-heiresses-became-dollar-princesses",
+      "story_id": "1211597140",
+      "audio_id": "1260964965",
+      "player_url": "https://www.npr.org/player/embed/1211597140/1260964965",
+      "description": "In the late 19th century, British aristocrats had a big problem. They were short on cash to fund their lifestyles and maintain their vast country estates. In our third installment of Love Week, we look at the economic forces that drove some British men of the time to marry American heiresses, dubbed \"Dollar Princesses,\" forming a union of money, status and, sometimes, love. For more on Dollar Princesses, Mark Taylor's research paper is published here. Kristen Richardson's book is called The Season: A Social History of the Debutante. Related episodes: Why the publishing industry is hot (and bothered) for romance (Apple / Spotify) It's Love Week! How the TV holiday rom-com got so successful (Apple / Spotify)"
+    },
+    {
+      "title": "Why the publishing industry is hot (and bothered) for romance",
+      "date": "2024-10-22T14:47:46-04:00",
+      "npr_url": "https://www.npr.org/2024/10/22/1211596939/love-week-why-romance-genre-novels-thriving",
+      "story_id": "1211596939",
+      "audio_id": "1260898444",
+      "player_url": "https://www.npr.org/player/embed/1211596939/1260898444",
+      "description": "Once relegated to supermarket aisles, romance books are now mainstream. And authors, an often-maligned group within publishing, have found greater commercial success than many writers in other genres. On today's episode of Love Week, our series on the business of romance, we find out how romance novelists rode the e-book wave and networked with each other to achieve their happily-for-now status in the industry. Read more by Christine Larson, Priscilla Oliveras and Natalie Caña. Thanks to Grant-Lee Phillips for our theme song and Kaitlin Brito for artwork. Related listening: It's Love Week! How the TV holiday rom-com got so successful (Apple / Spotify) Rufaro Faith's 'Let the Games Begin' is a rom-com set in the Olympic village"
+    },
+    {
+      "title": "It's Love Week! How the TV holiday rom-com got so successful",
+      "date": "2024-10-21T14:32:57-04:00",
+      "npr_url": "https://www.npr.org/2024/10/21/1211596888/love-week-made-for-tv-holiday-romcoms-got-successful",
+      "story_id": "1211596888",
+      "audio_id": "1260825329",
+      "player_url": "https://www.npr.org/player/embed/1211596888/1260825329",
+      "description": "Welcome to Love Week on the Indicator, our weeklong series exploring the business and economic side of romance. On today's show, we fire up the gas logs and pour a mug of cocoa to discuss the made-for-TV rom-com machine, and how television executives learned to mass produce seasonal romance. Special thanks to Grant-Lee Phillips for our Love Week theme song and Kaitlin Brito for episode artwork. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Reversing shrinkflation (via potato chips) and other indicators",
+      "date": "2024-10-18T17:51:40-04:00",
+      "npr_url": "https://www.npr.org/2024/10/18/1211596826/election-2024-kalshi-natural-disasters-shrinkflation",
+      "story_id": "1211596826",
+      "audio_id": "1260749408",
+      "player_url": "https://www.npr.org/player/embed/1211596826/1260749408",
+      "description": "It's ... Indicators of the Week! It's that time of week where we look at the most intriguing indicators from this last week of economic and business news. On today's episode: NHPR's Nate Hegyi, host of the podcast Outside/In, joins us to talk natural disaster loans, election prediction markets and ... potato chips?Related Episodes: What's with all the tiny soda cans? And other grocery store mysteries, solved.A market to bet on the futureFor sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Rebranding 'the world's most dangerous private army'",
+      "date": "2024-10-17T17:26:11-04:00",
+      "npr_url": "https://www.npr.org/2024/10/17/1211596764/rebranding-the-worlds-most-dangerous-private-army",
+      "story_id": "1211596764",
+      "audio_id": "1260682815",
+      "player_url": "https://www.npr.org/player/embed/1211596764/1260682815",
+      "description": "When the leader of the Wagner group, Yevgeny Prigozhin died in an exploding plane widely attributed to Russian President Vladimir Putin, it wasn't clear what would happen. Today, why the Wagner Group has been called the world's most dangerous private army, its relationship with Russia and how its business model creates a blueprint for others to follow.Related episodes:Not your typical army: how the Wagner Group operates (Apple / Spotify) How the 'shadow fleet' helps Russia skirt sanctions (Apple / Spotify) For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Can the yield curve still predict recessions?",
+      "date": "2024-10-16T14:44:05-04:00",
+      "npr_url": "https://www.npr.org/2024/10/16/1211483980/can-the-yield-curve-still-predict-recessions",
+      "story_id": "1211483980",
+      "audio_id": "1260593701",
+      "player_url": "https://www.npr.org/player/embed/1211483980/1260593701",
+      "description": "Two years ago, the yield curve inverted. That means short-term interest rates on Treasury bonds were unusually higher than long-term interest rates. When that's happened in the past, a recession has come. In fact, the inverted yield curve has predicted every recession since 1969 ... until now. Today, are we saying goodbye to the inverted yield curve's flawless record?Related episodes:The inverted yield curve is screaming RECESSION (Apple / Spotify) Yield curve jitters Two Yield Curve Indicators For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Why are some nations richer?",
+      "date": "2024-10-15T18:28:33-04:00",
+      "npr_url": "https://www.npr.org/2024/10/15/1211165443/the-indicator-from-planet-money-nobel-economics-prize-institutions-10-15-2024",
+      "story_id": "1211165443",
+      "audio_id": "1260551037",
+      "player_url": "https://www.npr.org/player/embed/1211165443/1260551037",
+      "description": "This year's Economics Nobel went to a trio of researchers whose work focuses on the importance of strong institutions for an economy. Today we hear from the newly minted Nobel laureates about how they came to their groundbreaking conclusions. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "The cost of living, lead pipe removal, and a more expensive Mega Millions",
+      "date": "2024-10-11T17:30:47-04:00",
+      "npr_url": "https://www.npr.org/2024/10/11/1210942144/cpi-mega-millions-lead-pipes-epa",
+      "story_id": "1210942144",
+      "audio_id": "1260379308",
+      "player_url": "https://www.npr.org/player/embed/1210942144/1260379308",
+      "description": "It's ... Indicators of the Week! It's that time of week when we look at the most fascinating economic numbers from the news. On today's episode: Inflation slowly coming down, getting the lead out of water pipes, and a more expensive Mega Millions. Related Episodes: Lotteries And Happiness Indicator exploder: jobs and inflationFor sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "The trouble with water discounts",
+      "date": "2024-10-10T17:14:18-04:00",
+      "npr_url": "https://www.npr.org/2024/10/10/1210938548/the-indicator-from-planet-money-the-trouble-with-water-discounts-10-10-2024",
+      "story_id": "1210938548",
+      "audio_id": "1260286430",
+      "player_url": "https://www.npr.org/player/embed/1210938548/1260286430",
+      "description": "The problem of how to price water is a perennial conundrum. Water is an essential limited resource that everyone needs, so how do you price it so everyone can afford it while making sure that utilities have enough revenue to fix their aging systems? Today on the show, we find out why it's so hard to price water and how a city's solution led to a threat to cut off thousands of residents from a popular welfare program. You can read more about the fight over water prices here.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Half a billion people need reading glasses. Why can't they get them?",
+      "date": "2024-10-09T15:01:49-04:00",
+      "npr_url": "https://www.npr.org/2024/10/09/1210938351/half-a-billion-people-need-reading-glasses-why-cant-they-get-them",
+      "story_id": "1210938351",
+      "audio_id": "1260175613",
+      "player_url": "https://www.npr.org/player/embed/1210938351/1260175613",
+      "description": "If you need some reading glasses in the United States, you don't have to break the bank to pick some up. That's important for older folks who need a little extra magnification. But in some parts of the world, people who need readers don't have that privilege. Today on the show, we'll find out why that is and learn the economic solution to the reading glasses shortage.Related episodes:Two indicators: supply chain solutions (Apple / Spotify) For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "The year the music festival died",
+      "date": "2024-10-08T15:04:04-04:00",
+      "npr_url": "https://www.npr.org/2024/10/08/1210938258/music-festivals-recession-desert-daze-wu-tang-tame-impala-coachella",
+      "story_id": "1210938258",
+      "audio_id": "1260086432",
+      "player_url": "https://www.npr.org/player/embed/1210938258/1260086432",
+      "description": "Is 2024 the year the music festival died? Festivals are getting canceled left and right, from Northern California to Florida to Virginia. Big name festivals that used to sell out in minutes struggled to sell tickets this year, too, like Burning Man and Coachella. And it's not just America. By one count, over 60 music festivals were canceled in the UK this year alone. In Australia, so many festivals were canceled that one newspaper there recently asked, are the nation's music festivals extinct?Today on the show, the music festival recession. What's behind it and is it temporary or a permanent cultural shift?Related Episodes: Live Music Industry BluesThe Economics of Music FestivalsFor sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Why the name Taft-Hartley got airplay during the dockworkers' brief strike",
+      "date": "2024-10-07T17:53:56-04:00",
+      "npr_url": "https://www.npr.org/2024/10/07/1210935831/why-taft-hartley-came-up-during-longshoremans-port-strike",
+      "story_id": "1210935831",
+      "audio_id": "1260010086",
+      "player_url": "https://www.npr.org/player/embed/1210935831/1260010086",
+      "description": "The U.S. economy is breathing a little easier after the International Longshoremen's Association reached a tentative agreement last week with the United States Maritime Alliance. The short-lived dockworkers strike reignited a debate over whether the president ought to intervene, invoking an old law on the books called the Taft-Hartley Act. On today's show, we explain what the Taft-Hartley Act is, why it was created and why it's still scorned by unions. Related episodes:What the data reveal about labor strikes (Apple / Spotify) Why residuals are taking center stage in actors' strike (Apple / Spotify) The never-ending strike (Apple / Spotify) The strike that changed U.S. labor For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Does unemployment whiplash mean recession?",
+      "date": "2024-10-04T17:43:32-04:00",
+      "npr_url": "https://www.npr.org/2024/10/04/1203595442/jobs-friday-recession-economy-unemployment",
+      "story_id": "1203595442",
+      "audio_id": "1259897079",
+      "player_url": "https://www.npr.org/player/embed/1203595442/1259897079",
+      "description": "It's Jobs Friday! It's that time of the month where we check in on the American worker.In September, 254,000 jobs were added to the US economy and the unemployment rate ticked down very slightly to 4.1%. It's unexpectedly strong, and relieving news for workers after a pretty lackluster summer.But ... given how the labor market cooled over summer, is the labor market still on thin ice? And if there were to be a plummet in jobs, could anything be done to speed up the recovery? Today on the show: How it's easier to break the economy than to fix it, and whether we can escape from the patterns of the past.Related Episodes: The Sahm Rule With The Eponymous EconomistHow much would you do this job for? And other indicators For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Champagne. Neapolitan pizza. Now döner kebabs?",
+      "date": "2024-10-03T18:09:15-04:00",
+      "npr_url": "https://www.npr.org/2024/10/03/1203261229/doner-kebab-turkey-germany-traditonal-specialty-guarantee",
+      "story_id": "1203261229",
+      "audio_id": "1259839514",
+      "player_url": "https://www.npr.org/player/embed/1203261229/1259839514",
+      "description": "In Germany, döner kebabs are more than just an affordable, satisfying street food. They're a symbol of Turkey's culinary influence in the country. Today on the show, how an effort to give döner kebabs a protected status under a little-known EU regulation could dish out some real economic consequences, in Germany and beyond. Special thanks to Sidney Gennies, Sönke Matschurek, and Maren Möhring. Related episodes:Cheese wars Coca Cola vs. Coca Pola (Apple / Spotify) For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Are we about to lose TikTok? Like actually tho?",
+      "date": "2024-10-02T17:15:03-04:00",
+      "npr_url": "https://www.npr.org/2024/10/02/1202966854/are-we-about-to-lose-tiktok-like-actually-tho",
+      "story_id": "1202966854",
+      "audio_id": "1259758220",
+      "player_url": "https://www.npr.org/player/embed/1202966854/1259758220",
+      "description": "TikTok could begin shutting down in the U.S. as soon as January 19 of next year. But the app is not going down without a fight. The company is asking a panel of federal judges to block the law in a high-profile case that pits free speech versus national security. Today on the show, how TikTok got to this point and what we can expect from the app's last ditch effort to stay alive in the U.S. Related episodes:Tick tock for TikTok? (Apple / Spotify) Is Project Texas enough to save TikTok? (Apple / Spotify) For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Is an American sovereign wealth fund such a bad idea?",
+      "date": "2024-10-01T18:38:45-04:00",
+      "npr_url": "https://www.npr.org/2024/10/01/1202891564/america-sovereign-wealth-fund-industry-hbo",
+      "story_id": "1202891564",
+      "audio_id": "1259706164",
+      "player_url": "https://www.npr.org/player/embed/1202891564/1259706164",
+      "description": "Sovereign wealth funds have been around since the 1800s, but they're having a bit of a moment right now ... The financial instrument was recently name-dropped in HBOs 'Industry' (good show!) and members of both the Biden administration and the Trump campaign have floated the idea of an American sovereign wealth fund. That idea, for the most part, has been derided by economists. But... is an American sovereign wealth fund such a bad idea?On today's show: What IS a sovereign wealth fund? Is a US national sovereign wealth fund a good or even viable idea?Related Episodes:Why oil in Guyana could be a curseThe boom and bust of esportsFor sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Mail bag! Grad jobs, simplified branding and central bank independence",
+      "date": "2024-09-30T19:03:20-04:00",
+      "npr_url": "https://www.npr.org/2024/09/30/1202833899/listener-mailbag-jobs-branding-fed-independence",
+      "story_id": "1202833899",
+      "audio_id": "1259625486",
+      "player_url": "https://www.npr.org/player/embed/1202833899/1259625486",
+      "description": "Penny for your thoughts? Today we open our mail bag to hear from Indicator listeners. A college graduate tells us about their job search, a researcher discusses why products advertised as 'simple' may not be so straightforward, and another listener thinks the debate over Fed independence is a little more nuanced than we let on. Heard something on the show you liked (or didn't)? Have an insight to share about the economy? Send us an email: indicator@npr.org! Related episodes: Should presidents have more say in interest rates? (Apple / Spotify) We grade Fed Chair Jerome Powell (Apple / Spotify) Trade wars and talent shortages (Apple / Spotify) If the world had no accountants (Apple / Spotify) The case for inflation For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "America's small GDP bump, China's big stimulus dispersal, and a Monkey King",
+      "date": "2024-09-27T17:12:27-04:00",
+      "npr_url": "https://www.npr.org/2024/09/27/1202000761/black-myth-wukong-china-stimulus-us-gdp",
+      "story_id": "1202000761",
+      "audio_id": "1259510309",
+      "player_url": "https://www.npr.org/player/embed/1202000761/1259510309",
+      "description": "It's time for ... Indicators of the Week! It is our show where we talk about fascinating numbers from the news. On today's episode, America's small GDP increase, a big assist from China's government to its lower income residents, and a high-grossing, centuries-old Monkey King.Related Episodes:How Red Lobster got cooked and other indicatorsChina's luxury liquor indicatorFor sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "What does the next era of Social Security look like?",
+      "date": "2024-09-26T18:37:05-04:00",
+      "npr_url": "https://www.npr.org/2024/09/26/1201730554/what-does-the-next-era-of-social-security-look-like",
+      "story_id": "1201730554",
+      "audio_id": "1259592431",
+      "player_url": "https://www.npr.org/player/embed/1201730554/1259592431",
+      "description": "Peak 65 is here. More than 4 million Americans will turn 65 each year between 2024 and 2027, representing the largest retirement surge in history. Years ago, older Americans could count on Social Security. But today there is some uncertainty on the program's solvency in the next decade plus. Now, many are entering their golden years with financial insecurity. Today on the show, how did Social Security become a thing? And what could the safety net for the Peak 65 generation and beyond look like?James Chappel's book: Golden Years: How Americans Invented and Reinvented Old AgeGolden Years: How Americans Invented and Reinvented Old AgeRelated episodes:Iceberg ahead for Social Security (Apple / Spotify) What would it take to fix retirement? (Apple / Spotify) Social Insecurity For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Are pharmacy benefit managers driving up drug prices? (Update)",
+      "date": "2024-09-25T18:13:52-04:00",
+      "npr_url": "https://www.npr.org/2024/09/25/1201499004/pharmacy-benefit-managers-ftc-drug-prices",
+      "story_id": "1201499004",
+      "audio_id": "1259351526",
+      "player_url": "https://www.npr.org/player/embed/1201499004/1259351526",
+      "description": "A group of obscure yet powerful players in the prescription drug industry are under the microscope. On Tuesday, at a Senate hearing in D.C., the head of pharmaceutical giant Novo Nordisk blamed the health insurance industry and pharmacy benefit managers, or PBMs, for allegedly making products like the weight loss drug Ozempic way more expensive in the U.S. than it is in other countries. A few days before that, the Federal Trade Commission sued three of the country's largest PBMs for allegedly using unfair tactics to artificially inflate the price of insulin. So what exactly are PBMs and how do they work? In an episode that aired two years ago, we explain how the answer involves secret deals and double agents. Related episodes: Who can and cannot get weight loss drugs (Apple / Spotify) New drugs. Cheaper drugs. Why not both? (Apple / Spotify) For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "How to pass on a global media empire",
+      "date": "2024-09-24T19:06:27-04:00",
+      "npr_url": "https://www.npr.org/2024/09/24/1201394744/how-to-pass-on-a-global-media-empire",
+      "story_id": "1201394744",
+      "audio_id": "1259287494",
+      "player_url": "https://www.npr.org/player/embed/1201394744/1259287494",
+      "description": "Rupert Murdoch took an Australia paper in Adelaide and turned it into one of the most influential media empires in the world. The question of who will run it after he's gone though is the subject of speculation both in reality and on the HBO fictional series \"Succession.\" Now, a small probate court in Nevada will weigh in on that very question. Today, how did the drama come to be? And what will the decision mean for the future of Fox, one of the most influential networks, on the planet and our political discourse?Related episodes:Dollar v. world / Taylor Swift v. FTX / Fox v. Dominion (Apple / Spotify) For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Could you live without GPS? It's OK, the economy can't, either",
+      "date": "2024-09-23T18:35:14-04:00",
+      "npr_url": "https://www.npr.org/2024/09/23/1201324613/gps-america-outside-in-russia-ukraine-china-europe",
+      "story_id": "1201324613",
+      "audio_id": "1259215846",
+      "player_url": "https://www.npr.org/player/embed/1201324613/1259215846",
+      "description": "A recent survey found that nearly half of all Americans say they could not live without GPS in their car. The American economy couldn't live without GPS, either! Clocks on Wall Street, commercial fishermen, and of course, your Lyft driver, all rely on satellite navigation services.An outage in those services, however, would cripple the U.S. economy. A study found that an outage could cost at least $1 billion a day ... and we don't have a backup. Today on the show, we explain who owns GPS and why we don't have a Plan B if it fails.Related Episodes:The Military Industry ... It's ComplexWhy the FTC is cracking down on location data brokersFor sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "The Fed cut rates ... now what? (featuring: Sasquatch)",
+      "date": "2024-09-20T18:24:49-04:00",
+      "npr_url": "https://www.npr.org/2024/09/20/1200551191/fed-cut-interest-rates-sasquatch-economy-dot-plots",
+      "story_id": "1200551191",
+      "audio_id": "1259122124",
+      "player_url": "https://www.npr.org/player/embed/1200551191/1259122124",
+      "description": "It's ... Indicators of the Week! We roundup the economic indicators that caught our eyes and ears. This week, all our attention was on the Federal Reserve, which cut interest rates by half a percentage point. (Egad!) On today's episode, we've got dot plots, why the Fed rate cut may not bring immediate relief, and ... Sasquatch?!Related Episodes: Has the Fed lost the dot plot? Are both rents AND interest rates too dang high?When mortgage rates are too low to give upRelated Reading: Mortgage Rates Puzzle Is a Worry for Housing and the FedFor sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "What are Harris' economic plans?",
+      "date": "2024-09-19T18:42:29-04:00",
+      "npr_url": "https://www.npr.org/2024/09/19/1200336832/kamala-harris-economic-plans-housing-taxes",
+      "story_id": "1200336832",
+      "audio_id": "1259065306",
+      "player_url": "https://www.npr.org/player/embed/1200336832/1259065306",
+      "description": "Yesterday we looked at Donald Trump's key economic proposals for a second term. On today's show, we do the same for Kamala Harris, examining the Democratic nominee's plans for taxes, housing and grocery store prices. Related episodes: What are Trump's economic plans? (Apple / Spotify) Three Kamala Harris indicators (Apple / Spotify) Bad economics, smart politics (Apple / Spotify) How much do presidents ACTUALLY influence the economy? (Apple / Spotify) When Uncle Sam stops paying the childcare bill (Apple / Spotify) For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
     }
   ]
 }
