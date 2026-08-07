@@ -1,23 +1,32 @@
 #!/usr/bin/env python3
 
 import json
+import os
 import re
 import time
 import urllib.request
+from datetime import datetime, timedelta, timezone
 from html import unescape
 from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
 
-TEST_DATE = "05-31-2025"
-OUTPUT_FILE = "history_test.json"
-MAX_EPISODES = 10
+OUTPUT_FILE = "indicator_history.json"
 
-ARCHIVE_URL = (
-    "https://www.npr.org/sections/business/archive"
-    f"?date={TEST_DATE}"
-)
+# Stop once we reach the beginning of The Indicator.
+STOP_DATE = datetime(2017, 12, 1, tzinfo=timezone.utc)
+
+# Start just before the oldest episode already in our live feed.
+START_DATE = datetime(2025, 6, 9, tzinfo=timezone.utc)
+
+# Safety limit for one GitHub Actions run.
+MAX_ARCHIVE_PAGES = 25
+
+# Pause between NPR requests.
+REQUEST_DELAY = 1.0
+
+ARCHIVE_STEM = "https://www.npr.org/sections/business/archive"
 
 HEADERS = {
     "User-Agent": (
@@ -50,6 +59,8 @@ def download(url):
 
     print(f"Downloaded {len(data):,} bytes")
 
+    time.sleep(REQUEST_DELAY)
+
     return data
 
 
@@ -63,20 +74,79 @@ def normalize_url(url):
     )
 
 
+def parse_datetime(value):
+    if not value:
+        return None
+
+    try:
+        value = value.replace(
+            "Z",
+            "+00:00"
+        )
+
+        result = datetime.fromisoformat(
+            value
+        )
+
+        if result.tzinfo is None:
+            result = result.replace(
+                tzinfo=timezone.utc
+            )
+
+        return result
+
+    except Exception:
+        return None
+
+
+def load_history():
+    if not os.path.exists(OUTPUT_FILE):
+        return {
+            "next_date": START_DATE.isoformat(),
+            "episodes": [],
+        }
+
+    with open(
+        OUTPUT_FILE,
+        "r",
+        encoding="utf-8"
+    ) as file:
+        data = json.load(file)
+
+    return data
+
+
+def save_history(data):
+    with open(
+        OUTPUT_FILE,
+        "w",
+        encoding="utf-8"
+    ) as file:
+
+        json.dump(
+            data,
+            file,
+            indent=2,
+            ensure_ascii=False,
+        )
+
+
+def build_archive_url(date):
+    return (
+        ARCHIVE_STEM
+        + date.strftime(
+            "?date=%m-%d-%Y"
+        )
+    )
+
+
 def find_indicator_links(html):
-    """
-    The archive page does NOT necessarily contain
-    audio players.
-
-    Its job is only to give us links to Indicator stories.
-    """
-
     soup = BeautifulSoup(
         html,
         "html.parser"
     )
 
-    links = []
+    results = []
     seen = set()
 
     for article in soup.find_all("article"):
@@ -99,9 +169,6 @@ def find_indicator_links(html):
         ):
             continue
 
-        #
-        # Look for the story headline link.
-        #
         candidates = []
 
         for heading_name in [
@@ -125,9 +192,6 @@ def find_indicator_links(html):
                         link["href"]
                     )
 
-        #
-        # Fallback: inspect all links.
-        #
         if not candidates:
             for link in article.find_all(
                 "a",
@@ -160,21 +224,14 @@ def find_indicator_links(html):
                 continue
 
             seen.add(url)
-            links.append(url)
+            results.append(url)
 
             break
 
-    return links
+    return results
 
 
 def find_player(soup):
-    """
-    Find NPR's embedded audio player.
-
-    Example:
-    /player/embed/1252898728/1269346031
-    """
-
     html = str(soup)
 
     match = re.search(
@@ -224,9 +281,6 @@ def find_title(soup):
 
 
 def find_description(soup):
-    #
-    # NPR normally provides a useful meta description.
-    #
     meta = soup.find(
         "meta",
         attrs={"name": "description"}
@@ -246,22 +300,19 @@ def find_description(soup):
 
 
 def find_date(soup):
-    #
-    # First try HTML <time datetime=...>
-    #
     time_element = soup.find(
         "time",
         attrs={"datetime": True}
     )
 
     if time_element:
-        return time_element.get(
+        value = time_element.get(
             "datetime"
         )
 
-    #
-    # Fallback to visible date text.
-    #
+        if value:
+            return value
+
     text = clean_text(
         soup.get_text(
             " ",
@@ -281,7 +332,18 @@ def find_date(soup):
     )
 
     if match:
-        return match.group(0)
+        try:
+            date = datetime.strptime(
+                match.group(0),
+                "%B %d, %Y"
+            )
+
+            return date.replace(
+                tzinfo=timezone.utc
+            ).isoformat()
+
+        except Exception:
+            pass
 
     return None
 
@@ -316,146 +378,243 @@ def parse_episode_page(url):
     }
 
 
+def episode_key(episode):
+    return (
+        episode.get("story_id"),
+        episode.get("audio_id"),
+    )
+
+
 def main():
 
-    print()
-    print(
-        "STEP 1: Download archive page"
-    )
-    print()
+    history = load_history()
 
-    archive_html = download(
-        ARCHIVE_URL
+    episodes = history.get(
+        "episodes",
+        []
     )
 
-    links = find_indicator_links(
-        archive_html
+    known = {
+        episode_key(e)
+        for e in episodes
+    }
+
+    current_date = parse_datetime(
+        history.get("next_date")
     )
 
-    print()
-    print(
-        f"Found {len(links)} possible "
-        "Indicator story link(s)."
-    )
-    print()
-
-    for link in links:
-        print(f"  {link}")
+    if current_date is None:
+        current_date = START_DATE
 
     print()
     print(
-        "STEP 2: Open individual "
-        "episode pages"
+        f"Starting history crawl at "
+        f"{current_date.date()}"
+    )
+
+    print(
+        f"Already have "
+        f"{len(episodes)} historical episodes."
     )
     print()
 
-    episodes = []
+    pages_processed = 0
 
-    for url in links:
+    while (
+        current_date > STOP_DATE
+        and pages_processed
+        < MAX_ARCHIVE_PAGES
+    ):
 
-        if len(episodes) >= MAX_EPISODES:
-            break
+        pages_processed += 1
 
-        try:
-            episode = parse_episode_page(
-                url
+        print()
+        print(
+            "================================"
+        )
+        print(
+            f"Archive page "
+            f"{pages_processed}/"
+            f"{MAX_ARCHIVE_PAGES}"
+        )
+        print(
+            f"Date: {current_date.date()}"
+        )
+        print(
+            "================================"
+        )
+
+        archive_url = build_archive_url(
+            current_date
+        )
+
+        archive_html = download(
+            archive_url
+        )
+
+        links = find_indicator_links(
+            archive_html
+        )
+
+        print(
+            f"Found {len(links)} "
+            "Indicator link(s)."
+        )
+
+        oldest_date = None
+
+        for url in links:
+
+            try:
+                episode = parse_episode_page(
+                    url
+                )
+
+            except Exception as error:
+                print(
+                    f"ERROR reading {url}: "
+                    f"{error}"
+                )
+
+                continue
+
+            if not episode:
+                continue
+
+            key = episode_key(
+                episode
             )
 
-        except Exception as error:
-            print(
-                f"ERROR reading {url}: "
-                f"{error}"
+            episode_date = parse_datetime(
+                episode.get("date")
             )
 
-            continue
+            if episode_date:
+                if (
+                    oldest_date is None
+                    or episode_date
+                    < oldest_date
+                ):
+                    oldest_date = episode_date
 
-        if episode:
+            if key in known:
+                print(
+                    f"Already saved: "
+                    f"{episode['title']}"
+                )
+
+                continue
+
+            known.add(key)
+
             episodes.append(
                 episode
             )
 
+            print(
+                f"Saved: "
+                f"{episode['title']}"
+            )
+
         #
-        # Be polite to NPR.
+        # Decide which archive date to request next.
         #
-        time.sleep(1)
+        if oldest_date is not None:
 
-    result = {
-        "test_date": TEST_DATE,
-        "archive_url": ARCHIVE_URL,
-        "links_discovered": len(
-            links
-        ),
-        "episode_count": len(
-            episodes
-        ),
-        "episodes": episodes,
-    }
+            next_date = (
+                oldest_date
+                - timedelta(days=1)
+            )
 
-    with open(
-        OUTPUT_FILE,
-        "w",
-        encoding="utf-8"
-    ) as file:
+        else:
+            #
+            # If a page somehow has no Indicator
+            # episodes, jump backward 30 days.
+            #
+            next_date = (
+                current_date
+                - timedelta(days=30)
+            )
 
-        json.dump(
-            result,
-            file,
-            indent=2,
-            ensure_ascii=False,
+        #
+        # Guard against getting stuck on
+        # the same archive page forever.
+        #
+        if next_date >= current_date:
+            next_date = (
+                current_date
+                - timedelta(days=1)
+            )
+
+        current_date = next_date
+
+        #
+        # Sort newest first.
+        #
+        episodes.sort(
+            key=lambda e: (
+                parse_datetime(
+                    e.get("date")
+                )
+                or STOP_DATE
+            ),
+            reverse=True,
+        )
+
+        history = {
+            "next_date":
+                current_date.isoformat(),
+            "episode_count":
+                len(episodes),
+            "episodes":
+                episodes,
+        }
+
+        #
+        # Save after EVERY archive page.
+        #
+        save_history(
+            history
+        )
+
+        print()
+        print(
+            f"Progress saved."
+        )
+        print(
+            f"Historical episodes: "
+            f"{len(episodes)}"
+        )
+        print(
+            f"Next archive date: "
+            f"{current_date.date()}"
         )
 
     print()
     print(
-        "============================"
+        "================================"
     )
     print(
-        f"Recovered {len(episodes)} "
-        "episode(s)."
+        "Historical crawl finished "
+        "for this run."
     )
     print(
-        f"Saved to {OUTPUT_FILE}"
+        f"Processed "
+        f"{pages_processed} "
+        "archive page(s)."
     )
     print(
-        "============================"
+        f"Saved "
+        f"{len(episodes)} "
+        "historical episodes."
     )
-
-    for number, episode in enumerate(
-        episodes,
-        start=1
-    ):
-        print()
-        print(
-            f"{number}. "
-            f"{episode['title']}"
-        )
-        print(
-            f"   Date: "
-            f"{episode['date']}"
-        )
-        print(
-            f"   Story ID: "
-            f"{episode['story_id']}"
-        )
-        print(
-            f"   Audio ID: "
-            f"{episode['audio_id']}"
-        )
-        print(
-            f"   URL: "
-            f"{episode['npr_url']}"
-        )
-
-    if not links:
-        raise RuntimeError(
-            "Archive downloaded, but no "
-            "Indicator story links were found."
-        )
-
-    if not episodes:
-        raise RuntimeError(
-            "Indicator links were found, "
-            "but no audio could be recovered."
-        )
+    print(
+        f"Next date: "
+        f"{current_date.date()}"
+    )
+    print(
+        "================================"
+    )
 
 
 if __name__ == "__main__":
