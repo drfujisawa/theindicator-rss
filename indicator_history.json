@@ -1,6 +1,6 @@
 {
-  "next_date": "2023-11-02T17:05:04-04:00",
-  "episode_count": 345,
+  "next_date": "2023-08-01T18:33:08-04:00",
+  "episode_count": 408,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -3106,6 +3106,573 @@
       "audio_id": "1210565240",
       "player_url": "https://www.npr.org/player/embed/1197956578/1210565240",
       "description": "The American economy is still running hot and the labor market is showing astounding resilience despite elevated interest rates. Things are so good that there's some pickiness being displayed by both employers and employees. Today, we look at what's turning out to be an unusual labor market and what that means for the wider economy.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "How the South is trying to win the EV race",
+      "date": "2023-11-02T17:46:44-04:00",
+      "npr_url": "https://www.npr.org/2023/11/02/1197956548/evs-automakers-incentives-southeast",
+      "story_id": "1197956548",
+      "audio_id": "1210320886",
+      "player_url": "https://www.npr.org/player/embed/1197956548/1210320886",
+      "description": "A new Hyundai plant in Georgia. A Ford mega campus in Tennessee. The Southeast is quickly becoming a hub for electric vehicles and the manufacturing of its components. Today on the show, we explore the South's formula for landing EV makers and what it means for workers at legacy auto plants. Related Episodes:How EV batteries tore apart Michigan (Apple Podcasts / Spotify) How unions are stopped before they start (Apple Podcasts / Spotify) For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Trying to solve the mystery of big bond yields",
+      "date": "2023-11-01T19:12:11-04:00",
+      "npr_url": "https://www.npr.org/2023/11/01/1197956506/trying-to-solve-the-mystery-of-big-bond-yields",
+      "story_id": "1197956506",
+      "audio_id": "1210045843",
+      "player_url": "https://www.npr.org/player/embed/1197956506/1210045843",
+      "description": "If you're wincing at high interest rates on a potential loan right now, it's not just you. And the Federal Reserve's rate hikes actually isn't (entirely) to blame either. There's another culprit: the rate of a return, or yield, on a Treasury bond issued by the U.S. Today, we explore why this bond yield is so important and why it's at its highest level in years.Related EpisodesThe rat under the Fed's hat (Spotify/Apple Podcasts)For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Are real estate agent fees a racket?",
+      "date": "2023-10-31T20:17:11-04:00",
+      "npr_url": "https://www.npr.org/2023/10/31/1197956480/the-indicator-from-planet-money-draft-10-31-2023",
+      "story_id": "1197956480",
+      "audio_id": "1209829632",
+      "player_url": "https://www.npr.org/player/embed/1197956480/1209829632",
+      "description": "In the typical home sale, the home seller pays a commission, not just to their agent, but also to the buyer's agent. This fee-sharing arrangement is part of a decades-old practice involving what real estate agents call an \"offer of compensation.\" Others call it a conflict of interest. That's the dispute at the center of a class action lawsuit that has the potential to upend the real estate business. Today on the show, we'll explain how real estate agents and the National Association of Realtors allegedly conspired to inflate home prices by pushing agents to share fees. And why the industry says the plaintiffs should be careful what they ask for.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "A finance fright fest",
+      "date": "2023-10-30T18:44:19-04:00",
+      "npr_url": "https://www.npr.org/2023/10/30/1197956399/scary-economics-dark-pools-zombie-companies",
+      "story_id": "1197956399",
+      "audio_id": "1209581919",
+      "player_url": "https://www.npr.org/player/embed/1197956399/1209581919",
+      "description": "Halloween is just around the corner and our hosts are scrambling to find the perfect costume. Today on the show, we scare up fresh costume ideas based on Wall Street's scariest financial jargon. If you know where to look, you can find witches and zombies lurking near dark pools and shadow banks. Are these terms as scary as they sound? Related Episodes:Are you afraid of inflation? For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Europe vs. US economies... and a dime heist",
+      "date": "2023-10-27T15:24:03-04:00",
+      "npr_url": "https://www.npr.org/2023/10/27/1197956374/gdp-growth-eurozone-rates-dime-heist",
+      "story_id": "1197956374",
+      "audio_id": "1209105325",
+      "player_url": "https://www.npr.org/player/embed/1197956374/1209105325",
+      "description": "This time on Indicators of the Week: the U.S. is seeing massive economic growth, but there are a couple of asterisks. The European Central Bank is holding off on additional rate hikes, citing a weak economy in the eurozone.Also, the story of how nearly a quarter of a million dollars was stolen out of a truck... in dimes. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "What happened to the internet without net neutrality?",
+      "date": "2023-10-26T17:03:18-04:00",
+      "npr_url": "https://www.npr.org/2023/10/26/1197956350/net-neutrality-is-back-again-fcc",
+      "story_id": "1197956350",
+      "audio_id": "1208849212",
+      "player_url": "https://www.npr.org/player/embed/1197956350/1208849212",
+      "description": "The fiery debate over how the government should regulate the internet came to a head in 2017. That's when the Trump-led Federal Communications Commission repealed so-called net neutrality rules put in place during the Obama administration. The rules were meant to curtail practices like intentionally slowing down someone's internet speed. Now, under a new Democratic majority, the FCC is proposing reviving net neutrality. Today on the show, what happened in the years without it and what happens next. Related Episodes:Forget Neutrality For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "The Beigie Awards: Why banks are going on a \"loan diet\"",
+      "date": "2023-10-25T16:21:43-04:00",
+      "npr_url": "https://www.npr.org/2023/10/25/1197956324/the-beigie-awards-why-banks-are-going-on-a-loan-diet",
+      "story_id": "1197956324",
+      "audio_id": "1208573296",
+      "player_url": "https://www.npr.org/player/embed/1197956324/1208573296",
+      "description": "Every time a new Beige Book report rolls around, we honor the regional Federal Reserve bank with the best anecdote with our prestigious Beigie Award. The winner of the October 2023 Beigie highlighted an interesting shift in the behavior of some big banks. Today, we talk to our winner all about \"loan diets.\"For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Why offshore wind is facing headwinds",
+      "date": "2023-10-24T19:22:09-04:00",
+      "npr_url": "https://www.npr.org/2023/10/24/1197956304/why-offshore-wind-is-facing-headwinds",
+      "story_id": "1197956304",
+      "audio_id": "1208356443",
+      "player_url": "https://www.npr.org/player/embed/1197956304/1208356443",
+      "description": "The Gulf of Mexico saw its first-ever auction of leases for offshore wind this summer. It was another sign of the Biden administration's desire to get more renewable energy online as fast as possible. Expectations were high for the sale with over a dozen companies expressing interest. But two of the three patches of sea didn't get any bids at all. Today, we look at one clean energy experiment and see what choke points remain for offshore wind. RelatedA Man, A Plan, Wind Power, Uruguay - Planet Money (Spotify/Apple)For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "How IBM's gamble ushered in the computer age",
+      "date": "2023-10-23T19:55:04-04:00",
+      "npr_url": "https://www.npr.org/2023/10/23/1197956188/the-indicator-watson-jr-ibm-big-gamble",
+      "story_id": "1197956188",
+      "audio_id": "1208529106",
+      "player_url": "https://www.npr.org/player/embed/1197956188/1208529106",
+      "description": "In the book of corporate folklore, former IBM CEO Thomas Watson Jr. deserves a special spot. Specifically, the massive gamble he took in 1964 to introduce the System/360, which had the potential to undermine his own company's entire business model. Today on the show, an interview with author Marc Wortman on what Watson Jr.'s decision reveals about the fragile relationship between innovation and destruction. Marc Wortman is co-author of the new book The Greatest Capitalist Who Ever Lived: Tom Watson, Jr., and the Epic Story of How IBM Created the Digital Age. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "More fraud, higher bond yields, and faster airline boarding",
+      "date": "2023-10-20T18:34:31-04:00",
+      "npr_url": "https://www.npr.org/2023/10/20/1197956145/more-fraud-higher-bond-yields-and-faster-airline-boarding",
+      "story_id": "1197956145",
+      "audio_id": "1207710195",
+      "player_url": "https://www.npr.org/player/embed/1197956145/1207710195",
+      "description": "On this edition of Indicators of the Week: older Americans recorded higher losses to certain scams, the yield on the 10-year Treasury bond is up to the highest it's been in more than a decade and United Airlines has a plan to improve how it boards planes.RelatedYou should probably get your plane tickets soonFor sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "What could convince Egypt to take in Gaza's refugees?",
+      "date": "2023-10-19T17:21:22-04:00",
+      "npr_url": "https://www.npr.org/2023/10/19/1197956089/the-indicator-from-planet-money-egypt-gaza-refugees",
+      "story_id": "1197956089",
+      "audio_id": "1207270132",
+      "player_url": "https://www.npr.org/player/embed/1197956089/1207270132",
+      "description": "One of the most crucial players in the war unfolding in the Middle East is Egypt, which neighbors Gaza and is facing pressure from the United States and its allies to open up its borders to refugees. Today, we explain how Egypt's rocky economy presents both a headwind and an opportunity for humanitarian talks in the Middle East and why this situation is testing the United States' economic and political influence. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "There's one business like show business",
+      "date": "2023-10-18T20:08:23-04:00",
+      "npr_url": "https://www.npr.org/2023/10/18/1197956026/theres-one-business-like-show-business",
+      "story_id": "1197956026",
+      "audio_id": "1206949390",
+      "player_url": "https://www.npr.org/player/embed/1197956026/1206949390",
+      "description": "There's no business like show business. Or is there? It turns out the business of producing a Broadway hit shares a few things in common with the business of investing in tech start-ups. Today on the show, the producer of hits like Dear Evan Hansen and Leopoldstadt explains how he applies lessons learned from venture capital tech funding to investing in multi-million dollar Broadway productions.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "How a consumer watchdog's power became a liability",
+      "date": "2023-10-17T18:14:17-04:00",
+      "npr_url": "https://www.npr.org/2023/10/17/1197955919/the-indicator-from-planet-money-cfpb-supreme-court",
+      "story_id": "1197955919",
+      "audio_id": "1206630071",
+      "player_url": "https://www.npr.org/player/embed/1197955919/1206630071",
+      "description": "The Consumer Financial Protection Bureau was created in 2010 as the legislative response to the Great Recession. It's an aggressive regulator that challenges financial institutions on behalf of consumers. However, the unique power it wields may turn out to be its vulnerability. The bureau's critics take issue with the very tools that give the agency its might and are asking the Supreme Court to make changes. Today, we examine how the CFPB came to be such a powerful regulator and why some want to see the agency overhauled. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "The Indicator Quiz: Climate Edition",
+      "date": "2023-10-16T19:05:02-04:00",
+      "npr_url": "https://www.npr.org/2023/10/16/1197955868/the-indicator-quiz-show-climate-edition",
+      "story_id": "1197955868",
+      "audio_id": "1206303630",
+      "player_url": "https://www.npr.org/player/embed/1197955868/1206303630",
+      "description": "What's spicier than a pumpkin spice latte in the fall? The Indicator Quiz! The show where we bring a lucky listener on to test their econ knowledge. Today's quiz focuses on questions related to climate change. Play along with us and see how you do! Are you interested in being a contestant on our next Indicator Quiz? Email us your name and phone number at indicator@npr.org and put \"Indicator Quiz\" in the subject line. Related Episodes: Giant vacuums and other government climate bets Industrial policy, the debate! How EV batteries tore apart Michigan (Update) A drought, a jam, a canal — Panama! Selling safety in the fight against wildfires For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Junk fees, unfilled jobs, jackpot",
+      "date": "2023-10-13T18:43:11-04:00",
+      "npr_url": "https://www.npr.org/2023/10/13/1197955835/fees-germany-powerball",
+      "story_id": "1197955835",
+      "audio_id": "1205896746",
+      "player_url": "https://www.npr.org/player/embed/1197955835/1205896746",
+      "description": "On this edition of Indicators of the Week: the FTC wants to ban hidden fees on what feels like every transaction. Down with junk fees! Germany has a possible fix for its struggling economy and unfilled jobs: immigrants. And we explore why the Powerball jackpots keep getting so big. Related Episodes:10 11 51 52 62 18For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Taking the temperature of the US consumer",
+      "date": "2023-10-12T19:10:35-04:00",
+      "npr_url": "https://www.npr.org/2023/10/12/1197955810/the-indicator-from-planet-money-consumer-sentiment-survey",
+      "story_id": "1197955810",
+      "audio_id": "1205624418",
+      "player_url": "https://www.npr.org/player/embed/1197955810/1205624418",
+      "description": "Economic indicators like the Consumer Price Index can tell us a lot about the past, but what about the future? For close to 80 years, policymakers have relied on the Surveys of Consumers to give them an idea of what the economy might do next. Today on the show, we go behind the curtain at the University of Michigan to meet the people in charge of checking the vibes of the U.S. consumer. Related Episodes:How do you measure inflation? For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "A treacherous descent? What will the Fed do next?",
+      "date": "2023-10-11T15:56:36-04:00",
+      "npr_url": "https://www.npr.org/2023/10/11/1197954713/a-treacherous-descent-what-will-the-fed-do-next",
+      "story_id": "1197954713",
+      "audio_id": "1205240013",
+      "player_url": "https://www.npr.org/player/embed/1197954713/1205240013",
+      "description": "In the world of summiting mountains, more accidents happen on the way down than on the climb up. Today on the show, why that could be a bad omen for interest rates.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "A conversation with Nobel laureate Claudia Goldin (Update)",
+      "date": "2023-10-10T16:23:57-04:00",
+      "npr_url": "https://www.npr.org/2023/10/10/1197954680/the-indicator-from-planet-money-10-10-2023",
+      "story_id": "1197954680",
+      "audio_id": "1204939182",
+      "player_url": "https://www.npr.org/player/embed/1197954680/1204939182",
+      "description": "This episode was originally published on November 30, 2021Earlier this week, Harvard economist Claudia Goldin won the economics Nobel for her research into the gender pay gap. Today, our 2021 interview with Claudia about her work, with an update from her after she learned about her award.Related episodes:When Uncle Sam stops paying the childcare bill (Apple Podcasts/Spotify)Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Wanted: Social workers",
+      "date": "2023-10-06T19:15:51-04:00",
+      "npr_url": "https://www.npr.org/2023/10/06/1197954638/wanted-social-workers",
+      "story_id": "1197954638",
+      "audio_id": "1204412614",
+      "player_url": "https://www.npr.org/player/embed/1197954638/1204412614",
+      "description": "U.S. job growth just surged way past expectations. But one area of employment continues to need more hands on deck: social workers. The evolving occupation is getting new attention from schools all the way up to corporations. Today, we try to understand where this need is coming from and whether it can actually be met. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Body Electric: What digital jobs are doing to our bodies",
+      "date": "2023-10-05T17:16:39-04:00",
+      "npr_url": "https://www.npr.org/2023/10/05/1197954607/the-indicator-from-planet-money-10-05-2023",
+      "story_id": "1197954607",
+      "audio_id": "1204003497",
+      "player_url": "https://www.npr.org/player/embed/1197954607/1204003497",
+      "description": "TED Radio Hour's Manoush Zamorodi joins us today to talk about her new series Body Electric. It's looking at how the information age is affecting our bodies in negative ways. Manoush spoke to researchers who say they've found simple solutions that offset the harms of sitting all day. But do those fixes work in the real world – outside of a lab? For this six-part limited series, NPR is partnering with researchers from Columbia University and maybe... you... to answer that question.Read more on how to join the study: NPR.org/bodyelectricFor sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "You tell us how to fix mortgages, and more",
+      "date": "2023-10-04T18:30:14-04:00",
+      "npr_url": "https://www.npr.org/2023/10/04/1197954546/you-tell-us-how-to-fix-mortgages-and-more",
+      "story_id": "1197954546",
+      "audio_id": "1203767024",
+      "player_url": "https://www.npr.org/player/embed/1197954546/1203767024",
+      "description": "We love getting listener mail! Especially when it makes us think about a topic differently. Today on the show, we hear from listeners about host-free Airbnbs, a Danish solution to mortgage lock-in and a laughable policy for industrial policy. Have something to add to the conversation? Send us your letters to the editor: indicator@npr.org. Related Episodes: AI chips, shared trips, and a shorter work week (Apple Podcasts / Spotify) When mortgage rates are too low to give up (Apple Podcasts / Spotify) Industrial policy, the debate! (Apple Podcasts / Spotify) For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "EVs killed the AM radio star",
+      "date": "2023-10-03T18:15:36-04:00",
+      "npr_url": "https://www.npr.org/2023/10/03/1197954515/evs-killed-the-am-radio-star",
+      "story_id": "1197954515",
+      "audio_id": "1203468679",
+      "player_url": "https://www.npr.org/player/embed/1197954515/1203468679",
+      "description": "When some automakers confirmed this year that they were phasing out AM radio in their electric vehicles, the political backlash was immediate and remarkably bipartisan. Today on the show, what's all the fuss about AM radio? And why does the government want to keep AM radio in your car?For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "When Uncle Sam stops paying the childcare bill",
+      "date": "2023-10-02T17:30:37-04:00",
+      "npr_url": "https://www.npr.org/2023/10/02/1197954497/the-indicator-from-planet-money-10-02-2023",
+      "story_id": "1197954497",
+      "audio_id": "1203118095",
+      "player_url": "https://www.npr.org/player/embed/1197954497/1203118095",
+      "description": "During the Covid-19 pandemic, the United States took dramatic action to invest in child care. Now in 2023, the majority of those investments are coming to an end. Today, we talk to childcare providers about what those funds meant—and where the end of the pandemic-era programs leaves an essential but strained system.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Twerking, tote bags, and the top of the charts",
+      "date": "2023-09-29T18:38:04-04:00",
+      "npr_url": "https://www.npr.org/2023/09/29/1197954458/twerking-tote-bags-and-the-top-of-the-charts",
+      "story_id": "1197954458",
+      "audio_id": "1202781778",
+      "player_url": "https://www.npr.org/player/embed/1197954458/1202781778",
+      "description": "On this musical edition of Indicators of the Week: Live Nation stops taking a cut of small artists' merchandise sales. Meanwhile, some fans are using the Billboard charts formula to boost their favorite artists to the top. And a Jamaican duo is staking a claim to the famous rhythm that defines Reggaeton. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "The walking dead NFTs",
+      "date": "2023-09-28T17:27:10-04:00",
+      "npr_url": "https://www.npr.org/2023/09/28/1197954434/walking-dead-nfts",
+      "story_id": "1197954434",
+      "audio_id": "1202478780",
+      "player_url": "https://www.npr.org/player/embed/1197954434/1202478780",
+      "description": "The NFT mania may have finally run its course. Not too long ago, these pieces of digital art exploded in value with the help of celebrities like Justin Bieber and Paris Hilton. But even the most successful digital artists knew it was a bubble. Today, we consider whether this multi-million dollar fad has truly come to an end or if it's still on its last legs and due for a reimagining.Related Episodes: The $69 Million JPEG (Apple Podcasts/Spotify) and The Celebrity Crypto Nexus (Apple Podcasts/Spotify)For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "How EV batteries tore apart Michigan (Update)",
+      "date": "2023-09-27T17:46:36-04:00",
+      "npr_url": "https://www.npr.org/2023/09/27/1197954378/the-indicator-battery-plant-michigan-evs-update",
+      "story_id": "1197954378",
+      "audio_id": "1202169861",
+      "player_url": "https://www.npr.org/player/embed/1197954378/1202169861",
+      "description": "This episode was originally published on November 14, 2022This week, Ford announced it was pausing work on a new $3.5 billion battery plant in Michigan. President of the United Auto Workers, Shawn Fain, viewed this as a \"thinly veiled threat\" to cut jobs. But this is a factory that's had controversy surrounding it even before this decision. And it all centers around a company called Contemporary Amperex Technology Limited, or CATL.Today, a classic Indicator on the history behind one of the most divisive factory plans in America and the man leading the charge behind the world's transition to electric vehicles.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Chasing the American Dream at Outback Steakhouse",
+      "date": "2023-09-26T20:17:58-04:00",
+      "npr_url": "https://www.npr.org/2023/09/26/1197954357/the-indicator-from-planet-money-draft-09-26-2023",
+      "story_id": "1197954357",
+      "audio_id": "1201931384",
+      "player_url": "https://www.npr.org/player/embed/1197954357/1201931384",
+      "description": "How often do you hang out with people in a different socioeconomic bracket than you? And where do you meet and congregate? Economist Maxim Massenkoff, and his co-author Nathan Wilmers, looked at cell phone location data to figure out where people with vastly different incomes commune together. Today on the show, Maxim discusses his research, and Darian and Alexi head to a restaurant to try and witness some of this class mixing in action.Related Episode: The Secret to Upward Mobility: Friends For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "A million-dollar fossil, and other indicators",
+      "date": "2023-09-22T19:13:39-04:00",
+      "npr_url": "https://www.npr.org/2023/09/22/1197954276/the-indicator-from-planet-money-09-22-2023",
+      "story_id": "1197954276",
+      "audio_id": "1201269359",
+      "player_url": "https://www.npr.org/player/embed/1197954276/1201269359",
+      "description": "Today on the show, we cover this week's top indicators in new work permits for Venezuelan migrants, behind-the-scenes climate meetings and a million-dollar dinosaur skeleton sale. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Selling safety in the fight against wildfires",
+      "date": "2023-09-21T17:43:33-04:00",
+      "npr_url": "https://www.npr.org/2023/09/21/1197954265/selling-safety-in-the-fight-against-wildfires",
+      "story_id": "1197954265",
+      "audio_id": "1200913840",
+      "player_url": "https://www.npr.org/player/embed/1197954265/1200913840",
+      "description": "Wildfires are becoming more frequent and serious due to human-caused climate change. This is prompting a new industry focused on residential wildfire preparedness. Today, we consider the new technology addressing wildfire risk and the cost of protecting yourself.Related Episodes:Gambling, literally, on climate change (Apple Podcasts / Spotify) For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "The Beigie Awards: Manufacturing takes center stage",
+      "date": "2023-09-19T17:43:39-04:00",
+      "npr_url": "https://www.npr.org/2023/09/19/1197954171/the-indicator-from-planet-money-09-19-2023",
+      "story_id": "1197954171",
+      "audio_id": "1200449830",
+      "player_url": "https://www.npr.org/player/embed/1197954171/1200449830",
+      "description": "The Beigies roll around once again to recognize the regional Federal Reserve Bank with the best Beige Book entry. This edition's winner put a spotlight on a company increasing their efforts to recruit young people for an important piece of the manufacturing puzzle.Related Episodes:The Beigie Awards: China Edition (Apple Podcasts / Spotify)For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Coca Cola v. Coca Pola",
+      "date": "2023-09-18T18:06:17-04:00",
+      "npr_url": "https://www.npr.org/2023/09/18/1197954152/coca-cola-v-coca-pola",
+      "story_id": "1197954152",
+      "audio_id": "1200226417",
+      "player_url": "https://www.npr.org/player/embed/1197954152/1200226417",
+      "description": "The coca leaf has been an important part of Andean culture for thousands of years. But when one indigenous woman decided to use the plant in a drink she calls Coca Pola, she awoke a sleeping giant. Today on the show, a small business goes head to head with Coca-Cola over a trademark dispute.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Economics, boosternomics and Swiftnomics",
+      "date": "2023-09-15T18:53:36-04:00",
+      "npr_url": "https://www.npr.org/2023/09/15/1197954124/economics-boosternomics-and-swiftnomics",
+      "story_id": "1197954124",
+      "audio_id": "1199935864",
+      "player_url": "https://www.npr.org/player/embed/1197954124/1199935864",
+      "description": "For this week's Indicators of the Week, Darian is joined by NPR colleagues Jeff Guo and Sydney Lupkin. We get into the latest numbers on child poverty in the U.S. and what it tells us about effective policy intervention. Sydney brings an update on the new covid booster and who's paying for it. And Jeff talks about Taylor Swift...again. He promises it has to do with economics.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Wait — did we really need to raise rates?",
+      "date": "2023-09-14T20:49:52-04:00",
+      "npr_url": "https://www.npr.org/2023/09/14/1197954105/the-indicator-from-planet-money-draft-09-14-2023",
+      "story_id": "1197954105",
+      "audio_id": "1199645347",
+      "player_url": "https://www.npr.org/player/embed/1197954105/1199645347",
+      "description": "Inflation remains stubbornly high as the Federal Open Markets Committee weighs whether they will raise interest rates again. However, new research suggests that elevated interest rates weren't the primary driver for the decline in inflation. Today, we take a look at the debate surrounding disinflation and what comes next for the Federal Reserve.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Giant vacuums and other government climate bets",
+      "date": "2023-09-13T20:35:31-04:00",
+      "npr_url": "https://www.npr.org/2023/09/13/1197954051/giant-vacuums-and-other-government-climate-bets",
+      "story_id": "1197954051",
+      "audio_id": "1199390081",
+      "player_url": "https://www.npr.org/player/embed/1197954051/1199390081",
+      "description": "Yesterday we brought you a debate over whether the government should subsidize industries in the name of economic growth and societal benefits. Today on the show, we zero in on the climate industrial policy of the Biden administration, which is funneling billions into experimental projects that promise to remove, capture and store carbon. It's an effort by the U.S. to meet its ambitious climate goals, but it's not without its skeptics. Related Episodes:Industrial policy, the debate! (Apple Podcasts / Spotify) For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Industrial policy, the debate!",
+      "date": "2023-09-12T18:19:14-04:00",
+      "npr_url": "https://www.npr.org/2023/09/12/1197953091/the-indicator-from-planet-money-industrial-policy-the-debate",
+      "story_id": "1197953091",
+      "audio_id": "1199092174",
+      "player_url": "https://www.npr.org/player/embed/1197953091/1199092174",
+      "description": "There is a lot of taxpayer money going into propping up industry in the U.S. From semiconductor chip fabrication in Arizona to green hydrogen plants in California. Is this smart policy? Today on the Indicator, our guests debate! We're joined by Réka Juhász, economist at the University of British Columbia and Adam Posen, president of the Peterson Institute for International Economics.After the debate, tell us what you thought! Did anything you heard change your mind or make you think differently about industrial policy? Send us a note at indicator@npr.org.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Is retail theft getting worse?",
+      "date": "2023-09-11T17:59:04-04:00",
+      "npr_url": "https://www.npr.org/2023/09/11/1197953024/is-retail-theft-getting-worse",
+      "story_id": "1197953024",
+      "audio_id": "1198818366",
+      "player_url": "https://www.npr.org/player/embed/1197953024/1198818366",
+      "description": "Lately, retailers have been complaining to their investors about thieves coming to their stores and stealing stuff and blaming them for falling profits. It's the biggest part of a well-known industry problem called \"shrink,\" but is this trend as pervasive as stores are making it out to be? Today on the show, retail theft and what stores are doing about it. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Apple, drugs, Grindr",
+      "date": "2023-09-08T17:53:57-04:00",
+      "npr_url": "https://www.npr.org/2023/09/08/1198534335/apple-drugs-grindr",
+      "story_id": "1198534335",
+      "audio_id": "1198988773",
+      "player_url": "https://www.npr.org/player/embed/1198534335/1198988773",
+      "description": "Today on Indicators of the Week: government iPhone restrictions in China that walloped Apple's market value. Plus plans emerge over how the US government plans to negotiate drug prices. Also, a mass exodus of employees from a top dating app that sheds some light on where the whole working from home debate is. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "'Welcome to the USA! Now get to work.'",
+      "date": "2023-09-07T18:50:22-04:00",
+      "npr_url": "https://www.npr.org/2023/09/07/1198338411/welcome-to-the-usa-now-get-to-work",
+      "story_id": "1198338411",
+      "audio_id": "1198988769",
+      "player_url": "https://www.npr.org/player/embed/1198338411/1198988769",
+      "description": "When refugees arrive in the U.S. the clock starts ticking. They usually have up to 90 days to get a job and become 'self-sufficient'.Researcher Blair Sackett says that that's simply not enough time for refugees to acclimate to a totally new country and culture and find work. She argues that current policy essentially resettles refugees into poverty. Today on the show we explore that 90-day policy and potential solutions to help refugees find their financial footing.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "The dementia tax",
+      "date": "2023-09-06T19:33:01-04:00",
+      "npr_url": "https://www.npr.org/2023/09/06/1197883843/the-dementia-tax",
+      "story_id": "1197883843",
+      "audio_id": "1198988765",
+      "player_url": "https://www.npr.org/player/embed/1197883843/1198988765",
+      "description": "More than 7 million Americans are living with dementia. To take care of this population, family members must often make the difficult choice of giving up work or paying for a costly facility. Today on the show, the rising cost of memory care in an aging population. Related Episodes:Who's gonna take care of grandma? For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "The Beigie Awards: China Edition",
+      "date": "2023-09-05T17:07:22-04:00",
+      "npr_url": "https://www.npr.org/2023/09/05/1197718933/the-beigie-awards-china-edition",
+      "story_id": "1197718933",
+      "audio_id": "1198988761",
+      "player_url": "https://www.npr.org/player/embed/1197718933/1198988761",
+      "description": "The Beigies are back, with a twist! In China, data on the economy is sometimes difficult to come by, so we thought we'd take a leaf out of the US Federal Reserve's Beige Book instead. Today, we bring you some colorful anecdotes about China's economy, on inbound tourism and revenge spending, neither of which is fueling an economic comeback.Related Episodes:Boats, bikes and the Beigies (Apple Podcasts / Spotify)Young, 'spoiled and miserable' in ChinaTwo Indicators shaking China's economyFor sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Jobs Friday: More jobs and more unemployment",
+      "date": "2023-09-01T19:47:57-04:00",
+      "npr_url": "https://www.npr.org/2023/09/01/1197400755/jobs-friday-more-jobs-and-more-unemployment",
+      "story_id": "1197400755",
+      "audio_id": "1198988757",
+      "player_url": "https://www.npr.org/player/embed/1197400755/1198988757",
+      "description": "The jobs report is in! And both the rate of employment AND unemployment went up in August. How does that happen? Plus, how disabled people are doing in the labor market.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "A drought, a jam, a canal — Panama!",
+      "date": "2023-08-31T19:00:41-04:00",
+      "npr_url": "https://www.npr.org/2023/08/31/1197046076/a-drought-a-jam-a-canal-panama",
+      "story_id": "1197046076",
+      "audio_id": "1198988753",
+      "player_url": "https://www.npr.org/player/embed/1197046076/1198988753",
+      "description": "The Panama Canal links the Atlantic and Pacific oceans. It sees hundreds of billions worth of stuff pass through it every year. But a historic drought is making it a little harder for big cargo ships to get through the fifty-one mile long channel. Today on the show, we look at how this backup presents yet another test for global supply chains. Related Episode: Two Indicators: supply chain and solutions (Apple Podcasts / Spotify) For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Young, \"spoiled and miserable\" in China",
+      "date": "2023-08-30T18:03:45-04:00",
+      "npr_url": "https://www.npr.org/2023/08/30/1196890793/young-spoiled-and-miserable-in-china",
+      "story_id": "1196890793",
+      "audio_id": "1198988729",
+      "player_url": "https://www.npr.org/player/embed/1196890793/1198988729",
+      "description": "Every day, A Ze, a young woman in Beijing, would wake up early, do her makeup, and walk to her old work bus stop... and keep going. She'd left her job but couldn't let her parents know. China's urban youth unemployment rate hit 21% in June, a number way up from pre-pandemic times. But at the same time, factories are crying out for workers. Today, we talk about China's slowdown in growth, and how it's hit white-collar job openings the hardest, and how China's educated young people are sometimes opting out of work entirely.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "The problems with the US's farm worker program",
+      "date": "2023-08-29T19:59:43-04:00",
+      "npr_url": "https://www.npr.org/2023/08/29/1196573413/the-problems-with-the-uss-farm-worker-program",
+      "story_id": "1196573413",
+      "audio_id": "1198988733",
+      "player_url": "https://www.npr.org/player/embed/1196573413/1198988733",
+      "description": "Over the years, U.S. agriculture has grown increasingly dependent on the H-2A Guest Worker program to bring in foreign workers to harvest crops. H2A is a vestige of a U.S. and Mexican policy called the Bracero Program, which ended in the 1960s. Today on the show, why farmers and farm worker advocates are calling for more scrutiny of the current-day visa program, which has been dogged by concerns about worker exploitation and safety. Related Episodes:Farm Jobs Friday (Apple Podcasts / Spotify) For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "The Indicator Quiz: The Internet",
+      "date": "2023-08-28T18:33:22-04:00",
+      "npr_url": "https://www.npr.org/2023/08/28/1196424366/the-indicator-quiz-the-internet",
+      "story_id": "1196424366",
+      "audio_id": "1198988737",
+      "player_url": "https://www.npr.org/player/embed/1196424366/1198988737",
+      "description": "What's hotter than a leather car seat in the late summer? The Indicator Quiz! We bring a listener onto the show and test their econ knowledge. Today's quiz is all about the Internet and artificial intelligence. Play along with us and see how you do! Are you interested in being a contestant on our next Indicator Quiz? Just email us your name and phone number at indicator@npr.org and put \"Indicator Quiz\" in the subject line. Related Episodes: Breaking up big business is hard to do A night at the museum of the economy r/Boxes, r/Reddit, r/AI Is AI a job-killer or upskiller? Inside the underwater cables powering the economyFor sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "AI chips, shared trips, and a shorter work week",
+      "date": "2023-08-25T19:17:25-04:00",
+      "npr_url": "https://www.npr.org/2023/08/25/1196130707/ai-chips-shared-trips-and-a-shorter-work-week",
+      "story_id": "1196130707",
+      "audio_id": "1198988741",
+      "player_url": "https://www.npr.org/player/embed/1196130707/1198988741",
+      "description": "It's Indicators of the Week, our weekly news roundup. Today, AI doesn't want to invest in AI, a county in Washington state implements a 4-day work week, and NYC says bye bye to Airbnb, sorta.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Why a weak ruble is good for Russia's budget but not Putin's image",
+      "date": "2023-08-24T19:06:22-04:00",
+      "npr_url": "https://www.npr.org/2023/08/24/1195733556/why-a-weak-ruble-is-good-for-russias-budget-but-not-putins-image",
+      "story_id": "1195733556",
+      "audio_id": "1198988745",
+      "player_url": "https://www.npr.org/player/embed/1195733556/1198988745",
+      "description": "Russia's Ruble is hovering around its lowest value against the dollar since June 2022. A weak currency is already a big deal for ordinary people affected by inflation, but in Russia, the concern is only amplified because of the Ruble's unique history in Russia. Today, we dive deep into Russia's historical connection to the Ruble and why a weak Ruble puts Russia in a difficult position today. Related Episodes: The artificial strength of the Russian ruble (Apple Podcasts / Spotify)For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "How fed up farmers started the only government-run bank in the US",
+      "date": "2023-08-23T17:50:06-04:00",
+      "npr_url": "https://www.npr.org/2023/08/23/1195518059/how-fed-up-farmers-started-the-only-government-run-bank-in-the-us",
+      "story_id": "1195518059",
+      "audio_id": "1198988749",
+      "player_url": "https://www.npr.org/player/embed/1195518059/1198988749",
+      "description": "The idea of a state-run bank in the United States feels like a foreign concept. While public banks are fixtures of the financial system in countries like Canada and Chile, only one state in the U.S. can say they have a public bank. Today, we explore the promises and challenges of public banking in the U.S. and what advocates can learn from 20th-century farmers in North Dakota. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Why pizza costs more in Iceland and other listener questions",
+      "date": "2023-08-22T18:43:23-04:00",
+      "npr_url": "https://www.npr.org/2023/08/22/1195270514/why-pizza-costs-more-in-iceland-and-other-listener-questions",
+      "story_id": "1195270514",
+      "audio_id": "1198987134",
+      "player_url": "https://www.npr.org/player/embed/1195270514/1198987134",
+      "description": "You ask, we answer! We help a parent explain exchange rates to their kid, a high school teacher explain bond prices to his students, and we follow up on what happened to the diversity of the student body at the University of California after the state's ban on affirmative action. If you have a question you'd like us to answer, email us at indicator@npr.org.Can't get enough of these topics? We've got you covered! Here's our reporting on how ending affirmative action changed California and NPR's follow up on what happened after. More on the birth of the bond, the bond market and the yield curve. And a whole lotta Iceland (Justin Bieber, planes), plus dollar-slice pizza.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "The echo of the bison",
+      "date": "2023-08-21T18:37:13-04:00",
+      "npr_url": "https://www.npr.org/2023/08/21/1195091189/the-echo-of-the-bison",
+      "story_id": "1195091189",
+      "audio_id": "1198987138",
+      "player_url": "https://www.npr.org/player/embed/1195091189/1198987138",
+      "description": "For over 10,000 years, many peoples in what's now known as North America relied on bison. Thirty million of these creatures stretched from modern Canada all the way down to Mexico. But in the late 1800s hide-hunters and the U.S. military annihilated the bison, bringing them to the brink of extinction. And that had consequences for the people who relied on the bison. Consequences that we still see today.Today, we hear from an economist who revealed the shocking numbers telling this story, and one member of the Blackfeet Nation who is trying to bring back the bison.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Metals, government debt, and a climate lawsuit",
+      "date": "2023-08-18T16:38:12-04:00",
+      "npr_url": "https://www.npr.org/2023/08/18/1194742750/metals-government-debt-and-a-climate-lawsuit",
+      "story_id": "1194742750",
+      "audio_id": "1198987142",
+      "player_url": "https://www.npr.org/player/embed/1194742750/1198987142",
+      "description": "Last year, the Inflation Reduction Act was signed into law as the Biden Administration's signature attempt to combat climate change. Today, we present three climate-related indicators with guest Nate Hegyi of the public radio podcast, Outside/In.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "When mortgage rates are too low to give up",
+      "date": "2023-08-17T17:40:50-04:00",
+      "npr_url": "https://www.npr.org/2023/08/17/1194445813/when-mortgage-rates-are-too-low-to-give-up",
+      "story_id": "1194445813",
+      "audio_id": "1198987146",
+      "player_url": "https://www.npr.org/player/embed/1194445813/1198987146",
+      "description": "The average mortgage rate in the U.S. just hit 7.09%—its highest level in more than two decades. And that's having ripple effects in the wider economy. Some homeowners feel locked in, tethered to their super low interest rates and unable to find something better. Today on the show, what happens when homeowners are locked in by low rates? For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "How Yellow wound up in the red",
+      "date": "2023-08-16T18:13:36-04:00",
+      "npr_url": "https://www.npr.org/2023/08/16/1194301913/how-yellow-up-wound-up-in-the-red",
+      "story_id": "1194301913",
+      "audio_id": "1198987150",
+      "player_url": "https://www.npr.org/player/embed/1194301913/1198987150",
+      "description": "Yellow stunned the trucking industry when it filed for bankruptcy this month. The nearly hundred-year old company said it will lay off 30,000 employees and liquidate all of its assets. On today's show, a glimpse into Yellow's bankruptcy process: who's blaming who for what, and an explainer on a specific type of loan - the debtor in possession financing - which promises some rich returns to the lender in this case.For more on challenges in the trucking industry check out our story on the spot market and the so-called freight recession.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Is math real? And other existential questions",
+      "date": "2023-08-15T19:26:00-04:00",
+      "npr_url": "https://www.npr.org/2023/08/15/1193979343/is-math-real-and-other-existential-questions",
+      "story_id": "1193979343",
+      "audio_id": "1198987154",
+      "player_url": "https://www.npr.org/player/embed/1193979343/1198987154",
+      "description": "We are often taught to think of math as a rigid set of rules, never to be questioned. But that is exactly the wrong way to think about it, according to one mathematician. Today on the show, we talk to Eugenia Cheng about her new book \"Is Math Real?: How Simple Questions Lead Us to Mathematics' Deepest Truths\" and how math can help us ask more probing questions about the world around us. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Breaking up big business is hard to do",
+      "date": "2023-08-14T19:39:16-04:00",
+      "npr_url": "https://www.npr.org/2023/08/14/1193784258/breaking-up-big-business-is-hard-to-do",
+      "story_id": "1193784258",
+      "audio_id": "1198987158",
+      "player_url": "https://www.npr.org/player/embed/1193784258/1198987158",
+      "description": "The Federal Trade Commission is the sheriff for big businesses. One of its main functions is to stop companies from buying up other companies in a way that hurts competition. Those investigations have been going way up under FTC Chair Lina Khan, and it's not gone unnoticed by critics in business and some Republican lawmakers. Today on the show, we look at the FTC's scorecard under Lina Khan. Related Episodes: Listen to Planet Money's three-part series on antitrust. • Antitrust one • Antitrust two • Antitrust three For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Tale as old as time: Indicators of the Week",
+      "date": "2023-08-11T19:08:48-04:00",
+      "npr_url": "https://www.npr.org/2023/08/11/1193560942/tale-as-old-as-time-indicators-of-the-week",
+      "story_id": "1193560942",
+      "audio_id": "1198987162",
+      "player_url": "https://www.npr.org/player/embed/1193560942/1198987162",
+      "description": "In a week jam-packed with major economic news, we've selected a few of our favorite stories for Indicators of the Week. Today we cover an Italian bank story, the drop in Chinese imports and the $1.6 billion acquisition of Simon & Schuster.Related Episodes: Are we entering a new dawn for antitrust enforcement? (Apple Podcasts / Spotify)For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Is this a bank?",
+      "date": "2023-08-10T18:25:56-04:00",
+      "npr_url": "https://www.npr.org/2023/08/10/1193331363/is-this-a-bank",
+      "story_id": "1193331363",
+      "audio_id": "1198987166",
+      "player_url": "https://www.npr.org/player/embed/1193331363/1198987166",
+      "description": "You've heard of The Price Is Right, but what about Is This A Bank? It's a game show where contestants puzzle over some obvious and not-so-obvious places where people store their money. This podcast may or may not remind you where your secret stashes of cash are hidden.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "A night at the museum of the economy",
+      "date": "2023-08-09T18:42:43-04:00",
+      "npr_url": "https://www.npr.org/2023/08/09/1192951246/a-night-at-the-museum-of-the-economy",
+      "story_id": "1192951246",
+      "audio_id": "1198987170",
+      "player_url": "https://www.npr.org/player/embed/1192951246/1198987170",
+      "description": "Dinosaur museums have dinosaurs. Space museums have spacecraft. But what would a dedicated museum of the economy have in it? That was a question author and friend of the show Tim Harford recently posed in his column for the Financial Times. So we decided to run with this thought experiment, too. Today on the show, get ready for a night at the museum — of the economy. Read Tim's original column and listen to his podcast.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Return of the crab twins",
+      "date": "2023-08-08T17:00:36-04:00",
+      "npr_url": "https://www.npr.org/2023/08/08/1192729444/return-of-the-crab-twins",
+      "story_id": "1192729444",
+      "audio_id": "1198987174",
+      "player_url": "https://www.npr.org/player/embed/1192729444/1198987174",
+      "description": "RaeShawn and LaShone Middleton are twin sisters and business owners based in Columbia, Maryland. We last talked to them in the midst of the pandemic when they were just getting started with their steamed crab delivery service called R&L Crab. Today, we check back with the sisters and see how their business is fairing two years later.Related Episodes: Entrepreneurship On The Rise (Apple Podcasts / Spotify)For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "What could break next?",
+      "date": "2023-08-07T17:07:34-04:00",
+      "npr_url": "https://www.npr.org/2023/08/07/1192490563/what-could-break-next",
+      "story_id": "1192490563",
+      "audio_id": "1198987178",
+      "player_url": "https://www.npr.org/player/embed/1192490563/1198987178",
+      "description": "Even if there isn't a recession right now, there are still vulnerable spots in the economy that could cause economic pain. Today on the show, we explore why some are concerned about the markets for commercial real estate and private credit. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Farm Jobs Friday",
+      "date": "2023-08-04T18:14:16-04:00",
+      "npr_url": "https://www.npr.org/2023/08/04/1192158687/farm-jobs-friday",
+      "story_id": "1192158687",
+      "audio_id": "1198987182",
+      "player_url": "https://www.npr.org/player/embed/1192158687/1198987182",
+      "description": "Farm employment numbers are historically very hard to track. Partly because they fluctuate a lot from season to season, partly because a large portion of farm workers are undocumented. They're also not included in the monthly job numbers, which means we hardly ever talk about them on Jobs Friday. But today we're bringing you \"Farm Jobs Friday\" as we zoom in on three big trends in farm employment. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "The life and death spirals of social networks",
+      "date": "2023-08-03T18:38:04-04:00",
+      "npr_url": "https://www.npr.org/2023/08/03/1192001759/the-life-and-death-spirals-of-social-networks",
+      "story_id": "1192001759",
+      "audio_id": "1198987186",
+      "player_url": "https://www.npr.org/player/embed/1192001759/1198987186",
+      "description": "Meta's new social media platform, Threads, had a rocket-like start when it launched a month ago as a challenger to X (formerly known as Twitter). But it's far from clear which platform will prove dominant. Today, an expert in online networks walks us through the economics of this social media battle. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Fitch, please! Why Fitch lowered the US credit rating",
+      "date": "2023-08-02T18:33:08-04:00",
+      "npr_url": "https://www.npr.org/2023/08/02/1191724823/fitch-please-why-fitch-lowered-the-us-credit-rating",
+      "story_id": "1191724823",
+      "audio_id": "1198987190",
+      "player_url": "https://www.npr.org/player/embed/1191724823/1198987190",
+      "description": "The credit rating agency, Fitch, caused a stir yesterday when it downgraded the United States' credit rating from AAA to AA plus. This came less than a week since Federal Reserve staff stopped forecasting a recession on the horizon. So what gives? Today, we talk to an economist to break down the reasons why Fitch no longer views the US as among the safest of bets. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
     }
   ]
 }
