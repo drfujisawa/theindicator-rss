@@ -1,404 +1,190 @@
-# assembles a podcast feed (rss/xml) containing all planet money episodes
-#   (their official feed only includes the most recent episodes)
-# by downloading the human-interfacing HTML (which does contain all episodes, surprisingly),
-#   parsing it into python datatypes (PlanetMoneyHTMLParser), and emitting an xml rss feed
+#!/usr/bin/env python3
 
-import re
-import sys
-import html
-import math
-import json
-import time
-import pytz
-import base64
-import pickle
-import datetime
-import itertools
-import html.parser
-import email.utils
-import collections
+import os
 import urllib.request
-import dateutil.parser
+import xml.etree.ElementTree as ET
+from copy import deepcopy
+from email.utils import parsedate_to_datetime
 
 
-def npr_HTML_request(url):
-    req = urllib.request.Request(url)
-    req.add_header('Cookie', 'trackingChoice=true; dateOfChoice=1528282943947; choiceVersion=1')  # GDPR cookie
-
-    with urllib.request.urlopen(req) as response:
-        return str(response.read(), 'utf-8')
+OFFICIAL_FEED = "https://feeds.npr.org/510325/podcast.xml"
+OUTPUT_FILE = "theindicator_feed.xml"
 
 
-# input:   "npr planet money" html website corresponding to a month+year-date
-# output:  stored in self.feed_entries which is a list of entries
-#               each entry corresponds to a podcast episode
-#               each entry is a dictionary with info, eg
-#                   { 'title': 'Episode ###: Bla',  'link': 'https://...',  ...} etc
-class PlanetMoneyHTMLParser(html.parser.HTMLParser):
+def download_official_feed():
+    print("Downloading current NPR Indicator feed...")
 
-    def __init__(self):
-        self.prev = None
-        self.next_attr = ''
+    request = urllib.request.Request(
+        OFFICIAL_FEED,
+        headers={
+            "User-Agent": "Mozilla/5.0 theindicator-rss"
+        }
+    )
 
-        self.subpage = None
-
-        # stack tags (sneaking in before content) we want to ignore in handle_data
-        # eg   <want> <time="12"> irrelevant data! </time> data we want </want>
-        # so here we would ignore 'time'
-        self.tag_stack = []
-
-        self.feed_entry = {}
-        self.feed_entries = []
-
-        self.tagattrs = collections.namedtuple('tagattrs', ['tag', 'attrs'])
-
-        super().__init__()
-
-    def handle_starttag(self, tag, attrs):
-
-        attrs = dict(attrs)
-
-        if self.next_attr:
-            self.tag_stack.append(tag)
-
-        if tag == 'a' and self.prev.tag == 'h2' and self.prev.attrs.get('class') == 'title':  # on episode list page
-            self.subpage = attrs['href']
-            self.next_attr = 'title'
-        if attrs.get('class') == 'audio-module-title':  # on episode's own page (= subpage)
-            self.next_attr = 'title'
-
-        if tag == 'a' and self.prev.tag == 'p' and self.prev.attrs.get('class') == 'teaser':
-            self.next_attr = 'description'
-        if tag == 'meta' and attrs.get('name') == 'description':
-            self.feed_entry['description'] = attrs['content']
-
-        if tag == 'time':
-            # TODO: some are missing duration, eg #366  (DL?)
-            if attrs.get('class') == 'audio-module-duration':
-                self.next_attr = 'itunes:duration'
-            elif self.prev.attrs.get('class') == 'dateblock' or 'href' in self.prev.attrs:
-                self.feed_entry['pubDate'] = attrs['datetime']
-
-        # don't use download link for download but instead stream-link as some DL links are missing ! eg #702
-        if attrs.get('class') == 'audio-module-controls-wrap' and self.prev.attrs.get('class') == 'audio-module-title' and 'data-audio' in attrs:
-            self.feed_entry['link'] = json.loads(attrs['data-audio'])['audioUrl']   # ondemand.npr.org
-            if not self.feed_entry['link'].startswith('https://'):
-                self.feed_entry['link'] = base64.b64decode(self.feed_entry['link']).decode('UTF-8')  # WTF???
-
-        # download links deleted..
-        if self.feed_entry.get('title') == 'Hear: They Know You':
-            self.feed_entry['link'] = 'http://podcastdownload.npr.org/anon.npr-podcasts/podcast/510289/104203194/npr_104203194.mp3'
-        if self.feed_entry.get('title') == 'Secrets Of The Watchmen':
-            self.feed_entry['link'] = 'http://podcastdownload.npr.org/anon.npr-podcasts/podcast/510289/105020259/npr_105020259.mp3'
-        # download links missing..
-        if self.feed_entry.get('title') == 'Episode 830: XXX-XX-XXXX':
-            self.feed_entry['link'] = 'https://20963.mc.tritondigital.com/NPR_510289/media-session/0d8e5b34-3266-4faf-8068-7a7b414b2be2/anon.npr-podcasts/podcast/npr/pmoney/2018/03/20180314_pmoney_pmpod830-2d1cb700-1ad5-4fd4-89a7-3c51f6d31b39.mp3?orgId=1&d=1243&p=510289&story=593603674&t=podcast&e=593603674&siteplayer=true&dl=1'
-
-        self.prev = self.tagattrs(tag, attrs)
-
-    # re-use scraping code on an indiviual episode's page (= subpage), this requires some trickery
-    #   (combining all fake feed_entries of the subpage on top of the current dict)
-    def add_subpage_info(self, url):
-        the_page = npr_HTML_request(url)
-
-        parser = PlanetMoneyHTMLParser()
-        parser.feed(the_page)
-        if 'audio-module-controls-wrap' not in the_page or '<b class="audio-availability-message">Audio for this story is unavailable.</b>' in the_page:
-            print('No download link on page: ' + url, file=sys.stderr)
-            # dl_missing = True
-        parser.close()
-
-        for e in parser.feed_entries:
-            self.feed_entry.update(e)
-
-    def handle_endtag(self, tag):
-        if self.tag_stack:
-            self.tag_stack.pop()
-
-        if tag == 'article' and self.feed_entry:
-            # since 2017 stories lack audio modules now, you have to go on the episode pages themselves for the links =(
-            #   and also for full release date timestamps (overview pages only have the date, not the time)
-
-            if self.subpage:
-                # print('DL-ing ' + self.subpage)
-                self.add_subpage_info(self.subpage)
-
-                # OMG they straight up forgot an episode in their feed. this intern needs to be fired xD
-                # manually add previous episode for the 3 eps missing in the feed
-                if self.subpage == 'https://www.npr.org/sections/money/2016/07/22/487069271/episode-576-when-women-stopped-coding':
-                    self.feed_entries.append(self.feed_entry)
-                    self.feed_entry = {}
-                    self.add_subpage_info('https://www.npr.org/sections/money/2016/07/20/486785422/episode-713-paying-for-the-crime')
-
-                if self.subpage == 'https://www.npr.org/sections/money/2010/08/03/128960709/the-tuesday-podcast':
-                    self.feed_entries.append(self.feed_entry)
-                    self.feed_entry = {}
-                    self.add_subpage_info('https://www.npr.org/sections/money/2010/07/30/128880374/the-friday-podcast-tallying-up-the-pelican-bill')
-
-                if self.subpage == 'https://www.npr.org/sections/money/2018/08/29/643072388/episode-783-new-jersey-bails-out':
-                    self.feed_entries.append(self.feed_entry)
-                    self.feed_entry = {}
-                    print('prev')
-                    self.add_subpage_info('https://www.npr.org/sections/money/2018/08/24/641739640/episode-861-food-scare-squad')
-
-                self.subpage = None
-
-            # is unindented to sneakily handle a subpage's pseduo-feed also
-            self.feed_entries.append(self.feed_entry)
-            self.feed_entry = {}
+    with urllib.request.urlopen(request) as response:
+        return response.read()
 
 
-    def handle_data(self, data):
-        if not self.next_attr:
-            return
+def get_episode_id(item):
+    """
+    Return something stable that identifies an episode.
 
-        if self.tag_stack:
-            return
+    Prefer GUID. If that is unavailable, use the enclosure URL.
+    """
 
-        # o god pls stop with the inconsistencies =/  affects #824 #657 #618 and others  -> 'Listen ' 'Listen to Podcast' 'Listen to Mark's Story' etc
-        if self.next_attr == 'title' and data.startswith('Listen ') and not data.startswith('Listen Up'):
-            self.next_attr = ''
-            return
+    guid = item.find("guid")
 
-        # some missing initial '#'s...
-        if self.next_attr == 'title' and re.match('[0-9]+:', data):
-            self.feed_entry['title'] = '#' + data
-            self.next_attr = ''
-            return
+    if guid is not None and guid.text:
+        return guid.text.strip()
 
-        self.feed_entry[self.next_attr] = data
-        self.next_attr = ''
+    enclosure = item.find("enclosure")
 
+    if enclosure is not None:
+        url = enclosure.attrib.get("url")
 
-PLANET_MONEY_EPOCH = dateutil.parser.parse('2008-09-09T16:45:00-04:00')  # datetime of 1st episode
-FEED_PICKLE_FILE = 'npr_pm_feed.pickle'
-URL_STEM = 'https://www.npr.org/sections/money/127413729/planet-money/archive'
+        if url:
+            return url
+
+    return None
 
 
-# try to load cached results from a previous run of this script
-def load_feed_entries():
+def episode_date(item):
+    pubdate = item.find("pubDate")
+
+    if pubdate is None or not pubdate.text:
+        return 0
+
     try:
-        with open(FEED_PICKLE_FILE, 'rb') as f:
-            # i think we have to store the rss feed "newest-first"
-            #     (everyone else does it, looks dum in firefox if "oldest-first")
-            old_feed_entries = pickle.load(f)
-        epoch = dateutil.parser.parse(old_feed_entries[0]['pubDate']) - datetime.timedelta(days=1)
-
-    except:
-        old_feed_entries = []
-        epoch = PLANET_MONEY_EPOCH
-
-    return (old_feed_entries, epoch)
+        return parsedate_to_datetime(pubdate.text).timestamp()
+    except Exception:
+        return 0
 
 
-def parse_site_into_feed(old_feed_entries, epoch):
+def load_existing_feed():
+    if not os.path.exists(OUTPUT_FILE):
+        return None
 
-    now = datetime.datetime.now(pytz.utc)
-    print('Going through ~' + str(math.ceil((now - epoch).days / 40)) + ' pages of episodes, please be patient...')
-    req_nr = 0
-
-    new_feed_entries = []
-
-    # we have to iteratre from present to the past because we need to know the last date to make the next request
-    curdate = now
-    while curdate > epoch:
-
-        req_nr += 1
-        print('On page #' + str(req_nr) + ' for date ' + curdate.strftime('%Y-%m-%d'), end='\r')
-
-        full_url = URL_STEM + curdate.strftime('?date=%m-%d-%Y')  # site uses yankeedates !! lmao
-
-        # print('init DL-ing ' + full_url)
-        parser = PlanetMoneyHTMLParser()
-        parser.feed(npr_HTML_request(full_url))
-        parser.close()
-
-        for e in parser.feed_entries:
-            # exclude space overview page with 4 episode links
-            if not 'link' in e or e['title'] == 'Episode 4':
-                continue
-            curdate = dateutil.parser.parse(e['pubDate'])
-            # prevent duplicates -- nb PM sometimes changes links =/// (version 2's etc) -> podcatcher thinks it's a SEPERATE ep
-            if all(f['link'] != e['link'] for f in old_feed_entries) and \
-               all(f['link'] != e['link'] for f in new_feed_entries) and \
-               all(f['pubDate'] != e['pubDate'] for f in old_feed_entries) and \
-               all(f['pubDate'] != e['pubDate'] for f in new_feed_entries):
-                new_feed_entries.append(e)
-
-    return new_feed_entries
+    print(f"Loading existing {OUTPUT_FILE}...")
+    return ET.parse(OUTPUT_FILE)
 
 
-# TODO: use feed generator instead of manually writing text
-def save_feed_entries(all_feed_entries):
+def build_feed():
+    official_xml = download_official_feed()
 
-    print('All requests done! Now saving to file(s).')
+    official_root = ET.fromstring(official_xml)
+    official_channel = official_root.find("channel")
 
-    with open(FEED_PICKLE_FILE, 'wb') as f:
-        pickle.dump(all_feed_entries, f)
+    if official_channel is None:
+        raise RuntimeError("Could not find <channel> in NPR feed.")
 
+    existing_tree = load_existing_feed()
 
-    all_feed_entries.reverse()
+    #
+    # First run:
+    # Start with NPR's current feed exactly as NPR provides it.
+    #
+    if existing_tree is None:
+        print("No existing full-history feed found.")
+        print("Creating one from NPR's current feed.")
 
-    started_count = False
-    ep = None
+        tree = ET.ElementTree(official_root)
 
-    # sanitize feed entries:  add ep #'s, san titles, ..
-    for i,e in enumerate(all_feed_entries):
+    else:
+        tree = existing_tree
 
-        print('--------')
-        print(e['title'])
+        existing_root = tree.getroot()
+        existing_channel = existing_root.find("channel")
 
-        e['guid'] = e['link']
-        e['pubDate'] = email.utils.format_datetime(dateutil.parser.parse(e['pubDate']))
+        if existing_channel is None:
+            raise RuntimeError(
+                f"Could not find <channel> in {OUTPUT_FILE}."
+            )
 
-        for stripme in ('Hear: ', 'Podcast: ', 'Listen Up: ', 'The Friday Podcast: ', 'The Tuesday Podcast: '):
-            if e['title'].startswith(stripme):
-                e['title'] = e['title'][len(stripme):]
+        #
+        # Find all episodes already saved.
+        #
+        known_ids = set()
 
-        if e['title'].startswith(' Episode '):  # affected: #428 #567  -> intern's ass = whooped
-            e['title'] = e['title'][1:]
-        if e['title'].startswith(' #'):  # affected: #833
-            e['title'] = e['title'][1:]
-        if e['title'].startswith('Episode '):
-            e['title'] = '#' + e['title'][8:]
+        for item in existing_channel.findall("item"):
+            episode_id = get_episode_id(item)
 
-        if "Japan's Lost Lesson" in e['title'] and not started_count:
-            started_count = True
-            ep = 1
+            if episode_id:
+                known_ids.add(episode_id)
 
-        if e['title'].startswith('Deep Read: ') or e['title'].startswith('Our First Podcast: '):
-            continue
+        #
+        # Copy episodes from NPR that we haven't saved before.
+        #
+        new_items = []
 
-        if e['title'].startswith('SPACE ') or e['title'].startswith('Oil #'):
-            ep += 1
-            continue
+        for item in official_channel.findall("item"):
+            episode_id = get_episode_id(item)
 
-        if any(x in e['title'] for x in ['Episode #1', "'The Souls Of China'"]):
-            continue
+            if episode_id and episode_id not in known_ids:
+                new_items.append(deepcopy(item))
+                known_ids.add(episode_id)
 
-        # some episodes have original titles different from their re-run titles  => needed for matching
-        if e['title'] == 'Medieval Economics':
-            e['title'] = 'Bloody, Miserable Medieval Economics'
-        if e['title'] == 'The Rise And Fall Of An Internet Giant':
-            e['title'] = 'MySpace Was Born Of Total Ignorance. Also Porn And Spyware'
-        if e['title'] == 'Why Economists Hate Gifts':
-            e['title'] = 'Making Christmas More Joyful, And More Efficient'
-        if e['title'] == 'How To Kill A Currency':
-            e['title'] = 'Kill The Euro, Win $400,000'
+        print(f"Found {len(new_items)} new episode(s).")
 
+        for item in new_items:
+            existing_channel.append(item)
 
-        if started_count:
+        #
+        # Sort episodes newest first.
+        #
+        items = existing_channel.findall("item")
 
-            m = re.match('#[0-9]+: ', e['title'])
+        for item in items:
+            existing_channel.remove(item)
 
-            if m:
-                ep_nr = m.group(0)[1:-2]
-                if ep == int(ep_nr):
-                    ep += 1
-                else:
-                    # has to be a re-run, otherwise we skipped something
-                    assert int(ep_nr) < ep
+        items.sort(
+            key=episode_date,
+            reverse=True
+        )
 
-            else:
-                # manually add numbering, either based on re-runs (for) or on counter (else)
-                for f in all_feed_entries[:i]:
-                    old_title = f['title']
-                    m_old = re.match('#[0-9]+: ', old_title)
-                    if m_old:
-                        old_title = old_title[m_old.end(0):]
-                    if e['title'] == old_title:
-                        e['title'] = f['title']
-                        break
-                else:
-                    e['title'] = '#' + str(ep) + ': ' + e['title']
-                    ep += 1
+        for item in items:
+            existing_channel.append(item)
 
-        # missing and forever lost -- RIP
-        while ep in (139,):
-            ep += 1
+        #
+        # Update show-level metadata from NPR.
+        #
+        # Leave the stored episode list alone.
+        #
+        item_tag_names = {"item"}
 
-        print(e['title'])
+        for old_element in list(existing_channel):
+            if old_element.tag not in item_tag_names:
+                existing_channel.remove(old_element)
 
+        metadata = []
 
-    all_feed_entries.reverse()
+        for element in official_channel:
+            if element.tag != "item":
+                metadata.append(deepcopy(element))
 
-    found_episodes = []
+        #
+        # Put NPR metadata before episodes.
+        #
+        for index, element in enumerate(metadata):
+            existing_channel.insert(index, element)
 
-    with open('npr_pm_feed.xml', 'w') as f:
-        f.write('''<?xml version="1.0" encoding="utf-8"?>
-            <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
-            <channel>
-            <title>Planet Money but it's all episodes</title>
-            <link>https://github.com/xjcl/planetmoney-rss/tree/gh-pages</link>
-            <image><url>http://nationalpublicmedia.com/wp-content/uploads/2014/06/planetmoney.png</url></image>
-            <description>NPR's Planet Money. The economy, explained. Collated into a full-history feed by /u/xjcl.</description>\n''')
+    #
+    # Write XML.
+    #
+    ET.indent(tree, space="  ")
 
-        for i,e in enumerate(all_feed_entries):
-            f.write('<item>\n')
-            for k,v in sorted(e.items()):
-                if k == 'title':
-                    if v.startswith('#'):
-                        found_episodes.append(int(v[1:v.find(':')]))
-                if k == 'link':
-                    f.write('<enclosure url="' + html.escape(v) + '" type="audio/mpeg"/>')
-                f.write('<' + k + '>' + html.escape(v) + '</' + k + '>\n')
-            f.write('</item>\n\n')
+    tree.write(
+        OUTPUT_FILE,
+        encoding="utf-8",
+        xml_declaration=True
+    )
 
-        f.write('</channel></rss>\n')
+    channel = tree.getroot().find("channel")
+    count = len(channel.findall("item"))
 
-    found_episodes.reverse()
-
-    # test if our scraping missed any episodes  (won't detect missing re-runs)
-    last_nr = 0
-    print('Checking integrity of new episodes (excludes re-runs) after #' + str(last_nr) + '...', file=sys.stderr)
-    # print(found_episodes, file=sys.stderr)
-    for ep_nr in found_episodes:
-        # print(ep_nr, file=sys.stderr)
-        if ep_nr < last_nr:  # re-run  => okay
-            pass
-        elif ep_nr == last_nr:
-            print('double entry! ep ' + str(ep_nr), file=sys.stderr)
-        elif ep_nr == last_nr + 1:  # subsequent episodes  => okay
-            last_nr = ep_nr
-        elif ep_nr > last_nr + 1:
-            # hardcode episodes that are NOT missing but just with different titles:  "Oil #X" (716-720) and "SPACE X" (808-811)
-            if (last_nr, ep_nr) in [(715, 721), (807, 812)]:
-                last_nr = ep_nr
-                continue
-            if last_nr+1 == ep_nr-1:
-                print('missing ep ' + str(last_nr+1) + '!', file=sys.stderr)
-            else:
-                print('missing eps ' + str(last_nr+1) + ' to ' + str(ep_nr-1) + '!', file=sys.stderr)
-            last_nr = ep_nr
+    print()
+    print(f"Saved {OUTPUT_FILE}")
+    print(f"Feed now contains {count} episodes.")
 
 
-# pop n most recent episodes from history  -> used for debugging and bugfixes
-def pop_from_history(n):
-    with open(FEED_PICKLE_FILE, 'rb+') as f:
-        feed = pickle.load(f)[n:]
-        f.seek(0)
-        pickle.dump(feed, f)
-
-
-if __name__ == '__main__':
-    old_feed_entries, epoch = load_feed_entries()
-    new_feed_entries = parse_site_into_feed(old_feed_entries, epoch)   #TODO: add try..except for inet
-    save_feed_entries(new_feed_entries + old_feed_entries)
-
-# TODO: (low-prio) add pictures
-
-# TODO: automate new eps addition (server?)
-# TODO: why do some episodes have info on mm:ss length and some don't ?
-# TODO: episode duration for ALL episodes, eg #407
-
-# TODO: deprecate 'npr_pm_test.xml'
-# TODO: This American Life ?
-# TODO: make cps of the indicator just in case ?
-
-# TODO: fix titles+descriptions for early episodes
-
-# TODO: missing links from
-# http://www.podcasts.com/npr_planet_money_podcast/page/2152
-# TODO: check if old episodes are all there (screenshot)
-
-# TODO: #858 has excess space in the official feed
+if __name__ == "__main__":
+    build_feed()
