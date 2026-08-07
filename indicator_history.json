@@ -1,6 +1,6 @@
 {
-  "next_date": "2022-09-25T17:01:42-04:00",
-  "episode_count": 617,
+  "next_date": "2022-07-04T20:43:15-04:00",
+  "episode_count": 674,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -5554,6 +5554,519 @@
       "audio_id": "1198988323",
       "player_url": "https://www.npr.org/player/embed/1125155058/1198988323",
       "description": "Shrinkflation, yeet, supply chain, unbanked. What do these terms have in common? They're some of Merriam-Webster's newest dictionary entries! For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Housing, yen, supply chains vs. the Fed",
+      "date": "2022-09-23T18:52:03-04:00",
+      "npr_url": "https://www.npr.org/2022/09/23/1124864911/housing-yen-supply-chains-vs-the-fed",
+      "story_id": "1124864911",
+      "audio_id": "1198988327",
+      "player_url": "https://www.npr.org/player/embed/1124864911/1198988327",
+      "description": "When interest rates are on the up and up, the housing market tends to slide down and down. That, plus the declining value of the Japanese yen, and updates about the global supply chain on indicators of the week. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Are you being tricked into working harder?",
+      "date": "2022-09-22T20:33:19-04:00",
+      "npr_url": "https://www.npr.org/2022/09/22/1124624702/are-you-being-tricked-into-working-harder",
+      "story_id": "1124624702",
+      "audio_id": "1198988331",
+      "player_url": "https://www.npr.org/player/embed/1124624702/1198988331",
+      "description": "\"Gamification\" as we know it has become increasingly common since the late 2000s. And proponents say adding game-like features to non-game activities — especially boring ones — can make us healthier, happier, and more productive. But Adrian Hon, who has made a career out of 'gamifying' mundane activities like jogging, says the trend has gone awry. Today on the show, Adrian argues that companies are using gamification to confuse, manipulate, or coerce people into doing things they wouldn't have done otherwise. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Killing the economic polar bear",
+      "date": "2022-09-21T19:16:34-04:00",
+      "npr_url": "https://www.npr.org/2022/09/21/1124376155/killing-the-economic-polar-bear",
+      "story_id": "1124376155",
+      "audio_id": "1198988335",
+      "player_url": "https://www.npr.org/player/embed/1124376155/1198988335",
+      "description": "When Knut the polar bear was rejected by his mother at the Berlin Zoo, a debate caught fire over whether it was more humane to keep him alive or euthanize him. Today, as the Fed raises interest rates again, another polar bear is in danger: The economy. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Patagonia's tax break, explained",
+      "date": "2022-09-20T21:40:40-04:00",
+      "npr_url": "https://www.npr.org/2022/09/20/1124177696/patagonias-tax-break-explained",
+      "story_id": "1124177696",
+      "audio_id": "1198988356",
+      "player_url": "https://www.npr.org/player/embed/1124177696/1198988356",
+      "description": "Surf's up with the IRS! Patagonia's founder Yvon Chouinard recently gave his company and billionaire status away. But how he did so entails a complex tale of trusts, exemptions and a whole lot of taxes. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "The fake market in crypto",
+      "date": "2022-09-19T19:10:13-04:00",
+      "npr_url": "https://www.npr.org/2022/09/19/1123944686/the-fake-market-in-crypto",
+      "story_id": "1123944686",
+      "audio_id": "1198988394",
+      "player_url": "https://www.npr.org/player/embed/1123944686/1198988394",
+      "description": "According to a Forbes report, half of all Bitcoin trades are fake. Today, we unveil crypto's cryptic facade by diving deep into a classic concept: Wash trading. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Poverty, heists, .eth: Coulda been worse",
+      "date": "2022-09-16T20:35:18-04:00",
+      "npr_url": "https://www.npr.org/2022/09/16/1123605312/poverty-heists-eth-coulda-been-worse",
+      "story_id": "1123605312",
+      "audio_id": "1198988406",
+      "player_url": "https://www.npr.org/player/embed/1123605312/1198988406",
+      "description": "Hands up! A bank heist with a toy gun exposes the chaos in Lebanon's financial system. That, plus declining child poverty rates, and Ethereum's \"Merge\" on indicators of the week. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "The Beigie Awards: Tough choices for ranchers",
+      "date": "2022-09-15T19:05:30-04:00",
+      "npr_url": "https://www.npr.org/2022/09/15/1123324002/the-beigie-awards-tough-choices-for-ranchers",
+      "story_id": "1123324002",
+      "audio_id": "1198988410",
+      "player_url": "https://www.npr.org/player/embed/1123324002/1198988410",
+      "description": "The September Beige Book is an emotional roller coaster. We crown the Federal Reserve bank who gave us the funniest and most poignant anecdotes about the economy. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "A super-sized labor experiment",
+      "date": "2022-09-14T19:14:56-04:00",
+      "npr_url": "https://www.npr.org/2022/09/14/1123054332/a-super-sized-labor-experiment",
+      "story_id": "1123054332",
+      "audio_id": "1198988414",
+      "player_url": "https://www.npr.org/player/embed/1123054332/1198988414",
+      "description": "How would you like your burger? With a side of higher wages? Today on the menu, California's FAST Recovery Act is rethinking labor relations for the fast food industry. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "The push and pull of inflation",
+      "date": "2022-09-13T19:49:43-04:00",
+      "npr_url": "https://www.npr.org/2022/09/13/1122859821/the-push-and-pull-of-inflation",
+      "story_id": "1122859821",
+      "audio_id": "1198988418",
+      "player_url": "https://www.npr.org/player/embed/1122859821/1198988418",
+      "description": "Argentines party hard in the bustling bars of Buenos Aires, despite the stubborn cloud of inflation. Across the pond, German companies switch gears in response to high gas prices, as Russia shuts off its supply. Today on the show, the push and pull of inflation. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "A firm without its Queen (Encore)",
+      "date": "2022-09-12T18:59:23-04:00",
+      "npr_url": "https://www.npr.org/2022/09/12/1122505114/a-firm-without-its-queen-encore",
+      "story_id": "1122505114",
+      "audio_id": "1198988422",
+      "player_url": "https://www.npr.org/player/embed/1122505114/1198988422",
+      "description": "From the aftermath of World War II to the coronavirus pandemic, Queen Elizabeth has lived through it all. But after her death, what happens to the future of the royal family... and its fortune? Today on the show, we're revisiting our classic episode to ask: Can \"The Firm\" really survive without its CEO? For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Heat waves, remote work, iPhones",
+      "date": "2022-09-09T18:25:53-04:00",
+      "npr_url": "https://www.npr.org/2022/09/09/1122137226/heat-waves-remote-work-iphones",
+      "story_id": "1122137226",
+      "audio_id": "1198988426",
+      "player_url": "https://www.npr.org/player/embed/1122137226/1198988426",
+      "description": "Crank up that AC because a record-breaking heat wave is sweeping through the American West. That, plus workplace surveys, and Apple's newest drop on indicators of the week. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "ESG bans cost Texas",
+      "date": "2022-09-08T19:09:16-04:00",
+      "npr_url": "https://www.npr.org/2022/09/08/1121774795/esg-bans-cost-texas",
+      "story_id": "1121774795",
+      "audio_id": "1198988430",
+      "player_url": "https://www.npr.org/player/embed/1121774795/1198988430",
+      "description": "What happens to local government projects when the big banks that back them leave the state? A Texas-sized experiment in values-based financing.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "When GDP and GDI part ways",
+      "date": "2022-09-07T20:08:17-04:00",
+      "npr_url": "https://www.npr.org/2022/09/07/1121622697/when-gdp-and-gdi-part-ways",
+      "story_id": "1121622697",
+      "audio_id": "1198988434",
+      "player_url": "https://www.npr.org/player/embed/1121622697/1198988434",
+      "description": "Welcome to the Global Growth Gym, where countries are working out their economies. Over in the corner, the U.S. is standing there on a weight scale, just a tad confused... For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "The California Effect",
+      "date": "2022-09-06T20:47:12-04:00",
+      "npr_url": "https://www.npr.org/2022/09/06/1121353515/the-california-effect",
+      "story_id": "1121353515",
+      "audio_id": "1198988438",
+      "player_url": "https://www.npr.org/player/embed/1121353515/1198988438",
+      "description": "From Sacramento to San Diego, the state of California is a tryhard when it comes to regulations. Today, we're singing about how the nation's strictest standards affect economies across state lines."
+    },
+    {
+      "title": "Long COVID and the labor market",
+      "date": "2022-09-02T20:39:14-04:00",
+      "npr_url": "https://www.npr.org/2022/09/02/1120824558/long-covid-and-the-labor-market",
+      "story_id": "1120824558",
+      "audio_id": "1198988442",
+      "player_url": "https://www.npr.org/player/embed/1120824558/1198988442",
+      "description": "Headaches, fatigue, trouble breathing...the lingering health effects of COVID-19 continue to haunt millions of Americans, and the labor market, too."
+    },
+    {
+      "title": "Hits of the Dips: Songs of recessions past",
+      "date": "2022-09-01T18:16:44-04:00",
+      "npr_url": "https://www.npr.org/2022/09/01/1120622740/hits-of-the-dips-songs-of-recessions-past",
+      "story_id": "1120622740",
+      "audio_id": "1198988446",
+      "player_url": "https://www.npr.org/player/embed/1120622740/1198988446",
+      "description": "A new paper in the Journal of Cultural Economics says happy songs are more popular during a recession. So we thought we'd have a little fun on today's show. Armed with a new soundtrack, what can we learn about past recessions?"
+    },
+    {
+      "title": "The Prudent Man Rule",
+      "date": "2022-08-31T19:48:41-04:00",
+      "npr_url": "https://www.npr.org/2022/08/31/1120386248/the-prudent-man-rule",
+      "story_id": "1120386248",
+      "audio_id": "1198988450",
+      "player_url": "https://www.npr.org/player/embed/1120386248/1198988450",
+      "description": "Ever thought of spicing up your 401k with crypto? Well, we leave it up for the Prudent Man to decide. On today's episode, learn about how wonky pension regulations from the '70s opened a new era of riskier investments."
+    },
+    {
+      "title": "The promise and peril of mobile home ownership",
+      "date": "2022-08-30T20:09:02-04:00",
+      "npr_url": "https://www.npr.org/2022/08/30/1120178459/the-promise-and-peril-of-mobile-home-ownership",
+      "story_id": "1120178459",
+      "audio_id": "1198988454",
+      "player_url": "https://www.npr.org/player/embed/1120178459/1198988454",
+      "description": "At first glance, mobile home ownership seems like the happy medium between renting and buying a house. But what happens when a tug-of-war ensues between the landlords and the residents? For the full read, click here."
+    },
+    {
+      "title": "Economists take on student loan forgiveness",
+      "date": "2022-08-29T20:08:25-04:00",
+      "npr_url": "https://www.npr.org/2022/08/29/1119988025/economists-take-on-student-loan-forgiveness",
+      "story_id": "1119988025",
+      "audio_id": "1198988458",
+      "player_url": "https://www.npr.org/player/embed/1119988025/1198988458",
+      "description": "Biden is canceling student loans for millions of Americans. Love it or hate it, one thing is for sure – many economists from the left and the right think that this plan is a not-so-good idea..."
+    },
+    {
+      "title": "Indicators of the Week: Old problems, new solutions?",
+      "date": "2022-08-26T18:31:55-04:00",
+      "npr_url": "https://www.npr.org/2022/08/26/1119753049/indicators-of-the-week-old-problems-new-solutions",
+      "story_id": "1119753049",
+      "audio_id": "1198988462",
+      "player_url": "https://www.npr.org/player/embed/1119753049/1198988462",
+      "description": "Canceled flights are the worst. So is inefficient healthcare and unaffordable college tuition. Today on the show, three indicators about new solutions to address age-old problems."
+    },
+    {
+      "title": "China's global lending binge",
+      "date": "2022-08-25T20:05:52-04:00",
+      "npr_url": "https://www.npr.org/2022/08/25/1119460706/chinas-global-lending-binge",
+      "story_id": "1119460706",
+      "audio_id": "1198988466",
+      "player_url": "https://www.npr.org/player/embed/1119460706/1198988466",
+      "description": "We learn about the Chinese government's global financing boom by zooming in on one country where controversy surrounding Chinese money is smoldering hot. We're going to the Pacific: The Solomon Islands."
+    },
+    {
+      "title": "China's slice of the US debt pie",
+      "date": "2022-08-23T19:21:56-04:00",
+      "npr_url": "https://www.npr.org/2022/08/23/1119126863/chinas-slice-of-the-us-debt-pie",
+      "story_id": "1119126863",
+      "audio_id": "1198988474",
+      "player_url": "https://www.npr.org/player/embed/1119126863/1198988474",
+      "description": "China owns a LOT of Benjamins, greenbacks, whatever you like to call it, in the form of US treasury bonds. But it's been cutting back on some of those securities recently. So what would happen if Beijing decides to sell off all its holding of American debt, and is that the plan?"
+    },
+    {
+      "title": "How Spotify changed the tune on IPOs",
+      "date": "2022-08-22T20:24:29-04:00",
+      "npr_url": "https://www.npr.org/2022/08/22/1118869773/how-spotify-changed-the-tune-on-ipos",
+      "story_id": "1118869773",
+      "audio_id": "1198988478",
+      "player_url": "https://www.npr.org/player/embed/1118869773/1198988478",
+      "description": "Ah, 2018, a good year in music. Don't agree? Just check out our playlist. It's also when Spotify rocked-and-rolled the finance world with its rebellious take on going public."
+    },
+    {
+      "title": "The Amazon, the Colorado River and a price on nature",
+      "date": "2022-08-19T19:19:09-04:00",
+      "npr_url": "https://www.npr.org/2022/08/18/1118291012/the-amazon-the-colorado-river-and-a-price-on-nature",
+      "story_id": "1118291012",
+      "audio_id": "1198988482",
+      "player_url": "https://www.npr.org/player/embed/1118291012/1198988482",
+      "description": "From sea to shining sea, rivers in the United States are drying up, including the Colorado River. For indicators of the week, three environmental indicators about the state of Mother Nature."
+    },
+    {
+      "title": "The surprising economics of digital lending",
+      "date": "2022-08-18T18:43:52-04:00",
+      "npr_url": "https://www.npr.org/2022/08/18/1118289764/the-surprising-economics-of-digital-lending",
+      "story_id": "1118289764",
+      "audio_id": "1198988486",
+      "player_url": "https://www.npr.org/player/embed/1118289764/1198988486",
+      "description": "Long gone are the days of hauling sixty books home from the local library. With eBooks, the worlds of Fahrenheit 451 to Harry Potter are at your fingertips with just a tap. But what's the price behind the click?"
+    },
+    {
+      "title": "The drought in Europe",
+      "date": "2022-08-17T18:29:02-04:00",
+      "npr_url": "https://www.npr.org/2022/08/17/1117997370/the-drought-in-europe",
+      "story_id": "1117997370",
+      "audio_id": "1198988490",
+      "player_url": "https://www.npr.org/player/embed/1117997370/1198988490",
+      "description": "Even the sheep are complaining. A severe drought is drying Europe to its limits, and the effects are widespread. From crops to shipping energy, what are the economic consequences?"
+    },
+    {
+      "title": "A market to bet on the future",
+      "date": "2022-08-16T20:25:30-04:00",
+      "npr_url": "https://www.npr.org/2022/08/16/1117780172/a-market-to-bet-on-the-future",
+      "story_id": "1117780172",
+      "audio_id": "1198988494",
+      "player_url": "https://www.npr.org/player/embed/1117780172/1198988494",
+      "description": "Peer into the crystal ball with Kalshi.com. Will inflation stay high? Will daylight saving time become permanent? Place your bets."
+    },
+    {
+      "title": "AP Macro gets a makeover",
+      "date": "2022-08-15T19:30:18-04:00",
+      "npr_url": "https://www.npr.org/2022/08/15/1117599828/ap-macro-gets-a-makeover",
+      "story_id": "1117599828",
+      "audio_id": "1198988498",
+      "player_url": "https://www.npr.org/player/embed/1117599828/1198988498",
+      "description": "Today on the show, why colleges and high school Advanced Placement Macroeconomics classes had to rip out old textbook pages and write a new chapter."
+    },
+    {
+      "title": "Three inflation indicators",
+      "date": "2022-08-12T20:27:50-04:00",
+      "npr_url": "https://www.npr.org/2022/08/12/1117311360/three-inflation-indicators",
+      "story_id": "1117311360",
+      "audio_id": "1198988502",
+      "player_url": "https://www.npr.org/player/embed/1117311360/1198988502",
+      "description": "The economy cooled off a bit, but inflation is still really, really high. But, not all goods and services respond the same to a high inflation environment. Today on the show, we're talking about sticky prices, bonds, and that old chestnut, transitory inflation."
+    },
+    {
+      "title": "Paying for the Inflation Reduction Act",
+      "date": "2022-08-11T18:56:31-04:00",
+      "npr_url": "https://www.npr.org/2022/08/11/1117071294/paying-for-the-inflation-reduction-act",
+      "story_id": "1117071294",
+      "audio_id": "1198988506",
+      "player_url": "https://www.npr.org/player/embed/1117071294/1198988506",
+      "description": "The Inflation Reduction Act has it all, from fighting climate change to cutting drug prices. But today, we're zooming in on one aspect of the bill. The changes to corporate taxes."
+    },
+    {
+      "title": "What Japan's \"Lost Decade\" teaches us about recessions",
+      "date": "2022-08-10T20:59:01-04:00",
+      "npr_url": "https://www.npr.org/2022/08/10/1116809917/what-japans-lost-decade-teaches-us-about-recessions",
+      "story_id": "1116809917",
+      "audio_id": "1198988510",
+      "player_url": "https://www.npr.org/player/embed/1116809917/1198988510",
+      "description": "Not all recessions are created equal. Some look like Vs, while others look like Ks. But the scariest one of all is the L-shaped recession. Travel back to Japan's \"Lost Decade\" with us to understand why."
+    },
+    {
+      "title": "Double agents and drug discounts",
+      "date": "2022-08-09T21:34:40-04:00",
+      "npr_url": "https://www.npr.org/2022/08/09/1116670946/double-agents-and-drug-discounts",
+      "story_id": "1116670946",
+      "audio_id": "1198988514",
+      "player_url": "https://www.npr.org/player/embed/1116670946/1198988514",
+      "description": "The cost of pharmaceuticals has been rising for years, well before inflation became the big economic talking point. Today on the show, why some policymakers suspect an obscure middleman is partly to blame."
+    },
+    {
+      "title": "The secret to upward mobility: Friends",
+      "date": "2022-08-08T18:40:19-04:00",
+      "npr_url": "https://www.npr.org/2022/08/08/1116398427/the-secret-to-upward-mobility-friends",
+      "story_id": "1116398427",
+      "audio_id": "1198988518",
+      "player_url": "https://www.npr.org/player/embed/1116398427/1198988518",
+      "description": "Who your friends are may be the key to your economic success story. In a groundbreaking study by Harvard researchers, find out why cross-class friendships may be the key ingredient to the American Dream."
+    },
+    {
+      "title": "What's really going on with unions",
+      "date": "2022-08-05T21:22:54-04:00",
+      "npr_url": "https://www.npr.org/2022/08/05/1116073987/whats-really-going-on-with-unions",
+      "story_id": "1116073987",
+      "audio_id": "1198988522",
+      "player_url": "https://www.npr.org/player/embed/1116073987/1198988522",
+      "description": "Baristas and warehouse workers unite! After decades of decline, we're hearing a lot about new unions starting around the country. But union membership actually declined last year. We look at what's really happening."
+    },
+    {
+      "title": "If the world had no accountants",
+      "date": "2022-08-04T18:11:39-04:00",
+      "npr_url": "https://www.npr.org/2022/08/04/1115790852/if-the-world-had-no-accountants",
+      "story_id": "1115790852",
+      "audio_id": "1198988526",
+      "player_url": "https://www.npr.org/player/embed/1115790852/1198988526",
+      "description": "We crunched the numbers (on Excel of course), and the results are in. There's not enough Certified Public Accountants right now. Can the world of finance come up with a solution to address this issue?"
+    },
+    {
+      "title": "Climate Change Is Tough On Personal Finances",
+      "date": "2022-08-03T20:04:13-04:00",
+      "npr_url": "https://www.npr.org/2022/08/03/1115496234/climate-change-is-tough-on-personal-finances",
+      "story_id": "1115496234",
+      "audio_id": "1198988530",
+      "player_url": "https://www.npr.org/player/embed/1115496234/1198988530",
+      "description": "More than three-quarters of adults in the United States say they've experienced extreme weather in the last five years, according to a nationwide survey conducted by NPR, the Robert Wood Johnson Foundation, and the Harvard T.H. Chan School of Public Health. And events like floods, wildfires and hurricanes are emptying bank accounts — especially when insurance doesn't cover the damage. Today on The Indicator, we bring you an episode of Short Wave, NPR's daily science podcast."
+    },
+    {
+      "title": "Lessons from the 'Pandemic MVPs'",
+      "date": "2022-08-02T19:59:19-04:00",
+      "npr_url": "https://www.npr.org/2022/08/02/1115295218/lessons-from-the-pandemic-mvps",
+      "story_id": "1115295218",
+      "audio_id": "1198988534",
+      "player_url": "https://www.npr.org/player/embed/1115295218/1198988534",
+      "description": "After two long years, the results seem to be in. Which countries were the 'Pandemic MVPs,' the countries most resilient to COVID-19? And more importantly, what was the secret to their success?"
+    },
+    {
+      "title": "The semiconductor shortage (still)",
+      "date": "2022-08-01T19:03:00-04:00",
+      "npr_url": "https://www.npr.org/2022/08/01/1115038571/the-semiconductor-shortage-still",
+      "story_id": "1115038571",
+      "audio_id": "1198988538",
+      "player_url": "https://www.npr.org/player/embed/1115038571/1198988538",
+      "description": "The world runs on semiconductors. From cameras to cars, tiny chips power most electronic devices. So why do we have such a shortage of them?"
+    },
+    {
+      "title": "Drugs, electric cars, taxes",
+      "date": "2022-07-29T18:59:57-04:00",
+      "npr_url": "https://www.npr.org/2022/07/29/1114627168/drugs-electric-cars-taxes",
+      "story_id": "1114627168",
+      "audio_id": "1198988542",
+      "player_url": "https://www.npr.org/player/embed/1114627168/1198988542",
+      "description": "We assess the Inflation Reduction Act: Will there be unintended consequences from taking on Big Pharma? Will electric vehicles become cheap? And does the tax department need more money?"
+    },
+    {
+      "title": "It's GDP... the remix!",
+      "date": "2022-07-28T19:31:57-04:00",
+      "npr_url": "https://www.npr.org/2022/07/28/1114355157/its-gdp-the-remix",
+      "story_id": "1114355157",
+      "audio_id": "1198988546",
+      "player_url": "https://www.npr.org/player/embed/1114355157/1198988546",
+      "description": "Ah, GDP, the titan of all economic indicators. But are we breaking it down correctly? Today, we're remixing GDP to evaluate the true health of an economy."
+    },
+    {
+      "title": "Feeling inflation in the grocery store",
+      "date": "2022-07-27T21:25:03-04:00",
+      "npr_url": "https://www.npr.org/2022/07/27/1114078794/feeling-inflation-in-the-grocery-store",
+      "story_id": "1114078794",
+      "audio_id": "1198988550",
+      "player_url": "https://www.npr.org/player/embed/1114078794/1198988550",
+      "description": "Can you feel the inflation emanating from the milk aisle? Today on The Indicator, we explore how food prices – and who does the grocery shopping – affect how we think about inflation. Oh and don't forget your grocery list, because we're headed to the supermarket too."
+    },
+    {
+      "title": "Super Mario meets his match in Italy",
+      "date": "2022-07-26T20:42:53-04:00",
+      "npr_url": "https://www.npr.org/2022/07/26/1113854621/super-mario-meets-his-match-in-italy",
+      "story_id": "1113854621",
+      "audio_id": "1198988554",
+      "player_url": "https://www.npr.org/player/embed/1113854621/1198988554",
+      "description": "When Mario Draghi saved the euro with a 2012 speech, the world was in awe. Then he was called in to lead Italy's six motley political parties through the pandemic, and turn around Italy's economy."
+    },
+    {
+      "title": "What is a 'household'?",
+      "date": "2022-07-25T20:50:19-04:00",
+      "npr_url": "https://www.npr.org/2022/07/25/1113487806/what-is-a-household",
+      "story_id": "1113487806",
+      "audio_id": "1198988558",
+      "player_url": "https://www.npr.org/player/embed/1113487806/1198988558",
+      "description": "Love is sharing a password, but maybe not anymore. With streaming services cracking down on account sharing, this got The Indicator team wondering, what exactly is the definition of a household?"
+    },
+    {
+      "title": "Heating up the weekend with three climate indicators",
+      "date": "2022-07-22T19:37:10-04:00",
+      "npr_url": "https://www.npr.org/2022/07/22/1113115612/heating-up-the-weekend-with-three-climate-indicators",
+      "story_id": "1113115612",
+      "audio_id": "1198988562",
+      "player_url": "https://www.npr.org/player/embed/1113115612/1198988562",
+      "description": "The sweltering heat has us wondering, how exactly are people responding to climate change? Today on The Indicator, we're going green with three environmental indicators. Stay tuned for a sliver of hope at the end."
+    },
+    {
+      "title": "The alchemy behind falling metal prices",
+      "date": "2022-07-21T19:04:08-04:00",
+      "npr_url": "https://www.npr.org/2022/07/21/1112801940/the-alchemy-behind-falling-metal-prices",
+      "story_id": "1112801940",
+      "audio_id": "1198988566",
+      "player_url": "https://www.npr.org/player/embed/1112801940/1198988566",
+      "description": "When in doubt, count on the price of metals like copper and gold to predict the economy. But what magical forces are driving prices in the metal market down?"
+    },
+    {
+      "title": "LIVE From New York, the Beigie Awards!",
+      "date": "2022-07-20T18:57:53-04:00",
+      "npr_url": "https://www.npr.org/2022/07/20/1112577075/live-from-new-york-the-beigie-awards",
+      "story_id": "1112577075",
+      "audio_id": "1198988570",
+      "player_url": "https://www.npr.org/player/embed/1112577075/1198988570",
+      "description": "Two years ago, the pandemic haunted New York City. But now the Big Apple is back in full swing, with tourists and bodegas galore. To celebrate the return to normal, join us for the Beigie Awards, live from Times Square!"
+    },
+    {
+      "title": "The monetization of college sports",
+      "date": "2022-07-19T18:46:35-04:00",
+      "npr_url": "https://www.npr.org/2022/07/19/1112316993/the-monetization-of-college-sports",
+      "story_id": "1112316993",
+      "audio_id": "1198988574",
+      "player_url": "https://www.npr.org/player/embed/1112316993/1198988574",
+      "description": "For some student athletes, taco discounts and even Lamborghini partnerships are becoming a reality. That's because last summer , the NCAA changed a decades-old precedence that banned college sports stars from pursuing lucrative brand deals. How has that decision changed the game a year on?"
+    },
+    {
+      "title": "Here's why Black students are defaulting",
+      "date": "2022-07-18T19:51:23-04:00",
+      "npr_url": "https://www.npr.org/2022/07/18/1112145621/heres-why-black-students-are-defaulting",
+      "story_id": "1112145621",
+      "audio_id": "1198988578",
+      "player_url": "https://www.npr.org/player/embed/1112145621/1198988578",
+      "description": "Before, after, and during college, the cards are still stacked against Black students. Today, we look at how that reality translates into Black borrowers being more likely to default on their student loans."
+    },
+    {
+      "title": "From Earth to the cosmos, indicators of the week",
+      "date": "2022-07-15T19:37:58-04:00",
+      "npr_url": "https://www.npr.org/2022/07/15/1111794772/from-earth-to-the-cosmos-indicators-of-the-week",
+      "story_id": "1111794772",
+      "audio_id": "1198988582",
+      "player_url": "https://www.npr.org/player/embed/1111794772/1198988582",
+      "description": "On Earth and in space, economics affects us wherever we go. Today, we're looking at three indicators: The yen, copper prices, and NASA's James Webb telescope. Quite an otherworldly combination!"
+    },
+    {
+      "title": "What broke Britain's economy?",
+      "date": "2022-07-14T20:02:15-04:00",
+      "npr_url": "https://www.npr.org/2022/07/14/1111595703/what-broke-britains-economy",
+      "story_id": "1111595703",
+      "audio_id": "1198988586",
+      "player_url": "https://www.npr.org/player/embed/1111595703/1198988586",
+      "description": "Seems like the British people might have to cut down on their afternoon tea... food prices in the UK are going through the roof, and wages are stagnating. Can the new Prime Minister handle the heat?"
+    },
+    {
+      "title": "The rumbles of a reverse currency war",
+      "date": "2022-07-13T19:21:01-04:00",
+      "npr_url": "https://www.npr.org/2022/07/13/1111432652/the-rumbles-of-a-reverse-currency-war",
+      "story_id": "1111432652",
+      "audio_id": "1198988590",
+      "player_url": "https://www.npr.org/player/embed/1111432652/1198988590",
+      "description": "As countries crank up their interest rates to fight inflation, the whispers of a reverse currency war are getting louder. But is this cause for concern or just political posturing?"
+    },
+    {
+      "title": "Prime Day makes third-party sellers anxious",
+      "date": "2022-07-12T20:11:58-04:00",
+      "npr_url": "https://www.npr.org/2022/07/12/1111156566/prime-day-makes-third-party-sellers-anxious",
+      "story_id": "1111156566",
+      "audio_id": "1198988637",
+      "player_url": "https://www.npr.org/player/embed/1111156566/1198988637",
+      "description": "Amazon Prime Day, the unofficial holiday of the e-commerce enthusiast, is here. But for third-party-sellers, today might not be a day for celebration."
+    },
+    {
+      "title": "Copyright small claims court",
+      "date": "2022-07-11T21:45:00-04:00",
+      "npr_url": "https://www.npr.org/2022/07/11/1110928086/copyright-small-claims-court",
+      "story_id": "1110928086",
+      "audio_id": "1198988641",
+      "player_url": "https://www.npr.org/player/embed/1110928086/1198988641",
+      "description": "A new alternative to federal court for copyright holders may provide an inexpensive route towards justice for small businesses. But is cheaper, better? How well will it work?"
+    },
+    {
+      "title": "Jobs Friday: Gen Z and the scars of recessions past",
+      "date": "2022-07-08T19:02:30-04:00",
+      "npr_url": "https://www.npr.org/2022/07/08/1110610504/jobs-friday-gen-z-and-the-scars-of-recessions-past",
+      "story_id": "1110610504",
+      "audio_id": "1198988645",
+      "player_url": "https://www.npr.org/player/embed/1110610504/1198988645",
+      "description": "Gen Zers, it's time to put the TikTok away and revamp those cover letters. With murmurs of an upcoming recession, what does this mean for the newest entrants into the labor market?"
+    },
+    {
+      "title": "The artificial strength of the Russian ruble",
+      "date": "2022-07-07T18:04:37-04:00",
+      "npr_url": "https://www.npr.org/2022/07/07/1110354162/the-artificial-strength-of-the-russian-ruble",
+      "story_id": "1110354162",
+      "audio_id": "1198988649",
+      "player_url": "https://www.npr.org/player/embed/1110354162/1198988649",
+      "description": "Why is the Russian ruble so strong right now? Despite heavy sanctions, the Russian government has a special trick – a serum, if you will – up their sleeves."
+    },
+    {
+      "title": "The economic effects of being denied an abortion",
+      "date": "2022-07-06T19:45:44-04:00",
+      "npr_url": "https://www.npr.org/2022/07/06/1110182026/the-economic-effects-of-being-denied-an-abortion",
+      "story_id": "1110182026",
+      "audio_id": "1198988653",
+      "player_url": "https://www.npr.org/player/embed/1110182026/1198988653",
+      "description": "What are the economic consequences of being denied an abortion? In a recent study, an economist looked for the answer in a pile of credit data. And the results surprised even her. The deadline to apply for an internship to Planet Money and The Indicator for fall through winter is extended to Sunday, July 17th. Come work with us! Go to npr.org/internships to apply."
+    },
+    {
+      "title": "Why a gas tax holiday might not be something to celebrate",
+      "date": "2022-07-05T20:43:15-04:00",
+      "npr_url": "https://www.npr.org/2022/07/05/1109906572/why-a-gas-tax-holiday-might-not-be-something-to-celebrate",
+      "story_id": "1109906572",
+      "audio_id": "1198988657",
+      "player_url": "https://www.npr.org/player/embed/1109906572/1198988657",
+      "description": "Amid daunting gas prices, President Biden's proposed federal gas tax holiday sounds like a sweet relief. But the economics behind this tax break reveals the push and pull between consumers and oil companies, and an unexpected outcome."
     }
   ]
 }
