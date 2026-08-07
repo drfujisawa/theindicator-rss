@@ -1,6 +1,6 @@
 {
-  "next_date": "2023-05-04T18:06:40-04:00",
-  "episode_count": 467,
+  "next_date": "2023-02-22T19:13:14-05:00",
+  "episode_count": 517,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -4204,6 +4204,456 @@
       "audio_id": "1198987489",
       "player_url": "https://www.npr.org/player/embed/1174384859/1198987489",
       "description": "It's one thing to quit your job and a completely other thing to get laid off or fired. A new indicator compares quits with firings and layoffs to measure who has more power in today's labor market, workers or employers.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "President Biden: Climate champion or fossil fuel friend?",
+      "date": "2023-05-04T17:06:43-04:00",
+      "npr_url": "https://www.npr.org/2023/04/28/1172846344/president-biden-climate-champion-or-fossil-fuel-friend",
+      "story_id": "1172846344",
+      "audio_id": "1198987493",
+      "player_url": "https://www.npr.org/player/embed/1172846344/1198987493",
+      "description": "As a presidential candidate, Joe Biden promised to make climate change a major priority, But since taking office, President Joe Biden seems pretty friendly to the fossil fuel industry. What gives?For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "How the Fed got so powerful",
+      "date": "2023-05-03T19:02:04-04:00",
+      "npr_url": "https://www.npr.org/2023/05/02/1173424484/how-the-fed-got-so-powerful",
+      "story_id": "1173424484",
+      "audio_id": "1198987497",
+      "player_url": "https://www.npr.org/player/embed/1173424484/1198987497",
+      "description": "How much power does the Fed have? According to Fed Chair Jerome Powell, the limit basically does not exist! New York Times reporter Jeanna Smialek joins the show to talk about her new book Limitless: The Federal Reserve Takes on a New Age of Crisis.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "The banking system that loaned billions to SVB and First Republic",
+      "date": "2023-05-02T18:19:55-04:00",
+      "npr_url": "https://www.npr.org/2023/05/02/1173426872/the-banking-system-that-loaned-billions-to-svb-and-first-republic",
+      "story_id": "1173426872",
+      "audio_id": "1198987501",
+      "player_url": "https://www.npr.org/player/embed/1173426872/1198987501",
+      "description": "Unsung hero of the financial system or enabler of failing banks? Today on the show, how the Federal Home Loan Bank system, originally designed to support homeownership and affordable housing, ended up loaning billions to failing banks like First Republic.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "SVB, now First Republic: How it all started",
+      "date": "2023-05-01T20:56:01-04:00",
+      "npr_url": "https://www.npr.org/2023/05/01/1173175098/svb-now-first-republic-how-it-all-started",
+      "story_id": "1173175098",
+      "audio_id": "1198987505",
+      "player_url": "https://www.npr.org/player/embed/1173175098/1198987505",
+      "description": "The turmoil in the banking industry isn't over yet. Today, First Republic Bank was seized, following the failures of Signature Bank and Silicon Valley Bank back in March. How did we get here? And how do we prevent banks from failing in the future? A show-stopping mea culpa from the Federal Reserve provides some answers. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Our final thoughts on the influencer industry",
+      "date": "2023-04-28T17:05:47-04:00",
+      "npr_url": "https://www.npr.org/2023/04/17/1170524155/our-final-thoughts-on-the-influencer-industry",
+      "story_id": "1170524155",
+      "audio_id": "1198987509",
+      "player_url": "https://www.npr.org/player/embed/1170524155/1198987509",
+      "description": "As we wrap our series exploring the influencer marketing industry, we go to the cutting room floor for some extra insight into topics that we didn't have time for. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "The dark side of the influencer industry",
+      "date": "2023-04-27T16:17:25-04:00",
+      "npr_url": "https://www.npr.org/2023/04/17/1170524093/the-dark-side-of-the-influencer-industry",
+      "story_id": "1170524093",
+      "audio_id": "1198987513",
+      "player_url": "https://www.npr.org/player/embed/1170524093/1198987513",
+      "description": "When your lifestyle is your brand, the line between work and life can start to get blurred. From hate comments and sneaky contracts to prejudice and discrimination, it's not all sunshine and brand deals in the influencer industry.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Gen Z's dream job in the influencer industry",
+      "date": "2023-04-26T17:01:50-04:00",
+      "npr_url": "https://www.npr.org/2023/04/17/1170524085/gen-zs-dream-job-in-the-influencer-industry",
+      "story_id": "1170524085",
+      "audio_id": "1198987517",
+      "player_url": "https://www.npr.org/player/embed/1170524085/1198987517",
+      "description": "'Do what you love and you'll never work a day in your life,' they said. How Gen Z is trying to do just that through ~influencing~For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "The economics of the influencer industry",
+      "date": "2023-04-25T17:00:17-04:00",
+      "npr_url": "https://www.npr.org/2023/04/17/1170524077/the-economics-of-the-influencer-industry",
+      "story_id": "1170524077",
+      "audio_id": "1198987521",
+      "player_url": "https://www.npr.org/player/embed/1170524077/1198987521",
+      "description": "We wanted to know how many influencers are making a living from their content creation. Turns out, not many are. On today's episode of our series on the influencer industry, we meet a fashion influencer trying to piece together sponsorship deals ... and hit the shops for styling advice.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "The origins of the influencer industry",
+      "date": "2023-04-24T17:43:10-04:00",
+      "npr_url": "https://www.npr.org/2023/04/17/1170524071/the-origins-of-the-influencer-industry",
+      "story_id": "1170524071",
+      "audio_id": "1198987545",
+      "player_url": "https://www.npr.org/player/embed/1170524071/1198987545",
+      "description": "This week, we're going deep into the multi-billion dollar influencer industry. Today, a researcher and two generations of influencers take us through the industry's history, from its origins in the blogosphere of the Great Recession to the sponsored content in your social media feeds today.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Dollar v. world / Taylor Swift v. FTX / Fox v. Dominion",
+      "date": "2023-04-21T19:49:21-04:00",
+      "npr_url": "https://www.npr.org/2023/04/21/1171401404/dollar-v-world-taylor-swift-v-ftx-fox-v-dominion",
+      "story_id": "1171401404",
+      "audio_id": "1198987588",
+      "player_url": "https://www.npr.org/player/embed/1171401404/1198987588",
+      "description": "Why does Brazil's President Lula go to bed every night thinking about the US dollar? Did Taylor Swift know crypto exchange FTX was trouble? That and more on this week's financial news roundup.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "'Let's Get It On' ... in court",
+      "date": "2023-04-20T19:52:07-04:00",
+      "npr_url": "https://www.npr.org/2023/04/20/1171161616/lets-get-it-on-in-court",
+      "story_id": "1171161616",
+      "audio_id": "1198987592",
+      "player_url": "https://www.npr.org/player/embed/1171161616/1198987592",
+      "description": "Did Ed Sheeran steal from Marvin Gaye's \"Let's Get It On\" in his hit single \"Thinking Out Loud\"? That case heads to trial next week, and our guest says the outcome should matter to music-lovers everywhere.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "A tech billionaire goes missing in China",
+      "date": "2023-04-19T18:42:07-04:00",
+      "npr_url": "https://www.npr.org/2023/04/19/1170921109/a-tech-billionaire-goes-missing-in-china",
+      "story_id": "1170921109",
+      "audio_id": "1198987596",
+      "player_url": "https://www.npr.org/player/embed/1170921109/1198987596",
+      "description": "Earlier this year, Bao Fan, a prominent Chinese banker and tech billionaire, went missing in China. According to a statement from his company, he's \"cooperating in an investigation being carried out by certain authorities in the People's Republic of China.\" The details are very murky, but his disappearance raises questions about doing business in China right now.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "The dating game that does your taxes",
+      "date": "2023-04-18T20:05:24-04:00",
+      "npr_url": "https://www.npr.org/2023/04/18/1170677123/the-dating-game-that-does-your-taxes",
+      "story_id": "1170677123",
+      "audio_id": "1198987600",
+      "player_url": "https://www.npr.org/player/embed/1170677123/1198987600",
+      "description": "A video game where you go on dates and also prepare your federal tax return? We obviously had to play. Plus the IRS's 20 year journey to make tax prep free.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Can forcing people to save cool inflation?",
+      "date": "2023-04-17T18:03:35-04:00",
+      "npr_url": "https://www.npr.org/2023/04/17/1170469556/can-forcing-people-to-save-cool-inflation",
+      "story_id": "1170469556",
+      "audio_id": "1198987604",
+      "player_url": "https://www.npr.org/player/embed/1170469556/1198987604",
+      "description": "\"Forced savings, you cowards!\" Those aren't his exact words, but in 1940, macroeconomist John Maynard Keynes advocated for compulsory savings to help tame inflation during World War II. Could that work today?For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Gloomy global growth, Tupperware troubles, RIP HBO Max",
+      "date": "2023-04-14T17:23:33-04:00",
+      "npr_url": "https://www.npr.org/2023/04/14/1170132280/gloomy-global-growth-tupperware-troubles-rip-hbo-max",
+      "story_id": "1170132280",
+      "audio_id": "1198987631",
+      "player_url": "https://www.npr.org/player/embed/1170132280/1198987631",
+      "description": "In this edition of Indicators of the Week, our hosts cover the latest news from the International Monetary Fund, Tupperware and the media conglomerate behind HBO Max — or is it just Max now? For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "When AI works in HR",
+      "date": "2023-04-13T18:13:49-04:00",
+      "npr_url": "https://www.npr.org/2023/04/13/1169725631/when-ai-works-in-hr",
+      "story_id": "1169725631",
+      "audio_id": "1198987635",
+      "player_url": "https://www.npr.org/player/embed/1169725631/1198987635",
+      "description": "Artificial intelligence has been portrayed as a solution to human bias. But, when it comes to finding top job talent, AI can get it just as wrong. So how can that be fixed?For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Prices: What goes up, doesn't always come down",
+      "date": "2023-04-12T19:31:31-04:00",
+      "npr_url": "https://www.npr.org/2023/04/12/1169531488/prices-what-goes-up-doesnt-always-come-down",
+      "story_id": "1169531488",
+      "audio_id": "1198987639",
+      "player_url": "https://www.npr.org/player/embed/1169531488/1198987639",
+      "description": "Earlier in the pandemic, we saw many businesses raise their prices because of the higher costs they faced. So we wondered, now that some of those costs are coming down, will companies also pass along that price relief to consumers? The answer reveals a lot about how corporations make pricing decisions.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Two innovation market indicators",
+      "date": "2023-04-12T19:26:51-04:00",
+      "npr_url": "https://www.npr.org/2023/04/12/1169496786/indicator-bond-yield-curve-interest",
+      "story_id": "1169496786",
+      "audio_id": "1198959529",
+      "player_url": "https://www.npr.org/player/embed/1169496786/1198959529",
+      "description": "Right now, the economy is all over the place. And when things get confusing, we look to basic economic indicators to help explain what's going on. Today, we're bringing you two episodes of our daily show The Indicator that focus on the bond market.The market for U.S. treasury bonds is generally safe, predictable and pretty boring. Recently, though, it's been anything but. We look into the fluctuations in bond prices and the yield curve (one of our favorite indicators) to try to help us understand where the economy stands right now.These two Indicator episodes were originally produced by Brittany Cronin and Noah Glick. They were fact-checked by Sierra Juarez and engineered by Gilly Moon and Katherine Silva. Kate Concannon edits The Indicator.The Planet Money version was produced by Dylan Sloan and edited by Dave Blanchard. Music: \"Funk Lounge,\" \"A Fulltime Job\" and \"Velvet Groove.\" Help support Planet Money and get bonus episodes by subscribing to Planet Money+ in Apple Podcasts or at plus.npr.org/planetmoney."
+    },
+    {
+      "title": "How one small change in Japan could sway U.S. markets",
+      "date": "2023-04-11T19:30:19-04:00",
+      "npr_url": "https://www.npr.org/2023/04/11/1169243599/how-one-small-change-in-japan-could-sway-u-s-markets",
+      "story_id": "1169243599",
+      "audio_id": "1198987643",
+      "player_url": "https://www.npr.org/player/embed/1169243599/1198987643",
+      "description": "You've heard of the butterfly effect, right? A seemingly small action causes ripples in unexpected ways elsewhere. So, what would it mean if Japan's central bank raised interest rates on its 10-year government bonds, which have been near zero percent since 2016?For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "The Fed's radical new bank band-aid",
+      "date": "2023-04-10T17:51:09-04:00",
+      "npr_url": "https://www.npr.org/2023/04/10/1169127374/the-feds-radical-new-bank-band-aid",
+      "story_id": "1169127374",
+      "audio_id": "1198987647",
+      "player_url": "https://www.npr.org/player/embed/1169127374/1198987647",
+      "description": "Recent bank failures are putting a spotlight on risky behaviors in the financial sector. The Federal Reserve is introducing a new way for banks to borrow money that's better for banks, but exposes the government to more cost and risk. Today, we explain the Bank Term Funding Program.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "How much is your reputation worth?",
+      "date": "2023-04-06T19:52:25-04:00",
+      "npr_url": "https://www.npr.org/2023/04/06/1168523718/how-much-is-your-reputation-worth",
+      "story_id": "1168523718",
+      "audio_id": "1198987651",
+      "player_url": "https://www.npr.org/player/embed/1168523718/1198987651",
+      "description": "Dominion Voting Systems is seeking $1.6 billion in damages from Fox News, which if it wins, would be the biggest defamation verdict in U.S. history. So we wondered, how do you price a reputation?For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Inside the underwater cables powering the economy",
+      "date": "2023-04-05T19:40:13-04:00",
+      "npr_url": "https://www.npr.org/2023/04/05/1168230334/inside-the-underwater-cables-powering-the-economy",
+      "story_id": "1168230334",
+      "audio_id": "1198987655",
+      "player_url": "https://www.npr.org/player/embed/1168230334/1198987655",
+      "description": "On the Internet, everything feels instantaneous. But how exactly did that data get to you? We'll take you on a virtual tour of the 19th-century technology that runs the modern world.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "The inverted yield curve is screaming RECESSION",
+      "date": "2023-04-04T18:20:35-04:00",
+      "npr_url": "https://www.npr.org/2023/04/04/1168039533/the-inverted-yield-curve-is-screaming-recession",
+      "story_id": "1168039533",
+      "audio_id": "1198987659",
+      "player_url": "https://www.npr.org/player/embed/1168039533/1198987659",
+      "description": "There is one indicator that has predicted every recession since 1969, and that indicator is flashing red right now. It's the yield curve. But Mr. Yield Curve himself, Campbell Harvey, explains why this time he thinks his prediction could be wrong. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "What the \"bonkers\" bond market means for you",
+      "date": "2023-04-03T18:05:41-04:00",
+      "npr_url": "https://www.npr.org/2023/04/03/1167771687/what-the-bonkers-bond-market-means-for-you",
+      "story_id": "1167771687",
+      "audio_id": "1198987663",
+      "player_url": "https://www.npr.org/player/embed/1167771687/1198987663",
+      "description": "U.S. government bonds have long been seen as a steady, reliable place for investors. So why has this safe 'merry-go-round' option turned into a rickety roller coaster ride? We step into the financial markets theme park to explain.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Binance lawsuit, bank failures and oil drilling",
+      "date": "2023-03-31T18:53:40-04:00",
+      "npr_url": "https://www.npr.org/2023/03/31/1167538548/binance-lawsuit-bank-failures-and-oil-drilling",
+      "story_id": "1167538548",
+      "audio_id": "1198987667",
+      "player_url": "https://www.npr.org/player/embed/1167538548/1198987667",
+      "description": "We cover some of this week's top economic stories: Cryptocurrency company Binance's legal issues, patching a hole in the banking system's rainy day fund, and newly approved waters for oil and gas drilling in the Gulf of Mexico.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "The cost of a dollar in Ukraine",
+      "date": "2023-03-30T18:12:31-04:00",
+      "npr_url": "https://www.npr.org/2023/03/30/1167044819/the-cost-of-a-dollar-in-ukraine",
+      "story_id": "1167044819",
+      "audio_id": "1198987671",
+      "player_url": "https://www.npr.org/player/embed/1167044819/1198987671",
+      "description": "How one Ukrainian is circumventing the government exchange rate to turn U.S. dollars into medicine for Ukrainians near the front lines.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "What's the cure for America's doctor shortage?",
+      "date": "2023-03-29T21:35:20-04:00",
+      "npr_url": "https://www.npr.org/2023/03/29/1166873700/whats-the-cure-for-americas-doctor-shortage",
+      "story_id": "1166873700",
+      "audio_id": "1198987675",
+      "player_url": "https://www.npr.org/player/embed/1166873700/1198987675",
+      "description": "The doctor shortage is a growing problem across the U.S. But there was a time when the government, researchers, and medical professionals worried about a doctor surplus."
+    },
+    {
+      "title": "Batteries are catching fire at sea",
+      "date": "2023-03-28T19:05:40-04:00",
+      "npr_url": "https://www.npr.org/2023/03/28/1166625069/batteries-are-catching-fire-at-sea",
+      "story_id": "1166625069",
+      "audio_id": "1198987679",
+      "player_url": "https://www.npr.org/player/embed/1166625069/1198987679",
+      "description": "Lithium-ion batteries—used in everything from smart phones and laptops to electric scooters and cars—are catching fire on land and at sea. A former cargo ship captain walks us through why these fires are so hard to put out and why ocean-going car carriers are particularly at risk.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Why tech bros are trying to give away all their money (kind of)",
+      "date": "2023-03-27T19:36:59-04:00",
+      "npr_url": "https://www.npr.org/2023/03/24/1165958666/why-tech-bros-are-trying-to-give-away-all-their-money-kind-of",
+      "story_id": "1165958666",
+      "audio_id": "1198987683",
+      "player_url": "https://www.npr.org/player/embed/1165958666/1198987683",
+      "description": "How do you do the most good in the world? Money and data! That's according to this new wave of philanthropy known as effective altruism, heralded by the likes of Sam Bankman-Fried. Today on the show we uncover the art and science of effective altruism.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Too many subscriptions, not enough organs",
+      "date": "2023-03-24T18:59:53-04:00",
+      "npr_url": "https://www.npr.org/2023/03/24/1165947234/too-many-subscriptions-not-enough-organs",
+      "story_id": "1165947234",
+      "audio_id": "1198987687",
+      "player_url": "https://www.npr.org/player/embed/1165947234/1198987687",
+      "description": "Our indicators of the week: how a federal agency is trying to make it easier for you to cancel your subscriptions. And what's being done to address the 100,000-plus person backlog for organ transplants.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "The wide open possibility of the high seas",
+      "date": "2023-03-23T16:44:39-04:00",
+      "npr_url": "https://www.npr.org/2023/03/23/1165688010/the-wide-open-possibility-of-the-high-seas",
+      "story_id": "1165688010",
+      "audio_id": "1198987691",
+      "player_url": "https://www.npr.org/player/embed/1165688010/1198987691",
+      "description": "The high seas — water 200 nautical miles from shore — are an ocean of possibility for industries looking to cash in. But without proper oversight, the problems could be as deep as the ocean itself.Could an international agreement help?For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "We grade Fed Chair Jerome Powell",
+      "date": "2023-03-22T20:31:52-04:00",
+      "npr_url": "https://www.npr.org/2023/03/22/1165414183/we-grade-fed-chair-jerome-powell",
+      "story_id": "1165414183",
+      "audio_id": "1198987695",
+      "player_url": "https://www.npr.org/player/embed/1165414183/1198987695",
+      "description": "We're putting Fed Chair Jerome Powell in the hot seat. Without fear and without favor, our guests look at Powell's record on jobs, inflation and financial stability. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "What banks do when no one's watching",
+      "date": "2023-03-21T19:08:35-04:00",
+      "npr_url": "https://www.npr.org/2023/03/21/1165002188/what-banks-do-when-no-ones-watching",
+      "story_id": "1165002188",
+      "audio_id": "1198987699",
+      "player_url": "https://www.npr.org/player/embed/1165002188/1198987699",
+      "description": "Recent banking turmoil is shining a spotlight on the people whose job it is to monitor banks themselves. Today, we examine the bank examiners and learn why their job is so important for the banking sector. Plus, a recent government report that shows they could be in short supply very soon. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Banks gone wild: SVB, Signature and moral hazard",
+      "date": "2023-03-17T19:18:41-04:00",
+      "npr_url": "https://www.npr.org/2023/03/16/1163863926/banks-gone-wild-svb-signature-and-moral-hazard",
+      "story_id": "1163863926",
+      "audio_id": "1198987707",
+      "player_url": "https://www.npr.org/player/embed/1163863926/1198987707",
+      "description": "The collapse of Silicon Valley Bank continues to ripple across banking and tech. Today, three indicators on the fallout, including what's next for some startup CEOs and why you might be hearing the term, moral hazard. And we talk about the other bank failure that's been overshadowed by SVB, New York-based Signature Bank.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Need workers? Why not charter a private jet?",
+      "date": "2023-03-16T17:11:06-04:00",
+      "npr_url": "https://www.npr.org/2023/03/16/1163914233/need-workers-why-not-charter-a-private-jet",
+      "story_id": "1163914233",
+      "audio_id": "1198987711",
+      "player_url": "https://www.npr.org/player/embed/1163914233/1198987711",
+      "description": "It's time for another edition of the Beigie Awards! Today, our winner comes through with one of the best anecdotes in Beigie history with a story about a Montana construction company that flew in workers via a private jet.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "New drugs. Cheaper drugs. Why not both?",
+      "date": "2023-03-15T18:15:04-04:00",
+      "npr_url": "https://www.npr.org/2023/03/15/1163748730/new-drugs-cheaper-drugs-why-not-both",
+      "story_id": "1163748730",
+      "audio_id": "1198987715",
+      "player_url": "https://www.npr.org/player/embed/1163748730/1198987715",
+      "description": "Why are American consumers paying out the wazoo for drugs? Drug companies say it's because they need that money to fund the research and development that goes into making new life-saving drugs. Today we talk to a health economist who says you actually can have it all, lower prices and more innovation.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "The Fed's new dilemma: Protect banks or fight inflation?",
+      "date": "2023-03-14T19:17:31-04:00",
+      "npr_url": "https://www.npr.org/2023/03/14/1163486839/the-feds-new-dilemma-protect-banks-or-fight-inflation",
+      "story_id": "1163486839",
+      "audio_id": "1198987719",
+      "player_url": "https://www.npr.org/player/embed/1163486839/1198987719",
+      "description": "Prices are rising. A major bank has collapsed. And the Fed is left holding the hose trying to put out these fires. The question of whether to raise interest rates or not just got even more challenging.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Silicon Valley Bank's three fatal flaws",
+      "date": "2023-03-13T21:03:04-04:00",
+      "npr_url": "https://www.npr.org/2023/03/13/1163157993/silicon-valley-banks-three-fatal-flaws",
+      "story_id": "1163157993",
+      "audio_id": "1198987723",
+      "player_url": "https://www.npr.org/player/embed/1163157993/1198987723",
+      "description": "For decades, Silicon Valley Bank was the bank for thousands of startups and tech companies in the Bay Area. No longer. SVB's sudden failure last week has roiled the tech world. And it forced regulators to step in as concerns grew about the wider financial system. On today's episode, we look at what happened at SVB, and the three reasons that made the bank especially vulnerable to collapse.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "We found the 'missing workers'",
+      "date": "2023-03-10T18:47:57-05:00",
+      "npr_url": "https://www.npr.org/2023/03/10/1162753771/we-found-the-missing-workers",
+      "story_id": "1162753771",
+      "audio_id": "1198987727",
+      "player_url": "https://www.npr.org/player/embed/1162753771/1198987727",
+      "description": "Millions of people opted out of the labor force during the pandemic, and the Federal Reserve's most recent update on the economy explains why. Today, we hear from people who made that decision to leave the workforce.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "How three letters reinvented the railroad business",
+      "date": "2023-03-09T20:06:12-05:00",
+      "npr_url": "https://www.npr.org/2023/03/09/1162333378/how-three-letters-reinvented-the-railroad-business",
+      "story_id": "1162333378",
+      "audio_id": "1198987731",
+      "player_url": "https://www.npr.org/player/embed/1162333378/1198987731",
+      "description": "After a series of train derailments, the railroad industry is under scrutiny from politicians, the public and rail workers themselves. Many workers blame a relatively new management philosophy called precision-scheduled railroading (PSR). What is PSR and how has it changed the industry?For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Why some Indonesians worry about a $20 billion climate deal to get off coal",
+      "date": "2023-03-08T20:07:24-05:00",
+      "npr_url": "https://www.npr.org/2023/03/08/1161980411/why-some-indonesians-worry-about-a-20-billion-climate-deal-to-get-off-coal",
+      "story_id": "1161980411",
+      "audio_id": "1198987735",
+      "player_url": "https://www.npr.org/player/embed/1161980411/1198987735",
+      "description": "The U.S. is helping broker a $20 billion deal to transition Indonesia off coal. The hope is this climate financing plan could be a model to move other developing counties away from coal-fired electricity. But Indonesian energy experts and solar executives worry much of this deal may just be \"omong kosong\" — empty talk. Today on The Indicator, we bring you an episode of Short Wave, NPR's daily science podcast. Climate solutions reporter Julia Simon breaks down the realities and limitations of Indonesia's renewable energy aspirations with Short Wave co-host Aaron Scott. (You can read more about this story here.)"
+    },
+    {
+      "title": "Listener Questions: baby booms, sewing patterns and rural inflation",
+      "date": "2023-03-07T18:15:01-05:00",
+      "npr_url": "https://www.npr.org/2023/03/07/1161746297/listener-questions-baby-booms-sewing-patterns-and-rural-inflation",
+      "story_id": "1161746297",
+      "audio_id": "1198987739",
+      "player_url": "https://www.npr.org/player/embed/1161746297/1198987739",
+      "description": "It's another listener questions episode where we take on what you want to know! On today's show... We look at the U.S. birth rate. Are we booming or busting? Does the Consumer Price Index capture what's happening in rural America? And copyrighting knitting & sewing patterns, it's a tangled issue! If you have a question you'd like us to answer, email us at indicator@npr.org.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "A trip to the Northern Ireland trade border",
+      "date": "2023-03-06T19:09:56-05:00",
+      "npr_url": "https://www.npr.org/2023/03/06/1161499673/a-trip-to-the-northern-ireland-trade-border",
+      "story_id": "1161499673",
+      "audio_id": "1198987743",
+      "player_url": "https://www.npr.org/player/embed/1161499673/1198987743",
+      "description": "The UK's withdrawal from the European Union in 2020 came with plenty of challenges. And now one of its biggest — how to deal with Northern Ireland — may finally be resolved. On today's episode, we hear from a small business owner whose land and operations are split by the border between Northern Ireland and the Republic of Ireland. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Is the government choosing winners and losers?",
+      "date": "2023-03-03T19:20:42-05:00",
+      "npr_url": "https://www.npr.org/2023/03/03/1161090845/is-the-government-choosing-winners-and-losers",
+      "story_id": "1161090845",
+      "audio_id": "1198987747",
+      "player_url": "https://www.npr.org/player/embed/1161090845/1198987747",
+      "description": "Washington is doubling down on the industries it wants to see grow. From semiconductor chips to lithium-ion batteries, we trace where the money is going and why. And which part's got the European Union all bent outta shape.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org"
+    },
+    {
+      "title": "Can India become the next high-tech hub?",
+      "date": "2023-03-02T19:25:16-05:00",
+      "npr_url": "https://www.npr.org/2023/03/02/1160640017/can-india-become-the-next-high-tech-hub",
+      "story_id": "1160640017",
+      "audio_id": "1198987751",
+      "player_url": "https://www.npr.org/player/embed/1160640017/1198987751",
+      "description": "For more than a decade, China has been a leader in global manufacturing, producing everything from trinkets and toys to advanced electronics. But there's another country looking to challenge China for manufacturing dominance: India.We ask, what would it take for India to become the world's factory?For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "How venture capital built Silicon Valley",
+      "date": "2023-03-01T19:07:28-05:00",
+      "npr_url": "https://www.npr.org/2023/02/28/1160283155/how-venture-capital-built-silicon-valley",
+      "story_id": "1160283155",
+      "audio_id": "1198987755",
+      "player_url": "https://www.npr.org/player/embed/1160283155/1198987755",
+      "description": "In 1957, a group of scientists fed up with their boss set the modern venture capital model in motion. Today, the story of the unconventional investment idea behind Silicon Valley startup culture and so much of the technology we use today. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Is price gouging a problem?",
+      "date": "2023-02-28T19:14:46-05:00",
+      "npr_url": "https://www.npr.org/2023/02/28/1160197163/is-price-gouging-a-problem",
+      "story_id": "1160197163",
+      "audio_id": "1198987759",
+      "player_url": "https://www.npr.org/player/embed/1160197163/1198987759",
+      "description": "Consumers and politicians around the country are making a lot of noise about price gouging. But when do prices cross the line from simply high to something more painful? We talk to an economist to find out.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Know your economeme",
+      "date": "2023-02-27T18:03:12-05:00",
+      "npr_url": "https://www.npr.org/2023/02/24/1159469475/know-your-economeme",
+      "story_id": "1159469475",
+      "audio_id": "1198987763",
+      "player_url": "https://www.npr.org/player/embed/1159469475/1198987763",
+      "description": "From the depths of econ twitter straight to your podcast feed – this is economemes. Our guests bring us their favorite economic memes and explain what they mean. Can econ be funny? Only you can decide!For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "The economic war against Russia, a year later",
+      "date": "2023-02-24T17:56:16-05:00",
+      "npr_url": "https://www.npr.org/2023/02/24/1159453563/the-economic-war-against-russia-a-year-later",
+      "story_id": "1159453563",
+      "audio_id": "1198987767",
+      "player_url": "https://www.npr.org/player/embed/1159453563/1198987767",
+      "description": "On this day one year ago, Russia launched its full-scale invasion of Ukraine. Today, we cover three indicators about the war's economic impact. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Do work requirements help SNAP people out of government aid?",
+      "date": "2023-02-23T19:13:14-05:00",
+      "npr_url": "https://www.npr.org/2023/02/23/1159150854/do-work-requirements-help-snap-people-out-of-government-aid",
+      "story_id": "1159150854",
+      "audio_id": "1198987771",
+      "player_url": "https://www.npr.org/player/embed/1159150854/1198987771",
+      "description": "Do work requirements actually work? The Supplemental Nutrition Assistance Program, or SNAP, will soon require some benefit recipients to work in order to receive government aid. New economic research looks at whether that approach is effective in getting participants into the workforce and earning more.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
     }
   ]
 }
