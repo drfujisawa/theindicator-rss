@@ -1,21 +1,37 @@
-# Planet Money but it's all episodes
+# The Indicator — Full History RSS Feed
 
-**The feed is available here**:
-- https://xjcl.github.io/planetmoney-rss/npr_pm_feed.xml
+This repository maintains an RSS feed for NPR's **The Indicator from Planet Money** that preserves episodes after they fall off NPR's official podcast feed.
 
-*Planetmoney-rss* is a repository to assemble a podcast feed containing **ALL** [Planet Money](https://en.wikipedia.org/wiki/Planet_Money) episodes, including all old episodes going back to 2008.
-NPR's [official feed](https://itunes.apple.com/us/podcast/planet-money/id290783428?mt=2) only includes the most recent 300 of the show's more-than-1000 episodes due to an iTunes limitation.
+NPR's official feed only exposes a limited number of recent episodes:
 
-All episodes < 2019-05-01 were scraped from NPR's Planet Money [website](https://www.npr.org/sections/money/127413729/podcast/archive) and exported into an XML RSS file using Python code ([`npr_pm_rip.py`](npr_pm_rip.py)). **In 2019, NPR STOPPED updating that site with podcast episodes, so that script is no longer used.**
+https://feeds.npr.org/510325/podcast.xml
 
-Episodes >= 2019-05-01 are directly copied from the official NPR feed at https://feeds.npr.org/510289/podcast.xml. This is less work for me and also ensures correct metadata. Needs to be done every 2-3 years before episodes fall off the official feed (should be managable if I don't die). **I now manually run [`wget_feed_HEAD.sh`](wget_feed_HEAD.sh) and then copypaste the appropriate entries into [`npr_pm_feed.xml`](npr_pm_feed.xml).**
+This project keeps a permanent copy and adds new episodes automatically using GitHub Actions.
 
-----
+## Feed
 
-For more information look at these reddit threads:
-- https://www.reddit.com/r/nprplanetmoney/comments/86ot7a/ultimate_guide_to_listening_to_all_old_episodes/
-- https://www.reddit.com/r/nprplanetmoney/comments/5jl8tq/why_does_the_podcast_feed_end_at_464_can_someone/
+The full-history feed is:
 
-Screenshots of how this feed looks in Podcast Addict:
+https://drfujisawa.github.io/theindicator-rss/theindicator_feed.xml
 
-<img src="https://i.imgur.com/lwupMH9.png" width="270px"> <img src="https://i.imgur.com/SanFKcv.png" width="270px"> <img src="https://i.imgur.com/5qTZGQb.png" width="270px">
+## How it works
+
+`theindicator_rss.py` downloads NPR's current RSS feed and merges any new episodes into `theindicator_feed.xml`.
+
+Episodes already stored in the archive are never removed simply because they disappear from NPR's official feed.
+
+A GitHub Actions workflow runs automatically every six hours and updates the archive.
+
+## Historical episodes
+
+The current archive begins with the episodes available in NPR's feed when this project was converted to The Indicator.
+
+Older episodes dating back to the show's launch in 2017 will be added separately.
+
+## Credits
+
+This repository was originally forked from:
+
+https://github.com/xjcl/planetmoney-rss
+
+That project preserves the full history of NPR's Planet Money podcast.
