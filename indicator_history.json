@@ -1,6 +1,6 @@
 {
-  "next_date": "2022-07-04T20:43:15-04:00",
-  "episode_count": 674,
+  "next_date": "2022-04-24T18:29:44-04:00",
+  "episode_count": 720,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -6067,6 +6067,420 @@
       "audio_id": "1198988657",
       "player_url": "https://www.npr.org/player/embed/1109906572/1198988657",
       "description": "Amid daunting gas prices, President Biden's proposed federal gas tax holiday sounds like a sweet relief. But the economics behind this tax break reveals the push and pull between consumers and oil companies, and an unexpected outcome."
+    },
+    {
+      "title": "All roads lead to Russian indicators",
+      "date": "2022-07-01T19:09:09-04:00",
+      "npr_url": "https://www.npr.org/2022/07/01/1109490358/all-roads-lead-to-russian-indicators",
+      "story_id": "1109490358",
+      "audio_id": "1198988661",
+      "player_url": "https://www.npr.org/player/embed/1109490358/1198988661",
+      "description": "After the G7 talks, we're turning our attention back to Russia. But in typical The Indicator fashion, we're zooming in on three global commodities affected by the ongoing war: gold, oil, and wheat. Planet Money and The Indicator are looking for our intern for fall through winter. Come work with us! We would love to have you. And it's paid! Go to npr.org/internships to apply. Deadline is Sunday, July 10th."
+    },
+    {
+      "title": "Where 'bull market' and 'bear market' come from",
+      "date": "2022-06-30T21:01:53-04:00",
+      "npr_url": "https://www.npr.org/2022/06/30/1109062324/where-bull-market-and-bear-market-come-from",
+      "story_id": "1109062324",
+      "audio_id": "1198988665",
+      "player_url": "https://www.npr.org/player/embed/1109062324/1198988665",
+      "description": "Have you ever wondered where the terms 'bull' and 'bear' markets originated from? Today on the show, we're journeying back to the 1700s to find out how a particular financial event popularized these animal terms."
+    },
+    {
+      "title": "Russia's sanctions, graded",
+      "date": "2022-06-29T19:46:34-04:00",
+      "npr_url": "https://www.npr.org/2022/06/29/1108743666/russias-sanctions-graded",
+      "story_id": "1108743666",
+      "audio_id": "1198988669",
+      "player_url": "https://www.npr.org/player/embed/1108743666/1198988669",
+      "description": "On a scale of 1 to 10, how effective are the sanctions on Russia? Today on the show, we're grading the hodgepodge of sanctions aimed at persuading Russia to withdraw its troops from Ukraine."
+    },
+    {
+      "title": "The promise and peril of crypto for Black investors",
+      "date": "2022-06-28T20:06:28-04:00",
+      "npr_url": "https://www.npr.org/2022/06/28/1108413738/the-promise-and-peril-of-crypto-for-black-investors",
+      "story_id": "1108413738",
+      "audio_id": "1198988673",
+      "player_url": "https://www.npr.org/player/embed/1108413738/1198988673",
+      "description": "Black consumers are more likely to own crypto than white consumers and crypto enthusiasts laud the crypto world as a driver for racial equity. In today's show we explore that premise. If you're interested in learning more, listen to the episode and check out Terri Bradford's article on Black crypto ownership."
+    },
+    {
+      "title": "The celebrity crypto nexus",
+      "date": "2022-06-27T19:19:07-04:00",
+      "npr_url": "https://www.npr.org/2022/06/27/1108033471/the-celebrity-crypto-nexus",
+      "story_id": "1108033471",
+      "audio_id": "1198988677",
+      "player_url": "https://www.npr.org/player/embed/1108033471/1198988677",
+      "description": "From Jimmy Fallon to Reese Witherspoon, why are so many celebrities promoting crypto? We untangle the web of connections between Hollywood A-listers, Bored Apes, and one influential talent agency, with journalist Max Read. He wrote about this in his Substack newsletter, Read Max."
+    },
+    {
+      "title": "Burgers in Russia, Juul vaporized, THE trademarked",
+      "date": "2022-06-24T19:35:05-04:00",
+      "npr_url": "https://www.npr.org/2022/06/24/1107577923/burgers-in-russia-juul-vaporized-the-trademarked",
+      "story_id": "1107577923",
+      "audio_id": "1198988681",
+      "player_url": "https://www.npr.org/player/embed/1107577923/1198988681",
+      "description": "This Friday, we're looking at fast-food companies who are still hanging on in Russia. Juul getting banned. And as a cherry on top, THE Ohio State University deciding to patent you guessed it, \"the.\""
+    },
+    {
+      "title": "Does Bitcoin have a grip on the economy?",
+      "date": "2022-06-23T18:51:36-04:00",
+      "npr_url": "https://www.npr.org/2022/06/23/1107194450/does-bitcoin-have-a-grip-on-the-economy",
+      "story_id": "1107194450",
+      "audio_id": "1198988685",
+      "player_url": "https://www.npr.org/player/embed/1107194450/1198988685",
+      "description": "The crypto market has taken a beating lately, and even though Bitcoin and other crypto assets are risky, they're becoming more mainstream. How concerned do we need to be about the recent crypto collapse?"
+    },
+    {
+      "title": "What took the Fed so long?",
+      "date": "2022-06-22T20:05:52-04:00",
+      "npr_url": "https://www.npr.org/2022/06/22/1106893731/what-took-the-fed-so-long",
+      "story_id": "1106893731",
+      "audio_id": "1198988689",
+      "player_url": "https://www.npr.org/player/embed/1106893731/1198988689",
+      "description": "What took the Fed so long to address high inflation? Today on the show, we're exploring six reasons behind the Fed's hesitancy to hike interest rates, according to Bill Nelson, who spent two decades working for the Federal Reserve. For more background, check out our episode last week, Jerome Powell's ghosts."
+    },
+    {
+      "title": "The price of free stock trading",
+      "date": "2022-06-21T18:26:47-04:00",
+      "npr_url": "https://www.npr.org/2022/06/21/1106468243/the-price-of-free-stock-trading",
+      "story_id": "1106468243",
+      "audio_id": "1198988697",
+      "player_url": "https://www.npr.org/player/embed/1106468243/1198988697",
+      "description": "Everyone's a stock trader these days. With a press of a button, companies like Robinhood allow everyday people to buy and sell shares with no fee. But, this practice is just a tad bit controversial."
+    },
+    {
+      "title": "The housing shakeup",
+      "date": "2022-06-17T18:48:04-04:00",
+      "npr_url": "https://www.npr.org/2022/06/17/1105986237/the-housing-shakeup",
+      "story_id": "1105986237",
+      "audio_id": "1198988701",
+      "player_url": "https://www.npr.org/player/embed/1105986237/1198988701",
+      "description": "With rising interest rates, this economy has got us scratching our heads. To rent, or not to rent? To borrow money, or not to borrow? To qualify for a mortgage...or maybe not. Maybe our three indicators on the housing market will give clues. Hey, we're off for Juneteenth but The Indicator will be back on Tuesday!"
+    },
+    {
+      "title": "Going backwards on child poverty",
+      "date": "2022-06-16T19:43:33-04:00",
+      "npr_url": "https://www.npr.org/2022/06/16/1105707030/going-backwards-on-child-poverty",
+      "story_id": "1105707030",
+      "audio_id": "1198988705",
+      "player_url": "https://www.npr.org/player/embed/1105707030/1198988705",
+      "description": "School's out, and so are pandemic-era relief measures for families with children. But when universal free lunches and expanded child tax credits roll to a halt, what are the consequences? Take NPR's annual podcast survey – especially if you're a new listener! It's short, anonymous, and will help us serve you better!"
+    },
+    {
+      "title": "Jerome Powell's ghosts",
+      "date": "2022-06-15T20:28:54-04:00",
+      "npr_url": "https://www.npr.org/2022/06/15/1105388082/jerome-powells-ghosts",
+      "story_id": "1105388082",
+      "audio_id": "1198988709",
+      "player_url": "https://www.npr.org/player/embed/1105388082/1198988709",
+      "description": "The Fed hiked interest rates by 0.75 percentage points. But why the sudden jump now? Why not earlier? To understand the psyche of the Fed and its chair, Jerome Powell, we're turning back the clock to the 2013 Taper Tantrum, and a 2019 road trip."
+    },
+    {
+      "title": "Securing the (Telfar) bag",
+      "date": "2022-06-14T22:30:58-04:00",
+      "npr_url": "https://www.npr.org/2022/06/14/1105092405/securing-the-telfar-bag",
+      "story_id": "1105092405",
+      "audio_id": "1198988713",
+      "player_url": "https://www.npr.org/player/embed/1105092405/1198988713",
+      "description": "3... 2... 1... GONE? Already? The Telfar Shopping Bag's been considered the \"it\" bag the last few years, if you can get your hands on one. It's also making big fashion statements by redefining luxury and accessibility in the fashion world."
+    },
+    {
+      "title": "Mergers, acquisitions and Elon's \"rude\" proposal",
+      "date": "2022-06-13T20:10:33-04:00",
+      "npr_url": "https://www.npr.org/2022/06/13/1104792247/mergers-acquisitions-and-elons-rude-proposal",
+      "story_id": "1104792247",
+      "audio_id": "1198988717",
+      "player_url": "https://www.npr.org/player/embed/1104792247/1198988717",
+      "description": "For the corporate engagement of Elon Musk and Twitter, the road to the chapel has been unusually rocky. So how are these deals supposed to go, anyway?"
+    },
+    {
+      "title": "A macroeconomist walks into a bar fight",
+      "date": "2022-06-10T19:53:20-04:00",
+      "npr_url": "https://www.npr.org/2022/06/10/1104293317/a-macroeconomist-walks-into-a-bar-fight",
+      "story_id": "1104293317",
+      "audio_id": "1198988721",
+      "player_url": "https://www.npr.org/player/embed/1104293317/1198988721",
+      "description": "Welcome to the macroeconomic bar fight. Today, fists are being thrown over the causes of high inflation. But off to the corner stands John Cochrane, an economist with a core explanation for rising prices: government borrowing and spending. Check out some of our earlier episodes on inflation: - Why some economists last year were concerned about low interest rates and high government borrowing and spending - Why the term 'transitory' inflation was banned by the Federal Reserve Bank of Atlanta as consumers spent and spent in 2021 - How the war in Ukraine raises prices around the world, including food prices, and a look at grain exports stuck in the country - Whether corporate greed is to blame for inflation"
+    },
+    {
+      "title": "The Beigie Awards: The gallon is half full",
+      "date": "2022-06-09T18:58:59-04:00",
+      "npr_url": "https://www.npr.org/2022/06/09/1104034175/the-beigie-awards-the-gallon-is-half-full",
+      "story_id": "1104034175",
+      "audio_id": "1198988725",
+      "player_url": "https://www.npr.org/player/embed/1104034175/1198988725",
+      "description": "June. School's out, the sun is shining and most importantly, the Beige Book is here again! Among the Federal Reserve Banks, which gave the best anecdote about how the economy is doing?"
+    },
+    {
+      "title": "Are we entering a new dawn for antitrust enforcement?",
+      "date": "2022-06-08T19:16:06-04:00",
+      "npr_url": "https://www.npr.org/2022/06/08/1103836051/are-we-entering-a-new-dawn-for-antitrust-enforcement",
+      "story_id": "1103836051",
+      "audio_id": "1103848048",
+      "player_url": "https://www.npr.org/player/embed/1103836051/1103848048",
+      "description": "For decades, antitrust agencies focused on the harm to consumers. But lately, the federal government has started paying more attention to anticompetitive behavior when it comes to workers. Could this be a major turning point for antitrust enforcement? For more on monopsony, check out the paper referenced in the show: Monopsony in Labor Markets: A Meta-Analysis.Take NPR's annual podcast survey – especially if you're a new listener! It's short, anonymous, and will help us serve you better!"
+    },
+    {
+      "title": "The rocky road ahead for startups",
+      "date": "2022-06-07T19:59:50-04:00",
+      "npr_url": "https://www.npr.org/2022/06/07/1103600652/the-rocky-road-ahead-for-startups",
+      "story_id": "1103600652",
+      "audio_id": "1103614583",
+      "player_url": "https://www.npr.org/player/embed/1103600652/1103614583",
+      "description": "What happens to the flow of venture capital when the market drops? We look at each player – from limited partners to venture capitalists to startups – and the choices they face when turbulent times are ahead."
+    },
+    {
+      "title": "The lopsided market for higher ed",
+      "date": "2022-06-06T20:32:16-04:00",
+      "npr_url": "https://www.npr.org/2022/06/06/1103396029/the-lopsided-market-for-higher-ed",
+      "story_id": "1103396029",
+      "audio_id": "1103426547",
+      "player_url": "https://www.npr.org/player/embed/1103396029/1103426547",
+      "description": "Ah, college... the classes, the parties, the debt. Is it still worth it? While most schools are seeing their enrollment decline, 'elite' schools are receiving a jump in applications.Take NPR's annual podcast survey – especially if you're a new listener! It's short, anonymous, and will help us serve you better!"
+    },
+    {
+      "title": "Behind the scenes of Jobs Friday",
+      "date": "2022-06-03T19:11:58-04:00",
+      "npr_url": "https://www.npr.org/2022/06/03/1102884171/behind-the-scenes-of-jobs-friday",
+      "story_id": "1102884171",
+      "audio_id": "1103048683",
+      "player_url": "https://www.npr.org/player/embed/1102884171/1103048683",
+      "description": "The United States added 390,000 jobs in May. Today, we go behind the scenes to find the surprisingly delightful secrets to how the Bureau of Labor Statistics collects that number."
+    },
+    {
+      "title": "Home prices could fall, but is it a bubble?",
+      "date": "2022-06-02T18:56:31-04:00",
+      "npr_url": "https://www.npr.org/2022/06/02/1102741916/home-prices-could-fall-but-is-it-a-bubble",
+      "story_id": "1102741916",
+      "audio_id": "1102788357",
+      "player_url": "https://www.npr.org/player/embed/1102741916/1102788357",
+      "description": "Housing prices all over the country are rising at historic rates. Some are concerned about a housing bubble and crash like the one in 2008. So what's happening?"
+    },
+    {
+      "title": "How to get 20 million tons of grain out of Ukraine",
+      "date": "2022-06-01T18:33:32-04:00",
+      "npr_url": "https://www.npr.org/2022/05/31/1102277441/how-to-get-20-million-tons-of-grain-out-of-ukraine",
+      "story_id": "1102277441",
+      "audio_id": "1102526934",
+      "player_url": "https://www.npr.org/player/embed/1102277441/1102526934",
+      "description": "Russia's blockade of Ukraine's seaports have stopped 20 million tons of grain from getting exported. Today, how Ukraine is trying to get its trapped grain to countries that rely on these crucial food supplies."
+    },
+    {
+      "title": "An epic proxy battle comes to Hasbro",
+      "date": "2022-05-31T19:57:39-04:00",
+      "npr_url": "https://www.npr.org/2022/05/31/1102294858/an-epic-proxy-battle-comes-to-hasbro",
+      "story_id": "1102294858",
+      "audio_id": "1102317008",
+      "player_url": "https://www.npr.org/player/embed/1102294858/1102317008",
+      "description": "The toy giant, Hasbro, is set for a contentious proxy vote in early June. An activist investor argues the publicly traded company is neglecting its most profitable asset. Today, how a proxy battle works and what it means for Hasbro."
+    },
+    {
+      "title": "The money going into and out of gun stocks",
+      "date": "2022-05-27T19:50:10-04:00",
+      "npr_url": "https://www.npr.org/2022/05/27/1101864770/the-money-going-into-and-out-of-gun-stocks",
+      "story_id": "1101864770",
+      "audio_id": "1103678994",
+      "player_url": "https://www.npr.org/player/embed/1101864770/1103678994",
+      "description": "After the mass shooting in Uvalde, Texas, some investors are making bets on gun-related stocks while others are trying to avoid them altogether."
+    },
+    {
+      "title": "Tyler Cowen's 101 on discovering talent",
+      "date": "2022-05-25T19:42:27-04:00",
+      "npr_url": "https://www.npr.org/2022/05/25/1101332644/tyler-cowens-101-on-discovering-talent",
+      "story_id": "1101332644",
+      "audio_id": "1101392394",
+      "player_url": "https://www.npr.org/player/embed/1101332644/1101392394",
+      "description": "Matching talent with opportunity is great for economic growth. But when it comes to Identifying talent, we have a lot to learn according to economist Tyler Cowen. He joins the show today to talk about innovative strategies for finding under the radar talent."
+    },
+    {
+      "title": "Why women make great bosses",
+      "date": "2022-05-24T20:34:09-04:00",
+      "npr_url": "https://www.npr.org/2022/05/24/1101064874/why-women-make-great-bosses",
+      "story_id": "1101064874",
+      "audio_id": "1101100128",
+      "player_url": "https://www.npr.org/player/embed/1101064874/1101100128",
+      "description": "Companies with more top female execs are more likely to please customers, be socially responsible, and are more profitable. But we don't know why. Today we talk to Corinne Post, who thinks she's solved the mystery."
+    },
+    {
+      "title": "The government program that contributed to the baby formula shortage",
+      "date": "2022-05-23T19:05:47-04:00",
+      "npr_url": "https://www.npr.org/2022/05/23/1100825714/the-government-program-that-contributed-to-the-baby-formula-shortage",
+      "story_id": "1100825714",
+      "audio_id": "1100880183",
+      "player_url": "https://www.npr.org/player/embed/1100825714/1100880183",
+      "description": "Baby formula is in short supply after a voluntary February recall by the manufacturer, Abbott. Today, we explain how the government helped shape the U.S. formula market, and why that structure led to a devastating shortage."
+    },
+    {
+      "title": "Factory boom, credit card debt defaults and housing",
+      "date": "2022-05-20T19:22:21-04:00",
+      "npr_url": "https://www.npr.org/2022/05/20/1100493843/factory-boom-credit-card-debt-defaults-and-housing",
+      "story_id": "1100493843",
+      "audio_id": "1100512234",
+      "player_url": "https://www.npr.org/player/embed/1100493843/1100512234",
+      "description": "The economy is in a weird place right now. It seems like every day there are new numbers coming out that say economic conditions are either great or poor. Today, we bring you some indicators this week — factory output, credit card defaults and housing — and bring some clarity to the tumult."
+    },
+    {
+      "title": "Bart Simpson's American Dream",
+      "date": "2022-05-18T18:27:15-04:00",
+      "npr_url": "https://www.npr.org/2022/05/18/1099882160/bart-simpsons-american-dream",
+      "story_id": "1099882160",
+      "audio_id": "1099933385",
+      "player_url": "https://www.npr.org/player/embed/1099882160/1099933385",
+      "description": "Last year, we analyzed whether or not the Simpson family's lifestyle was attainable for the middle class. A writer on the show listened to that Indicator, and decided to answer that question with an episode of their own. Today, we bring you a sneak preview of their take on America's shrinking middle class."
+    },
+    {
+      "title": "Tracking 1 million COVID deaths",
+      "date": "2022-05-17T18:58:47-04:00",
+      "npr_url": "https://www.npr.org/2022/05/17/1099577985/tracking-1-million-covid-deaths",
+      "story_id": "1099577985",
+      "audio_id": "1099633909",
+      "player_url": "https://www.npr.org/player/embed/1099577985/1099633909",
+      "description": "The United States has hit a million recorded deaths from COVID-19, a likely undercount. Today, how John Burn-Murdoch from the Financial Times tracks COVID-19, and what the true death toll really is."
+    },
+    {
+      "title": "Lessons from a former drug dealer",
+      "date": "2022-05-16T18:40:30-04:00",
+      "npr_url": "https://www.npr.org/2022/05/16/1099240553/lessons-from-a-former-drug-dealer",
+      "story_id": "1099240553",
+      "audio_id": "1099351515",
+      "player_url": "https://www.npr.org/player/embed/1099240553/1099351515",
+      "description": "Are the skills from dealing drugs transferable to the world of legal entrepreneurship? We review the evidence and meet Coss Marte, a former drug dealer who built a successful fitness routine business after a long time in prison."
+    },
+    {
+      "title": "Crypto crashed, stocks dropped, and Apple surpassed",
+      "date": "2022-05-13T18:46:11-04:00",
+      "npr_url": "https://www.npr.org/2022/05/13/1098863761/crypto-crashed-stocks-dropped-and-apple-surpassed",
+      "story_id": "1098863761",
+      "audio_id": "1098922848",
+      "player_url": "https://www.npr.org/player/embed/1098863761/1098922848",
+      "description": "On today's edition of Indicators of the Week, we bring you the top numbers to know in the stock market, cryptocurrency, and the world's second most valuable company."
+    },
+    {
+      "title": "Beating the bond market: Luck or skill?",
+      "date": "2022-05-12T19:00:31-04:00",
+      "npr_url": "https://www.npr.org/2022/05/12/1098528139/beating-the-bond-market-luck-or-skill",
+      "story_id": "1098528139",
+      "audio_id": "1098669409",
+      "player_url": "https://www.npr.org/player/embed/1098528139/1098669409",
+      "description": "Bill Gross is a retired investor known for creating and dominating the bond market. But what exactly made him so successful? Today, we talk to Aaron Brown, who created a mock portfolio to unpack the success of the Bond King."
+    },
+    {
+      "title": "Can inflation ... inflate away debt?",
+      "date": "2022-05-11T19:31:29-04:00",
+      "npr_url": "https://www.npr.org/2022/05/11/1098359927/can-inflation-inflate-away-debt",
+      "story_id": "1098359927",
+      "audio_id": "1098426382",
+      "player_url": "https://www.npr.org/player/embed/1098359927/1098426382",
+      "description": "We often talk about inflation as a bad thing. But for countries in a lot of debt, inflation has an upside. But can a country try to inflate its way out of debt?"
+    },
+    {
+      "title": "The graying of America",
+      "date": "2022-05-10T19:03:39-04:00",
+      "npr_url": "https://www.npr.org/2022/05/10/1097997546/the-graying-of-america",
+      "story_id": "1097997546",
+      "audio_id": "1098091952",
+      "player_url": "https://www.npr.org/player/embed/1097997546/1098091952",
+      "description": "America is getting older which is bad news for the state of the labor market. Today, we learn how lower fertility rates and retiring seniors are contributing to shortages in the labor force."
+    },
+    {
+      "title": "EU leads the way on controlling big tech",
+      "date": "2022-05-09T18:20:35-04:00",
+      "npr_url": "https://www.npr.org/2022/05/09/1097692612/eu-leads-the-way-on-controlling-big-tech",
+      "story_id": "1097692612",
+      "audio_id": "1097739724",
+      "player_url": "https://www.npr.org/player/embed/1097692612/1097739724",
+      "description": "The European Union is poised to pass its latest big tech legislation package. The Digital Services Act could reshape how we interact with big online platforms. Today, we go through some of the highlights of the regulation."
+    },
+    {
+      "title": "What the Beveridge curve tells us about jobs",
+      "date": "2022-05-06T20:01:47-04:00",
+      "npr_url": "https://www.npr.org/2022/05/06/1097295182/what-the-beveridge-curve-tells-us-about-jobs",
+      "story_id": "1097295182",
+      "audio_id": "1097349468",
+      "player_url": "https://www.npr.org/player/embed/1097295182/1097349468",
+      "description": "Unemployment is low and job listings are at a record high: This shows up in a chart called the Beveridge curve. What's driving this? We talk to a former brewery manager to find out."
+    },
+    {
+      "title": "The palm oil price mystery",
+      "date": "2022-05-05T18:53:12-04:00",
+      "npr_url": "https://www.npr.org/2022/05/05/1096985719/the-palm-oil-price-mystery",
+      "story_id": "1096985719",
+      "audio_id": "1097006842",
+      "player_url": "https://www.npr.org/player/embed/1096985719/1097006842",
+      "description": "Prices for cooking oil have spiked around the world. You can point to drought and, more recently, the war in Ukraine for reasons why. But palm oil prices were on the rise before those production shocks. Today, we look into the palm oil price mystery."
+    },
+    {
+      "title": "Quantitative easing, meet quantitative tightening",
+      "date": "2022-05-04T19:33:20-04:00",
+      "npr_url": "https://www.npr.org/2022/05/04/1096752841/quantitative-easing-meet-quantitative-tightening",
+      "story_id": "1096752841",
+      "audio_id": "1096788635",
+      "player_url": "https://www.npr.org/player/embed/1096752841/1096788635",
+      "description": "To try and slow inflation, the Federal Reserve is going beyond its typical tool of raising interest rates, and adopting a policy of \"quantitative tightening.\" So ... what is that, exactly?"
+    },
+    {
+      "title": "A secret weapon to fight inflation",
+      "date": "2022-05-03T19:19:58-04:00",
+      "npr_url": "https://www.npr.org/2022/05/03/1096314685/a-secret-weapon-to-fight-inflation",
+      "story_id": "1096314685",
+      "audio_id": "1096479836",
+      "player_url": "https://www.npr.org/player/embed/1096314685/1096479836",
+      "description": "Savings bonds are known for their low yields and relative safety. However, the recent inflation spike is creating a heightened demand for the Series I Bond. Today, we learn the mechanics of the I Bond and why it might be the hottest investment of 2022."
+    },
+    {
+      "title": "The market for on demand trucking",
+      "date": "2022-05-02T19:11:16-04:00",
+      "npr_url": "https://www.npr.org/2022/05/02/1095997045/the-market-for-on-demand-trucking",
+      "story_id": "1095997045",
+      "audio_id": "1096041158",
+      "player_url": "https://www.npr.org/player/embed/1095997045/1096041158",
+      "description": "The trucking industry saw a boom in the early months of the pandemic as consumer demand for goods surged. This caused a key trucking indicator known as the spot market rate to hit historic highs. Today, we learn what the recent decline in the spot rate could mean for the economy."
+    },
+    {
+      "title": "Econ Exploder: GDP",
+      "date": "2022-04-29T20:10:30-04:00",
+      "npr_url": "https://www.npr.org/2022/04/29/1095644299/econ-exploder-gdp",
+      "story_id": "1095644299",
+      "audio_id": "1095721359",
+      "player_url": "https://www.npr.org/player/embed/1095644299/1095721359",
+      "description": "The Bureau of Economic Analysis released their quarterly gross domestic product report this week. It showed GDP shrank at an annualized rate of 1.4%. Not good. But there's a mix of stories in the details. We explain with the help of a bit of music."
+    },
+    {
+      "title": "The rising tides of global food prices",
+      "date": "2022-04-28T20:39:12-04:00",
+      "npr_url": "https://www.npr.org/2022/04/28/1095396921/the-rising-tides-of-global-food-prices",
+      "story_id": "1095396921",
+      "audio_id": "1095424698",
+      "player_url": "https://www.npr.org/player/embed/1095396921/1095424698",
+      "description": "Global food prices were rising even before Russia's invasion of Ukraine, but the war in Eastern Europe is putting more pressure on supply. Today, the global impact of rising food prices and how countries are attempting to make up for missing supply."
+    },
+    {
+      "title": "Shanghai's lockdown economy",
+      "date": "2022-04-27T20:07:26-04:00",
+      "npr_url": "https://www.npr.org/2022/04/27/1095089693/shanghais-lockdown-economy",
+      "story_id": "1095089693",
+      "audio_id": "1095168434",
+      "player_url": "https://www.npr.org/player/embed/1095089693/1095168434",
+      "description": "Shanghai is enduring a strict COVID lockdown that has left many without many basic necessities, including food. So ordinary people have banded together to build their own group-buying and barter economy."
+    },
+    {
+      "title": "Sri Lanka's foreign exchange problem",
+      "date": "2022-04-26T18:39:57-04:00",
+      "npr_url": "https://www.npr.org/2022/04/26/1094896074/sri-lankas-foreign-exchange-problem",
+      "story_id": "1094896074",
+      "audio_id": "1094924626",
+      "player_url": "https://www.npr.org/player/embed/1094896074/1094924626",
+      "description": "A series of policy missteps combined with a global pandemic is putting heavy economic pressure on Sri Lanka. Today, the events that led to surging prices, power outages and violent protests in the island nation."
+    },
+    {
+      "title": "You should probably get your plane tickets soon",
+      "date": "2022-04-25T18:29:44-04:00",
+      "npr_url": "https://www.npr.org/2022/04/25/1094706897/you-should-probably-get-your-plane-tickets-soon",
+      "story_id": "1094706897",
+      "audio_id": "1094726999",
+      "player_url": "https://www.npr.org/player/embed/1094706897/1094726999",
+      "description": "The pandemic crushed the airline industry, causing a wave of layoffs. While increased consumer demand in 2022 has analysts forecasting a profitable year for the major airlines, lingering issues are likely to make summertime travel more expensive."
     }
   ]
 }
