@@ -1,6 +1,6 @@
 {
-  "next_date": "2022-04-24T18:29:44-04:00",
-  "episode_count": 720,
+  "next_date": "2022-02-13T19:47:12-05:00",
+  "episode_count": 768,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -6481,6 +6481,438 @@
       "audio_id": "1094726999",
       "player_url": "https://www.npr.org/player/embed/1094706897/1094726999",
       "description": "The pandemic crushed the airline industry, causing a wave of layoffs. While increased consumer demand in 2022 has analysts forecasting a profitable year for the major airlines, lingering issues are likely to make summertime travel more expensive."
+    },
+    {
+      "title": "Poison pill, Netflix, and Disney's kingdom explained",
+      "date": "2022-04-22T19:33:07-04:00",
+      "npr_url": "https://www.npr.org/2022/04/22/1094369431/poison-pill-netflix-and-disneys-kingdom-explained",
+      "story_id": "1094369431",
+      "audio_id": "1094450959",
+      "player_url": "https://www.npr.org/player/embed/1094369431/1094450959",
+      "description": "Media and entertainment companies had a turbulent week, which made us want to cover a few of them for Indicators of the Week! Today, indicators for Netflix, Twitter, and Disney we think should be on your radar. Come see Planet Money Live in NYC on May 10th! One night only. Tickets on sale here."
+    },
+    {
+      "title": "China's tech crackdown backdown",
+      "date": "2022-04-21T19:00:18-04:00",
+      "npr_url": "https://www.npr.org/2022/04/21/1094150551/chinas-tech-crackdown-backdown",
+      "story_id": "1094150551",
+      "audio_id": "1094189384",
+      "player_url": "https://www.npr.org/player/embed/1094150551/1094189384",
+      "description": "Over the past year China has enforced strict regulations on its tech platforms. But this crackdown has sparked such instability in financial markets that the Chinese government appears to be having second thoughts. | Come see Planet Money Live in NYC on May 10th! One night only. Tickets on sale here."
+    },
+    {
+      "title": "Russia tips into default... or does it?",
+      "date": "2022-04-20T17:56:28-04:00",
+      "npr_url": "https://www.npr.org/2022/04/20/1093880204/russia-tips-into-default-or-does-it",
+      "story_id": "1093880204",
+      "audio_id": "1093900603",
+      "player_url": "https://www.npr.org/player/embed/1093880204/1093900603",
+      "description": "Russia is on the verge of doing something it hasn't done since 1918: Default on its foreign debt. Today, we explore what's happening, and why Russia and its creditors may be headed for a long, messy legal battle."
+    },
+    {
+      "title": "Cracking the code on cyber insurance",
+      "date": "2022-04-19T19:16:14-04:00",
+      "npr_url": "https://www.npr.org/2022/04/19/1093656544/cracking-the-code-on-cyber-insurance",
+      "story_id": "1093656544",
+      "audio_id": "1093672908",
+      "player_url": "https://www.npr.org/player/embed/1093656544/1093672908",
+      "description": "In the wake of the war in Ukraine, American companies are preparing themselves for potential Russian cyber attacks. Many of them will need to rely on an insurance system that has historically looked to avoid paying out in times of war or crisis. Today, why the threat of cyber warfare has the insurance industry scrambling."
+    },
+    {
+      "title": "Land of opportunity (zones)",
+      "date": "2022-04-18T18:22:25-04:00",
+      "npr_url": "https://www.npr.org/2022/04/14/1092906261/land-of-opportunity-zones",
+      "story_id": "1092906261",
+      "audio_id": "1093429474",
+      "player_url": "https://www.npr.org/player/embed/1092906261/1093429474",
+      "description": "A policy designed to draw investment to economically distressed communities has clearly benefited wealthy investors in the form of tax breaks. But the benefit to the communities is less clear."
+    },
+    {
+      "title": "Replacing the cult of the entrepreneur",
+      "date": "2022-04-14T18:09:29-04:00",
+      "npr_url": "https://www.npr.org/2022/04/14/1092904376/replacing-the-cult-of-the-entrepreneur",
+      "story_id": "1092904376",
+      "audio_id": "1092957287",
+      "player_url": "https://www.npr.org/player/embed/1092904376/1092957287",
+      "description": "The development of the Moderna vaccine was the culmination of decades of scientific research. This research was able to flourish thanks in large part to Flagship Pioneering and its founder, Noubar Afeyan. Today, the innovative way Flagship created one of the most successful COVID-19 vaccine makers in the world."
+    },
+    {
+      "title": "Yield curve jitters",
+      "date": "2022-04-13T18:14:20-04:00",
+      "npr_url": "https://www.npr.org/2022/04/13/1092678307/yield-curve-jitters",
+      "story_id": "1092678307",
+      "audio_id": "1092724531",
+      "player_url": "https://www.npr.org/player/embed/1092678307/1092724531",
+      "description": "Part of the yield curve has been inverting. This caused panic because the yield curve has a stunning track record at predicting recessions. But wait! A familiar friend helped us calm down."
+    },
+    {
+      "title": "Who eats the cost of higher food prices?",
+      "date": "2022-04-12T19:37:24-04:00",
+      "npr_url": "https://www.npr.org/2022/04/12/1092447326/who-eats-the-cost-of-higher-food-prices",
+      "story_id": "1092447326",
+      "audio_id": "1092494213",
+      "player_url": "https://www.npr.org/player/embed/1092447326/1092494213",
+      "description": "Low-income households spend a disproportionate amount of their income on food and as inflation continues to spike, especially when it comes to food prices, these families are particularly vulnerable. However, research looking at how the Bureau of Labor Statistics calculates the consumer price index, indicates the CPI may be failing to show the extent of that harm. Today, why the CPI may be underestimating higher prices in the supermarket for low-income Americans."
+    },
+    {
+      "title": "Elon Musk and the fear of the activist investor",
+      "date": "2022-04-11T18:54:20-04:00",
+      "npr_url": "https://www.npr.org/2022/04/11/1092079315/elon-musk-and-the-fear-of-the-activist-investor",
+      "story_id": "1092079315",
+      "audio_id": "1092174495",
+      "player_url": "https://www.npr.org/player/embed/1092079315/1092174495",
+      "description": "Elon Musk is not shy about the changes he'd like to see with Twitter. So now that he is the largest shareholder in the social media giant, some fear he could become an activist investor."
+    },
+    {
+      "title": "Insuring music venues during a pandemic",
+      "date": "2022-04-07T18:45:23-04:00",
+      "npr_url": "https://www.npr.org/2022/04/07/1091489931/insuring-music-venues-during-a-pandemic",
+      "story_id": "1091489931",
+      "audio_id": "1091527812",
+      "player_url": "https://www.npr.org/player/embed/1091489931/1091527812",
+      "description": "The pandemic forced the closure of music venues around the country. Owners of many of these businesses believed their existing insurance policies would help them weather the storm. But, as it turns out, many of those policies weren't designed for COVID-19."
+    },
+    {
+      "title": "How green laws stop green projects",
+      "date": "2022-04-06T18:10:10-04:00",
+      "npr_url": "https://www.npr.org/2022/04/06/1091264100/how-green-laws-stop-green-projects",
+      "story_id": "1091264100",
+      "audio_id": "1091345415",
+      "player_url": "https://www.npr.org/player/embed/1091264100/1091345415",
+      "description": "America has a goal of net-zero carbon emissions by 2050. Without serious changes to lifestyles, that means dramatic investments in green energy. But environmental laws are getting in the way."
+    },
+    {
+      "title": "How Ukraine kept banks afloat and money flowing",
+      "date": "2022-04-05T19:36:53-04:00",
+      "npr_url": "https://www.npr.org/2022/04/04/1090952156/how-ukraine-kept-banks-afloat-and-money-flowing",
+      "story_id": "1090952156",
+      "audio_id": "1091171276",
+      "player_url": "https://www.npr.org/player/embed/1090952156/1091171276",
+      "description": "The Russian invasion meant Ukraine's central bank had to work to avoid financial collapse. We hear from an economist and a Ukrainian bank CEO about how they're keeping money moving."
+    },
+    {
+      "title": "Rationing: How it works and why it doesn't",
+      "date": "2022-04-04T18:49:45-04:00",
+      "npr_url": "https://www.npr.org/2022/04/04/1090952183/rationing-how-it-works-and-why-it-doesnt",
+      "story_id": "1090952183",
+      "audio_id": "1090967803",
+      "player_url": "https://www.npr.org/player/embed/1090952183/1090967803",
+      "description": "Russia's invasion of Ukraine is forcing Germany to rethink its reliance on Russian energy, particularly natural gas. And as it looks for solutions, the nation is talking about something economists despise - rationing."
+    },
+    {
+      "title": "Smells like teen jobs numbers",
+      "date": "2022-04-01T20:24:06-04:00",
+      "npr_url": "https://www.npr.org/2022/04/01/1090384827/smells-like-teen-jobs-numbers",
+      "story_id": "1090384827",
+      "audio_id": "1090433094",
+      "player_url": "https://www.npr.org/player/embed/1090384827/1090433094",
+      "description": "The economic recovery is still hot with a streak of strong jobs reports over the last couple of months. One of the groups benefiting from this strong labor market are teenagers."
+    },
+    {
+      "title": "The weapons supply chain",
+      "date": "2022-03-31T19:03:45-04:00",
+      "npr_url": "https://www.npr.org/2022/03/31/1090101043/the-weapons-supply-chain",
+      "story_id": "1090101043",
+      "audio_id": "1090140578",
+      "player_url": "https://www.npr.org/player/embed/1090101043/1090140578",
+      "description": "Ukraine has been receiving a steady stream of weapons from the United States and NATO for the past several weeks. Like the goods that come to your door, these weapons have to go through a supply chain. Today, we learn the steps."
+    },
+    {
+      "title": "War: The cost to Russia",
+      "date": "2022-03-30T19:14:38-04:00",
+      "npr_url": "https://www.npr.org/2022/03/30/1089806308/war-the-cost-to-russia",
+      "story_id": "1089806308",
+      "audio_id": "1089844079",
+      "player_url": "https://www.npr.org/player/embed/1089806308/1089844079",
+      "description": "In the past, war can sometimes boost parts of the economy. After World War 2, the United States emerged as an economic superpower. The same, however, is highly unlikely for Russia in its current war with Ukraine."
+    },
+    {
+      "title": "Whistleblower protection program",
+      "date": "2022-03-29T18:40:37-04:00",
+      "npr_url": "https://www.npr.org/2022/03/29/1089572956/whistleblower-protection-program",
+      "story_id": "1089572956",
+      "audio_id": "1089591909",
+      "player_url": "https://www.npr.org/player/embed/1089572956/1089591909",
+      "description": "Whistleblowers are essential tools for agencies like the SEC in their efforts to root out corporate malfeasance. Jordan Thomas knows this better than anyone, as he helped create the government agency's program."
+    },
+    {
+      "title": "The economic impacts of a census miscount",
+      "date": "2022-03-28T19:39:29-04:00",
+      "npr_url": "https://www.npr.org/2022/03/28/1089324437/the-economic-impacts-of-a-census-miscount",
+      "story_id": "1089324437",
+      "audio_id": "1089360822",
+      "player_url": "https://www.npr.org/player/embed/1089324437/1089360822",
+      "description": "The census is an important tool for determining where federal funding is most needed. So what happens when those communities most in need are undercounted? Today, we cover the local economics of the census."
+    },
+    {
+      "title": "Russian stocks and sanctioned gold",
+      "date": "2022-03-25T19:02:18-04:00",
+      "npr_url": "https://www.npr.org/2022/03/25/1088881906/russian-stocks-and-sanctioned-gold",
+      "story_id": "1088881906",
+      "audio_id": "1088962401",
+      "player_url": "https://www.npr.org/player/embed/1088881906/1088962401",
+      "description": "The economic pressure on Russia continues to build a month after its Ukraine invasion. How Russia is handling its stock market reopening and how the United States plans to close more sanction loopholes."
+    },
+    {
+      "title": "Destroying personal digital data",
+      "date": "2022-03-24T19:03:55-04:00",
+      "npr_url": "https://www.npr.org/2022/03/24/1088655807/destroying-personal-digital-data",
+      "story_id": "1088655807",
+      "audio_id": "1088695403",
+      "player_url": "https://www.npr.org/player/embed/1088655807/1088695403",
+      "description": "The Federal Trade Commission's hammer hit a weight loss app geared towards children earlier this month. What this decision means for businesses, consumers and online privacy."
+    },
+    {
+      "title": "Two inflation Indicators: Corporate greed and mortgage rates",
+      "date": "2022-03-23T20:21:42-04:00",
+      "npr_url": "https://www.npr.org/2022/03/23/1088346603/two-inflation-indicators-corporate-greed-and-mortgage-rates",
+      "story_id": "1088346603",
+      "audio_id": "1198960233",
+      "player_url": "https://www.npr.org/player/embed/1088346603/1198960233",
+      "description": "Corporate profits are soaring. So are prices. Can corporations just not raise prices? Would that fight inflation? We examine this theory making the rounds. Then, we go inside the pipes of the economy to see how mortgage rates connect to that recent rate hike by the Federal Reserve. | Subscribe to our sister podcast, The Indicator from Planet Money. It's daily, and always less than 10 minutes."
+    },
+    {
+      "title": "How an empty office becomes a home",
+      "date": "2022-03-23T18:42:00-04:00",
+      "npr_url": "https://www.npr.org/2022/03/23/1088272830/how-an-empty-office-becomes-a-home",
+      "story_id": "1088272830",
+      "audio_id": "1088394877",
+      "player_url": "https://www.npr.org/player/embed/1088272830/1088394877",
+      "description": "One of the consequences of stronger remote work culture is the abandonment of office space. These empty buildings have created opportunities for real estate developers to create housing in American cities where residential apartments are expensive and in short supply."
+    },
+    {
+      "title": "Forging new links in a supply chain",
+      "date": "2022-03-22T18:46:40-04:00",
+      "npr_url": "https://www.npr.org/2022/03/22/1088115414/forging-new-links-in-a-supply-chain",
+      "story_id": "1088115414",
+      "audio_id": "1088144834",
+      "player_url": "https://www.npr.org/player/embed/1088115414/1088144834",
+      "description": "The COVID-19 pandemic exposed the vulnerabilities in the global supply chain, including here in the United States. But when outsourcing failed, one textile manufacturer in Massachusetts came up with a plan."
+    },
+    {
+      "title": "Race, racism, and tax law",
+      "date": "2022-03-21T17:50:57-04:00",
+      "npr_url": "https://www.npr.org/2022/03/21/1087942481/race-racism-and-tax-law",
+      "story_id": "1087942481",
+      "audio_id": "1087951484",
+      "player_url": "https://www.npr.org/player/embed/1087942481/1087951484",
+      "description": "Although there is no mention of race in the U.S. tax code, tax law professor Dorothy Brown believes race and taxes are closely intertwined."
+    },
+    {
+      "title": "Three indicators from the $1.5 trillion omnibus bill",
+      "date": "2022-03-18T18:40:06-04:00",
+      "npr_url": "https://www.npr.org/2022/03/18/1087627193/three-indicators-from-the-1-5-trillion-omnibus-bill",
+      "story_id": "1087627193",
+      "audio_id": "1088081542",
+      "player_url": "https://www.npr.org/player/embed/1087627193/1088081542",
+      "description": "President Biden quietly signed a $1.5 trillion omnibus spending bill this week. It funds a lot of different programs, but what three are our indicators of the week?"
+    },
+    {
+      "title": "Ukraine's warzone economy",
+      "date": "2022-03-17T19:23:50-04:00",
+      "npr_url": "https://www.npr.org/2022/03/17/1087279499/ukraines-warzone-economy",
+      "story_id": "1087279499",
+      "audio_id": "1087396744",
+      "player_url": "https://www.npr.org/player/embed/1087279499/1087396744",
+      "description": "Russia's invasion has forced Ukrainian businesses to mobilize for the broader war effort. How are the people on the ground adjusting and what are they doing to support themselves?"
+    },
+    {
+      "title": "How mortgage rates get made",
+      "date": "2022-03-16T19:19:27-04:00",
+      "npr_url": "https://www.npr.org/2022/03/16/1087086300/how-mortgage-rates-get-made",
+      "story_id": "1087086300",
+      "audio_id": "1087100135",
+      "player_url": "https://www.npr.org/player/embed/1087086300/1087100135",
+      "description": "All eyes were on the Federal Reserve today as it hiked interest rates. What does the 0.25% increase mean for people borrowing money? And how exactly does the Federal Reserve raise interest rates?"
+    },
+    {
+      "title": "Of oligarchs and silovarchs",
+      "date": "2022-03-15T18:21:04-04:00",
+      "npr_url": "https://www.npr.org/2022/03/15/1086740674/of-oligarchs-and-silovarchs",
+      "story_id": "1086740674",
+      "audio_id": "1087678073",
+      "player_url": "https://www.npr.org/player/embed/1086740674/1087678073",
+      "description": "Governments in the United States, Europe, the United Kingdom and other countries have placed harsh sanctions on Russian oligarchs. But they may have missed the most influential people in Putin's inner circle."
+    },
+    {
+      "title": "Conflict and high food prices (Update)",
+      "date": "2022-03-14T18:09:54-04:00",
+      "npr_url": "https://www.npr.org/2022/03/14/1086492040/conflict-and-high-food-prices-update",
+      "story_id": "1086492040",
+      "audio_id": "1086544236",
+      "player_url": "https://www.npr.org/player/embed/1086492040/1086544236",
+      "description": "Climate change, farmworker shortages and increasing transportation costs were already driving global food prices higher and higher. What happens when you add war to the mix?"
+    },
+    {
+      "title": "What do McDonald's stores, oil, and nickel have in common?",
+      "date": "2022-03-11T18:35:29-05:00",
+      "npr_url": "https://www.npr.org/2022/03/11/1086163829/what-do-mcdonalds-stores-oil-and-nickel-have-in-common",
+      "story_id": "1086163829",
+      "audio_id": "1086219435",
+      "player_url": "https://www.npr.org/player/embed/1086163829/1086219435",
+      "description": "It's another edition of indicators of the week! Today, we take a look at the wide-ranging effects Russia's invasion is having on corporations and commodities."
+    },
+    {
+      "title": "Corporate greed or just pandemic pricing?",
+      "date": "2022-03-10T17:22:49-05:00",
+      "npr_url": "https://www.npr.org/2022/03/10/1085846628/corporate-greed-or-just-pandemic-pricing",
+      "story_id": "1085846628",
+      "audio_id": "1085879877",
+      "player_url": "https://www.npr.org/player/embed/1085846628/1085879877",
+      "description": "Some House Democrats continued to blame high inflation on greedy corporations this week. Today, we'll fact-check that claim."
+    },
+    {
+      "title": "The blunt weapons of Russia's central bank",
+      "date": "2022-03-09T17:53:36-05:00",
+      "npr_url": "https://www.npr.org/2022/03/09/1085561115/the-blunt-weapons-of-russias-central-bank",
+      "story_id": "1085561115",
+      "audio_id": "1085609029",
+      "player_url": "https://www.npr.org/player/embed/1085561115/1085609029",
+      "description": "Heavy sanctions on Russia have forced Central Bank of Russia Governor, Elvira Nabiullina, to get creative. What steps is she taking to keep Russia's economy afloat?"
+    },
+    {
+      "title": "The curious case of odious debt",
+      "date": "2022-03-08T19:04:07-05:00",
+      "npr_url": "https://www.npr.org/2022/03/08/1085284325/the-curious-case-of-odious-debt",
+      "story_id": "1085284325",
+      "audio_id": "1085313613",
+      "player_url": "https://www.npr.org/player/embed/1085284325/1085313613",
+      "description": "A dispute going back to 2013 involving Russia and Ukraine and $3 billion in bonds has revived a discussion about a legal concept called odious debt. What is it and how does the current conflict complicate the case?"
+    },
+    {
+      "title": "Cryptocurrency, a safe haven?",
+      "date": "2022-03-07T19:03:15-05:00",
+      "npr_url": "https://www.npr.org/2022/03/07/1085042763/cryptocurrency-a-safe-haven",
+      "story_id": "1085042763",
+      "audio_id": "1085075384",
+      "player_url": "https://www.npr.org/player/embed/1085042763/1085075384",
+      "description": "Safe-haven assets like U.S. government bonds and gold are seeing heightened interest from investors due to the uncertainty caused by the Russian invasion of Ukraine. So why are volatile cryptocurrencies also attracting attention?"
+    },
+    {
+      "title": "Adding American Indians and Alaska Natives to Jobs Friday",
+      "date": "2022-03-04T19:12:00-05:00",
+      "npr_url": "https://www.npr.org/2022/03/04/1084665971/adding-american-indians-and-alaska-natives-to-jobs-friday",
+      "story_id": "1084665971",
+      "audio_id": "1084698599",
+      "player_url": "https://www.npr.org/player/embed/1084665971/1084698599",
+      "description": "The Bureau of Labor Statistics has finally added American Indian and Alaska Native labor data to its monthly jobs numbers. Why it's important and how the Minneapolis Fed proved it was possible."
+    },
+    {
+      "title": "All eyes on OPEC",
+      "date": "2022-03-03T18:51:46-05:00",
+      "npr_url": "https://www.npr.org/2022/03/03/1084396574/all-eyes-on-opec",
+      "story_id": "1084396574",
+      "audio_id": "1084406811",
+      "player_url": "https://www.npr.org/player/embed/1084396574/1084406811",
+      "description": "OPEC produces over half of the world's internationally traded crude oil. How did this organization come about and what does it have to do with the war in Ukraine?"
+    },
+    {
+      "title": "Will China come to Russia's rescue?",
+      "date": "2022-03-02T18:50:55-05:00",
+      "npr_url": "https://www.npr.org/2022/03/02/1084079641/will-china-come-to-russias-rescue",
+      "story_id": "1084079641",
+      "audio_id": "1084081132",
+      "player_url": "https://www.npr.org/player/embed/1084079641/1084081132",
+      "description": "Despite ups and downs, China has become Russia's most important trading partner. And some suspect China may support Russia as it deals with the economic fallout from sanctions imposed due to its invasion of Ukraine. What could that look like?"
+    },
+    {
+      "title": "Economic warfare vs. Fortress Russia",
+      "date": "2022-03-01T19:15:40-05:00",
+      "npr_url": "https://www.npr.org/2022/03/01/1083804497/economic-warfare-vs-fortress-russia",
+      "story_id": "1083804497",
+      "audio_id": "1083834213",
+      "player_url": "https://www.npr.org/player/embed/1083804497/1083834213",
+      "description": "President Vladimir Putin spent years trying to sanction-proof Russia's economy. With recent sanctions from the West, his Fortress Russia idea is now being put to the test."
+    },
+    {
+      "title": "Who's gonna take care of grandma?",
+      "date": "2022-02-28T18:13:37-05:00",
+      "npr_url": "https://www.npr.org/2022/02/28/1083589726/whos-going-to-take-care-of-grandma",
+      "story_id": "1083589726",
+      "audio_id": "1083622332",
+      "player_url": "https://www.npr.org/player/embed/1083589726/1083622332",
+      "description": "Eldercare has been hit extremely hard since the pandemic began. A severe nursing shortage is lowering the availability and quality of care for seniors. What can be done to reverse course?"
+    },
+    {
+      "title": "How the Ukraine crisis could affect your pocketbook",
+      "date": "2022-02-25T18:40:17-05:00",
+      "npr_url": "https://www.npr.org/2022/02/25/1083220690/how-the-ukraine-crisis-could-affect-your-pocketbook",
+      "story_id": "1083220690",
+      "audio_id": "1083231585",
+      "player_url": "https://www.npr.org/player/embed/1083220690/1083231585",
+      "description": "Russia's invasion of Ukraine has sent markets all over the world into a frenzy. Just how widespread could the economic fallout be?"
+    },
+    {
+      "title": "Three Russia economic indicators",
+      "date": "2022-02-24T20:28:24-05:00",
+      "npr_url": "https://www.npr.org/2022/02/24/1082959140/three-russia-economic-indicators",
+      "story_id": "1082959140",
+      "audio_id": "1082976427",
+      "player_url": "https://www.npr.org/player/embed/1082959140/1082976427",
+      "description": "With Russia's invasion of Ukraine, we break down three economic takeaways from the invasion – the impact on oil prices, the global supply chain, and the strength of the Russian economy."
+    },
+    {
+      "title": "2021 was the year of the cyber heist",
+      "date": "2022-02-23T18:47:38-05:00",
+      "npr_url": "https://www.npr.org/2022/02/23/1082647751/2021-was-the-year-of-the-cyber-heist",
+      "story_id": "1082647751",
+      "audio_id": "1082669864",
+      "player_url": "https://www.npr.org/player/embed/1082647751/1082669864",
+      "description": "A New York couple was recently arrested for laundering billions of dollars worth of stolen cryptocurrency assets. If the blockchain is so secure, how were federal officials able to catch them?"
+    },
+    {
+      "title": "How to understand a trillion",
+      "date": "2022-02-22T19:26:02-05:00",
+      "npr_url": "https://www.npr.org/2022/02/22/1082390433/how-to-understand-a-trillion",
+      "story_id": "1082390433",
+      "audio_id": "1082469022",
+      "player_url": "https://www.npr.org/player/embed/1082390433/1082469022",
+      "description": "Indicators are all around us — but do we really understand these numbers' size and what they mean? Today, a data teacher gives us some tips on how to put these figures into perspective."
+    },
+    {
+      "title": "Indicators of the week: \"Clean\" hydrogen, criminal records, coffee",
+      "date": "2022-02-18T18:47:19-05:00",
+      "npr_url": "https://www.npr.org/2022/02/18/1081897808/indicators-of-the-week-clean-hydrogen-criminal-records-coffee",
+      "story_id": "1081897808",
+      "audio_id": "1081920702",
+      "player_url": "https://www.npr.org/player/embed/1081897808/1081920702",
+      "description": "The price of coffee beans is surging, the Biden administration wants to reduce the price of hydrogen and the surprising number of unemployed young men with a criminal record."
+    },
+    {
+      "title": "Backwardation in the oil market",
+      "date": "2022-02-17T18:29:11-05:00",
+      "npr_url": "https://www.npr.org/2022/02/17/1081581778/backwardation-in-the-oil-market",
+      "story_id": "1081581778",
+      "audio_id": "1081604018",
+      "player_url": "https://www.npr.org/player/embed/1081581778/1081604018",
+      "description": "Oil prices are on the rise, but futures markets see them lower than where they are now. This is known as backwardation. Today, we learn what's behind this phenomenon."
+    },
+    {
+      "title": "How Hollywood changed the US wine industry",
+      "date": "2022-02-16T19:51:49-05:00",
+      "npr_url": "https://www.npr.org/2022/02/16/1081276680/how-hollywood-changed-the-us-wine-industry",
+      "story_id": "1081276680",
+      "audio_id": "1081330508",
+      "player_url": "https://www.npr.org/player/embed/1081276680/1081330508",
+      "description": "The Academy Award-winning film, Sideways, is often credited with decimating sales for merlot and elevating taste for pinot noir. Some economists tried to prove it."
+    },
+    {
+      "title": "Where are all the COVID-19 bankruptcies?",
+      "date": "2022-02-15T19:25:56-05:00",
+      "npr_url": "https://www.npr.org/2022/02/15/1080938906/where-are-all-the-covid-19-bankruptcies",
+      "story_id": "1080938906",
+      "audio_id": "1080999499",
+      "player_url": "https://www.npr.org/player/embed/1080938906/1080999499",
+      "description": "For much of the pandemic, government aid helped lower the number of personal bankruptcies dramatically. With those measures ending, close observers say a sharp increase is likely."
+    },
+    {
+      "title": "The Indicator's bet on the Super Bowl",
+      "date": "2022-02-14T19:47:12-05:00",
+      "npr_url": "https://www.npr.org/2022/02/14/1080714262/the-indicators-bet-on-the-super-bowl",
+      "story_id": "1080714262",
+      "audio_id": "1080746284",
+      "player_url": "https://www.npr.org/player/embed/1080714262/1080746284",
+      "description": "If sports bettors in the U.S. have a sacred holiday, it might be the Super Bowl."
     }
   ]
 }
