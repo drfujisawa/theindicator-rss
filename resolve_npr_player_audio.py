@@ -14,22 +14,19 @@ TIMEOUT = 30
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 "
-        "(compatible; IndicatorNPRPlayerResolver/1.0)"
+        "(compatible; IndicatorNPRPlayerResolver/2.0)"
     )
 }
 
 
-def fetch(url):
+def fetch_text(url):
     request = Request(url, headers=HEADERS)
 
     with urlopen(request, timeout=TIMEOUT) as response:
         return (
             response.geturl(),
             response.headers.get("Content-Type", ""),
-            response.read().decode(
-                "utf-8",
-                errors="replace"
-            ),
+            response.read().decode("utf-8", errors="replace"),
         )
 
 
@@ -40,7 +37,6 @@ def clean(value):
     value = html.unescape(value)
     value = value.replace("\\/", "/")
     value = value.replace("\\u0026", "&")
-
     return value.strip()
 
 
@@ -56,9 +52,41 @@ def unique(values):
     return output
 
 
+def extract_embed_ids(page):
+    """
+    Find NPR player embeds such as:
+
+    /player/embed/662706955/662707862
+    """
+
+    patterns = [
+        r'https?://www\.npr\.org/player/embed/([^/"\'<>\s]+)/([^/?"\'<>\s]+)',
+        r'/player/embed/([^/"\'<>\s]+)/([^/?"\'<>\s]+)',
+    ]
+
+    pairs = []
+
+    for pattern in patterns:
+        for first_id, second_id in re.findall(
+            pattern,
+            page,
+            re.I
+        ):
+            pair = {
+                "player_story_id": clean(first_id),
+                "audio_id": clean(second_id),
+            }
+
+            if pair not in pairs:
+                pairs.append(pair)
+
+    return pairs
+
+
 def extract_audio_candidates(page):
     patterns = [
         r'https?://[^"\'<>\s\\]+\.mp3(?:\?[^"\'<>\s\\]*)?',
+        r'https?://[^"\'<>\s\\]+\.m4a(?:\?[^"\'<>\s\\]*)?',
         r'https?://ondemand\.npr\.org/[^"\'<>\s\\]+',
         r'https?://play\.podtrac\.com/[^"\'<>\s\\]+',
         r'https?://prfx\.byspotify\.com/[^"\'<>\s\\]+',
@@ -87,11 +115,7 @@ def probe_audio(url):
         },
     )
 
-    with urlopen(
-        request,
-        timeout=TIMEOUT
-    ) as response:
-
+    with urlopen(request, timeout=TIMEOUT) as response:
         final_url = response.geturl()
 
         content_type = response.headers.get(
@@ -108,6 +132,7 @@ def probe_audio(url):
         sample = response.read(4096)
 
     return {
+        "candidate_url": url,
         "status_code": status,
         "final_url": final_url,
         "content_type": content_type,
@@ -144,97 +169,150 @@ results = []
 
 
 for record in records:
+    title = record.get("reference_title")
+    npr_url = record.get("npr_url")
+
     print()
     print(
         record.get("reference_date"),
         "-",
-        record.get("reference_title")
+        title
     )
-
-    player_url = record.get("audio_url")
 
     result = {
         "reference_date":
             record.get("reference_date"),
 
         "reference_title":
-            record.get("reference_title"),
+            title,
 
         "npr_story_id":
             record.get("npr_story_id"),
 
         "npr_url":
-            record.get("npr_url"),
-
-        "player_url":
-            player_url,
+            npr_url,
 
         "status":
             None,
 
-        "audio_candidates":
+        "embed_players":
+            [],
+
+        "candidate_probes":
             [],
     }
 
+    #
+    # Step 1:
+    # Re-open the ORIGINAL NPR story page.
+    #
     try:
         (
-            final_player_url,
-            player_content_type,
-            player_page,
-        ) = fetch(player_url)
+            final_story_url,
+            story_content_type,
+            story_page,
+        ) = fetch_text(npr_url)
 
     except Exception as exc:
-        result["status"] = "player_fetch_failed"
+        result["status"] = "story_fetch_failed"
         result["error"] = str(exc)
         results.append(result)
         continue
 
-    result["final_player_url"] = final_player_url
-    result[
-        "player_content_type"
-    ] = player_content_type
+    result["final_story_url"] = final_story_url
+    result["story_content_type"] = story_content_type
 
-    candidates = extract_audio_candidates(
-        player_page
+    #
+    # Step 2:
+    # Extract the real player IDs from the story page.
+    #
+    embed_pairs = extract_embed_ids(
+        story_page
     )
 
-    result["audio_candidates"] = candidates
+    result["embed_players"] = embed_pairs
 
+    print(
+        "  Embed player(s):",
+        len(embed_pairs)
+    )
+
+    #
+    # Also check whether the story HTML itself
+    # contains a usable audio URL.
+    #
+    candidates = extract_audio_candidates(
+        story_page
+    )
+
+    #
+    # Step 3:
+    # Open each exact NPR embed URL and inspect it too.
+    #
+    for pair in embed_pairs:
+        embed_url = (
+            "https://www.npr.org/player/embed/"
+            f"{pair['player_story_id']}/"
+            f"{pair['audio_id']}"
+        )
+
+        pair["embed_url"] = embed_url
+
+        try:
+            (
+                final_embed_url,
+                embed_content_type,
+                embed_page,
+            ) = fetch_text(embed_url)
+
+            pair[
+                "final_embed_url"
+            ] = final_embed_url
+
+            pair[
+                "embed_content_type"
+            ] = embed_content_type
+
+            pair_candidates = (
+                extract_audio_candidates(
+                    embed_page
+                )
+            )
+
+            pair[
+                "audio_candidates"
+            ] = pair_candidates
+
+            candidates.extend(
+                pair_candidates
+            )
+
+        except Exception as exc:
+            pair[
+                "embed_fetch_error"
+            ] = str(exc)
+
+    candidates = unique(
+        candidates
+    )
+
+    result[
+        "audio_candidates"
+    ] = candidates
+
+    #
+    # Step 4:
+    # Validate every candidate and accept only
+    # something that actually returns audio.
+    #
     validated = []
 
     for candidate in candidates:
 
         try:
-            probe = probe_audio(candidate)
-
-        except HTTPError as exc:
-            probe = {
-                "candidate_url": candidate,
-                "status": f"http_{exc.code}",
-                "error": str(exc),
-            }
-
-        except (
-            URLError,
-            TimeoutError,
-        ) as exc:
-            probe = {
-                "candidate_url": candidate,
-                "status": "request_error",
-                "error": str(exc),
-            }
-
-        except Exception as exc:
-            probe = {
-                "candidate_url": candidate,
-                "status": "error",
-                "error": str(exc),
-            }
-
-        else:
-            probe[
-                "candidate_url"
-            ] = candidate
+            probe = probe_audio(
+                candidate
+            )
 
             probe[
                 "is_audio"
@@ -244,38 +322,128 @@ for record in records:
                 )
             )
 
-            if probe["is_audio"]:
-                validated.append(probe)
+            result[
+                "candidate_probes"
+            ].append(
+                probe
+            )
 
-        result.setdefault(
-            "candidate_probes",
-            []
-        ).append(probe)
+            if probe["is_audio"]:
+                validated.append(
+                    probe
+                )
+
+        except HTTPError as exc:
+            result[
+                "candidate_probes"
+            ].append({
+                "candidate_url":
+                    candidate,
+
+                "status":
+                    f"http_{exc.code}",
+
+                "error":
+                    str(exc),
+            })
+
+        except (
+            URLError,
+            TimeoutError,
+        ) as exc:
+            result[
+                "candidate_probes"
+            ].append({
+                "candidate_url":
+                    candidate,
+
+                "status":
+                    "request_error",
+
+                "error":
+                    str(exc),
+            })
+
+        except Exception as exc:
+            result[
+                "candidate_probes"
+            ].append({
+                "candidate_url":
+                    candidate,
+
+                "status":
+                    "error",
+
+                "error":
+                    str(exc),
+            })
 
     if validated:
         result["status"] = "resolved"
         result["best_audio"] = validated[0]
 
         print(
-            "  RESOLVED:",
+            "  RESOLVED:"
+        )
+
+        print(
+            "  Player story ID:",
+            embed_pairs[0][
+                "player_story_id"
+            ] if embed_pairs else None
+        )
+
+        print(
+            "  Audio ID:",
+            embed_pairs[0][
+                "audio_id"
+            ] if embed_pairs else None
+        )
+
+        print(
+            "  Final audio:",
             validated[0].get(
                 "final_url"
             )
         )
 
-    else:
-        result["status"] = "not_resolved"
-        print("  Not resolved.")
+    elif embed_pairs:
+        result[
+            "status"
+        ] = "player_ids_found_but_audio_unresolved"
 
-    results.append(result)
+        print(
+            "  Player IDs found, "
+            "but audio URL still unresolved."
+        )
+
+    else:
+        result[
+            "status"
+        ] = "no_embed_player_found"
+
+        print(
+            "  No embed player found."
+        )
+
+    results.append(
+        result
+    )
 
 
 report = {
     "method":
-        "npr-player-page-audio-resolution",
+        "npr-story-to-embed-to-audio-resolution",
 
     "input_count":
         len(records),
+
+    "embed_player_found_count":
+        sum(
+            1
+            for item in results
+            if item.get("embed_players")
+        ),
 
     "resolved_count":
         sum(
@@ -313,10 +481,34 @@ with open(
 
 
 print()
-print("==============================")
-print("NPR player resolution complete")
-print("Input:", report["input_count"])
-print("Resolved:", report["resolved_count"])
-print("Unresolved:", report["unresolved_count"])
-print("Saved:", OUTPUT_FILE)
-print("==============================")
+print(
+    "================================"
+)
+print(
+    "NPR player resolver v2 complete"
+)
+print(
+    "Input:",
+    report["input_count"]
+)
+print(
+    "Embed players found:",
+    report[
+        "embed_player_found_count"
+    ]
+)
+print(
+    "Resolved:",
+    report["resolved_count"]
+)
+print(
+    "Unresolved:",
+    report["unresolved_count"]
+)
+print(
+    "Saved:",
+    OUTPUT_FILE
+)
+print(
+    "================================"
+)
