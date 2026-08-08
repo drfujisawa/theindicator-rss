@@ -1,6 +1,6 @@
 {
-  "next_date": "2019-12-19T13:27:14-05:00",
-  "episode_count": 1310,
+  "next_date": "2019-08-29T18:29:44-04:00",
+  "episode_count": 1384,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -11791,6 +11791,672 @@
       "audio_id": "790200500",
       "player_url": "https://www.npr.org/player/embed/790193610/790200500",
       "description": "Stacey busts out the funometer and casts judgment on Cardiff's facts."
+    },
+    {
+      "title": "We Buy A Junk Bond!",
+      "date": "2019-12-19T18:17:40-05:00",
+      "npr_url": "https://www.npr.org/2019/12/19/790000078/we-buy-a-junk-bond",
+      "story_id": "790000078",
+      "audio_id": "790002382",
+      "player_url": "https://www.npr.org/player/embed/790000078/790002382",
+      "description": "Cardiff said the best gift he could imagine getting was a junk bond... so we thought, \"Can we actually buy one of those? Also, what exactly is a junk bond?\""
+    },
+    {
+      "title": "How Economics Excludes Black Women",
+      "date": "2019-12-18T18:27:06-05:00",
+      "npr_url": "https://www.npr.org/2019/12/18/789555694/how-economics-excludes-black-women",
+      "story_id": "789555694",
+      "audio_id": "789561268",
+      "player_url": "https://www.npr.org/player/embed/789555694/789561268",
+      "description": "Economics is an academic field notorious for its lack of diversity. This is especially true for black female economists. Why are they being left out?"
+    },
+    {
+      "title": "A Guide To Holiday Scams",
+      "date": "2019-12-17T14:48:38-05:00",
+      "npr_url": "https://www.npr.org/2019/12/17/788975082/a-guide-to-holiday-scams",
+      "story_id": "788975082",
+      "audio_id": "788981535",
+      "player_url": "https://www.npr.org/player/embed/788975082/788981535",
+      "description": "\"It's the most wonderful time of the year. But for consumers, it's also the most dangerous.\" David Lazarus of the Los Angeles Times discusses some of the major scams that arise during the holidays."
+    },
+    {
+      "title": "The Efficient Christmas: Why Economists Hate Gifts",
+      "date": "2019-12-16T16:17:00-05:00",
+      "npr_url": "https://www.npr.org/2019/12/16/788587668/the-efficient-christmas-why-economists-hate-gifts",
+      "story_id": "788587668",
+      "audio_id": "788587865",
+      "player_url": "https://www.npr.org/player/embed/788587668/788587865",
+      "description": "When economists see holiday gifts, they see waste: sweaters that never get worn; books that never get read. Many recommend cash or no gift at all. Economist Tim Harford may have a compromise."
+    },
+    {
+      "title": "A Trade War Truce?",
+      "date": "2019-12-13T16:47:01-05:00",
+      "npr_url": "https://www.npr.org/2019/12/13/787956863/a-trade-war-truce",
+      "story_id": "787956863",
+      "audio_id": "787957305",
+      "player_url": "https://www.npr.org/player/embed/787956863/787957305",
+      "description": "The Trump administration announced it would hit the brakes on a new set of tariffs that were set to go into effect on Dec. 15. Could it be the start of a détente in the ongoing trade war?"
+    },
+    {
+      "title": "Underrated Trends Of The 2010s",
+      "date": "2019-12-12T16:51:55-05:00",
+      "npr_url": "https://www.npr.org/2019/12/12/787555423/underrated-trends-of-the-2010s",
+      "story_id": "787555423",
+      "audio_id": "787567960",
+      "player_url": "https://www.npr.org/player/embed/787555423/787567960",
+      "description": "The 2010s have been a rich decade for economic megatrends. But some trends haven't gotten the attention they deserve."
+    },
+    {
+      "title": "Debt And The Dairy Farmer",
+      "date": "2019-12-11T15:58:54-05:00",
+      "npr_url": "https://www.npr.org/2019/12/11/787130824/debt-and-the-dairy-farmer",
+      "story_id": "787130824",
+      "audio_id": "787183475",
+      "player_url": "https://www.npr.org/player/embed/787130824/787183475",
+      "description": "Mary Rieckmann and her husband run a small dairy in rural Wisconsin. But a perfect storm of factors has plunged farmers like her into crippling debt."
+    },
+    {
+      "title": "The Disappearing Small Farmer",
+      "date": "2019-12-10T16:26:50-05:00",
+      "npr_url": "https://www.npr.org/2019/12/10/786825149/the-disappearing-small-farmer",
+      "story_id": "786825149",
+      "audio_id": "786840022",
+      "player_url": "https://www.npr.org/player/embed/786825149/786840022",
+      "description": "It's been a tough year for small farmers hit by trade wars and extreme weather. And as Time's Alana Semuels reports, this latest trouble is just part of a decades-long decline in small-scale farming."
+    },
+    {
+      "title": "New York City's Luxury Condo Hangover",
+      "date": "2019-12-09T15:49:33-05:00",
+      "npr_url": "https://www.npr.org/2019/12/09/786419552/new-york-citys-luxury-condo-hangover",
+      "story_id": "786419552",
+      "audio_id": "786444327",
+      "player_url": "https://www.npr.org/player/embed/786419552/786444327",
+      "description": "When the rich stop buying luxury condos, sale prices drop for everyone. But rents are a different story."
+    },
+    {
+      "title": "Job(-switch) Friday!",
+      "date": "2019-12-06T16:31:51-05:00",
+      "npr_url": "https://www.npr.org/2019/12/06/785651134/job-switch-friday",
+      "story_id": "785651134",
+      "audio_id": "785670287",
+      "player_url": "https://www.npr.org/player/embed/785651134/785670287",
+      "description": "It's time for our favorite Friday of every month: Jobs Friday! This week, we look at job switching and what it reflects about the tightening labor market."
+    },
+    {
+      "title": "Nike Swooshes Out Of Amazon",
+      "date": "2019-12-05T15:24:26-05:00",
+      "npr_url": "https://www.npr.org/2019/12/05/785202028/nike-swooshes-out-of-amazon",
+      "story_id": "785202028",
+      "audio_id": "785216778",
+      "player_url": "https://www.npr.org/player/embed/785202028/785216778",
+      "description": "Nike, the country's largest sporting brand, is pulling its products off of Amazon. What spurred this decision, and will other companies follow suit?"
+    },
+    {
+      "title": "The Case For Hope In 2020",
+      "date": "2019-12-04T17:27:00-05:00",
+      "npr_url": "https://www.npr.org/2019/12/04/784896632/the-case-for-hope-in-2020",
+      "story_id": "784896632",
+      "audio_id": "787980184",
+      "player_url": "https://www.npr.org/player/embed/784896632/787980184",
+      "description": "Today, the show takes a distinctly positive stance in making the case for being optimistic about the economy in 2020. Five reasons why you should, plus kittens and rainbows."
+    },
+    {
+      "title": "The Map That Made Manhattan",
+      "date": "2019-12-03T15:26:00-05:00",
+      "npr_url": "https://www.npr.org/2019/12/03/784511905/the-map-that-made-manhattan",
+      "story_id": "784511905",
+      "audio_id": "784516438",
+      "player_url": "https://www.npr.org/player/embed/784511905/784516438",
+      "description": "Manhattan is known for being a grid. But 200 years ago, it was a hilly, bucolic wilderness. The transformation all started with a secret map. And the reason was all about economics."
+    },
+    {
+      "title": "Hudson's Kill",
+      "date": "2019-12-02T15:11:01-05:00",
+      "npr_url": "https://www.npr.org/2019/12/02/784192825/hudsons-kill",
+      "story_id": "784192825",
+      "audio_id": "787978869",
+      "player_url": "https://www.npr.org/player/embed/784192825/787978869",
+      "description": "Back in the early 1800s, Manhattan was a wild, sparsely populated place, but it was just about to be developed big-time. There was a lot of money to be made knowing what would go where."
+    },
+    {
+      "title": "The Sahm Rule With The Eponymous Economist",
+      "date": "2019-11-27T11:48:31-05:00",
+      "npr_url": "https://www.npr.org/2019/11/26/783120728/the-sahm-rule-with-the-eponymous-economist",
+      "story_id": "783120728",
+      "audio_id": "787974709",
+      "player_url": "https://www.npr.org/player/embed/783120728/787974709",
+      "description": "Economist Claudia Sahm explains the eponymous Sahm Rule, and how changes in the unemployment rate point to whether or not we are in a recession."
+    },
+    {
+      "title": "Niche Products In Our Grocery Stores",
+      "date": "2019-11-26T16:03:00-05:00",
+      "npr_url": "https://www.npr.org/2019/11/26/783023984/niche-products-in-our-grocery-stores",
+      "story_id": "783023984",
+      "audio_id": "787974173",
+      "player_url": "https://www.npr.org/player/embed/783023984/787974173",
+      "description": "Niche food products at grocery stores have been getting more and more popular. But, what took so long?"
+    },
+    {
+      "title": "The $100 Million Apple",
+      "date": "2019-11-25T15:11:28-05:00",
+      "npr_url": "https://www.npr.org/2019/11/25/782666412/the-100-million-apple",
+      "story_id": "782666412",
+      "audio_id": "782703356",
+      "player_url": "https://www.npr.org/player/embed/782666412/782703356",
+      "description": "Next week, a new product will hit store shelves. It's been in development for 20 years and cost millions of dollars to bring to market. It's a new kind of apple. And the stakes are high."
+    },
+    {
+      "title": "Saudi Arabia's IPO Fail?",
+      "date": "2019-11-22T16:13:24-05:00",
+      "npr_url": "https://www.npr.org/2019/11/22/782093132/saudi-arabias-ipo-fail",
+      "story_id": "782093132",
+      "audio_id": "782100277",
+      "player_url": "https://www.npr.org/player/embed/782093132/782100277",
+      "description": "After years of teasing, deliberating and negotiating, oil behemoth Saudi Aramco finally looks poised to go public. But the IPO is shaping up to be a lot more modest than the original plan."
+    },
+    {
+      "title": "Ready Your Wallet For Thanksgiving Dinner",
+      "date": "2019-11-21T14:26:05-05:00",
+      "npr_url": "https://www.npr.org/2019/11/21/781674537/ready-your-wallet-for-thanksgiving-dinner",
+      "story_id": "781674537",
+      "audio_id": "781677112",
+      "player_url": "https://www.npr.org/player/embed/781674537/781677112",
+      "description": "What will Thanksgiving dinner cost you this year? Also, Cardiff brings back the debate on which is better, pumpkin or pecan pie."
+    },
+    {
+      "title": "Lancaster Spotlight, Part 2: A Refugee's Tale",
+      "date": "2019-11-20T17:51:32-05:00",
+      "npr_url": "https://www.npr.org/2019/11/20/781388618/lancaster-spotlight-part-2-a-refugees-tale",
+      "story_id": "781388618",
+      "audio_id": "787971667",
+      "player_url": "https://www.npr.org/player/embed/781388618/787971667",
+      "description": "In our second spotlight episode on Lancaster County, we look into what Lancaster's success can tell us about the relationship between refugees and the local economy."
+    },
+    {
+      "title": "Grocery Store Wars",
+      "date": "2019-11-19T15:29:54-05:00",
+      "npr_url": "https://www.npr.org/2019/11/19/780890196/the-growing-market-of-curbside-grocery-pickups",
+      "story_id": "780890196",
+      "audio_id": "780917229",
+      "player_url": "https://www.npr.org/player/embed/780890196/780917229",
+      "description": "The profit margin for groceries is razor thin. To stay competitive against increasingly large competitors like Amazon Prime, retailers are turning to a new service: curbside pickup."
+    },
+    {
+      "title": "How Does The Economy Influence Voters?",
+      "date": "2019-11-18T17:22:00-05:00",
+      "npr_url": "https://www.npr.org/2019/11/18/780598819/how-does-the-economy-influence-voters",
+      "story_id": "780598819",
+      "audio_id": "780609042",
+      "player_url": "https://www.npr.org/player/embed/780598819/780609042",
+      "description": "The economy is one of the most important factors in how people vote. But its influence has been changing and it has everything to do with politics."
+    },
+    {
+      "title": "Fun Facts Fridays",
+      "date": "2019-11-15T17:02:36-05:00",
+      "npr_url": "https://www.npr.org/2019/11/15/779876635/fun-facts-fridays",
+      "story_id": "779876635",
+      "audio_id": "787971024",
+      "player_url": "https://www.npr.org/player/embed/779876635/787971024",
+      "description": "Cardiff surprises Stacey with three feel-good facts about the economy, and she decides whether or not those facts are awesome."
+    },
+    {
+      "title": "Winning The Nobel",
+      "date": "2019-11-14T17:08:12-05:00",
+      "npr_url": "https://www.npr.org/2019/11/14/779402503/winning-the-nobel",
+      "story_id": "779402503",
+      "audio_id": "779488276",
+      "player_url": "https://www.npr.org/player/embed/779402503/779488276",
+      "description": "Esther Duflo and Abhijit Banerjee talk about their work and what happens when you win a Nobel Prize."
+    },
+    {
+      "title": "Politics And The Trade War",
+      "date": "2019-11-13T16:31:31-05:00",
+      "npr_url": "https://www.npr.org/2019/11/13/778997503/politics-and-the-trade-war",
+      "story_id": "778997503",
+      "audio_id": "787969804",
+      "player_url": "https://www.npr.org/player/embed/778997503/787969804",
+      "description": "Did President Trump's trade policies cost Republican votes last year? We talk to economist Chad Bown to find out."
+    },
+    {
+      "title": "The Great Cranberry Scare Of 1959",
+      "date": "2019-11-12T16:08:00-05:00",
+      "npr_url": "https://www.npr.org/2019/11/12/778606901/the-great-cranberry-scare-of-1959",
+      "story_id": "778606901",
+      "audio_id": "787968418",
+      "player_url": "https://www.npr.org/player/embed/778606901/787968418",
+      "description": "Sixty years ago, a food scare nearly crushed the cranberry business. Cranberries have bounced back since then, but the industry is facing new threats."
+    },
+    {
+      "title": "Why Sam Sanders Is Binging 'Friends'",
+      "date": "2019-11-11T17:43:44-05:00",
+      "npr_url": "https://www.npr.org/2019/11/11/778359482/why-sam-sanders-is-binging-friends",
+      "story_id": "778359482",
+      "audio_id": "778364708",
+      "player_url": "https://www.npr.org/player/embed/778359482/778364708",
+      "description": "Netflix, HBO, Amazon, Hulu, Disney, NBC, they're all at war for your eyeballs. Today on the show, the streaming wars. Who the major players are, what's at stake and what it will mean for you."
+    },
+    {
+      "title": "The Lancaster, Pa., Puzzle",
+      "date": "2019-11-08T18:16:30-05:00",
+      "npr_url": "https://www.npr.org/2019/11/08/777804090/the-lancaster-pa-puzzle",
+      "story_id": "777804090",
+      "audio_id": "777815343",
+      "player_url": "https://www.npr.org/player/embed/777804090/777815343",
+      "description": "A heavily rural county with a big manufacturing base and a low share of college graduates has found a way to thrive."
+    },
+    {
+      "title": "Your Secret Score",
+      "date": "2019-11-07T19:59:39-05:00",
+      "npr_url": "https://www.npr.org/2019/11/07/777404796/your-secret-score",
+      "story_id": "777404796",
+      "audio_id": "787996251",
+      "player_url": "https://www.npr.org/player/embed/777404796/787996251",
+      "description": "It's no secret that every online platform you use is keeping track of your information. But what if this data is being used to give you a 'score' as a customer?"
+    },
+    {
+      "title": "What's The Beef? The Declining American Leather Industry",
+      "date": "2019-11-06T17:53:05-05:00",
+      "npr_url": "https://www.npr.org/2019/11/06/777031319/whats-the-beef-the-declining-american-leather-industry",
+      "story_id": "777031319",
+      "audio_id": "777039916",
+      "player_url": "https://www.npr.org/player/embed/777031319/777039916",
+      "description": "The leather manufacturing industry was once a backbone of the American economy. Now the industry is in decline, and the trade war isn't helping."
+    },
+    {
+      "title": "The American Dream And The Children Of Immigrants",
+      "date": "2019-11-04T18:22:42-05:00",
+      "npr_url": "https://www.npr.org/2019/11/04/776191773/the-american-dream-and-the-children-of-immigrants",
+      "story_id": "776191773",
+      "audio_id": "776204691",
+      "player_url": "https://www.npr.org/player/embed/776191773/776204691",
+      "description": "A new working paper suggests that children of poor immigrants have higher rates of upward economic mobility than children of poor US-born parents. What factors are at play?"
+    },
+    {
+      "title": "Jobs Friday: The Broken Unemployment Insurance System",
+      "date": "2019-11-01T14:45:37-04:00",
+      "npr_url": "https://www.npr.org/2019/11/01/775457996/jobs-friday-the-broken-unemployment-insurance-system",
+      "story_id": "775457996",
+      "audio_id": "775461692",
+      "player_url": "https://www.npr.org/player/embed/775457996/775461692",
+      "description": "In this week's edition of jobs friday, we look into why 72% of unemployed people do not have unemployment insurance."
+    },
+    {
+      "title": "Scary Stories From The Eek-conomy: Part II",
+      "date": "2019-10-31T18:18:58-04:00",
+      "npr_url": "https://www.npr.org/2019/10/31/775223245/scary-stories-from-the-eek-conomy-part-ii",
+      "story_id": "775223245",
+      "audio_id": "787994378",
+      "player_url": "https://www.npr.org/player/embed/775223245/787994378",
+      "description": "In our second episode on scary stories on the economy we ask Tim Harford and Jared Bernstein what keeps them up at night. Also, has anxiety about the economy spooked off the Halloween spirit?"
+    },
+    {
+      "title": "Lights Out For California",
+      "date": "2019-10-30T18:33:46-04:00",
+      "npr_url": "https://www.npr.org/2019/10/30/774904179/lights-out-for-california",
+      "story_id": "774904179",
+      "audio_id": "787993547",
+      "player_url": "https://www.npr.org/player/embed/774904179/787993547",
+      "description": "PG&E announced it was shutting off power to thousands of Californians to lessen the risk of wildfire. This is costing residents and businesses dearly and PG&E says it will likely be the new normal."
+    },
+    {
+      "title": "Are The Humanities Underrated? (And Other Questions)",
+      "date": "2019-10-29T16:43:00-04:00",
+      "npr_url": "https://www.npr.org/2019/10/29/774504882/are-the-humanities-underrated-and-other-questions",
+      "story_id": "774504882",
+      "audio_id": "787992365",
+      "player_url": "https://www.npr.org/player/embed/774504882/787992365",
+      "description": "We invite Tyler Cowen once again to play another round of overrated/underrated."
+    },
+    {
+      "title": "Can Global Shipping Go Zero Carbon?",
+      "date": "2019-10-28T15:55:00-04:00",
+      "npr_url": "https://www.npr.org/2019/10/28/774165708/can-global-shipping-go-zero-carbon",
+      "story_id": "774165708",
+      "audio_id": "787991014",
+      "player_url": "https://www.npr.org/player/embed/774165708/787991014",
+      "description": "A lot of the stuff we buy comes via ship, using a particularly dirty kind of fuel. Now the shipping industry wants to change."
+    },
+    {
+      "title": "WeWork And The Future Of Co-Working",
+      "date": "2019-10-25T17:53:21-04:00",
+      "npr_url": "https://www.npr.org/2019/10/25/773573885/wework-and-the-future-of-co-working",
+      "story_id": "773573885",
+      "audio_id": "773602647",
+      "player_url": "https://www.npr.org/player/embed/773573885/773602647",
+      "description": "WeWork has had a rough few weeks — its CEO was fired, it's lost billions of dollars and it's laying off thousands of workers. What happened? And what does that mean for the business of co-working?"
+    },
+    {
+      "title": "Is The Unemployment Rate Broken?",
+      "date": "2019-10-24T16:44:38-04:00",
+      "npr_url": "https://www.npr.org/2019/10/24/773161382/is-the-unemployment-rate-broken",
+      "story_id": "773161382",
+      "audio_id": "773161497",
+      "player_url": "https://www.npr.org/player/embed/773161382/773161497",
+      "description": "Economist Jared Bernstein thinks it's about time we admit that the unemployment rate is not as useful as it used to be. He offers three alternative indicators."
+    },
+    {
+      "title": "Scary Stories From The Eek-conomy",
+      "date": "2019-10-23T17:12:11-04:00",
+      "npr_url": "https://www.npr.org/2019/10/23/772785474/scary-stories-from-the-eek-conomy",
+      "story_id": "772785474",
+      "audio_id": "772791245",
+      "player_url": "https://www.npr.org/player/embed/772785474/772791245",
+      "description": "We ask economists what scares them about the US economy right now."
+    },
+    {
+      "title": "Housing: It's About More Than Money",
+      "date": "2019-10-22T15:31:00-04:00",
+      "npr_url": "https://www.npr.org/2019/10/22/772318844/housing-its-about-more-than-money",
+      "story_id": "772318844",
+      "audio_id": "772322106",
+      "player_url": "https://www.npr.org/player/embed/772318844/772322106",
+      "description": "Our housing options matter not just for how much money we spend, but also in other ways that have a lasting impact on our quality of life."
+    },
+    {
+      "title": "Brexit: It's Complicated",
+      "date": "2019-10-21T17:27:17-04:00",
+      "npr_url": "https://www.npr.org/2019/10/21/772060583/brexit-its-complicated",
+      "story_id": "772060583",
+      "audio_id": "772079890",
+      "player_url": "https://www.npr.org/player/embed/772060583/772079890",
+      "description": "Tomorrow the UK Parliament will vote on Brexit... again. Today, we take a look at what's happening, why Brexit is taking so long and what's at stake."
+    },
+    {
+      "title": "The 2019 IPO Awards!",
+      "date": "2019-10-18T19:42:34-04:00",
+      "npr_url": "https://www.npr.org/2019/10/18/771468453/the-2019-ipo-awards",
+      "story_id": "771468453",
+      "audio_id": "771470420",
+      "player_url": "https://www.npr.org/player/embed/771468453/771470420",
+      "description": "2019 has been a very dramatic year for the IPO market. From Uber to Pinterest to WeWork--the headlines just kept coming. We celebrate it all with the first Annual IPO Awards!"
+    },
+    {
+      "title": "The Jekyll And Hyde Economy",
+      "date": "2019-10-17T18:35:08-04:00",
+      "npr_url": "https://www.npr.org/2019/10/17/771143899/the-jekyll-and-hyde-economy",
+      "story_id": "771143899",
+      "audio_id": "771153779",
+      "player_url": "https://www.npr.org/player/embed/771143899/771153779",
+      "description": "There are so many conflicting indicators about the economy's health, it's difficult to know where we're headed. We present the Jekyll and Hyde economy."
+    },
+    {
+      "title": "How Stories Shape The Economy",
+      "date": "2019-10-16T15:55:54-04:00",
+      "npr_url": "https://www.npr.org/2019/10/16/770686962/how-stories-shape-the-economy",
+      "story_id": "770686962",
+      "audio_id": "770698047",
+      "player_url": "https://www.npr.org/player/embed/770686962/770698047",
+      "description": "Nobel Laureate Robert Shiller talks about his new book, which looks at how narratives drive economic change and may help economists more accurately forecast recessions."
+    },
+    {
+      "title": "Of Diet Coke And Nobel Prizes",
+      "date": "2019-10-15T18:38:03-04:00",
+      "npr_url": "https://www.npr.org/2019/10/15/770455768/of-diet-coke-and-nobel-prizes",
+      "story_id": "770455768",
+      "audio_id": "770461964",
+      "player_url": "https://www.npr.org/player/embed/770455768/770461964",
+      "description": "We talk to newly-minted Nobel Prize winner Michael Kremer about using economics to solve real-world problems and what it's like to receive his field's highest honor."
+    },
+    {
+      "title": "What The %!&$# Is The Repo Market?",
+      "date": "2019-10-11T15:55:01-04:00",
+      "npr_url": "https://www.npr.org/2019/10/11/769448191/what-the-is-the-repo-market",
+      "story_id": "769448191",
+      "audio_id": "769487598",
+      "player_url": "https://www.npr.org/player/embed/769448191/769487598",
+      "description": "Lots of people have been freaking out over the repo market... but what IS the repo market?"
+    },
+    {
+      "title": "The U.S. And Global Economy: A New Relationship",
+      "date": "2019-10-10T18:40:53-04:00",
+      "npr_url": "https://www.npr.org/2019/10/10/769102674/the-u-s-and-global-economy-a-new-relationship",
+      "story_id": "769102674",
+      "audio_id": "769114731",
+      "player_url": "https://www.npr.org/player/embed/769102674/769114731",
+      "description": "The global economy used to have a simple rule: the US leads, everybody else follows. Things have changed."
+    },
+    {
+      "title": "The Cost Of Climate Change",
+      "date": "2019-10-09T16:41:50-04:00",
+      "npr_url": "https://www.npr.org/2019/10/09/768686886/the-cost-of-climate-change",
+      "story_id": "768686886",
+      "audio_id": "768706250",
+      "player_url": "https://www.npr.org/player/embed/768686886/768706250",
+      "description": "Climate activists have long used political and social pressures to decrease the use of fossil fuels and preserve forests... but now many are following the money to try and affect change."
+    },
+    {
+      "title": "Five Economic Firsts",
+      "date": "2019-10-08T17:15:28-04:00",
+      "npr_url": "https://www.npr.org/2019/10/08/768393101/five-economic-firsts",
+      "story_id": "768393101",
+      "audio_id": "768394530",
+      "player_url": "https://www.npr.org/player/embed/768393101/768394530",
+      "description": "We're seeing a lot of firsts in this economy. Some good, some not so good, some surprising."
+    },
+    {
+      "title": "Forever 21's Fast Fashion Fail",
+      "date": "2019-10-07T18:46:00-04:00",
+      "npr_url": "https://www.npr.org/2019/10/07/768058323/forever-21s-fast-fashion-fail",
+      "story_id": "768058323",
+      "audio_id": "768095062",
+      "player_url": "https://www.npr.org/player/embed/768058323/768095062",
+      "description": "Forever 21's bankruptcy filing highlights the flaws in fast fashion."
+    },
+    {
+      "title": "How Iceland's Tourism Bubble Deflated",
+      "date": "2019-10-03T18:16:55-04:00",
+      "npr_url": "https://www.npr.org/2019/10/03/766992410/how-icelands-tourism-bubble-deflated",
+      "story_id": "766992410",
+      "audio_id": "766994705",
+      "player_url": "https://www.npr.org/player/embed/766992410/766994705",
+      "description": "The tourism explosion in Iceland helped the tiny island recover from the 2008 financial crisis, but did the tourism industry grow too big, too fast?"
+    },
+    {
+      "title": "The Rise And Fall Of Iceland's WOW Air",
+      "date": "2019-10-02T18:08:44-04:00",
+      "npr_url": "https://www.npr.org/2019/10/02/766609057/the-rise-and-fall-of-icelands-wow-air",
+      "story_id": "766609057",
+      "audio_id": "766629281",
+      "player_url": "https://www.npr.org/player/embed/766609057/766629281",
+      "description": "A budget airline, WOW Air, helped fly the tiny island nation of Iceland out of a financial crisis — but then it all came crashing down."
+    },
+    {
+      "title": "Is Cash Overrated? And Other Questions",
+      "date": "2019-10-01T18:04:01-04:00",
+      "npr_url": "https://www.npr.org/2019/10/01/766232769/is-cash-overrated-and-other-questions",
+      "story_id": "766232769",
+      "audio_id": "766251585",
+      "player_url": "https://www.npr.org/player/embed/766232769/766251585",
+      "description": "We play Overrated, Underrated with Jill Schlesinger, CBS business analyst and author of The Dumb Things Smart People Do With Their Money."
+    },
+    {
+      "title": "What's Gonna Trip Us Up In Q4?",
+      "date": "2019-09-30T17:00:08-04:00",
+      "npr_url": "https://www.npr.org/2019/09/30/765849402/whats-gonna-trip-us-up-in-q4",
+      "story_id": "765849402",
+      "audio_id": "765849686",
+      "player_url": "https://www.npr.org/player/embed/765849402/765849686",
+      "description": "Another quarter ends today, but the news is nuts right now, so we take a step back and guide you through the big themes we'll be looking at in the fourth quarter of the year."
+    },
+    {
+      "title": "Finance Fridays With Mary, Volume 6: Nuns & Guns",
+      "date": "2019-09-27T17:08:00-04:00",
+      "npr_url": "https://www.npr.org/2019/09/27/765208461/finance-fridays-with-mary-volume-6-nuns-guns",
+      "story_id": "765208461",
+      "audio_id": "787999877",
+      "player_url": "https://www.npr.org/player/embed/765208461/787999877",
+      "description": "In an attempt to stem the tide of gun violence, a group of religious organizations turned to an unlikely place: the markets."
+    },
+    {
+      "title": "The Probiotics Heist",
+      "date": "2019-09-26T17:52:45-04:00",
+      "npr_url": "https://www.npr.org/2019/09/26/764815498/the-probiotics-heist",
+      "story_id": "764815498",
+      "audio_id": "764843618",
+      "player_url": "https://www.npr.org/player/embed/764815498/764843618",
+      "description": "Probiotics are increasingly popular — flying off of the shelves, even being stolen from pharmacies. But the jury's still out on their safety and efficacy. So, how did they get on store shelves?"
+    },
+    {
+      "title": "Millennial Mythbusting",
+      "date": "2019-09-25T17:24:19-04:00",
+      "npr_url": "https://www.npr.org/2019/09/18/762099021/millennial-mythbusting",
+      "story_id": "762099021",
+      "audio_id": "764439998",
+      "player_url": "https://www.npr.org/player/embed/762099021/764439998",
+      "description": "Data shows that many of the popular assumptions about millennials are dead wrong."
+    },
+    {
+      "title": "How Much Are Thoughts And Prayers Worth?",
+      "date": "2019-09-24T17:48:02-04:00",
+      "npr_url": "https://www.npr.org/2019/09/24/763964252/how-much-are-thoughts-and-prayers-worth",
+      "story_id": "763964252",
+      "audio_id": "764017694",
+      "player_url": "https://www.npr.org/player/embed/763964252/764017694",
+      "description": "A gesture which is given out freely to victims of big, catastrophic events are thoughts and prayers. But what if you could assign a monetary value to this gesture?"
+    },
+    {
+      "title": "Our Five Favorite Fun Facts & Figures",
+      "date": "2019-09-23T17:31:09-04:00",
+      "npr_url": "https://www.npr.org/2019/09/23/763550477/our-five-favorite-fun-facts-figures",
+      "story_id": "763550477",
+      "audio_id": "763555314",
+      "player_url": "https://www.npr.org/player/embed/763550477/763555314",
+      "description": "We stumble on interesting nuggets of economic information all the time. Here are some of our recent favorites."
+    },
+    {
+      "title": "Finance Fridays With Mary, Volume 5: Why Fees Matter",
+      "date": "2019-09-20T18:14:26-04:00",
+      "npr_url": "https://www.npr.org/2019/09/20/762906211/finance-fridays-with-mary-volume-5-why-fees-matter",
+      "story_id": "762906211",
+      "audio_id": "762908151",
+      "player_url": "https://www.npr.org/player/embed/762906211/762908151",
+      "description": "Do hedge funds and private equity firms charge too much money to their investors — including, potentially, your pension fund?"
+    },
+    {
+      "title": "Unsung Economists: Edith Penrose",
+      "date": "2019-09-19T17:55:22-04:00",
+      "npr_url": "https://www.npr.org/2019/09/19/762538003/unsung-economists-edith-penrose",
+      "story_id": "762538003",
+      "audio_id": "762544772",
+      "player_url": "https://www.npr.org/player/embed/762538003/762544772",
+      "description": "Edith Penrose transformed our understanding of how businesses grow, and also lived a remarkable life full of adventure, intrigue, and tragedy."
+    },
+    {
+      "title": "What Separates Urgent Care And The ER? Your Bill.",
+      "date": "2019-09-18T18:03:15-04:00",
+      "npr_url": "https://www.npr.org/2019/09/18/762100125/what-separates-urgent-care-and-the-er-your-bill",
+      "story_id": "762100125",
+      "audio_id": "762103671",
+      "player_url": "https://www.npr.org/player/embed/762100125/762103671",
+      "description": "Urgent care centers look a lot like emergency rooms. But they're a lot cheaper, both for patients and operators."
+    },
+    {
+      "title": "Physical Stores Are Back, Again",
+      "date": "2019-09-17T17:22:31-04:00",
+      "npr_url": "https://www.npr.org/2019/09/17/761705581/physical-stores-are-back-again",
+      "story_id": "761705581",
+      "audio_id": "761708160",
+      "player_url": "https://www.npr.org/player/embed/761705581/761708160",
+      "description": "Brands are struggling to strike a balance between the real and digital worlds."
+    },
+    {
+      "title": "An Attack On Saudi Arabia's Oil",
+      "date": "2019-09-16T17:15:47-04:00",
+      "npr_url": "https://www.npr.org/2019/09/16/761359124/an-attack-on-saudi-arabias-oil",
+      "story_id": "761359124",
+      "audio_id": "761362069",
+      "player_url": "https://www.npr.org/player/embed/761359124/761362069",
+      "description": "What the attacks on Saudi Arabia's oil production facilities could mean for the global oil industry."
+    },
+    {
+      "title": "How China Transformed The Luxury Goods Market",
+      "date": "2019-09-13T16:47:28-04:00",
+      "npr_url": "https://www.npr.org/2019/09/13/760651847/how-china-transformed-the-luxury-goods-market",
+      "story_id": "760651847",
+      "audio_id": "760655564",
+      "player_url": "https://www.npr.org/player/embed/760651847/760655564",
+      "description": "Chinese consumers not only account for a growing share of high-end luxury goods purchases; they're transforming the way the market works."
+    },
+    {
+      "title": "The White Claw Tax Law Flaw",
+      "date": "2019-09-12T17:46:33-04:00",
+      "npr_url": "https://www.npr.org/2019/09/12/760312844/the-white-claw-tax-law-flaw",
+      "story_id": "760312844",
+      "audio_id": "760313920",
+      "player_url": "https://www.npr.org/player/embed/760312844/760313920",
+      "description": "White Claw could be the hottest alcoholic beverage of the summer of 2019. You can thank tax policy for (some of) that."
+    },
+    {
+      "title": "The Debt That Never Dies: China's Imperial Bonds",
+      "date": "2019-09-11T18:29:24-04:00",
+      "npr_url": "https://www.npr.org/2019/09/11/759960349/the-debt-that-never-dies-chinas-imperial-bonds",
+      "story_id": "759960349",
+      "audio_id": "759966870",
+      "player_url": "https://www.npr.org/player/embed/759960349/759966870",
+      "description": "Bonds issued by Chinese governments more than a century ago could come back to haunt the People's Republic of China."
+    },
+    {
+      "title": "The Olympic Bounce",
+      "date": "2019-09-10T16:51:47-04:00",
+      "npr_url": "https://www.npr.org/2019/09/10/759550422/the-olympic-bounce",
+      "story_id": "759550422",
+      "audio_id": "759555297",
+      "player_url": "https://www.npr.org/player/embed/759550422/759555297",
+      "description": "When new sports are added to the Olympics — like surfing and sports climbing — they see a bump in the year following the games. But, what happens after that?"
+    },
+    {
+      "title": "Listener Q&A, Another Policy Wonkout",
+      "date": "2019-09-09T17:42:37-04:00",
+      "npr_url": "https://www.npr.org/2019/09/09/759165633/listener-q-a-another-policy-wonkout",
+      "story_id": "759165633",
+      "audio_id": "759166379",
+      "player_url": "https://www.npr.org/player/embed/759165633/759166379",
+      "description": "NPR politics correspondent Danielle Kurtzleben answers your questions about student loans, taxes and tariffs."
+    },
+    {
+      "title": "Jobs Friday: Future Edition",
+      "date": "2019-09-06T18:13:31-04:00",
+      "npr_url": "https://www.npr.org/2019/09/06/758474501/jobs-friday-future-edition",
+      "story_id": "758474501",
+      "audio_id": "758478197",
+      "player_url": "https://www.npr.org/player/embed/758474501/758478197",
+      "description": "The Bureau of Labor Statistics has some predictions about the future of the US labor market."
+    },
+    {
+      "title": "Tech's Convenience Store",
+      "date": "2019-09-05T17:53:04-04:00",
+      "npr_url": "https://www.npr.org/2019/09/05/758088293/techs-convenience-store",
+      "story_id": "758088293",
+      "audio_id": "758090115",
+      "player_url": "https://www.npr.org/player/embed/758088293/758090115",
+      "description": "Amazon is opening new stores — in the real world. And in true Big Tech fashion the experience is meant to emphasize convenience. All you need to do is walk in, grab your stuff, and go."
+    },
+    {
+      "title": "What Medicare For All Might Mean For Jobs",
+      "date": "2019-09-04T18:09:12-04:00",
+      "npr_url": "https://www.npr.org/2019/09/04/757645741/what-medicare-for-all-might-mean-for-jobs",
+      "story_id": "757645741",
+      "audio_id": "757672479",
+      "player_url": "https://www.npr.org/player/embed/757645741/757672479",
+      "description": "Proponents of Medicare for All argue it'll give all Americans health insurance and cost less. But even supporters admit it could mean job losses in the short term."
+    },
+    {
+      "title": "How A String Quartet Explains Healthcare Costs",
+      "date": "2019-09-03T17:34:18-04:00",
+      "npr_url": "https://www.npr.org/2019/09/03/757257796/how-a-string-quartet-explains-healthcare-costs",
+      "story_id": "757257796",
+      "audio_id": "757260212",
+      "player_url": "https://www.npr.org/player/embed/757257796/757260212",
+      "description": "The costs of education and healthcare have climbed faster than other prices throughout the economy — for decades. An under-appreciated economic theory explains why."
+    },
+    {
+      "title": "Finance Fridays With Mary, Volume 4: The Worry of Wall Street",
+      "date": "2019-08-30T18:29:44-04:00",
+      "npr_url": "https://www.npr.org/2019/08/30/756094923/finance-fridays-with-mary-volume-4-the-worry-of-wall-street",
+      "story_id": "756094923",
+      "audio_id": "756097213",
+      "player_url": "https://www.npr.org/player/embed/756094923/756097213",
+      "description": "There's a trend emerging in the finance world: Billionaire financiers are increasingly — if belatedly? — acknowledging inequality in America."
     }
   ]
 }
