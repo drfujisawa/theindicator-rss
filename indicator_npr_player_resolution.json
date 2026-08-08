@@ -1,6 +1,7 @@
 {
-  "method": "npr-player-page-audio-resolution",
+  "method": "npr-story-to-embed-to-audio-resolution",
   "input_count": 2,
+  "embed_player_found_count": 2,
   "resolved_count": 0,
   "unresolved_count": 2,
   "results": [
@@ -9,22 +10,58 @@
       "reference_title": "Paranormal Profits",
       "npr_story_id": "662708285",
       "npr_url": "https://www.npr.org/sections/money/2018/10/31/662708285/paranormal-profits",
-      "player_url": "https://www.npr.org/player/embed/662706955/662707862",
-      "status": "not_resolved",
-      "audio_candidates": [],
-      "final_player_url": "https://www.npr.org/player/embed/662706955/662707862",
-      "player_content_type": "text/html;charset=UTF-8"
+      "status": "player_ids_found_but_audio_unresolved",
+      "embed_players": [
+        {
+          "player_story_id": "662706955",
+          "audio_id": "662707862",
+          "embed_url": "https://www.npr.org/player/embed/662706955/662707862",
+          "final_embed_url": "https://www.npr.org/player/embed/662706955/662707862",
+          "embed_content_type": "text/html;charset=UTF-8",
+          "audio_candidates": []
+        },
+        {
+          "player_story_id": "662706955",
+          "audio_id": "662707862\"",
+          "embed_url": "https://www.npr.org/player/embed/662706955/662707862\"",
+          "final_embed_url": "https://www.npr.org/2018/10/31/662706955/paranormal-profits",
+          "embed_content_type": "text/html;charset=UTF-8",
+          "audio_candidates": []
+        }
+      ],
+      "candidate_probes": [],
+      "final_story_url": "https://www.npr.org/sections/money/2018/10/31/662708285/paranormal-profits",
+      "story_content_type": "text/html;charset=UTF-8",
+      "audio_candidates": []
     },
     {
       "reference_date": "2019-04-22",
       "reference_title": "The Traffic Tariff",
       "npr_story_id": "716132270",
       "npr_url": "https://www.npr.org/sections/money/2019/04/22/716132270/the-traffic-tariff",
-      "player_url": "https://www.npr.org/player/embed/716127469/730102905",
-      "status": "not_resolved",
-      "audio_candidates": [],
-      "final_player_url": "https://www.npr.org/player/embed/716127469/730102905",
-      "player_content_type": "text/html;charset=UTF-8"
+      "status": "player_ids_found_but_audio_unresolved",
+      "embed_players": [
+        {
+          "player_story_id": "716127469",
+          "audio_id": "730102905",
+          "embed_url": "https://www.npr.org/player/embed/716127469/730102905",
+          "final_embed_url": "https://www.npr.org/player/embed/716127469/730102905",
+          "embed_content_type": "text/html;charset=UTF-8",
+          "audio_candidates": []
+        },
+        {
+          "player_story_id": "716127469",
+          "audio_id": "730102905\"",
+          "embed_url": "https://www.npr.org/player/embed/716127469/730102905\"",
+          "final_embed_url": "https://www.npr.org/2019/04/22/716127469/the-traffic-tariff",
+          "embed_content_type": "text/html;charset=UTF-8",
+          "audio_candidates": []
+        }
+      ],
+      "candidate_probes": [],
+      "final_story_url": "https://www.npr.org/sections/money/2019/04/22/716132270/the-traffic-tariff",
+      "story_content_type": "text/html;charset=UTF-8",
+      "audio_candidates": []
     }
   ]
 }
