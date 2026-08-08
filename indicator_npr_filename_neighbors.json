@@ -1,0 +1,147 @@
+{
+  "method": "inspect-neighboring-npr-indicator-filenames",
+  "targets": [
+    {
+      "target_date": "2018-10-31",
+      "window_days": 7,
+      "neighbor_count": 8,
+      "neighbors": [
+        {
+          "date": "2018-10-30",
+          "day_distance": 1,
+          "title": "The Best Day For Payday",
+          "npr_story_id": "662225481",
+          "filename": "20181030_indicator_payday_schedule_final.mp3?d=541&e=662224497&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/10/20181030_indicator_payday_schedule_final.mp3?d=541&e=662224497&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "date": "2018-11-01",
+          "day_distance": 1,
+          "title": "Why Ecuador Uses The Dollar?",
+          "npr_story_id": "663124743",
+          "filename": "20181101_indicator_bianca__currency_final.mp3?d=593&e=663121186&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/11/20181101_indicator_bianca__currency_final.mp3?d=593&e=663121186&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "date": "2018-10-26",
+          "day_distance": 5,
+          "title": "Lotteries And Happiness",
+          "npr_story_id": "661131755",
+          "filename": "20181029_indicator_102618_lottery_psychology_updated.mp3?d=594&e=661130791&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/10/20181029_indicator_102618_lottery_psychology_updated.mp3?d=594&e=661130791&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "date": "2018-11-05",
+          "day_distance": 5,
+          "title": "Ode On A Grecian Tax",
+          "npr_story_id": "664488545",
+          "filename": "20181105_indicator_history_of_taxes_final_2.mp3?d=583&e=664488538&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/11/20181105_indicator_history_of_taxes_final_2.mp3?d=583&e=664488538&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "date": "2018-10-25",
+          "day_distance": 6,
+          "title": "Difficulty With The Deficit",
+          "npr_story_id": "660668139",
+          "filename": "20181025_indicator_bernstein_on_deficits_final.mp3?d=599&e=660675256&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/10/20181025_indicator_bernstein_on_deficits_final.mp3?d=599&e=660675256&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "date": "2018-11-06",
+          "day_distance": 6,
+          "title": "Stacey And Cardiff Answer To The People",
+          "npr_story_id": "664815482",
+          "filename": "20181106_indicator_061118_listener_democracy_final.mp3?d=593&e=664810807&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/11/20181106_indicator_061118_listener_democracy_final.mp3?d=593&e=664810807&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "date": "2018-10-24",
+          "day_distance": 7,
+          "title": "The Rise of the Machines",
+          "npr_story_id": "660297140",
+          "filename": "20181024_indicator_102418_robots_2025_final.mp3?d=599&e=660294035&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/10/20181024_indicator_102418_robots_2025_final.mp3?d=599&e=660294035&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "date": "2018-11-07",
+          "day_distance": 7,
+          "title": "Your Lifetime Value Score",
+          "npr_story_id": "665392227",
+          "filename": "20181107_indicator_110718_clv_final.mp3?d=553&e=665390299&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/11/20181107_indicator_110718_clv_final.mp3?d=553&e=665390299&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        }
+      ]
+    },
+    {
+      "target_date": "2019-04-22",
+      "window_days": 7,
+      "neighbor_count": 8,
+      "neighbors": [
+        {
+          "date": "2019-04-23",
+          "day_distance": 1,
+          "title": "What Happened To U.S. Workers?",
+          "npr_story_id": "716413259",
+          "filename": "20190423_indicator_ft_live_panel_full.mp3?d=1674&size=26727198&e=716413259&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/04/20190423_indicator_ft_live_panel_full.mp3?d=1674&size=26727198&e=716413259&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "date": "2019-04-24",
+          "day_distance": 2,
+          "title": "Is Everything Awesome In The Economy?",
+          "npr_story_id": "716888327",
+          "filename": "20190424_indicator_awesomeness_final_final-6651aa2c-5985-4efa-a856-2607964c6949.mp3?d=599&size=9578696&e=716888204&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "final_url": "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/04/20190424_indicator_awesomeness_final_final-6651aa2c-5985-4efa-a856-2607964c6949.mp3?d=599&size=9578696&e=716888204&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "date": "2019-04-25",
+          "day_distance": 3,
+          "title": "Selling A T-Rex On eBay",
+          "npr_story_id": "717274444",
+          "filename": "20190425_indicator_ebay_dinonomics_final-76d8a347-33d7-4ac2-9150-dc673b1a60b2.mp3?d=580&size=9261359&e=717268708&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "final_url": "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/04/20190425_indicator_ebay_dinonomics_final-76d8a347-33d7-4ac2-9150-dc673b1a60b2.mp3?d=580&size=9261359&e=717268708&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "date": "2019-04-18",
+          "day_distance": 4,
+          "title": "A Brief History of Income Taxes",
+          "npr_story_id": "714789891",
+          "filename": "20190418_indicator_041819_history_income_tax_final_1-89cad5db-4158-4be4-9828-f04c48af6114.mp3?d=595&size=9507806&e=714788538&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "final_url": "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/04/20190418_indicator_041819_history_income_tax_final_1-89cad5db-4158-4be4-9828-f04c48af6114.mp3?d=595&size=9507806&e=714788538&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "date": "2019-04-17",
+          "day_distance": 5,
+          "title": "Why Do Introverts Get Paid Less?",
+          "npr_story_id": "714412524",
+          "filename": "20190417_indicator_introverts_final-9b07f546-3209-42d8-9927-f1686be13107.mp3?d=566&size=9044102&e=714411490&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "final_url": "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/04/20190417_indicator_introverts_final-9b07f546-3209-42d8-9927-f1686be13107.mp3?d=566&size=9044102&e=714411490&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "date": "2019-04-16",
+          "day_distance": 6,
+          "title": "Why Do We Still Use QWERTY Keyboards?",
+          "npr_story_id": "714082890",
+          "filename": "20190416_indicator_041619_qwerty_tim_harford_final-eb4f7f23-06e6-4d01-aa74-29bfd011eafb.mp3?d=597&size=9535745&e=714080306&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "final_url": "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/04/20190416_indicator_041619_qwerty_tim_harford_final-eb4f7f23-06e6-4d01-aa74-29bfd011eafb.mp3?d=597&size=9535745&e=714080306&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "date": "2019-04-15",
+          "day_distance": 7,
+          "title": "The Cost Of Measles",
+          "npr_story_id": "713645707",
+          "filename": "20190415_indicator_041419_measles_final_2-57e00d2e-458d-447e-8e40-80c368ea5f96.mp3?d=522&size=8348129&e=713638935&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "final_url": "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/04/20190415_indicator_041419_measles_final_2-57e00d2e-458d-447e-8e40-80c368ea5f96.mp3?d=522&size=8348129&e=713638935&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "date": "2019-04-29",
+          "day_distance": 7,
+          "title": "Where The Gender Pay Gap Is Widest",
+          "npr_story_id": "718389455",
+          "filename": "20190429_indicator_0429_ladypay_final2_2-aecdb544-b278-4e44-a8e1-46d587a8eb46.mp3?d=576&size=9204230&e=718274396&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "final_url": "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/04/20190429_indicator_0429_ladypay_final2_2-aecdb544-b278-4e44-a8e1-46d587a8eb46.mp3?d=576&size=9204230&e=718274396&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        }
+      ]
+    }
+  ]
+}
