@@ -1,6 +1,6 @@
 {
-  "next_date": "2021-06-10T17:40:00-04:00",
-  "episode_count": 941,
+  "next_date": "2021-03-28T18:46:18-04:00",
+  "episode_count": 991,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -8470,6 +8470,456 @@
       "audio_id": "1005774995",
       "player_url": "https://www.npr.org/player/embed/1005722922/1005774995",
       "description": "It's time for the Indicators Of The Week! Our three indicators are: tax, oil, and jobs. We will cover their importance and how they are relevant to Bono, the Ford F-150, and Kim Kardashian."
+    },
+    {
+      "title": "The Case For Inflation",
+      "date": "2021-06-10T15:06:11-04:00",
+      "npr_url": "https://www.npr.org/2021/06/10/1005312213/the-case-for-inflation",
+      "story_id": "1005312213",
+      "audio_id": "1005316216",
+      "player_url": "https://www.npr.org/player/embed/1005312213/1005316216",
+      "description": "The latest Consumer Price Index reveals 5% inflation over the last year. Should we be worried? Treasury Secretary Yellen says no. Two economists argue yes. The Indicator presents... the inflation hawks!"
+    },
+    {
+      "title": "Women, Work And The Pandemic",
+      "date": "2021-06-09T15:01:00-04:00",
+      "npr_url": "https://www.npr.org/2021/06/09/1004892039/women-work-and-the-pandemic",
+      "story_id": "1004892039",
+      "audio_id": "1004918887",
+      "player_url": "https://www.npr.org/player/embed/1004892039/1004918887",
+      "description": "Millions of women left the workforce during the pandemic. Today, a story about a mother's tough decision to leave work and an economist's view on the labor market for women during the pandemic."
+    },
+    {
+      "title": "Wagyu Steaks And Worker Shortages: The Beigie Awards",
+      "date": "2021-06-08T16:22:53-04:00",
+      "npr_url": "https://www.npr.org/2021/06/08/1004575901/wagyu-steaks-and-worker-shortages-the-beigie-awards",
+      "story_id": "1004575901",
+      "audio_id": "1004600762",
+      "player_url": "https://www.npr.org/player/embed/1004575901/1004600762",
+      "description": "The Indicator gives out the special Beigie Award eight times each year, and it's that time today! We are honoring the Federal Reserve branch that told the story of beef. Yes, premium cuts!"
+    },
+    {
+      "title": "A Technology Tale: David Beats Goliath",
+      "date": "2021-06-07T15:10:47-04:00",
+      "npr_url": "https://www.npr.org/2021/06/07/1004101336/a-technology-tale-david-beats-goliath",
+      "story_id": "1004101336",
+      "audio_id": "1004133442",
+      "player_url": "https://www.npr.org/player/embed/1004101336/1004133442",
+      "description": "Zoom is the most popular video conferencing software and many people's communications lifeline during COVID. How did the tiny company beat tech giants like Google, Microsoft, and Cisco?"
+    },
+    {
+      "title": "Jobs Friday: Rise Of The Self Employed",
+      "date": "2021-06-04T20:33:26-04:00",
+      "npr_url": "https://www.npr.org/2021/06/04/1003439766/jobs-friday-rise-of-the-self-employed",
+      "story_id": "1003439766",
+      "audio_id": "1003492643",
+      "player_url": "https://www.npr.org/player/embed/1003439766/1003492643",
+      "description": "It's Jobs Friday! It's not exactly the jobs report we wanted, but there were some bright spots. On the Indicator, we discuss the rise in self employment."
+    },
+    {
+      "title": "Have A Missing Matisse? Call The Art Detective",
+      "date": "2021-06-03T19:23:00-04:00",
+      "npr_url": "https://www.npr.org/2021/06/03/1003062887/have-a-missing-matisse-call-the-art-detective",
+      "story_id": "1003062887",
+      "audio_id": "1003086979",
+      "player_url": "https://www.npr.org/player/embed/1003062887/1003086979",
+      "description": "Art crime is a big business, and it requires special skills to investigate. Enter Christopher Marinello, one of the world's foremost experts in art recovery."
+    },
+    {
+      "title": "Dear Class Of 2021...",
+      "date": "2021-06-02T20:22:00-04:00",
+      "npr_url": "https://www.npr.org/2021/06/02/1002599772/dear-class-of-2021",
+      "story_id": "1002599772",
+      "audio_id": "1002695090",
+      "player_url": "https://www.npr.org/player/embed/1002599772/1002695090",
+      "description": "Dear graduating college classes of 2021: Congratulations! On The Indicator, Stacey and Cardiff present an economic guide to the future that awaits you."
+    },
+    {
+      "title": "Leveling The Playing Field",
+      "date": "2021-06-01T14:24:46-04:00",
+      "npr_url": "https://www.npr.org/2021/06/01/1002254017/leveling-the-playing-field",
+      "story_id": "1002254017",
+      "audio_id": "1002255389",
+      "player_url": "https://www.npr.org/player/embed/1002254017/1002255389",
+      "description": "Several schools have cut women's sports teams during the pandemic, and some of the teams have lawyered up in response. Ultimately, these lawsuits ask the question: how do we measure equality?"
+    },
+    {
+      "title": "Unpacking President Biden's Big Budget",
+      "date": "2021-05-28T18:23:12-04:00",
+      "npr_url": "https://www.npr.org/2021/05/28/1001369544/unpacking-president-bidens-big-budget",
+      "story_id": "1001369544",
+      "audio_id": "1001427782",
+      "player_url": "https://www.npr.org/player/embed/1001369544/1001427782",
+      "description": "President Biden unveiled a massive budget proposal on Friday. We discuss the hefty price tag and ask two economists to weigh in on his plan."
+    },
+    {
+      "title": "Fighting A Racist 184-Year-Old Law",
+      "date": "2021-05-27T15:12:02-04:00",
+      "npr_url": "https://www.npr.org/2021/05/27/1001052296/fighting-a-racist-184-year-old-law",
+      "story_id": "1001052296",
+      "audio_id": "1001053327",
+      "player_url": "https://www.npr.org/player/embed/1001052296/1001053327",
+      "description": "The Chehalis Tribe had a plan to create jobs and revenue. The only problem? A racist law from 1834."
+    },
+    {
+      "title": "What Does It Take To Get Us To Try Something New?",
+      "date": "2021-05-26T14:27:00-04:00",
+      "npr_url": "https://www.npr.org/2021/05/26/1000571927/what-does-it-take-to-get-us-to-try-something-new",
+      "story_id": "1000571927",
+      "audio_id": "1000648383",
+      "player_url": "https://www.npr.org/player/embed/1000571927/1000648383",
+      "description": "You may have the best product in the world, but that doesn't mean people will try it. What does it take to get consumers to try something new?"
+    },
+    {
+      "title": "Who Let The Dogs Out?",
+      "date": "2021-05-25T17:03:28-04:00",
+      "npr_url": "https://www.npr.org/2021/05/25/1000290457/who-let-the-dogs-out",
+      "story_id": "1000290457",
+      "audio_id": "1000292429",
+      "player_url": "https://www.npr.org/player/embed/1000290457/1000292429",
+      "description": "When people were stuck at home during Covid lockdowns, the pet sitting business slowed to a trickle. But recently traveling has picked up and now pet sitters can barely keep up with demand."
+    },
+    {
+      "title": "The Growing Racial Divide In Millennial Wealth",
+      "date": "2021-05-24T17:01:10-04:00",
+      "npr_url": "https://www.npr.org/2021/05/24/999892633/the-growing-racial-divide-in-millennial-wealth",
+      "story_id": "999892633",
+      "audio_id": "999906427",
+      "player_url": "https://www.npr.org/player/embed/999892633/999906427",
+      "description": "Many white millennials have made amazing progress in building wealth in recent years. Meanwhile, Black millennials keep falling further and further behind."
+    },
+    {
+      "title": "Labor Market Mysteries; Plus, Signs Of Life",
+      "date": "2021-05-21T17:44:34-04:00",
+      "npr_url": "https://www.npr.org/2021/05/20/998656431/labor-market-mysteries-plus-signs-of-life",
+      "story_id": "998656431",
+      "audio_id": "1199267715",
+      "player_url": "https://www.npr.org/player/embed/998656431/1199267715",
+      "description": "The U.S. unemployment rate is still high... so why are we in a labor shortage? Sam chats with Stacey Vanek Smith, host of NPR's The Indicator, and Cardiff Garcia, former co-host of The Indicator, about the American job market and why businesses are having such a hard time hiring. Then, as vaccines have become more widely available and pandemic restrictions lift across the country, people are wandering back out into the world, having experiences they haven't had in over a year. We drop in on a few of these: a dance party, a first date, a game with friends — the small pleasures folks have missed that now feel monumental.You can follow us on Twitter @NPRItsBeenAMin and email us at samsanders@npr.org."
+    },
+    {
+      "title": "America's Best-Selling Truck Goes Electric",
+      "date": "2021-05-20T16:30:51-04:00",
+      "npr_url": "https://www.npr.org/2021/05/20/998750991/americas-best-selling-truck-goes-electric",
+      "story_id": "998750991",
+      "audio_id": "998804981",
+      "player_url": "https://www.npr.org/player/embed/998750991/998804981",
+      "description": "The Ford Lightning is the first electric F-150 pickup truck, and it could be a historical tipping point for the US auto industry. The only problem? Selling it to old-school drivers."
+    },
+    {
+      "title": "We're Bad At Calculating Risk",
+      "date": "2021-05-19T15:54:32-04:00",
+      "npr_url": "https://www.npr.org/2021/05/19/998375633/were-bad-at-calculating-risk",
+      "story_id": "998375633",
+      "audio_id": "998407659",
+      "player_url": "https://www.npr.org/player/embed/998375633/998407659",
+      "description": "Life constantly requires us to calculate risk, and we're just not very good at it."
+    },
+    {
+      "title": "Blood And Treasure",
+      "date": "2021-05-18T15:15:00-04:00",
+      "npr_url": "https://www.npr.org/2021/05/18/997997557/blood-and-treasure",
+      "story_id": "997997557",
+      "audio_id": "998033335",
+      "player_url": "https://www.npr.org/player/embed/997997557/998033335",
+      "description": "Obsessing over hidden treasure isn't just for pirates and conquistadors. In 2010, an eccentric art dealer launched a modern day treasure hunt that lasted ten long years."
+    },
+    {
+      "title": "The Great Vaccine Patent-Off",
+      "date": "2021-05-17T14:11:00-04:00",
+      "npr_url": "https://www.npr.org/2021/05/17/997641539/the-great-vaccine-patent-off",
+      "story_id": "997641539",
+      "audio_id": "997643340",
+      "player_url": "https://www.npr.org/player/embed/997641539/997643340",
+      "description": "The US just backed calls by South Africa and India to waive intellectual property protection for COVID-19 vaccines, but that may not be enough to ramp up vaccine production."
+    },
+    {
+      "title": "Brood X Economy: Indicators Of The Week",
+      "date": "2021-05-14T15:51:13-04:00",
+      "npr_url": "https://www.npr.org/2021/05/14/996964273/brood-x-economy-indicators-of-the-week",
+      "story_id": "996964273",
+      "audio_id": "997029384",
+      "player_url": "https://www.npr.org/player/embed/996964273/997029384",
+      "description": "The Brood X cicadas are finally back this summer, but what was life like 17 years ago when they first went underground?"
+    },
+    {
+      "title": "How Do You Get People To Get A Vaccine?",
+      "date": "2021-05-13T15:47:26-04:00",
+      "npr_url": "https://www.npr.org/2021/05/13/996675144/how-do-you-get-people-to-get-a-vaccine",
+      "story_id": "996675144",
+      "audio_id": "996679009",
+      "player_url": "https://www.npr.org/player/embed/996675144/996679009",
+      "description": "What's the best way to persuade people to get a vaccine? A new study from the University of Pennsylvania may have the answer."
+    },
+    {
+      "title": "The Rise And Fall Of The Skinny Jean",
+      "date": "2021-05-12T15:31:30-04:00",
+      "npr_url": "https://www.npr.org/2021/05/12/996194767/the-rise-and-fall-of-the-skinny-jean",
+      "story_id": "996194767",
+      "audio_id": "996350010",
+      "player_url": "https://www.npr.org/player/embed/996194767/996350010",
+      "description": "Skinny jeans have reigned supreme for two decades, but now their rule seems to be ending."
+    },
+    {
+      "title": "Pay Taxes Less Frequently? We're Interested...",
+      "date": "2021-05-11T14:22:00-04:00",
+      "npr_url": "https://www.npr.org/2021/05/11/995956515/pay-taxes-less-frequently-were-interested",
+      "story_id": "995956515",
+      "audio_id": "995974094",
+      "player_url": "https://www.npr.org/player/embed/995956515/995974094",
+      "description": "Taxes can be a nightmare for taxpayers and also for the under-resourced IRS. But there's an idea that could make taxes easier for everybody: only pay taxes once every two years."
+    },
+    {
+      "title": "The Hacking Business",
+      "date": "2021-05-10T16:47:27-04:00",
+      "npr_url": "https://www.npr.org/2021/05/10/995662926/the-hacking-business",
+      "story_id": "995662926",
+      "audio_id": "995694555",
+      "player_url": "https://www.npr.org/player/embed/995662926/995694555",
+      "description": "A cyberattack forced the shutdown of a major U.S. fuel pipeline, and the hackers wrote ... a press release? We discuss the business of hacking, and why hackers would give a press statement."
+    },
+    {
+      "title": "Jobs Friday And The Labor Market Mystery",
+      "date": "2021-05-07T15:17:59-04:00",
+      "npr_url": "https://www.npr.org/2021/05/07/994815186/jobs-friday-and-the-labor-market-mystery",
+      "story_id": "994815186",
+      "audio_id": "994890892",
+      "player_url": "https://www.npr.org/player/embed/994815186/994890892",
+      "description": "Unemployment is still above 6%, but companies across the US are saying they can't find people to fill their jobs. What's going on?"
+    },
+    {
+      "title": "Pepsi's Number Fever",
+      "date": "2021-05-06T14:47:00-04:00",
+      "npr_url": "https://www.npr.org/2021/05/06/994388441/pepsis-number-fever",
+      "story_id": "994388441",
+      "audio_id": "994421615",
+      "player_url": "https://www.npr.org/player/embed/994388441/994421615",
+      "description": "Sometimes companies offer sales promotions that are TOO good, ending in livid customers and a disaster for the company."
+    },
+    {
+      "title": "The VITA(L) Role Of Free Tax Prep",
+      "date": "2021-05-05T19:19:56-04:00",
+      "npr_url": "https://www.npr.org/2021/05/05/993965671/the-vita-l-role-of-free-tax-prep",
+      "story_id": "993965671",
+      "audio_id": "994081219",
+      "player_url": "https://www.npr.org/player/embed/993965671/994081219",
+      "description": "The IRS helps millions of people do their taxes FOR FREE every year. But, as with many things in the past year, covid has made this a little more complicated."
+    },
+    {
+      "title": "Confusion In The Health Insurance Marketplace",
+      "date": "2021-05-04T14:27:31-04:00",
+      "npr_url": "https://www.npr.org/2021/05/04/993638054/confusion-in-the-health-insurance-marketplace",
+      "story_id": "993638054",
+      "audio_id": "993638927",
+      "player_url": "https://www.npr.org/player/embed/993638054/993638927",
+      "description": "Millions of Americans are eligible for huge savings on health insurance due to Biden's stimulus plan, but many haven't taken up the offer. Why is it so hard to give people a break on health insurance?"
+    },
+    {
+      "title": "A 21st Century Union",
+      "date": "2021-05-03T15:27:34-04:00",
+      "npr_url": "https://www.npr.org/2021/05/03/993223307/a-21st-century-union",
+      "story_id": "993223307",
+      "audio_id": "993278684",
+      "player_url": "https://www.npr.org/player/embed/993223307/993278684",
+      "description": "A new union was formed earlier this year. Why has it caught our attention? Some of its members make more than $300,000 a year, and they all work at Alphabet, Google's parent company."
+    },
+    {
+      "title": "Shortages: Inflation In Disguise?",
+      "date": "2021-04-30T14:30:52-04:00",
+      "npr_url": "https://www.npr.org/2021/04/30/992528310/shortages-inflation-in-disguise",
+      "story_id": "992528310",
+      "audio_id": "992580739",
+      "player_url": "https://www.npr.org/player/embed/992528310/992580739",
+      "description": "The pandemic spurred a year full of shortages, so why haven't producers responded by raising prices in most cases?"
+    },
+    {
+      "title": "Inflation, Unemployment And The Phillips Curve",
+      "date": "2021-04-29T14:14:14-04:00",
+      "npr_url": "https://www.npr.org/2021/04/29/992134185/inflation-unemployment-and-the-phillips-curve",
+      "story_id": "992134185",
+      "audio_id": "992141726",
+      "player_url": "https://www.npr.org/player/embed/992134185/992141726",
+      "description": "For decades, policymakers chose to put millions of people into either a frying pan (inflation) or a fire (unemployment). An idea called the Phillips Curve was influential. But is it still?"
+    },
+    {
+      "title": "Confused When Online Shopping? It Might Be A Dark Pattern",
+      "date": "2021-04-28T17:03:56-04:00",
+      "npr_url": "https://www.npr.org/2021/04/28/991684518/confused-when-online-shopping-it-might-be-a-dark-pattern",
+      "story_id": "991684518",
+      "audio_id": "991780898",
+      "player_url": "https://www.npr.org/player/embed/991684518/991780898",
+      "description": "Dark patterns are online tricks used by retailers and marketers that cause you to do things that you didn't mean to do. And they're becoming more and more common."
+    },
+    {
+      "title": "Back to Business?",
+      "date": "2021-04-27T17:02:27-04:00",
+      "npr_url": "https://www.npr.org/2021/04/27/991282767/back-to-business",
+      "story_id": "991282767",
+      "audio_id": "991283459",
+      "player_url": "https://www.npr.org/player/embed/991282767/991283459",
+      "description": "We join Stacey for her first haircut of the year, and discuss the future of the service economy as the end of the Covid-19 pandemic (hopefully!) nears."
+    },
+    {
+      "title": "Barbie's Big Makeover",
+      "date": "2021-04-26T21:27:00-04:00",
+      "npr_url": "https://www.npr.org/2021/04/26/991013395/barbies-big-makeover",
+      "story_id": "991013395",
+      "audio_id": "991065713",
+      "player_url": "https://www.npr.org/player/embed/991013395/991065713",
+      "description": "There's been a Barbie boom recently, and it's due in part to new collections of products featuring diverse skin tones and body types, as well as an accompanying PR makeover."
+    },
+    {
+      "title": "The Origin Of The Oscars",
+      "date": "2021-04-23T20:53:23-04:00",
+      "npr_url": "https://www.npr.org/2021/04/23/990329880/the-origin-of-the-oscars",
+      "story_id": "990329880",
+      "audio_id": "990395122",
+      "player_url": "https://www.npr.org/player/embed/990329880/990395122",
+      "description": "It's almost time for The Oscars! We look back at the founding of The Oscars, and how it propelled the American movie industry to the prominence it holds today."
+    },
+    {
+      "title": "The 26 Words That Made The Internet What It Is",
+      "date": "2021-04-22T14:52:14-04:00",
+      "npr_url": "https://www.npr.org/2021/04/22/989862270/the-26-words-that-made-the-internet-what-it-is",
+      "story_id": "989862270",
+      "audio_id": "989981843",
+      "player_url": "https://www.npr.org/player/embed/989862270/989981843",
+      "description": "How one man's legal fight turned 26 ambiguous words from a 1996 law into the shield big tech companies hide behind to this day."
+    },
+    {
+      "title": "Too Many Real Estate Agents",
+      "date": "2021-04-21T14:11:00-04:00",
+      "npr_url": "https://www.npr.org/2021/04/21/989588150/too-many-real-estate-agents",
+      "story_id": "989588150",
+      "audio_id": "989613623",
+      "player_url": "https://www.npr.org/player/embed/989588150/989613623",
+      "description": "There are now more realtors than homes for sale, and this is not just concerning for real estate agents facing extra competition. New research suggests too many real estate agents can make downturns worse for the entire housing market."
+    },
+    {
+      "title": "Plastic Is The New Toilet Paper For Scientists",
+      "date": "2021-04-20T14:21:02-04:00",
+      "npr_url": "https://www.npr.org/2021/04/20/989260273/plastic-is-the-new-toilet-paper-for-scientists",
+      "story_id": "989260273",
+      "audio_id": "989262948",
+      "player_url": "https://www.npr.org/player/embed/989260273/989262948",
+      "description": "A lot of pandemic-related supply chain snafus have been corrected, but scientists are still struggling to get some of their most basic supplies. What's going on?"
+    },
+    {
+      "title": "It's Time To Fly",
+      "date": "2021-04-19T14:36:27-04:00",
+      "npr_url": "https://www.npr.org/2021/04/19/988780410/its-time-to-fly",
+      "story_id": "988780410",
+      "audio_id": "988875487",
+      "player_url": "https://www.npr.org/player/embed/988780410/988875487",
+      "description": "People are flying again. But so many airplanes are still parked in storage. Getting them in the air again isn't always so simple."
+    },
+    {
+      "title": "A Beige Revolution - Shaking up the Beige Book",
+      "date": "2021-04-16T16:37:16-04:00",
+      "npr_url": "https://www.npr.org/2021/04/16/988122645/a-beige-revolution-shaking-up-the-beige-book",
+      "story_id": "988122645",
+      "audio_id": "988277060",
+      "player_url": "https://www.npr.org/player/embed/988122645/988277060",
+      "description": "It's Beigies season! We honor the Federal Reserve Bank that added two new sections to their Beige Book entry: Worker experience and Minority- and Women- owned Business Enterprises."
+    },
+    {
+      "title": "After The Banks Leave",
+      "date": "2021-04-15T17:02:58-04:00",
+      "npr_url": "https://www.npr.org/2021/04/15/987795618/after-the-banks-leave",
+      "story_id": "987795618",
+      "audio_id": "987798764",
+      "player_url": "https://www.npr.org/player/embed/987795618/987798764",
+      "description": "The Covid-19 pandemic has accelerated the decline of in-person banking. But after a bank branch finally closes down, what happens to the community left behind?"
+    },
+    {
+      "title": "How Burlington Powered Through 2020 Without A Website",
+      "date": "2021-04-13T17:02:00-04:00",
+      "npr_url": "https://www.npr.org/2021/04/12/986565965/how-burlington-powered-through-2020-without-a-website",
+      "story_id": "986565965",
+      "audio_id": "986569872",
+      "player_url": "https://www.npr.org/player/embed/986565965/986569872",
+      "description": "Burlington shut down its online store right as the pandemic started, but it still weathered 2020 well. In fact, its stock prices just hit an all time high! What's Burlington's secret to success?"
+    },
+    {
+      "title": "How Amazon Defeated The Union",
+      "date": "2021-04-12T16:48:40-04:00",
+      "npr_url": "https://www.npr.org/2021/04/12/986557253/how-amazon-defeated-the-union",
+      "story_id": "986557253",
+      "audio_id": "986607911",
+      "player_url": "https://www.npr.org/player/embed/986557253/986607911",
+      "description": "The results are in: Amazon workers in Bessemer, Alabama will not unionize, for now. We discuss the tactics companies use to keep organized labor at bay."
+    },
+    {
+      "title": "Indicator Favs: How An Econ Experiment Changed Lives",
+      "date": "2021-04-09T17:01:45-04:00",
+      "npr_url": "https://www.npr.org/2021/04/07/985039810/indicator-favs-how-an-econ-experiment-changed-lives",
+      "story_id": "985039810",
+      "audio_id": "985366736",
+      "player_url": "https://www.npr.org/player/embed/985039810/985366736",
+      "description": "Cardiff picked our final installment of favorites week. We learn about an experiment that led to more low-income students attending an elite college. Sometimes all it takes is the right nudge."
+    },
+    {
+      "title": "Indicator Favs: The Rise Of The Machines",
+      "date": "2021-04-07T17:04:00-04:00",
+      "npr_url": "https://www.npr.org/2021/04/07/985037181/indicator-favs-the-rise-of-the-machines",
+      "story_id": "985037181",
+      "audio_id": "985077630",
+      "player_url": "https://www.npr.org/player/embed/985037181/985077630",
+      "description": "In today's classic, the robots take over the show from Cardiff and Stacey as we continue our week of favorite episodes."
+    },
+    {
+      "title": "Indicator Favs: The Recession Predictor",
+      "date": "2021-04-06T17:00:14-04:00",
+      "npr_url": "https://www.npr.org/2021/04/06/984822184/indicator-favs-the-recession-predictor",
+      "story_id": "984822184",
+      "audio_id": "984834969",
+      "player_url": "https://www.npr.org/player/embed/984822184/984834969",
+      "description": "It wouldn't be favorites week at The Indicator without the yield curve. Meet it again for the first time in this classic from the first time Cardiff brought it to the show."
+    },
+    {
+      "title": "Indicator Favs: Let's Get Ready To Retail",
+      "date": "2021-04-05T14:51:49-04:00",
+      "npr_url": "https://www.npr.org/2021/04/05/984554359/indicator-favs-lets-get-ready-to-retail",
+      "story_id": "984554359",
+      "audio_id": "984568284",
+      "player_url": "https://www.npr.org/player/embed/984554359/984568284",
+      "description": "This week we're picking our favorite Indicators and adding a little behind the scenes peek. Today, the first time Stacey and Cardiff realized they share a taste for the bizarre in podcasting."
+    },
+    {
+      "title": "Peak Gasoline And Cardiff Fare Thee Well",
+      "date": "2021-04-01T17:13:24-04:00",
+      "npr_url": "https://www.npr.org/2021/04/01/983621695/peak-gasoline-and-cardiff-fare-thee-well",
+      "story_id": "983621695",
+      "audio_id": "983623126",
+      "player_url": "https://www.npr.org/player/embed/983621695/983623126",
+      "description": "On this very special episode of Indicators of the Week, we talk about the decline of demand for gasoline and reflect on the past three years of the show with Cardiff."
+    },
+    {
+      "title": "The Virtual Office",
+      "date": "2021-03-31T18:44:37-04:00",
+      "npr_url": "https://www.npr.org/2021/03/31/983097569/the-virtual-office",
+      "story_id": "983097569",
+      "audio_id": "983244378",
+      "player_url": "https://www.npr.org/player/embed/983097569/983244378",
+      "description": "The Indicator team has been working remotely for about a year now. While remote work has its perks, sometimes we miss sharing an office space. Can virtual reality help bridge the gap?"
+    },
+    {
+      "title": "15 Million N95s Without A Buyer",
+      "date": "2021-03-30T18:20:00-04:00",
+      "npr_url": "https://www.npr.org/2021/03/30/982831448/15-million-n95s-without-a-buyer",
+      "story_id": "982831448",
+      "audio_id": "982852084",
+      "player_url": "https://www.npr.org/player/embed/982831448/982852084",
+      "description": "The start of the COVID-19 pandemic led to an N95 mask shortage. Now there's still a shortage, but many American mask manufacturers can't sell their masks. We break down the reasons why."
+    },
+    {
+      "title": "Schmoozing And The Gender Gap",
+      "date": "2021-03-29T18:46:18-04:00",
+      "npr_url": "https://www.npr.org/2021/03/29/982470955/schmoozing-and-the-gender-gap",
+      "story_id": "982470955",
+      "audio_id": "982694103",
+      "player_url": "https://www.npr.org/player/embed/982470955/982694103",
+      "description": "Women now make up nearly half of entry level work workers, but there's still a gap higher up on the corporate ladder. One possibility for why this is happening? Schmoozing."
     }
   ]
 }
