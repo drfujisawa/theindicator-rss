@@ -1,6 +1,6 @@
 {
-  "next_date": "2021-01-18T18:11:25-05:00",
-  "episode_count": 1039,
+  "next_date": "2020-10-26T17:26:00-04:00",
+  "episode_count": 1093,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -9352,6 +9352,492 @@
       "audio_id": "958554840",
       "player_url": "https://www.npr.org/player/embed/958542152/958554840",
       "description": "Social media played a big part in the demonstration and riot at the U.S. Capitol last week. For many it was a surprise, but to social media watchers, it was simply the culmination of 10 years of influence."
+    },
+    {
+      "title": "The Beigies: Traffic Jam At The Ports",
+      "date": "2021-01-15T17:53:00-05:00",
+      "npr_url": "https://www.npr.org/2021/01/15/957256939/the-beigies-traffic-jam-at-the-ports",
+      "story_id": "957256939",
+      "audio_id": "957452614",
+      "player_url": "https://www.npr.org/player/embed/957256939/957452614",
+      "description": "The economy might be down, but Americans are buying a lot of stuff right now. Today on the show, we break it down and pick our favorite economic story from the Beige Book."
+    },
+    {
+      "title": "Making Sense Of Pandemic Stats",
+      "date": "2021-01-14T17:01:00-05:00",
+      "npr_url": "https://www.npr.org/2021/01/13/956471751/making-sense-of-pandemic-stats",
+      "story_id": "956471751",
+      "audio_id": "956836360",
+      "player_url": "https://www.npr.org/player/embed/956471751/956836360",
+      "description": "Statistics and the information we get from them have a massive influence on our worldviews and the decisions we make, but how can we ensure we're interpreting them properly? Today, we find out."
+    },
+    {
+      "title": "Companies Get Political",
+      "date": "2021-01-13T15:04:12-05:00",
+      "npr_url": "https://www.npr.org/2021/01/13/956553990/companies-get-political",
+      "story_id": "956553990",
+      "audio_id": "956563805",
+      "player_url": "https://www.npr.org/player/embed/956553990/956563805",
+      "description": "Politics used to be off limits for most American companies — at least publicly. Most would usually take a neutral position when a big political story hit the news. But that has changed."
+    },
+    {
+      "title": "The SPAC Is Back!",
+      "date": "2021-01-12T14:38:35-05:00",
+      "npr_url": "https://www.npr.org/2021/01/12/956169423/the-spac-is-back",
+      "story_id": "956169423",
+      "audio_id": "956181567",
+      "player_url": "https://www.npr.org/player/embed/956169423/956181567",
+      "description": "Last year, more than half the firms that went public were special purpose acquisition companies, also known as SPACs. We explain what that means and how it impacts the world of finance."
+    },
+    {
+      "title": "Entrepreneurship On The Rise",
+      "date": "2021-01-11T18:07:37-05:00",
+      "npr_url": "https://www.npr.org/2021/01/11/955697672/entrepreneurship-on-the-rise",
+      "story_id": "955697672",
+      "audio_id": "955787827",
+      "player_url": "https://www.npr.org/player/embed/955697672/955787827",
+      "description": "The coronavirus has been responsible for massive business closures...but at the same time, Americans are starting businesses at the fastest rate in more than a decade."
+    },
+    {
+      "title": "Jobs Friday: Reversal In The Recovery",
+      "date": "2021-01-08T14:17:54-05:00",
+      "npr_url": "https://www.npr.org/2021/01/08/955002448/jobs-friday-reversal-in-the-recovery",
+      "story_id": "955002448",
+      "audio_id": "955054182",
+      "player_url": "https://www.npr.org/player/embed/955002448/955054182",
+      "description": "For the first time since April, the American economy lost jobs. Today, we break down the December jobs report and the slowing economic recovery."
+    },
+    {
+      "title": "How Political Instability Affects The Economy",
+      "date": "2021-01-07T15:31:49-05:00",
+      "npr_url": "https://www.npr.org/2021/01/07/954603834/how-political-instability-affects-the-economy",
+      "story_id": "954603834",
+      "audio_id": "954638607",
+      "player_url": "https://www.npr.org/player/embed/954603834/954638607",
+      "description": "We're only seven days into the new year and we're off to a bumpy start. But as chaos rages through the capitol, the stock market and other signs of economic growth continue."
+    },
+    {
+      "title": "Fear And Loaning",
+      "date": "2021-01-06T17:01:26-05:00",
+      "npr_url": "https://www.npr.org/2021/01/04/953276269/fear-and-loaning",
+      "story_id": "953276269",
+      "audio_id": "953666381",
+      "player_url": "https://www.npr.org/player/embed/953276269/953666381",
+      "description": "There's a fear radiating out from the commercial real estate market — a fear that some economists say could become a drag on any economic recovery. In fact, there's evidence it already has."
+    },
+    {
+      "title": "New Year, New Indicators",
+      "date": "2021-01-05T15:28:57-05:00",
+      "npr_url": "https://www.npr.org/2021/01/05/953672896/new-year-new-indicators",
+      "story_id": "953672896",
+      "audio_id": "953695085",
+      "player_url": "https://www.npr.org/player/embed/953672896/953695085",
+      "description": "2020 was a tough year for the economy. How different will 2021 be? Today on the show, we take a look at three of our favorite indicators for the new year."
+    },
+    {
+      "title": "The Economy In 2030",
+      "date": "2021-01-04T19:19:00-05:00",
+      "npr_url": "https://www.npr.org/2021/01/04/953267831/the-economy-in-2030",
+      "story_id": "953267831",
+      "audio_id": "953400323",
+      "player_url": "https://www.npr.org/player/embed/953267831/953400323",
+      "description": "What will the global economy look like in a decade? Mauro Guillen joins the show to talk about 2030, his new book where he analyzes the economic trends of the future."
+    },
+    {
+      "title": "How To Use Globalization To Fight Disease",
+      "date": "2020-12-31T17:01:39-05:00",
+      "npr_url": "https://www.npr.org/2020/12/23/949611051/how-to-use-globalization-to-fight-disease",
+      "story_id": "949611051",
+      "audio_id": "949612954",
+      "player_url": "https://www.npr.org/player/embed/949611051/949612954",
+      "description": "Globalization and urbanization historically have made the global economy more productive and efficient — and also more vulnerable to pandemics. But now they can be forces for good in the fight against pandemics."
+    },
+    {
+      "title": "Why The Housing Market Is Booming In A Bad Economy",
+      "date": "2020-12-30T17:01:00-05:00",
+      "npr_url": "https://www.npr.org/2020/12/23/949605769/why-the-housing-market-is-booming-in-a-bad-economy",
+      "story_id": "949605769",
+      "audio_id": "949607775",
+      "player_url": "https://www.npr.org/player/embed/949605769/949607775",
+      "description": "The coronavirus pandemic has brought with it a massive economic downturn. Another thing it's brought: A booming housing market. We explain why. | Support The Indicator here."
+    },
+    {
+      "title": "Why We Weren't Prepared For A Pandemic",
+      "date": "2020-12-29T17:01:00-05:00",
+      "npr_url": "https://www.npr.org/2020/12/23/949598713/why-we-werent-prepared-for-a-pandemic",
+      "story_id": "949598713",
+      "audio_id": "949599947",
+      "player_url": "https://www.npr.org/player/embed/949598713/949599947",
+      "description": "We've had plenty of warnings over the years that we weren't ready for a pandemic. Today on the show: the psychology and economics of why."
+    },
+    {
+      "title": "The Strategic Value Of Rare Earths",
+      "date": "2020-12-28T17:01:25-05:00",
+      "npr_url": "https://www.npr.org/2020/12/23/949590270/the-strategic-value-of-rare-earths",
+      "story_id": "949590270",
+      "audio_id": "949593520",
+      "player_url": "https://www.npr.org/player/embed/949590270/949593520",
+      "description": "Rare earths are essential to a wide variety of strategically important components, but the vast majority of rare earths are produced by mines in China. That's something that the U.S. is working to correct."
+    },
+    {
+      "title": "Coming Back From Covid",
+      "date": "2020-12-23T17:01:41-05:00",
+      "npr_url": "https://www.npr.org/2020/12/21/948955784/coming-back-from-covid",
+      "story_id": "948955784",
+      "audio_id": "949732200",
+      "player_url": "https://www.npr.org/player/embed/948955784/949732200",
+      "description": "Chris Montana is a Minneapolis distillery owner whose business was destroyed in rioting early this year. Since then, he's committed himself to supporting local businesses and raised more than $770,000. | Support The Indicator here."
+    },
+    {
+      "title": "The State Of The Arts",
+      "date": "2020-12-22T17:01:07-05:00",
+      "npr_url": "https://www.npr.org/2020/12/21/948944449/the-state-of-the-arts",
+      "story_id": "948944449",
+      "audio_id": "949239124",
+      "player_url": "https://www.npr.org/player/embed/948944449/949239124",
+      "description": "Morgan Gould is a playwright who talked with us in April about the cancellation of her play. She describes what life has been like for people who work in the arts during the pandemic. | Support The Indicator here."
+    },
+    {
+      "title": "The View From Beijing",
+      "date": "2020-12-21T17:28:00-05:00",
+      "npr_url": "https://www.npr.org/2020/12/21/948853272/the-view-from-beijing",
+      "story_id": "948853272",
+      "audio_id": "948933474",
+      "player_url": "https://www.npr.org/player/embed/948853272/948933474",
+      "description": "China effectively stopped the spread of the virus early in the global pandemic. Life there has subsequently been quite different this year. | Support public radio here."
+    },
+    {
+      "title": "The Road To Bankruptcy",
+      "date": "2020-12-18T17:01:27-05:00",
+      "npr_url": "https://www.npr.org/2020/12/18/948068390/the-road-to-bankruptcy",
+      "story_id": "948068390",
+      "audio_id": "948068923",
+      "player_url": "https://www.npr.org/player/embed/948068390/948068923",
+      "description": "When the pandemic hit, the government pumped large amounts of money into the economy. The support kept many families afloat, but for many small businesses, it wasn't enough. | Donate to your NPR member station here."
+    },
+    {
+      "title": "The Underground Market For Vaccines",
+      "date": "2020-12-17T17:47:59-05:00",
+      "npr_url": "https://www.npr.org/2020/12/17/947734522/the-underground-market-for-vaccines",
+      "story_id": "947734522",
+      "audio_id": "947761723",
+      "player_url": "https://www.npr.org/player/embed/947734522/947761723",
+      "description": "We venture into the dark web and take a look at the world of black market vaccine sales. | Support The Indicator here."
+    },
+    {
+      "title": "Overrated/Underrated After The Great Stagnation",
+      "date": "2020-12-16T17:06:39-05:00",
+      "npr_url": "https://www.npr.org/2020/12/16/947291727/overrated-underrated-after-the-great-stagnation",
+      "story_id": "947291727",
+      "audio_id": "947294567",
+      "player_url": "https://www.npr.org/player/embed/947291727/947294567",
+      "description": "There's no denying that 2020 has been a rough year, but economist Tyler Cowen brings the show a source of hope: the possible return of productivity growth. And he plays overrated/underrated! | Support public radio here."
+    },
+    {
+      "title": "Who Gets A Vaccine? A Conversation With Alvin Roth",
+      "date": "2020-12-15T17:25:26-05:00",
+      "npr_url": "https://www.npr.org/2020/12/15/946883259/who-gets-a-vaccine-a-conversation-with-alvin-roth",
+      "story_id": "946883259",
+      "audio_id": "946887990",
+      "player_url": "https://www.npr.org/player/embed/946883259/946887990",
+      "description": "Right now, demand for a coronavirus vaccine far outweighs supply. Leaders are trying to figure out who should get the vaccine first. Dr. Alvin Roth, a Nobel Prize winning economist who specializes in game theory, has some ideas. | Support The Indicator here."
+    },
+    {
+      "title": "Pandemic Adaptation: Bookstore Edition",
+      "date": "2020-12-14T19:40:18-05:00",
+      "npr_url": "https://www.npr.org/2020/12/14/946411427/pandemic-adaptation-bookstore-edition",
+      "story_id": "946411427",
+      "audio_id": "946531203",
+      "player_url": "https://www.npr.org/player/embed/946411427/946531203",
+      "description": "Early in the pandemic, things looked bleak for Source Booksellers, a bookstore in Detroit. But they survived. The secret? Adaptation and loyal customers. | Support public radio here."
+    },
+    {
+      "title": "Our Friends Give Us Hope",
+      "date": "2020-12-11T17:32:32-05:00",
+      "npr_url": "https://www.npr.org/2020/12/11/945547065/our-friends-give-us-hope",
+      "story_id": "945547065",
+      "audio_id": "945638545",
+      "player_url": "https://www.npr.org/player/embed/945547065/945638545",
+      "description": "Some friends of The Indicator join the show and share some economic indicators that give them hope for the future. | Donate to your NPR member station here."
+    },
+    {
+      "title": "The Long, Slow Recovery",
+      "date": "2020-12-10T18:47:00-05:00",
+      "npr_url": "https://www.npr.org/2020/12/10/945105075/the-long-slow-recovery",
+      "story_id": "945105075",
+      "audio_id": "945219239",
+      "player_url": "https://www.npr.org/player/embed/945105075/945219239",
+      "description": "Team Indicator follows up with ice cream shop owner Molly Moon to look at the road to recovery for small businesses. | Show your love for The Indicator here."
+    },
+    {
+      "title": "Shipping Delays: Why Your Packages Are Taking Forever",
+      "date": "2020-12-09T17:40:24-05:00",
+      "npr_url": "https://www.npr.org/2020/12/09/944777576/shipping-delays-why-your-packages-are-taking-forever",
+      "story_id": "944777576",
+      "audio_id": "944780382",
+      "player_url": "https://www.npr.org/player/embed/944777576/944780382",
+      "description": "As the holiday season approaches, people are beginning to notice an online shopping trend: shipping delays. Today, we explain why packages are taking longer to ship than usual this year. | Donate to your member station here."
+    },
+    {
+      "title": "The Strangest Indicator Of 2020",
+      "date": "2020-12-08T18:28:00-05:00",
+      "npr_url": "https://www.npr.org/2020/12/08/944375878/the-strangest-indicator-of-2020",
+      "story_id": "944375878",
+      "audio_id": "944411649",
+      "player_url": "https://www.npr.org/player/embed/944375878/944411649",
+      "description": "Average real disposable income this year is on pace to rise at the fastest rate in more than 35 years. How could that be? We break down the strangest economic indicator of 2020. | Support public radio here."
+    },
+    {
+      "title": "The Marriage Business",
+      "date": "2020-12-07T17:12:00-05:00",
+      "npr_url": "https://www.npr.org/2020/12/07/943960152/the-marriage-business",
+      "story_id": "943960152",
+      "audio_id": "943993802",
+      "player_url": "https://www.npr.org/player/embed/943960152/943993802",
+      "description": "Like all industries that revolve around large gatherings, weddings have been hit hard...but some wedding planners have found a way to adapt. Hint: It involves eloping. | Support The Indicator here."
+    },
+    {
+      "title": "Jobs Friday: The Four Labor Markets",
+      "date": "2020-12-04T17:50:30-05:00",
+      "npr_url": "https://www.npr.org/2020/12/04/943241113/jobs-friday-the-four-labor-markets",
+      "story_id": "943241113",
+      "audio_id": "943315810",
+      "player_url": "https://www.npr.org/player/embed/943241113/943315810",
+      "description": "For the final jobs report of the year, we break down how different sectors of the economy have handled the pandemic. | Support your NPR member station here."
+    },
+    {
+      "title": "The Beigies: Some Economic Bright Spots",
+      "date": "2020-12-03T18:50:22-05:00",
+      "npr_url": "https://www.npr.org/2020/12/03/942449312/the-beigies-some-economic-bright-spots",
+      "story_id": "942449312",
+      "audio_id": "942483779",
+      "player_url": "https://www.npr.org/player/embed/942449312/942483779",
+      "description": "The Federal Reserve's Beige Book focuses on stories from the economy. The latest edition shows some hopeful points of light in an otherwise gloomy economic landscape. | Support The Indicator here."
+    },
+    {
+      "title": "The Economics of America's Nurse Shortage",
+      "date": "2020-12-02T18:00:42-05:00",
+      "npr_url": "https://www.npr.org/2020/12/02/941706036/the-economics-of-americas-nurse-shortage",
+      "story_id": "941706036",
+      "audio_id": "941741833",
+      "player_url": "https://www.npr.org/player/embed/941706036/941741833",
+      "description": "Early in the pandemic, there were national shortages of protective equipment and hospital supplies. Now, there's a shortage of nurses."
+    },
+    {
+      "title": "What Biden Could Do On Immigration",
+      "date": "2020-12-01T17:15:49-05:00",
+      "npr_url": "https://www.npr.org/2020/12/01/940774528/the-biden-approach-to-immigration",
+      "story_id": "940774528",
+      "audio_id": "940870413",
+      "player_url": "https://www.npr.org/player/embed/940774528/940870413",
+      "description": "As President-elect Biden prepares to take office, there's a lot of speculation about how his administration might change the federal approach to immigration."
+    },
+    {
+      "title": "Electric Car Chargers: When Supply Drives Demand",
+      "date": "2020-11-30T17:01:00-05:00",
+      "npr_url": "https://www.npr.org/2020/11/30/940172037/electric-car-chargers-when-supply-drives-demand",
+      "story_id": "940172037",
+      "audio_id": "940209046",
+      "player_url": "https://www.npr.org/player/embed/940172037/940209046",
+      "description": "People are hesitant to buy electric cars because fast chargers still aren't widely available. The irony? Most people charge at home, not with fast chargers. NPR's Camila Domonoske explains."
+    },
+    {
+      "title": "What's The Story? Narratives And The Economy",
+      "date": "2020-11-27T17:01:00-05:00",
+      "npr_url": "https://www.npr.org/2020/11/25/938997956/whats-the-story-narratives-and-the-economy",
+      "story_id": "938997956",
+      "audio_id": "939001706",
+      "player_url": "https://www.npr.org/player/embed/938997956/939001706",
+      "description": "The great toilet paper shortage of 2020 wasn't caused by the virus or by a disruption to manufacturing. It was caused by a story: one that we told ourselves. On the Indicator: how stories can affect the economy."
+    },
+    {
+      "title": "Thanksgiving Dinner Is The Cheapest In 35 Years",
+      "date": "2020-11-25T17:15:12-05:00",
+      "npr_url": "https://www.npr.org/2020/11/25/938978131/thanksgiving-dinner-is-the-cheapest-in-35-years",
+      "story_id": "938978131",
+      "audio_id": "939025328",
+      "player_url": "https://www.npr.org/player/embed/938978131/939025328",
+      "description": "Each year, the American Farm Bureau estimates the cost of Thanksgiving dinner. The main finding this year? Thanksgiving dinner is the cheapest it's been since the survey started 35 years ago."
+    },
+    {
+      "title": "Should I Travel For Thanksgiving This Year?",
+      "date": "2020-11-24T17:01:31-05:00",
+      "npr_url": "https://www.npr.org/2020/11/24/938580499/should-i-travel-for-thanksgiving-this-year",
+      "story_id": "938580499",
+      "audio_id": "938594906",
+      "player_url": "https://www.npr.org/player/embed/938580499/938594906",
+      "description": "The CDC recommends we all stay home for Thanksgiving to minimize the risk of spreading COVID-19. But tens of millions of Americans are expected to travel anyway. If you're one of them, here's how you can think about the risk you're taking."
+    },
+    {
+      "title": "Opening A Hotel During A Pandemic",
+      "date": "2020-11-23T17:01:00-05:00",
+      "npr_url": "https://www.npr.org/2020/11/23/938129386/opening-a-hotel-during-a-pandemic",
+      "story_id": "938129386",
+      "audio_id": "938158673",
+      "player_url": "https://www.npr.org/player/embed/938129386/938158673",
+      "description": "The U.S. is down around 3.5 million hospitality jobs since the pandemic took hold. But in spite of setbacks, hotels continue to open."
+    },
+    {
+      "title": "Make Trade Stale Again",
+      "date": "2020-11-19T17:00:00-05:00",
+      "npr_url": "https://www.npr.org/2020/11/19/936805234/make-trade-stale-again",
+      "story_id": "936805234",
+      "audio_id": "936812371",
+      "player_url": "https://www.npr.org/player/embed/936805234/936812371",
+      "description": "President-elect Joe Biden's inauguration will have massive implications for trade policy. Soumaya Keynes explains how Biden's approach to trade might differ from Trump's."
+    },
+    {
+      "title": "Winter Is Coming For The Restaurant Industry",
+      "date": "2020-11-18T17:00:00-05:00",
+      "npr_url": "https://www.npr.org/2020/11/18/936321423/winter-is-coming-for-the-restaurant-industry",
+      "story_id": "936321423",
+      "audio_id": "936357983",
+      "player_url": "https://www.npr.org/player/embed/936321423/936357983",
+      "description": "Idaho is the leading nation in restaurant revenue growth. But that doesn't mean its restaurants are having an easy time. There are mask mandates and robust restrictions on gathering in many cities in the state, and with winter coming, restaurateurs are working hard to innovate, compensate and stay in business."
+    },
+    {
+      "title": "Evaluating The Washington Consensus",
+      "date": "2020-11-17T18:10:55-05:00",
+      "npr_url": "https://www.npr.org/2020/11/17/935920011/evaluating-the-washington-consensus",
+      "story_id": "935920011",
+      "audio_id": "935969674",
+      "player_url": "https://www.npr.org/player/embed/935920011/935969674",
+      "description": "In 1985, then Treasury Secretary James Baker gave a speech in South Korea laying out a series of economic proposals that would transform economics around the world."
+    },
+    {
+      "title": "How Investment Advisors Invest Their Money",
+      "date": "2020-11-16T19:14:51-05:00",
+      "npr_url": "https://www.npr.org/2020/11/16/935523144/how-investment-advisors-invest-their-money",
+      "story_id": "935523144",
+      "audio_id": "935564671",
+      "player_url": "https://www.npr.org/player/embed/935523144/935564671",
+      "description": "Financial advisors counsel people on what stocks and bonds and other investments to buy, and how to balance portfolios. But where do they put their own money?"
+    },
+    {
+      "title": "Turkey Business",
+      "date": "2020-11-13T17:18:02-05:00",
+      "npr_url": "https://www.npr.org/2020/11/13/934762663/turkey-business",
+      "story_id": "934762663",
+      "audio_id": "934764896",
+      "player_url": "https://www.npr.org/player/embed/934762663/934764896",
+      "description": "COVID-19-related travel and get-together restrictions are impacting small businesses across the U.S. this holiday season. The Indicator talks to a turkey farmer about how the pandemic has affected business this year."
+    },
+    {
+      "title": "Ant's IPO Woes",
+      "date": "2020-11-12T17:28:00-05:00",
+      "npr_url": "https://www.npr.org/2020/11/12/934251081/ants-ipo-woes",
+      "story_id": "934251081",
+      "audio_id": "934325656",
+      "player_url": "https://www.npr.org/player/embed/934251081/934325656",
+      "description": "Ant Group is a fintech firm that was set to launch with the world's largest ever IPO. But just before its shares started trading, Chinese regulators pulled the plug. NPR's Emily Feng explains why."
+    },
+    {
+      "title": "The Lessons Of Pets.com",
+      "date": "2020-11-11T17:01:13-05:00",
+      "npr_url": "https://www.npr.org/2020/11/11/933951757/the-lessons-of-pets-com",
+      "story_id": "933951757",
+      "audio_id": "933953737",
+      "player_url": "https://www.npr.org/player/embed/933951757/933953737",
+      "description": "The tech bubble of the 90s was a time when companies with weak business models and flashy advertising secured massive investments. This is the story of perhaps the most infamous case study: Pets.com."
+    },
+    {
+      "title": "The Case Of The Soaring Car Prices",
+      "date": "2020-11-10T17:01:52-05:00",
+      "npr_url": "https://www.npr.org/2020/11/10/933497794/the-case-of-the-soaring-car-prices",
+      "story_id": "933497794",
+      "audio_id": "933557900",
+      "player_url": "https://www.npr.org/player/embed/933497794/933557900",
+      "description": "Since April, the price of used cars has surged. Some cars have even gained in value, which is highly unusual for an asset that usually depreciates. Turns out the usual suspects are behind this mystery: supply and demand."
+    },
+    {
+      "title": "The Other Climate Crisis",
+      "date": "2020-11-09T17:19:10-05:00",
+      "npr_url": "https://www.npr.org/2020/11/09/933213365/the-other-climate-crisis",
+      "story_id": "933213365",
+      "audio_id": "933217102",
+      "player_url": "https://www.npr.org/player/embed/933213365/933217102",
+      "description": "In the 1980s, a massive hole was discovered in the ozone layer. Since then, economic incentives, innovation, and a historic United Nations conference in Montreal set it on a path to close completely."
+    },
+    {
+      "title": "Jobs Friday: Not Bad, Not Not Bad",
+      "date": "2020-11-06T19:47:58-05:00",
+      "npr_url": "https://www.npr.org/2020/11/06/932303862/jobs-friday-not-bad-not-not-bad",
+      "story_id": "932303862",
+      "audio_id": "932321768",
+      "player_url": "https://www.npr.org/player/embed/932303862/932321768",
+      "description": "The US economy added more than 600,000 jobs in October. Team Indicator assembles the Jobs Friday Ninja squad to get their take."
+    },
+    {
+      "title": "When Life Gives You Lemons...Start The Mafia?",
+      "date": "2020-11-05T17:01:52-05:00",
+      "npr_url": "https://www.npr.org/2020/11/05/931795250/when-life-gives-you-lemons-start-the-mafia",
+      "story_id": "931795250",
+      "audio_id": "931807528",
+      "player_url": "https://www.npr.org/player/embed/931795250/931807528",
+      "description": "The essential ingredient in the birth of the mafia as we know it wasn't the threats or the murders or the other stuff that's great for Hollywood. It was...lemons."
+    },
+    {
+      "title": "What Elvis Can Teach Us About Vaccine Marketing",
+      "date": "2020-11-04T17:01:00-05:00",
+      "npr_url": "https://www.npr.org/2020/11/03/930923756/what-elvis-can-teach-us-about-vaccine-marketing",
+      "story_id": "930923756",
+      "audio_id": "931442151",
+      "player_url": "https://www.npr.org/player/embed/930923756/931442151",
+      "description": "Development of a coronavirus continues apace. But as many as two-thirds of Americans say they likely won't take it. Which means a successful vaccine will need an effective marketing campaign."
+    },
+    {
+      "title": "How Biden And Trump Plan To Reshore Jobs",
+      "date": "2020-11-03T17:01:27-05:00",
+      "npr_url": "https://www.npr.org/2020/11/03/930906829/how-biden-and-trump-plan-to-reshore-jobs",
+      "story_id": "930906829",
+      "audio_id": "930924114",
+      "player_url": "https://www.npr.org/player/embed/930906829/930924114",
+      "description": "Author and economics commentator Matt Klein joins the show to discuss the ways each presidential candidate plans to bring manufacturing jobs to the United States."
+    },
+    {
+      "title": "Probability, Gambling, And Death",
+      "date": "2020-11-02T17:01:42-05:00",
+      "npr_url": "https://www.npr.org/2020/11/02/930544565/probability-gambling-and-death",
+      "story_id": "930544565",
+      "audio_id": "930556587",
+      "player_url": "https://www.npr.org/player/embed/930544565/930556587",
+      "description": "The concept of probability may feel intuitive today, but for much of human history, that wasn't the case. Jacob Goldstein tells the origin story of probability."
+    },
+    {
+      "title": "What Is Trumponomics?",
+      "date": "2020-10-30T17:00:34-04:00",
+      "npr_url": "https://www.npr.org/2020/10/30/929538396/what-is-trumponomics",
+      "story_id": "929538396",
+      "audio_id": "929636219",
+      "player_url": "https://www.npr.org/player/embed/929538396/929636219",
+      "description": "Danielle Kurtzleben from NPR's Washington Desk breaks down Donald Trump's economic policies and plans for a second term."
+    },
+    {
+      "title": "What Is Bidenomics?",
+      "date": "2020-10-29T17:04:03-04:00",
+      "npr_url": "https://www.npr.org/2020/10/29/929127255/what-is-bidenomics",
+      "story_id": "929127255",
+      "audio_id": "929127532",
+      "player_url": "https://www.npr.org/player/embed/929127255/929127532",
+      "description": "Danielle Kurtzleben from NPR's Washington Desk breaks down Joe Biden's economic policies."
+    },
+    {
+      "title": "The 99% Invisible City With Roman Mars",
+      "date": "2020-10-28T18:03:34-04:00",
+      "npr_url": "https://www.npr.org/2020/10/28/928839865/the-99-invisible-city-with-roman-mars",
+      "story_id": "928839865",
+      "audio_id": "928875782",
+      "player_url": "https://www.npr.org/player/embed/928839865/928875782",
+      "description": "Podcast host and co-author of The 99% Invisible City Roman Mars joins the show to talk about his new book, the ways people shape their cities, and how to combine beauty & function in design."
+    },
+    {
+      "title": "Questions From Kids",
+      "date": "2020-10-27T17:26:00-04:00",
+      "npr_url": "https://www.npr.org/2020/10/27/928322838/questions-from-kids",
+      "story_id": "928322838",
+      "audio_id": "928380919",
+      "player_url": "https://www.npr.org/player/embed/928322838/928380919",
+      "description": "Stacey and Cardiff answer questions from kids...also, a few animal facts."
     }
   ]
 }
