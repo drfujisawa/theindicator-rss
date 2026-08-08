@@ -1,0 +1,842 @@
+{
+  "method": "compare-working-npr-player-ids-to-ondemand-audio",
+  "summary": {
+    "working_audio_count": 232,
+    "unresolved_episode_count": 2,
+    "final_audio_domains": {
+      "ondemand.npr.org": 232
+    },
+    "id_occurrence_counts": {
+      "player_id_in_final_url": 232,
+      "player_id_in_candidate_url": 232
+    },
+    "story_id_occurrence_counts": {
+      "story_id_in_final_url": 1,
+      "story_id_in_candidate_url": 1
+    }
+  },
+  "most_common_final_path_patterns": [
+    {
+      "pattern": "/anon.npr-mp3/npr/indicator/2018/03/{ID}_indicator_0313_listener_qs_final.mp3",
+      "count": 1
+    },
+    {
+      "pattern": "/anon.npr-mp3/npr/indicator/2018/03/{ID}_indicator_0314_what_trade_organization_final.mp3",
+      "count": 1
+    },
+    {
+      "pattern": "/anon.npr-mp3/npr/indicator/2018/03/{ID}_indicator_0315_bill_mcbride_final.mp3",
+      "count": 1
+    },
+    {
+      "pattern": "/anon.npr-mp3/npr/indicator/2018/03/{ID}_indicator_0316_bear_stearns_final.mp3",
+      "count": 1
+    },
+    {
+      "pattern": "/anon.npr-mp3/npr/indicator/2018/03/{ID}_indicator_0319_spotify_final.mp3",
+      "count": 1
+    },
+    {
+      "pattern": "/anon.npr-mp3/npr/indicator/2018/03/{ID}_indicator_0320_original_tariffs_final.mp3",
+      "count": 1
+    },
+    {
+      "pattern": "/anon.npr-mp3/npr/indicator/2018/03/{ID}_indicator_0321_statcan_final_draft.mp3",
+      "count": 1
+    },
+    {
+      "pattern": "/anon.npr-mp3/npr/indicator/2018/03/{ID}_indicator_0322_indies_bookstores_final.mp3",
+      "count": 1
+    },
+    {
+      "pattern": "/anon.npr-mp3/npr/indicator/2018/03/{ID}_indicator_0323_baker_hughes_final.mp3",
+      "count": 1
+    },
+    {
+      "pattern": "/anon.npr-mp3/npr/indicator/2018/03/{ID}_indicator_0326_data_labor_finalv2.mp3",
+      "count": 1
+    },
+    {
+      "pattern": "/anon.npr-mp3/npr/indicator/2018/03/{ID}_indicator_0327_healthcare_spending_final.mp3",
+      "count": 1
+    },
+    {
+      "pattern": "/anon.npr-mp3/npr/indicator/2018/03/{ID}_indicator_0328_census_final.mp3",
+      "count": 1
+    },
+    {
+      "pattern": "/anon.npr-mp3/npr/indicator/2018/03/{ID}_indicator_0329_disability_final.mp3",
+      "count": 1
+    },
+    {
+      "pattern": "/anon.npr-mp3/npr/indicator/2018/04/{ID}_indicator_0402_hog_diplomacy_final_3.mp3",
+      "count": 1
+    },
+    {
+      "pattern": "/anon.npr-mp3/npr/indicator/2018/04/{ID}_indicator_0403_jpm_library_final_3.mp3",
+      "count": 1
+    },
+    {
+      "pattern": "/anon.npr-mp3/npr/indicator/2018/04/{ID}_indicator_0404_collab_final.mp3",
+      "count": 1
+    },
+    {
+      "pattern": "/anon.npr-mp3/npr/indicator/2018/04/{ID}_indicator_0405_5_cool_things_final.mp3",
+      "count": 1
+    },
+    {
+      "pattern": "/anon.npr-mp3/npr/indicator/2018/04/{ID}_indicator_0406_jobs_and_tariffs_final.mp3",
+      "count": 1
+    },
+    {
+      "pattern": "/anon.npr-mp3/npr/indicator/2018/04/{ID}_indicator_0409_wage_gap_final_ad_fix.mp3",
+      "count": 1
+    },
+    {
+      "pattern": "/anon.npr-mp3/npr/indicator/2018/04/{ID}_indicator_0410_tyler_final.mp3",
+      "count": 1
+    }
+  ],
+  "unresolved": [
+    {
+      "reference_date": "2018-10-31",
+      "reference_title": "Paranormal Profits",
+      "npr_story_id": "662708285",
+      "npr_url": "https://www.npr.org/sections/money/2018/10/31/662708285/paranormal-profits",
+      "embed_players": [
+        {
+          "player_story_id": "662706955",
+          "audio_id": "662707862"
+        }
+      ]
+    },
+    {
+      "reference_date": "2019-04-22",
+      "reference_title": "The Traffic Tariff",
+      "npr_story_id": "716132270",
+      "npr_url": "https://www.npr.org/sections/money/2019/04/22/716132270/the-traffic-tariff",
+      "embed_players": [
+        {
+          "player_story_id": "716127469",
+          "audio_id": "730102905"
+        }
+      ]
+    }
+  ],
+  "comparison_examples": [
+    {
+      "target_audio_id": "662707862",
+      "working_examples": [
+        {
+          "reference_date": "2018-03-13",
+          "reference_title": "Bonds... Japanese Bonds",
+          "npr_story_id": "593261790",
+          "player_ids": [
+            "593259696",
+            "593260658",
+            "593261790"
+          ],
+          "candidate_audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180313_indicator_0313_listener_qs_final.mp3?d=637&e=593259696&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "validated_final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180313_indicator_0313_listener_qs_final.mp3?d=637&e=593259696&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "reference_date": "2018-03-14",
+          "reference_title": "What Trade Organization?",
+          "npr_story_id": "593606142",
+          "player_ids": [
+            "593600771",
+            "593600870",
+            "593606142"
+          ],
+          "candidate_audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180314_indicator_0314_what_trade_organization_final.mp3?d=479&e=593600771&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "validated_final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180314_indicator_0314_what_trade_organization_final.mp3?d=479&e=593600771&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "reference_date": "2018-03-15",
+          "reference_title": "Calculated Risk, Calculated Caution",
+          "npr_story_id": "594058000",
+          "player_ids": [
+            "594054577",
+            "594056045",
+            "594058000"
+          ],
+          "candidate_audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180315_indicator_0315_bill_mcbride_final.mp3?d=505&e=594054577&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "validated_final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180315_indicator_0315_bill_mcbride_final.mp3?d=505&e=594054577&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "reference_date": "2018-03-16",
+          "reference_title": "The Bear Necessities",
+          "npr_story_id": "594366500",
+          "player_ids": [
+            "594363178",
+            "594366218",
+            "594366500"
+          ],
+          "candidate_audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180316_indicator_0316_bear_stearns_final.mp3?d=482&e=594363178&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "validated_final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180316_indicator_0316_bear_stearns_final.mp3?d=482&e=594363178&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "reference_date": "2018-03-19",
+          "reference_title": "The Reinvention Of The IPO",
+          "npr_story_id": "595012527",
+          "player_ids": [
+            "595006979",
+            "595011652",
+            "595012527"
+          ],
+          "candidate_audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180319_indicator_0319_spotify_final.mp3?d=668&e=595006979&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "validated_final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180319_indicator_0319_spotify_final.mp3?d=668&e=595006979&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "reference_date": "2018-03-20",
+          "reference_title": "A Brief History of Tariffs",
+          "npr_story_id": "595338556",
+          "player_ids": [
+            "595334968",
+            "595335747",
+            "595338556"
+          ],
+          "candidate_audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180320_indicator_0320_original_tariffs_final.mp3?d=512&e=595334968&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "validated_final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180320_indicator_0320_original_tariffs_final.mp3?d=512&e=595334968&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "reference_date": "2018-03-21",
+          "reference_title": "Trump vs. Trudeau: Both Right, Both Wrong",
+          "npr_story_id": "595769659",
+          "player_ids": [
+            "595754267",
+            "595755117",
+            "595769659"
+          ],
+          "candidate_audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180321_indicator_0321_statcan_final_draft.mp3?d=528&e=595754267&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "validated_final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180321_indicator_0321_statcan_final_draft.mp3?d=528&e=595754267&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "reference_date": "2018-03-22",
+          "reference_title": "Too Small To Fail",
+          "npr_story_id": "596162292",
+          "player_ids": [
+            "596155225",
+            "596160038",
+            "596162292"
+          ],
+          "candidate_audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180322_indicator_0322_indies_bookstores_final.mp3?d=486&e=596155225&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "validated_final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180322_indicator_0322_indies_bookstores_final.mp3?d=486&e=596155225&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "reference_date": "2018-03-23",
+          "reference_title": "The Oil Rig Count",
+          "npr_story_id": "596526299",
+          "player_ids": [
+            "596525938",
+            "596527203",
+            "596526299"
+          ],
+          "candidate_audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180323_indicator_0323_baker_hughes_final.mp3?d=450&e=596525938&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "validated_final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180323_indicator_0323_baker_hughes_final.mp3?d=450&e=596525938&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "reference_date": "2018-03-26",
+          "reference_title": "Dollars for Data",
+          "npr_story_id": "597036173",
+          "player_ids": [
+            "597014137",
+            "597095219",
+            "597036173"
+          ],
+          "candidate_audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180326_indicator_0326_data_labor_finalv2.mp3?d=559&e=597014137&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "validated_final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180326_indicator_0326_data_labor_finalv2.mp3?d=559&e=597014137&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        }
+      ]
+    },
+    {
+      "target_audio_id": "730102905",
+      "working_examples": [
+        {
+          "reference_date": "2018-03-13",
+          "reference_title": "Bonds... Japanese Bonds",
+          "npr_story_id": "593261790",
+          "player_ids": [
+            "593259696",
+            "593260658",
+            "593261790"
+          ],
+          "candidate_audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180313_indicator_0313_listener_qs_final.mp3?d=637&e=593259696&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "validated_final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180313_indicator_0313_listener_qs_final.mp3?d=637&e=593259696&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "reference_date": "2018-03-14",
+          "reference_title": "What Trade Organization?",
+          "npr_story_id": "593606142",
+          "player_ids": [
+            "593600771",
+            "593600870",
+            "593606142"
+          ],
+          "candidate_audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180314_indicator_0314_what_trade_organization_final.mp3?d=479&e=593600771&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "validated_final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180314_indicator_0314_what_trade_organization_final.mp3?d=479&e=593600771&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "reference_date": "2018-03-15",
+          "reference_title": "Calculated Risk, Calculated Caution",
+          "npr_story_id": "594058000",
+          "player_ids": [
+            "594054577",
+            "594056045",
+            "594058000"
+          ],
+          "candidate_audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180315_indicator_0315_bill_mcbride_final.mp3?d=505&e=594054577&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "validated_final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180315_indicator_0315_bill_mcbride_final.mp3?d=505&e=594054577&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "reference_date": "2018-03-16",
+          "reference_title": "The Bear Necessities",
+          "npr_story_id": "594366500",
+          "player_ids": [
+            "594363178",
+            "594366218",
+            "594366500"
+          ],
+          "candidate_audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180316_indicator_0316_bear_stearns_final.mp3?d=482&e=594363178&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "validated_final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180316_indicator_0316_bear_stearns_final.mp3?d=482&e=594363178&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "reference_date": "2018-03-19",
+          "reference_title": "The Reinvention Of The IPO",
+          "npr_story_id": "595012527",
+          "player_ids": [
+            "595006979",
+            "595011652",
+            "595012527"
+          ],
+          "candidate_audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180319_indicator_0319_spotify_final.mp3?d=668&e=595006979&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "validated_final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180319_indicator_0319_spotify_final.mp3?d=668&e=595006979&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "reference_date": "2018-03-20",
+          "reference_title": "A Brief History of Tariffs",
+          "npr_story_id": "595338556",
+          "player_ids": [
+            "595334968",
+            "595335747",
+            "595338556"
+          ],
+          "candidate_audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180320_indicator_0320_original_tariffs_final.mp3?d=512&e=595334968&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "validated_final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180320_indicator_0320_original_tariffs_final.mp3?d=512&e=595334968&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "reference_date": "2018-03-21",
+          "reference_title": "Trump vs. Trudeau: Both Right, Both Wrong",
+          "npr_story_id": "595769659",
+          "player_ids": [
+            "595754267",
+            "595755117",
+            "595769659"
+          ],
+          "candidate_audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180321_indicator_0321_statcan_final_draft.mp3?d=528&e=595754267&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "validated_final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180321_indicator_0321_statcan_final_draft.mp3?d=528&e=595754267&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "reference_date": "2018-03-22",
+          "reference_title": "Too Small To Fail",
+          "npr_story_id": "596162292",
+          "player_ids": [
+            "596155225",
+            "596160038",
+            "596162292"
+          ],
+          "candidate_audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180322_indicator_0322_indies_bookstores_final.mp3?d=486&e=596155225&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "validated_final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180322_indicator_0322_indies_bookstores_final.mp3?d=486&e=596155225&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "reference_date": "2018-03-23",
+          "reference_title": "The Oil Rig Count",
+          "npr_story_id": "596526299",
+          "player_ids": [
+            "596525938",
+            "596527203",
+            "596526299"
+          ],
+          "candidate_audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180323_indicator_0323_baker_hughes_final.mp3?d=450&e=596525938&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "validated_final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180323_indicator_0323_baker_hughes_final.mp3?d=450&e=596525938&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        },
+        {
+          "reference_date": "2018-03-26",
+          "reference_title": "Dollars for Data",
+          "npr_story_id": "597036173",
+          "player_ids": [
+            "597014137",
+            "597095219",
+            "597036173"
+          ],
+          "candidate_audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180326_indicator_0326_data_labor_finalv2.mp3?d=559&e=597014137&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "validated_final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180326_indicator_0326_data_labor_finalv2.mp3?d=559&e=597014137&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+        }
+      ]
+    }
+  ],
+  "working_examples_by_domain": {
+    "ondemand.npr.org": [
+      {
+        "reference_date": "2018-03-13",
+        "reference_title": "Bonds... Japanese Bonds",
+        "npr_story_id": "593261790",
+        "player_ids": [
+          "593259696",
+          "593260658",
+          "593261790"
+        ],
+        "candidate_audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180313_indicator_0313_listener_qs_final.mp3?d=637&e=593259696&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+        "validated_final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180313_indicator_0313_listener_qs_final.mp3?d=637&e=593259696&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+        "candidate_url_analysis": {
+          "scheme": "https",
+          "domain": "prfx.byspotify.com",
+          "path": "/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180313_indicator_0313_listener_qs_final.mp3",
+          "filename": "20180313_indicator_0313_listener_qs_final.mp3",
+          "query": {
+            "d": [
+              "637"
+            ],
+            "e": [
+              "593259696"
+            ],
+            "t": [
+              "podcast"
+            ],
+            "p": [
+              "510325"
+            ],
+            "sc": [
+              "siteplayer"
+            ],
+            "aw_0_1st.playerid": [
+              "siteplayer"
+            ]
+          },
+          "numeric_tokens": [
+            "510325",
+            "20180313",
+            "593259696",
+            "510325"
+          ]
+        },
+        "final_url_analysis": {
+          "scheme": "https",
+          "domain": "ondemand.npr.org",
+          "path": "/anon.npr-mp3/npr/indicator/2018/03/20180313_indicator_0313_listener_qs_final.mp3",
+          "filename": "20180313_indicator_0313_listener_qs_final.mp3",
+          "query": {
+            "d": [
+              "637"
+            ],
+            "e": [
+              "593259696"
+            ],
+            "t": [
+              "podcast"
+            ],
+            "p": [
+              "510325"
+            ],
+            "sc": [
+              "siteplayer"
+            ],
+            "aw_0_1st.playerid": [
+              "siteplayer"
+            ]
+          },
+          "numeric_tokens": [
+            "20180313",
+            "593259696",
+            "510325"
+          ]
+        },
+        "player_id_matches": [
+          {
+            "player_id": "593259696",
+            "appears_in_candidate_url": true,
+            "appears_in_final_url": true
+          },
+          {
+            "player_id": "593260658",
+            "appears_in_candidate_url": false,
+            "appears_in_final_url": false
+          },
+          {
+            "player_id": "593261790",
+            "appears_in_candidate_url": false,
+            "appears_in_final_url": false
+          }
+        ]
+      },
+      {
+        "reference_date": "2018-03-14",
+        "reference_title": "What Trade Organization?",
+        "npr_story_id": "593606142",
+        "player_ids": [
+          "593600771",
+          "593600870",
+          "593606142"
+        ],
+        "candidate_audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180314_indicator_0314_what_trade_organization_final.mp3?d=479&e=593600771&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+        "validated_final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180314_indicator_0314_what_trade_organization_final.mp3?d=479&e=593600771&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+        "candidate_url_analysis": {
+          "scheme": "https",
+          "domain": "prfx.byspotify.com",
+          "path": "/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180314_indicator_0314_what_trade_organization_final.mp3",
+          "filename": "20180314_indicator_0314_what_trade_organization_final.mp3",
+          "query": {
+            "d": [
+              "479"
+            ],
+            "e": [
+              "593600771"
+            ],
+            "t": [
+              "podcast"
+            ],
+            "p": [
+              "510325"
+            ],
+            "sc": [
+              "siteplayer"
+            ],
+            "aw_0_1st.playerid": [
+              "siteplayer"
+            ]
+          },
+          "numeric_tokens": [
+            "510325",
+            "20180314",
+            "593600771",
+            "510325"
+          ]
+        },
+        "final_url_analysis": {
+          "scheme": "https",
+          "domain": "ondemand.npr.org",
+          "path": "/anon.npr-mp3/npr/indicator/2018/03/20180314_indicator_0314_what_trade_organization_final.mp3",
+          "filename": "20180314_indicator_0314_what_trade_organization_final.mp3",
+          "query": {
+            "d": [
+              "479"
+            ],
+            "e": [
+              "593600771"
+            ],
+            "t": [
+              "podcast"
+            ],
+            "p": [
+              "510325"
+            ],
+            "sc": [
+              "siteplayer"
+            ],
+            "aw_0_1st.playerid": [
+              "siteplayer"
+            ]
+          },
+          "numeric_tokens": [
+            "20180314",
+            "593600771",
+            "510325"
+          ]
+        },
+        "player_id_matches": [
+          {
+            "player_id": "593600771",
+            "appears_in_candidate_url": true,
+            "appears_in_final_url": true
+          },
+          {
+            "player_id": "593600870",
+            "appears_in_candidate_url": false,
+            "appears_in_final_url": false
+          },
+          {
+            "player_id": "593606142",
+            "appears_in_candidate_url": false,
+            "appears_in_final_url": false
+          }
+        ]
+      },
+      {
+        "reference_date": "2018-03-15",
+        "reference_title": "Calculated Risk, Calculated Caution",
+        "npr_story_id": "594058000",
+        "player_ids": [
+          "594054577",
+          "594056045",
+          "594058000"
+        ],
+        "candidate_audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180315_indicator_0315_bill_mcbride_final.mp3?d=505&e=594054577&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+        "validated_final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180315_indicator_0315_bill_mcbride_final.mp3?d=505&e=594054577&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+        "candidate_url_analysis": {
+          "scheme": "https",
+          "domain": "prfx.byspotify.com",
+          "path": "/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180315_indicator_0315_bill_mcbride_final.mp3",
+          "filename": "20180315_indicator_0315_bill_mcbride_final.mp3",
+          "query": {
+            "d": [
+              "505"
+            ],
+            "e": [
+              "594054577"
+            ],
+            "t": [
+              "podcast"
+            ],
+            "p": [
+              "510325"
+            ],
+            "sc": [
+              "siteplayer"
+            ],
+            "aw_0_1st.playerid": [
+              "siteplayer"
+            ]
+          },
+          "numeric_tokens": [
+            "510325",
+            "20180315",
+            "594054577",
+            "510325"
+          ]
+        },
+        "final_url_analysis": {
+          "scheme": "https",
+          "domain": "ondemand.npr.org",
+          "path": "/anon.npr-mp3/npr/indicator/2018/03/20180315_indicator_0315_bill_mcbride_final.mp3",
+          "filename": "20180315_indicator_0315_bill_mcbride_final.mp3",
+          "query": {
+            "d": [
+              "505"
+            ],
+            "e": [
+              "594054577"
+            ],
+            "t": [
+              "podcast"
+            ],
+            "p": [
+              "510325"
+            ],
+            "sc": [
+              "siteplayer"
+            ],
+            "aw_0_1st.playerid": [
+              "siteplayer"
+            ]
+          },
+          "numeric_tokens": [
+            "20180315",
+            "594054577",
+            "510325"
+          ]
+        },
+        "player_id_matches": [
+          {
+            "player_id": "594054577",
+            "appears_in_candidate_url": true,
+            "appears_in_final_url": true
+          },
+          {
+            "player_id": "594056045",
+            "appears_in_candidate_url": false,
+            "appears_in_final_url": false
+          },
+          {
+            "player_id": "594058000",
+            "appears_in_candidate_url": false,
+            "appears_in_final_url": false
+          }
+        ]
+      },
+      {
+        "reference_date": "2018-03-16",
+        "reference_title": "The Bear Necessities",
+        "npr_story_id": "594366500",
+        "player_ids": [
+          "594363178",
+          "594366218",
+          "594366500"
+        ],
+        "candidate_audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180316_indicator_0316_bear_stearns_final.mp3?d=482&e=594363178&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+        "validated_final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180316_indicator_0316_bear_stearns_final.mp3?d=482&e=594363178&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+        "candidate_url_analysis": {
+          "scheme": "https",
+          "domain": "prfx.byspotify.com",
+          "path": "/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180316_indicator_0316_bear_stearns_final.mp3",
+          "filename": "20180316_indicator_0316_bear_stearns_final.mp3",
+          "query": {
+            "d": [
+              "482"
+            ],
+            "e": [
+              "594363178"
+            ],
+            "t": [
+              "podcast"
+            ],
+            "p": [
+              "510325"
+            ],
+            "sc": [
+              "siteplayer"
+            ],
+            "aw_0_1st.playerid": [
+              "siteplayer"
+            ]
+          },
+          "numeric_tokens": [
+            "510325",
+            "20180316",
+            "594363178",
+            "510325"
+          ]
+        },
+        "final_url_analysis": {
+          "scheme": "https",
+          "domain": "ondemand.npr.org",
+          "path": "/anon.npr-mp3/npr/indicator/2018/03/20180316_indicator_0316_bear_stearns_final.mp3",
+          "filename": "20180316_indicator_0316_bear_stearns_final.mp3",
+          "query": {
+            "d": [
+              "482"
+            ],
+            "e": [
+              "594363178"
+            ],
+            "t": [
+              "podcast"
+            ],
+            "p": [
+              "510325"
+            ],
+            "sc": [
+              "siteplayer"
+            ],
+            "aw_0_1st.playerid": [
+              "siteplayer"
+            ]
+          },
+          "numeric_tokens": [
+            "20180316",
+            "594363178",
+            "510325"
+          ]
+        },
+        "player_id_matches": [
+          {
+            "player_id": "594363178",
+            "appears_in_candidate_url": true,
+            "appears_in_final_url": true
+          },
+          {
+            "player_id": "594366218",
+            "appears_in_candidate_url": false,
+            "appears_in_final_url": false
+          },
+          {
+            "player_id": "594366500",
+            "appears_in_candidate_url": false,
+            "appears_in_final_url": false
+          }
+        ]
+      },
+      {
+        "reference_date": "2018-03-19",
+        "reference_title": "The Reinvention Of The IPO",
+        "npr_story_id": "595012527",
+        "player_ids": [
+          "595006979",
+          "595011652",
+          "595012527"
+        ],
+        "candidate_audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180319_indicator_0319_spotify_final.mp3?d=668&e=595006979&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+        "validated_final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180319_indicator_0319_spotify_final.mp3?d=668&e=595006979&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+        "candidate_url_analysis": {
+          "scheme": "https",
+          "domain": "prfx.byspotify.com",
+          "path": "/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180319_indicator_0319_spotify_final.mp3",
+          "filename": "20180319_indicator_0319_spotify_final.mp3",
+          "query": {
+            "d": [
+              "668"
+            ],
+            "e": [
+              "595006979"
+            ],
+            "t": [
+              "podcast"
+            ],
+            "p": [
+              "510325"
+            ],
+            "sc": [
+              "siteplayer"
+            ],
+            "aw_0_1st.playerid": [
+              "siteplayer"
+            ]
+          },
+          "numeric_tokens": [
+            "510325",
+            "20180319",
+            "595006979",
+            "510325"
+          ]
+        },
+        "final_url_analysis": {
+          "scheme": "https",
+          "domain": "ondemand.npr.org",
+          "path": "/anon.npr-mp3/npr/indicator/2018/03/20180319_indicator_0319_spotify_final.mp3",
+          "filename": "20180319_indicator_0319_spotify_final.mp3",
+          "query": {
+            "d": [
+              "668"
+            ],
+            "e": [
+              "595006979"
+            ],
+            "t": [
+              "podcast"
+            ],
+            "p": [
+              "510325"
+            ],
+            "sc": [
+              "siteplayer"
+            ],
+            "aw_0_1st.playerid": [
+              "siteplayer"
+            ]
+          },
+          "numeric_tokens": [
+            "20180319",
+            "595006979",
+            "510325"
+          ]
+        },
+        "player_id_matches": [
+          {
+            "player_id": "595006979",
+            "appears_in_candidate_url": true,
+            "appears_in_final_url": true
+          },
+          {
+            "player_id": "595011652",
+            "appears_in_candidate_url": false,
+            "appears_in_final_url": false
+          },
+          {
+            "player_id": "595012527",
+            "appears_in_candidate_url": false,
+            "appears_in_final_url": false
+          }
+        ]
+      }
+    ]
+  }
+}
