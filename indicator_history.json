@@ -1,6 +1,6 @@
 {
-  "next_date": "2021-09-06T18:29:00-04:00",
-  "episode_count": 880,
+  "next_date": "2021-06-10T17:40:00-04:00",
+  "episode_count": 941,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -7921,6 +7921,555 @@
       "audio_id": "1034976282",
       "player_url": "https://www.npr.org/player/embed/1034965231/1034976282",
       "description": "Early this summer, the U.S. inadvertently launched one of the largest unemployment experiments in history to see if unemployment benefits impact worker shortages. Today on the show, we find the answer."
+    },
+    {
+      "title": "Two Indicators: Water Pressure",
+      "date": "2021-09-03T19:15:57-04:00",
+      "npr_url": "https://www.npr.org/2021/09/03/1034085667/two-indicators-water-pressure",
+      "story_id": "1034085667",
+      "audio_id": "1198960519",
+      "player_url": "https://www.npr.org/player/embed/1034085667/1198960519",
+      "description": "It's another extremely dry, hot summer for the American West. Our daily podcast, The Indicator from Planet Money, brings us two stories about the water shortage in the West with economic ideas that may help. | Subscribe to our weekly newsletter here."
+    },
+    {
+      "title": "When A Drought Boils Over",
+      "date": "2021-09-03T17:23:28-04:00",
+      "npr_url": "https://www.npr.org/2021/09/03/1034120823/when-a-drought-boils-over",
+      "story_id": "1034120823",
+      "audio_id": "1034184693",
+      "player_url": "https://www.npr.org/player/embed/1034120823/1034184693",
+      "description": "As our week on water ends, we go to the heart of the conflict. On today's show, the ranchers on the frontlines of the Western drought are caught between a political battle and the climate crisis."
+    },
+    {
+      "title": "Should The Lawns In Vegas, Stay In Vegas?",
+      "date": "2021-09-02T17:25:17-04:00",
+      "npr_url": "https://www.npr.org/2021/09/02/1033748480/should-the-lawns-in-vegas-stay-in-vegas",
+      "story_id": "1033748480",
+      "audio_id": "1033754883",
+      "player_url": "https://www.npr.org/player/embed/1033748480/1033754883",
+      "description": "An epic drought and population explosion is draining Lake Mead and the Colorado River, which millions rely on. And then there's the lawns. Today on the show, what happens if the water runs dry?"
+    },
+    {
+      "title": "Water's Cheap... Should It Be?",
+      "date": "2021-09-01T17:26:00-04:00",
+      "npr_url": "https://www.npr.org/2021/09/01/1033338725/waters-cheap-should-it-be",
+      "story_id": "1033338725",
+      "audio_id": "1033424597",
+      "player_url": "https://www.npr.org/player/embed/1033338725/1033424597",
+      "description": "As we grapple with the climate crisis, there's less and less water to go around. But in the U.S. water is cheaper than dirt. Today on the show, the reason we're willing to flush something so valuable down the drain."
+    },
+    {
+      "title": "Liquid Markets",
+      "date": "2021-08-31T17:01:00-04:00",
+      "npr_url": "https://www.npr.org/2021/08/31/1032979418/liquid-markets",
+      "story_id": "1032979418",
+      "audio_id": "1032985876",
+      "player_url": "https://www.npr.org/player/embed/1032979418/1032985876",
+      "description": "Economists often say we should put prices on scarce resources. So that's what Australia did with water. On today's show, how that turned out."
+    },
+    {
+      "title": "Water In The West: Bankrupt?",
+      "date": "2021-08-30T18:39:50-04:00",
+      "npr_url": "https://www.npr.org/2021/08/30/1032609785/water-in-the-west-bankrupt",
+      "story_id": "1032609785",
+      "audio_id": "1032622907",
+      "player_url": "https://www.npr.org/player/embed/1032609785/1032622907",
+      "description": "Water is one of the West's most precious resources, but it's drying up. We begin a week of the economics of water. Today: Who has the rights? When there isn't enough, could the answer be bankruptcy?"
+    },
+    {
+      "title": "Jeromonomics: Indicator Of The Week",
+      "date": "2021-08-27T15:58:10-04:00",
+      "npr_url": "https://www.npr.org/2021/08/27/1031881545/jeromonomics-indicator-of-the-week",
+      "story_id": "1031881545",
+      "audio_id": "1031885861",
+      "player_url": "https://www.npr.org/player/embed/1031881545/1031885861",
+      "description": "Federal Reserve Chair Jerome Powell has radically changed the Fed's approach to supporting the economy. Today for our Indicator Of The Week we explain \"Jeromonomics\"."
+    },
+    {
+      "title": "The Taliban Controls The Afghan Economy. Now What?",
+      "date": "2021-08-26T15:08:55-04:00",
+      "npr_url": "https://www.npr.org/2021/08/26/1031460312/the-taliban-controls-the-afghan-economy-now-what",
+      "story_id": "1031460312",
+      "audio_id": "1031486337",
+      "player_url": "https://www.npr.org/player/embed/1031460312/1031486337",
+      "description": "As the Taliban assumes control of Afghanistan, uncertainty looms over an already-fragile financial system. Today on the show, we look into Afghani currency and the Afghan central bank, how it worked before and the questions of this precarious present moment."
+    },
+    {
+      "title": "China's Big Tech Crackdown",
+      "date": "2021-08-25T14:57:30-04:00",
+      "npr_url": "https://www.npr.org/2021/08/25/1031074795/chinas-big-tech-crackdown",
+      "story_id": "1031074795",
+      "audio_id": "1031111108",
+      "player_url": "https://www.npr.org/player/embed/1031074795/1031111108",
+      "description": "When a Chinese tech CEO shared a poem over a thousand years old, his company's stock plummeted. Investors are on a knife's edge as the Chinese government cracks down on big tech."
+    },
+    {
+      "title": "Enough With Bachelor's Degrees",
+      "date": "2021-08-24T17:45:00-04:00",
+      "npr_url": "https://www.npr.org/2021/08/24/1030687929/enough-with-bachelors-degrees",
+      "story_id": "1030687929",
+      "audio_id": "1030777993",
+      "player_url": "https://www.npr.org/player/embed/1030687929/1030777993",
+      "description": "There are millions of job openings, but there are also many jobs that shut out qualified candidates simply because they don't have a bachelor's degree. Today on the show, we explore this phenomenon."
+    },
+    {
+      "title": "How To Trade-up From A Bobby Pin To A House",
+      "date": "2021-08-23T14:33:25-04:00",
+      "npr_url": "https://www.npr.org/2021/08/23/1030447867/how-to-trade-up-from-a-bobby-pin-to-a-house",
+      "story_id": "1030447867",
+      "audio_id": "1030454971",
+      "player_url": "https://www.npr.org/player/embed/1030447867/1030454971",
+      "description": "TikTok deal-maker Demi Skipper is on a quest to get a house one trade at a time. Starting with just a bobby pin, Demi gives us a crash course on the economics of bartering."
+    },
+    {
+      "title": "Two Indicators: Will Remote Work Kill The Office?",
+      "date": "2021-08-20T19:10:23-04:00",
+      "npr_url": "https://www.npr.org/2021/08/20/1029846068/two-indicators-will-remote-work-kill-the-office",
+      "story_id": "1029846068",
+      "audio_id": "1198960544",
+      "player_url": "https://www.npr.org/player/embed/1029846068/1198960544",
+      "description": "It's Stacey vs Greg in a face off on the future of the office. Each takes a side, armed with studies, historical examples, theories on efficiency and happiness and from their closet studios, they bring their indicators for the future of the office. | Subscribe to our weekly newsletter here. And our daily podcast The Indicator hosted by Stacey here."
+    },
+    {
+      "title": "Jabs And Retail: Indicators Of The Week",
+      "date": "2021-08-20T14:37:02-04:00",
+      "npr_url": "https://www.npr.org/2021/08/20/1029847609/jabs-and-retail-indicators-of-the-week",
+      "story_id": "1029847609",
+      "audio_id": "1029851613",
+      "player_url": "https://www.npr.org/player/embed/1029847609/1029851613",
+      "description": "It's that time of the week again! Today on the show, our Indicators of The Week about the insufficient number of global vaccinations and a dip in retail spending."
+    },
+    {
+      "title": "The Electric Grid-Lock",
+      "date": "2021-08-19T16:36:04-04:00",
+      "npr_url": "https://www.npr.org/2021/08/19/1029495775/the-electric-grid-lock",
+      "story_id": "1029495775",
+      "audio_id": "1029506382",
+      "player_url": "https://www.npr.org/player/embed/1029495775/1029506382",
+      "description": "So many players in the U.S. electrical game, but maybe less is more? A look into energy grids, how monopolies could topple, blackouts stop, and the climate impact of it all. On today's show, who controls the power?"
+    },
+    {
+      "title": "Who Owns The Moon?",
+      "date": "2021-08-18T15:11:00-04:00",
+      "npr_url": "https://www.npr.org/2021/08/18/1029084078/who-owns-the-moon",
+      "story_id": "1029084078",
+      "audio_id": "1029088756",
+      "player_url": "https://www.npr.org/player/embed/1029084078/1029088756",
+      "description": "Location, location, location! As private companies race to control space travel, a conversation around spatial real estate gets reignited. Today on the show, can you buy the moon? If so, how much?"
+    },
+    {
+      "title": "The Spit Queen, The Economist And The NBA",
+      "date": "2021-08-17T18:00:03-04:00",
+      "npr_url": "https://www.npr.org/2021/08/17/1028575711/the-spit-queen-the-economist-and-the-nba",
+      "story_id": "1028575711",
+      "audio_id": "1028592226",
+      "player_url": "https://www.npr.org/player/embed/1028575711/1028592226",
+      "description": "Yale's Anne Wyllie pioneered saliva coronavirus testing, but wasted a lot of precious time worrying about funding. Until she met her fairy godmother, an economist funding covid-fighting ideas fast."
+    },
+    {
+      "title": "Holy Cow, It's Fake Meat!",
+      "date": "2021-08-16T14:39:45-04:00",
+      "npr_url": "https://www.npr.org/2021/08/16/1028212412/holy-cow-its-fake-meat",
+      "story_id": "1028212412",
+      "audio_id": "1028248114",
+      "player_url": "https://www.npr.org/player/embed/1028212412/1028248114",
+      "description": "In recent years, meat alternatives have grown in popularity. But they remain more expensive than the real thing. Why?"
+    },
+    {
+      "title": "Indicator Of The Week: 4.5 Trillion",
+      "date": "2021-08-13T15:18:29-04:00",
+      "npr_url": "https://www.npr.org/2021/08/13/1027597648/indicator-of-the-week-4-5-trillion",
+      "story_id": "1027597648",
+      "audio_id": "1027599727",
+      "player_url": "https://www.npr.org/player/embed/1027597648/1027599727",
+      "description": "The recent updates on the Biden Administration's infrastructure bills raise a serious question: what counts as infrastructure? Today on the show, we speak with two economists on the topic."
+    },
+    {
+      "title": "R.I.P. Office",
+      "date": "2021-08-12T17:48:24-04:00",
+      "npr_url": "https://www.npr.org/2021/08/12/1027203051/r-i-p-office",
+      "story_id": "1027203051",
+      "audio_id": "1027232339",
+      "player_url": "https://www.npr.org/player/embed/1027203051/1027232339",
+      "description": "Not every job can be done remotely, but will those that can stay remote? Today on the show, we discuss the current trends in remote work with an economist."
+    },
+    {
+      "title": "Long Live The Office",
+      "date": "2021-08-11T14:04:08-04:00",
+      "npr_url": "https://www.npr.org/2021/08/11/1026845833/long-live-the-office",
+      "story_id": "1026845833",
+      "audio_id": "1026862090",
+      "player_url": "https://www.npr.org/player/embed/1026845833/1026862090",
+      "description": "The rise of remote work and telecommuting during the pandemic raises questions about the future of the office. Today the argument for why offices are here to stay."
+    },
+    {
+      "title": "Too Much Import, Too Little Export",
+      "date": "2021-08-10T15:41:10-04:00",
+      "npr_url": "https://www.npr.org/2021/08/10/1026548591/too-much-import-too-little-export",
+      "story_id": "1026548591",
+      "audio_id": "1026561988",
+      "player_url": "https://www.npr.org/player/embed/1026548591/1026561988",
+      "description": "The transportation industry has a bottleneck right now, not only with imports, but also exports. Still many container ships are leaving American shores empty. Why is that?"
+    },
+    {
+      "title": "An Economist's Advice On Digital Dependency",
+      "date": "2021-08-09T15:05:00-04:00",
+      "npr_url": "https://www.npr.org/2021/08/09/1026249145/an-economists-advice-on-digital-dependency",
+      "story_id": "1026249145",
+      "audio_id": "1026251166",
+      "player_url": "https://www.npr.org/player/embed/1026249145/1026251166",
+      "description": "American adults on average spent more than four hours on their phones in 2020. Can we reduce our phone usage if we want to? Some recent research says yes."
+    },
+    {
+      "title": "Return Of The Air Horn? Jobs Friday July Edition",
+      "date": "2021-08-06T18:03:18-04:00",
+      "npr_url": "https://www.npr.org/2021/08/06/1025567137/return-of-the-air-horn-jobs-friday-july-edition",
+      "story_id": "1025567137",
+      "audio_id": "1025622849",
+      "player_url": "https://www.npr.org/player/embed/1025567137/1025622849",
+      "description": "The Bureau of Labor Statistics recently released the jobs report for July. The economy added nearly one million jobs. An economist helps us analyze these numbers."
+    },
+    {
+      "title": "Why Host The Olympics?",
+      "date": "2021-08-05T16:02:06-04:00",
+      "npr_url": "https://www.npr.org/2021/08/05/1025310133/why-host-the-olympics",
+      "story_id": "1025310133",
+      "audio_id": "1025310162",
+      "player_url": "https://www.npr.org/player/embed/1025310133/1025310162",
+      "description": "The Tokyo Olympics will cost tens of billions of dollars, making it one of the most expensive Olympic games in history. So why do cities want to host the Olympics?"
+    },
+    {
+      "title": "The Origin of Value: The Greater Fools Theory",
+      "date": "2021-08-04T15:16:04-04:00",
+      "npr_url": "https://www.npr.org/2021/08/04/1024881179/the-origin-of-value-the-greater-fools-theory",
+      "story_id": "1024881179",
+      "audio_id": "1024893404",
+      "player_url": "https://www.npr.org/player/embed/1024881179/1024893404",
+      "description": "History is full of financial bubbles. People speculate on real estate, stocks, coins, even flowers. Why do bubbles happen? The answer may lie in a concept known as the greater fools theory."
+    },
+    {
+      "title": "The Rise And Fall Of WeWork",
+      "date": "2021-08-02T14:56:28-04:00",
+      "npr_url": "https://www.npr.org/2021/08/02/1023917646/the-rise-and-fall-of-wework",
+      "story_id": "1023917646",
+      "audio_id": "1023966338",
+      "player_url": "https://www.npr.org/player/embed/1023917646/1023966338",
+      "description": "WeWork was one of the most valuable startups in the world, until it wasn't. Today we speak with journalist Maureen Farrell, who covered WeWork extensively and recently wrote a book on its history."
+    },
+    {
+      "title": "Indicators of the Week: Family Feud Edition",
+      "date": "2021-07-30T14:23:46-04:00",
+      "npr_url": "https://www.npr.org/2021/07/30/1022939941/indicators-of-the-week-family-feud-edition",
+      "story_id": "1022939941",
+      "audio_id": "1022944987",
+      "player_url": "https://www.npr.org/player/embed/1022939941/1022944987",
+      "description": "There are so many indicators this week, so we invited our friends from Planet Money to compete for the best Indicator of The Week."
+    },
+    {
+      "title": "Marriage Boom: Sin City Edition",
+      "date": "2021-07-29T17:33:37-04:00",
+      "npr_url": "https://www.npr.org/2021/07/29/1022449877/marriage-boom-sin-city-edition",
+      "story_id": "1022449877",
+      "audio_id": "1022473283",
+      "player_url": "https://www.npr.org/player/embed/1022449877/1022473283",
+      "description": "The wedding industry lost tens of billions of dollars in 2020. Now the numbers are roaring back, especially in Las Vegas. Today on the show, we explore the marriage boom in Las Vegas and elsewhere."
+    },
+    {
+      "title": "BTS: The Band That Moves The Economy",
+      "date": "2021-07-28T16:14:13-04:00",
+      "npr_url": "https://www.npr.org/2021/07/28/1021968141/bts-the-band-that-moves-the-economy",
+      "story_id": "1021968141",
+      "audio_id": "1021973434",
+      "player_url": "https://www.npr.org/player/embed/1021968141/1021973434",
+      "description": "Korean boy band BTS is a global music phenomenon. The group has millions of fans called A.R.M.Y., who happily support the group with their wallets. Today on the show, we dive deep into the economic impacts of BTS and what makes the group special."
+    },
+    {
+      "title": "Nudge Vs Shove: A Conversation With Richard Thaler",
+      "date": "2021-07-27T14:51:50-04:00",
+      "npr_url": "https://www.npr.org/2021/07/27/1021438772/nudge-vs-shove-a-conversation-with-richard-thaler",
+      "story_id": "1021438772",
+      "audio_id": "1021440966",
+      "player_url": "https://www.npr.org/player/embed/1021438772/1021440966",
+      "description": "Nobel Prize laureate Richard Thaler is a rockstar in the world of economics. His book Nudge introduced many of us to the field of behavioral economics and how it could be used in public policy. Today we speak with Professor Thaler on his latest and final edition of Nudge, and go beyond nudge to the land of sludging and shoving."
+    },
+    {
+      "title": "Relax, Millennials! You're Doing Great.",
+      "date": "2021-07-26T16:32:00-04:00",
+      "npr_url": "https://www.npr.org/2021/07/26/1020945850/relax-millennials-youre-doing-great",
+      "story_id": "1020945850",
+      "audio_id": "1020948479",
+      "player_url": "https://www.npr.org/player/embed/1020945850/1020948479",
+      "description": "According to new data from the Federal Reserve millennials are struggling. A closer examination of economic data, however, paints a different picture."
+    },
+    {
+      "title": "Mailbag: Children Edition",
+      "date": "2021-07-23T14:13:04-04:00",
+      "npr_url": "https://www.npr.org/2021/07/23/1019903606/mailbag-children-edition",
+      "story_id": "1019903606",
+      "audio_id": "1019920844",
+      "player_url": "https://www.npr.org/player/embed/1019903606/1019920844",
+      "description": "On today's show, kids ask everything you were too afraid to admit you didn't know about money — what is it, where did it come from, what happens if a government goes bananas printing it."
+    },
+    {
+      "title": "Saving Birds With Economics",
+      "date": "2021-07-22T15:50:00-04:00",
+      "npr_url": "https://www.npr.org/2021/07/22/1019488080/saving-birds-with-economics",
+      "story_id": "1019488080",
+      "audio_id": "1019494992",
+      "player_url": "https://www.npr.org/player/embed/1019488080/1019494992",
+      "description": "The Pacific Flyway, one of the major bird migration routes in North America, has lost over 90% of its original wetland habitat in California. Purchasing and restoring these lands would cost a lot of money. But one economist had an idea: What if we paid rice farmers to flood their fields?"
+    },
+    {
+      "title": "The Tequila Boom And Agave Bust",
+      "date": "2021-07-21T20:02:00-04:00",
+      "npr_url": "https://www.npr.org/2021/07/19/1018085114/the-tequila-boom-and-agave-bust",
+      "story_id": "1018085114",
+      "audio_id": "1019021084",
+      "player_url": "https://www.npr.org/player/embed/1018085114/1019021084",
+      "description": "The demand for tequila is booming, but it wasn't always the case. We speak with a fifth generation tequila distiller and a tequila scholar on the history of tequila and what will happen with this current boom."
+    },
+    {
+      "title": "Burnout, Poaching And Robots Taking Our Jobs: The Beigie Awards!",
+      "date": "2021-07-20T14:44:00-04:00",
+      "npr_url": "https://www.npr.org/2021/07/20/1018546015/burnout-poaching-and-robots-taking-our-jobs-the-beigie-awards",
+      "story_id": "1018546015",
+      "audio_id": "1018550709",
+      "player_url": "https://www.npr.org/player/embed/1018546015/1018550709",
+      "description": "The Beigie Award is out for July! This time our winner talks about employee burnout, increased talent poaching, and a special cameo from someone we all know and love."
+    },
+    {
+      "title": "Should Business Mandate Covid Vaccines For Employees?",
+      "date": "2021-07-19T15:42:14-04:00",
+      "npr_url": "https://www.npr.org/2021/07/19/1018101082/should-business-mandate-covid-vaccines-for-employees",
+      "story_id": "1018101082",
+      "audio_id": "1018104355",
+      "player_url": "https://www.npr.org/player/embed/1018101082/1018104355",
+      "description": "Only 3 to 4 percent of small businesses in many states require workers to show proof of vaccination but in Puerto Rico, the number is 20 percent. Why? We speak with an economist and two business owners to find out."
+    },
+    {
+      "title": "In Tech We Antitrust: Indicators of The Week",
+      "date": "2021-07-16T16:49:25-04:00",
+      "npr_url": "https://www.npr.org/2021/07/16/1017123576/in-tech-we-antitrust-indicators-of-the-week",
+      "story_id": "1017123576",
+      "audio_id": "1017125561",
+      "player_url": "https://www.npr.org/player/embed/1017123576/1017125561",
+      "description": "President Biden signed an executive order promoting competition and large technology firms came under fire. We speak with economists Luigi Zingales and Carl Shapiro on the history and implications of antitrust."
+    },
+    {
+      "title": "The COVID Small Business Boom",
+      "date": "2021-07-15T16:23:12-04:00",
+      "npr_url": "https://www.npr.org/2021/07/15/1016628762/the-covid-small-business-boom",
+      "story_id": "1016628762",
+      "audio_id": "1016647413",
+      "player_url": "https://www.npr.org/player/embed/1016628762/1016647413",
+      "description": "After millions of people lost their jobs during the pandemic, many of them started their own businesses. In June people started over 440,000 new businesses. We speak with a hot dog stand owner about his journey and an economist on this trend."
+    },
+    {
+      "title": "Australian Wine: Political Football",
+      "date": "2021-07-14T15:02:24-04:00",
+      "npr_url": "https://www.npr.org/2021/07/14/1016147955/australian-wine-political-football",
+      "story_id": "1016147955",
+      "audio_id": "1016153063",
+      "player_url": "https://www.npr.org/player/embed/1016147955/1016153063",
+      "description": "Australian wine exports to China have gone from about $1 billion a year to nearly nothing overnight. Australia blames geopolitics, saying the Chinese government wants to send a message to the world."
+    },
+    {
+      "title": "How Do You Measure Inflation?",
+      "date": "2021-07-13T16:59:00-04:00",
+      "npr_url": "https://www.npr.org/2021/07/13/1015804773/how-do-you-measure-inflation",
+      "story_id": "1015804773",
+      "audio_id": "1015835079",
+      "player_url": "https://www.npr.org/player/embed/1015804773/1015835079",
+      "description": "The Consumer Price Index helps to understand prices and inflation, but where do the numbers come from in the first place? We tagged along with an economist to find out the prices of socks, butter, and daycare."
+    },
+    {
+      "title": "Keeping Up With The Kandasamys",
+      "date": "2021-07-12T17:32:00-04:00",
+      "npr_url": "https://www.npr.org/2021/07/12/1015475320/keeping-up-with-the-kandasamys",
+      "story_id": "1015475320",
+      "audio_id": "1015479494",
+      "player_url": "https://www.npr.org/player/embed/1015475320/1015479494",
+      "description": "Streaming services have changed how people consume films and TV shows, but they've also changed what viewers are able to consume. For example, a rom-com about two Indian families who live next to each other in South Africa, is now available to a global audience."
+    },
+    {
+      "title": "Used Car Silver Lining: Indicators Of The Week",
+      "date": "2021-07-09T16:31:07-04:00",
+      "npr_url": "https://www.npr.org/2021/07/09/1014834686/used-car-silver-lining-indicators-of-the-week",
+      "story_id": "1014834686",
+      "audio_id": "1014849282",
+      "player_url": "https://www.npr.org/player/embed/1014834686/1014849282",
+      "description": "Used cars are expensive right now. Bloomberg writer Conor Sen thinks it might be a reason behind recent inflation. We explore how used cars got so expensive and used cars' relationship with the CPI."
+    },
+    {
+      "title": "Shrinkflation: Inflation's Sneaky Cousin",
+      "date": "2021-07-08T16:35:00-04:00",
+      "npr_url": "https://www.npr.org/2021/07/08/1014399406/shrinkflation-inflations-sneaky-cousin",
+      "story_id": "1014399406",
+      "audio_id": "1014423933",
+      "player_url": "https://www.npr.org/player/embed/1014399406/1014423933",
+      "description": "Inflation is the talk of the town recently, but some companies are shrinking the size of their products and charging the same price, aka \"shrinkflation\". Today we explore the booming market of inflation's sneaky cousin."
+    },
+    {
+      "title": "Two Indicators: Clogged Ports And Corporate Vets",
+      "date": "2021-07-07T19:51:26-04:00",
+      "npr_url": "https://www.npr.org/2021/07/07/1013954358/two-indicators-clogged-ports-and-corporate-vets",
+      "story_id": "1013954358",
+      "audio_id": "1198960640",
+      "player_url": "https://www.npr.org/player/embed/1013954358/1198960640",
+      "description": "We bring you two stories from The Indicator on two industries that are undergoing rapid change: vets and container shipping. | Subscribe to our weekly newsletter here."
+    },
+    {
+      "title": "How Do You Reduce Child Poverty?",
+      "date": "2021-07-07T16:52:00-04:00",
+      "npr_url": "https://www.npr.org/2021/07/07/1013964114/how-do-you-reduce-child-poverty",
+      "story_id": "1013964114",
+      "audio_id": "1014005371",
+      "player_url": "https://www.npr.org/player/embed/1013964114/1014005371",
+      "description": "The Biden Administration and Congress have introduced expanded child tax credits for families in 2021. Senator Michael Bennet, the author of the original plan, hopes to make the bill permanent. We speak with him and economist Hilary Hoynes on the implications of child tax credits."
+    },
+    {
+      "title": "Beach Reads For Econ Nerds",
+      "date": "2021-07-06T15:53:00-04:00",
+      "npr_url": "https://www.npr.org/2021/07/06/1013511673/beach-reads-for-econ-nerds",
+      "story_id": "1013511673",
+      "audio_id": "1013572463",
+      "player_url": "https://www.npr.org/player/embed/1013511673/1013572463",
+      "description": "It's summer, which means time to read at the beach. We asked professor Tyler Cowen for his picks. His three books cover scientific progress, the rocket business, and how to cope with doomsday."
+    },
+    {
+      "title": "Are We Looking At The Wrong Jobs Numbers?",
+      "date": "2021-07-02T17:08:38-04:00",
+      "npr_url": "https://www.npr.org/2021/07/02/1012771847/are-we-looking-at-the-wrong-jobs-numbers",
+      "story_id": "1012771847",
+      "audio_id": "1012775624",
+      "player_url": "https://www.npr.org/player/embed/1012771847/1012775624",
+      "description": "The world of unemployment rates can get confusing. We are here to help. What is U-3 and what is U-6? Of course, U-2 is here as well. And now, the Indicator presents... the U-Blend!"
+    },
+    {
+      "title": "Desperately Seeking Construction Workers",
+      "date": "2021-07-01T20:02:10-04:00",
+      "npr_url": "https://www.npr.org/2021/07/01/1012310352/desperately-seeking-construction-workers",
+      "story_id": "1012310352",
+      "audio_id": "1012368645",
+      "player_url": "https://www.npr.org/player/embed/1012310352/1012368645",
+      "description": "Demand for homes has increased dramatically this year and supply can't keep up. One of the biggest issues is a labor shortage in the construction industry. So employers are increasing wages and getting creative to entice people into the trades."
+    },
+    {
+      "title": "That Time America Paid For Universal Day Care",
+      "date": "2021-06-30T16:22:20-04:00",
+      "npr_url": "https://www.npr.org/2021/06/30/1011968802/that-time-america-paid-for-universal-daycare",
+      "story_id": "1011968802",
+      "audio_id": "1012001616",
+      "player_url": "https://www.npr.org/player/embed/1011968802/1012001616",
+      "description": "When millions of women entered the workforce during World War II, what happened to the children? The government stepped in and created the first federal child care program. What happened to it?"
+    },
+    {
+      "title": "Can TikTok Cancel Your Hospital Bills?",
+      "date": "2021-06-29T16:37:20-04:00",
+      "npr_url": "https://www.npr.org/2021/06/29/1011445496/can-tiktok-cancel-your-hospital-bills",
+      "story_id": "1011445496",
+      "audio_id": "1011508563",
+      "player_url": "https://www.npr.org/player/embed/1011445496/1011508563",
+      "description": "TikTok videos are entertaining and sometimes... life-saving. Earlier this year, a video on hospital bill cancellation went viral. We speak with the creator to find out how he got into charity care."
+    },
+    {
+      "title": "The Jobless Benefits Experiment",
+      "date": "2021-06-28T19:28:00-04:00",
+      "npr_url": "https://www.npr.org/2021/06/28/1011056465/the-jobless-benefits-experiment",
+      "story_id": "1011056465",
+      "audio_id": "1011124122",
+      "player_url": "https://www.npr.org/player/embed/1011056465/1011124122",
+      "description": "In a few weeks, more than half of the fifty states will terminate the pandemic assistance unemployment benefits. What does this reveal about the current state of the economy?"
+    },
+    {
+      "title": "Crypto Crash, Labor Shortage and Leggings vs. NFTs: Indicators Of The Week",
+      "date": "2021-06-25T16:28:55-04:00",
+      "npr_url": "https://www.npr.org/2021/06/25/1010385995/crypto-crash-labor-shortage-and-leggings-vs-nfts-indicators-of-the-week",
+      "story_id": "1010385995",
+      "audio_id": "1010458163",
+      "player_url": "https://www.npr.org/player/embed/1010385995/1010458163",
+      "description": "There are big changes in the crypto and the retail world. Bitcoin's price declined from recent highs, as mining activities stopped in China. Meanwhile, the retail sector cannot keep up with booming demand..."
+    },
+    {
+      "title": "The Line Americans And Canadians Can't Cross",
+      "date": "2021-06-24T15:31:41-04:00",
+      "npr_url": "https://www.npr.org/2021/06/24/1010077766/the-line-americans-and-canadians-cant-cross",
+      "story_id": "1010077766",
+      "audio_id": "1010078109",
+      "player_url": "https://www.npr.org/player/embed/1010077766/1010078109",
+      "description": "Sixteen months have passed since the closure of the US-Canada border. What are the economic impacts on border towns, local residents, businesses and cross border tourism?"
+    },
+    {
+      "title": "Traffic Jam: Cargo Style",
+      "date": "2021-06-23T17:41:03-04:00",
+      "npr_url": "https://www.npr.org/2021/06/23/1009637231/traffic-jam-cargo-style",
+      "story_id": "1009637231",
+      "audio_id": "1009684970",
+      "player_url": "https://www.npr.org/player/embed/1009637231/1009684970",
+      "description": "Residents of a small town in Washington state are troubled by something big... container ships. Why are they there? What does this say about the state of the global shipping industry?"
+    },
+    {
+      "title": "The Vet Clinic Chow Down",
+      "date": "2021-06-22T16:12:00-04:00",
+      "npr_url": "https://www.npr.org/2021/06/22/1009137378/the-vet-clinic-chow-down",
+      "story_id": "1009137378",
+      "audio_id": "1009262291",
+      "player_url": "https://www.npr.org/player/embed/1009137378/1009262291",
+      "description": "We love our pets, but do you know what Corporate America loves even more? Veterinary clinics. Today on the show, we explore the explosion of corporate investment in the vet clinic world."
+    },
+    {
+      "title": "Kit Kat, Puppies, And Masks: Anthro-Vision",
+      "date": "2021-06-21T14:19:54-04:00",
+      "npr_url": "https://www.npr.org/2021/06/21/1008784974/kit-kat-puppies-and-masks-anthro-vision",
+      "story_id": "1008784974",
+      "audio_id": "1008840652",
+      "player_url": "https://www.npr.org/player/embed/1008784974/1008840652",
+      "description": "What do Kit Kat, dog food, and mask wearing have in common? You'll find the answer in the new book Anthro-Vision. We speak with its author, journalist and anthropologist, Gillian Tett."
+    },
+    {
+      "title": "Bluer Skies Ahead",
+      "date": "2021-06-17T15:15:39-04:00",
+      "npr_url": "https://www.npr.org/2021/06/17/1007738843/bluer-skies-ahead",
+      "story_id": "1007738843",
+      "audio_id": "1007917778",
+      "player_url": "https://www.npr.org/player/embed/1007738843/1007917778",
+      "description": "Covid-19 has brought so much loss and hardship, but there was at least one pleasant surprise for Beijing - less hazy skies and air pollution. Today on The Indicator, the concept of experience goods. How you don't know the value of something until you actually experience it. And how in Beijing there were blue skies during the COVID lockdown."
+    },
+    {
+      "title": "Millennial Myth-Busters: Housing Edition",
+      "date": "2021-06-16T14:51:00-04:00",
+      "npr_url": "https://www.npr.org/2021/06/16/1007336970/millennial-myth-busters-housing-edition",
+      "story_id": "1007336970",
+      "audio_id": "1007385749",
+      "player_url": "https://www.npr.org/player/embed/1007336970/1007385749",
+      "description": "It's time to bust some myths about millennials... real estate edition! Millennials are a big part of the real estate boom this year. How did that happen? We speak to an industry insider and an economist to find out more."
+    },
+    {
+      "title": "Why Is The Fed So Boring?",
+      "date": "2021-06-15T16:26:18-04:00",
+      "npr_url": "https://www.npr.org/2021/06/15/1006953751/why-is-the-fed-so-boring",
+      "story_id": "1006953751",
+      "audio_id": "1006957873",
+      "player_url": "https://www.npr.org/player/embed/1006953751/1006957873",
+      "description": "Fed Chair Jerome Powell will speak tomorrow. His words will likely be boring, but the financial markets are watching carefully. Such words seem to have serious implications. Why is that?"
+    },
+    {
+      "title": "Is Movie Night Back?",
+      "date": "2021-06-14T16:31:51-04:00",
+      "npr_url": "https://www.npr.org/2021/06/14/1006362151/is-movie-night-back",
+      "story_id": "1006362151",
+      "audio_id": "1006415287",
+      "player_url": "https://www.npr.org/player/embed/1006362151/1006415287",
+      "description": "Many people will watch movies on a big screen this summer, but the pandemic fundamentally changed the industry. How can movie theaters survive and possibly thrive post-pandemic?"
+    },
+    {
+      "title": "Taxes, Oil Prices And Why We're All Quitting Our Jobs: Indicators Of The Week",
+      "date": "2021-06-11T17:40:00-04:00",
+      "npr_url": "https://www.npr.org/2021/06/11/1005722922/taxes-oil-prices-and-why-were-all-quitting-our-jobs-indicators-of-the-week",
+      "story_id": "1005722922",
+      "audio_id": "1005774995",
+      "player_url": "https://www.npr.org/player/embed/1005722922/1005774995",
+      "description": "It's time for the Indicators Of The Week! Our three indicators are: tax, oil, and jobs. We will cover their importance and how they are relevant to Bono, the Ford F-150, and Kim Kardashian."
     }
   ]
 }
