@@ -1,5 +1,5 @@
 {
-  "validation_version": 1,
+  "validation_version": 2,
   "source_file": "indicator_recovered_episodes.json",
   "history_file": "indicator_history.json",
   "summary": {
@@ -9,19 +9,14 @@
     "clean_candidate_count": 1,
     "needs_review_count": 234,
     "duplicate_source_url_count": 0,
-    "duplicate_audio_url_count": 1
+    "duplicate_episode_specific_audio_count": 1
   },
   "issue_type_counts": {
-    "duplicate_audio_url": 233,
-    "no_valid_audio_url": 1,
-    "non_audio_media_detected": 225
+    "duplicate_episode_specific_audio": 233,
+    "no_episode_specific_audio": 1
   },
   "failure_status_counts": {
     "not_recovered": 51
-  },
-  "duplicate_source_urls": {},
-  "duplicate_audio_urls": {
-    "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3": 233
   },
   "clean_candidates": [
     {
@@ -33,12 +28,14 @@
       "source_domain": "www.delmarvapublicmedia.org",
       "source_title": "Judgement Bonds",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WSCLFM.mp3",
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WSDLFM.mp3",
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WESMFM.mp3"
       ],
-      "suspicious_media_urls": [],
+      "shared_player_urls": [],
+      "image_urls": [],
+      "possible_ids": [],
       "issues": []
     }
   ],
@@ -52,15 +49,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Bonds... Japanese Bonds",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/03/13/listener-questions-b117cef1e32dd8e847d5c37bd5ae4ee9e89ae2a3.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -72,15 +70,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "What Trade Organization?",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/03/14/164-indicator-c9ed304393010cd95e149439c0b7d5fc0641846b.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -92,15 +91,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Calculated Risk, Calculated Caution",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/03/15/calculated-risk-abbfc044416aaca8d96e6de7cf8357e6d5feb0f4.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -112,15 +112,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Bear Necessities",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/03/16/2-indicator-7e86c9845fe26360d309e43cdb25b2db81978e96.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -132,15 +133,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Reinvention Of The IPO",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/03/19/dpo-indicator-3c5b3550fae3076412a14fb5754cd7bc35ce4244.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -152,15 +154,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "A Brief History of Tariffs",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/03/20/original-tariffs-indicator-3e69640ddb9179db38221479a52429cbda1df970.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -172,15 +175,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Trump vs. Trudeau: Both Right, Both Wrong",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/03/21/billions-indicator-eb1adbc8a0e97849a52b5c964d311e9732370aee.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -192,15 +196,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Too Small To Fail",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/03/22/2321-indicator-622fd633b38ec968f02c0ce3dce7112140e1777b.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -212,15 +217,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Oil Rig Count",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/03/23/indicator_episode-number_maker-bdec8608ad4d803d0fe8ac1168f009ff35f9de28.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -232,15 +238,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Dollars for Data",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/03/26/144-indicator-1833d149cb3758b5670cbce75ac697f372a927f5.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -252,15 +259,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Costly Care In America",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/03/27/indicator-178-383eebe4d92c72d16fa6e3897d772558822046d6.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -272,15 +280,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Dollars And Census",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/03/28/800-indicator-219043a8d503869dc6bd820452e0a8049a72ab6e.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -292,15 +301,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Disability In Decline",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/03/29/indicator-7-8a49157c8e49cde7ac4b3c8d7d4243d01765b4ac.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -312,15 +322,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "China, Tariffs, And The Hogs Of War",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/04/02/hogs-of-war-indicator-1e69bc9f77f0a6ea40c633aefbeae5bfea572354.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -332,15 +343,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Original Bailout",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/04/03/25-million-indicator-eddbf2f2470746bce6ace5213093fc77a487039a.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -352,15 +364,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Stop, Collaborate, And Listen",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/04/04/35-indicator-ef6146e5981a94c41714e92f81f10c8c6a1e8bb9.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -372,15 +385,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Morbidity, Peak Child, And Collective Pessimism",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/04/05/5-indicator-1a6cff46266ef6f743d2061ce5e3502c74f60eb0.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -392,15 +406,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Where The Jobs Are",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/04/06/jobs-indicator-c99c14ec1b51976e2d746e1ee1327dd309be9f93.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -412,15 +427,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Mind The Pay Gap",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/04/09/8-indicator-372f6806285189d7acb29d493163c26b2352ebc9.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -432,15 +448,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Tyler Cowen Rates America",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/04/10/over-under-indicator-9ff36fc88408c02e954c0d5e49b1ce08bca55473.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -452,15 +469,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Deficit Attention Disorder",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/04/11/indicator_episode-number_maker-a268204fb652178eb322179dd11e47f3f774c1df.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -472,15 +490,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Unsung Indicators",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/04/12/indicator_episode-number_maker-597f1cc81e4e6ba0053ccca4d42149825c097c40.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -492,15 +511,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Congress Does Not Compute",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/04/13/3-indicator-2c3ed71630e1642d704ff9af6d083ae2e3e16672.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -512,15 +532,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Loan Ranger",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/04/16/student-loans-9d6d2427503fd2555fc8a87c06cbdd021d3d5e61.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -532,12 +553,14 @@
       "source_domain": "news.wypr.org",
       "source_title": "Tax Refunds, A Habitual Health Problem",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [],
+      "shared_player_urls": [],
+      "image_urls": [],
+      "possible_ids": [],
       "issues": [
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -549,15 +572,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Lawn Chair Economics",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/04/18/600-indicator-d150e5a5cf51040fcd37f68ed9ad7a42eafda516.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -569,12 +593,14 @@
       "source_domain": "news.wypr.org",
       "source_title": "Amazon vs Trump Goes Postal",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [],
+      "shared_player_urls": [],
+      "image_urls": [],
+      "possible_ids": [],
       "issues": [
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -586,15 +612,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The New Bond Villain",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/04/20/3-indicator-ac88d107cd0664fbd301e03c66f81976ab72a6e8.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -606,15 +633,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Farm Labor Drought",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/04/25/farm-labor-drought-338ed8dc8100ccf5b3254e64fee7cbd7a0c84143.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -626,15 +654,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Homeless Count",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/04/27/homeless-indicator-3b0ec198a7933b2362e42db303dc2b2395e989b9.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -646,15 +675,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Inflation Target Acquired",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/04/30/2-indicator-81560d3d2b7426bcb0ba1ff21ac972b35f33e51f.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -666,12 +696,14 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Only Prescription Is More Transparency",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [],
+      "shared_player_urls": [],
+      "image_urls": [],
+      "possible_ids": [],
       "issues": [
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -683,15 +715,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Aging Up",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/05/02/45-indicator-80df590d9e4c0c5d12692adcf0b45821da609e1f.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -703,15 +736,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Baby Bubbles",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/05/03/25-indicator-b0233db49799b87cd3416af13885619fff1bb316.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -723,15 +757,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Perks Of Counting The Wallflowers",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/05/04/wallflowers-indicator-66351ff66c62cb50262623e42ef486b51dcd740b.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -743,15 +778,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The 'I' Of The LIBOR",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/05/07/200-trillion-indicator-39ee5309786994beb8cc346d93ae85d2a4ab894a.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -763,15 +799,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Good, The Bad and The Tax Cuts",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/05/08/20-vs-61-indicator-73c476b56560735d3e94866fdef4de4a45c9eeac.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -783,15 +820,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Indicator and Beyond",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/05/09/infinity-indicator-7f3741a7efa953da4c0493b0f5672b9f17050241.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -803,15 +841,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Failing College",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/05/10/gettyimages-2865193-89d770a450bab3b1d2f6f6e2cc0aecb8bbf6d006.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -823,15 +862,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "In Vino, Veritas by Numbers",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/05/11/95-indicator-5009bda7eb7901f92ce26331f7dc483ab06eefdd.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -843,15 +883,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Semiconductor Standoff",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/05/14/gettyimages-956707338-ac5b675f3c4b71f1605e438d5471f89dd88851f3.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -863,15 +904,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Rising Rates Vs. The Housing Market",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/05/15/917-indicator-71a43cd64d09307c7e6878728635dddf1c1b3790.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -883,15 +925,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "All Bets Are On",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/05/16/150-billion-indicator-790b11eb19914f70bd069ed6a46b9f473e15a866.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -903,15 +946,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "SNAP Back To Reality",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/05/17/snap-indicator-67358d944a1fba6c46847e3a63d16337d227ac38.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -923,15 +967,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Time Bandits",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/05/18/15-billion-indicator-c63145cc8626de88bab46b0f58b2c4f28d91efad.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -943,15 +988,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Stacey And Cardiff Take On The Commencement Speech",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/05/21/graduation-indicator-92ecbd393c083cb5b8455511cf1942e444e54f34.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -963,15 +1009,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Women In Bondland",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/05/22/Bondland-indicator-8ecf37a8bad9854c80e51397692ae00304ef3662.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -983,15 +1030,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Most Inane Deduction?",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/05/23/32-million-indicator-50941b58fa612db202417d0a1d155268f2966597.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1003,15 +1051,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Money Detectives",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/05/24/2-million-indicator-9bbcf66fef94b79c1204a3987a07c905a9cff868.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1023,15 +1072,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Earnings Calls Gone Wild",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/05/25/elon-indicator-eadbb63ddddd314c1f807ea7b9004532a88595ef.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1043,15 +1093,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Money For Moms",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/05/30/gettyimages-173257440-indicator-c0021b8599a6c3b330fffcc54dc6d3eec02e6f1b.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1063,15 +1114,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Internet a la Carte",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/05/31/6-indicator-ee890d2c5fee88a85e6e64629312bd7e31d5d54d.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1083,15 +1135,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "To Err Is Human, To Revise Divine",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/06/01/115-thousand-indicator-0cf02fe09714ee9c0418b1b23c6505c6336c521b.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1103,15 +1156,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Economics of Vaccines",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/06/04/-500-million-indicator-b203e6c27b3352f10ab8312aa75b90fffa4b2215.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1123,15 +1177,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Do You Have $400?",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/06/05/indicator-b17fd5458a61125830b085a5ed628c0c818af05a.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1143,15 +1198,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Social Insecurity",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/06/06/istock_000023052900large-indicator-2faa404cf69ee050644e66f29f54ebef2e355351.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1163,15 +1219,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "When Retirement Advice Goes Viral",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/06/07/59-indicator-4de8f5180e411b368b4a8bd3b5c6032f4383d35e.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1183,15 +1240,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Positively 23rd Street",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/06/08/gettyimages-969817248-indicator-365728d8795ea0621aba5121c09c87079bd8352c.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1203,15 +1261,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Let Them Eat Marshmallows",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/06/11/gettyimages-90245528-bc00ce8fb95caec6a61969dbe18eee33f009d510.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1223,15 +1282,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "CBO vs. POTUS",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/06/12/cbo1-149cea84c7951dd48ca17b4f97fb4d34fd7a095f.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1243,15 +1303,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Trading Spaces",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/06/14/24-indicator-82bbc3a6c74855c4c2fc3a140f89b51adba48dff.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1263,15 +1324,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Gettin' Giggy With It",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/06/15/101-indicator-50a6186ba50b80e2178988dbb2cb4b42322c9a41.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1283,15 +1345,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Art Of The Trade War",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/06/18/500-billion-indicator-9e3801b7b47764fee5d500e6400f18cded4a1efa.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1303,15 +1366,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Measure Of A Tragedy",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/06/19/900-indicator-1eaa9bf8f1da5afdc6285d874ca4c7cdacfc4d38.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1323,15 +1387,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Plight Of The Living Dead",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/06/20/111-million-indicator-03f8423050bafd4e5737b63469f24e4f26ed1059.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1343,12 +1408,14 @@
       "source_domain": "news.wypr.org",
       "source_title": "MoviePass / Fail?",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [],
+      "shared_player_urls": [],
+      "image_urls": [],
+      "possible_ids": [],
       "issues": [
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1360,15 +1427,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Beautiful Indicator",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/06/25/gettyimages-973404958-fbfe11380ce5067efc671d6cd843636df889f21b.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1380,15 +1448,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Happy Birthday, Smith v. Keynes",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/06/27/keynes-cd308ba63196e5ddf4cdf1879f9d31b1ac652858.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1400,15 +1469,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Bubble, Bubble, Oil And Trouble",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/06/28/78-indicator-70f63f89d6e22708764d403b19de94ccd7235357.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1420,15 +1490,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Problem With Unobservable Variables",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/07/02/2.3-indicator-fcd44aac5d0405b9e385d7fafbd835508f57f99a.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1440,15 +1511,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Star Spangled Indicator",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/07/03/gettyimages-990763068-81cac833e59bd1a5b6484ae7febe19aec4914873.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1460,15 +1532,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Long French Goodbye",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/07/05/gettyimages-982946736-10b66a3fab8e7197e66aae74f57995503e08ada9.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1480,15 +1553,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Jobs: 10 Questions in 10 Minutes",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/07/06/10-indicator-5b446651e26ae61ec4d3caffa3e14149c99471ff.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1500,15 +1574,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Recession Predictor, Still Predictive?",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/07/09/yield-curve-d1747367bbe8042e007fa6dad3ecf2174afb8ada.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1520,15 +1595,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Trade Wars And The Batman Problem",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/07/18/gettyimages-543319293-5e62de91af4ce1bc77de72c9c98c86e24cd97bc0.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1540,15 +1616,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Market For Air",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/07/20/katzs-e4c62d61b219405ee65a705a19389e890a784ec0.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1560,15 +1637,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Trump Vs. The Fed, Or Trump Vs... Trump?",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/07/24/8-and-a-half-indicator-8c9264bb0488f92a6023f1b1ad72ee2debc8aec8.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1580,12 +1658,14 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Diamond-Water Paradox",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [],
+      "shared_player_urls": [],
+      "image_urls": [],
+      "possible_ids": [],
       "issues": [
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1597,15 +1677,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "When Oracles Err",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/07/26/gettyimages-492444164-09372a7d8eed3e3c55bb30d8a63e564a6108542e.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1617,15 +1698,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "GDP, OMG!",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/07/27/41-432c73f4c4bf2778941ae5833c4e9336a731a7aa.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1637,15 +1719,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "What A Tariff Looks Like",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/08/01/img_3748-8b446a12494e46f52442f986c65e684b0b505a4f.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1657,15 +1740,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Grey Poupon And The Cultural Divide",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/08/02/kdot-greypoupon-040b04bc33f6227b0dfc20bf34cd107e2f27e18e.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1677,15 +1761,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Tariffs, Now With Extra Cheese",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/08/06/gettyimages-cheese-6bfeaff94c5d0f006e921c7498bfb2e842f2a16f.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1697,15 +1782,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Sanctions, Iran, And The Battle Over SWIFT",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/08/07/swift-indicator-ee187baf899e4e5486d04d514a6aab10e3272337.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1717,15 +1803,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Trickle-Down Economics: Pricing H2O",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/08/08/water-indicator-745f5748a6a51bd5a48949191300a0bc2beb7e22.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1737,15 +1824,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The OG Yield Curve Whisperer",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/08/09/curve-indicator-2d505fd97a73c39896db2b716356ef07c6a6b562.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1757,15 +1845,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "From Prison To The Workforce",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/08/14/gettyimages-457306354-15108f4e0fec6c72f3d72145186686a0562d689f.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1777,15 +1866,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Cryptokitties: The Download On Digital Cats",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/08/15/founder-32--d7dc6d2cb6fb4eed2c57b24f72fe1864b08dd327.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1797,15 +1887,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "We Buy A Cryptokitty!",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/08/16/kitty2-5db961a08b64df64d0ede8e130b2ae8cf5ac7b2a.png"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1817,15 +1908,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Indicator Goes To The Beach With Tim Harford",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/08/20/gettyimages-1016994250-5ef9b297a075bf05c691e6a1b098338b3bf402e6.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1837,15 +1929,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Underrated Economists",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/08/22/_maker-6170f04fac7778e72461349292e410e0b30d7334.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1857,15 +1950,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Beyond GDP",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/08/23/gdp-indicator-5f6dde6cc945be4b58077c40886b79241613bede.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1877,15 +1971,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Measure Of A Tragedy",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/08/27/900-indicator-98a04fd28e60cbddeaf3fcbde7f072e0fbb1649a.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1897,15 +1992,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Mind The Pay Gap",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/08/29/wage-gap-7073024f902e3f12cc236c34a1e5b07acfa7ddb5.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1917,15 +2013,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Aging Up",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/08/30/451-b77ae2ddd9a8b1fa4141d014d10966224c8c2f03.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1937,15 +2034,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Original Bailout",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/08/31/25-million-indicator-12992901ac216a68b88a1f70a7a5d019de2f4161.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1957,15 +2055,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Making The Case For Removing Tariffs",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/09/04/cereal-82a4e2c43dbf6f136c421fecf782c2ef472eee46.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -1977,13 +2076,14 @@
       "source_domain": "www.wfae.org",
       "source_title": "NAFTA-splainer",
       "title_score": 1.0,
-      "valid_audio_urls": [],
-      "suspicious_media_urls": [
+      "episode_specific_audio_urls": [],
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/09/05/nafta-658d9bdba354cfe5884bdc901741e3a0d8bc01e1.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "no_valid_audio_url",
-        "non_audio_media_detected"
+        "no_episode_specific_audio"
       ]
     },
     {
@@ -1995,15 +2095,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Your Jobs Questions, Answered",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/09/07/jobquery-4263957c53e5fb6f468c3b33bba7925973d19561.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2015,12 +2116,14 @@
       "source_domain": "news.wypr.org",
       "source_title": "Call The Midwife Back",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [],
+      "shared_player_urls": [],
+      "image_urls": [],
+      "possible_ids": [],
       "issues": [
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2032,15 +2135,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Liars Of Romance",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/09/11/931-978100e8091e42f2db23b0cfa193d9018a4a5e27.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2052,15 +2156,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Free Tuition; False Economy?",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/09/12/202000-indicator-75f18929e64456941b49ba82ee9782596fc97b2e.png"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2072,15 +2177,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Price Of Rice In Japan",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/09/12/riceeee-66077a94ef9357423e5b6f3bc493f8f9be85deb2.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2092,15 +2198,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Handle With Care",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/09/14/gettyimages-78110837-f7318d9cbf63aa600e88b35e949de20f8c9e8f2e.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2112,15 +2219,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Down Clown",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/09/17/pricilla-mooseburger-3-2658f09225a8af3fc42fbfce6b1cac108849e059.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2132,15 +2240,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Work Work Work",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/09/18/labor_indicators-7427980f97324225b2c426bfa5ca0aa9198dab6b.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2152,15 +2261,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Psychological Effects Of The Financial Crisis, Lingering",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/09/19/lehman-brothers-880874f8e35e4e1b6510eaf1fddb60838b3351cd.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2172,15 +2282,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Young And The Restless",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/09/20/4-indicator-73515a3168cca6f0d978b1312aac84acf5be58af.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2192,15 +2303,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Rent!",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/09/21/rent-1ba43039fe51493d2985047efe975479d3215d9b.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2212,15 +2324,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Less Risky Business",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/09/25/risks-32e0b3f03d014c74381e1b3789f9a87b2564ee7e.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2232,15 +2345,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Tariffs And Tourists And Trade Wars, Oh My!",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/09/26/20-billion-indicator-3f1dfdad5d4d4571f2cba5313ca04c179f51f087.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2252,15 +2366,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Baby Got Buybacks",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/09/27/100-billion-indicator-e84de70507d0261954029191bf56a654e019aa9b.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2272,15 +2387,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Case Of The Pricey Frito",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/09/28/photo-sep-28-4-34-42-pm-1215ce6d08761ef6f6fe97de7b0e8159e5d8b6d3.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2292,15 +2408,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "D.C.'s Billion-Dollar Lawsuit",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/10/01/1-billion-indicator-631784f1f091e6b095ec442a0b512cf0e9bce4dc.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2312,15 +2429,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Zeitgeist-y Bubbles",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/10/02/bubbles-45dfa1d7705e7f3f5d91efe216c65735c241486b.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2332,15 +2450,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "What Happened To GE?",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/10/03/gettyimages-108228377-891e2134d91eb91b4dbd486f74b8cd396a44e404.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2352,15 +2471,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "What Comes Afta NAFTA",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/10/04/gettyimages-854755756-17b52a653f91402505a73e225a6ffca86af15907.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2372,15 +2492,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Iron Lotus",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/10/08/8-indicator-00ecda88a9a495c62b3d0e82b8b3ebe05a423c0b.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2392,15 +2513,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Economics of Apologies",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/10/12/sorry-indicator-c317b4117b03bc71d5388654b5105a96f5f1cf7b.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2412,15 +2534,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Overrated/Underrated: Nobel Prizes, Conversations, And Our Descendants",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/10/15/descendants-indicator-4924b8ab444010f8261985dad3f6f400e5389084.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2432,15 +2555,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "A Snapshot Of Poverty In America",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/10/16/13-a56c211de5c1ce4b6c88df96f182fd19d6da9540.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2452,15 +2576,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Gross Dank Product",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/10/17/gettyimages-1052282764-fc009f172ac655fd7d1a1799677456fa54df7fd0.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2472,15 +2597,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Beating Bollywood",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/10/18/india-cfa9290a2cd4703ecee5a3f50ad68aefccde4672.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2492,15 +2618,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Tears For Sears",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/10/19/gettyimages-838634748-f03747494133dadab99aa7a8639edb2754ce9440.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2512,15 +2639,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Short Shrift For Short Sellers",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/10/22/image-25f78b5f6c766b1c519479360c36654384c5a244.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2532,15 +2660,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Of Wages And Warehouses",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/10/23/gettyimages-825338394-b1b4b46374515c3e880d235214793d00caf62670.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2552,15 +2681,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Rise Of The Machines",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/10/24/2025-f6ad252af486eced8b6f2f76c65ed41fb0b637cb.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2572,15 +2702,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Difficulty With The Deficit",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/10/25/779-billion-indicator-dffe8bcd5b12413c6519ac84891505216e162f60.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2592,15 +2723,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Lotteries And Happiness",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/10/26/lottery-728a0a883cbbb53502306cb64db27a472a594fa8.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2612,15 +2744,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Best Day For Payday",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/10/30/indicator_episode-number_maker1-d6fb97127f8e93d61dc076fd529fcb6bdc626436.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2632,15 +2765,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Paranormal Profits",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/10/31/710000-indicator-06181919d546cb15c8a95dc89eb8606fab6e4e8f.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2652,15 +2786,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Why Ecuador Uses The Dollar",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/11/01/bianca-69795e88c603107d938fc12d4eb1e96e270295b9.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2672,15 +2807,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Ode On A Grecian Tax",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/11/05/solon_writing_laws_for_athens-d4306f9e84b7cbedd30f7751df1a8a052f8095c4.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2692,15 +2828,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Stacey And Cardiff Answer To The People",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/11/06/listen-1f643b57522f7ea785ca025ff01e712635e14510.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2712,15 +2849,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Your Lifetime Value Score",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/11/07/clv-3d145d00d515e66e49d246d6ca90d9c1abf7f970.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2732,15 +2870,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "All Aboard The Bankmobile!",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/11/08/img_6367-88fa3954c62b771be932ce5e7d9954009c5d9d82.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2752,15 +2891,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Recession Suppression Needs Policy Aggression",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/11/12/next-416076122f0cf999c6166452573da33b66a870c0.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2772,15 +2912,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Problem With The Pink Tax",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/11/13/no-razor-53d89bba7f75091a5d3c76ef9f304bc23ff662b8.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2792,15 +2933,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Oil Up, Oil Down",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/11/14/231-8704b5cd90f982eceb5f333b7e1749f07be4d1f3.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2812,15 +2954,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Lucky Country",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/11/15/27-indicator-e967e4a2e4b5fbbee80d81b71170ab49d76bc2a8.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2832,15 +2975,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Recession Indicators, Pt 1",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/11/16/10-4e5bf50accc58787cc2c9fa760d1d17594276251.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2852,15 +2996,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Recession Indicators, Pt 2",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/11/19/3-indicator-7a77dc592669c8f7072e7644bca0ae7a8305c9a9.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2872,15 +3017,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Price Of Your Turkey Dinner",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/11/21/pm-tg--1200-x-1200-a61f4c7d948d521d7b6f3cd91f97f1bdab629fe1.png"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2892,15 +3038,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "See Stocks Run",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/11/21/gettyimages-1070213206-9cb04dc350c673ffdbbafc58ed1d83a593e510eb.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2912,15 +3059,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Bonds, Rating Agencies And Chocolate",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/11/26/oveur-6a06d556e09bf828e6328f13269c991fff653f04.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2932,15 +3080,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "College Side Hustle",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/11/27/gettyimages-1025376888-a0c198e110fe6363a024c45e11f2d9acd4f9353e.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2952,15 +3101,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Do Sanctions Work?",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/11/28/gettyimages-1057221350-e264d0987bd1f67d34c826f0422a5e58b8e1fd00.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2972,15 +3122,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Space Economics",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/11/29/gettyimages-1065500268-924bf532aa35ce610200c8e31c9a8ba3dab8802a.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -2992,15 +3143,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Voyages Of The Starship Indicator",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/11/30/space-cardiff-and-stacey-blue-1200-1200-efce944bb16df6b11509aa35b3fe4302427aac78.png"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3012,15 +3164,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Trade War And Peace",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/12/03/12.2.18-trump-xi-argentina-47c2c371a15f33caefe0f35406d1f877808307b1.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3032,15 +3185,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Behind The Curve",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/12/04/indicator_episode-number_maker-ebea652936385cc862ff0da3e0161b0358cbbe1e.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3052,15 +3206,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Paris Is Burning",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/12/05/gettyimages-1067972378-8c792dcf885d58d6864aa202e68e3fcee95b1f9b.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3072,15 +3227,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "More Jobs, Less Pay",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/12/07/155k-58befe3ec386011a0bb9a1318308918d42d8e776.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3092,15 +3248,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Unto The Brexit",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/12/10/indicator-5ce72e87fcbe5780a054e3e87326bc54ad2e3670.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3112,15 +3269,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Economic Insecurity",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/12/12/gettyimages-1065496822-c10079bb25e45eff8865fbc5b94c16baaf85c89e.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3132,15 +3290,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Why Are There So Many Mattress Stores?",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/12/13/gettyimages-887199572-7580ce50100af0e923f512e4809e3e107fc9f636.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3152,15 +3311,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Economics Of A Border Wall",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/12/14/border_image-2b70bc129d65bdb25225e6887d205dc376852928.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3172,15 +3332,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Lowlights Of The Year",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/12/17/lowlight-awards-40ec1909cf06d599f25c4a39cab618021e70271d.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3192,15 +3353,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Crypto Crash",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/12/18/80-indicator-19c67dadebe599e9aaa20076755ce5fae283ab43.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3212,15 +3374,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Friends Of The Indicator, Pt 1",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/12/20/friends-indicator-a812b8ca395685b24c1228a9356feef1bd73a3d5.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3232,15 +3395,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Friends Of The Indicator, Pt 2",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/12/21/friends-of-the-indicator-image-7445f772135e08af0db390407b7a5eb04fdd4f5c.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3252,15 +3416,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Indicators Of The Year: Immigration",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/12/24/199_cover_image-79f8867a4ca42524a93f2a77d7fd18e96e6c9fb7.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3272,15 +3437,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Indicators Of The Year: Housing",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/12/26/web_image_housing-b845b6ac54b471519c12f53ec1a16b52657c1647.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3292,12 +3458,14 @@
       "source_domain": "news.wypr.org",
       "source_title": "Indicators Of The Year: Opioids",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [],
+      "shared_player_urls": [],
+      "image_urls": [],
+      "possible_ids": [],
       "issues": [
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3309,15 +3477,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Indicators Of The Year: #MeToo",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/12/27/metoo_cover_image-968c27e0e02047be86dfdbe256149c1afa7a4985.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3329,15 +3498,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Economists On Screen, Episode 1: Crazy Rich Asians",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2018/12/31/cra-08100-b492c74603083e78e7e199f36c6b2904a99b73b1.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3349,15 +3519,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Economists On Screen, Episode 2: Jack Ryan, CIA Economist",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/01/02/tom-clancy-s-jack-ryan-jr_103_35283.1.fnl_rgb-48d55be5b81c75c0b17fbb6e525f06ce5ff151ac.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3369,15 +3540,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Economists On Screen, Episode 3: Aaron Sorkin",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/01/02/gettyimages-1309919-0b99702f737d31a1a92a4fce4cac963d75025f96.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3389,15 +3561,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Economists On Screen, Episode 4: Stockholm",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/01/03/stockholm_0hero-638880428a4082c9bdee97142867180241eae6b1.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3409,15 +3582,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Jobs, Inflation And The Phillips Curve",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/01/07/jobs-monday-92f7895d802d262e90c059b8e33b5b47109239df.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3429,15 +3603,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Are We Ready For A Recession?",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/01/09/indicator_episode-number_maker-4faad668fa0c42c978b49df847041ad79c4e0788.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3449,15 +3624,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "U.S.-China Trade: Where Are We Now?",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/01/10/gettyimages-871917762-a9a53200ab7423c1f837f7dc93506e0baa03142b.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3469,12 +3645,14 @@
       "source_domain": "news.wypr.org",
       "source_title": "Shutdown Economics",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [],
+      "shared_player_urls": [],
+      "image_urls": [],
+      "possible_ids": [],
       "issues": [
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3486,15 +3664,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "10,000 Economists Walk Into A Bar",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/01/14/img_0269-098af846f4782e80ac0684c0d1885ac58f4b9b96.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3506,15 +3685,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Working Women: Why The U.S. Is Behind",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/01/15/75-a67bcb4a9d0bec5280e9f0a603c899cda9429b35.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3526,15 +3706,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Extremely Cautious Case For Extremely Mild Optimism",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/01/16/68-indicator-37c78a411bc896cba72d1c7f18be28c3181a1a8b.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3546,15 +3727,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "R.I.P. Jack Bogle, Democratizer Of Investing",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/01/17/ap_931123921749-189062a04d7869f23ebd67b5a2788ba586988380.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3566,15 +3748,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "What Keeps Economists Up At Night? And Other Stuff",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/01/18/img_0227-043252fb8c8f70b7ae1818a618c11f9fe94744ec.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3586,15 +3769,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Shooting Bambi To Save Mother Nature",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/01/22/_mg_1625-db008192a3f78f74068893680af321edccf23218.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3606,15 +3790,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "When Tariffs Hit Home",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/01/23/peanutfarm-dff43f617adcbe386166ace73abc21acb489a279.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3626,15 +3811,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "HAIL To College Access",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/01/24/img_0078-8e30addb2f3b73fd120857c2028bcd29edef20fb.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3646,15 +3832,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Globalization At Davos: What Happened?",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/01/28/file-21-d6fd0110e6ed5a60d5dcf52a01a203d4ab97aacd.jpeg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3666,15 +3853,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "A Bond Is Born",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/01/29/gettyimages-599655428-fb067156639f604aa862fae762c0a1295e12ef0a.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3686,15 +3874,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "How To Price A Government Shutdown",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/01/30/3billion-35e1e5ebb86241d974e204e49ba32d2ff24d3b45.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3706,15 +3895,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Jobs Friday 5",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/02/01/5-indicator-1f17ed757c267df59e51f573c0816c16e3344abb.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3726,15 +3916,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Cold-o-nomics",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/02/04/gettyimages-1091322666-a9e1005d1a0972fbe22051559d524366224705ae.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3746,15 +3937,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Disease Detectives",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/02/07/winslet-7be9b1a3d94b2dee6efaff41c3287ae6da5274da.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3766,15 +3958,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Small Town Boom",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/02/08/45-bff665dffa944cd70683b9dd08eecd1a1a80227e.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3786,15 +3979,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "How Violence Limits Economic Activity",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/02/11/11001-604c308370c9dd012ccb75c0f5495b425b3b534e.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3806,15 +4000,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Fortnite Vs. Backpack Kid: Dance Battle Royale",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/02/12/gettyimages-937480714-ccb75ad0315c16a2986dae98d14072f6dd3a59f5.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3826,15 +4021,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Strike That Changed U.S. Labor",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/02/13/gettyimages-2667545-cdaf32fa327800867013467d921c0ab88419546d.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3846,15 +4042,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Your Questions, Answered ❤️",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/02/14/gettyimages-161625828-d5e8479f923aba03e7b4ff3e54c7c41fdb481640.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3866,15 +4063,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "What Does \"National Emergency\" Actually Mean?",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/02/15/32-indicator-f2262aae339ad27964868b3a33dfc2b31d0c7803.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3886,15 +4084,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Super Bowl: Key Housing Indicator",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/02/19/housing_sb-2b9d1f2c5af7761b52b787bde05f98a2e8b24882.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3906,15 +4105,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Investing: Wait For It...?",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/02/21/gettyimages-1092098124-a8b0168bbacd983ff758bb50f43fe1e91ae6951e.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3926,15 +4126,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Unsung Economists #1: Sadie Alexander",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/02/22/sadalex2-c5651d4ae6eea4937b0182ad06450426d5662a26.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3946,15 +4147,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Payday Loans And Debt Traps",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/02/25/18000-78ecdd1ee09db8c63d356188478ae0364002b250.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3966,15 +4168,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "More Debt, Less Problems",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/02/27/15.3-f75eb5e773980d033a19ae7a29e824794b7a5926.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -3986,15 +4189,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Dancing On The Debt Ceiling",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/02/28/2trillion-235b4377325b2218ad5c4cb806009ac8fb8d3720.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4006,15 +4210,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Who Is The Neoliberal Shill Of The Year?",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/03/01/neoliberalism-31f1dfb906ec2df808273cca96e7a0648986fdc0.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4026,15 +4231,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "5 Misconceptions About The Chinese Economy",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/03/04/551-e33da920a79fdd58bb15f314ae5844b38e810e44.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4046,15 +4252,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Trade War And Peace",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/03/05/250-billion-indicator-424602fa6f03f5efd98d8a370bb3bb5f47a2d2fb.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4066,15 +4273,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Tampons: That Bloody Sales Tax",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/03/06/gettyimages-512027468-eaf954c15b1dcd8f2aec22b136177c8aaeed1a11.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4086,15 +4294,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Inequality In America",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/03/07/ap_796654556844-56486d4ee9f781b52bc431f0abe322ce835d101e.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4106,15 +4315,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Gender Segregation In The Workplace",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/03/08/gettyimages-1124819782-e85d38ed180b228f5afc8793273586a3f9218fdc.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4126,15 +4336,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "March Madness: Britain Leaving The EU",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/03/11/gettyimages-1127796924-9178451119c4fe6b21a4de8b1cc433b36fe5077f.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4146,15 +4357,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "A Tale Of Two Dollar Stores",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/03/12/dollar-store-pix-2-c0e0285be41276d6ab5c56e79ccaa70e68a3755b.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4166,15 +4378,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Economy Inside Your Head",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/03/13/11-indicator-d481fce205ec25ffc9515beea725a4244fc19f84.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4186,15 +4399,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Saying 'I Do' To Lab-Grown Diamonds",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/03/14/diamonds-764b899fcf86f8527ff9476f34ab2e78458c9418.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4206,15 +4420,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Cost Of Student Debt",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/03/18/trillion-f22d312e8d90fbe06b09188901b4cd991ee6a60a.png"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4226,15 +4441,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Coffee? Thank U, Next",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/03/19/gettyimages-868562334-3f8257932bf7fda93ee67ddc3d81534894377b94.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4246,15 +4462,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Why Are Venezuelans Starving?",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/03/20/gettyimages-532139064-15b62939b613669e3be4de63f45b0471e97af68d.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4266,15 +4483,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Lyft Going Public: The Dual-Class Share Dilemma",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/03/20/20-indicator-78fea6426f90af4f39fd20883ef34c5d078eadca.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4286,15 +4504,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Venezuela By The Numbers",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/03/26/venezuela_day1-8a78a7271fb720caea4041faf8a6f800ac7e682c.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4306,15 +4525,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Dry Cleaners, Housing, The Stock Market And Rip It",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/03/28/photo-mar-27-1-29-20-pm-fdfeec7a81c8f80049a95ae0cfe486316da6807e.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4326,15 +4546,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "An Indicator In The Hand",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/03/29/cover-683254811f2c1d3fb23c89c5e823873432b920ea.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4346,15 +4567,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "A Crisis Of Consumer Confidence?",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/04/01/1241-4e38d828335eb719acf91de5f7e38f6ed48c336f.png"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4366,15 +4588,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "What Sex Work Reveals About Risk",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/04/02/love-ranch-a2ef070f5de6c33bc5c7c4b44d0e713fec312ee9.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4386,15 +4609,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The 20-Year Quest To Save Nutella",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/04/03/rtswfv0-7beac7ab42f928d4613ba90fcdf7f165f015ff28.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4406,12 +4630,14 @@
       "source_domain": "news.wypr.org",
       "source_title": "The China Corruption Crackdown: Sincere Or Cynical?",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [],
+      "shared_player_urls": [],
+      "image_urls": [],
+      "possible_ids": [],
       "issues": [
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4423,15 +4649,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Jobs Friday: Chillaxing Edition",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/04/05/196000-e29898676b96af2fd85d12460939c7781384c2e1.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4443,15 +4670,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "How To Measure Happiness",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/04/08/19-16ae705bbf212450d8a747be2412e61ca99dced7.jpeg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4463,15 +4691,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Maple Syrup Cartel",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/04/10/gettyimages-57049700-1ca5b4f2b8a6b355637e45f2b6d7ef605c9c3b8a.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4483,15 +4712,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "How Trade Helps Explain Inequality",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/04/11/kim1-12a076efa2f403d2b60fff0e652c4ca90e64a23b.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4503,15 +4733,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Solving Problems Caused By International Trade",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/04/12/trade2-d8422dfec3aad7c9fc28a12a640ced8de5f38252.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4523,15 +4754,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Cost Of Measles",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/04/15/gettyimages-1141748707-13acbed85c3cf53c93907d5f4d5bbf251c09c281.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4543,15 +4775,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Why Do We Still Use QWERTY Keyboards?",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/04/16/qwerty-indicator-dfe069442de2bb10781f9e98bf483439e4e8593b.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4563,15 +4796,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Why Do Introverts Get Paid Less?",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/04/17/introverts-indicator-d8207f5e0b5e787b4b34213099ec4bb8efb8597c.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4583,15 +4817,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "A Brief History Of Income Taxes",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/04/18/16-4e10120b0d3b09d237a5b27d5166b552b1e2e971.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4603,15 +4838,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "The Traffic Tariff",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/04/22/img_7445-f10fb64cad754a86b29a5942051aef3bc0738988.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4623,16 +4859,17 @@
       "source_domain": "news.wypr.org",
       "source_title": "What Happened To U.S. Workers?",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3",
         "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/04/20190423_indicator_ft_live_panel_full.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/04/23/photo-apr-11-9-02-59-pm-05fe5b4fe6c4e48f29ca1c2ed725baa99475d3c3.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4644,15 +4881,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Is Everything Awesome In The Economy?",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/04/24/awesome-1bc296d864ab5aac7f20ee6fe0a600a34c26d2a2.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4664,15 +4902,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Selling A T-Rex On eBay",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/04/25/son-of-samson--4ea61171628191c5bd221b464ace0053265ec7cd.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     },
     {
@@ -4684,15 +4923,16 @@
       "source_domain": "news.wypr.org",
       "source_title": "Where The Gender Pay Gap Is Widest",
       "title_score": 1.0,
-      "valid_audio_urls": [
+      "episode_specific_audio_urls": [
         "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
       ],
-      "suspicious_media_urls": [
+      "shared_player_urls": [],
+      "image_urls": [
         "https://media.npr.org/assets/img/2019/04/29/ladyemoji-817723a68a49f23a14aec1233fff39e557f01fa1.jpg"
       ],
+      "possible_ids": [],
       "issues": [
-        "non_audio_media_detected",
-        "duplicate_audio_url"
+        "duplicate_episode_specific_audio"
       ]
     }
   ],
