@@ -1,6 +1,6 @@
 {
-  "next_date": "2020-05-19T16:40:57-04:00",
-  "episode_count": 1206,
+  "next_date": "2020-03-26T18:40:00-04:00",
+  "episode_count": 1244,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -10855,6 +10855,348 @@
       "audio_id": "859921359",
       "player_url": "https://www.npr.org/player/embed/859911696/859921359",
       "description": "Melissa Dell, winner of the John Bates Clark Medal for economics, on why poverty and insecurity are so persistent in certain parts of the world."
+    },
+    {
+      "title": "The Public Transit Problem",
+      "date": "2020-05-19T19:09:15-04:00",
+      "npr_url": "https://www.npr.org/2020/05/19/859156652/the-public-transit-problem",
+      "story_id": "859156652",
+      "audio_id": "859159063",
+      "player_url": "https://www.npr.org/player/embed/859156652/859159063",
+      "description": "Public transit systems are vital to cities. Many have been shut down or slowed during the pandemic. Now city administrators have to figure out how to reopen them."
+    },
+    {
+      "title": "Small Banks' Corona Crunch",
+      "date": "2020-05-18T16:54:35-04:00",
+      "npr_url": "https://www.npr.org/2020/05/15/857212304/small-banks-corona-crunch",
+      "story_id": "857212304",
+      "audio_id": "858271283",
+      "player_url": "https://www.npr.org/player/embed/857212304/858271283",
+      "description": "Many banks have changed the way they work, as they hurry to get billions in CARES Act cash to small businesses."
+    },
+    {
+      "title": "Waiting For A Check",
+      "date": "2020-05-15T17:19:00-04:00",
+      "npr_url": "https://www.npr.org/2020/05/15/857215666/waiting-for-a-check",
+      "story_id": "857215666",
+      "audio_id": "857222315",
+      "player_url": "https://www.npr.org/player/embed/857215666/857222315",
+      "description": "State unemployment offices have been slammed, as 36 million Americans have lost their jobs. And now individuals and the U.S. economy are depending on these often underfunded operations to step up."
+    },
+    {
+      "title": "Reopening Sports: Does MMA Point The Way?",
+      "date": "2020-05-14T16:57:16-04:00",
+      "npr_url": "https://www.npr.org/2020/05/14/856514247/reopening-sports-does-mma-point-the-way",
+      "story_id": "856514247",
+      "audio_id": "856520836",
+      "player_url": "https://www.npr.org/player/embed/856514247/856520836",
+      "description": "Mixed martial arts is the first major spectator sport in the U.S. to host live events since the coronavirus lockdown. Other sports are watching to see whether MMA could point the way."
+    },
+    {
+      "title": "Coronavirus, Farmworkers And America's Food Supply",
+      "date": "2020-05-13T15:12:20-04:00",
+      "npr_url": "https://www.npr.org/2020/05/13/855523199/coronavirus-farmworkers-and-americas-food-supply",
+      "story_id": "855523199",
+      "audio_id": "855533901",
+      "player_url": "https://www.npr.org/player/embed/855523199/855533901",
+      "description": "The working conditions on many farms mean that agricultural laborers are at high risk of getting COVID-19. That poses a real threat to those workers and to the country's food supply."
+    },
+    {
+      "title": "Pay Cuts Vs. Layoffs",
+      "date": "2020-05-12T12:48:00-04:00",
+      "npr_url": "https://www.npr.org/2020/05/12/854889059/pay-cuts-vs-layoffs",
+      "story_id": "854889059",
+      "audio_id": "855066846",
+      "player_url": "https://www.npr.org/player/embed/854889059/855066846",
+      "description": "Companies hammered by the economic collapse due to the coronavirus pandemic are being forced to make a hard choice: lay staff off or cut their pay."
+    },
+    {
+      "title": "On Demand",
+      "date": "2020-05-11T15:00:00-04:00",
+      "npr_url": "https://www.npr.org/2020/05/11/854049027/on-demand",
+      "story_id": "854049027",
+      "audio_id": "854057307",
+      "player_url": "https://www.npr.org/player/embed/854049027/854057307",
+      "description": "The U.S. economy depends on consumer demand. And demand is way down because of the coronavirus pandemic. What happens if it doesn't come back?"
+    },
+    {
+      "title": "A Brutal Jobs Report",
+      "date": "2020-05-08T15:36:50-04:00",
+      "npr_url": "https://www.npr.org/2020/05/08/853143026/a-brutal-jobs-report",
+      "story_id": "853143026",
+      "audio_id": "853154910",
+      "player_url": "https://www.npr.org/player/embed/853143026/853154910",
+      "description": "The jobs report for this month was nightmarish. But as bad as it was, it hid some even worse news about the employment situation."
+    },
+    {
+      "title": "Gov. Newsom On Reopening California",
+      "date": "2020-05-07T15:32:07-04:00",
+      "npr_url": "https://www.npr.org/2020/05/07/852436112/gov-newsom-on-reopening-california",
+      "story_id": "852436112",
+      "audio_id": "852439777",
+      "player_url": "https://www.npr.org/player/embed/852436112/852439777",
+      "description": "California Governor Gavin Newsom talks with Stacey Vanek Smith about his plans to reopen the fifth largest economy in the world."
+    },
+    {
+      "title": "Masks En Vogue",
+      "date": "2020-05-06T21:02:00-04:00",
+      "npr_url": "https://www.npr.org/2020/05/06/851752693/masks-en-vogue",
+      "story_id": "851752693",
+      "audio_id": "851766016",
+      "player_url": "https://www.npr.org/player/embed/851752693/851766016",
+      "description": "If the pandemic goes on much longer, or its aftereffects linger, face masks will inevitably become a fashion accessory."
+    },
+    {
+      "title": "Italy Reopens: A Tale of Two Bookstores",
+      "date": "2020-05-05T16:22:23-04:00",
+      "npr_url": "https://www.npr.org/2020/05/05/851085346/italy-reopens-a-tale-of-two-bookstores",
+      "story_id": "851085346",
+      "audio_id": "851086934",
+      "player_url": "https://www.npr.org/player/embed/851085346/851086934",
+      "description": "Italy was one of the countries hardest hit by coronavirus, and was one of the first to shut down its economy. Now it's reopening. But not everyone's happy about it."
+    },
+    {
+      "title": "The Workplace In The COVID-19 Era",
+      "date": "2020-05-04T17:11:08-04:00",
+      "npr_url": "https://www.npr.org/2020/05/04/850408621/the-workplace-in-the-covid-19-era",
+      "story_id": "850408621",
+      "audio_id": "850410614",
+      "player_url": "https://www.npr.org/player/embed/850408621/850410614",
+      "description": "As businesses make plans to reopen their workplaces, we're probably going to find that these spaces will look very different than before."
+    },
+    {
+      "title": "Creating A Post Pandemic World",
+      "date": "2020-05-01T16:31:39-04:00",
+      "npr_url": "https://www.npr.org/2020/05/01/849232762/creating-a-post-pandemic-world",
+      "story_id": "849232762",
+      "audio_id": "849244469",
+      "player_url": "https://www.npr.org/player/embed/849232762/849244469",
+      "description": "We're all thinking about what the world might look like after this pandemic. Several years ago, Justin Marks had a vision of how things might be, in his TV show, Counterpart."
+    },
+    {
+      "title": "Essential Workers",
+      "date": "2020-04-30T19:07:03-04:00",
+      "npr_url": "https://www.npr.org/2020/04/30/848829948/essential-workers",
+      "story_id": "848829948",
+      "audio_id": "848834097",
+      "player_url": "https://www.npr.org/player/embed/848829948/848834097",
+      "description": "Essential workers put themselves at risk of infection every day to keep the economy running. But many aren't well protected or compensated for the dangerous work they do."
+    },
+    {
+      "title": "Getting Back To Business",
+      "date": "2020-04-29T18:04:08-04:00",
+      "npr_url": "https://www.npr.org/2020/04/29/848111619/getting-back-to-business",
+      "story_id": "848111619",
+      "audio_id": "848119264",
+      "player_url": "https://www.npr.org/player/embed/848111619/848119264",
+      "description": "Small and medium size enterprises tend not to have much of a cash cushion, so most are desperate to get back to work. But many are finding that reopening after a pandemic is a messy business."
+    },
+    {
+      "title": "Disease In A Globalized World",
+      "date": "2020-04-28T17:44:33-04:00",
+      "npr_url": "https://www.npr.org/2020/04/28/847555058/disease-in-a-globalized-world",
+      "story_id": "847555058",
+      "audio_id": "847558806",
+      "player_url": "https://www.npr.org/player/embed/847555058/847558806",
+      "description": "Globalization and urbanization historically have made the global economy more productive and efficient — and also more vulnerable to pandemics. But now they can be forces for good in the fight against disease."
+    },
+    {
+      "title": "The Bankruptcy Question",
+      "date": "2020-04-27T15:23:40-04:00",
+      "npr_url": "https://www.npr.org/2020/04/27/846756651/the-bankruptcy-question",
+      "story_id": "846756651",
+      "audio_id": "846763414",
+      "player_url": "https://www.npr.org/player/embed/846756651/846763414",
+      "description": "The COVID-19 pandemic is driving thousands of people and businesses into bankruptcy."
+    },
+    {
+      "title": "How The Fed Fights Coronavirus",
+      "date": "2020-04-24T16:42:00-04:00",
+      "npr_url": "https://www.npr.org/2020/04/24/844809186/how-the-fed-fights-coronavirus",
+      "story_id": "844809186",
+      "audio_id": "844864227",
+      "player_url": "https://www.npr.org/player/embed/844809186/844864227",
+      "description": "Much has been made of the unprecedented legislation passed by Congress in its attempt to curtail the economic damage of COVID-19. But what about the Federal Reserve?"
+    },
+    {
+      "title": "The Great Potato Giveaway",
+      "date": "2020-04-23T20:26:39-04:00",
+      "npr_url": "https://www.npr.org/2020/04/23/843437140/the-great-potato-giveaway",
+      "story_id": "843437140",
+      "audio_id": "843441516",
+      "player_url": "https://www.npr.org/player/embed/843437140/843441516",
+      "description": "Supermarket shelves are empty, and food banks around the country are besieged. So why are farmers dumping, destroying and giving away food?"
+    },
+    {
+      "title": "Why We Didn't Prepare For The Pandemic",
+      "date": "2020-04-22T13:39:35-04:00",
+      "npr_url": "https://www.npr.org/2020/04/22/841988400/why-we-didnt-prepare-for-the-pandemic",
+      "story_id": "841988400",
+      "audio_id": "842002274",
+      "player_url": "https://www.npr.org/player/embed/841988400/842002274",
+      "description": "We've had plenty of warnings over the years that we weren't ready for a pandemic. Today on the show: the psychology and economics of why."
+    },
+    {
+      "title": "Oil: Less Than Zero",
+      "date": "2020-04-21T17:01:49-04:00",
+      "npr_url": "https://www.npr.org/2020/04/21/840647639/oil-less-than-zero",
+      "story_id": "840647639",
+      "audio_id": "840649101",
+      "player_url": "https://www.npr.org/player/embed/840647639/840649101",
+      "description": "The price of a barrel of West Texas Intermediate crude oil fell below zero. In other words, suppliers were paying people to take it off their hands. How did that happen? And what does it mean?"
+    },
+    {
+      "title": "Coronavirus And The Digital Divide",
+      "date": "2020-04-20T16:59:51-04:00",
+      "npr_url": "https://www.npr.org/2020/04/20/839270995/coronavirus-and-the-digital-divide",
+      "story_id": "839270995",
+      "audio_id": "839320632",
+      "player_url": "https://www.npr.org/player/embed/839270995/839320632",
+      "description": "We're spending more time at home, and more time with technology — highlighting a deep digital divide in the United States and introducing thorny ethical dilemmas."
+    },
+    {
+      "title": "Where's My Stimulus Check?",
+      "date": "2020-04-17T17:03:34-04:00",
+      "npr_url": "https://www.npr.org/2020/04/17/837782941/wheres-my-stimulus-check",
+      "story_id": "837782941",
+      "audio_id": "837786537",
+      "player_url": "https://www.npr.org/player/embed/837782941/837786537",
+      "description": "Sending $1,200 checks to millions of Americans was a big part of the aid bill Congress passed last month. Around 80 million Americans got that money this week. But 60 million are still waiting."
+    },
+    {
+      "title": "Small Businesses On Their Own",
+      "date": "2020-04-16T20:06:00-04:00",
+      "npr_url": "https://www.npr.org/2020/04/16/836616922/small-businesses-on-their-own",
+      "story_id": "836616922",
+      "audio_id": "836619817",
+      "player_url": "https://www.npr.org/player/embed/836616922/836619817",
+      "description": "Congress' recent aid package directed $370 billion to help small businesses. The fund is out of money, and it seems very few who applied got help."
+    },
+    {
+      "title": "Performing After A Pandemic",
+      "date": "2020-04-15T14:49:10-04:00",
+      "npr_url": "https://www.npr.org/2020/04/15/835450828/performing-after-a-pandemic",
+      "story_id": "835450828",
+      "audio_id": "835529370",
+      "player_url": "https://www.npr.org/player/embed/835450828/835529370",
+      "description": "Live performance has always been a risky business, run on thin margins. The COVID-19 pandemic has ratcheted up that risk and sharpened those margins to a razor's edge."
+    },
+    {
+      "title": "Rural Hospitals: The Waiting Game",
+      "date": "2020-04-14T20:05:07-04:00",
+      "npr_url": "https://www.npr.org/2020/04/14/834628512/rural-hospitals-the-waiting-game",
+      "story_id": "834628512",
+      "audio_id": "834645299",
+      "player_url": "https://www.npr.org/player/embed/834628512/834645299",
+      "description": "Rural hospitals already walk a scalpel's edge between solvency and collapse. Coronavirus threatens to push many of them over the brink."
+    },
+    {
+      "title": "The Story So Far",
+      "date": "2020-04-13T16:24:00-04:00",
+      "npr_url": "https://www.npr.org/2020/04/13/833744672/the-story-so-far",
+      "story_id": "833744672",
+      "audio_id": "833749960",
+      "player_url": "https://www.npr.org/player/embed/833744672/833749960",
+      "description": "Five indicators provide a gauge of how daily economic life in America has changed."
+    },
+    {
+      "title": "Why Hospitals Are Laying People Off",
+      "date": "2020-04-10T12:00:29-04:00",
+      "npr_url": "https://www.npr.org/2020/04/09/831397897/why-hospitals-are-laying-people-off",
+      "story_id": "831397897",
+      "audio_id": "831402052",
+      "player_url": "https://www.npr.org/player/embed/831397897/831402052",
+      "description": "Hospitals are ramping up and gathering supplies to deal with a deluge of coronavirus patients. At the same time, revenues are down. All of this means hospitals across the U.S. are laying off workers."
+    },
+    {
+      "title": "Why Sweden Isn't Locking Down",
+      "date": "2020-04-09T19:01:00-04:00",
+      "npr_url": "https://www.npr.org/2020/04/09/831325721/why-sweden-isnt-locking-down",
+      "story_id": "831325721",
+      "audio_id": "831373483",
+      "player_url": "https://www.npr.org/player/embed/831325721/831373483",
+      "description": "Most of the world's developed economies have gone on total economic lockdown to combat coronavirus. Sweden has kept its economy open. Sweden says this is better for the economy and for public health."
+    },
+    {
+      "title": "Coronavirus and Trade",
+      "date": "2020-04-08T18:47:12-04:00",
+      "npr_url": "https://www.npr.org/2020/04/08/830330633/coronavirus-and-trade",
+      "story_id": "830330633",
+      "audio_id": "852055355",
+      "player_url": "https://www.npr.org/player/embed/830330633/852055355",
+      "description": "The coronavirus pandemic may have pushed trade wars off the front page, but such wars are still with us — and they're complicating the world's ability to fight the virus."
+    },
+    {
+      "title": "Coronavirus And The Gig Economy",
+      "date": "2020-04-07T19:18:58-04:00",
+      "npr_url": "https://www.npr.org/2020/04/07/829264795/coronavirus-and-the-gig-economy",
+      "story_id": "829264795",
+      "audio_id": "852051185",
+      "player_url": "https://www.npr.org/player/embed/829264795/852051185",
+      "description": "Many gig workers have suddenly found themselves providing essential services during the COVID-19 pandemic. But many also feel like they have to work in an unsafe situation."
+    },
+    {
+      "title": "Pandemic-onomics: Lessons From The Spanish Flu",
+      "date": "2020-04-06T17:38:00-04:00",
+      "npr_url": "https://www.npr.org/2020/04/06/828345390/pandemic-onomics-lessons-from-the-spanish-flu",
+      "story_id": "828345390",
+      "audio_id": "852019953",
+      "player_url": "https://www.npr.org/player/embed/828345390/852019953",
+      "description": "Different cities responded in different ways to the Spanish Flu outbreak of 1918. And their economies fared differently as a result."
+    },
+    {
+      "title": "The Jobs Crisis",
+      "date": "2020-04-03T16:04:34-04:00",
+      "npr_url": "https://www.npr.org/2020/04/03/826919059/the-jobs-crisis",
+      "story_id": "826919059",
+      "audio_id": "826943409",
+      "player_url": "https://www.npr.org/player/embed/826919059/826943409",
+      "description": "We had almost a decade of growth in the jobs market. But in the last two weeks, nearly 10 million people lost their jobs. Today, we look at the labor market — what's happening and where it's headed."
+    },
+    {
+      "title": "The Coronavirus Pivot",
+      "date": "2020-04-02T19:41:23-04:00",
+      "npr_url": "https://www.npr.org/2020/04/02/826358111/the-coronavirus-pivot",
+      "story_id": "826358111",
+      "audio_id": "826397254",
+      "player_url": "https://www.npr.org/player/embed/826358111/826397254",
+      "description": "Faced with the prospect of shutting up shop because of coronavirus, some companies are retooling and pivoting to keep their doors open and their workers employed."
+    },
+    {
+      "title": "Three Ideas To Fight The Recession",
+      "date": "2020-04-01T18:45:40-04:00",
+      "npr_url": "https://www.npr.org/2020/04/01/825639315/three-ideas-to-fight-the-recession",
+      "story_id": "825639315",
+      "audio_id": "848455172",
+      "player_url": "https://www.npr.org/player/embed/825639315/848455172",
+      "description": "Policymakers can still do more to fight the coronavirus recession. Here are three ideas that we haven't yet tried."
+    },
+    {
+      "title": "Scarcity In The Emergency Room",
+      "date": "2020-03-31T19:01:00-04:00",
+      "npr_url": "https://www.npr.org/2020/03/31/824902754/scarcity-in-the-emergency-room",
+      "story_id": "824902754",
+      "audio_id": "848451513",
+      "player_url": "https://www.npr.org/player/embed/824902754/848451513",
+      "description": "Emergency rooms all over the country are struggling with limited resources: masks, ventilators, hospital beds, doctors. We talk to one ER doctor in New York about how she is managing those resources right now."
+    },
+    {
+      "title": "Listeners Ask, We Answer",
+      "date": "2020-03-30T18:13:42-04:00",
+      "npr_url": "https://www.npr.org/2020/03/30/824139549/listeners-ask-we-answer",
+      "story_id": "824139549",
+      "audio_id": "848445950",
+      "player_url": "https://www.npr.org/player/embed/824139549/848445950",
+      "description": "Coronavirus questions on the yield curve and refinancing. And some of the ways individuals can help."
+    },
+    {
+      "title": "When Should We Restart the Economy?",
+      "date": "2020-03-27T18:40:00-04:00",
+      "npr_url": "https://www.npr.org/2020/03/27/822873592/when-should-we-restart-the-economy",
+      "story_id": "822873592",
+      "audio_id": "848441239",
+      "player_url": "https://www.npr.org/player/embed/822873592/848441239",
+      "description": "President Trump got major backlash this week when he suggested businesses should reopen by Easter. Critics said that was way too early. How do we know when it's safe for businesses to reopen?"
     }
   ]
 }
