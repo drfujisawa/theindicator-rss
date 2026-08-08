@@ -1,0 +1,31 @@
+name: Resolve NPR Filename Audio
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  resolve-filename-audio:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Resolve NPR Indicator filenames
+        run: python resolve_npr_filename_audio.py
+
+      - name: Save filename resolution report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add indicator_npr_filename_resolution.json
+          git diff --cached --quiet || git commit -m "Resolve NPR Indicator audio filenames"
+          git push
