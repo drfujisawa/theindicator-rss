@@ -1,0 +1,30 @@
+{
+  "method": "npr-player-page-audio-resolution",
+  "input_count": 2,
+  "resolved_count": 0,
+  "unresolved_count": 2,
+  "results": [
+    {
+      "reference_date": "2018-10-31",
+      "reference_title": "Paranormal Profits",
+      "npr_story_id": "662708285",
+      "npr_url": "https://www.npr.org/sections/money/2018/10/31/662708285/paranormal-profits",
+      "player_url": "https://www.npr.org/player/embed/662706955/662707862",
+      "status": "not_resolved",
+      "audio_candidates": [],
+      "final_player_url": "https://www.npr.org/player/embed/662706955/662707862",
+      "player_content_type": "text/html;charset=UTF-8"
+    },
+    {
+      "reference_date": "2019-04-22",
+      "reference_title": "The Traffic Tariff",
+      "npr_story_id": "716132270",
+      "npr_url": "https://www.npr.org/sections/money/2019/04/22/716132270/the-traffic-tariff",
+      "player_url": "https://www.npr.org/player/embed/716127469/730102905",
+      "status": "not_resolved",
+      "audio_candidates": [],
+      "final_player_url": "https://www.npr.org/player/embed/716127469/730102905",
+      "player_content_type": "text/html;charset=UTF-8"
+    }
+  ]
+}
