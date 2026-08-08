@@ -10,23 +10,18 @@ from urllib.request import Request, urlopen
 
 
 AUDIT_FILE = "indicator_early_audit.json"
-OUTPUT_FILE = "indicator_recovery_test.json"
+OUTPUT_FILE = "indicator_recovered_episodes.json"
 
-TEST_LIMIT = 50
 TIMEOUT = 20
+REQUEST_DELAY = 0.15
 
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 "
-        "(compatible; IndicatorArchiveRecovery/3.0)"
+        "(compatible; IndicatorArchiveRecovery/4.0)"
     )
 }
 
-
-# Public-radio affiliates known to carry NPR material.
-#
-# Each site may use slightly different section paths,
-# so we'll try several URL patterns for every episode.
 AFFILIATES = [
     "https://news.wypr.org",
     "https://www.wfae.org",
@@ -34,7 +29,6 @@ AFFILIATES = [
     "https://www.delmarvapublicmedia.org",
     "https://www.kclu.org",
 ]
-
 
 SECTION_PREFIXES = [
     "",
@@ -47,60 +41,22 @@ SECTION_PREFIXES = [
 
 
 def slugify(title):
-    """
-    Turn:
-
-    Hurricane Joseph & The Calculator That Time Forgot
-
-    into:
-
-    hurricane-joseph-the-calculator-that-time-forgot
-    """
-
     value = html.unescape(title).lower()
-
     value = value.replace("&", " and ")
-
-    # Remove labels such as "(REBROADCAST)"
-    value = re.sub(
-        r"\([^)]*\)",
-        "",
-        value
-    )
-
-    value = re.sub(
-        r"[^a-z0-9]+",
-        "-",
-        value
-    )
-
+    value = re.sub(r"\([^)]*\)", "", value)
+    value = re.sub(r"[^a-z0-9]+", "-", value)
     return value.strip("-")
 
 
 def fetch(url):
-    request = Request(
-        url,
-        headers=HEADERS
-    )
+    request = Request(url, headers=HEADERS)
 
-    with urlopen(
-        request,
-        timeout=TIMEOUT
-    ) as response:
-
-        final_url = response.geturl()
-
-        content_type = response.headers.get(
-            "Content-Type",
-            ""
+    with urlopen(request, timeout=TIMEOUT) as response:
+        return (
+            response.geturl(),
+            response.headers.get("Content-Type", ""),
+            response.read().decode("utf-8", errors="replace"),
         )
-
-        body = response.read().decode(
-            "utf-8",
-            errors="replace"
-        )
-
-    return final_url, content_type, body
 
 
 def clean(value):
@@ -108,19 +64,8 @@ def clean(value):
         return None
 
     value = html.unescape(value)
-
-    value = re.sub(
-        r"<[^>]+>",
-        " ",
-        value
-    )
-
-    value = re.sub(
-        r"\s+",
-        " ",
-        value
-    )
-
+    value = re.sub(r"<[^>]+>", " ", value)
+    value = re.sub(r"\s+", " ", value)
     return value.strip()
 
 
@@ -129,53 +74,24 @@ def normalize(value):
         return ""
 
     value = clean(value).lower()
+    value = value.replace("&", " and ")
+    value = re.sub(r"\([^)]*\)", "", value)
+    value = re.sub(r"[^a-z0-9]+", " ", value)
 
-    value = value.replace(
-        "&",
-        " and "
-    )
-
-    value = re.sub(
-        r"\([^)]*\)",
-        "",
-        value
-    )
-
-    value = re.sub(
-        r"[^a-z0-9]+",
-        " ",
-        value
-    )
-
-    return " ".join(
-        value.split()
-    )
+    return " ".join(value.split())
 
 
 def title_score(reference, candidate):
-    ref_words = set(
-        normalize(reference).split()
-    )
-
-    candidate_words = set(
-        normalize(candidate).split()
-    )
+    ref_words = set(normalize(reference).split())
+    candidate_words = set(normalize(candidate).split())
 
     if not ref_words or not candidate_words:
         return 0.0
 
-    intersection = len(
-        ref_words & candidate_words
+    return (
+        len(ref_words & candidate_words)
+        / len(ref_words | candidate_words)
     )
-
-    union = len(
-        ref_words | candidate_words
-    )
-
-    if union == 0:
-        return 0.0
-
-    return intersection / union
 
 
 def extract_meta(page):
@@ -195,16 +111,9 @@ def extract_meta(page):
     ]
 
     for pattern in title_patterns:
-        match = re.search(
-            pattern,
-            page,
-            re.I | re.S
-        )
-
+        match = re.search(pattern, page, re.I | re.S)
         if match:
-            title = clean(
-                match.group(1)
-            )
+            title = clean(match.group(1))
             break
 
     description_patterns = [
@@ -219,142 +128,35 @@ def extract_meta(page):
     ]
 
     for pattern in description_patterns:
-        match = re.search(
-            pattern,
-            page,
-            re.I | re.S
-        )
-
+        match = re.search(pattern, page, re.I | re.S)
         if match:
-            description = clean(
-                match.group(1)
-            )
+            description = clean(match.group(1))
             break
 
     return title, description
 
 
-def extract_dates(page):
-    results = []
-
-    patterns = [
-        r'datetime=["\']([^"\']+)["\']',
-        (
-            r'(January|February|March|April|May|June|'
-            r'July|August|September|October|November|December)'
-            r'\s+\d{1,2},\s+20\d{2}'
-        ),
-        r'20\d{2}-\d{2}-\d{2}',
-    ]
-
-    for pattern in patterns:
-        matches = re.findall(
-            pattern,
-            page,
-            re.I
-        )
-
-        for match in matches:
-            if isinstance(
-                match,
-                tuple
-            ):
-                match = " ".join(
-                    match
-                )
-
-            match = clean(
-                str(match)
-            )
-
-            if (
-                match
-                and match not in results
-            ):
-                results.append(
-                    match
-                )
-
-    return results[:20]
-
-
 def extract_media(page):
-    """
-    Look for several kinds of surviving audio information.
-
-    We aren't assuming which one the affiliate CMS uses.
-    """
-
     audio_urls = []
-    player_urls = []
     possible_ids = []
 
-    media_patterns = [
+    patterns = [
         r'https?://[^"\'>\s\\]+\.mp3(?:\?[^"\'>\s\\]*)?',
         r'https?://ondemand\.npr\.org/[^"\'>\s\\]+',
         r'https?://play\.podtrac\.com/[^"\'>\s\\]+',
         r'https?://media\.npr\.org/[^"\'>\s\\]+',
         r'https?://[^"\'>\s\\]*triton[^"\'>\s\\]+',
-        r'https?://[^"\'>\s\\]*audio[^"\'>\s\\]+\.mp3[^"\'>\s\\]*',
     ]
 
-    for pattern in media_patterns:
+    for pattern in patterns:
+        for match in re.findall(pattern, page, re.I):
+            value = html.unescape(match)
+            value = value.replace("\\/", "/")
+            value = value.replace("\\u0026", "&")
 
-        for match in re.findall(
-            pattern,
-            page,
-            re.I
-        ):
-            value = html.unescape(
-                match
-            )
+            if value not in audio_urls:
+                audio_urls.append(value)
 
-            value = value.replace(
-                "\\/",
-                "/"
-            )
-
-            value = value.replace(
-                "\\u0026",
-                "&"
-            )
-
-            if (
-                value
-                not in audio_urls
-            ):
-                audio_urls.append(
-                    value
-                )
-
-    player_patterns = [
-        r'https?://www\.npr\.org/player/embed/[^"\'>\s]+',
-        r'/player/embed/[^"\'>\s]+',
-        r'https?://[^"\'>\s]+/player/[^"\'>\s]+',
-    ]
-
-    for pattern in player_patterns:
-
-        for match in re.findall(
-            pattern,
-            page,
-            re.I
-        ):
-            value = html.unescape(
-                match
-            )
-
-            if (
-                value
-                not in player_urls
-            ):
-                player_urls.append(
-                    value
-                )
-
-    #
-    # Look for likely NPR IDs stored in JSON/script data.
-    #
     id_patterns = [
         r'"storyId"\s*:\s*"?(\d{6,})"?',
         r'"story_id"\s*:\s*"?(\d{6,})"?',
@@ -365,412 +167,147 @@ def extract_media(page):
     ]
 
     for pattern in id_patterns:
+        for value in re.findall(pattern, page, re.I):
+            if value not in possible_ids:
+                possible_ids.append(value)
 
-        for value in re.findall(
-            pattern,
-            page,
-            re.I
-        ):
-            if (
-                value
-                not in possible_ids
-            ):
-                possible_ids.append(
-                    value
-                )
-
-    return {
-        "audio_urls":
-            audio_urls[:20],
-
-        "player_urls":
-            player_urls[:20],
-
-        "possible_ids":
-            possible_ids[:20],
-    }
+    return audio_urls, possible_ids
 
 
-def make_candidate_urls(
-    date,
-    title
-):
+def make_candidate_urls(date, title):
     slug = slugify(title)
-
-    candidates = []
+    urls = []
 
     for domain in AFFILIATES:
-
         for prefix in SECTION_PREFIXES:
-
             if prefix:
-
-                url = (
-                    f"{domain}/"
-                    f"{prefix}/"
-                    f"{date}/"
-                    f"{slug}"
-                )
-
+                url = f"{domain}/{prefix}/{date}/{slug}"
             else:
+                url = f"{domain}/{date}/{slug}"
 
-                url = (
-                    f"{domain}/"
-                    f"{date}/"
-                    f"{slug}"
-                )
+            if url not in urls:
+                urls.append(url)
 
-            if (
-                url
-                not in candidates
-            ):
-                candidates.append(
-                    url
-                )
+    return urls
 
-    return candidates
 
+def recover_episode(reference):
+    title = reference["title"]
+    date = reference["date"]
 
-def probe_episode(
-    reference_date,
-    reference_title
-):
-    attempts = []
-    matches = []
+    urls = make_candidate_urls(date, title)
 
-    candidate_urls = (
-        make_candidate_urls(
-            reference_date,
-            reference_title
-        )
-    )
-
-    for url in candidate_urls:
-
-        attempt = {
-            "requested_url":
-                url,
-        }
-
-        try:
-
-            (
-                final_url,
-                content_type,
-                page,
-            ) = fetch(url)
-
-        except HTTPError as exc:
-
-            attempt[
-                "status"
-            ] = (
-                f"http_{exc.code}"
-            )
-
-            attempts.append(
-                attempt
-            )
-
-            continue
-
-        except (
-            URLError,
-            TimeoutError,
-        ) as exc:
-
-            attempt[
-                "status"
-            ] = "request_error"
-
-            attempt[
-                "error"
-            ] = str(exc)
-
-            attempts.append(
-                attempt
-            )
-
-            continue
-
-        except Exception as exc:
-
-            attempt[
-                "status"
-            ] = "error"
-
-            attempt[
-                "error"
-            ] = str(exc)
-
-            attempts.append(
-                attempt
-            )
-
-            continue
-
-        title, description = (
-            extract_meta(page)
-        )
-
-        score = title_score(
-            reference_title,
-            title
-        )
-
-        media = extract_media(
-            page
-        )
-
-        attempt.update({
-            "status":
-                "page_returned",
-
-            "final_url":
-                final_url,
-
-            "domain":
-                urlparse(
-                    final_url
-                ).netloc,
-
-            "content_type":
-                content_type,
-
-            "page_title":
-                title,
-
-            "title_score":
-                round(
-                    score,
-                    3
-                ),
-
-            "description":
-                description,
-
-            "dates_found":
-                extract_dates(
-                    page
-                ),
-
-            "audio_urls":
-                media[
-                    "audio_urls"
-                ],
-
-            "player_urls":
-                media[
-                    "player_urls"
-                ],
-
-            "possible_ids":
-                media[
-                    "possible_ids"
-                ],
-        })
-
-        attempts.append(
-            attempt
-        )
-
-        #
-        # A score this high strongly suggests
-        # this is the correct story page.
-        #
-        if score >= 0.65:
-
-            matches.append(
-                attempt
-            )
-
-            print(
-                "  FOUND:",
-                title
-            )
-
-            print(
-                "  URL:",
-                final_url
-            )
-
-            print(
-                "  Audio URLs:",
-                len(
-                    media[
-                        "audio_urls"
-                    ]
-                )
-            )
-
-            print(
-                "  Player URLs:",
-                len(
-                    media[
-                        "player_urls"
-                    ]
-                )
-            )
-
-            #
-            # One confirmed affiliate copy
-            # is sufficient for this test.
-            #
-            break
-
-        time.sleep(0.15)
-
-    matches.sort(
-        key=lambda item: (
-            item.get(
-                "title_score",
-                0
-            ),
-            len(
-                item.get(
-                    "audio_urls",
-                    []
-                )
-            ),
-        ),
-        reverse=True,
-    )
-
-    return (
-        matches,
-        attempts
-    )
-
-
-with open(
-    AUDIT_FILE,
-    "r",
-    encoding="utf-8"
-) as file:
-
-    audit = json.load(
-        file
-    )
-
-
-missing = audit.get(
-    "possible_missing",
-    []
-)[:TEST_LIMIT]
-
-
-report = {
-    "proof_of_concept": True,
-
-    "method":
-        "direct-affiliate-probe",
-
-    "attempted_count":
-        len(missing),
-
-    "affiliate_page_found_count":
-        0,
-
-    "audio_found_count":
-        0,
-
-    "player_found_count":
-        0,
-
-    "results":
-        [],
-}
-
-
-for number, episode in enumerate(
-    missing,
-    start=1
-):
-
-    reference_date = (
-        episode["date"]
-    )
-
-    reference_title = (
-        episode["title"]
-    )
-
-    print()
-    print(
-        f"[{number}/"
-        f"{len(missing)}] "
-        f"{reference_date} — "
-        f"{reference_title}"
-    )
-
-    matches, attempts = (
-        probe_episode(
-            reference_date,
-            reference_title
-        )
-    )
-
-    result = {
-        "reference_date":
-            reference_date,
-
-        "reference_title":
-            reference_title,
-
-        "reference_year":
-            episode.get(
-                "reference_year"
-            ),
-
-        "reference_episode":
-            episode.get(
-                "reference_episode"
-            ),
-
-        "matches":
-            matches,
-
-        "attempts":
-            attempts,
+    failure_counts = {
+        "http_404": 0,
+        "other_http": 0,
+        "request_error": 0,
+        "page_mismatch": 0,
+        "no_audio": 0,
     }
 
-    if matches:
+    for url in urls:
+        try:
+            final_url, content_type, page = fetch(url)
 
-        report[
-            "affiliate_page_found_count"
-        ] += 1
+        except HTTPError as exc:
+            if exc.code == 404:
+                failure_counts["http_404"] += 1
+            else:
+                failure_counts["other_http"] += 1
 
-        best = matches[0]
+            continue
 
-        if best.get(
-            "audio_urls"
-        ):
-            report[
-                "audio_found_count"
-            ] += 1
+        except (URLError, TimeoutError):
+            failure_counts["request_error"] += 1
+            continue
 
-        if best.get(
-            "player_urls"
-        ):
-            report[
-                "player_found_count"
-            ] += 1
+        except Exception:
+            failure_counts["request_error"] += 1
+            continue
 
-    report[
-        "results"
-    ].append(
-        result
+        page_title, description = extract_meta(page)
+        score = title_score(title, page_title)
+
+        if score < 0.65:
+            failure_counts["page_mismatch"] += 1
+            continue
+
+        audio_urls, possible_ids = extract_media(page)
+
+        if not audio_urls:
+            failure_counts["no_audio"] += 1
+            continue
+
+        return {
+            "status": "recovered",
+            "reference_date": date,
+            "reference_title": title,
+            "reference_year": reference.get("reference_year"),
+            "reference_episode": reference.get("reference_episode"),
+            "source_url": final_url,
+            "source_domain": urlparse(final_url).netloc,
+            "source_title": page_title,
+            "title_score": round(score, 3),
+            "description": description,
+            "audio_url": audio_urls[0],
+            "all_audio_urls": audio_urls[:10],
+            "possible_ids": possible_ids[:10],
+        }
+
+        time.sleep(REQUEST_DELAY)
+
+    return {
+        "status": "not_recovered",
+        "reference_date": date,
+        "reference_title": title,
+        "reference_year": reference.get("reference_year"),
+        "reference_episode": reference.get("reference_episode"),
+        "failure_summary": failure_counts,
+    }
+
+
+with open(AUDIT_FILE, "r", encoding="utf-8") as file:
+    audit = json.load(file)
+
+missing = audit.get("possible_missing", [])
+
+recovered = []
+failed = []
+
+for number, episode in enumerate(missing, start=1):
+    print(
+        f"[{number}/{len(missing)}] "
+        f"{episode['date']} — {episode['title']}"
     )
+
+    result = recover_episode(episode)
+
+    if result["status"] == "recovered":
+        recovered.append(result)
+
+        print(
+            "  RECOVERED:",
+            result["source_domain"],
+            result["audio_url"]
+        )
+    else:
+        failed.append(result)
+        print("  Not recovered.")
 
     time.sleep(0.5)
 
 
-with open(
-    OUTPUT_FILE,
-    "w",
-    encoding="utf-8"
-) as file:
+report = {
+    "method": "direct-affiliate-recovery",
+    "reference_missing_count": len(missing),
+    "recovered_count": len(recovered),
+    "failed_count": len(failed),
+    "recovered": recovered,
+    "failed": failed,
+}
 
+
+with open(OUTPUT_FILE, "w", encoding="utf-8") as file:
     json.dump(
         report,
         file,
@@ -780,46 +317,10 @@ with open(
 
 
 print()
-print(
-    "================================"
-)
-print(
-    "Direct affiliate probe complete"
-)
-
-print(
-    "Attempted:",
-    report[
-        "attempted_count"
-    ]
-)
-
-print(
-    "Affiliate pages found:",
-    report[
-        "affiliate_page_found_count"
-    ]
-)
-
-print(
-    "Pages exposing audio:",
-    report[
-        "audio_found_count"
-    ]
-)
-
-print(
-    "Pages exposing players:",
-    report[
-        "player_found_count"
-    ]
-)
-
-print(
-    "Saved:",
-    OUTPUT_FILE
-)
-
-print(
-    "================================"
-)
+print("================================")
+print("Full early-history recovery complete")
+print("Missing reference entries:", len(missing))
+print("Recovered:", len(recovered))
+print("Failed:", len(failed))
+print("Saved:", OUTPUT_FILE)
+print("================================")
