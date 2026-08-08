@@ -1,6 +1,6 @@
 {
-  "next_date": "2019-08-29T18:29:44-04:00",
-  "episode_count": 1384,
+  "next_date": "2019-05-22T15:32:10-04:00",
+  "episode_count": 1453,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -12457,6 +12457,627 @@
       "audio_id": "756097213",
       "player_url": "https://www.npr.org/player/embed/756094923/756097213",
       "description": "There's a trend emerging in the finance world: Billionaire financiers are increasingly — if belatedly? — acknowledging inequality in America."
+    },
+    {
+      "title": "America's Rare Earth Conundrum",
+      "date": "2019-08-29T18:09:48-04:00",
+      "npr_url": "https://www.npr.org/2019/08/29/755612689/americas-rare-earth-conundrum",
+      "story_id": "755612689",
+      "audio_id": "755619977",
+      "player_url": "https://www.npr.org/player/embed/755612689/755619977",
+      "description": "America doesn't produce much in the way of rare earths. As the trade war with China intensifies, that's becoming a problem."
+    },
+    {
+      "title": "Listener Q&A, Policy Wonkout Edition",
+      "date": "2019-08-28T19:07:19-04:00",
+      "npr_url": "https://www.npr.org/2019/08/28/755233728/listener-q-a-policy-wonkout-edition",
+      "story_id": "755233728",
+      "audio_id": "755235337",
+      "player_url": "https://www.npr.org/player/embed/755233728/755235337",
+      "description": "Policy can take a back seat to politics in the run-up to elections. But that's no excuse for not watching to see what effects policy can have on an economy."
+    },
+    {
+      "title": "Not All Goods Are Traded Equal",
+      "date": "2019-08-27T17:21:09-04:00",
+      "npr_url": "https://www.npr.org/2019/08/27/754837871/not-all-goods-are-traded-equal",
+      "story_id": "754837871",
+      "audio_id": "755097342",
+      "player_url": "https://www.npr.org/player/embed/754837871/755097342",
+      "description": "Not all goods are created equal: some are exempt from tariffs."
+    },
+    {
+      "title": "More Money, More Votes?",
+      "date": "2019-08-26T18:02:29-04:00",
+      "npr_url": "https://www.npr.org/2019/08/26/754518834/more-money-more-votes",
+      "story_id": "754518834",
+      "audio_id": "754520147",
+      "player_url": "https://www.npr.org/player/embed/754518834/754520147",
+      "description": "The 2020 election cycle is almost in full swing. People can barely go a day without seeing an ad from candidates asking for money. But does more money really mean more votes?"
+    },
+    {
+      "title": "Finance Friday With Mary, Volume 3: Snack-Sized Questions",
+      "date": "2019-08-23T16:57:11-04:00",
+      "npr_url": "https://www.npr.org/2019/08/23/753830836/finance-friday-with-mary-volume-3-snack-sized-questions",
+      "story_id": "753830836",
+      "audio_id": "753832244",
+      "player_url": "https://www.npr.org/player/embed/753830836/753832244",
+      "description": "Our inbox is pretty much always filled with great questions about business, the economy and how the markets behave. Today, we answer three questions specific to the financial world."
+    },
+    {
+      "title": "The Economics of Music Festivals",
+      "date": "2019-08-22T17:39:04-04:00",
+      "npr_url": "https://www.npr.org/2019/08/22/753506457/the-economics-of-music-festivals",
+      "story_id": "753506457",
+      "audio_id": "753529586",
+      "player_url": "https://www.npr.org/player/embed/753506457/753529586",
+      "description": "Music festivals like Coachella and Lollapalooza have gotten a lot more expensive, and the reasons behind that increase can tell us a lot about how the economy is changing."
+    },
+    {
+      "title": "The R-Word",
+      "date": "2019-08-21T17:47:50-04:00",
+      "npr_url": "https://www.npr.org/2019/08/21/753234347/the-r-word",
+      "story_id": "753234347",
+      "audio_id": "753246113",
+      "player_url": "https://www.npr.org/player/embed/753234347/753246113",
+      "description": "Our inbox is chock full of listener questions about whether there's a recession coming, and what we should do about it. Today, we answer."
+    },
+    {
+      "title": "Why China's Buying Rice From America",
+      "date": "2019-08-20T17:06:08-04:00",
+      "npr_url": "https://www.npr.org/2019/08/20/752895462/why-chinas-buying-rice-from-america",
+      "story_id": "752895462",
+      "audio_id": "752895929",
+      "player_url": "https://www.npr.org/player/embed/752895462/752895929",
+      "description": "China is the world's biggest rice producer. So why did China agree to buy two shipping containers of rice from the U.S.?"
+    },
+    {
+      "title": "Trump And Trade: The Point Of No Return?",
+      "date": "2019-08-19T18:08:20-04:00",
+      "npr_url": "https://www.npr.org/2019/08/19/752560100/trump-and-trade-the-point-of-no-return",
+      "story_id": "752560100",
+      "audio_id": "752573228",
+      "player_url": "https://www.npr.org/player/embed/752560100/752573228",
+      "description": "President Trump has kept his protectionist promises, but his scorched earth approach to dealmaking could have damaged global trading relationships for good."
+    },
+    {
+      "title": "The Gender Gap Series: The Problem With The Pink Tax",
+      "date": "2019-08-16T17:26:00-04:00",
+      "npr_url": "https://www.npr.org/2019/08/15/751440592/the-gender-gap-series-the-problem-with-the-pink-tax",
+      "story_id": "751440592",
+      "audio_id": "751442768",
+      "player_url": "https://www.npr.org/player/embed/751440592/751442768",
+      "description": "Women pay more than men for many consumer products. Why some economists say that's a good thing."
+    },
+    {
+      "title": "The Gender Gap Series: Tampons - That Bloody Sales Tax",
+      "date": "2019-08-15T17:32:31-04:00",
+      "npr_url": "https://www.npr.org/2019/08/15/751428407/the-gender-gap-series-tampons-that-bloody-sales-tax",
+      "story_id": "751428407",
+      "audio_id": "751438806",
+      "player_url": "https://www.npr.org/player/embed/751428407/751438806",
+      "description": "Most states in the U.S. have a sales tax on menstrual products. Some states have repealed this so-called Tampon Tax, on the grounds that it's unfair to women. But the repeals come at a cost."
+    },
+    {
+      "title": "The Gender Gap Series: Saving Women",
+      "date": "2019-08-14T17:02:07-04:00",
+      "npr_url": "https://www.npr.org/2019/08/14/751251429/the-gender-gap-series-saving-women",
+      "story_id": "751251429",
+      "audio_id": "751254492",
+      "player_url": "https://www.npr.org/player/embed/751251429/751254492",
+      "description": "Women invest far less of their paychecks than men do. Sallie Krawcheck spent her career on Wall Street and she says this is a problem we need to solve."
+    },
+    {
+      "title": "The Gender Gap Series: Working Women- Why the U.S. is Behind",
+      "date": "2019-08-13T16:33:16-04:00",
+      "npr_url": "https://www.npr.org/2019/08/13/750851538/the-gender-gap-series-working-women-why-the-u-s-is-behind",
+      "story_id": "750851538",
+      "audio_id": "750879010",
+      "player_url": "https://www.npr.org/player/embed/750851538/750879010",
+      "description": "When it came to the female labor force participation rate, America used to lead the world. But we've fallen behind. Today on the show: What happened?"
+    },
+    {
+      "title": "The Gender Gap Series: Where The Gender Pay Gap Is Widest",
+      "date": "2019-08-12T17:43:52-04:00",
+      "npr_url": "https://www.npr.org/2019/08/12/750583111/the-gender-gap-series-where-the-gender-pay-gap-is-widest",
+      "story_id": "750583111",
+      "audio_id": "750608357",
+      "player_url": "https://www.npr.org/player/embed/750583111/750608357",
+      "description": "A report from Glassdoor reveals which industries have the starkest gender pay gaps."
+    },
+    {
+      "title": "Finance Fridays With Mary, Volume 2: Short Selling",
+      "date": "2019-08-09T18:49:12-04:00",
+      "npr_url": "https://www.npr.org/2019/08/09/749998579/finance-fridays-with-mary-volume-2-short-selling",
+      "story_id": "749998579",
+      "audio_id": "750005175",
+      "player_url": "https://www.npr.org/player/embed/749998579/750005175",
+      "description": "Short sellers are investors who bet against companies. They're the detectives of the stock market, unearthing flaws and making markets more efficient, though they also attract controversy."
+    },
+    {
+      "title": "Sports Teams Need To Fill Stadiums",
+      "date": "2019-08-08T16:55:22-04:00",
+      "npr_url": "https://www.npr.org/2019/08/08/749517025/sports-teams-need-to-fill-stadiums",
+      "story_id": "749517025",
+      "audio_id": "749522401",
+      "player_url": "https://www.npr.org/player/embed/749517025/749522401",
+      "description": "Sporting event attendance is down. So teams are trying out creative, new ways to win back fans."
+    },
+    {
+      "title": "Why Grad Students Are Taking On More Debt",
+      "date": "2019-08-07T17:10:54-04:00",
+      "npr_url": "https://www.npr.org/2019/08/07/749175542/why-grad-students-are-taking-on-more-debt",
+      "story_id": "749175542",
+      "audio_id": "749189390",
+      "player_url": "https://www.npr.org/player/embed/749175542/749189390",
+      "description": "Graduate students are increasingly shouldering the country's student debt."
+    },
+    {
+      "title": "Currency Wars & A Pepperoni Problem",
+      "date": "2019-08-06T18:22:27-04:00",
+      "npr_url": "https://www.npr.org/2019/08/06/748831106/currency-wars-a-pepperoni-problem",
+      "story_id": "748831106",
+      "audio_id": "748857465",
+      "player_url": "https://www.npr.org/player/embed/748831106/748857465",
+      "description": "Listener questions! How the U.S.-China trade war has escalated, including a move by China to devalue its currency. Plus the history of pepperoni on pizza."
+    },
+    {
+      "title": "The Delicate Macho Movie Brand",
+      "date": "2019-08-05T18:33:28-04:00",
+      "npr_url": "https://www.npr.org/2019/08/05/748436115/the-delicate-macho-movie-brand",
+      "story_id": "748436115",
+      "audio_id": "748437799",
+      "player_url": "https://www.npr.org/player/embed/748436115/748437799",
+      "description": "The stars of the new Fast & Furious movie will go to extraordinary lengths to protect their \"tough guy\" brands, even going so far as to negotiate to make sure their characters never lose a fight."
+    },
+    {
+      "title": "Jobs Friday Meets Listener Q&A",
+      "date": "2019-08-02T17:04:00-04:00",
+      "npr_url": "https://www.npr.org/2019/08/02/747712562/jobs-friday-meets-listener-q-a",
+      "story_id": "747712562",
+      "audio_id": "747736269",
+      "player_url": "https://www.npr.org/player/embed/747712562/747736269",
+      "description": "Happy Jobs Friday! The U.S. economy created 164,000 jobs in July, and the unemployment rate remained unchanged. But to send you into your weekend with more pep, we answer some listener questions."
+    },
+    {
+      "title": "The View From The Boardroom",
+      "date": "2019-08-01T17:00:16-04:00",
+      "npr_url": "https://www.npr.org/2019/08/01/747384755/the-view-from-the-boardroom",
+      "story_id": "747384755",
+      "audio_id": "747392127",
+      "player_url": "https://www.npr.org/player/embed/747384755/747392127",
+      "description": "Some presidential candidates have supported a policy — known as co-determination — that would see workers represented on corporate boards. We talked to one worker who already has a seat at the table."
+    },
+    {
+      "title": "What If Workers Sat On Corporate Boards?",
+      "date": "2019-07-31T17:24:43-04:00",
+      "npr_url": "https://www.npr.org/2019/07/31/747044058/what-if-workers-sat-on-corporate-boards",
+      "story_id": "747044058",
+      "audio_id": "747064027",
+      "player_url": "https://www.npr.org/player/embed/747044058/747064027",
+      "description": "The board of directors for most U.S. companies is made up of shareholders--not workers. A corporate system called co-determination aims to put employees at the table where big decisions are made."
+    },
+    {
+      "title": "Stacey vs Cardiff: The Fed Cut Throwdown!",
+      "date": "2019-07-30T18:53:23-04:00",
+      "npr_url": "https://www.npr.org/2019/07/30/746744003/stacey-vs-cardiff-the-fed-cut-throwdown",
+      "story_id": "746744003",
+      "audio_id": "746760902",
+      "player_url": "https://www.npr.org/player/embed/746744003/746760902",
+      "description": "The economy's looking pretty good. So, do we really need a rate cut right now? Stacey and Cardiff duke it out."
+    },
+    {
+      "title": "It's Check-Up Time, America!",
+      "date": "2019-07-29T18:05:30-04:00",
+      "npr_url": "https://www.npr.org/2019/07/29/746409243/its-check-up-time-america",
+      "story_id": "746409243",
+      "audio_id": "746411155",
+      "player_url": "https://www.npr.org/player/embed/746409243/746411155",
+      "description": "The Federal Reserve is set to cut interest rates this week. We also just passed the half-year mark. Two good reasons to check in on the health of the U.S. economy."
+    },
+    {
+      "title": "America's Tijuana Tech Boom",
+      "date": "2019-07-26T16:58:21-04:00",
+      "npr_url": "https://www.npr.org/2019/07/26/745737714/americas-tijuana-tech-boom",
+      "story_id": "745737714",
+      "audio_id": "753771093",
+      "player_url": "https://www.npr.org/player/embed/745737714/753771093",
+      "description": "A growing workforce of high-tech specialists is luring American companies to Tijuana"
+    },
+    {
+      "title": "Waiting For The Tariff Storm",
+      "date": "2019-07-25T16:48:37-04:00",
+      "npr_url": "https://www.npr.org/2019/07/25/745403025/waiting-for-the-tariff-storm",
+      "story_id": "745403025",
+      "audio_id": "753770869",
+      "player_url": "https://www.npr.org/player/embed/745403025/753770869",
+      "description": "The trade war between the U.S. and China started a little over a year ago, but the oft-predicted economic storm is yet to break."
+    },
+    {
+      "title": "The Fed Cuts Loose?",
+      "date": "2019-07-24T17:04:14-04:00",
+      "npr_url": "https://www.npr.org/2019/07/24/745031522/the-fed-cuts-loose",
+      "story_id": "745031522",
+      "audio_id": "753770701",
+      "player_url": "https://www.npr.org/player/embed/745031522/753770701",
+      "description": "An economic principle that has guided the Federal Reserve for decades is increasingly being questioned."
+    },
+    {
+      "title": "Rhino Bonds",
+      "date": "2019-07-23T17:48:59-04:00",
+      "npr_url": "https://www.npr.org/2019/07/23/744612775/rhino-bonds",
+      "story_id": "744612775",
+      "audio_id": "753770448",
+      "player_url": "https://www.npr.org/player/embed/744612775/753770448",
+      "description": "Investors will soon be able to bet on black rhinos. A conservation group is rolling out a 5 year, 50 million dollar rhino bond to help save the species."
+    },
+    {
+      "title": "Rethinking Economics",
+      "date": "2019-07-22T16:23:51-04:00",
+      "npr_url": "https://www.npr.org/2019/07/22/744179784/rethinking-economics",
+      "story_id": "744179784",
+      "audio_id": "753769905",
+      "player_url": "https://www.npr.org/player/embed/744179784/753769905",
+      "description": "Jared Bernstein has a shortlist of economic ideas that he thinks his colleagues have been getting wrong for decades."
+    },
+    {
+      "title": "Women, Men And Hedge Funds",
+      "date": "2019-07-19T13:19:37-04:00",
+      "npr_url": "https://www.npr.org/2019/07/19/743521272/women-men-and-hedge-funds",
+      "story_id": "743521272",
+      "audio_id": "753770213",
+      "player_url": "https://www.npr.org/player/embed/743521272/753770213",
+      "description": "Introducing a new series: Finance Fridays With Mary!"
+    },
+    {
+      "title": "Gold Rush 2.0",
+      "date": "2019-07-18T18:34:11-04:00",
+      "npr_url": "https://www.npr.org/2019/07/18/743261869/gold-rush-2-0",
+      "story_id": "743261869",
+      "audio_id": "753769201",
+      "player_url": "https://www.npr.org/player/embed/743261869/753769201",
+      "description": "The price of gold is at a six-year high and gold bugs say it's the safest place to put your money in uncertain times. But is it actually a good investment?"
+    },
+    {
+      "title": "Yield Curve: You Asked, We Answer",
+      "date": "2019-07-17T18:28:43-04:00",
+      "npr_url": "https://www.npr.org/2019/07/17/742779150/yield-curve-you-asked-we-answer",
+      "story_id": "742779150",
+      "audio_id": "753768674",
+      "player_url": "https://www.npr.org/player/embed/742779150/753768674",
+      "description": "The yield curve is inverted! We answer a few questions we have gotten from our listeners about our beloved recession predicting indicator."
+    },
+    {
+      "title": "Tricking Myself Into Paying My Student Loans",
+      "date": "2019-07-16T16:18:51-04:00",
+      "npr_url": "https://www.npr.org/2019/07/16/742369193/tricking-myself-into-paying-my-student-loans",
+      "story_id": "742369193",
+      "audio_id": "753768213",
+      "player_url": "https://www.npr.org/player/embed/742369193/753768213",
+      "description": "About 44 million people owe nearly 1.5 trillion dollars in student loans all together. But for some people — like our producer Darius Rafieyan — paying them requires some mental adjustments."
+    },
+    {
+      "title": "Can GIPHY Make It Rain?",
+      "date": "2019-07-15T18:18:06-04:00",
+      "npr_url": "https://www.npr.org/2019/07/15/741999245/can-giphy-make-it-rain",
+      "story_id": "741999245",
+      "audio_id": "742024345",
+      "player_url": "https://www.npr.org/player/embed/741999245/742024345",
+      "description": "GIPHY makes those viral mini-videos that people use to color their texts and emails. They're super popular, but they're free. So how does GIPHY plan to make money?"
+    },
+    {
+      "title": "Bitcoin's Energy Bill",
+      "date": "2019-07-12T17:47:07-04:00",
+      "npr_url": "https://www.npr.org/2019/07/12/741216855/bitcoins-energy-bill",
+      "story_id": "741216855",
+      "audio_id": "753767097",
+      "player_url": "https://www.npr.org/player/embed/741216855/753767097",
+      "description": "The computers that mine Bitcoin use a lot of electricity. That's created some unique arbitrage opportunities in different parts of the world. And causing governments some concern."
+    },
+    {
+      "title": "Japan's Worker Shortage",
+      "date": "2019-07-11T16:01:45-04:00",
+      "npr_url": "https://www.npr.org/2019/07/11/740844097/japans-worker-shortage",
+      "story_id": "740844097",
+      "audio_id": "753764146",
+      "player_url": "https://www.npr.org/player/embed/740844097/753764146",
+      "description": "Japan's worker shortage has gotten so bad it's forced some companies to declare bankruptcy. The solution? Telling workers to work less."
+    },
+    {
+      "title": "Deutsche Bank Breaks The Pizza Barrier",
+      "date": "2019-07-10T17:44:24-04:00",
+      "npr_url": "https://www.npr.org/2019/07/10/740506511/deutsche-bank-breaks-the-pizza-barrier",
+      "story_id": "740506511",
+      "audio_id": "753763552",
+      "player_url": "https://www.npr.org/player/embed/740506511/753763552",
+      "description": "One of the biggest international banks--Deutsche Bank--is laying off 18,000 workers and cutting costs to try and save itself from going under. How did things get so bad?"
+    },
+    {
+      "title": "Is LA Ready For A Big Earthquake?",
+      "date": "2019-07-09T16:59:21-04:00",
+      "npr_url": "https://www.npr.org/2019/07/09/740016716/is-la-ready-for-a-big-earthquake",
+      "story_id": "740016716",
+      "audio_id": "753762794",
+      "player_url": "https://www.npr.org/player/embed/740016716/753762794",
+      "description": "Last week's California quakes have reinforced fears of \"the big one\", the high-magnitude trembler that seismologists say is inevitable. How ready is the city of Los Angeles?"
+    },
+    {
+      "title": "Jobs Friday...On Monday",
+      "date": "2019-07-08T16:39:23-04:00",
+      "npr_url": "https://www.npr.org/2019/07/08/739599926/jobs-friday-on-monday",
+      "story_id": "739599926",
+      "audio_id": "752905808",
+      "player_url": "https://www.npr.org/player/embed/739599926/752905808",
+      "description": "The monthly pace of jobs growth has slowed this year. But that's not necessarily a problem."
+    },
+    {
+      "title": "The American Economy Of 1776",
+      "date": "2019-07-05T06:00:41-04:00",
+      "npr_url": "https://www.npr.org/2019/07/03/738654022/the-american-economy-of-1776",
+      "story_id": "738654022",
+      "audio_id": "752866635",
+      "player_url": "https://www.npr.org/player/embed/738654022/752866635",
+      "description": "A look at the assets and liabilities of the American colonies on the eve of revolution."
+    },
+    {
+      "title": "The Cows Are Taking All The Land",
+      "date": "2019-07-03T16:33:34-04:00",
+      "npr_url": "https://www.npr.org/2019/07/03/738596553/the-cows-are-taking-all-the-land",
+      "story_id": "738596553",
+      "audio_id": "752866192",
+      "player_url": "https://www.npr.org/player/embed/738596553/752866192",
+      "description": "The U.S. is a big place, nearly 1.9 billion acres. On today's Indicator, we look at how all that land is divvied up."
+    },
+    {
+      "title": "Listener Questions: Consumption & A New Curriculum",
+      "date": "2019-07-02T17:21:34-04:00",
+      "npr_url": "https://www.npr.org/2019/07/02/738185342/listener-questions-consumption-a-new-curriculum",
+      "story_id": "738185342",
+      "audio_id": "753762006",
+      "player_url": "https://www.npr.org/player/embed/738185342/753762006",
+      "description": "Today we answer listener questions: why is so much consumption necessary for a healthy economy (or as our listener put it — why do we have to buy so much crap for the economy to be healthy?). Plus, what are some good economic resources for teenagers?"
+    },
+    {
+      "title": "Amazon #FAIL...?",
+      "date": "2019-07-01T16:00:15-04:00",
+      "npr_url": "https://www.npr.org/2019/07/01/737736397/amazon-fail",
+      "story_id": "737736397",
+      "audio_id": "752865360",
+      "player_url": "https://www.npr.org/player/embed/737736397/752865360",
+      "description": "One of the largest companies in the world, Amazon, just shuttered its food delivery service, Amazon Restaurants. But Amazon's fails are a bit different."
+    },
+    {
+      "title": "The Rise Of American Oil",
+      "date": "2019-06-28T15:47:00-04:00",
+      "npr_url": "https://www.npr.org/2019/06/28/737075704/the-rise-of-american-oil",
+      "story_id": "737075704",
+      "audio_id": "746537291",
+      "player_url": "https://www.npr.org/player/embed/737075704/746537291",
+      "description": "What it means that the U.S. is now the biggest consumer and producer of crude oil in the world."
+    },
+    {
+      "title": "The Private Firefighter Industry",
+      "date": "2019-06-27T16:57:56-04:00",
+      "npr_url": "https://www.npr.org/2019/06/27/736715592/the-private-firefighter-industry",
+      "story_id": "736715592",
+      "audio_id": "736732225",
+      "player_url": "https://www.npr.org/player/embed/736715592/736732225",
+      "description": "Kim Kardashian and Kanye West got a lot of blowback for using private firefighters to protect their California home from a wildfire. Today on The Indicator, the business of private firefighting."
+    },
+    {
+      "title": "Niche Sports Cashing In",
+      "date": "2019-06-26T15:46:51-04:00",
+      "npr_url": "https://www.npr.org/2019/06/26/736301268/niche-sports-cashing-in",
+      "story_id": "736301268",
+      "audio_id": "746536718",
+      "player_url": "https://www.npr.org/player/embed/736301268/746536718",
+      "description": "Basketball, football and baseball may draw big crowds and score primetime television spots, but niche sports, like cornhole, axe throwing and even professional arm wrestling, are beginning to attract interest and money."
+    },
+    {
+      "title": "The Protest Tipping Point",
+      "date": "2019-06-25T17:34:33-04:00",
+      "npr_url": "https://www.npr.org/2019/06/25/736007317/the-protest-tipping-point",
+      "story_id": "736007317",
+      "audio_id": "736009459",
+      "player_url": "https://www.npr.org/player/embed/736007317/736009459",
+      "description": "If you're considering a popular uprising against a government, it turns out there may be a recipe that can almost guarantee your success."
+    },
+    {
+      "title": "The Rise Of The Blue-Collar Noncompete",
+      "date": "2019-06-24T17:50:48-04:00",
+      "npr_url": "https://www.npr.org/2019/06/24/735534276/the-rise-of-the-blue-collar-noncompete",
+      "story_id": "735534276",
+      "audio_id": "746536255",
+      "player_url": "https://www.npr.org/player/embed/735534276/746536255",
+      "description": "Traditionally, noncompete clauses have been reserved for whiter collar professionals. But as the labor market tightens, employers increasingly want blue-collar workers to adhere to these agreements too."
+    },
+    {
+      "title": "Women's Soccer Sues For Equal Pay",
+      "date": "2019-06-21T17:12:01-04:00",
+      "npr_url": "https://www.npr.org/2019/06/21/734901705/womens-soccer-sues-for-equal-pay",
+      "story_id": "734901705",
+      "audio_id": "746535872",
+      "player_url": "https://www.npr.org/player/embed/734901705/746535872",
+      "description": "The U.S. women's soccer team is way more successful than the men's. Yet they say they get paid less than half, on average, compared to the men's team."
+    },
+    {
+      "title": "Slack Goes Public",
+      "date": "2019-06-20T18:49:03-04:00",
+      "npr_url": "https://www.npr.org/2019/06/20/734565905/slack-goes-public",
+      "story_id": "734565905",
+      "audio_id": "743484223",
+      "player_url": "https://www.npr.org/player/embed/734565905/743484223",
+      "description": "Shares in the online chat service Slack hit the stock market today. But Slack went public in an unconventional way."
+    },
+    {
+      "title": "Facebucks",
+      "date": "2019-06-19T17:39:13-04:00",
+      "npr_url": "https://www.npr.org/2019/06/19/734199244/facebucks",
+      "story_id": "734199244",
+      "audio_id": "743483680",
+      "player_url": "https://www.npr.org/player/embed/734199244/743483680",
+      "description": "This week Facebook announced plans for its own cryptocurrency, the Libra. Regulators are cautious, and no one really knows how it will work. But Wall Street is excited."
+    },
+    {
+      "title": "Japan's Inflation Gamble",
+      "date": "2019-06-18T16:34:26-04:00",
+      "npr_url": "https://www.npr.org/2019/06/18/733800857/japans-inflation-gamble",
+      "story_id": "733800857",
+      "audio_id": "743483216",
+      "player_url": "https://www.npr.org/player/embed/733800857/743483216",
+      "description": "Japan is still recovering from a brutal recession that lasted ten years. The country has tried a variety of fiscal and monetary measures to bring its economy back."
+    },
+    {
+      "title": "The Economic Expansion Turns 10!",
+      "date": "2019-06-17T16:54:56-04:00",
+      "npr_url": "https://www.npr.org/2019/06/17/733496205/the-economic-expansion-turns-10",
+      "story_id": "733496205",
+      "audio_id": "742692062",
+      "player_url": "https://www.npr.org/player/embed/733496205/742692062",
+      "description": "The U.S is about to mark the longest economic expansion in its history. It's an impressive achievement, but in many ways the economy is still struggling."
+    },
+    {
+      "title": "Animal Spirits",
+      "date": "2019-06-14T17:10:59-04:00",
+      "npr_url": "https://www.npr.org/2019/06/14/732876763/animal-spirits",
+      "story_id": "732876763",
+      "audio_id": "741113528",
+      "player_url": "https://www.npr.org/player/embed/732876763/741113528",
+      "description": "People hear the word 'economics' and probably think: numbers, equations, and percentages. But hidden underneath the math, is a force that can't be quantified."
+    },
+    {
+      "title": "The Governor Is Suing My Hometown",
+      "date": "2019-06-13T17:07:27-04:00",
+      "npr_url": "https://www.npr.org/2019/06/13/732502500/the-governor-is-suing-my-hometown",
+      "story_id": "732502500",
+      "audio_id": "741111771",
+      "player_url": "https://www.npr.org/player/embed/732502500/741111771",
+      "description": "The mayor of Huntington Beach says he wants less housing development in his city. The governor of California says that's against the law."
+    },
+    {
+      "title": "The Water Marketplace",
+      "date": "2019-06-12T17:32:08-04:00",
+      "npr_url": "https://www.npr.org/2019/06/12/732147345/the-water-marketplace",
+      "story_id": "732147345",
+      "audio_id": "741111015",
+      "player_url": "https://www.npr.org/player/embed/732147345/741111015",
+      "description": "New rules governing water use in California have sparked innovation in agribusiness, including a brand new market for water."
+    },
+    {
+      "title": "Your Questions: Meatless Meat And GDP",
+      "date": "2019-06-11T19:45:27-04:00",
+      "npr_url": "https://www.npr.org/2019/06/11/731865313/your-questions-meatless-meat-and-gdp",
+      "story_id": "731865313",
+      "audio_id": "741109824",
+      "player_url": "https://www.npr.org/player/embed/731865313/741109824",
+      "description": "Today we answer listener questions: How does U.S. gross domestic product break down into different industries, and how do meat alternatives compare to the real thing?"
+    },
+    {
+      "title": "Hooponomics",
+      "date": "2019-06-10T18:42:51-04:00",
+      "npr_url": "https://www.npr.org/2019/06/10/731408726/hooponomics",
+      "story_id": "731408726",
+      "audio_id": "739838839",
+      "player_url": "https://www.npr.org/player/embed/731408726/739838839",
+      "description": "The introduction of the three-point line changed how people play basketball. And it has some compelling parallels to economics."
+    },
+    {
+      "title": "Jobs Friday: Summer Slowdown Edition",
+      "date": "2019-06-07T17:31:38-04:00",
+      "npr_url": "https://www.npr.org/2019/06/07/730767590/jobs-friday-summer-slowdown-edition",
+      "story_id": "730767590",
+      "audio_id": "739838181",
+      "player_url": "https://www.npr.org/player/embed/730767590/739838181",
+      "description": "Happy Jobs Friday! The labor market is showing signs of slowing down. The unemployment rate is still low at 3.6 percent, but only 75,000 jobs were added in the month of May — a lot fewer than what economists expected."
+    },
+    {
+      "title": "The Battle For The Office Thermostat",
+      "date": "2019-06-06T17:01:00-04:00",
+      "npr_url": "https://www.npr.org/2019/06/06/730438603/the-battle-for-the-office-thermostat",
+      "story_id": "730438603",
+      "audio_id": "738912382",
+      "player_url": "https://www.npr.org/player/embed/730438603/738912382",
+      "description": "Office temperature can affect more than comfort; a recent study shows it has serious implications for productivity. We talked to one economist who quantified the effects of temperature on men and women."
+    },
+    {
+      "title": "Returning To Paradise",
+      "date": "2019-06-05T16:18:23-04:00",
+      "npr_url": "https://www.npr.org/2019/06/05/730005386/returning-to-paradise",
+      "story_id": "730005386",
+      "audio_id": "738911742",
+      "player_url": "https://www.npr.org/player/embed/730005386/738911742",
+      "description": "The deadliest wildfire in California's history destroyed thousands of homes in Butte County. The area is still an active disaster zone. But insurance companies are making residents move back."
+    },
+    {
+      "title": "All WeWork And No Play",
+      "date": "2019-06-04T17:19:18-04:00",
+      "npr_url": "https://www.npr.org/2019/06/04/729768929/all-wework-and-no-play",
+      "story_id": "729768929",
+      "audio_id": "738910722",
+      "player_url": "https://www.npr.org/player/embed/729768929/738910722",
+      "description": "Co-working spaces might just be the future of work. Take WeWork. It's been cropping up in cities all over the world--borrowing billions to fuel its growth. Now, it's planning to go public."
+    },
+    {
+      "title": "Weaponized Interdependence: The End of Globalization?",
+      "date": "2019-06-03T16:59:36-04:00",
+      "npr_url": "https://www.npr.org/2019/06/03/729401275/weaponized-interdependence-the-end-of-globalization",
+      "story_id": "729401275",
+      "audio_id": "738910211",
+      "player_url": "https://www.npr.org/player/embed/729401275/738910211",
+      "description": "The trade war between the U.S. and China is challenging a long-standing assumption about globalization — that economic ties between countries would deepen with minimal political interference."
+    },
+    {
+      "title": "Why Is Trump Threatening Mexico (Again)?",
+      "date": "2019-05-31T17:03:28-04:00",
+      "npr_url": "https://www.npr.org/2019/05/31/728758408/why-is-trump-threatening-mexico-again",
+      "story_id": "728758408",
+      "audio_id": "736965988",
+      "player_url": "https://www.npr.org/player/embed/728758408/736965988",
+      "description": "President Trump has threatened to impose new tariffs on Mexico unless the country stops the flow of migrants entering the U.S. But, Mexico is one of the biggest trade partner the U.S. has."
+    },
+    {
+      "title": "The Super-Villain Economist",
+      "date": "2019-05-30T16:40:26-04:00",
+      "npr_url": "https://www.npr.org/2019/05/30/728369770/the-super-villain-economist",
+      "story_id": "728369770",
+      "audio_id": "736965014",
+      "player_url": "https://www.npr.org/player/embed/728369770/736965014",
+      "description": "The Avengers super-villain Thanos saw the universe as a place of too many people and too few resources: a classic economic dilemma. His solution: Kill half the population."
+    },
+    {
+      "title": "An Economist Goes To The Hospital",
+      "date": "2019-05-29T15:56:31-04:00",
+      "npr_url": "https://www.npr.org/2019/05/22/725841229/an-economist-goes-to-the-hospital",
+      "story_id": "725841229",
+      "audio_id": "728037213",
+      "player_url": "https://www.npr.org/player/embed/725841229/728037213",
+      "description": "Economist Jared Bernstein recently survived a brain hemorrhage. The experience got him thinking about some of the economics in our healthcare system."
+    },
+    {
+      "title": "Is Time Really On Your Side?",
+      "date": "2019-05-28T15:06:20-04:00",
+      "npr_url": "https://www.npr.org/2019/05/22/725841004/is-time-really-on-your-side",
+      "story_id": "725841004",
+      "audio_id": "736963611",
+      "player_url": "https://www.npr.org/player/embed/725841004/736963611",
+      "description": "Economics is all about scarcity — and time is a scarce resource. We talk to economist Daniel Hamermesh, whose new book Spending Time examines time's complicated relationship to money, stress, and gender."
+    },
+    {
+      "title": "What Trump's Latest Aid Package Means For Farmers",
+      "date": "2019-05-24T16:51:20-04:00",
+      "npr_url": "https://www.npr.org/2019/05/24/726802326/what-trumps-latest-aid-package-means-for-farmers",
+      "story_id": "726802326",
+      "audio_id": "736211438",
+      "player_url": "https://www.npr.org/player/embed/726802326/736211438",
+      "description": "President Trump announced an aid package for farmers yesterday worth $16 billion. It's meant to offset losses from the trade war with China. We spoke to one U.S. farmer about how helpful it will be."
+    },
+    {
+      "title": "Canada's Tariff Hangover",
+      "date": "2019-05-23T15:32:10-04:00",
+      "npr_url": "https://www.npr.org/2019/05/23/726249427/canadas-tariff-hangover",
+      "story_id": "726249427",
+      "audio_id": "736210955",
+      "player_url": "https://www.npr.org/player/embed/726249427/736210955",
+      "description": "Canada and the U.S. have come to an agreement on trade, and lifted their punitive tariffs on each other's goods. But some small businesses are still feeling the pain."
     }
   ]
 }
