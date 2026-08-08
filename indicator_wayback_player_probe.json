@@ -1,0 +1,25 @@
+{
+  "method": "wayback-npr-player-page-probe",
+  "targets": [
+    {
+      "title": "Paranormal Profits",
+      "date": "2018-10-31",
+      "player_story_id": "662706955",
+      "audio_id": "662707862",
+      "player_url": "https://www.npr.org/player/embed/662706955/662707862",
+      "capture_count": 0,
+      "captures": [],
+      "cdx_error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "title": "The Traffic Tariff",
+      "date": "2019-04-22",
+      "player_story_id": "716127469",
+      "audio_id": "730102905",
+      "player_url": "https://www.npr.org/player/embed/716127469/730102905",
+      "capture_count": 0,
+      "captures": [],
+      "cdx_error": "The read operation timed out"
+    }
+  ]
+}
