@@ -1,0 +1,54 @@
+{
+  "method": "targeted-npr-indicator-filename-resolution",
+  "input_count": 2,
+  "resolved_count": 0,
+  "unresolved_count": 2,
+  "results": [
+    {
+      "reference_date": "2018-10-31",
+      "reference_title": "Paranormal Profits",
+      "npr_story_id": "662708285",
+      "audio_ids": [
+        "662707862"
+      ],
+      "slug_variants": [
+        "paranormal_profits"
+      ],
+      "status": "not_resolved",
+      "attempts": [
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/10/662707862_indicator_1031_paranormal_profits_final.mp3",
+          "status": "http_404"
+        }
+      ]
+    },
+    {
+      "reference_date": "2019-04-22",
+      "reference_title": "The Traffic Tariff",
+      "npr_story_id": "716132270",
+      "audio_ids": [
+        "730102905"
+      ],
+      "slug_variants": [
+        "the_traffic_tariff",
+        "traffic_tariff",
+        "the_traffic"
+      ],
+      "status": "not_resolved",
+      "attempts": [
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/04/730102905_indicator_0422_the_traffic_tariff_final.mp3",
+          "status": "http_404"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/04/730102905_indicator_0422_traffic_tariff_final.mp3",
+          "status": "http_404"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/04/730102905_indicator_0422_the_traffic_final.mp3",
+          "status": "http_404"
+        }
+      ]
+    }
+  ]
+}
