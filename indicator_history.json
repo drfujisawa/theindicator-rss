@@ -1,6 +1,6 @@
 {
-  "next_date": "2020-07-29T19:31:35-04:00",
-  "episode_count": 1156,
+  "next_date": "2020-05-19T16:40:57-04:00",
+  "episode_count": 1206,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -10405,6 +10405,456 @@
       "audio_id": "897484786",
       "player_url": "https://www.npr.org/player/embed/897481676/897484786",
       "description": "This quarter's Gross Domestic Product numbers could be the worst on record. But what do they mean, exactly?"
+    },
+    {
+      "title": "The Coronavirus Housing Boom",
+      "date": "2020-07-29T19:21:10-04:00",
+      "npr_url": "https://www.npr.org/2020/07/29/896942333/the-coronavirus-housing-boom",
+      "story_id": "896942333",
+      "audio_id": "896949544",
+      "player_url": "https://www.npr.org/player/embed/896942333/896949544",
+      "description": "Most of the U.S. economy is in crisis: Unemployment and bankruptcies are skyrocketing, and millions aren't paying rent. But home sales are skyrocketing, too. In fact, they're rising at a record pace."
+    },
+    {
+      "title": "Work After COVID",
+      "date": "2020-07-28T18:32:00-04:00",
+      "npr_url": "https://www.npr.org/2020/07/28/896472621/work-after-covid",
+      "story_id": "896472621",
+      "audio_id": "896492190",
+      "player_url": "https://www.npr.org/player/embed/896472621/896492190",
+      "description": "The use of technologies that help office workers do their work remotely could have unanticipated, long-lasting effects for low-skilled workers too."
+    },
+    {
+      "title": "The Extra $600",
+      "date": "2020-07-27T17:29:48-04:00",
+      "npr_url": "https://www.npr.org/2020/07/27/895949573/the-extra-600",
+      "story_id": "895949573",
+      "audio_id": "895951849",
+      "player_url": "https://www.npr.org/player/embed/895949573/895951849",
+      "description": "Nearly one in five U.S. workers is on unemployment benefits. And most of them are about to see their checks cut in half, as Congress' expanded benefits expire this month."
+    },
+    {
+      "title": "The Power Of Workers",
+      "date": "2020-07-24T18:17:24-04:00",
+      "npr_url": "https://www.npr.org/2020/07/24/895222963/the-power-of-workers",
+      "story_id": "895222963",
+      "audio_id": "895238171",
+      "player_url": "https://www.npr.org/player/embed/895222963/895238171",
+      "description": "The three main drivers behind the decline in worker power."
+    },
+    {
+      "title": "Can Restaurants Reopen?",
+      "date": "2020-07-23T17:00:00-04:00",
+      "npr_url": "https://www.npr.org/2020/07/23/894734675/can-restaurants-reopen",
+      "story_id": "894734675",
+      "audio_id": "896483568",
+      "player_url": "https://www.npr.org/player/embed/894734675/896483568",
+      "description": "Restaurants are going out of business in droves. But some are battling hard to keep their doors open."
+    },
+    {
+      "title": "Question Time!",
+      "date": "2020-07-22T18:03:22-04:00",
+      "npr_url": "https://www.npr.org/2020/07/22/894414838/question-time",
+      "story_id": "894414838",
+      "audio_id": "894420491",
+      "player_url": "https://www.npr.org/player/embed/894414838/894420491",
+      "description": "What's the garbage situation? How can we invest in Black-owned businesses? And what's the state of the gig economy? Your questions, answered."
+    },
+    {
+      "title": "A Tale Of Two Camdens",
+      "date": "2020-07-21T18:44:42-04:00",
+      "npr_url": "https://www.npr.org/2020/07/21/893956070/a-tale-of-two-camdens",
+      "story_id": "893956070",
+      "audio_id": "893960670",
+      "player_url": "https://www.npr.org/player/embed/893956070/893960670",
+      "description": "The city of Camden, New Jersey is cited as an example of how cities can change their approach to policing. But the story of Camden and its cops isn't a simple one."
+    },
+    {
+      "title": "This Weekend's (Fiscal) Cliffhanger",
+      "date": "2020-07-20T18:39:42-04:00",
+      "npr_url": "https://www.npr.org/2020/07/20/893297452/this-weekends-fiscal-cliffhanger",
+      "story_id": "893297452",
+      "audio_id": "893310883",
+      "player_url": "https://www.npr.org/player/embed/893297452/893310883",
+      "description": "Unless Congress acts, unemployment benefit enhancements will expire. And that could have big effects on the economy."
+    },
+    {
+      "title": "A Conversation With Gary Cohn",
+      "date": "2020-07-17T17:30:33-04:00",
+      "npr_url": "https://www.npr.org/2020/07/17/892421737/a-conversation-with-gary-cohn",
+      "story_id": "892421737",
+      "audio_id": "892427199",
+      "player_url": "https://www.npr.org/player/embed/892421737/892427199",
+      "description": "Gary Cohn was President Trump's economic advisor, and a prime mover behind the $2 trillion tax cut of 2017. We talk to him about the state of the economy."
+    },
+    {
+      "title": "A Race Reckoning In Economics",
+      "date": "2020-07-16T18:20:01-04:00",
+      "npr_url": "https://www.npr.org/2020/07/16/892084337/a-race-reckoning-in-economics",
+      "story_id": "892084337",
+      "audio_id": "892094758",
+      "player_url": "https://www.npr.org/player/embed/892084337/892094758",
+      "description": "The economics profession has a serious inclusion problem, and that matters for how all of us understand the economy."
+    },
+    {
+      "title": "When SNAP Gets Squeezed",
+      "date": "2020-07-15T19:46:00-04:00",
+      "npr_url": "https://www.npr.org/2020/07/15/891584099/when-snap-gets-squeezed",
+      "story_id": "891584099",
+      "audio_id": "891653523",
+      "player_url": "https://www.npr.org/player/embed/891584099/891653523",
+      "description": "One in five American households doesn't have enough food to eat. And the program that's supposed to help is about to shrink."
+    },
+    {
+      "title": "Oil Storage Wars",
+      "date": "2020-07-14T17:00:48-04:00",
+      "npr_url": "https://www.npr.org/2020/07/14/891121071/oil-storage-wars",
+      "story_id": "891121071",
+      "audio_id": "891125544",
+      "player_url": "https://www.npr.org/player/embed/891121071/891125544",
+      "description": "Because of the global economic slowdown, there's a glut of oil on the market right now. And companies are coming up with creative ways to store it."
+    },
+    {
+      "title": "Leaving Prison In The COVID-19 Economy",
+      "date": "2020-07-13T17:20:57-04:00",
+      "npr_url": "https://www.npr.org/2020/07/13/890454408/leaving-prison-in-the-covid-19-economy",
+      "story_id": "890454408",
+      "audio_id": "890480219",
+      "player_url": "https://www.npr.org/player/embed/890454408/890480219",
+      "description": "Reentering the world and the workforce after you've been in prison is hard enough at the best of times. The coronavirus pandemic has made it a whole lot harder."
+    },
+    {
+      "title": "The Small Business Roller Coaster",
+      "date": "2020-07-10T18:48:38-04:00",
+      "npr_url": "https://www.npr.org/2020/07/10/889918522/the-small-business-roller-coaster",
+      "story_id": "889918522",
+      "audio_id": "889924006",
+      "player_url": "https://www.npr.org/player/embed/889918522/889924006",
+      "description": "Molly Moon's Homemade Ice Cream in Seattle has been on the same economic and political roller coaster ride many small businesses have. Now they're trying to open back up, survive and grow."
+    },
+    {
+      "title": "Texas Hospitals Battle COVID-19",
+      "date": "2020-07-09T17:00:20-04:00",
+      "npr_url": "https://www.npr.org/2020/07/09/889524356/texas-hospitals-battle-covid-19",
+      "story_id": "889524356",
+      "audio_id": "889529281",
+      "player_url": "https://www.npr.org/player/embed/889524356/889529281",
+      "description": "Rural hospitals in Texas are scrambling for equipment and staff to combat the surge in coronavirus cases."
+    },
+    {
+      "title": "Why We Need Black-Owned Banks",
+      "date": "2020-07-08T17:00:04-04:00",
+      "npr_url": "https://www.npr.org/2020/07/08/889141681/why-we-need-black-owned-banks",
+      "story_id": "889141681",
+      "audio_id": "889144133",
+      "player_url": "https://www.npr.org/player/embed/889141681/889144133",
+      "description": "Black-owned financial institutions are a shrinking part of the U.S. financial system. We look at what that means for America's entrenched racial disparities."
+    },
+    {
+      "title": "Live Music Industry Blues",
+      "date": "2020-07-07T17:00:31-04:00",
+      "npr_url": "https://www.npr.org/2020/07/07/888333857/live-music-industry-blues",
+      "story_id": "888333857",
+      "audio_id": "888341109",
+      "player_url": "https://www.npr.org/player/embed/888333857/888341109",
+      "description": "Live music events are like micro-economies that support hundreds of small businesses. Coronavirus is hammering them."
+    },
+    {
+      "title": "Unintended Consequences, Hidden Deaths",
+      "date": "2020-07-06T16:24:00-04:00",
+      "npr_url": "https://www.npr.org/2020/07/06/887914002/unintended-consequences-hidden-deaths",
+      "story_id": "887914002",
+      "audio_id": "887932287",
+      "player_url": "https://www.npr.org/player/embed/887914002/887932287",
+      "description": "The way organizations and governments respond to disasters often have hidden consequences; sometimes those consequences can be fatal."
+    },
+    {
+      "title": "Jobs In June",
+      "date": "2020-07-02T19:12:50-04:00",
+      "npr_url": "https://www.npr.org/2020/07/02/886932938/jobs-in-june",
+      "story_id": "886932938",
+      "audio_id": "886945123",
+      "player_url": "https://www.npr.org/player/embed/886932938/886945123",
+      "description": "The BLS jobs report for June was better than expected, but showed the U.S. economy is still suffering badly from coronavirus."
+    },
+    {
+      "title": "The Market For Student Loans",
+      "date": "2020-07-01T16:58:00-04:00",
+      "npr_url": "https://www.npr.org/2020/07/01/886346296/the-market-for-student-loans",
+      "story_id": "886346296",
+      "audio_id": "886350201",
+      "player_url": "https://www.npr.org/player/embed/886346296/886350201",
+      "description": "Americans owe about $1.5 trillion in student debt. But who actually owns those loans? One borrower goes looking for an answer—and uncovers a multi-billion dollar shadow market."
+    },
+    {
+      "title": "Listener Questions: Past Pandemics And Property Prices",
+      "date": "2020-06-30T17:18:32-04:00",
+      "npr_url": "https://www.npr.org/2020/06/30/885744560/listener-questions-past-pandemics-and-property-prices",
+      "story_id": "885744560",
+      "audio_id": "885749104",
+      "player_url": "https://www.npr.org/player/embed/885744560/885749104",
+      "description": "On the Spanish Flu, housing prices, and the resilience of Australia's economy. Indicator listener questions, answered."
+    },
+    {
+      "title": "The Uncounted Workforce",
+      "date": "2020-06-29T17:01:00-04:00",
+      "npr_url": "https://www.npr.org/2020/06/29/884989263/the-uncounted-workforce",
+      "story_id": "884989263",
+      "audio_id": "959751671",
+      "player_url": "https://www.npr.org/player/embed/884989263/959751671",
+      "description": "Incarcerated Americans make goods for American companies, and get paid next to nothing for their labor."
+    },
+    {
+      "title": "Sadie Alexander, America's First Black Economist",
+      "date": "2020-06-26T17:00:00-04:00",
+      "npr_url": "https://www.npr.org/2020/06/26/883995581/sadie-alexander-americas-first-black-economist",
+      "story_id": "883995581",
+      "audio_id": "883998227",
+      "player_url": "https://www.npr.org/player/embed/883995581/883998227",
+      "description": "Sadie Alexander was the first African-American to earn a PhD in economics. We think her contributions deserve another look."
+    },
+    {
+      "title": "Liar Loans",
+      "date": "2020-06-25T18:28:27-04:00",
+      "npr_url": "https://www.npr.org/2020/06/25/883662399/liar-loans",
+      "story_id": "883662399",
+      "audio_id": "883667761",
+      "player_url": "https://www.npr.org/player/embed/883662399/883667761",
+      "description": "Many businesses have been negatively affected by the pandemic. But some companies that have borrowed a lot of money are manipulating their numbers, to avoid breaking their debt agreements."
+    },
+    {
+      "title": "Black Workers And The Fed",
+      "date": "2020-06-24T18:17:11-04:00",
+      "npr_url": "https://www.npr.org/2020/06/24/883110397/black-workers-and-the-fed",
+      "story_id": "883110397",
+      "audio_id": "883114629",
+      "player_url": "https://www.npr.org/player/embed/883110397/883114629",
+      "description": "How the Federal Reserve manages the economy can have an outsize effect on Black workers. Here's how to make sure it doesn't leave them behind again."
+    },
+    {
+      "title": "The Economics Of Vaccine Pricing",
+      "date": "2020-06-23T17:00:00-04:00",
+      "npr_url": "https://www.npr.org/2020/06/23/882280674/the-economics-of-vaccine-pricing",
+      "story_id": "882280674",
+      "audio_id": "882299795",
+      "player_url": "https://www.npr.org/player/embed/882280674/882299795",
+      "description": "Governments and drug companies agree: We need to develop a vaccine for COVID-19. But their motives for developing a vaccine are different. And that will have a big effect on the vaccine's price."
+    },
+    {
+      "title": "Poker, Markets And Life",
+      "date": "2020-06-22T16:31:06-04:00",
+      "npr_url": "https://www.npr.org/2020/06/22/881831436/poker-markets-and-life",
+      "story_id": "881831436",
+      "audio_id": "881844283",
+      "player_url": "https://www.npr.org/player/embed/881831436/881844283",
+      "description": "How a psychologist who learned how to play high stakes poker as a way to study human behavior learned a lot about risk management, mendacity and the markets."
+    },
+    {
+      "title": "Daymond John: Swimming With Sharks",
+      "date": "2020-06-19T10:30:10-04:00",
+      "npr_url": "https://www.npr.org/2020/06/18/880495341/daymond-john-swimming-with-sharks",
+      "story_id": "880495341",
+      "audio_id": "880572466",
+      "player_url": "https://www.npr.org/player/embed/880495341/880572466",
+      "description": "Daymond John, founder of the iconic brand FUBU and investor on the reality show Shark Tank, talked to us about how he got his start and maintained his lead in the cutthroat world of fashion apparel."
+    },
+    {
+      "title": "When A Boomtown Goes Bust",
+      "date": "2020-06-18T16:10:03-04:00",
+      "npr_url": "https://www.npr.org/2020/06/18/880512548/when-a-boomtown-goes-bust",
+      "story_id": "880512548",
+      "audio_id": "880522708",
+      "player_url": "https://www.npr.org/player/embed/880512548/880522708",
+      "description": "Williston, North Dakota doubled in size during the shale oil boom a decade ago. Now oil prices have fallen and the town's facing hard times."
+    },
+    {
+      "title": "How Other Countries Handled Their Jobs Crises",
+      "date": "2020-06-17T12:36:52-04:00",
+      "npr_url": "https://www.npr.org/2020/06/17/879430404/how-other-countries-handled-their-jobs-crises",
+      "story_id": "879430404",
+      "audio_id": "879489808",
+      "player_url": "https://www.npr.org/player/embed/879430404/879489808",
+      "description": "Not all countries approached the COVID-19 economic crisis the way the U.S. did. How different strategies on unemployment had radically different outcomes."
+    },
+    {
+      "title": "Who Pays For The Police?",
+      "date": "2020-06-16T16:36:00-04:00",
+      "npr_url": "https://www.npr.org/2020/06/16/878861015/who-pays-for-the-police",
+      "story_id": "878861015",
+      "audio_id": "878870754",
+      "player_url": "https://www.npr.org/player/embed/878861015/878870754",
+      "description": "Police fines and fees have helped to fill city coffers, but they've done serious damage to community relations."
+    },
+    {
+      "title": "High-Frequency Indicators",
+      "date": "2020-06-15T17:29:33-04:00",
+      "npr_url": "https://www.npr.org/2020/06/15/877644711/high-frequency-indicators",
+      "story_id": "877644711",
+      "audio_id": "877647841",
+      "player_url": "https://www.npr.org/player/embed/877644711/877647841",
+      "description": "Five \"high-frequency\" indicators help us track the health of the U.S. economy"
+    },
+    {
+      "title": "The Business Of Police Surveillance",
+      "date": "2020-06-12T17:49:13-04:00",
+      "npr_url": "https://www.npr.org/2020/06/12/876389237/the-business-of-police-surveillance",
+      "story_id": "876389237",
+      "audio_id": "876404338",
+      "player_url": "https://www.npr.org/player/embed/876389237/876404338",
+      "description": "The companies that lead the field in surveillance technology are turning against it."
+    },
+    {
+      "title": "Story Of A Paper",
+      "date": "2020-06-11T19:43:01-04:00",
+      "npr_url": "https://www.npr.org/2020/06/11/875445743/story-of-a-paper",
+      "story_id": "875445743",
+      "audio_id": "875450890",
+      "player_url": "https://www.npr.org/player/embed/875445743/875450890",
+      "description": "Why a groundbreaking paper by Lisa Cook on the effects of racist violence took ten years to get published."
+    },
+    {
+      "title": "The Cost Of Contact Tracing",
+      "date": "2020-06-10T12:22:00-04:00",
+      "npr_url": "https://www.npr.org/2020/06/10/874080506/the-cost-of-contact-tracing",
+      "story_id": "874080506",
+      "audio_id": "874102829",
+      "player_url": "https://www.npr.org/player/embed/874080506/874102829",
+      "description": "Contact tracing is one of the most effective ways to contain a pandemic and dates back to the 1300s. But the modern versions are coming at a real cost."
+    },
+    {
+      "title": "The Post Pandemic City",
+      "date": "2020-06-09T18:00:26-04:00",
+      "npr_url": "https://www.npr.org/2020/06/09/873476389/the-post-pandemic-city",
+      "story_id": "873476389",
+      "audio_id": "873491885",
+      "player_url": "https://www.npr.org/player/embed/873476389/873491885",
+      "description": "Big American cities might never look the same again, post coronavirus. And that could be the making of them."
+    },
+    {
+      "title": "The Minnesota Paradox",
+      "date": "2020-06-08T19:44:47-04:00",
+      "npr_url": "https://www.npr.org/2020/06/08/872639451/the-minnesota-paradox",
+      "story_id": "872639451",
+      "audio_id": "872641304",
+      "player_url": "https://www.npr.org/player/embed/872639451/872641304",
+      "description": "Minnesota is often touted as one of the best places to live in the U.S. — it has the numbers to prove it. And yet, the state has some of the worst racial disparities of any state in the country."
+    },
+    {
+      "title": "Police Unions And Police Violence",
+      "date": "2020-06-05T18:45:00-04:00",
+      "npr_url": "https://www.npr.org/2020/06/05/871298161/police-unions-and-police-violence",
+      "story_id": "871298161",
+      "audio_id": "1198961262",
+      "player_url": "https://www.npr.org/player/embed/871298161/1198961262",
+      "description": "We look at the data connecting police unions and police violence. Today's episode comes from our daily podcast, The Indicator. Subscribe to our weekly newsletter here."
+    },
+    {
+      "title": "Unemployment And The Racial Divide",
+      "date": "2020-06-05T14:39:55-04:00",
+      "npr_url": "https://www.npr.org/2020/06/05/871189460/unemployment-and-the-racial-divide",
+      "story_id": "871189460",
+      "audio_id": "871198423",
+      "player_url": "https://www.npr.org/player/embed/871189460/871198423",
+      "description": "How well a family can endure a spell of unemployment depends on how much of a buffer it has to fall back on. And there are big racial and ethnic disparities in how big those buffers are."
+    },
+    {
+      "title": "The Business Of Antibody Tests",
+      "date": "2020-06-04T17:56:43-04:00",
+      "npr_url": "https://www.npr.org/2020/06/04/870130109/the-business-of-antibody-tests",
+      "story_id": "870130109",
+      "audio_id": "870137705",
+      "player_url": "https://www.npr.org/player/embed/870130109/870137705",
+      "description": "Companies all over the world are jockeying for position in the lucrative COVID-19 antibody testing market, but are quality standards getting lost in the shuffle?"
+    },
+    {
+      "title": "Police Unions And Civilian Deaths",
+      "date": "2020-06-03T19:11:00-04:00",
+      "npr_url": "https://www.npr.org/2020/06/03/869176943/police-unions-and-civilian-deaths",
+      "story_id": "869176943",
+      "audio_id": "869179612",
+      "player_url": "https://www.npr.org/player/embed/869176943/869179612",
+      "description": "There appears to be a relationship between police unionization and the number of people killed by officers."
+    },
+    {
+      "title": "Where Are The Business Bankruptcies?",
+      "date": "2020-06-02T13:01:00-04:00",
+      "npr_url": "https://www.npr.org/2020/06/02/868019680/where-are-the-business-bankruptcies",
+      "story_id": "868019680",
+      "audio_id": "868043012",
+      "player_url": "https://www.npr.org/player/embed/868019680/868043012",
+      "description": "When the coronavirus hit, economists predicted a tsunami of bankruptcies. But that hasn't happened."
+    },
+    {
+      "title": "Racism And Economics",
+      "date": "2020-06-01T20:45:36-04:00",
+      "npr_url": "https://www.npr.org/2020/06/01/867466515/racism-and-economics",
+      "story_id": "867466515",
+      "audio_id": "867494936",
+      "player_url": "https://www.npr.org/player/embed/867466515/867494936",
+      "description": "The coronavirus pandemic has been called \"the great equalizer.\" But in fact, COVID-19 has disproportionately affected African Americans in all kinds of ways."
+    },
+    {
+      "title": "The Beige Book And The Pig Farmer",
+      "date": "2020-05-29T16:42:37-04:00",
+      "npr_url": "https://www.npr.org/2020/05/29/865764620/the-beige-book-and-the-pig-farmer",
+      "story_id": "865764620",
+      "audio_id": "865783786",
+      "player_url": "https://www.npr.org/player/embed/865764620/865783786",
+      "description": "The Federal Reserve's Beige Book provides anecdotes from various parts of the economy. This month's edition illustrates the pain being suffered by pig farmers."
+    },
+    {
+      "title": "Melissa Dell On Security And Prosperity",
+      "date": "2020-05-28T16:05:30-04:00",
+      "npr_url": "https://www.npr.org/2020/05/28/864402632/melissa-dell-on-security-and-prosperity",
+      "story_id": "864402632",
+      "audio_id": "864420211",
+      "player_url": "https://www.npr.org/player/embed/864402632/864420211",
+      "description": "Mellisa Dell, this year's John Bates Clark Medal winner, explains the relationship between security, prosperity and the rule of law."
+    },
+    {
+      "title": "#WFH Forever?",
+      "date": "2020-05-27T18:39:00-04:00",
+      "npr_url": "https://www.npr.org/2020/05/27/863480131/-wfh-forever",
+      "story_id": "863480131",
+      "audio_id": "863522952",
+      "player_url": "https://www.npr.org/player/embed/863480131/863522952",
+      "description": "Many of us are working from home for now. Some could be destined to do it forever."
+    },
+    {
+      "title": "Rent In The Time Of Coronavirus",
+      "date": "2020-05-26T14:29:00-04:00",
+      "npr_url": "https://www.npr.org/2020/05/26/862711123/rent-in-the-time-of-coronavirus",
+      "story_id": "862711123",
+      "audio_id": "862770133",
+      "player_url": "https://www.npr.org/player/embed/862711123/862770133",
+      "description": "The landlord-tenant relationship is often a tense one and it's becoming a national problem."
+    },
+    {
+      "title": "Stocks Are Up But The Economy's Down",
+      "date": "2020-05-22T14:23:18-04:00",
+      "npr_url": "https://www.npr.org/2020/05/22/861331371/stocks-are-up-but-the-economys-down",
+      "story_id": "861331371",
+      "audio_id": "861340994",
+      "player_url": "https://www.npr.org/player/embed/861331371/861340994",
+      "description": "The stock market has recovered more than half the ground lost when it crashed nearly 34 percent starting in late February. But the economy hasn't recovered. Why is there such a stark disconnect?"
+    },
+    {
+      "title": "Waiting For A Surge",
+      "date": "2020-05-21T17:58:01-04:00",
+      "npr_url": "https://www.npr.org/2020/05/21/860573959/waiting-for-a-surge",
+      "story_id": "860573959",
+      "audio_id": "860574816",
+      "player_url": "https://www.npr.org/player/embed/860573959/860574816",
+      "description": "Hospitals lost millions of dollars preparing for a surge of COVID-19 patients. Some were swamped, but others only saw a handful of coronavirus cases. Now many are struggling to survive."
+    },
+    {
+      "title": "The Persistence Of Poverty",
+      "date": "2020-05-20T16:40:57-04:00",
+      "npr_url": "https://www.npr.org/2020/05/20/859911696/the-persistence-of-poverty",
+      "story_id": "859911696",
+      "audio_id": "859921359",
+      "player_url": "https://www.npr.org/player/embed/859911696/859921359",
+      "description": "Melissa Dell, winner of the John Bates Clark Medal for economics, on why poverty and insecurity are so persistent in certain parts of the world."
     }
   ]
 }
