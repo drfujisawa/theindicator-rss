@@ -1,6 +1,6 @@
 {
-  "next_date": "2019-05-22T15:32:10-04:00",
-  "episode_count": 1453,
+  "next_date": "2017-11-05T16:46:00-04:00",
+  "episode_count": 1470,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -13078,6 +13078,159 @@
       "audio_id": "736210955",
       "player_url": "https://www.npr.org/player/embed/726249427/736210955",
       "description": "Canada and the U.S. have come to an agreement on trade, and lifted their punitive tariffs on each other's goods. But some small businesses are still feeling the pain."
+    },
+    {
+      "title": "What Surfing Can Teach Us About Risk",
+      "date": "2019-05-22T16:55:00-04:00",
+      "npr_url": "https://www.npr.org/2019/05/22/725861387/what-surfing-can-teach-us-about-risk",
+      "story_id": "725861387",
+      "audio_id": "736209802",
+      "player_url": "https://www.npr.org/player/embed/725861387/736209802",
+      "description": "Surfing and financial markets have a lot in common when it comes to taking and managing risk."
+    },
+    {
+      "title": "The Nordic Paradox",
+      "date": "2019-05-21T16:08:50-04:00",
+      "npr_url": "https://www.npr.org/2019/05/21/725478906/the-nordic-paradox",
+      "story_id": "725478906",
+      "audio_id": "734743603",
+      "player_url": "https://www.npr.org/player/embed/725478906/734743603",
+      "description": "Norway is regarded as one of the most progressive nations in the world when it comes to encouraging female participation in the workforce. Yet the country still has relatively few female business leaders."
+    },
+    {
+      "title": "Economy Of Thrones",
+      "date": "2019-05-20T15:38:58-04:00",
+      "npr_url": "https://www.npr.org/2019/05/20/725073562/economy-of-thrones",
+      "story_id": "725073562",
+      "audio_id": "734743177",
+      "player_url": "https://www.npr.org/player/embed/725073562/734743177",
+      "description": "We have five economic indicators to help you understand the world of Game of Thrones."
+    },
+    {
+      "title": "Is Buying A Home A Bad Investment?",
+      "date": "2019-05-17T15:09:00-04:00",
+      "npr_url": "https://www.npr.org/2019/05/17/724292924/is-buying-a-home-a-bad-investment",
+      "story_id": "724292924",
+      "audio_id": "733521645",
+      "player_url": "https://www.npr.org/player/embed/724292924/733521645",
+      "description": "Home ownership used to be a central pillar of the American Dream. Today, maybe not so much."
+    },
+    {
+      "title": "The Real Minimum Wage",
+      "date": "2019-05-16T15:09:36-04:00",
+      "npr_url": "https://www.npr.org/2019/05/16/723947780/the-real-minimum-wage",
+      "story_id": "723947780",
+      "audio_id": "733521051",
+      "player_url": "https://www.npr.org/player/embed/723947780/733521051",
+      "description": "Many states and cities have their own minimum wages, which are higher than the federal minimum of $7.25 per hour. One economist calculated a single measure that accounts for all those differences."
+    },
+    {
+      "title": "Psssst...Want To Buy A Tarantula?",
+      "date": "2019-05-15T17:20:45-04:00",
+      "npr_url": "https://www.npr.org/2019/05/15/723721749/psssst-want-to-buy-a-tarantula",
+      "story_id": "723721749",
+      "audio_id": "733500337",
+      "player_url": "https://www.npr.org/player/embed/723721749/733500337",
+      "description": "The market for animal smuggling is relatively new. But it's gotten really big, really fast."
+    },
+    {
+      "title": "The World's Identity Crisis",
+      "date": "2019-05-14T15:29:29-04:00",
+      "npr_url": "https://www.npr.org/2019/05/14/723259456/the-worlds-identity-crisis",
+      "story_id": "723259456",
+      "audio_id": "732711514",
+      "player_url": "https://www.npr.org/player/embed/723259456/732711514",
+      "description": "Around one in seven people do not have any official ID, according to the World Bank."
+    },
+    {
+      "title": "Does The Deficit Matter?",
+      "date": "2019-05-13T16:43:00-04:00",
+      "npr_url": "https://www.npr.org/2019/05/13/722898635/does-the-deficit-matter",
+      "story_id": "722898635",
+      "audio_id": "731379980",
+      "player_url": "https://www.npr.org/player/embed/722898635/731379980",
+      "description": "Budget deficits used to be seen as a bad thing. Today, not so much...and some economists even say they don't really matter. What changed?"
+    },
+    {
+      "title": "Wyatt Cenac On School Funding... And Thor",
+      "date": "2019-05-10T15:41:03-04:00",
+      "npr_url": "https://www.npr.org/2019/05/10/722196758/wyatt-cenac-on-school-funding-and-thor",
+      "story_id": "722196758",
+      "audio_id": "730625308",
+      "player_url": "https://www.npr.org/player/embed/722196758/730625308",
+      "description": "The comedian and former Daily Show correspondent takes on complex social issues in his HBO show, Problem Areas. He discusses his approach to melding comedy with social commentary."
+    },
+    {
+      "title": "Will China Overtake The US?",
+      "date": "2019-05-09T17:10:13-04:00",
+      "npr_url": "https://www.npr.org/2019/05/09/721881130/will-china-overtake-the-us",
+      "story_id": "721881130",
+      "audio_id": "730624847",
+      "player_url": "https://www.npr.org/player/embed/721881130/730624847",
+      "description": "China is so big and growing so fast that many people say it will inevitably become a bigger economy than the U.S. in every way. But there are several good reasons for skepticism."
+    },
+    {
+      "title": "The Problem With Banning Plastic Bags",
+      "date": "2019-05-08T16:27:27-04:00",
+      "npr_url": "https://www.npr.org/2019/05/08/721542495/the-problem-with-banning-plastic-bags",
+      "story_id": "721542495",
+      "audio_id": "730624433",
+      "player_url": "https://www.npr.org/player/embed/721542495/730624433",
+      "description": "Plastic bags are no boon to the environment — but banning them might be worse."
+    },
+    {
+      "title": "Subway's Five-Dollar Footlong Fail?",
+      "date": "2019-05-07T17:34:49-04:00",
+      "npr_url": "https://www.npr.org/2019/05/07/721193879/subways-five-dollar-footlong-fail",
+      "story_id": "721193879",
+      "audio_id": "730624104",
+      "player_url": "https://www.npr.org/player/embed/721193879/730624104",
+      "description": "Subway has more restaurants in the U.S. than any other fast food company. It did spectacularly well during the recession thanks, in part, to it's famous $5 footlong deal. But that deal has come back to haunt it."
+    },
+    {
+      "title": "Japanese Womenomics",
+      "date": "2019-05-06T16:21:29-04:00",
+      "npr_url": "https://www.npr.org/2019/05/06/720797149/japanese-womenomics",
+      "story_id": "720797149",
+      "audio_id": "730085193",
+      "player_url": "https://www.npr.org/player/embed/720797149/730085193",
+      "description": "Women have long been an untapped economic resource in Japan. Japanese Prime Minister Shinzo Abe decided to change that. Six years after he launched \"womenomics,\" is it working?"
+    },
+    {
+      "title": "Jobs Friday: The Part-Time Penalty",
+      "date": "2019-05-03T17:45:09-04:00",
+      "npr_url": "https://www.npr.org/2019/05/03/720122267/jobs-friday-the-part-time-penalty",
+      "story_id": "720122267",
+      "audio_id": "730079264",
+      "player_url": "https://www.npr.org/player/embed/720122267/730079264",
+      "description": "Part-time workers make less per hour than full-time workers do. That has big implications for women and mothers."
+    },
+    {
+      "title": "All The Bucks On Broadway",
+      "date": "2019-05-02T17:27:35-04:00",
+      "npr_url": "https://www.npr.org/2019/05/02/719778424/all-the-bucks-on-broadway",
+      "story_id": "719778424",
+      "audio_id": "730088131",
+      "player_url": "https://www.npr.org/player/embed/719778424/730088131",
+      "description": "The Tony nominations were announced this week and that got us thinking...how does the business of Broadway work?"
+    },
+    {
+      "title": "The Fed's Messaging Dilemma",
+      "date": "2019-05-01T17:14:48-04:00",
+      "npr_url": "https://www.npr.org/2019/05/01/719179190/the-feds-messaging-dilemma",
+      "story_id": "719179190",
+      "audio_id": "730089547",
+      "player_url": "https://www.npr.org/player/embed/719179190/730089547",
+      "description": "Right now the economy looks good, but inflation is lower than the Federal Reserve would like. A future rate cut could juice prices, but the messaging has to be right."
+    },
+    {
+      "title": "How Grocery Shelves Get Stacked",
+      "date": "2019-04-30T16:46:00-04:00",
+      "npr_url": "https://www.npr.org/2019/04/30/718711109/how-grocery-shelves-get-stacked",
+      "story_id": "718711109",
+      "audio_id": "730090982",
+      "player_url": "https://www.npr.org/player/embed/718711109/730090982",
+      "description": "The pay-to-play way your supermarket's shelves work."
     }
   ]
 }
