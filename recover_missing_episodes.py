@@ -1,216 +1,487 @@
+#!/usr/bin/env python3
+
+import html
 import json
 import re
 import time
-from urllib.parse import quote
+from urllib.parse import quote, urlparse
 from urllib.request import Request, urlopen
-from urllib.error import HTTPError, URLError
+
 
 AUDIT_FILE = "indicator_early_audit.json"
 OUTPUT_FILE = "indicator_recovery_test.json"
 
 TEST_LIMIT = 10
-TIMEOUT = 25
+TIMEOUT = 30
 
 HEADERS = {
     "User-Agent": (
-        "Mozilla/5.0 (compatible; IndicatorArchiveRecovery/1.0; "
-        "+https://github.com/)"
+        "Mozilla/5.0 (compatible; "
+        "IndicatorArchiveRecovery/2.0)"
     )
 }
 
 
 def fetch(url):
-    request = Request(url, headers=HEADERS)
+    request = Request(
+        url,
+        headers=HEADERS
+    )
 
-    with urlopen(request, timeout=TIMEOUT) as response:
-        return response.read().decode("utf-8", errors="replace")
+    with urlopen(
+        request,
+        timeout=TIMEOUT
+    ) as response:
+        return response.read().decode(
+            "utf-8",
+            errors="replace"
+        )
 
 
-def clean_text(value):
+def clean(value):
     if not value:
         return ""
 
-    value = re.sub(r"<[^>]+>", " ", value)
-    value = value.replace("&amp;", "&")
-    value = value.replace("&#39;", "'")
-    value = value.replace("&quot;", '"')
-    value = re.sub(r"\s+", " ", value)
+    value = html.unescape(value)
+    value = re.sub(
+        r"<[^>]+>",
+        " ",
+        value
+    )
+    value = re.sub(
+        r"\s+",
+        " ",
+        value
+    )
 
     return value.strip()
 
 
-def search_npr(title):
-    query = quote(title)
-    url = f"https://www.npr.org/search?query={query}"
+def normalize(value):
+    value = clean(value).lower()
+    value = value.replace("&", " and ")
 
-    html = fetch(url)
-
-    links = re.findall(
-        r'href=["\'](https://www\.npr\.org/[^"\']+)["\']',
-        html
+    value = re.sub(
+        r"[^a-z0-9]+",
+        " ",
+        value
     )
 
-    results = []
-
-    for link in links:
-        link = link.replace("&amp;", "&")
-
-        if link not in results:
-            results.append(link)
-
-    return results[:10]
+    return " ".join(
+        value.split()
+    )
 
 
-def extract_title(html):
+def title_score(a, b):
+    a_words = set(
+        normalize(a).split()
+    )
+
+    b_words = set(
+        normalize(b).split()
+    )
+
+    if not a_words or not b_words:
+        return 0.0
+
+    return (
+        len(a_words & b_words)
+        / len(a_words | b_words)
+    )
+
+
+def search_web(title, date):
+    """
+    Use DuckDuckGo's lightweight HTML search.
+
+    We are intentionally searching the wider public-radio
+    ecosystem rather than NPR's broken historical search.
+    """
+
+    query = (
+        f'"{title}" '
+        f'"{date[:4]}" '
+        f'NPR'
+    )
+
+    url = (
+        "https://html.duckduckgo.com/html/"
+        "?q=" + quote(query)
+    )
+
+    page = fetch(url)
+
+    links = []
+
     patterns = [
-        r'<meta[^>]+property=["\']og:title["\'][^>]+content=["\']([^"\']+)',
-        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:title["\']',
-        r"<title>(.*?)</title>"
+        r'class="result__a"[^>]+href="([^"]+)"',
+        r"class='result__a'[^>]+href='([^']+)'",
     ]
 
     for pattern in patterns:
-        match = re.search(pattern, html, re.I | re.S)
+        for match in re.findall(
+            pattern,
+            page,
+            re.I
+        ):
+            match = html.unescape(match)
 
-        if match:
-            return clean_text(match.group(1))
+            # DuckDuckGo sometimes wraps URLs.
+            redirect = re.search(
+                r"uddg=([^&]+)",
+                match
+            )
 
-    return None
+            if redirect:
+                from urllib.parse import unquote
+                match = unquote(
+                    redirect.group(1)
+                )
+
+            if (
+                match.startswith("http")
+                and match not in links
+            ):
+                links.append(match)
+
+    return links[:15]
 
 
-def normalize(value):
-    value = value.lower()
-    value = re.sub(r"[^a-z0-9]+", " ", value)
-    return " ".join(value.split())
+def extract_meta(page):
+    title = None
+    description = None
 
-
-def title_score(reference, candidate):
-    a = set(normalize(reference).split())
-    b = set(normalize(candidate).split())
-
-    if not a or not b:
-        return 0
-
-    return len(a & b) / len(a | b)
-
-
-def find_best_candidate(reference_title):
-    links = search_npr(reference_title)
-
-    candidates = []
-
-    for link in links:
-        try:
-            html = fetch(link)
-            candidate_title = extract_title(html)
-
-            if not candidate_title:
-                continue
-
-            score = title_score(reference_title, candidate_title)
-
-            candidates.append({
-                "npr_url": link,
-                "npr_title": candidate_title,
-                "title_score": round(score, 3)
-            })
-
-        except Exception as exc:
-            candidates.append({
-                "npr_url": link,
-                "error": str(exc)
-            })
-
-        time.sleep(0.5)
-
-    scored = [
-        item for item in candidates
-        if "title_score" in item
+    title_patterns = [
+        (
+            r'<meta[^>]+property=["\']og:title["\']'
+            r'[^>]+content=["\']([^"\']+)'
+        ),
+        (
+            r'<meta[^>]+content=["\']([^"\']+)["\']'
+            r'[^>]+property=["\']og:title["\']'
+        ),
+        r"<title>(.*?)</title>",
     ]
 
-    scored.sort(
-        key=lambda item: item["title_score"],
-        reverse=True
+    for pattern in title_patterns:
+        match = re.search(
+            pattern,
+            page,
+            re.I | re.S
+        )
+
+        if match:
+            title = clean(
+                match.group(1)
+            )
+            break
+
+    description_patterns = [
+        (
+            r'<meta[^>]+name=["\']description["\']'
+            r'[^>]+content=["\']([^"\']*)'
+        ),
+        (
+            r'<meta[^>]+property=["\']og:description["\']'
+            r'[^>]+content=["\']([^"\']*)'
+        ),
+    ]
+
+    for pattern in description_patterns:
+        match = re.search(
+            pattern,
+            page,
+            re.I | re.S
+        )
+
+        if match:
+            description = clean(
+                match.group(1)
+            )
+            break
+
+    return title, description
+
+
+def extract_audio_urls(page):
+    """
+    Search raw page source for likely MP3/audio URLs.
+
+    Affiliate CMS pages often keep these URLs in JSON,
+    script data or audio-player attributes even when
+    they aren't visible in the article text.
+    """
+
+    urls = []
+
+    patterns = [
+        r'https?://[^"\'>\s]+\.mp3(?:\?[^"\'>\s]*)?',
+        r'https?://ondemand\.npr\.org/[^"\'>\s]+',
+        r'https?://play\.podtrac\.com/[^"\'>\s]+',
+        r'https?://[^"\'>\s]*npr[^"\'>\s]*\.mp3[^"\'>\s]*',
+    ]
+
+    for pattern in patterns:
+        for match in re.findall(
+            pattern,
+            page,
+            re.I
+        ):
+            match = html.unescape(
+                match
+            )
+
+            match = match.replace(
+                "\\u0026",
+                "&"
+            )
+
+            match = match.replace(
+                "\\/",
+                "/"
+            )
+
+            if match not in urls:
+                urls.append(match)
+
+    return urls
+
+
+def candidate_page(url, reference_title):
+    try:
+        page = fetch(url)
+
+    except Exception as exc:
+        return {
+            "url": url,
+            "error": str(exc)
+        }
+
+    page_title, description = (
+        extract_meta(page)
     )
 
-    best = scored[0] if scored else None
+    if not page_title:
+        return {
+            "url": url,
+            "error": "No page title"
+        }
 
-    return best, candidates
+    score = title_score(
+        reference_title,
+        page_title
+    )
+
+    audio_urls = extract_audio_urls(
+        page
+    )
+
+    return {
+        "url": url,
+        "domain": urlparse(url).netloc,
+        "page_title": page_title,
+        "description": description,
+        "title_score": round(
+            score,
+            3
+        ),
+        "audio_urls": audio_urls,
+    }
 
 
-with open(AUDIT_FILE, "r", encoding="utf-8") as f:
+with open(
+    AUDIT_FILE,
+    "r",
+    encoding="utf-8"
+) as f:
     audit = json.load(f)
 
-missing = audit.get("possible_missing", [])[:TEST_LIMIT]
+
+missing = audit.get(
+    "possible_missing",
+    []
+)[:TEST_LIMIT]
+
 
 report = {
     "proof_of_concept": True,
-    "test_limit": TEST_LIMIT,
+    "method": "affiliate-search",
     "attempted_count": len(missing),
-    "found_count": 0,
-    "not_found_count": 0,
+    "candidate_page_count": 0,
+    "audio_found_count": 0,
     "results": []
 }
 
-for index, episode in enumerate(missing, start=1):
-    reference_title = episode.get("title", "")
-    reference_date = episode.get("date")
 
+for number, episode in enumerate(
+    missing,
+    start=1
+):
+    title = episode["title"]
+    date = episode["date"]
+
+    print()
     print(
-        f"[{index}/{len(missing)}] "
-        f"{reference_date} - {reference_title}"
+        f"[{number}/{len(missing)}] "
+        f"{date} — {title}"
     )
 
     result = {
-        "reference_date": reference_date,
-        "reference_title": reference_title,
-        "reference_year": episode.get("reference_year"),
-        "reference_episode": episode.get("reference_episode")
+        "reference_date": date,
+        "reference_title": title,
+        "reference_year":
+            episode.get(
+                "reference_year"
+            ),
+        "reference_episode":
+            episode.get(
+                "reference_episode"
+            ),
+        "search_results": [],
     }
 
     try:
-        best, candidates = find_best_candidate(reference_title)
+        links = search_web(
+            title,
+            date
+        )
 
-        result["best_candidate"] = best
-        result["candidates_checked"] = candidates
-
-        if best and best.get("title_score", 0) >= 0.5:
-            result["status"] = "candidate_found"
-            report["found_count"] += 1
-
-            print(
-                "  Candidate:",
-                best["npr_title"],
-                best["npr_url"],
-                best["title_score"]
-            )
-        else:
-            result["status"] = "not_found"
-            report["not_found_count"] += 1
-            print("  No strong candidate found.")
-
-    except (HTTPError, URLError, TimeoutError) as exc:
-        result["status"] = "request_error"
-        result["error"] = str(exc)
-        report["not_found_count"] += 1
-        print("  Request error:", exc)
+        print(
+            f"Found {len(links)} "
+            "web result(s)."
+        )
 
     except Exception as exc:
-        result["status"] = "error"
-        result["error"] = str(exc)
-        report["not_found_count"] += 1
-        print("  Error:", exc)
+        result["search_error"] = (
+            str(exc)
+        )
 
-    report["results"].append(result)
+        report["results"].append(
+            result
+        )
+
+        continue
+
+    candidates = []
+
+    for url in links:
+        candidate = candidate_page(
+            url,
+            title
+        )
+
+        candidates.append(
+            candidate
+        )
+
+        if (
+            candidate.get(
+                "title_score",
+                0
+            )
+            >= 0.6
+        ):
+            report[
+                "candidate_page_count"
+            ] += 1
+
+        if candidate.get(
+            "audio_urls"
+        ):
+            report[
+                "audio_found_count"
+            ] += 1
+
+        time.sleep(0.5)
+
+    candidates.sort(
+        key=lambda item: (
+            item.get(
+                "title_score",
+                0
+            ),
+            len(
+                item.get(
+                    "audio_urls",
+                    []
+                )
+            ),
+        ),
+        reverse=True,
+    )
+
+    result["search_results"] = (
+        candidates
+    )
+
+    if candidates:
+        result["best_candidate"] = (
+            candidates[0]
+        )
+
+        print(
+            "Best:",
+            candidates[0].get(
+                "page_title"
+            ),
+            candidates[0].get(
+                "title_score"
+            )
+        )
+
+        print(
+            "Audio URLs:",
+            len(
+                candidates[0].get(
+                    "audio_urls",
+                    []
+                )
+            )
+        )
+
+    report["results"].append(
+        result
+    )
 
     time.sleep(1)
 
 
-with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-    json.dump(report, f, indent=2, ensure_ascii=False)
+with open(
+    OUTPUT_FILE,
+    "w",
+    encoding="utf-8"
+) as f:
+    json.dump(
+        report,
+        f,
+        indent=2,
+        ensure_ascii=False
+    )
+
 
 print()
-print("Recovery proof of concept complete.")
-print("Attempted:", report["attempted_count"])
-print("Candidates found:", report["found_count"])
-print("Not found/errors:", report["not_found_count"])
-print("Wrote:", OUTPUT_FILE)
+print(
+    "================================"
+)
+print(
+    "Affiliate recovery test complete"
+)
+print(
+    "Attempted:",
+    report["attempted_count"]
+)
+print(
+    "Matching candidate pages:",
+    report["candidate_page_count"]
+)
+print(
+    "Candidates containing audio:",
+    report["audio_found_count"]
+)
+print(
+    "Saved:",
+    OUTPUT_FILE
+)
+print(
+    "================================"
+)
