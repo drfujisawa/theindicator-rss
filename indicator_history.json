@@ -1,6 +1,6 @@
 {
-  "next_date": "2020-10-26T17:26:00-04:00",
-  "episode_count": 1093,
+  "next_date": "2020-07-29T19:31:35-04:00",
+  "episode_count": 1156,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -9838,6 +9838,573 @@
       "audio_id": "928380919",
       "player_url": "https://www.npr.org/player/embed/928322838/928380919",
       "description": "Stacey and Cardiff answer questions from kids...also, a few animal facts."
+    },
+    {
+      "title": "A New DAWN On Broadway",
+      "date": "2020-10-26T18:08:53-04:00",
+      "npr_url": "https://www.npr.org/2020/10/26/927996416/a-new-dawn-on-broadway",
+      "story_id": "927996416",
+      "audio_id": "927996491",
+      "player_url": "https://www.npr.org/player/embed/927996416/927996491",
+      "description": "As arts workers continue to struggle, they're trying their hand at something new. Not a new performance or show, but a piece of legislation which would keep their industry alive through the pandemic."
+    },
+    {
+      "title": "The Great Remittance Mystery",
+      "date": "2020-10-23T17:00:00-04:00",
+      "npr_url": "https://www.npr.org/2020/10/23/927249563/the-great-remittance-mystery",
+      "story_id": "927249563",
+      "audio_id": "927252301",
+      "player_url": "https://www.npr.org/player/embed/927249563/927252301",
+      "description": "In 2019, migrants sent a record $500 billion back to their countries of origin. Then COVID hit, and the World Bank predicted a 20 percent drop in that flow of cash. But now the data is in, and it turns out remittances have held steady."
+    },
+    {
+      "title": "The Case Against Google",
+      "date": "2020-10-22T18:42:11-04:00",
+      "npr_url": "https://www.npr.org/2020/10/22/926833264/the-case-against-google",
+      "story_id": "926833264",
+      "audio_id": "926884574",
+      "player_url": "https://www.npr.org/player/embed/926833264/926884574",
+      "description": "A few days ago, The Department of Justice filed a massive antitrust lawsuit against Google. The case focuses on the company's dominance in search, but what about the rest of Google's empire?"
+    },
+    {
+      "title": "Hope Vs. Despair",
+      "date": "2020-10-21T17:00:58-04:00",
+      "npr_url": "https://www.npr.org/2020/10/21/926344329/hope-vs-despair",
+      "story_id": "926344329",
+      "audio_id": "926344592",
+      "player_url": "https://www.npr.org/player/embed/926344329/926344592",
+      "description": "Should we feel hope or despair about the future of the American economy? Cardiff and Stacey debate."
+    },
+    {
+      "title": "Why Women Are Leaving The Workforce",
+      "date": "2020-10-20T18:42:30-04:00",
+      "npr_url": "https://www.npr.org/2020/10/20/925944351/why-women-are-leaving-the-workforce",
+      "story_id": "925944351",
+      "audio_id": "925969331",
+      "player_url": "https://www.npr.org/player/embed/925944351/925969331",
+      "description": "Of the 1.1 million people who left the job market in September, over 860,000 were women. Today we look at why women are dropping out of the workforce and what it will mean for the economy."
+    },
+    {
+      "title": "Economic Consequences Of The Census",
+      "date": "2020-10-19T18:58:00-04:00",
+      "npr_url": "https://www.npr.org/2020/10/19/925576324/economic-consequences-of-the-census",
+      "story_id": "925576324",
+      "audio_id": "925578866",
+      "player_url": "https://www.npr.org/player/embed/925576324/925578866",
+      "description": "The coronavirus pandemic, distrust of the government, and a surprising political battle have the 2020 Census count."
+    },
+    {
+      "title": "The Lehman Trilogy",
+      "date": "2020-10-16T18:33:26-04:00",
+      "npr_url": "https://www.npr.org/2020/10/16/924743813/the-lehman-trilogy",
+      "story_id": "924743813",
+      "audio_id": "924758016",
+      "player_url": "https://www.npr.org/player/embed/924743813/924758016",
+      "description": "Just before Broadway shut down, team Indicator saw The Lehman Trilogy, about the origin of Lehman Brothers. We talk with playwright Ben Power about the firm, the family and the consolation of history."
+    },
+    {
+      "title": "Inequities Of The Pandemic",
+      "date": "2020-10-15T19:07:41-04:00",
+      "npr_url": "https://www.npr.org/2020/10/15/924234738/inequities-of-the-pandemic",
+      "story_id": "924234738",
+      "audio_id": "924279124",
+      "player_url": "https://www.npr.org/player/embed/924234738/924279124",
+      "description": "The coronavirus has devastated the U.S. economy, but it hasn't affected everyone equally. Today on the show, four ways the pandemic has deepened inequality."
+    },
+    {
+      "title": "Daymond John Plays Overrated Or Underrated",
+      "date": "2020-10-14T17:01:52-04:00",
+      "npr_url": "https://www.npr.org/2020/10/14/923674901/daymond-john-plays-overrated-or-underrated",
+      "story_id": "923674901",
+      "audio_id": "923685870",
+      "player_url": "https://www.npr.org/player/embed/923674901/923685870",
+      "description": "Daymond John and what he thinks is overrated and what's underrated"
+    },
+    {
+      "title": "How Vikings Launched Globalization 1.0",
+      "date": "2020-10-13T17:50:00-04:00",
+      "npr_url": "https://www.npr.org/2020/10/13/923237556/how-vikings-launched-globalization-1-0",
+      "story_id": "923237556",
+      "audio_id": "923449851",
+      "player_url": "https://www.npr.org/player/embed/923237556/923449851",
+      "description": "How the Vikings trading with a North American Indigenous group shortly after the year 1000 connected global trading networks and kicked off the first version of globalization."
+    },
+    {
+      "title": "An Economist Walks Into A Bar",
+      "date": "2020-10-12T20:56:07-04:00",
+      "npr_url": "https://www.npr.org/2020/10/12/923123253/an-economist-walks-into-a-bar",
+      "story_id": "923123253",
+      "audio_id": "923135069",
+      "player_url": "https://www.npr.org/player/embed/923123253/923135069",
+      "description": "There's a long history of bars playing a vital role in innovation and economic growth. What happens when they all close down?"
+    },
+    {
+      "title": "WFH From Barbados",
+      "date": "2020-10-09T19:21:55-04:00",
+      "npr_url": "https://www.npr.org/2020/10/09/922479527/wfh-from-barbados",
+      "story_id": "922479527",
+      "audio_id": "922502751",
+      "player_url": "https://www.npr.org/player/embed/922479527/922502751",
+      "description": "The Barbados economy depends on tourism, so travel restrictions have been devastating. But the island nation has come up with an innovative stopgap: A visa that lets visitors work remotely from Barbados for a year."
+    },
+    {
+      "title": "Where's Everyone Moving To?",
+      "date": "2020-10-08T18:48:34-04:00",
+      "npr_url": "https://www.npr.org/2020/10/08/921769579/wheres-everyone-moving-to",
+      "story_id": "921769579",
+      "audio_id": "921906981",
+      "player_url": "https://www.npr.org/player/embed/921769579/921906981",
+      "description": "Remember all the predictions about the pandemic pushing people to quit big, expensive cities? Six months in, the data is providing some clues about which cities Americans are leaving, and where they're moving to. An update on the \"urban exodus.\""
+    },
+    {
+      "title": "The Great Fridge Freeze-Out",
+      "date": "2020-10-07T17:46:27-04:00",
+      "npr_url": "https://www.npr.org/2020/10/07/921333859/the-great-fridge-freeze-out",
+      "story_id": "921333859",
+      "audio_id": "921356526",
+      "player_url": "https://www.npr.org/player/embed/921333859/921356526",
+      "description": "For months now, there's been a shortage of refrigerators and freezers across the U.S. Shoppers can't find appliances to buy and stores can't find enough appliances to sell. Alina Selyukh joins The Indicator to explain why."
+    },
+    {
+      "title": "The Semiconductor Standoff",
+      "date": "2020-10-06T17:01:50-04:00",
+      "npr_url": "https://www.npr.org/2020/10/06/920818891/the-semiconductor-standoff",
+      "story_id": "920818891",
+      "audio_id": "920844975",
+      "player_url": "https://www.npr.org/player/embed/920818891/920844975",
+      "description": "As the trade war continues, China hasn't purchased nearly as many exports from the United States as it previously agreed to. There was one bright spot though: semiconductors — but that may soon change."
+    },
+    {
+      "title": "Commercial Real Estate's Great Reckoning",
+      "date": "2020-10-05T19:01:00-04:00",
+      "npr_url": "https://www.npr.org/2020/10/05/920521236/commercial-real-estates-great-reckoning",
+      "story_id": "920521236",
+      "audio_id": "920550209",
+      "player_url": "https://www.npr.org/player/embed/920521236/920550209",
+      "description": "The coronavirus has caused a massive downturn in commercial real estate. As the pandemic continues and companies back out of leases, the future of commercial real estate is brought into question."
+    },
+    {
+      "title": "Jobs Friday: The Worker Shortage Mystery",
+      "date": "2020-10-02T19:43:37-04:00",
+      "npr_url": "https://www.npr.org/2020/10/02/919720917/jobs-friday-the-worker-shortage-mystery",
+      "story_id": "919720917",
+      "audio_id": "919755234",
+      "player_url": "https://www.npr.org/player/embed/919720917/919755234",
+      "description": "The U.S. is experiencing the worst unemployment crisis since the Great Depression. Meanwhile, some employers claim that they can't find the workers they need. What's going on?"
+    },
+    {
+      "title": "The Economic Legacy Of Shinzo Abe",
+      "date": "2020-10-01T19:31:24-04:00",
+      "npr_url": "https://www.npr.org/2020/10/01/919324492/the-economic-legacy-of-shinzo-abe",
+      "story_id": "919324492",
+      "audio_id": "919328269",
+      "player_url": "https://www.npr.org/player/embed/919324492/919328269",
+      "description": "Shinzo Abe served as Japan's Prime Minister for nearly eight years before suddenly announcing his retirement in August. Today on the show, the lessons of Abenomics for the US and other countries."
+    },
+    {
+      "title": "Big Donors & Pay-To-Play Politics",
+      "date": "2020-09-30T19:16:40-04:00",
+      "npr_url": "https://www.npr.org/2020/09/30/918871445/big-donors-pay-to-play-politics",
+      "story_id": "918871445",
+      "audio_id": "918907425",
+      "player_url": "https://www.npr.org/player/embed/918871445/918907425",
+      "description": "The Center for Public Integrity joins The Indicator with an excerpt from The Heist, a new podcast exploring money and politics in the Trump Administration."
+    },
+    {
+      "title": "The Indicator World Tour",
+      "date": "2020-09-29T19:13:10-04:00",
+      "npr_url": "https://www.npr.org/2020/09/29/918396070/the-indicator-world-tour",
+      "story_id": "918396070",
+      "audio_id": "918412629",
+      "player_url": "https://www.npr.org/player/embed/918396070/918412629",
+      "description": "The Indicator brings listeners economic indicators from the other six continents."
+    },
+    {
+      "title": "Behind The Art Of The Deal",
+      "date": "2020-09-28T19:06:00-04:00",
+      "npr_url": "https://www.npr.org/2020/09/28/917908326/behind-the-art-of-the-deal",
+      "story_id": "917908326",
+      "audio_id": "917952182",
+      "player_url": "https://www.npr.org/player/embed/917908326/917952182",
+      "description": "Stacey talks to Tony Schwartz, co-author of Trump: The Art Of The Deal, about the book and the recent New York Times report exploring President Trump's tax records."
+    },
+    {
+      "title": "Some Listener Questions!",
+      "date": "2020-09-25T19:02:04-04:00",
+      "npr_url": "https://www.npr.org/2020/09/25/917060246/some-listener-questions",
+      "story_id": "917060246",
+      "audio_id": "917088050",
+      "player_url": "https://www.npr.org/player/embed/917060246/917088050",
+      "description": "Cardiff and Stacey answer some listener questions about the rebounding demand for gas, the rise of contactless payments, and how wages have changed for low-income workers over the past few years."
+    },
+    {
+      "title": "RIP Business Suit?",
+      "date": "2020-09-24T19:19:44-04:00",
+      "npr_url": "https://www.npr.org/2020/09/24/916689224/rip-business-suit",
+      "story_id": "916689224",
+      "audio_id": "916714545",
+      "player_url": "https://www.npr.org/player/embed/916689224/916714545",
+      "description": "For 400 years, the business suit has been a staple in men's fashion...then the pandemic struck. Today on the show, the end of the business suit?"
+    },
+    {
+      "title": "The Invention Of Paper Money",
+      "date": "2020-09-23T19:08:21-04:00",
+      "npr_url": "https://www.npr.org/2020/09/23/916269474/the-invention-of-paper-money",
+      "story_id": "916269474",
+      "audio_id": "916312416",
+      "player_url": "https://www.npr.org/player/embed/916269474/916312416",
+      "description": "Paper currency has become standard around the world, but that wasn't always the case. Planet Money host Jacob Goldstein tells the story of how paper money came to be — and why it temporarily went away."
+    },
+    {
+      "title": "A Few Freaky Facts",
+      "date": "2020-09-22T18:35:00-04:00",
+      "npr_url": "https://www.npr.org/2020/09/22/915758540/a-few-freaky-facts",
+      "story_id": "915758540",
+      "audio_id": "915809674",
+      "player_url": "https://www.npr.org/player/embed/915758540/915809674",
+      "description": "Stacey and Cardiff discuss some of the non-obvious ways the coronavirus pandemic — and the policy response to it — has reshaped the U.S. economy."
+    },
+    {
+      "title": "Jamaican Monetary Policy: Behind The Music",
+      "date": "2020-09-21T19:28:10-04:00",
+      "npr_url": "https://www.npr.org/2020/09/21/915411409/jamaican-monetary-policy-behind-the-music",
+      "story_id": "915411409",
+      "audio_id": "915459239",
+      "player_url": "https://www.npr.org/player/embed/915411409/915459239",
+      "description": "Jamaica's Central Bank has a unique way of explaining its policies: Reggae music videos. The Indicator talks with the Central Bank about why they've taken this unique approach."
+    },
+    {
+      "title": "Downturn Start-Ups: A Conversation With Guy Raz",
+      "date": "2020-09-18T17:10:51-04:00",
+      "npr_url": "https://www.npr.org/2020/09/18/914525668/downturn-start-ups-a-conversation-with-guy-raz",
+      "story_id": "914525668",
+      "audio_id": "914547387",
+      "player_url": "https://www.npr.org/player/embed/914525668/914547387",
+      "description": "Since the pandemic started, nearly 100,000 businesses have closed permanently. Opening a business now might seem crazy. But downturn start-ups have some advantages."
+    },
+    {
+      "title": "DIY Firefighting",
+      "date": "2020-09-17T17:01:37-04:00",
+      "npr_url": "https://www.npr.org/2020/09/16/913754830/diy-firefighting",
+      "story_id": "913754830",
+      "audio_id": "913979345",
+      "player_url": "https://www.npr.org/player/embed/913754830/913979345",
+      "description": "Emergency services are spread so thin in the West that some property owners are taking a D-I-Y approach to firefighting."
+    },
+    {
+      "title": "How Immigration Is Changing The U.S. Economy",
+      "date": "2020-09-16T17:01:06-04:00",
+      "npr_url": "https://www.npr.org/2020/09/16/913664417/how-immigration-is-changing-the-u-s-economy",
+      "story_id": "913664417",
+      "audio_id": "913709616",
+      "player_url": "https://www.npr.org/player/embed/913664417/913709616",
+      "description": "Nearly 17 percent of the U.S. labor force is made up of immigrants. That's up from 12.4 percent in 2000, and 6.7 percent in 1980. What that means for the economy."
+    },
+    {
+      "title": "A Smarter Approach To Lockdowns",
+      "date": "2020-09-15T17:19:00-04:00",
+      "npr_url": "https://www.npr.org/2020/09/15/913241418/a-smarter-approach-to-lockdowns",
+      "story_id": "913241418",
+      "audio_id": "913268105",
+      "player_url": "https://www.npr.org/player/embed/913241418/913268105",
+      "description": "The coronavirus has put millions of people out of work. Greg Ip talks about his recent article in the Wall Street Journal and argues that lockdowns are \"an overly blunt and economically costly tool.\""
+    },
+    {
+      "title": "The Birth Of The Greenback",
+      "date": "2020-09-14T17:41:55-04:00",
+      "npr_url": "https://www.npr.org/2020/09/14/912817017/the-birth-of-the-greenback",
+      "story_id": "912817017",
+      "audio_id": "912827437",
+      "player_url": "https://www.npr.org/player/embed/912817017/912827437",
+      "description": "In the mid-1800s, the US had 8,370 kinds of money. How that happened, and what it meant for the US economy."
+    },
+    {
+      "title": "The Science of Hoops",
+      "date": "2020-09-11T17:01:12-04:00",
+      "npr_url": "https://www.npr.org/2020/09/11/911898347/the-science-of-hoops",
+      "story_id": "911898347",
+      "audio_id": "911967767",
+      "player_url": "https://www.npr.org/player/embed/911898347/911967767",
+      "description": "The three-point shot has revolutionized basketball, but its unintended consequences could mean trouble for the sport's future."
+    },
+    {
+      "title": "Making The Most Of Scarce Space",
+      "date": "2020-09-10T17:11:00-04:00",
+      "npr_url": "https://www.npr.org/2020/09/10/911624033/making-most-of-scarce-space",
+      "story_id": "911624033",
+      "audio_id": "911639188",
+      "player_url": "https://www.npr.org/player/embed/911624033/911639188",
+      "description": "Lockdowns, working from home, and remote learning have all made personal domestic space more scarce. Emily Anthes has some solutions."
+    },
+    {
+      "title": "Parenting In The Time of Corona",
+      "date": "2020-09-09T18:10:05-04:00",
+      "npr_url": "https://www.npr.org/2020/09/09/911182732/parenting-in-the-time-of-corona",
+      "story_id": "911182732",
+      "audio_id": "911227841",
+      "player_url": "https://www.npr.org/player/embed/911182732/911227841",
+      "description": "COVID, lockdowns and working from home made life complicated for parents. Trying to educate kids from home has made things even tougher, so tough many women are dropping out of the workforce."
+    },
+    {
+      "title": "We Buy A Junk Bond",
+      "date": "2020-09-09T16:07:32-04:00",
+      "npr_url": "https://www.npr.org/2020/09/09/911162693/we-buy-a-junk-bond",
+      "story_id": "911162693",
+      "audio_id": "1198961093",
+      "player_url": "https://www.npr.org/player/embed/911162693/1198961093",
+      "description": "Team Indicator buys Cardiff a surprise present. A terrible, extremely risky, but wildly interesting investment. Then it gets interesting. The company that issued the junk bond declared bankruptcy. But that wasn't the end of the story. | Subscribe to our daily podcast, The Indicator here."
+    },
+    {
+      "title": "The Great Lego Scam",
+      "date": "2020-09-08T17:01:03-04:00",
+      "npr_url": "https://www.npr.org/2020/09/08/910724304/the-great-lego-scam",
+      "story_id": "910724304",
+      "audio_id": "910735724",
+      "player_url": "https://www.npr.org/player/embed/910724304/910735724",
+      "description": "Counterfeit Lego kits, made illegally in China, are giving collectors a headache."
+    },
+    {
+      "title": "More Job Growth, But Slower",
+      "date": "2020-09-04T18:40:41-04:00",
+      "npr_url": "https://www.npr.org/2020/09/04/909838744/more-job-growth-but-slower",
+      "story_id": "909838744",
+      "audio_id": "909863765",
+      "player_url": "https://www.npr.org/player/embed/909838744/909863765",
+      "description": "The August unemployment numbers were better than expected. But doesn't mean the labor market is the picture of health."
+    },
+    {
+      "title": "Overrated Or Underrated: The Nobel Edition",
+      "date": "2020-09-03T17:43:21-04:00",
+      "npr_url": "https://www.npr.org/2020/09/03/909351607/overrated-or-underrated-the-nobel-edition",
+      "story_id": "909351607",
+      "audio_id": "909375711",
+      "player_url": "https://www.npr.org/player/embed/909351607/909375711",
+      "description": "Nobel economics prize winners Esther Duflo and Abhijit Banerjee on whether foreign aid, french bread and dating an economist are overrated or underrated."
+    },
+    {
+      "title": "Opening Schools: Mission Impossible",
+      "date": "2020-09-02T18:37:00-04:00",
+      "npr_url": "https://www.npr.org/2020/09/02/908922754/opening-schools-mission-impossible",
+      "story_id": "908922754",
+      "audio_id": "908934668",
+      "player_url": "https://www.npr.org/player/embed/908922754/908934668",
+      "description": "The question of whether to reopen schools or educate children at home is medically sensitive, logistically complicated and politically fraught. How one superintendent is handling it."
+    },
+    {
+      "title": "Your Brain On Retail Trading",
+      "date": "2020-09-01T22:50:00-04:00",
+      "npr_url": "https://www.npr.org/2020/09/01/908624754/your-brain-on-retail-trading",
+      "story_id": "908624754",
+      "audio_id": "908630294",
+      "player_url": "https://www.npr.org/player/embed/908624754/908630294",
+      "description": "Stock-picking retail traders have been jumping into the market this year. They may not understand the risks."
+    },
+    {
+      "title": "The Inclusion Payoff",
+      "date": "2020-08-31T17:03:51-04:00",
+      "npr_url": "https://www.npr.org/2020/08/31/908039801/the-inclusion-payoff",
+      "story_id": "908039801",
+      "audio_id": "908055822",
+      "player_url": "https://www.npr.org/player/embed/908039801/908055822",
+      "description": "Women and non-white men are gaining ground when it comes to science and engineering degrees, but not when it comes to patents."
+    },
+    {
+      "title": "An Ode To Taxes",
+      "date": "2020-08-28T17:06:17-04:00",
+      "npr_url": "https://www.npr.org/2020/08/28/907184851/an-ode-to-taxes",
+      "story_id": "907184851",
+      "audio_id": "907197196",
+      "player_url": "https://www.npr.org/player/embed/907184851/907197196",
+      "description": "Taxes get a bad reputation, but they were central to the formation of representative government and even the written word."
+    },
+    {
+      "title": "What A Piece Of Work Is The Post Office",
+      "date": "2020-08-27T18:15:53-04:00",
+      "npr_url": "https://www.npr.org/2020/08/27/906817408/what-a-piece-of-work-is-the-post-office",
+      "story_id": "906817408",
+      "audio_id": "906845570",
+      "player_url": "https://www.npr.org/player/embed/906817408/906845570",
+      "description": "The rather Shakespearean situation of the U.S. Postal Service"
+    },
+    {
+      "title": "5 (More) Ways Life Has Changed",
+      "date": "2020-08-26T17:35:00-04:00",
+      "npr_url": "https://www.npr.org/2020/08/26/906346251/5-more-ways-life-has-changed",
+      "story_id": "906346251",
+      "audio_id": "906370128",
+      "player_url": "https://www.npr.org/player/embed/906346251/906370128",
+      "description": "From smoking more cigarettes to stocking up on meatless meats, the pandemic has changed consumer behavior in some unexpected ways."
+    },
+    {
+      "title": "A Conversation With Janet Yellen",
+      "date": "2020-08-25T17:15:45-04:00",
+      "npr_url": "https://www.npr.org/2020/08/25/905967538/a-conversation-with-janet-yellen",
+      "story_id": "905967538",
+      "audio_id": "905984428",
+      "player_url": "https://www.npr.org/player/embed/905967538/905984428",
+      "description": "Former Fed Chair Janet Yellen talks about her New York Times op-ed with Jared Bernstein, proposing a two-punch solution for boosting the economy."
+    },
+    {
+      "title": "Egg Prices: States Cry Foul",
+      "date": "2020-08-24T17:16:56-04:00",
+      "npr_url": "https://www.npr.org/2020/08/24/905566618/egg-prices-states-cry-foul",
+      "story_id": "905566618",
+      "audio_id": "905593304",
+      "player_url": "https://www.npr.org/player/embed/905566618/905593304",
+      "description": "The price of eggs skyrocketed at the start of the pandemic. That has some people crying foul ... and filing suit."
+    },
+    {
+      "title": "Why Do Diamonds Cost More Than Water?",
+      "date": "2020-08-21T17:01:53-04:00",
+      "npr_url": "https://www.npr.org/2020/08/21/904640920/why-do-diamonds-cost-more-than-water",
+      "story_id": "904640920",
+      "audio_id": "904790337",
+      "player_url": "https://www.npr.org/player/embed/904640920/904790337",
+      "description": "The Diamond-Water Paradox: If we need water to survive and we don't need diamonds, why are diamonds expensive and water cheap?"
+    },
+    {
+      "title": "The Looming Eviction Crisis",
+      "date": "2020-08-20T15:48:00-04:00",
+      "npr_url": "https://www.npr.org/2020/08/20/904456209/the-looming-eviction-crisis",
+      "story_id": "904456209",
+      "audio_id": "904468018",
+      "player_url": "https://www.npr.org/player/embed/904456209/904468018",
+      "description": "Millions of renters in the US are facing the prospect of eviction from their homes."
+    },
+    {
+      "title": "Becky, We Hardly Knew Ye",
+      "date": "2020-08-19T17:10:45-04:00",
+      "npr_url": "https://www.npr.org/2020/08/19/903966182/becky-we-hardly-knew-ye",
+      "story_id": "903966182",
+      "audio_id": "903978441",
+      "player_url": "https://www.npr.org/player/embed/903966182/903978441",
+      "description": "We bought a junk bond back in December. Then COVID-19 sent the economy into a tailspin, and the company that issued the junk bond declared bankruptcy. But that wasn't the end of the story."
+    },
+    {
+      "title": "Making the Middle Class Great Again",
+      "date": "2020-08-18T15:28:00-04:00",
+      "npr_url": "https://www.npr.org/2020/08/18/903660865/making-the-middle-class-great-again",
+      "story_id": "903660865",
+      "audio_id": "903672898",
+      "player_url": "https://www.npr.org/player/embed/903660865/903672898",
+      "description": "The argument that the key factor that boosted the middle class post WW2 — and could help the middle class again — is access."
+    },
+    {
+      "title": "Science, Economics And Vaccines",
+      "date": "2020-08-17T17:01:00-04:00",
+      "npr_url": "https://www.npr.org/2020/08/17/903230927/science-economics-and-vaccines",
+      "story_id": "903230927",
+      "audio_id": "903233073",
+      "player_url": "https://www.npr.org/player/embed/903230927/903233073",
+      "description": "Everyone wants to develop a coronavirus vaccine. But vaccine development usually takes years. The White House is betting money can speed things up."
+    },
+    {
+      "title": "The Economics of Gods and Mortals",
+      "date": "2020-08-14T14:07:37-04:00",
+      "npr_url": "https://www.npr.org/2020/08/14/902635979/the-economics-of-gods-and-mortals",
+      "story_id": "902635979",
+      "audio_id": "902651382",
+      "player_url": "https://www.npr.org/player/embed/902635979/902651382",
+      "description": "The first milestone in the history of economics was an 8th century B.C. poem — a lecture by an ancient Greek poet to his deadbeat brother."
+    },
+    {
+      "title": "When $600 Goes Away",
+      "date": "2020-08-13T18:41:43-04:00",
+      "npr_url": "https://www.npr.org/2020/08/13/902342278/when-600-goes-away",
+      "story_id": "902342278",
+      "audio_id": "902351410",
+      "player_url": "https://www.npr.org/player/embed/902342278/902351410",
+      "description": "Millions of jobless Americans are desperate to know whether their unemployment benefits will be extended, and by how much. But Congress just went on vacation."
+    },
+    {
+      "title": "An Immigration Backfire?",
+      "date": "2020-08-12T18:50:00-04:00",
+      "npr_url": "https://www.npr.org/2020/08/12/901935162/an-immigration-backfire",
+      "story_id": "901935162",
+      "audio_id": "901961253",
+      "player_url": "https://www.npr.org/player/embed/901935162/901961253",
+      "description": "Limiting high-skilled immigration to the U.S. may not save jobs for Americans; it might even cost jobs."
+    },
+    {
+      "title": "Coronavirus Comes To Venezuela",
+      "date": "2020-08-11T18:56:00-04:00",
+      "npr_url": "https://www.npr.org/2020/08/11/901501100/coronavirus-comes-to-venezuela",
+      "story_id": "901501100",
+      "audio_id": "901501232",
+      "player_url": "https://www.npr.org/player/embed/901501100/901501232",
+      "description": "Venezuela's economy was already struggling, for a variety of reasons. The coronavirus pandemic couldn't have struck at a worse time. Now the country's economy is on life support."
+    },
+    {
+      "title": "Roller Coaster Economy (Scream Inside Only)",
+      "date": "2020-08-10T19:08:09-04:00",
+      "npr_url": "https://www.npr.org/2020/08/10/901111237/roller-coaster-economy-scream-inside-only",
+      "story_id": "901111237",
+      "audio_id": "901149345",
+      "player_url": "https://www.npr.org/player/embed/901111237/901149345",
+      "description": "As Democrats, Republicans and the President fight about how much support to give laid-off workers during the pandemic, we take the temperature of this up-and-down economy."
+    },
+    {
+      "title": "Jobs, Labor And The 1936 GM Strike",
+      "date": "2020-08-07T17:49:30-04:00",
+      "npr_url": "https://www.npr.org/2020/08/07/900330026/jobs-labor-and-the-1936-gm-strike",
+      "story_id": "900330026",
+      "audio_id": "900333493",
+      "player_url": "https://www.npr.org/player/embed/900330026/900333493",
+      "description": "The brutal unemployment situation in the US today is making a lot of people think again about labor unions. Which had their first major victory after a 1936 strike."
+    },
+    {
+      "title": "One Drug, Two Prices",
+      "date": "2020-08-06T17:09:31-04:00",
+      "npr_url": "https://www.npr.org/2020/08/06/899890591/one-drug-two-prices",
+      "story_id": "899890591",
+      "audio_id": "899921210",
+      "player_url": "https://www.npr.org/player/embed/899890591/899921210",
+      "description": "Faced with the prospect of paying for an expensive drug to treat his daughter, this dad found a nearly identical product for thousands of dollars less. But the insurance company wouldn't let him."
+    },
+    {
+      "title": "Why Your Internet Sucks",
+      "date": "2020-08-05T17:29:43-04:00",
+      "npr_url": "https://www.npr.org/2020/08/05/899472976/why-your-internet-sucks",
+      "story_id": "899472976",
+      "audio_id": "899500711",
+      "player_url": "https://www.npr.org/player/embed/899472976/899500711",
+      "description": "We answer two questions today: Why is American internet so bad? And why was the unemployment benefit extension set at $600?"
+    },
+    {
+      "title": "An Artful Pivot",
+      "date": "2020-08-04T18:09:43-04:00",
+      "npr_url": "https://www.npr.org/2020/08/04/898997962/an-artful-pivot",
+      "story_id": "898997962",
+      "audio_id": "899118210",
+      "player_url": "https://www.npr.org/player/embed/898997962/899118210",
+      "description": "How a theater company in Philadelphia is reacting to the existential threat posed by the coronavirus."
+    },
+    {
+      "title": "Protest And A Black-Owned Business",
+      "date": "2020-08-03T17:53:00-04:00",
+      "npr_url": "https://www.npr.org/2020/08/03/898703442/protest-and-a-black-owned-business",
+      "story_id": "898703442",
+      "audio_id": "898713737",
+      "player_url": "https://www.npr.org/player/embed/898703442/898713737",
+      "description": "The Black Lives Matter demonstrations brought people together to protest injustice. But alongside the protests came riots, at a great cost to some Black-owned businesses."
+    },
+    {
+      "title": "Sharing The Vaccine",
+      "date": "2020-07-31T17:00:26-04:00",
+      "npr_url": "https://www.npr.org/2020/07/31/897842961/sharing-the-vaccine",
+      "story_id": "897842961",
+      "audio_id": "897890246",
+      "player_url": "https://www.npr.org/player/embed/897842961/897890246",
+      "description": "The biggest, wealthiest nations in the world are in a race to produce a coronavirus vaccine. It's obviously in a country's interest to win that race and protect its citizens. It's also in its interest to share."
+    },
+    {
+      "title": "GDP -32.9%???!!!",
+      "date": "2020-07-30T19:31:35-04:00",
+      "npr_url": "https://www.npr.org/2020/07/30/897481676/gdp-32-9",
+      "story_id": "897481676",
+      "audio_id": "897484786",
+      "player_url": "https://www.npr.org/player/embed/897481676/897484786",
+      "description": "This quarter's Gross Domestic Product numbers could be the worst on record. But what do they mean, exactly?"
     }
   ]
 }
