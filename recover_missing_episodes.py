@@ -12,7 +12,7 @@ from urllib.request import Request, urlopen
 AUDIT_FILE = "indicator_early_audit.json"
 OUTPUT_FILE = "indicator_recovery_test.json"
 
-TEST_LIMIT = 10
+TEST_LIMIT = 50
 TIMEOUT = 20
 
 HEADERS = {
