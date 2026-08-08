@@ -1,79 +1,686 @@
 {
   "proof_of_concept": true,
-  "method": "affiliate-search",
+  "method": "direct-affiliate-probe",
   "attempted_count": 10,
-  "candidate_page_count": 0,
-  "audio_found_count": 0,
+  "affiliate_page_found_count": 8,
+  "audio_found_count": 8,
+  "player_found_count": 0,
   "results": [
     {
       "reference_date": "2018-03-12",
       "reference_title": "Hurricane Joseph & The Calculator That Time Forgot",
       "reference_year": 2018,
       "reference_episode": 1,
-      "search_results": []
+      "matches": [],
+      "attempts": [
+        {
+          "requested_url": "https://news.wypr.org/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://news.wypr.org/business/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://news.wypr.org/business-education/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://news.wypr.org/business-economy/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://news.wypr.org/economy/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://news.wypr.org/npr-news/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.wfae.org/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.wfae.org/business/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.wfae.org/business-education/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.wfae.org/business-economy/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.wfae.org/economy/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.wfae.org/npr-news/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.apr.org/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.apr.org/business/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.apr.org/business-education/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.apr.org/business-economy/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.apr.org/economy/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.apr.org/npr-news/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.delmarvapublicmedia.org/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.delmarvapublicmedia.org/business/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.delmarvapublicmedia.org/business-education/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.delmarvapublicmedia.org/business-economy/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.delmarvapublicmedia.org/economy/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.delmarvapublicmedia.org/npr-news/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.kclu.org/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.kclu.org/business/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.kclu.org/business-education/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.kclu.org/business-economy/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.kclu.org/economy/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.kclu.org/npr-news/2018-03-12/hurricane-joseph-and-the-calculator-that-time-forgot",
+          "status": "http_404"
+        }
+      ]
     },
     {
       "reference_date": "2018-03-13",
       "reference_title": "Bonds... Japanese Bonds",
       "reference_year": 2018,
       "reference_episode": 2,
-      "search_results": []
+      "matches": [
+        {
+          "requested_url": "https://news.wypr.org/2018-03-13/bonds-japanese-bonds",
+          "status": "page_returned",
+          "final_url": "https://news.wypr.org/2018-03-13/bonds-japanese-bonds",
+          "domain": "news.wypr.org",
+          "content_type": "text/html;charset=UTF-8",
+          "page_title": "Bonds... Japanese Bonds",
+          "title_score": 1.0,
+          "description": "Team Indicator takes your questions, concerns, and James Bond-related car trivia.",
+          "dates_found": [
+            "March",
+            "2018-03-13",
+            "2020-12-21"
+          ],
+          "audio_urls": [
+            "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3",
+            "https://media.npr.org/assets/img/2018/03/13/listener-questions-b117cef1e32dd8e847d5c37bd5ae4ee9e89ae2a3.jpg"
+          ],
+          "player_urls": [],
+          "possible_ids": []
+        }
+      ],
+      "attempts": [
+        {
+          "requested_url": "https://news.wypr.org/2018-03-13/bonds-japanese-bonds",
+          "status": "page_returned",
+          "final_url": "https://news.wypr.org/2018-03-13/bonds-japanese-bonds",
+          "domain": "news.wypr.org",
+          "content_type": "text/html;charset=UTF-8",
+          "page_title": "Bonds... Japanese Bonds",
+          "title_score": 1.0,
+          "description": "Team Indicator takes your questions, concerns, and James Bond-related car trivia.",
+          "dates_found": [
+            "March",
+            "2018-03-13",
+            "2020-12-21"
+          ],
+          "audio_urls": [
+            "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3",
+            "https://media.npr.org/assets/img/2018/03/13/listener-questions-b117cef1e32dd8e847d5c37bd5ae4ee9e89ae2a3.jpg"
+          ],
+          "player_urls": [],
+          "possible_ids": []
+        }
+      ]
     },
     {
       "reference_date": "2018-03-14",
       "reference_title": "What Trade Organization?",
       "reference_year": 2018,
       "reference_episode": 3,
-      "search_results": []
+      "matches": [
+        {
+          "requested_url": "https://news.wypr.org/2018-03-14/what-trade-organization",
+          "status": "page_returned",
+          "final_url": "https://news.wypr.org/2018-03-14/what-trade-organization",
+          "domain": "news.wypr.org",
+          "content_type": "text/html;charset=UTF-8",
+          "page_title": "What Trade Organization?",
+          "title_score": 1.0,
+          "description": "The justification used by the Trump administration for its steel and aluminum tariffs is riskier for the global trading system than the tariffs themselves.",
+          "dates_found": [
+            "March",
+            "2018-03-14",
+            "2020-12-21"
+          ],
+          "audio_urls": [
+            "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3",
+            "https://media.npr.org/assets/img/2018/03/14/164-indicator-c9ed304393010cd95e149439c0b7d5fc0641846b.jpg"
+          ],
+          "player_urls": [],
+          "possible_ids": []
+        }
+      ],
+      "attempts": [
+        {
+          "requested_url": "https://news.wypr.org/2018-03-14/what-trade-organization",
+          "status": "page_returned",
+          "final_url": "https://news.wypr.org/2018-03-14/what-trade-organization",
+          "domain": "news.wypr.org",
+          "content_type": "text/html;charset=UTF-8",
+          "page_title": "What Trade Organization?",
+          "title_score": 1.0,
+          "description": "The justification used by the Trump administration for its steel and aluminum tariffs is riskier for the global trading system than the tariffs themselves.",
+          "dates_found": [
+            "March",
+            "2018-03-14",
+            "2020-12-21"
+          ],
+          "audio_urls": [
+            "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3",
+            "https://media.npr.org/assets/img/2018/03/14/164-indicator-c9ed304393010cd95e149439c0b7d5fc0641846b.jpg"
+          ],
+          "player_urls": [],
+          "possible_ids": []
+        }
+      ]
     },
     {
       "reference_date": "2018-03-15",
       "reference_title": "Calculated Risk, Calculated Caution",
       "reference_year": 2018,
       "reference_episode": 4,
-      "search_results": []
+      "matches": [
+        {
+          "requested_url": "https://news.wypr.org/2018-03-15/calculated-risk-calculated-caution",
+          "status": "page_returned",
+          "final_url": "https://news.wypr.org/2018-03-15/calculated-risk-calculated-caution",
+          "domain": "news.wypr.org",
+          "content_type": "text/html;charset=UTF-8",
+          "page_title": "Calculated Risk, Calculated Caution",
+          "title_score": 1.0,
+          "description": "Bill McBride has been remarkably prescient about the big swings in the U.S. economy. And he's starting to get uneasy.",
+          "dates_found": [
+            "March",
+            "2018-03-15",
+            "2020-12-21"
+          ],
+          "audio_urls": [
+            "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3",
+            "https://media.npr.org/assets/img/2018/03/15/calculated-risk-abbfc044416aaca8d96e6de7cf8357e6d5feb0f4.jpg"
+          ],
+          "player_urls": [],
+          "possible_ids": []
+        }
+      ],
+      "attempts": [
+        {
+          "requested_url": "https://news.wypr.org/2018-03-15/calculated-risk-calculated-caution",
+          "status": "page_returned",
+          "final_url": "https://news.wypr.org/2018-03-15/calculated-risk-calculated-caution",
+          "domain": "news.wypr.org",
+          "content_type": "text/html;charset=UTF-8",
+          "page_title": "Calculated Risk, Calculated Caution",
+          "title_score": 1.0,
+          "description": "Bill McBride has been remarkably prescient about the big swings in the U.S. economy. And he's starting to get uneasy.",
+          "dates_found": [
+            "March",
+            "2018-03-15",
+            "2020-12-21"
+          ],
+          "audio_urls": [
+            "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3",
+            "https://media.npr.org/assets/img/2018/03/15/calculated-risk-abbfc044416aaca8d96e6de7cf8357e6d5feb0f4.jpg"
+          ],
+          "player_urls": [],
+          "possible_ids": []
+        }
+      ]
     },
     {
       "reference_date": "2018-03-15",
       "reference_title": "Buying A College Degree: Did Aunt Becky Overpay?",
       "reference_year": 2019,
       "reference_episode": 51,
-      "search_results": []
+      "matches": [],
+      "attempts": [
+        {
+          "requested_url": "https://news.wypr.org/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://news.wypr.org/business/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://news.wypr.org/business-education/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://news.wypr.org/business-economy/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://news.wypr.org/economy/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://news.wypr.org/npr-news/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.wfae.org/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.wfae.org/business/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.wfae.org/business-education/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.wfae.org/business-economy/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.wfae.org/economy/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.wfae.org/npr-news/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.apr.org/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.apr.org/business/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.apr.org/business-education/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.apr.org/business-economy/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.apr.org/economy/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.apr.org/npr-news/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.delmarvapublicmedia.org/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.delmarvapublicmedia.org/business/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.delmarvapublicmedia.org/business-education/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.delmarvapublicmedia.org/business-economy/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.delmarvapublicmedia.org/economy/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.delmarvapublicmedia.org/npr-news/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.kclu.org/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.kclu.org/business/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.kclu.org/business-education/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.kclu.org/business-economy/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.kclu.org/economy/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        },
+        {
+          "requested_url": "https://www.kclu.org/npr-news/2018-03-15/buying-a-college-degree-did-aunt-becky-overpay",
+          "status": "http_404"
+        }
+      ]
     },
     {
       "reference_date": "2018-03-16",
       "reference_title": "The Bear Necessities",
       "reference_year": 2018,
       "reference_episode": 5,
-      "search_results": []
+      "matches": [
+        {
+          "requested_url": "https://news.wypr.org/2018-03-16/the-bear-necessities",
+          "status": "page_returned",
+          "final_url": "https://news.wypr.org/2018-03-16/the-bear-necessities",
+          "domain": "news.wypr.org",
+          "content_type": "text/html;charset=UTF-8",
+          "page_title": "The Bear Necessities",
+          "title_score": 1.0,
+          "description": "The man who wrote the book on the collapse of Bear Stearns talks about what happened a decade ago and where we are today.",
+          "dates_found": [
+            "March",
+            "2018-03-16",
+            "2020-12-21"
+          ],
+          "audio_urls": [
+            "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3",
+            "https://media.npr.org/assets/img/2018/03/16/2-indicator-7e86c9845fe26360d309e43cdb25b2db81978e96.jpg"
+          ],
+          "player_urls": [],
+          "possible_ids": []
+        }
+      ],
+      "attempts": [
+        {
+          "requested_url": "https://news.wypr.org/2018-03-16/the-bear-necessities",
+          "status": "page_returned",
+          "final_url": "https://news.wypr.org/2018-03-16/the-bear-necessities",
+          "domain": "news.wypr.org",
+          "content_type": "text/html;charset=UTF-8",
+          "page_title": "The Bear Necessities",
+          "title_score": 1.0,
+          "description": "The man who wrote the book on the collapse of Bear Stearns talks about what happened a decade ago and where we are today.",
+          "dates_found": [
+            "March",
+            "2018-03-16",
+            "2020-12-21"
+          ],
+          "audio_urls": [
+            "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3",
+            "https://media.npr.org/assets/img/2018/03/16/2-indicator-7e86c9845fe26360d309e43cdb25b2db81978e96.jpg"
+          ],
+          "player_urls": [],
+          "possible_ids": []
+        }
+      ]
     },
     {
       "reference_date": "2018-03-19",
       "reference_title": "The Reinvention Of The IPO",
       "reference_year": 2018,
       "reference_episode": 6,
-      "search_results": []
+      "matches": [
+        {
+          "requested_url": "https://news.wypr.org/2018-03-19/the-reinvention-of-the-ipo",
+          "status": "page_returned",
+          "final_url": "https://news.wypr.org/2018-03-19/the-reinvention-of-the-ipo",
+          "domain": "news.wypr.org",
+          "content_type": "text/html;charset=UTF-8",
+          "page_title": "The Reinvention Of The IPO",
+          "title_score": 1.0,
+          "description": "Having disrupted the music business, Spotify is trying the same trick with the stock market.",
+          "dates_found": [
+            "March",
+            "2018-03-19",
+            "2020-12-21"
+          ],
+          "audio_urls": [
+            "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3",
+            "https://media.npr.org/assets/img/2018/03/19/dpo-indicator-3c5b3550fae3076412a14fb5754cd7bc35ce4244.jpg"
+          ],
+          "player_urls": [],
+          "possible_ids": []
+        }
+      ],
+      "attempts": [
+        {
+          "requested_url": "https://news.wypr.org/2018-03-19/the-reinvention-of-the-ipo",
+          "status": "page_returned",
+          "final_url": "https://news.wypr.org/2018-03-19/the-reinvention-of-the-ipo",
+          "domain": "news.wypr.org",
+          "content_type": "text/html;charset=UTF-8",
+          "page_title": "The Reinvention Of The IPO",
+          "title_score": 1.0,
+          "description": "Having disrupted the music business, Spotify is trying the same trick with the stock market.",
+          "dates_found": [
+            "March",
+            "2018-03-19",
+            "2020-12-21"
+          ],
+          "audio_urls": [
+            "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3",
+            "https://media.npr.org/assets/img/2018/03/19/dpo-indicator-3c5b3550fae3076412a14fb5754cd7bc35ce4244.jpg"
+          ],
+          "player_urls": [],
+          "possible_ids": []
+        }
+      ]
     },
     {
       "reference_date": "2018-03-20",
       "reference_title": "A Brief History of Tariffs",
       "reference_year": 2018,
       "reference_episode": 7,
-      "search_results": []
+      "matches": [
+        {
+          "requested_url": "https://news.wypr.org/2018-03-20/a-brief-history-of-tariffs",
+          "status": "page_returned",
+          "final_url": "https://news.wypr.org/2018-03-20/a-brief-history-of-tariffs",
+          "domain": "news.wypr.org",
+          "content_type": "text/html;charset=UTF-8",
+          "page_title": "A Brief History of Tariffs",
+          "title_score": 1.0,
+          "description": "The debate over tariffs is nothing new. In fact, it's as old as the country itself. A look at how the debate began.",
+          "dates_found": [
+            "March",
+            "2018-03-20",
+            "2020-12-21"
+          ],
+          "audio_urls": [
+            "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3",
+            "https://media.npr.org/assets/img/2018/03/20/original-tariffs-indicator-3e69640ddb9179db38221479a52429cbda1df970.jpg"
+          ],
+          "player_urls": [],
+          "possible_ids": []
+        }
+      ],
+      "attempts": [
+        {
+          "requested_url": "https://news.wypr.org/2018-03-20/a-brief-history-of-tariffs",
+          "status": "page_returned",
+          "final_url": "https://news.wypr.org/2018-03-20/a-brief-history-of-tariffs",
+          "domain": "news.wypr.org",
+          "content_type": "text/html;charset=UTF-8",
+          "page_title": "A Brief History of Tariffs",
+          "title_score": 1.0,
+          "description": "The debate over tariffs is nothing new. In fact, it's as old as the country itself. A look at how the debate began.",
+          "dates_found": [
+            "March",
+            "2018-03-20",
+            "2020-12-21"
+          ],
+          "audio_urls": [
+            "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3",
+            "https://media.npr.org/assets/img/2018/03/20/original-tariffs-indicator-3e69640ddb9179db38221479a52429cbda1df970.jpg"
+          ],
+          "player_urls": [],
+          "possible_ids": []
+        }
+      ]
     },
     {
       "reference_date": "2018-03-21",
       "reference_title": "Trump vs. Trudeau: Both Right, Both Wrong",
       "reference_year": 2018,
       "reference_episode": 8,
-      "search_results": []
+      "matches": [
+        {
+          "requested_url": "https://news.wypr.org/2018-03-21/trump-vs-trudeau-both-right-both-wrong",
+          "status": "page_returned",
+          "final_url": "https://news.wypr.org/2018-03-21/trump-vs-trudeau-both-right-both-wrong",
+          "domain": "news.wypr.org",
+          "content_type": "text/html;charset=UTF-8",
+          "page_title": "Trump vs. Trudeau: Both Right, Both Wrong",
+          "title_score": 1.0,
+          "description": "Trump says we have a trade deficit with Canada. He's right... and he's also wrong.",
+          "dates_found": [
+            "March",
+            "2018-03-21",
+            "2020-12-21",
+            "2018-03-15"
+          ],
+          "audio_urls": [
+            "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3",
+            "https://media.npr.org/assets/img/2018/03/21/billions-indicator-eb1adbc8a0e97849a52b5c964d311e9732370aee.jpg"
+          ],
+          "player_urls": [],
+          "possible_ids": []
+        }
+      ],
+      "attempts": [
+        {
+          "requested_url": "https://news.wypr.org/2018-03-21/trump-vs-trudeau-both-right-both-wrong",
+          "status": "page_returned",
+          "final_url": "https://news.wypr.org/2018-03-21/trump-vs-trudeau-both-right-both-wrong",
+          "domain": "news.wypr.org",
+          "content_type": "text/html;charset=UTF-8",
+          "page_title": "Trump vs. Trudeau: Both Right, Both Wrong",
+          "title_score": 1.0,
+          "description": "Trump says we have a trade deficit with Canada. He's right... and he's also wrong.",
+          "dates_found": [
+            "March",
+            "2018-03-21",
+            "2020-12-21",
+            "2018-03-15"
+          ],
+          "audio_urls": [
+            "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3",
+            "https://media.npr.org/assets/img/2018/03/21/billions-indicator-eb1adbc8a0e97849a52b5c964d311e9732370aee.jpg"
+          ],
+          "player_urls": [],
+          "possible_ids": []
+        }
+      ]
     },
     {
       "reference_date": "2018-03-22",
       "reference_title": "Too Small To Fail",
       "reference_year": 2018,
       "reference_episode": 9,
-      "search_results": []
+      "matches": [
+        {
+          "requested_url": "https://news.wypr.org/2018-03-22/too-small-to-fail",
+          "status": "page_returned",
+          "final_url": "https://news.wypr.org/2018-03-22/too-small-to-fail",
+          "domain": "news.wypr.org",
+          "content_type": "text/html;charset=UTF-8",
+          "page_title": "Too Small To Fail",
+          "title_score": 1.0,
+          "description": "Independent bookstores are experiencing a surprising renaissance.",
+          "dates_found": [
+            "March",
+            "2018-03-22",
+            "2020-12-21"
+          ],
+          "audio_urls": [
+            "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3",
+            "https://media.npr.org/assets/img/2018/03/22/2321-indicator-622fd633b38ec968f02c0ce3dce7112140e1777b.jpg"
+          ],
+          "player_urls": [],
+          "possible_ids": []
+        }
+      ],
+      "attempts": [
+        {
+          "requested_url": "https://news.wypr.org/2018-03-22/too-small-to-fail",
+          "status": "page_returned",
+          "final_url": "https://news.wypr.org/2018-03-22/too-small-to-fail",
+          "domain": "news.wypr.org",
+          "content_type": "text/html;charset=UTF-8",
+          "page_title": "Too Small To Fail",
+          "title_score": 1.0,
+          "description": "Independent bookstores are experiencing a surprising renaissance.",
+          "dates_found": [
+            "March",
+            "2018-03-22",
+            "2020-12-21"
+          ],
+          "audio_urls": [
+            "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3",
+            "https://media.npr.org/assets/img/2018/03/22/2321-indicator-622fd633b38ec968f02c0ce3dce7112140e1777b.jpg"
+          ],
+          "player_urls": [],
+          "possible_ids": []
+        }
+      ]
     }
   ]
 }
