@@ -1,0 +1,43 @@
+{
+  "method": "test-whether-npr-e-parameter-selects-audio",
+  "control": {
+    "title": "Bonds... Japanese Bonds",
+    "audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180313_indicator_0313_listener_qs_final.mp3?d=637&e=593259696&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+    "response": {
+      "status_code": 206,
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180313_indicator_0313_listener_qs_final.mp3?d=637&e=593259696&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "content_type": "audio/mpeg",
+      "sample_size": 4096
+    }
+  },
+  "tests": [
+    {
+      "target_title": "Paranormal Profits",
+      "target_audio_id": "662707862",
+      "modified_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180313_indicator_0313_listener_qs_final.mp3?d=637&e=662707862&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "response": {
+        "status_code": 206,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180313_indicator_0313_listener_qs_final.mp3?d=637&e=662707862&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+        "content_type": "audio/mpeg",
+        "sample_size": 4096
+      },
+      "same_final_url_as_control": false
+    },
+    {
+      "target_title": "The Traffic Tariff",
+      "target_audio_id": "730102905",
+      "modified_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180313_indicator_0313_listener_qs_final.mp3?d=637&e=730102905&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "response": {
+        "status_code": 206,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180313_indicator_0313_listener_qs_final.mp3?d=637&e=730102905&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+        "content_type": "audio/mpeg",
+        "sample_size": 4096
+      },
+      "same_final_url_as_control": false
+    }
+  ],
+  "interpretation": {
+    "if_same_final_url_is_true": "The e parameter is tracking metadata and does not select the MP3.",
+    "if_same_final_url_is_false": "The e parameter may participate in selecting the episode audio."
+  }
+}
