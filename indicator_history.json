@@ -1,6 +1,6 @@
 {
-  "next_date": "2020-03-26T18:40:00-04:00",
-  "episode_count": 1244,
+  "next_date": "2019-12-19T13:27:14-05:00",
+  "episode_count": 1310,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -11197,6 +11197,600 @@
       "audio_id": "848441239",
       "player_url": "https://www.npr.org/player/embed/822873592/848441239",
       "description": "President Trump got major backlash this week when he suggested businesses should reopen by Easter. Critics said that was way too early. How do we know when it's safe for businesses to reopen?"
+    },
+    {
+      "title": "The Labor Market Catastrophe",
+      "date": "2020-03-26T17:33:11-04:00",
+      "npr_url": "https://www.npr.org/2020/03/26/822164664/the-labor-market-catastrophe",
+      "story_id": "822164664",
+      "audio_id": "848438975",
+      "player_url": "https://www.npr.org/player/embed/822164664/848438975",
+      "description": "Layoffs and furloughs due to the coronavirus clampdown have pushed 3.3 million Americans to apply for unemployment benefits, the largest weekly increase in U.S. history."
+    },
+    {
+      "title": "Stimulus Rex",
+      "date": "2020-03-25T19:23:57-04:00",
+      "npr_url": "https://www.npr.org/2020/03/25/821705416/stimulus-rex",
+      "story_id": "821705416",
+      "audio_id": "848434653",
+      "player_url": "https://www.npr.org/player/embed/821705416/848434653",
+      "description": "The Senate has managed to negotiate a $2 trillion relief package to help keep the U.S. economy afloat as we deal with the coronavirus pandemic. What's in it and will it be enough?"
+    },
+    {
+      "title": "Pandemic Bonds",
+      "date": "2020-03-24T17:18:55-04:00",
+      "npr_url": "https://www.npr.org/2020/03/24/821000049/pandemic-bonds",
+      "story_id": "821000049",
+      "audio_id": "848430949",
+      "player_url": "https://www.npr.org/player/embed/821000049/848430949",
+      "description": "A few years ago, the World Bank issued bonds designed to get cash to needy countries in the event of a pandemic. Sounds like a great idea! But the bonds haven't paid out yet and they may never."
+    },
+    {
+      "title": "The Most Vulnerable Workers",
+      "date": "2020-03-23T19:41:00-04:00",
+      "npr_url": "https://www.npr.org/2020/03/23/820426836/the-most-vulnerable-workers",
+      "story_id": "820426836",
+      "audio_id": "848428579",
+      "player_url": "https://www.npr.org/player/embed/820426836/848428579",
+      "description": "Because of social distancing, the U.S. restaurant industry has entirely disintegrated with unimaginable speed, leaving its workers to face an uncertain future."
+    },
+    {
+      "title": "Our COVID-19 Indicators Of The Week",
+      "date": "2020-03-20T18:00:38-04:00",
+      "npr_url": "https://www.npr.org/2020/03/20/819293063/our-covid-19-indicators-of-the-week",
+      "story_id": "819293063",
+      "audio_id": "819312001",
+      "player_url": "https://www.npr.org/player/embed/819293063/819312001",
+      "description": "Zero and 27 are our indicators of the week. Zero (or nearly zero) is the Fed's new benchmark interest rate. 27 is the number of days that around half of small businesses in the U.S. can go without making money."
+    },
+    {
+      "title": "The Test Shortage",
+      "date": "2020-03-19T18:56:24-04:00",
+      "npr_url": "https://www.npr.org/2020/03/19/818660453/the-test-shortage",
+      "story_id": "818660453",
+      "audio_id": "818666909",
+      "player_url": "https://www.npr.org/player/embed/818660453/818666909",
+      "description": "A short supply of test kits, staff and equipment have put the U.S. behind in terms of coronavirus testing. We talk to one healthcare worker about what's been limiting their coronavirus testing ability."
+    },
+    {
+      "title": "China's New Normal",
+      "date": "2020-03-18T18:16:34-04:00",
+      "npr_url": "https://www.npr.org/2020/03/18/817995238/chinas-new-normal",
+      "story_id": "817995238",
+      "audio_id": "818040174",
+      "player_url": "https://www.npr.org/player/embed/817995238/818040174",
+      "description": "China appears to have stopped the spread of coronavirus within its borders. People there are now beginning to adjust to a new normal."
+    },
+    {
+      "title": "Working From Home",
+      "date": "2020-03-17T18:53:00-04:00",
+      "npr_url": "https://www.npr.org/2020/03/17/817431664/working-from-home",
+      "story_id": "817431664",
+      "audio_id": "848427801",
+      "player_url": "https://www.npr.org/player/embed/817431664/848427801",
+      "description": "Millions of people all across the world are now having to work from home. Including team Indicator. Today, a look at how this might change the way we work... and what it's like to skip the office."
+    },
+    {
+      "title": "The Sudden Stop",
+      "date": "2020-03-16T16:50:09-04:00",
+      "npr_url": "https://www.npr.org/2020/03/16/816688720/the-sudden-stop",
+      "story_id": "816688720",
+      "audio_id": "848427025",
+      "player_url": "https://www.npr.org/player/embed/816688720/848427025",
+      "description": "As social distancing kicks in and cities begin moving aggressively to contain the spread of the SARS-CoV-2 virus, the U.S. economy is hitting the brakes. Hard."
+    },
+    {
+      "title": "Economic Fear Factor",
+      "date": "2020-03-13T19:43:02-04:00",
+      "npr_url": "https://www.npr.org/2020/03/13/815661248/economic-fear-factor",
+      "story_id": "815661248",
+      "audio_id": "848426514",
+      "player_url": "https://www.npr.org/player/embed/815661248/848426514",
+      "description": "The global economy is being hammered this week - markets have tanked, businesses are closing down. The spreading virus is part of it, but most of the effect is coming from fear."
+    },
+    {
+      "title": "Healthcare And Economic Despair",
+      "date": "2020-03-12T16:58:27-04:00",
+      "npr_url": "https://www.npr.org/2020/03/12/815128921/healthcare-and-economic-despair",
+      "story_id": "815128921",
+      "audio_id": "848424237",
+      "player_url": "https://www.npr.org/player/embed/815128921/848424237",
+      "description": "The U.S. spends more on healthcare as a share of its economy than any other wealthy country. In addition to making care less affordable, that also causes indirect damage to the rest of the economy."
+    },
+    {
+      "title": "Disease Detectives",
+      "date": "2020-03-11T18:19:48-04:00",
+      "npr_url": "https://www.npr.org/2020/03/11/814694264/the-disease-detectives",
+      "story_id": "814694264",
+      "audio_id": "848420910",
+      "player_url": "https://www.npr.org/player/embed/814694264/848420910",
+      "description": "As the outbreak of COVID-19 becomes officially classified as a pandemic by the World Health Organization, we look at the role of the Epidemic Intelligence Service the CDCs \"disease detectives\"."
+    },
+    {
+      "title": "Tracking The Impact Of Coronavirus In Real Time",
+      "date": "2020-03-10T17:58:37-04:00",
+      "npr_url": "https://www.npr.org/2020/03/10/814221017/tracking-the-impact-of-coronavirus-in-real-time",
+      "story_id": "814221017",
+      "audio_id": "814225781",
+      "player_url": "https://www.npr.org/player/embed/814221017/814225781",
+      "description": "The economic effects of the coronavirus outbreak will take some time to show up in the most important economic indicators. We offer three high-frequency indicators to track its effects in real time."
+    },
+    {
+      "title": "Oil Shock",
+      "date": "2020-03-09T18:49:05-04:00",
+      "npr_url": "https://www.npr.org/2020/03/09/813831863/oil-shock",
+      "story_id": "813831863",
+      "audio_id": "813833715",
+      "player_url": "https://www.npr.org/player/embed/813831863/813833715",
+      "description": "A spat between Russia and Saudi Arabia led to a collapse in oil prices over the weekend. Stock prices followed. What happened and what it means."
+    },
+    {
+      "title": "Coronavirus And The Labor Market",
+      "date": "2020-03-06T17:54:26-05:00",
+      "npr_url": "https://www.npr.org/2020/03/06/813037776/coronavirus-and-the-labor-market",
+      "story_id": "813037776",
+      "audio_id": "813048405",
+      "player_url": "https://www.npr.org/player/embed/813037776/813048405",
+      "description": "Today's healthy jobs report was uncontaminated by the coronavirus outbreak, but some parts of the labor market may be especially vulnerable in the months ahead."
+    },
+    {
+      "title": "Health Policy Is Economic Policy",
+      "date": "2020-03-05T18:22:28-05:00",
+      "npr_url": "https://www.npr.org/2020/03/05/812678741/health-policy-is-economic-policy",
+      "story_id": "812678741",
+      "audio_id": "812694817",
+      "player_url": "https://www.npr.org/player/embed/812678741/812694817",
+      "description": "U.S. policymakers are taking steps to limit the spread and impact of coronavirus. But they're not helped by American health policy, which could use an overhaul if it's to limit the spread of viral outbreaks."
+    },
+    {
+      "title": "The Corona Bump",
+      "date": "2020-03-04T18:36:00-05:00",
+      "npr_url": "https://www.npr.org/2020/03/04/812339394/the-corona-bump",
+      "story_id": "812339394",
+      "audio_id": "812343300",
+      "player_url": "https://www.npr.org/player/embed/812339394/812343300",
+      "description": "As coronavirus wreaks havoc on the global economy, some businesses are actually experiencing a boom in demand. Today on the show, what happens when everyone suddenly wants to panic-buy your product."
+    },
+    {
+      "title": "Coronavirus: Update From Italy",
+      "date": "2020-03-03T17:58:14-05:00",
+      "npr_url": "https://www.npr.org/2020/03/03/811771769/coronavirus-update-from-italy",
+      "story_id": "811771769",
+      "audio_id": "811780120",
+      "player_url": "https://www.npr.org/player/embed/811771769/811780120",
+      "description": "The coronavirus continues to roil global markets and economies - including here at home, where the markets took yet another dive. Today, we look at an epicenter of the virus outbreak: northern Italy."
+    },
+    {
+      "title": "The Economic Lessons Of A Free Solo Climb",
+      "date": "2020-03-02T14:49:00-05:00",
+      "npr_url": "https://www.npr.org/2020/03/02/811280651/the-economic-lessons-of-a-free-solo-climb",
+      "story_id": "811280651",
+      "audio_id": "811295498",
+      "player_url": "https://www.npr.org/player/embed/811280651/811295498",
+      "description": "In 2017, rock climber Alex Honnold ascended Yosemite's rock formation El Capitan free solo, meaning without ropes or equipment. On today's show, we look at the economic lessons revealed by Honnold's extraordinary feat."
+    },
+    {
+      "title": "Coronavirus: A View From Hong Kong",
+      "date": "2020-02-28T17:38:38-05:00",
+      "npr_url": "https://www.npr.org/2020/02/28/810546698/coronavirus-a-view-from-hong-kong",
+      "story_id": "810546698",
+      "audio_id": "810550636",
+      "player_url": "https://www.npr.org/player/embed/810546698/810550636",
+      "description": "As coronavirus fears roiled markets this week, we hear from Bloomberg's Tracy Alloway, who's based in Hong Kong, about what it's like to live in a city in the throes of an outbreak"
+    },
+    {
+      "title": "How Wealth Has Changed",
+      "date": "2020-02-27T13:38:20-05:00",
+      "npr_url": "https://www.npr.org/2020/02/27/810006404/how-wealth-has-changed",
+      "story_id": "810006404",
+      "audio_id": "810011379",
+      "player_url": "https://www.npr.org/player/embed/810006404/810011379",
+      "description": "The world has changed, and nearly two thirds of global wealth is human capital. Policymakers and politicians may not understand just what that means for global politics."
+    },
+    {
+      "title": "The Rise And Fall (And Rise?) Of NASCAR",
+      "date": "2020-02-26T17:49:38-05:00",
+      "npr_url": "https://www.npr.org/2020/02/26/809732454/the-rise-and-fall-and-rise-of-nascar",
+      "story_id": "809732454",
+      "audio_id": "809774847",
+      "player_url": "https://www.npr.org/player/embed/809732454/809774847",
+      "description": "Last week's Daytona 500 came at a precarious time for NASCAR. Once a behemoth in the world of professional sports, the company is now trying to entice a new generation of race fans."
+    },
+    {
+      "title": "Why Netflix Turned To Junk",
+      "date": "2020-02-25T16:51:00-05:00",
+      "npr_url": "https://www.npr.org/2020/02/25/809386076/why-netflix-turned-to-junk",
+      "story_id": "809386076",
+      "audio_id": "809395213",
+      "player_url": "https://www.npr.org/player/embed/809386076/809395213",
+      "description": "Netflix had to become a content producer to compete with other streaming services. To raise the money to pay for all that content, the company turned to junk bonds."
+    },
+    {
+      "title": "For Richer Or... Richer",
+      "date": "2020-02-24T17:35:38-05:00",
+      "npr_url": "https://www.npr.org/2020/02/24/809050430/for-richer-or-richer",
+      "story_id": "809050430",
+      "audio_id": "809056468",
+      "player_url": "https://www.npr.org/player/embed/809050430/809056468",
+      "description": "The effects of assortative mating, or, what happens when people increasingly marry only other people with similar incomes and education."
+    },
+    {
+      "title": "The Indicator The Candidates Should Be Talking About",
+      "date": "2020-02-21T16:41:07-05:00",
+      "npr_url": "https://www.npr.org/2020/02/21/808289804/the-indicator-the-candidates-should-be-talking-about",
+      "story_id": "808289804",
+      "audio_id": "808294906",
+      "player_url": "https://www.npr.org/player/embed/808289804/808294906",
+      "description": "Political Economist Jared Bernstein watched this week's Democratic debate. Many economic issues came up, but he thinks the candidates need to start talking about how much U.S. households are saving."
+    },
+    {
+      "title": "Timecard Capitalists",
+      "date": "2020-02-20T14:30:00-05:00",
+      "npr_url": "https://www.npr.org/2020/02/20/807828611/timecard-capitalists",
+      "story_id": "807828611",
+      "audio_id": "807836990",
+      "player_url": "https://www.npr.org/player/embed/807828611/807836990",
+      "description": "People who make the highest salaries are increasingly the same people who draw the highest incomes from their capital."
+    },
+    {
+      "title": "Meet Our Junk Bond!",
+      "date": "2020-02-19T18:54:21-05:00",
+      "npr_url": "https://www.npr.org/2020/02/19/807544557/meet-our-junk-bond",
+      "story_id": "807544557",
+      "audio_id": "807568616",
+      "player_url": "https://www.npr.org/player/embed/807544557/807568616",
+      "description": "Last year, Team Indicator bought a junk bond! The bond was from a company called Hornbeck Offshore Services. On today's show, we learn more about the company and we check in on our investment."
+    },
+    {
+      "title": "Indicate This",
+      "date": "2020-02-19T17:50:10-05:00",
+      "npr_url": "https://www.npr.org/2020/02/19/807522308/episode-973-indicate-this",
+      "story_id": "807522308",
+      "audio_id": "807538894",
+      "player_url": "https://www.npr.org/player/embed/807522308/807538894",
+      "description": "From our daily podcast The Indicator: How Amazon Prime packages reach you so damn fast? And why Lancaster, PA became the refugee capital of America?"
+    },
+    {
+      "title": "Listener Questions: Minimum Wage & Gender-Fluid Tadpoles",
+      "date": "2020-02-18T17:31:10-05:00",
+      "npr_url": "https://www.npr.org/2020/02/18/807133392/listener-questions-minimum-wage-gender-fluid-tadpoles",
+      "story_id": "807133392",
+      "audio_id": "807153262",
+      "player_url": "https://www.npr.org/player/embed/807133392/807153262",
+      "description": "Cardiff takes on the national debt, minimum wage, and gender-fluid tadpoles to get answers to your burning questions."
+    },
+    {
+      "title": "For Rent: Fast Fashion",
+      "date": "2020-02-13T18:18:57-05:00",
+      "npr_url": "https://www.npr.org/2020/02/13/805821902/for-rent-fast-fashion",
+      "story_id": "805821902",
+      "audio_id": "818064496",
+      "player_url": "https://www.npr.org/player/embed/805821902/818064496",
+      "description": "Buy or rent? That's becoming a question for manufacturers of more and more types of products. Now fast fashion brands are trying to get in on the movement, too."
+    },
+    {
+      "title": "The First Milestone In The History of Economics",
+      "date": "2020-02-12T17:04:12-05:00",
+      "npr_url": "https://www.npr.org/2020/02/12/805423162/the-first-milestone-in-the-history-of-economics",
+      "story_id": "805423162",
+      "audio_id": "818063316",
+      "player_url": "https://www.npr.org/player/embed/805423162/818063316",
+      "description": "The first milestone in the history of economics was an 8th century B.C. poem — a lecture by an ancient Greek poet to his deadbeat brother."
+    },
+    {
+      "title": "Why Cheap Solar Could Save the World",
+      "date": "2020-02-11T17:44:00-05:00",
+      "npr_url": "https://www.npr.org/2020/02/11/804985258/why-cheap-solar-could-save-the-world",
+      "story_id": "804985258",
+      "audio_id": "818061499",
+      "player_url": "https://www.npr.org/player/embed/804985258/818061499",
+      "description": "In the last fifteen years, the cost of solar energy has declined so sharply that it has recently become the cheapest form of energy in the world. Now, major companies are jumping in to invest, but will the markets follow?"
+    },
+    {
+      "title": "Coronavirus And The Global Economy",
+      "date": "2020-02-10T17:23:39-05:00",
+      "npr_url": "https://www.npr.org/2020/02/10/804636007/coronavirus-and-the-global-economy",
+      "story_id": "804636007",
+      "audio_id": "818059772",
+      "player_url": "https://www.npr.org/player/embed/804636007/818059772",
+      "description": "The coronavirus has sickened more than 40,000 people and killed more than 900. In addition to that devastating human toll, the outbreak is likely to have economically destructive effects as well."
+    },
+    {
+      "title": "Jobs Friday: The Racial Unemployment Gap",
+      "date": "2020-02-07T16:31:42-05:00",
+      "npr_url": "https://www.npr.org/2020/02/07/803914079/jobs-friday-the-racial-unemployment-gap",
+      "story_id": "803914079",
+      "audio_id": "818059350",
+      "player_url": "https://www.npr.org/player/embed/803914079/818059350",
+      "description": "The unemployment rate for black workers is roughly twice that of white workers - and has been for half a century. Today we discuss the reasons for the gap, and how to shrink it."
+    },
+    {
+      "title": "Betting On The Oscars",
+      "date": "2020-02-06T17:08:28-05:00",
+      "npr_url": "https://www.npr.org/2020/02/06/803540265/betting-on-the-oscars",
+      "story_id": "803540265",
+      "audio_id": "818057641",
+      "player_url": "https://www.npr.org/player/embed/803540265/818057641",
+      "description": "Betting on the Oscars is now legal in New Jersey and Indiana, so we went down to Atlantic City to place a bet on Best Picture. And we spoke to a few experts beforehand to understand how to make a better bet."
+    },
+    {
+      "title": "Triple-A Ratings Are So Yesterday",
+      "date": "2020-02-05T18:21:00-05:00",
+      "npr_url": "https://www.npr.org/2020/02/05/803201941/triple-a-ratings-are-so-yesterday",
+      "story_id": "803201941",
+      "audio_id": "818053838",
+      "player_url": "https://www.npr.org/player/embed/803201941/818053838",
+      "description": "It used to be that companies strove for the best credit rating possible. Today, however, almost everyone's happy to slide by with a barely passing grade."
+    },
+    {
+      "title": "Peak Misery And The Happiness Curve",
+      "date": "2020-02-04T18:15:04-05:00",
+      "npr_url": "https://www.npr.org/2020/02/04/802781417/peak-misery-and-the-happiness-curve",
+      "story_id": "802781417",
+      "audio_id": "818052366",
+      "player_url": "https://www.npr.org/player/embed/802781417/818052366",
+      "description": "How do you measure happiness? Economist David Blanchflower says age has a lot to do with it."
+    },
+    {
+      "title": "Even The Facts Are Polarized",
+      "date": "2020-02-03T17:32:23-05:00",
+      "npr_url": "https://www.npr.org/2020/02/03/802417653/even-the-facts-are-polarized",
+      "story_id": "802417653",
+      "audio_id": "802429337",
+      "player_url": "https://www.npr.org/player/embed/802417653/802429337",
+      "description": "As Iowans prepare to make their selection for the Democratic presidential nominee, a new study sheds light on just how polarized Americans are, even when it comes to reality itself."
+    },
+    {
+      "title": "A Business Owner's View On Brexit",
+      "date": "2020-01-31T17:16:03-05:00",
+      "npr_url": "https://www.npr.org/2020/01/31/801715364/a-business-owners-view-on-brexit",
+      "story_id": "801715364",
+      "audio_id": "801718150",
+      "player_url": "https://www.npr.org/player/embed/801715364/801718150",
+      "description": "Today is Brexit Day. As of 11:00pm tonight (GMT), the UK will no longer be part of the European Union. We spoke to a small business owner about what that might mean."
+    },
+    {
+      "title": "American Dynamism In Decline",
+      "date": "2020-01-30T16:20:00-05:00",
+      "npr_url": "https://www.npr.org/2020/01/30/801325818/american-dynamism-in-decline",
+      "story_id": "801325818",
+      "audio_id": "801334521",
+      "player_url": "https://www.npr.org/player/embed/801325818/801334521",
+      "description": "America has a hard-earned reputation for being the most dynamic economy on the globe. But that dynamism could be waning."
+    },
+    {
+      "title": "The Economic Impact Of An Infectious Disease",
+      "date": "2020-01-29T16:55:04-05:00",
+      "npr_url": "https://www.npr.org/2020/01/29/800973274/the-economic-impact-of-an-infectious-disease",
+      "story_id": "800973274",
+      "audio_id": "800974990",
+      "player_url": "https://www.npr.org/player/embed/800973274/800974990",
+      "description": "As the coronavirus spreads internationally, we wanted to know what it looks like when an infectious disease shuts down one of the world's largest economies. We speak with NPR Beijing correspondent, Emily Feng."
+    },
+    {
+      "title": "Weird (Amazon) Flex, But Okay",
+      "date": "2020-01-28T18:00:00-05:00",
+      "npr_url": "https://www.npr.org/2020/01/28/800620890/weird-amazon-flex-but-okay",
+      "story_id": "800620890",
+      "audio_id": "800628625",
+      "player_url": "https://www.npr.org/player/embed/800620890/800628625",
+      "description": "Nearly half of Amazon's packages are delivered not by UPS or USPS, but by the company itself. Amazon employs thousands of gig workers to make its deliveries, administering them through an app called Amazon Flex."
+    },
+    {
+      "title": "The Indicator Plays 'Ms. Monopoly'",
+      "date": "2020-01-27T17:08:46-05:00",
+      "npr_url": "https://www.npr.org/2020/01/27/800157576/the-indicator-plays-ms-monopoly",
+      "story_id": "800157576",
+      "audio_id": "800182194",
+      "player_url": "https://www.npr.org/player/embed/800157576/800182194",
+      "description": "Monopoly recently rolled out a version of its classic board game, meant to highlight female contributions to the economy as well as women's economic issues. Today on the show, we play Ms. Monopoly."
+    },
+    {
+      "title": "Fun Fact Friday: Aggressively Passive Edition",
+      "date": "2020-01-24T17:30:15-05:00",
+      "npr_url": "https://www.npr.org/2020/01/24/799390322/fun-fact-friday-aggressively-passive-edition",
+      "story_id": "799390322",
+      "audio_id": "799390964",
+      "player_url": "https://www.npr.org/player/embed/799390322/799390964",
+      "description": "Cardiff is back to present three economic facts for Stacey to deem fun, not fun, or just plain fascinating."
+    },
+    {
+      "title": "Buddhists, Sociopaths And The Art Of Investing",
+      "date": "2020-01-23T18:41:17-05:00",
+      "npr_url": "https://www.npr.org/2020/01/23/799051039/buddhists-sociopaths-and-the-art-of-investing",
+      "story_id": "799051039",
+      "audio_id": "799054811",
+      "player_url": "https://www.npr.org/player/embed/799051039/799054811",
+      "description": "There's been a lot of troubling economic and political news over the last few years. In spite of that, the stock market has just kept on climbing."
+    },
+    {
+      "title": "Dueling Indicators: Stock Market Edition",
+      "date": "2020-01-22T18:27:06-05:00",
+      "npr_url": "https://www.npr.org/2020/01/22/798710435/dueling-indicators-stock-market-edition",
+      "story_id": "798710435",
+      "audio_id": "798712721",
+      "player_url": "https://www.npr.org/player/embed/798710435/798712721",
+      "description": "Stacey and Cardiff face off on the question of whether the stock market is overvalued or undervalued."
+    },
+    {
+      "title": "Can You Name Five Fine Artists That Are Women?",
+      "date": "2020-01-21T17:09:00-05:00",
+      "npr_url": "https://www.npr.org/2020/01/21/798248159/can-you-name-five-fine-artists-that-are-women",
+      "story_id": "798248159",
+      "audio_id": "798251458",
+      "player_url": "https://www.npr.org/player/embed/798248159/798251458",
+      "description": "On average, work by women artists sells for 40% less than work by male artists. Their work also represents just a small sliver of what's displayed in museums. So, how did women get shut out of the art world?"
+    },
+    {
+      "title": "A Bag of Bolívares: And Other Indicators From Venezuela",
+      "date": "2020-01-17T17:37:15-05:00",
+      "npr_url": "https://www.npr.org/2020/01/17/797409100/a-bag-of-bol-vares-and-other-indicators-from-venezuela",
+      "story_id": "797409100",
+      "audio_id": "797459102",
+      "player_url": "https://www.npr.org/player/embed/797409100/797459102",
+      "description": "Venezuela started 2019 with rolling blackouts, hyperinflation, and crippling food shortages. Things have actually gotten a little better, mostly thanks to the economic innovations of everyday people."
+    },
+    {
+      "title": "China Trade Deal: A Truce Awakens?",
+      "date": "2020-01-16T16:27:08-05:00",
+      "npr_url": "https://www.npr.org/2020/01/16/797100293/china-trade-deal-a-truce-awakens",
+      "story_id": "797100293",
+      "audio_id": "797102297",
+      "player_url": "https://www.npr.org/player/embed/797100293/797102297",
+      "description": "The U.S. and China signed a trade deal yesterday - one where China has pledged to buy $200 billion worth of U.S. goods over the next two years. Seems like a big win for the U.S., but is it?"
+    },
+    {
+      "title": "How The FCC Is Trying To Take On Robocalls",
+      "date": "2020-01-15T15:30:53-05:00",
+      "npr_url": "https://www.npr.org/2020/01/14/796418024/how-the-fcc-is-trying-to-take-on-robocalls",
+      "story_id": "796418024",
+      "audio_id": "796427259",
+      "player_url": "https://www.npr.org/player/embed/796418024/796427259",
+      "description": "In October 2019, Americans received a record number of robocalls: 5.7 billion. We talked to Los Angeles Times columnist David Lazarus about these pesky calls and how we can avoid them."
+    },
+    {
+      "title": "How Amazon's Counterfeit Products Threaten Safety",
+      "date": "2020-01-14T14:50:00-05:00",
+      "npr_url": "https://www.npr.org/2020/01/14/796296810/how-amazons-counterfeit-products-threaten-safety",
+      "story_id": "796296810",
+      "audio_id": "796310521",
+      "player_url": "https://www.npr.org/player/embed/796296810/796310521",
+      "description": "Over half of sales on Amazon are from third-party sellers, some of whom are selling counterfeit goods. Faulty car seats are threatening children's safety, but is Amazon being held liable?"
+    },
+    {
+      "title": "How Trade Wars Fill The Swamp",
+      "date": "2020-01-13T16:45:41-05:00",
+      "npr_url": "https://www.npr.org/2020/01/13/796011798/how-trade-wars-fill-the-swamp",
+      "story_id": "796011798",
+      "audio_id": "796022452",
+      "player_url": "https://www.npr.org/player/embed/796011798/796022452",
+      "description": "How lobbyists' campaigns for exclusions to the trade war have skewed incentives and disadvantaged small businesses."
+    },
+    {
+      "title": "Episode 500! And Jobs Friday",
+      "date": "2020-01-10T16:57:14-05:00",
+      "npr_url": "https://www.npr.org/2020/01/10/795368545/episode-500-and-jobs-friday",
+      "story_id": "795368545",
+      "audio_id": "795408737",
+      "player_url": "https://www.npr.org/player/embed/795368545/795408737",
+      "description": "Two reasons to blow the airhorn today: it's Jobs Friday, and The Indicator's 500th episode!"
+    },
+    {
+      "title": "What To Watch In 2020",
+      "date": "2020-01-09T15:54:16-05:00",
+      "npr_url": "https://www.npr.org/2020/01/09/794999571/what-to-watch-in-2020",
+      "story_id": "794999571",
+      "audio_id": "795001543",
+      "player_url": "https://www.npr.org/player/embed/794999571/795001543",
+      "description": "Predictions can be a fool's errand. Instead, we take a look at economic trends that we're planning to keep an eye on this year."
+    },
+    {
+      "title": "The Popularity Of (And Problem With) Municipal Bonds",
+      "date": "2020-01-08T14:56:47-05:00",
+      "npr_url": "https://www.npr.org/2020/01/08/794648421/the-popularity-of-and-problem-with-municipal-bonds",
+      "story_id": "794648421",
+      "audio_id": "794661977",
+      "player_url": "https://www.npr.org/player/embed/794648421/794661977",
+      "description": "Thirsty for yield, and eager for tax breaks, investors are falling over themselves to buy municipal bonds. That could be a problem if the economy turns sour."
+    },
+    {
+      "title": "All The Single Ladies...Are Losing In The Housing Market",
+      "date": "2020-01-07T15:24:26-05:00",
+      "npr_url": "https://www.npr.org/2020/01/07/794309342/all-the-single-ladies-are-losing-in-the-housing-market",
+      "story_id": "794309342",
+      "audio_id": "794311678",
+      "player_url": "https://www.npr.org/player/embed/794309342/794311678",
+      "description": "A home is the largest purchase most Americans will ever make. Why single women are losing out in both buying and selling compared to their male counterparts."
+    },
+    {
+      "title": "The Business Behind The Color Of The Year",
+      "date": "2020-01-06T16:40:00-05:00",
+      "npr_url": "https://www.npr.org/2020/01/06/794040112/the-business-behind-the-color-of-the-year",
+      "story_id": "794040112",
+      "audio_id": "794041515",
+      "player_url": "https://www.npr.org/player/embed/794040112/794041515",
+      "description": "Since 2000, the Pantone Color Institute has announced a \"color of the year.\" This year's color: Classic Blue."
+    },
+    {
+      "title": "The Skyrocketing Cost Of Air Ambulances",
+      "date": "2020-01-03T13:49:54-05:00",
+      "npr_url": "https://www.npr.org/2020/01/03/793389441/the-skyrocketing-cost-of-air-ambulances",
+      "story_id": "793389441",
+      "audio_id": "793391868",
+      "player_url": "https://www.npr.org/player/embed/793389441/793391868",
+      "description": "After a catastrophic accident, you may be rushed to the hospital in an air ambulance. It could save your life, but there's no way to predict how much it will cost."
+    },
+    {
+      "title": "The Bubble That Broke Kuwait",
+      "date": "2020-01-02T15:54:03-05:00",
+      "npr_url": "https://www.npr.org/2019/12/23/790972284/the-bubble-that-broke-kuwait",
+      "story_id": "790972284",
+      "audio_id": "793108109",
+      "player_url": "https://www.npr.org/player/embed/790972284/793108109",
+      "description": "How a simple financial innovation turned a parking garage in Kuwait into one of the most important markets in the world... and how it all came crashing down."
+    },
+    {
+      "title": "The Great British Bicycle Bubble",
+      "date": "2019-12-31T14:13:00-05:00",
+      "npr_url": "https://www.npr.org/2019/12/31/792677087/the-great-british-bicycle-bubble",
+      "story_id": "792677087",
+      "audio_id": "792686416",
+      "player_url": "https://www.npr.org/player/embed/792677087/792686416",
+      "description": "We continue our series on financial bubbles with the British bicycle mania of the 1890s and the trail of bankrupt companies it left behind."
+    },
+    {
+      "title": "The Roman Financial Crisis Of A.D. 33",
+      "date": "2019-12-30T13:02:39-05:00",
+      "npr_url": "https://www.npr.org/2019/12/30/792386687/the-roman-financial-crisis-of-a-d-33",
+      "story_id": "792386687",
+      "audio_id": "792393075",
+      "player_url": "https://www.npr.org/player/embed/792386687/792393075",
+      "description": "What lessons should we learn from one of the earliest documented financial crises in history?"
+    },
+    {
+      "title": "The Work Week, Episode 4: Is The Unemployment Rate Broken?",
+      "date": "2019-12-27T13:48:47-05:00",
+      "npr_url": "https://www.npr.org/2019/12/19/789847664/the-work-week-episode-4-is-the-unemployment-rate-broken",
+      "story_id": "789847664",
+      "audio_id": "790274735",
+      "player_url": "https://www.npr.org/player/embed/789847664/790274735",
+      "description": "Economist Jared Bernstein thinks it's about time we admit that the unemployment rate is not as useful as it used to be. He offers three alternative indicators."
+    },
+    {
+      "title": "The Work Week, Episode 3: Gender Segregation In The Workplace",
+      "date": "2019-12-26T12:40:25-05:00",
+      "npr_url": "https://www.npr.org/2019/12/19/789798278/the-work-week-episode-3-gender-segregation-in-the-workplace",
+      "story_id": "789798278",
+      "audio_id": "790270683",
+      "player_url": "https://www.npr.org/player/embed/789798278/790270683",
+      "description": "The most common jobs for men and the most common jobs for women tend to be different — and this separation has big effects for everyone."
+    },
+    {
+      "title": "The Work Week, Episode 2: What Happened To U.S. Workers?",
+      "date": "2019-12-24T13:13:13-05:00",
+      "npr_url": "https://www.npr.org/2019/12/19/789780723/the-work-week-episode-2-what-happened-to-u-s-workers",
+      "story_id": "789780723",
+      "audio_id": "790248333",
+      "player_url": "https://www.npr.org/player/embed/789780723/790248333",
+      "description": "The share of people aged 25 to 54 in the labor force has fallen in the past couple of decades. What happened?"
+    },
+    {
+      "title": "The Work Week, Episode 1: The Strike That Changed U.S. Labor",
+      "date": "2019-12-23T12:51:00-05:00",
+      "npr_url": "https://www.npr.org/2019/12/19/789773552/the-work-week-episode-1-the-strike-that-changed-u-s-labor",
+      "story_id": "789773552",
+      "audio_id": "790243791",
+      "player_url": "https://www.npr.org/player/embed/789773552/790243791",
+      "description": "The 1937 union agreement between General Motors and the United Auto Workers union ushered in a period of tremendous worker prosperity and union strength. But today, labor is nowhere near a powerful as it used to be. What happened?"
+    },
+    {
+      "title": "Fun Fact Friday!",
+      "date": "2019-12-20T13:27:14-05:00",
+      "npr_url": "https://www.npr.org/2019/12/20/790193610/fun-fact-friday",
+      "story_id": "790193610",
+      "audio_id": "790200500",
+      "player_url": "https://www.npr.org/player/embed/790193610/790200500",
+      "description": "Stacey busts out the funometer and casts judgment on Cardiff's facts."
     }
   ]
 }
