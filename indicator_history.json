@@ -1,6 +1,6 @@
 {
-  "next_date": "2021-11-18T18:54:00-05:00",
-  "episode_count": 825,
+  "next_date": "2021-09-06T18:29:00-04:00",
+  "episode_count": 880,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -7426,6 +7426,501 @@
       "audio_id": "1057518999",
       "player_url": "https://www.npr.org/player/embed/1057461646/1057518999",
       "description": "It's that time again! A crypto group fails to buy an original copy of the U.S. Constitution, Crypto.com succeeds in renaming LA's Staples Center, and warnings the economy might be too exuberant."
+    },
+    {
+      "title": "Rumor has it Adele broke the vinyl supply chain",
+      "date": "2021-11-18T18:34:01-05:00",
+      "npr_url": "https://www.npr.org/2021/11/18/1057040150/rumor-has-it-adele-broke-the-vinyl-supply-chain",
+      "story_id": "1057040150",
+      "audio_id": "1057053802",
+      "player_url": "https://www.npr.org/player/embed/1057040150/1057053802",
+      "description": "We're in the midst of a vinyl boom and chains like Walmart have been cashing in. But so have stars like Adele, who reportedly pressed over 500,000 records for her new album, \"30.\" Today on the show, has Adele really clogged the fragile vinyl supply chain, or should we go easy on her?"
+    },
+    {
+      "title": "Should Americans buy less stuff?",
+      "date": "2021-11-17T19:12:00-05:00",
+      "npr_url": "https://www.npr.org/2021/11/17/1056696045/should-americans-buy-less-stuff",
+      "story_id": "1056696045",
+      "audio_id": "1056713884",
+      "player_url": "https://www.npr.org/player/embed/1056696045/1056713884",
+      "description": "Americans love to shop, and consumer spending has only increased since the start of the pandemic. Even the supply chains are tired. That's why one Bloomberg columnist believes it's time for an intervention."
+    },
+    {
+      "title": "Toyota Camry, supply-chain hero",
+      "date": "2021-11-16T18:18:00-05:00",
+      "npr_url": "https://www.npr.org/2021/11/16/1056278180/toyota-camry-supply-chain-hero",
+      "story_id": "1056278180",
+      "audio_id": "1056320851",
+      "player_url": "https://www.npr.org/player/embed/1056278180/1056320851",
+      "description": "Toyota pioneered just-in-time production. But this lean method is dangerous when car parts are in short supply, like in a pandemic. Today: How Toyota invented and reformed just-in-time production."
+    },
+    {
+      "title": "'The China Shock' and the downsides of globalization",
+      "date": "2021-11-15T18:49:47-05:00",
+      "npr_url": "https://www.npr.org/2021/11/15/1055954861/the-china-shock-and-the-downsides-of-globalization",
+      "story_id": "1055954861",
+      "audio_id": "1055994066",
+      "player_url": "https://www.npr.org/player/embed/1055954861/1055994066",
+      "description": "Trade with China made American goods cheaper and lifted millions of Chinese people out of poverty. At the same time, it devastated communities across America's heartland. What have we learned from the \"China Shock\"? And what can we do to prevent something like it from happening again?"
+    },
+    {
+      "title": "Why quitting got so cool",
+      "date": "2021-11-12T17:41:00-05:00",
+      "npr_url": "https://www.npr.org/2021/11/12/1055412277/why-quitting-got-so-cool",
+      "story_id": "1055412277",
+      "audio_id": "1055413817",
+      "player_url": "https://www.npr.org/player/embed/1055412277/1055413817",
+      "description": "This episode is all about quitters! Over 4 million people quit their jobs in September. That's a record high following another record quits rate in August. What does this trend say about America's evolving workforce, and when did so many people start saving \"rest eggs?\""
+    },
+    {
+      "title": "Indicators of the Week: Broadband, bonds, and break-ups",
+      "date": "2021-11-11T18:43:00-05:00",
+      "npr_url": "https://www.npr.org/2021/11/11/1054929180/indicators-of-the-week-broadband-bonds-and-break-ups",
+      "story_id": "1054929180",
+      "audio_id": "1054968797",
+      "player_url": "https://www.npr.org/player/embed/1054929180/1054968797",
+      "description": "It's Indicators of the Week! General Electric splits into three separate companies, the $1.2 trillion infrastructure bill promises faster internet speeds, and interest rates for government debt inched up."
+    },
+    {
+      "title": "The Money Illusion: Have Americans really gotten a raise?",
+      "date": "2021-11-10T19:00:24-05:00",
+      "npr_url": "https://www.npr.org/2021/11/10/1054451446/the-money-illusion-have-americans-really-gotten-a-raise",
+      "story_id": "1054451446",
+      "audio_id": "1054543385",
+      "player_url": "https://www.npr.org/player/embed/1054451446/1054543385",
+      "description": "Although workers across the country have seen an increase in wages, the cost of things like gas and food have also been increasing. This leaves workers wondering whether these raises are real or just an illusion."
+    },
+    {
+      "title": "Global food, local sauces",
+      "date": "2021-11-09T18:58:57-05:00",
+      "npr_url": "https://www.npr.org/2021/11/09/1054091162/global-food-local-sauces",
+      "story_id": "1054091162",
+      "audio_id": "1054105871",
+      "player_url": "https://www.npr.org/player/embed/1054091162/1054105871",
+      "description": "Adnan Durrani loved sourcing ingredients from all over the world for his food company Saffron Road. Then the pandemic hit. Now Adnan is totally reconsidering the benefits of globalization."
+    },
+    {
+      "title": "iBuyers, Zillow, and 'the lemons problem'",
+      "date": "2021-11-08T18:31:05-05:00",
+      "npr_url": "https://www.npr.org/2021/11/08/1053689886/ibuyers-zillow-and-the-lemons-problem",
+      "story_id": "1053689886",
+      "audio_id": "1053718924",
+      "player_url": "https://www.npr.org/player/embed/1053689886/1053718924",
+      "description": "With troves of data at their disposal, iBuyers like Opendoor, Redfin and Zillow have been trying to make money buying homes online and selling them — quickly. Armed with high-tech algorithms, what could go wrong? Lemons, for one thing."
+    },
+    {
+      "title": "The Great Hesitation: a Jobs Friday rom-com",
+      "date": "2021-11-05T19:01:50-04:00",
+      "npr_url": "https://www.npr.org/2021/11/05/1053000563/the-great-hesitation-a-jobs-friday-rom-com",
+      "story_id": "1053000563",
+      "audio_id": "1053066027",
+      "player_url": "https://www.npr.org/player/embed/1053000563/1053066027",
+      "description": "It's Jobs Friday, and we blow our first air horn in months! Albeit, a slightly muted one. Last month, the economy added more jobs than expected. But there are still millions of people staying out of the workforce. Why?"
+    },
+    {
+      "title": "Landlords need help too",
+      "date": "2021-11-04T18:11:20-04:00",
+      "npr_url": "https://www.npr.org/2021/11/04/1052505729/landlords-need-help-too",
+      "story_id": "1052505729",
+      "audio_id": "1052549718",
+      "player_url": "https://www.npr.org/player/embed/1052505729/1052549718",
+      "description": "For renters to receive emergency rental assistance, they usually need cooperation from their landlords. This is also true vice versa. On today's show, we hear about the struggles of two mom-and-pop landlords with renters who left them holding the bag. ​​Check out some of Chris Arnold's earlier reporting on the challenges renters are facing during the pandemic:​​Why rent help from Congress has been so damn slow getting to people who need itGeorgia County Tried To Help Everyone Facing Eviction. Now A Crisis LoomsWith The Eviction Moratorium's End Looming, Black Renters Likely To Be Hit Hard"
+    },
+    {
+      "title": "Could Elon Musk really solve world hunger?",
+      "date": "2021-11-03T19:39:00-04:00",
+      "npr_url": "https://www.npr.org/2021/11/03/1052141879/could-elon-musk-really-solve-world-hunger",
+      "story_id": "1052141879",
+      "audio_id": "1052183795",
+      "player_url": "https://www.npr.org/player/embed/1052141879/1052183795",
+      "description": "Just 2% of Elon Musk's wealth could supposedly help solve world hunger. But how was this estimate calculated, and is solving this issue as simple as a billionaire writing a check?"
+    },
+    {
+      "title": "Tangled up and beige: The Beigies are back!",
+      "date": "2021-11-02T18:12:42-04:00",
+      "npr_url": "https://www.npr.org/2021/11/02/1051628672/tangled-up-and-beige-the-beigies-are-back",
+      "story_id": "1051628672",
+      "audio_id": "1051628797",
+      "player_url": "https://www.npr.org/player/embed/1051628672/1051628797",
+      "description": "The Beigies are here again! October's Beige Book entries captured the seismic shift in the way we live during the pandemic, and things got a little emotional."
+    },
+    {
+      "title": "Rage against the customer service worker",
+      "date": "2021-11-01T18:26:00-04:00",
+      "npr_url": "https://www.npr.org/2021/11/01/1051261424/rage-against-the-customer-service-worker",
+      "story_id": "1051261424",
+      "audio_id": "1051275692",
+      "player_url": "https://www.npr.org/player/embed/1051261424/1051275692",
+      "description": "As if they don't have enough to worry about, restaurant, retail, and airline employees are still facing customer meltdowns over COVID-19 precautions. We ask a 'customer whisperer' if these explosive customers can be defused."
+    },
+    {
+      "title": "Night of the living inflation",
+      "date": "2021-10-29T18:42:32-04:00",
+      "npr_url": "https://www.npr.org/2021/10/29/1050665635/night-of-the-living-inflation",
+      "story_id": "1050665635",
+      "audio_id": "1198960425",
+      "player_url": "https://www.npr.org/player/embed/1050665635/1198960425",
+      "description": "We look at a hidden form of inflation affecting our economy — we're calling it \"skimpflation.\" The Indicator tells a spooky tale about the inflation demon. | Subscribe to our weekly newsletter here."
+    },
+    {
+      "title": "Is the economy going stag(flation)?",
+      "date": "2021-10-28T18:09:44-04:00",
+      "npr_url": "https://www.npr.org/2021/10/28/1050175773/is-the-economy-going-stag-flation",
+      "story_id": "1050175773",
+      "audio_id": "1050259550",
+      "player_url": "https://www.npr.org/player/embed/1050175773/1050259550",
+      "description": "GDP numbers for the third quarter just dropped and they are... not awesome. With the economy experiencing slower than expected growth and rising prices, are we entering into a period of stagflation?"
+    },
+    {
+      "title": "Can the Fed help solve climate change?",
+      "date": "2021-10-27T18:45:00-04:00",
+      "npr_url": "https://www.npr.org/2021/10/27/1049835705/can-the-fed-help-solve-climate-change",
+      "story_id": "1049835705",
+      "audio_id": "1049840231",
+      "player_url": "https://www.npr.org/player/embed/1049835705/1049840231",
+      "description": "From buying green bonds to monitoring bank lending, some central banks have already created policies to help fight climate change risk. Should the Fed be next?"
+    },
+    {
+      "title": "Revisiting the ABLE Act",
+      "date": "2021-10-26T19:21:09-04:00",
+      "npr_url": "https://www.npr.org/2021/10/26/1049446936/revisiting-the-able-act",
+      "story_id": "1049446936",
+      "audio_id": "1049473279",
+      "player_url": "https://www.npr.org/player/embed/1049446936/1049473279",
+      "description": "When Chip Gerhardt's daughter Anne ran into some issues with Social Security disability benefits, his job as a lobbyist became very personal."
+    },
+    {
+      "title": "Squid Game: Debt, decisions, and the paradox of thrift",
+      "date": "2021-10-25T18:46:29-04:00",
+      "npr_url": "https://www.npr.org/2021/10/25/1049120493/squid-game-debt-decisions-and-the-paradox-of-thrift",
+      "story_id": "1049120493",
+      "audio_id": "1049141026",
+      "player_url": "https://www.npr.org/player/embed/1049120493/1049141026",
+      "description": "In the Netflix show Squid Game, 456 desperate players compete to the death in a series of children's games for millions of dollars. How did their debt impact their decision making?"
+    },
+    {
+      "title": "Two Indicators: Congressional game theory and the debt ceiling",
+      "date": "2021-10-22T19:50:11-04:00",
+      "npr_url": "https://www.npr.org/2021/10/22/1048493458/two-indicators-congressional-game-theory-and-the-debt-ceiling",
+      "story_id": "1048493458",
+      "audio_id": "1198960433",
+      "player_url": "https://www.npr.org/player/embed/1048493458/1198960433",
+      "description": "We bring you two stories from The Indicator on the recent battles being fought in Congress. | Subscribe to our weekly newsletter here."
+    },
+    {
+      "title": "Indicators of the Week: IPOs, ETFs, GHGs",
+      "date": "2021-10-22T17:51:54-04:00",
+      "npr_url": "https://www.npr.org/2021/10/22/1048524394/indicators-of-the-week-ipos-etfs-ghgs",
+      "story_id": "1048524394",
+      "audio_id": "1048544014",
+      "player_url": "https://www.npr.org/player/embed/1048524394/1048544014",
+      "description": "It's Indicators of the Week! The U.S. is using a lot more coal for electricity, the first Bitcoin ETF is finally here, and WeWork officially debuted on the New York Stock Exchange."
+    },
+    {
+      "title": "Say my name",
+      "date": "2021-10-21T18:30:00-04:00",
+      "npr_url": "https://www.npr.org/2021/10/21/1048171484/say-my-name",
+      "story_id": "1048171484",
+      "audio_id": "1048181558",
+      "player_url": "https://www.npr.org/player/embed/1048171484/1048181558",
+      "description": "Repeating a customer's name is a classic sales technique used by telemarketers to car salesmen. But can a salesperson use a customer's name too much?"
+    },
+    {
+      "title": "Keep calm, it's just the bullwhip effect",
+      "date": "2021-10-20T19:46:49-04:00",
+      "npr_url": "https://www.npr.org/2021/10/20/1047777081/keep-calm-its-just-the-bullwhip-effect",
+      "story_id": "1047777081",
+      "audio_id": "1047841419",
+      "player_url": "https://www.npr.org/player/embed/1047777081/1047841419",
+      "description": "The Indicator team plays a beer game to understand how the bullwhip effect tangles supply chains. And no, it's not beer pong."
+    },
+    {
+      "title": "Labor market trick or treat",
+      "date": "2021-10-19T19:19:23-04:00",
+      "npr_url": "https://www.npr.org/2021/10/19/1047430280/labor-market-trick-or-treat",
+      "story_id": "1047430280",
+      "audio_id": "1047466297",
+      "player_url": "https://www.npr.org/player/embed/1047430280/1047466297",
+      "description": "Trick or treat! As we all know, some indicators are sweet, but others are scary. Luckily, one economist is here to help us separate the tricks from the treats in our labor market."
+    },
+    {
+      "title": "BRAND new friends",
+      "date": "2021-10-18T18:26:00-04:00",
+      "npr_url": "https://www.npr.org/2021/10/18/1047116449/brand-new-friends",
+      "story_id": "1047116449",
+      "audio_id": "1047139823",
+      "player_url": "https://www.npr.org/player/embed/1047116449/1047139823",
+      "description": "In advertising, there's always been an unspoken rule — never praise your competition. But one marketing professor's research shows that approach can actually be good for businesses and their brand."
+    },
+    {
+      "title": "Indicators of the Week: strikes, prices, Black Friday deals",
+      "date": "2021-10-15T18:29:44-04:00",
+      "npr_url": "https://www.npr.org/2021/10/15/1046561880/indicators-of-the-week-strikes-prices-black-friday-deals",
+      "story_id": "1046561880",
+      "audio_id": "1046593124",
+      "player_url": "https://www.npr.org/player/embed/1046561880/1046593124",
+      "description": "Indicators of the Week! Prices are up again, but is it fair to call this 'transitory' inflation? Black Friday deals are early at stores anticipating supply-chain shortages. And America is on strike."
+    },
+    {
+      "title": "Congressional game theory",
+      "date": "2021-10-14T18:25:00-04:00",
+      "npr_url": "https://www.npr.org/2021/10/14/1046180183/congressional-game-theory",
+      "story_id": "1046180183",
+      "audio_id": "1046184818",
+      "player_url": "https://www.npr.org/player/embed/1046180183/1046184818",
+      "description": "For months, lawmakers have been negotiating two big spending bills with no end in sight. Game theory could explain the hidden strategies behind the congressional chaos."
+    },
+    {
+      "title": "Simon says we're stuck with the debt ceiling",
+      "date": "2021-10-13T18:08:14-04:00",
+      "npr_url": "https://www.npr.org/2021/10/13/1045792331/simon-says-were-stuck-with-the-debt-ceiling",
+      "story_id": "1045792331",
+      "audio_id": "1045801016",
+      "player_url": "https://www.npr.org/player/embed/1045792331/1045801016",
+      "description": "The debt ceiling approaches. A congressional standoff ensues. It wasn't always this way. So why did the debt ceiling get built? And how do other countries control their debt?"
+    },
+    {
+      "title": "A Nobel prize for an economics revolution",
+      "date": "2021-10-12T19:00:55-04:00",
+      "npr_url": "https://www.npr.org/2021/10/12/1045462268/a-nobel-prize-for-an-economics-revolution",
+      "story_id": "1045462268",
+      "audio_id": "1045469670",
+      "player_url": "https://www.npr.org/player/embed/1045462268/1045469670",
+      "description": "Joshua Angrist, Guido Imbens and David Card won the economics Nobel on Monday. On today's show, we talk to the Princeton professor who mentored two of the winners."
+    },
+    {
+      "title": "Jobs Friday: Where are all the older workers?",
+      "date": "2021-10-08T19:04:51-04:00",
+      "npr_url": "https://www.npr.org/2021/10/08/1044613677/jobs-friday-where-are-all-the-older-workers",
+      "story_id": "1044613677",
+      "audio_id": "1044634916",
+      "player_url": "https://www.npr.org/player/embed/1044613677/1044634916",
+      "description": "Sure, some seniors took the pandemic as an opportunity to ride an RV into the sunset, but there's a darker story unfolding in today's jobs report. Today's show looks at the challenges many older worker can face as they try to reenter the workforce."
+    },
+    {
+      "title": "A new decade for Bond",
+      "date": "2021-10-07T18:58:27-04:00",
+      "npr_url": "https://www.npr.org/2021/10/07/1044196414/a-new-decade-for-bond",
+      "story_id": "1044196414",
+      "audio_id": "1044199236",
+      "player_url": "https://www.npr.org/player/embed/1044196414/1044199236",
+      "description": "Daniel Craig's tenure as James Bond is coming to an end with the release of No Time To Die. With Amazon acquiring MGM, where does the 007 franchise go from here?"
+    },
+    {
+      "title": "Technology brought to you by the s-curve",
+      "date": "2021-10-06T18:27:46-04:00",
+      "npr_url": "https://www.npr.org/2021/10/06/1043822817/technology-brought-to-you-by-the-s-curve",
+      "story_id": "1043822817",
+      "audio_id": "1043847092",
+      "player_url": "https://www.npr.org/player/embed/1043822817/1043847092",
+      "description": "A lot of things grow slowly, then fast, then slow again. From the growth in smartphone users to the rise of vaccinations, the s-curve explains a huge part of technological, scientific and economic change."
+    },
+    {
+      "title": "Facebook tries to save face",
+      "date": "2021-10-05T21:14:47-04:00",
+      "npr_url": "https://www.npr.org/2021/10/05/1043555806/facebook-tries-to-save-face",
+      "story_id": "1043555806",
+      "audio_id": "1043564256",
+      "player_url": "https://www.npr.org/player/embed/1043555806/1043564256",
+      "description": "Facebook's status hasn't been so hot of late. From internal documents leaked by a whistleblower to outages of hours. How does a company with millions of dissatisfied customers turn its image around?"
+    },
+    {
+      "title": "Revenge of the math club",
+      "date": "2021-10-04T17:17:00-04:00",
+      "npr_url": "https://www.npr.org/2021/10/04/1043169043/revenge-of-the-math-club",
+      "story_id": "1043169043",
+      "audio_id": "1043170687",
+      "player_url": "https://www.npr.org/player/embed/1043169043/1043170687",
+      "description": "In the high school lunchroom version of business school, finance majors were the popular jocks and logistics majors were... the math club. But nowadays, they're sitting at the cool kids' table."
+    },
+    {
+      "title": "No Dental, No Power, No Agents: Indicators Of The Week",
+      "date": "2021-10-01T18:16:44-04:00",
+      "npr_url": "https://www.npr.org/2021/10/01/1042520345/no-dental-no-power-no-agents-indicators-of-the-week",
+      "story_id": "1042520345",
+      "audio_id": "1042562627",
+      "player_url": "https://www.npr.org/player/embed/1042520345/1042562627",
+      "description": "Indicators of the Week! Dentists resist the Biden administration's spending plan. China is rationing electricity. And Baltimore Ravens quarterback Lamar Jackson negotiates his own contract, agent-free."
+    },
+    {
+      "title": "Japanese Anime, Made In China",
+      "date": "2021-09-30T17:54:07-04:00",
+      "npr_url": "https://www.npr.org/2021/09/30/1042060699/japanese-anime-made-in-china",
+      "story_id": "1042060699",
+      "audio_id": "1042066246",
+      "player_url": "https://www.npr.org/player/embed/1042060699/1042066246",
+      "description": "Anime is a twenty-billion-dollar industry and it is growing fast. But traditionally, anime is produced in Japan. What happens when other countries try producing Japanese-style animation?"
+    },
+    {
+      "title": "Rebuilding Paradise",
+      "date": "2021-09-29T18:00:04-04:00",
+      "npr_url": "https://www.npr.org/2021/09/29/1041641733/rebuilding-paradise",
+      "story_id": "1041641733",
+      "audio_id": "1041672127",
+      "player_url": "https://www.npr.org/player/embed/1041641733/1041672127",
+      "description": "The 2018 Camp Fire burned down much of the town of Paradise, Calif. Over the years, wildfires in the West have become more frequent and intense. But Paradise is rebuilding for a more resilient future."
+    },
+    {
+      "title": "How WhatsApp Broke Lebanon",
+      "date": "2021-09-28T19:23:00-04:00",
+      "npr_url": "https://www.npr.org/2021/09/28/1041334763/how-whatsapp-broke-lebanon",
+      "story_id": "1041334763",
+      "audio_id": "1041347920",
+      "player_url": "https://www.npr.org/player/embed/1041334763/1041347920",
+      "description": "Lebanon's economy is in freefall. The World Bank calls it one of the worst financial crises in a century. We look back at Lebanon's optimistic years, zooming in on the one key decision that started this house of cards. And we ask what this can teach us about booms and busts in general."
+    },
+    {
+      "title": "The College Admissions 'Melt' Down",
+      "date": "2021-09-27T17:57:14-04:00",
+      "npr_url": "https://www.npr.org/2021/09/27/1041011021/the-college-admissions-melt-down",
+      "story_id": "1041011021",
+      "audio_id": "1041012975",
+      "player_url": "https://www.npr.org/player/embed/1041011021/1041012975",
+      "description": "What is \"melt\" and why are college admissions departments sweating over it this year?"
+    },
+    {
+      "title": "Indicators Of The Week: Evergrande, Stuck Ships, Town Managers",
+      "date": "2021-09-24T16:26:15-04:00",
+      "npr_url": "https://www.npr.org/2021/09/24/1040612235/indicators-of-the-week-evergrande-stuck-ships-town-managers",
+      "story_id": "1040612235",
+      "audio_id": "1040636952",
+      "player_url": "https://www.npr.org/player/embed/1040612235/1040636952",
+      "description": "From ghost apartments empty in China, to a backlog of ships in Los Angeles, to towns struggling to find city managers... yes, it's time for Indicators of the Week!"
+    },
+    {
+      "title": "Why An Aging China Matters",
+      "date": "2021-09-23T15:47:36-04:00",
+      "npr_url": "https://www.npr.org/2021/09/23/1040249877/why-an-aging-china-matters",
+      "story_id": "1040249877",
+      "audio_id": "1040288200",
+      "player_url": "https://www.npr.org/player/embed/1040249877/1040288200",
+      "description": "For decades China exported better and cheaper stuff. But now China's experiencing a factory worker crunch. It's been a long time coming."
+    },
+    {
+      "title": "The Unicorn Next Door",
+      "date": "2021-09-22T14:25:21-04:00",
+      "npr_url": "https://www.npr.org/2021/09/22/1039783628/the-unicorn-next-door",
+      "story_id": "1039783628",
+      "audio_id": "1039855948",
+      "player_url": "https://www.npr.org/player/embed/1039783628/1039855948",
+      "description": "A real estate startup says it's the fastest company in American history to achieve a billion-dollar valuation, but the neighbors aren't buying what they're selling: fractional home ownership."
+    },
+    {
+      "title": "Trust Us, 2020 Brought Us Together",
+      "date": "2021-09-21T14:57:45-04:00",
+      "npr_url": "https://www.npr.org/2021/09/21/1039445189/trust-us-2020-brought-us-together",
+      "story_id": "1039445189",
+      "audio_id": "1039451272",
+      "player_url": "https://www.npr.org/player/embed/1039445189/1039451272",
+      "description": "Political upheaval! Conspiracy theories! Global spread of disease! Sounds like a recipe for... trust? Today on the show, how 2020 increased trust, and how that trust underpins so much of our economy."
+    },
+    {
+      "title": "All In On Malls",
+      "date": "2021-09-20T15:03:00-04:00",
+      "npr_url": "https://www.npr.org/2021/09/20/1039102845/all-in-on-malls",
+      "story_id": "1039102845",
+      "audio_id": "1039108117",
+      "player_url": "https://www.npr.org/player/embed/1039102845/1039108117",
+      "description": "With the pandemic shutting down in-person life, thousands of retail stores closed up shop. But, some retailers see an opportunity for growth by moving into American malls. Let's go to the mall."
+    },
+    {
+      "title": "Two Indicators: Women And Work",
+      "date": "2021-09-17T20:35:11-04:00",
+      "npr_url": "https://www.npr.org/2021/09/17/1038307729/two-indicators-women-and-work",
+      "story_id": "1038307729",
+      "audio_id": "1198960503",
+      "player_url": "https://www.npr.org/player/embed/1038307729/1198960503",
+      "description": "Women start a lot of businesses, but when it comes time for them to grow, many hit a wall, or the women founders end up losing control. Why? We bring you two indicators on women and work from our daily podcast The Indicator. Also, Amanda and Stacey go on a picnic to prove a point. | Subscribe to our weekly newsletter here."
+    },
+    {
+      "title": "Indicators Of The Week: Colleges, Poverty, Airlines",
+      "date": "2021-09-17T17:50:43-04:00",
+      "npr_url": "https://www.npr.org/2021/09/17/1038404147/indicators-of-the-week-colleges-poverty-airlines",
+      "story_id": "1038404147",
+      "audio_id": "1038441290",
+      "player_url": "https://www.npr.org/player/embed/1038404147/1038441290",
+      "description": "It's that time of the week again! On today's show, we bring the indicators on airline vaccine mandates, U.S. poverty after all that pandemic aid and a surprising shakeup in college rankings."
+    },
+    {
+      "title": "'Machiavelli for Women'; Plus, 'What We Do in the Shadows'",
+      "date": "2021-09-17T17:35:00-04:00",
+      "npr_url": "https://www.npr.org/2021/09/16/1037918829/machiavelli-for-women-what-we-do-in-the-shadows-harvey-guillen",
+      "story_id": "1037918829",
+      "audio_id": "1199267492",
+      "player_url": "https://www.npr.org/player/embed/1037918829/1199267492",
+      "description": "Sam is joined by NPR's The Indicator host Stacey Vanek Smith to talk about her new book, Machiavelli for Women and how women in the workplace are still falling behind. Plus, actor Harvey Guillén on the new season of the FX show What We Do in the Shadows and not waiting for people to be comfortable with his \"brownness, queerness and roundness\" to be comfortable in his own skin.You can follow us on Twitter @NPRItsBeenAMin and email us at samsanders@npr.org."
+    },
+    {
+      "title": "Gas Power To Electric Power To... Foot Power?",
+      "date": "2021-09-16T17:01:38-04:00",
+      "npr_url": "https://www.npr.org/2021/09/16/1038008948/gas-power-to-electric-power-to-foot-power",
+      "story_id": "1038008948",
+      "audio_id": "1038031156",
+      "player_url": "https://www.npr.org/player/embed/1038008948/1038031156",
+      "description": "Auto companies needing to lower emissions while facing car bans in some cities, are turning their focus toward a familiar, two-wheeled competitor. Today on the show, the rise of the e-bike."
+    },
+    {
+      "title": "Child Care Conundrum",
+      "date": "2021-09-15T14:31:55-04:00",
+      "npr_url": "https://www.npr.org/2021/09/15/1037631955/child-care-conundrum",
+      "story_id": "1037631955",
+      "audio_id": "1037649017",
+      "player_url": "https://www.npr.org/player/embed/1037631955/1037649017",
+      "description": "Millions of mothers left work during the pandemic. Decades of progress seemed lost. Is it time to reconsider how our economy handles child care and the workplace?"
+    },
+    {
+      "title": "Do High Food Prices Mean Unrest?",
+      "date": "2021-09-14T15:41:00-04:00",
+      "npr_url": "https://www.npr.org/2021/09/14/1037165564/do-high-food-prices-mean-unrest",
+      "story_id": "1037165564",
+      "audio_id": "1037169457",
+      "player_url": "https://www.npr.org/player/embed/1037165564/1037169457",
+      "description": "Climate change, farmworker shortages and increasing transportation costs are driving global food prices higher and higher. What happens when food costs too much?"
+    },
+    {
+      "title": "The Beigie Awards: From Coasting To Ghosting",
+      "date": "2021-09-13T14:50:15-04:00",
+      "npr_url": "https://www.npr.org/2021/09/13/1036737159/the-beigie-awards-from-coasting-to-ghosting",
+      "story_id": "1036737159",
+      "audio_id": "1036746515",
+      "player_url": "https://www.npr.org/player/embed/1036737159/1036746515",
+      "description": "Restaurant owners washing their own dishes? Shipping containers changing all prices mid-delivery? The rise of the spooky, surf-happy employee? It's the Beigie Awards!"
+    },
+    {
+      "title": "Indicators Of The Week: From Bitcoin To Solar To Feelings",
+      "date": "2021-09-10T18:32:55-04:00",
+      "npr_url": "https://www.npr.org/2021/09/09/1035748029/indicators-of-the-week-from-bitcoin-to-solar-to-feelings",
+      "story_id": "1035748029",
+      "audio_id": "1036126868",
+      "player_url": "https://www.npr.org/player/embed/1035748029/1036126868",
+      "description": "It's time for Indicators Of The Week! This week: The confidence of consumers takes a hit, El Salvador makes it official with Bitcoin, and our future's so bright, we might just need those shades."
+    },
+    {
+      "title": "Do You Want To Live In A Bounty Economy?",
+      "date": "2021-09-09T16:49:00-04:00",
+      "npr_url": "https://www.npr.org/2021/09/09/1035741353/do-you-want-to-live-in-a-bounty-economy",
+      "story_id": "1035741353",
+      "audio_id": "1035745237",
+      "player_url": "https://www.npr.org/player/embed/1035741353/1035745237",
+      "description": "The Texas abortion law includes an unusual provision: a financial incentive to report others. On today's show, we look into another time in U.S. history where the government tried bounties."
+    },
+    {
+      "title": "A Quest To Support Women-Led Businesses",
+      "date": "2021-09-08T19:38:31-04:00",
+      "npr_url": "https://www.npr.org/2021/09/08/1035262035/a-quest-to-support-women-led-businesses",
+      "story_id": "1035262035",
+      "audio_id": "1035531096",
+      "player_url": "https://www.npr.org/player/embed/1035262035/1035531096",
+      "description": "A reporter frustrated by the gender and race gap in company CEOs sets out to buy products only from companies led or owned by women. Today on the show, what it takes to advance women in business."
+    },
+    {
+      "title": "Did Ending Pandemic UI Benefits Push Americans Back To Work?",
+      "date": "2021-09-07T18:29:00-04:00",
+      "npr_url": "https://www.npr.org/2021/09/07/1034965231/did-ending-pandemic-ui-benefits-push-americans-back-to-work",
+      "story_id": "1034965231",
+      "audio_id": "1034976282",
+      "player_url": "https://www.npr.org/player/embed/1034965231/1034976282",
+      "description": "Early this summer, the U.S. inadvertently launched one of the largest unemployment experiments in history to see if unemployment benefits impact worker shortages. Today on the show, we find the answer."
     }
   ]
 }
