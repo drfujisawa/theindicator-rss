@@ -1,0 +1,414 @@
+{
+  "method": "affiliate-audio-forensics",
+  "test_limit": 10,
+  "inspected_count": 10,
+  "results": [
+    {
+      "reference_date": "2018-03-13",
+      "reference_title": "Bonds... Japanese Bonds",
+      "source_url": "https://news.wypr.org/2018-03-13/bonds-japanese-bonds",
+      "source_domain": "news.wypr.org",
+      "status": "inspected",
+      "findings": {
+        "mp3_urls": [
+          "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
+        ],
+        "audio_urls": [
+          "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
+        ],
+        "iframe_urls": [
+          "https://www.googletagmanager.com/ns.html?id=GTM-N39QFDR"
+        ],
+        "npr_urls": [
+          "https://www.npr.org/sections/money/2018/03/13/593261790/bonds-japanese-bonds?ft=nprml&f=593261790"
+        ],
+        "jsonld_audio_objects": [],
+        "possible_ids": [],
+        "interesting_lines": [
+          "<meta property=\"og:image\" content=\"https://npr.brightspotcdn.com/dims4/default/3a6d0d8/2147483647/strip/true/crop/1200x630+0+135/resize/1200x630!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F13%2Flistener-questions-b117cef1e32dd8e847d5c37bd5ae4ee9e89ae2a3.jpg\">",
+          "<meta property=\"og:image:url\" content=\"https://npr.brightspotcdn.com/dims4/default/3a6d0d8/2147483647/strip/true/crop/1200x630+0+135/resize/1200x630!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F13%2Flistener-questions-b117cef1e32dd8e847d5c37bd5ae4ee9e89ae2a3.jpg\">",
+          "<meta name=\"twitter:image\" content=\"https://npr.brightspotcdn.com/dims4/default/d4585ce/2147483647/strip/true/crop/1200x675+0+113/resize/1200x675!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F13%2Flistener-questions-b117cef1e32dd8e847d5c37bd5ae4ee9e89ae2a3.jpg\"/>",
+          "\"bspStoryId\" : \"00000176-776b-dc2f-ad76-7f6b426c0000\",",
+          "\"nprStoryId\" : \"593261790\",",
+          "\"gtmBspStoryId\" : \"00000176-776b-dc2f-ad76-7f6b426c0000\",",
+          "\"gtmNprStoryId\" : \"593261790\",",
+          "})(window,document,'script','dataLayer','GTM-N39QFDR');</script><script type=\"application/ld+json\">{\"@context\":\"http://schema.org\",\"@type\":\"NewsArticle\",\"author\":[{\"@context\":\"http://schema.org\",\"@type\":\"Person\",\"name\":\"Stacey Vanek Smith\",\"url\":\"https://news.wypr.org/people/stacey-vanek-smith\"},{\"@context\":\"http://schema.org\",\"@type\":\"Person\",\"name\":\"Cardiff Garcia\",\"url\":\"https://news.wypr.org/people/cardiff-garcia\"}],\"dateModified\":\"2020-12-21T13:45:19Z\",\"datePublished\":\"2018-03-13T15:56:23Z\",\"headline\":\"Bonds... Japanese Bonds\",\"image\":{\"@context\":\"http://schema.org\",\"@type\":\"ImageObject\",\"url\":\"https://media.npr.org/assets/img/2018/03/13/listener-questions-b117cef1e32dd8e847d5c37bd5ae4ee9e89ae2a3.jpg\"},\"mainEntityOfPage\":{\"@type\":\"NewsArticle\",\"@id\":\"https://news.wypr.org/2018-03-13/bonds-japanese-bonds\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"WYPR Archive\",\"logo\":{\"@context\":\"http://schema.org\",\"@type\":\"ImageObject\",\"height\":\"60\",\"url\":\"https://npr.brightspotcdn.com/dims4/default/cc74955/2147483647/resize/x60/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fd1%2F9f%2F22bee6dc4f9aaaae47c7be531de0%2Fwyprhireslarge.jpg\",\"width\":\"174\"}}}</script><script>",
+          "data-stream-url=\"https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3\">",
+          "height=\"315\" srcset=\"https://npr.brightspotcdn.com/dims4/default/d42e6a9/2147483647/strip/true/crop/1200x900+0+0/resize/840x630!/format/webp/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F13%2Flistener-questions-b117cef1e32dd8e847d5c37bd5ae4ee9e89ae2a3.jpg 2x\"data-size=\"fallbackImageSizeMobile\"",
+          "height=\"315\" srcset=\"https://npr.brightspotcdn.com/dims4/default/eff79cb/2147483647/strip/true/crop/1200x900+0+0/resize/420x315!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F13%2Flistener-questions-b117cef1e32dd8e847d5c37bd5ae4ee9e89ae2a3.jpg\"data-size=\"fallbackImageSizeMobile\"",
+          "height=\"660\" srcset=\"https://npr.brightspotcdn.com/dims4/default/c75030f/2147483647/strip/true/crop/1200x900+0+0/resize/1760x1320!/format/webp/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F13%2Flistener-questions-b117cef1e32dd8e847d5c37bd5ae4ee9e89ae2a3.jpg 2x\"data-size=\"fallbackImageSize\"",
+          "height=\"660\" srcset=\"https://npr.brightspotcdn.com/dims4/default/aad40cd/2147483647/strip/true/crop/1200x900+0+0/resize/880x660!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F13%2Flistener-questions-b117cef1e32dd8e847d5c37bd5ae4ee9e89ae2a3.jpg\"data-size=\"fallbackImageSize\"",
+          "<img class=\"Image\" alt=\"\" srcset=\"https://npr.brightspotcdn.com/dims4/default/cdfbd06/2147483647/strip/true/crop/1200x900+0+0/resize/1760x1320!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F13%2Flistener-questions-b117cef1e32dd8e847d5c37bd5ae4ee9e89ae2a3.jpg 2x\" width=\"880\" height=\"660\" loading=\"lazy\" src=\"https://npr.brightspotcdn.com/dims4/default/aad40cd/2147483647/strip/true/crop/1200x900+0+0/resize/880x660!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F13%2Flistener-questions-b117cef1e32dd8e847d5c37bd5ae4ee9e89ae2a3.jpg\">",
+          "<img alt=\"\" src=\"https://npr.brightspotcdn.com/dims4/default/9d6db92/2147483647/strip/true/crop/422x563+0+0/resize/150x200!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F07%2Fheadshot_vert-03ff7356b3bcf151311675c71bfa0febab6de08b.jpg\" srcset=\"https://npr.brightspotcdn.com/dims4/default/8cfc309/2147483647/strip/true/crop/422x563+0+0/resize/300x400!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F07%2Fheadshot_vert-03ff7356b3bcf151311675c71bfa0febab6de08b.jpg 2x\" width=\"150\" height=\"200\">",
+          "<img alt=\"\" src=\"https://npr.brightspotcdn.com/dims4/default/3654140/2147483647/strip/true/crop/589x785+0+0/resize/150x200!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F04%2Fcs-3_vert-ea3f1de7137f4f2a21ed1f986bb8539f521d36ef.jpg\" srcset=\"https://npr.brightspotcdn.com/dims4/default/fc3470b/2147483647/strip/true/crop/589x785+0+0/resize/300x400!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F04%2Fcs-3_vert-ea3f1de7137f4f2a21ed1f986bb8539f521d36ef.jpg 2x\" width=\"150\" height=\"200\">"
+        ]
+      }
+    },
+    {
+      "reference_date": "2018-03-14",
+      "reference_title": "What Trade Organization?",
+      "source_url": "https://news.wypr.org/2018-03-14/what-trade-organization",
+      "source_domain": "news.wypr.org",
+      "status": "inspected",
+      "findings": {
+        "mp3_urls": [
+          "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
+        ],
+        "audio_urls": [
+          "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
+        ],
+        "iframe_urls": [
+          "https://www.googletagmanager.com/ns.html?id=GTM-N39QFDR"
+        ],
+        "npr_urls": [
+          "https://www.npr.org/sections/money/2018/03/14/593606142/what-trade-organization?ft=nprml&f=593606142"
+        ],
+        "jsonld_audio_objects": [],
+        "possible_ids": [],
+        "interesting_lines": [
+          "<meta name=\"twitter:image\" content=\"https://npr.brightspotcdn.com/dims4/default/5ec9f4a/2147483647/strip/true/crop/1200x675+0+113/resize/1200x675!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F14%2F164-indicator-c9ed304393010cd95e149439c0b7d5fc0641846b.jpg\"/>",
+          "<meta property=\"og:image\" content=\"https://npr.brightspotcdn.com/dims4/default/24eba0d/2147483647/strip/true/crop/1200x630+0+135/resize/1200x630!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F14%2F164-indicator-c9ed304393010cd95e149439c0b7d5fc0641846b.jpg\">",
+          "<meta property=\"og:image:url\" content=\"https://npr.brightspotcdn.com/dims4/default/24eba0d/2147483647/strip/true/crop/1200x630+0+135/resize/1200x630!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F14%2F164-indicator-c9ed304393010cd95e149439c0b7d5fc0641846b.jpg\">",
+          "\"bspStoryId\" : \"00000176-776b-dc2f-ad76-7f6b428e0000\",",
+          "\"nprStoryId\" : \"593606142\",",
+          "\"gtmBspStoryId\" : \"00000176-776b-dc2f-ad76-7f6b428e0000\",",
+          "\"gtmNprStoryId\" : \"593606142\",",
+          "<!-- no longer used, moved disqus script to be loaded by ps-disqus-comment-module.js to avoid errors --><script type=\"application/ld+json\">{\"@context\":\"http://schema.org\",\"@type\":\"ListenAction\",\"description\":\"The justification used by the Trump administration for its steel and aluminum tariffs is riskier for the global trading system than the tariffs themselves.\",\"name\":\"What Trade Organization?\"}</script><script type=\"application/ld+json\">{\"@context\":\"http://schema.org\",\"@type\":\"NewsArticle\",\"author\":[{\"@context\":\"http://schema.org\",\"@type\":\"Person\",\"name\":\"Stacey Vanek Smith\",\"url\":\"https://news.wypr.org/people/stacey-vanek-smith\"},{\"@context\":\"http://schema.org\",\"@type\":\"Person\",\"name\":\"Cardiff Garcia\",\"url\":\"https://news.wypr.org/people/cardiff-garcia\"}],\"dateModified\":\"2020-12-21T13:45:22Z\",\"datePublished\":\"2018-03-14T16:00:00Z\",\"headline\":\"What Trade Organization?\",\"image\":{\"@context\":\"http://schema.org\",\"@type\":\"ImageObject\",\"url\":\"https://media.npr.org/assets/img/2018/03/14/164-indicator-c9ed304393010cd95e149439c0b7d5fc0641846b.jpg\"},\"mainEntityOfPage\":{\"@type\":\"NewsArticle\",\"@id\":\"https://news.wypr.org/2018-03-14/what-trade-organization\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"WYPR Archive\",\"logo\":{\"@context\":\"http://schema.org\",\"@type\":\"ImageObject\",\"height\":\"60\",\"url\":\"https://npr.brightspotcdn.com/dims4/default/cc74955/2147483647/resize/x60/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fd1%2F9f%2F22bee6dc4f9aaaae47c7be531de0%2Fwyprhireslarge.j",
+          "data-stream-url=\"https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3\">",
+          "height=\"315\" srcset=\"https://npr.brightspotcdn.com/dims4/default/8aefeea/2147483647/strip/true/crop/1200x900+0+0/resize/840x630!/format/webp/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F14%2F164-indicator-c9ed304393010cd95e149439c0b7d5fc0641846b.jpg 2x\"data-size=\"fallbackImageSizeMobile\"",
+          "height=\"315\" srcset=\"https://npr.brightspotcdn.com/dims4/default/97b18be/2147483647/strip/true/crop/1200x900+0+0/resize/420x315!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F14%2F164-indicator-c9ed304393010cd95e149439c0b7d5fc0641846b.jpg\"data-size=\"fallbackImageSizeMobile\"",
+          "height=\"660\" srcset=\"https://npr.brightspotcdn.com/dims4/default/5dceebd/2147483647/strip/true/crop/1200x900+0+0/resize/1760x1320!/format/webp/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F14%2F164-indicator-c9ed304393010cd95e149439c0b7d5fc0641846b.jpg 2x\"data-size=\"fallbackImageSize\"",
+          "height=\"660\" srcset=\"https://npr.brightspotcdn.com/dims4/default/af135df/2147483647/strip/true/crop/1200x900+0+0/resize/880x660!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F14%2F164-indicator-c9ed304393010cd95e149439c0b7d5fc0641846b.jpg\"data-size=\"fallbackImageSize\"",
+          "<img class=\"Image\" alt=\"\" srcset=\"https://npr.brightspotcdn.com/dims4/default/e4a99f9/2147483647/strip/true/crop/1200x900+0+0/resize/1760x1320!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F14%2F164-indicator-c9ed304393010cd95e149439c0b7d5fc0641846b.jpg 2x\" width=\"880\" height=\"660\" loading=\"lazy\" src=\"https://npr.brightspotcdn.com/dims4/default/af135df/2147483647/strip/true/crop/1200x900+0+0/resize/880x660!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F14%2F164-indicator-c9ed304393010cd95e149439c0b7d5fc0641846b.jpg\">",
+          "<img alt=\"\" src=\"https://npr.brightspotcdn.com/dims4/default/9d6db92/2147483647/strip/true/crop/422x563+0+0/resize/150x200!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F07%2Fheadshot_vert-03ff7356b3bcf151311675c71bfa0febab6de08b.jpg\" srcset=\"https://npr.brightspotcdn.com/dims4/default/8cfc309/2147483647/strip/true/crop/422x563+0+0/resize/300x400!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F07%2Fheadshot_vert-03ff7356b3bcf151311675c71bfa0febab6de08b.jpg 2x\" width=\"150\" height=\"200\">",
+          "<img alt=\"\" src=\"https://npr.brightspotcdn.com/dims4/default/3654140/2147483647/strip/true/crop/589x785+0+0/resize/150x200!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F04%2Fcs-3_vert-ea3f1de7137f4f2a21ed1f986bb8539f521d36ef.jpg\" srcset=\"https://npr.brightspotcdn.com/dims4/default/fc3470b/2147483647/strip/true/crop/589x785+0+0/resize/300x400!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F04%2Fcs-3_vert-ea3f1de7137f4f2a21ed1f986bb8539f521d36ef.jpg 2x\" width=\"150\" height=\"200\">"
+        ]
+      }
+    },
+    {
+      "reference_date": "2018-03-15",
+      "reference_title": "Calculated Risk, Calculated Caution",
+      "source_url": "https://news.wypr.org/2018-03-15/calculated-risk-calculated-caution",
+      "source_domain": "news.wypr.org",
+      "status": "inspected",
+      "findings": {
+        "mp3_urls": [
+          "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
+        ],
+        "audio_urls": [
+          "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
+        ],
+        "iframe_urls": [
+          "https://www.googletagmanager.com/ns.html?id=GTM-N39QFDR"
+        ],
+        "npr_urls": [
+          "https://www.npr.org/sections/money/2018/03/15/594058000/calculated-risk-calculated-caution?ft=nprml&f=594058000"
+        ],
+        "jsonld_audio_objects": [],
+        "possible_ids": [],
+        "interesting_lines": [
+          "<meta property=\"og:image\" content=\"https://npr.brightspotcdn.com/dims4/default/b9b6337/2147483647/strip/true/crop/1200x630+0+135/resize/1200x630!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F15%2Fcalculated-risk-abbfc044416aaca8d96e6de7cf8357e6d5feb0f4.jpg\">",
+          "<meta property=\"og:image:url\" content=\"https://npr.brightspotcdn.com/dims4/default/b9b6337/2147483647/strip/true/crop/1200x630+0+135/resize/1200x630!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F15%2Fcalculated-risk-abbfc044416aaca8d96e6de7cf8357e6d5feb0f4.jpg\">",
+          "<meta name=\"twitter:image\" content=\"https://npr.brightspotcdn.com/dims4/default/729143a/2147483647/strip/true/crop/1200x675+0+113/resize/1200x675!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F15%2Fcalculated-risk-abbfc044416aaca8d96e6de7cf8357e6d5feb0f4.jpg\"/>",
+          "\"bspStoryId\" : \"00000176-776b-dc2f-ad76-7f6b42b30001\",",
+          "\"nprStoryId\" : \"594058000\",",
+          "<script type=\"application/ld+json\">{\"@context\":\"http://schema.org\",\"@type\":\"NewsArticle\",\"author\":[{\"@context\":\"http://schema.org\",\"@type\":\"Person\",\"name\":\"Cardiff Garcia\",\"url\":\"https://news.wypr.org/people/cardiff-garcia\"}],\"dateModified\":\"2020-12-21T13:45:26Z\",\"datePublished\":\"2018-03-15T15:57:00Z\",\"headline\":\"Calculated Risk, Calculated Caution\",\"image\":{\"@context\":\"http://schema.org\",\"@type\":\"ImageObject\",\"url\":\"https://media.npr.org/assets/img/2018/03/15/calculated-risk-abbfc044416aaca8d96e6de7cf8357e6d5feb0f4.jpg\"},\"mainEntityOfPage\":{\"@type\":\"NewsArticle\",\"@id\":\"https://news.wypr.org/2018-03-15/calculated-risk-calculated-caution\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"WYPR Archive\",\"logo\":{\"@context\":\"http://schema.org\",\"@type\":\"ImageObject\",\"height\":\"60\",\"url\":\"https://npr.brightspotcdn.com/dims4/default/cc74955/2147483647/resize/x60/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fd1%2F9f%2F22bee6dc4f9aaaae47c7be531de0%2Fwyprhireslarge.jpg\",\"width\":\"174\"}}}</script><script>",
+          "\"gtmBspStoryId\" : \"00000176-776b-dc2f-ad76-7f6b42b30001\",",
+          "\"gtmNprStoryId\" : \"594058000\",",
+          "data-stream-url=\"https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3\">",
+          "height=\"315\" srcset=\"https://npr.brightspotcdn.com/dims4/default/8a4eaab/2147483647/strip/true/crop/1200x900+0+0/resize/840x630!/format/webp/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F15%2Fcalculated-risk-abbfc044416aaca8d96e6de7cf8357e6d5feb0f4.jpg 2x\"data-size=\"fallbackImageSizeMobile\"",
+          "height=\"315\" srcset=\"https://npr.brightspotcdn.com/dims4/default/42dc772/2147483647/strip/true/crop/1200x900+0+0/resize/420x315!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F15%2Fcalculated-risk-abbfc044416aaca8d96e6de7cf8357e6d5feb0f4.jpg\"data-size=\"fallbackImageSizeMobile\"",
+          "height=\"660\" srcset=\"https://npr.brightspotcdn.com/dims4/default/3d2cbac/2147483647/strip/true/crop/1200x900+0+0/resize/1760x1320!/format/webp/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F15%2Fcalculated-risk-abbfc044416aaca8d96e6de7cf8357e6d5feb0f4.jpg 2x\"data-size=\"fallbackImageSize\"",
+          "height=\"660\" srcset=\"https://npr.brightspotcdn.com/dims4/default/18ecda7/2147483647/strip/true/crop/1200x900+0+0/resize/880x660!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F15%2Fcalculated-risk-abbfc044416aaca8d96e6de7cf8357e6d5feb0f4.jpg\"data-size=\"fallbackImageSize\"",
+          "<img class=\"Image\" alt=\"\" srcset=\"https://npr.brightspotcdn.com/dims4/default/b76a9fc/2147483647/strip/true/crop/1200x900+0+0/resize/1760x1320!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F15%2Fcalculated-risk-abbfc044416aaca8d96e6de7cf8357e6d5feb0f4.jpg 2x\" width=\"880\" height=\"660\" loading=\"lazy\" src=\"https://npr.brightspotcdn.com/dims4/default/18ecda7/2147483647/strip/true/crop/1200x900+0+0/resize/880x660!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F15%2Fcalculated-risk-abbfc044416aaca8d96e6de7cf8357e6d5feb0f4.jpg\">",
+          "<img alt=\"\" src=\"https://npr.brightspotcdn.com/dims4/default/3654140/2147483647/strip/true/crop/589x785+0+0/resize/150x200!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F04%2Fcs-3_vert-ea3f1de7137f4f2a21ed1f986bb8539f521d36ef.jpg\" srcset=\"https://npr.brightspotcdn.com/dims4/default/fc3470b/2147483647/strip/true/crop/589x785+0+0/resize/300x400!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F04%2Fcs-3_vert-ea3f1de7137f4f2a21ed1f986bb8539f521d36ef.jpg 2x\" width=\"150\" height=\"200\">"
+        ]
+      }
+    },
+    {
+      "reference_date": "2018-03-16",
+      "reference_title": "The Bear Necessities",
+      "source_url": "https://news.wypr.org/2018-03-16/the-bear-necessities",
+      "source_domain": "news.wypr.org",
+      "status": "inspected",
+      "findings": {
+        "mp3_urls": [
+          "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
+        ],
+        "audio_urls": [
+          "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
+        ],
+        "iframe_urls": [
+          "https://www.googletagmanager.com/ns.html?id=GTM-N39QFDR"
+        ],
+        "npr_urls": [
+          "https://www.npr.org/sections/money/2018/03/16/594366500/the-bear-necessities?ft=nprml&f=594366500"
+        ],
+        "jsonld_audio_objects": [],
+        "possible_ids": [],
+        "interesting_lines": [
+          "<meta property=\"og:image\" content=\"https://npr.brightspotcdn.com/dims4/default/0b38584/2147483647/strip/true/crop/1200x630+0+135/resize/1200x630!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F16%2F2-indicator-7e86c9845fe26360d309e43cdb25b2db81978e96.jpg\">",
+          "<meta property=\"og:image:url\" content=\"https://npr.brightspotcdn.com/dims4/default/0b38584/2147483647/strip/true/crop/1200x630+0+135/resize/1200x630!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F16%2F2-indicator-7e86c9845fe26360d309e43cdb25b2db81978e96.jpg\">",
+          "<meta name=\"twitter:image\" content=\"https://npr.brightspotcdn.com/dims4/default/cc94719/2147483647/strip/true/crop/1200x675+0+113/resize/1200x675!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F16%2F2-indicator-7e86c9845fe26360d309e43cdb25b2db81978e96.jpg\"/>",
+          "\"bspStoryId\" : \"00000176-776b-dc2f-ad76-7f6b42cb0000\",",
+          "\"nprStoryId\" : \"594366500\",",
+          "\"gtmBspStoryId\" : \"00000176-776b-dc2f-ad76-7f6b42cb0000\",",
+          "\"gtmNprStoryId\" : \"594366500\",",
+          "})(window,document,'script','dataLayer','GTM-N39QFDR');</script><script type=\"application/ld+json\">{\"@context\":\"http://schema.org\",\"@type\":\"NewsArticle\",\"author\":[{\"@context\":\"http://schema.org\",\"@type\":\"Person\",\"name\":\"Stacey Vanek Smith\",\"url\":\"https://news.wypr.org/people/stacey-vanek-smith\"}],\"dateModified\":\"2020-12-21T13:45:30Z\",\"datePublished\":\"2018-03-16T16:03:11Z\",\"headline\":\"The Bear Necessities\",\"image\":{\"@context\":\"http://schema.org\",\"@type\":\"ImageObject\",\"url\":\"https://media.npr.org/assets/img/2018/03/16/2-indicator-7e86c9845fe26360d309e43cdb25b2db81978e96.jpg\"},\"mainEntityOfPage\":{\"@type\":\"NewsArticle\",\"@id\":\"https://news.wypr.org/2018-03-16/the-bear-necessities\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"WYPR Archive\",\"logo\":{\"@context\":\"http://schema.org\",\"@type\":\"ImageObject\",\"height\":\"60\",\"url\":\"https://npr.brightspotcdn.com/dims4/default/cc74955/2147483647/resize/x60/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fd1%2F9f%2F22bee6dc4f9aaaae47c7be531de0%2Fwyprhireslarge.jpg\",\"width\":\"174\"}}}</script><script>window.addEventListener('DOMContentLoaded', (event) => {",
+          "data-stream-url=\"https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3\">",
+          "height=\"315\" srcset=\"https://npr.brightspotcdn.com/dims4/default/8192939/2147483647/strip/true/crop/1200x900+0+0/resize/840x630!/format/webp/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F16%2F2-indicator-7e86c9845fe26360d309e43cdb25b2db81978e96.jpg 2x\"data-size=\"fallbackImageSizeMobile\"",
+          "height=\"315\" srcset=\"https://npr.brightspotcdn.com/dims4/default/7a67b52/2147483647/strip/true/crop/1200x900+0+0/resize/420x315!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F16%2F2-indicator-7e86c9845fe26360d309e43cdb25b2db81978e96.jpg\"data-size=\"fallbackImageSizeMobile\"",
+          "height=\"660\" srcset=\"https://npr.brightspotcdn.com/dims4/default/eca3c93/2147483647/strip/true/crop/1200x900+0+0/resize/1760x1320!/format/webp/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F16%2F2-indicator-7e86c9845fe26360d309e43cdb25b2db81978e96.jpg 2x\"data-size=\"fallbackImageSize\"",
+          "height=\"660\" srcset=\"https://npr.brightspotcdn.com/dims4/default/3c78225/2147483647/strip/true/crop/1200x900+0+0/resize/880x660!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F16%2F2-indicator-7e86c9845fe26360d309e43cdb25b2db81978e96.jpg\"data-size=\"fallbackImageSize\"",
+          "<img class=\"Image\" alt=\"\" srcset=\"https://npr.brightspotcdn.com/dims4/default/86204ad/2147483647/strip/true/crop/1200x900+0+0/resize/1760x1320!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F16%2F2-indicator-7e86c9845fe26360d309e43cdb25b2db81978e96.jpg 2x\" width=\"880\" height=\"660\" loading=\"lazy\" src=\"https://npr.brightspotcdn.com/dims4/default/3c78225/2147483647/strip/true/crop/1200x900+0+0/resize/880x660!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F16%2F2-indicator-7e86c9845fe26360d309e43cdb25b2db81978e96.jpg\">",
+          "<img alt=\"\" src=\"https://npr.brightspotcdn.com/dims4/default/9d6db92/2147483647/strip/true/crop/422x563+0+0/resize/150x200!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F07%2Fheadshot_vert-03ff7356b3bcf151311675c71bfa0febab6de08b.jpg\" srcset=\"https://npr.brightspotcdn.com/dims4/default/8cfc309/2147483647/strip/true/crop/422x563+0+0/resize/300x400!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F07%2Fheadshot_vert-03ff7356b3bcf151311675c71bfa0febab6de08b.jpg 2x\" width=\"150\" height=\"200\">"
+        ]
+      }
+    },
+    {
+      "reference_date": "2018-03-19",
+      "reference_title": "The Reinvention Of The IPO",
+      "source_url": "https://news.wypr.org/2018-03-19/the-reinvention-of-the-ipo",
+      "source_domain": "news.wypr.org",
+      "status": "inspected",
+      "findings": {
+        "mp3_urls": [
+          "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
+        ],
+        "audio_urls": [
+          "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
+        ],
+        "iframe_urls": [
+          "https://www.googletagmanager.com/ns.html?id=GTM-N39QFDR"
+        ],
+        "npr_urls": [
+          "https://www.npr.org/sections/money/2018/03/19/595012527/the-reinvention-of-the-ipo?ft=nprml&f=595012527"
+        ],
+        "jsonld_audio_objects": [],
+        "possible_ids": [],
+        "interesting_lines": [
+          "<meta property=\"og:image\" content=\"https://npr.brightspotcdn.com/dims4/default/0fdb38d/2147483647/strip/true/crop/1200x630+0+135/resize/1200x630!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F19%2Fdpo-indicator-3c5b3550fae3076412a14fb5754cd7bc35ce4244.jpg\">",
+          "<meta property=\"og:image:url\" content=\"https://npr.brightspotcdn.com/dims4/default/0fdb38d/2147483647/strip/true/crop/1200x630+0+135/resize/1200x630!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F19%2Fdpo-indicator-3c5b3550fae3076412a14fb5754cd7bc35ce4244.jpg\">",
+          "<meta name=\"twitter:image\" content=\"https://npr.brightspotcdn.com/dims4/default/9a58662/2147483647/strip/true/crop/1200x675+0+113/resize/1200x675!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F19%2Fdpo-indicator-3c5b3550fae3076412a14fb5754cd7bc35ce4244.jpg\"/>",
+          "\"bspStoryId\" : \"00000176-776b-dc2f-ad76-7f6b4b310001\",",
+          "\"nprStoryId\" : \"595012527\",",
+          "\"gtmBspStoryId\" : \"00000176-776b-dc2f-ad76-7f6b4b310001\",",
+          "\"gtmNprStoryId\" : \"595012527\",",
+          "})(window,document,'script','dataLayer','GTM-N39QFDR');</script><script type=\"application/ld+json\">{\"@context\":\"http://schema.org\",\"@type\":\"NewsArticle\",\"author\":[{\"@context\":\"http://schema.org\",\"@type\":\"Person\",\"name\":\"Stacey Vanek Smith\",\"url\":\"https://news.wypr.org/people/stacey-vanek-smith\"},{\"@context\":\"http://schema.org\",\"@type\":\"Person\",\"name\":\"Cardiff Garcia\",\"url\":\"https://news.wypr.org/people/cardiff-garcia\"}],\"dateModified\":\"2020-12-21T13:45:35Z\",\"datePublished\":\"2018-03-19T16:23:00Z\",\"headline\":\"The Reinvention Of The IPO\",\"image\":{\"@context\":\"http://schema.org\",\"@type\":\"ImageObject\",\"url\":\"https://media.npr.org/assets/img/2018/03/19/dpo-indicator-3c5b3550fae3076412a14fb5754cd7bc35ce4244.jpg\"},\"mainEntityOfPage\":{\"@type\":\"NewsArticle\",\"@id\":\"https://news.wypr.org/2018-03-19/the-reinvention-of-the-ipo\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"WYPR Archive\",\"logo\":{\"@context\":\"http://schema.org\",\"@type\":\"ImageObject\",\"height\":\"60\",\"url\":\"https://npr.brightspotcdn.com/dims4/default/cc74955/2147483647/resize/x60/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fd1%2F9f%2F22bee6dc4f9aaaae47c7be531de0%2Fwyprhireslarge.jpg\",\"width\":\"174\"}}}</script><script>",
+          "data-stream-url=\"https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3\">",
+          "height=\"315\" srcset=\"https://npr.brightspotcdn.com/dims4/default/9e92245/2147483647/strip/true/crop/1200x900+0+0/resize/840x630!/format/webp/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F19%2Fdpo-indicator-3c5b3550fae3076412a14fb5754cd7bc35ce4244.jpg 2x\"data-size=\"fallbackImageSizeMobile\"",
+          "height=\"315\" srcset=\"https://npr.brightspotcdn.com/dims4/default/0776854/2147483647/strip/true/crop/1200x900+0+0/resize/420x315!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F19%2Fdpo-indicator-3c5b3550fae3076412a14fb5754cd7bc35ce4244.jpg\"data-size=\"fallbackImageSizeMobile\"",
+          "height=\"660\" srcset=\"https://npr.brightspotcdn.com/dims4/default/90c6163/2147483647/strip/true/crop/1200x900+0+0/resize/1760x1320!/format/webp/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F19%2Fdpo-indicator-3c5b3550fae3076412a14fb5754cd7bc35ce4244.jpg 2x\"data-size=\"fallbackImageSize\"",
+          "height=\"660\" srcset=\"https://npr.brightspotcdn.com/dims4/default/808c817/2147483647/strip/true/crop/1200x900+0+0/resize/880x660!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F19%2Fdpo-indicator-3c5b3550fae3076412a14fb5754cd7bc35ce4244.jpg\"data-size=\"fallbackImageSize\"",
+          "<img class=\"Image\" alt=\"\" srcset=\"https://npr.brightspotcdn.com/dims4/default/5cc08e3/2147483647/strip/true/crop/1200x900+0+0/resize/1760x1320!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F19%2Fdpo-indicator-3c5b3550fae3076412a14fb5754cd7bc35ce4244.jpg 2x\" width=\"880\" height=\"660\" loading=\"lazy\" src=\"https://npr.brightspotcdn.com/dims4/default/808c817/2147483647/strip/true/crop/1200x900+0+0/resize/880x660!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F19%2Fdpo-indicator-3c5b3550fae3076412a14fb5754cd7bc35ce4244.jpg\">",
+          "<img alt=\"\" src=\"https://npr.brightspotcdn.com/dims4/default/9d6db92/2147483647/strip/true/crop/422x563+0+0/resize/150x200!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F07%2Fheadshot_vert-03ff7356b3bcf151311675c71bfa0febab6de08b.jpg\" srcset=\"https://npr.brightspotcdn.com/dims4/default/8cfc309/2147483647/strip/true/crop/422x563+0+0/resize/300x400!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F07%2Fheadshot_vert-03ff7356b3bcf151311675c71bfa0febab6de08b.jpg 2x\" width=\"150\" height=\"200\">",
+          "<img alt=\"\" src=\"https://npr.brightspotcdn.com/dims4/default/3654140/2147483647/strip/true/crop/589x785+0+0/resize/150x200!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F04%2Fcs-3_vert-ea3f1de7137f4f2a21ed1f986bb8539f521d36ef.jpg\" srcset=\"https://npr.brightspotcdn.com/dims4/default/fc3470b/2147483647/strip/true/crop/589x785+0+0/resize/300x400!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F04%2Fcs-3_vert-ea3f1de7137f4f2a21ed1f986bb8539f521d36ef.jpg 2x\" width=\"150\" height=\"200\">"
+        ]
+      }
+    },
+    {
+      "reference_date": "2018-03-20",
+      "reference_title": "A Brief History of Tariffs",
+      "source_url": "https://news.wypr.org/2018-03-20/a-brief-history-of-tariffs",
+      "source_domain": "news.wypr.org",
+      "status": "inspected",
+      "findings": {
+        "mp3_urls": [
+          "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
+        ],
+        "audio_urls": [
+          "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
+        ],
+        "iframe_urls": [
+          "https://www.googletagmanager.com/ns.html?id=GTM-N39QFDR"
+        ],
+        "npr_urls": [
+          "https://www.npr.org/sections/money/2018/03/20/595338556/a-brief-history-of-tariffs?ft=nprml&f=595338556"
+        ],
+        "jsonld_audio_objects": [],
+        "possible_ids": [],
+        "interesting_lines": [
+          "<meta name=\"twitter:image\" content=\"https://npr.brightspotcdn.com/dims4/default/3e41b79/2147483647/strip/true/crop/1200x675+0+113/resize/1200x675!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F20%2Foriginal-tariffs-indicator-3e69640ddb9179db38221479a52429cbda1df970.jpg\"/>",
+          "<meta property=\"og:image\" content=\"https://npr.brightspotcdn.com/dims4/default/a9192b2/2147483647/strip/true/crop/1200x630+0+135/resize/1200x630!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F20%2Foriginal-tariffs-indicator-3e69640ddb9179db38221479a52429cbda1df970.jpg\">",
+          "<meta property=\"og:image:url\" content=\"https://npr.brightspotcdn.com/dims4/default/a9192b2/2147483647/strip/true/crop/1200x630+0+135/resize/1200x630!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F20%2Foriginal-tariffs-indicator-3e69640ddb9179db38221479a52429cbda1df970.jpg\">",
+          "\"bspStoryId\" : \"00000176-776b-dc2f-ad76-7f6b4b570000\",",
+          "\"nprStoryId\" : \"595338556\",",
+          "<script type=\"application/ld+json\">{\"@context\":\"http://schema.org\",\"@type\":\"NewsArticle\",\"author\":[{\"@context\":\"http://schema.org\",\"@type\":\"Person\",\"name\":\"Stacey Vanek Smith\",\"url\":\"https://news.wypr.org/people/stacey-vanek-smith\"},{\"@context\":\"http://schema.org\",\"@type\":\"Person\",\"name\":\"Cardiff Garcia\",\"url\":\"https://news.wypr.org/people/cardiff-garcia\"}],\"dateModified\":\"2020-12-21T13:45:39Z\",\"datePublished\":\"2018-03-20T16:16:35Z\",\"headline\":\"A Brief History of Tariffs \",\"image\":{\"@context\":\"http://schema.org\",\"@type\":\"ImageObject\",\"url\":\"https://media.npr.org/assets/img/2018/03/20/original-tariffs-indicator-3e69640ddb9179db38221479a52429cbda1df970.jpg\"},\"mainEntityOfPage\":{\"@type\":\"NewsArticle\",\"@id\":\"https://news.wypr.org/2018-03-20/a-brief-history-of-tariffs\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"WYPR Archive\",\"logo\":{\"@context\":\"http://schema.org\",\"@type\":\"ImageObject\",\"height\":\"60\",\"url\":\"https://npr.brightspotcdn.com/dims4/default/cc74955/2147483647/resize/x60/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fd1%2F9f%2F22bee6dc4f9aaaae47c7be531de0%2Fwyprhireslarge.jpg\",\"width\":\"174\"}}}</script><meta name=\"gtm-dataLayer\" content=\"{",
+          "\"gtmBspStoryId\" : \"00000176-776b-dc2f-ad76-7f6b4b570000\",",
+          "\"gtmNprStoryId\" : \"595338556\",",
+          "data-stream-url=\"https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3\">",
+          "height=\"315\" srcset=\"https://npr.brightspotcdn.com/dims4/default/42756a2/2147483647/strip/true/crop/1200x900+0+0/resize/840x630!/format/webp/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F20%2Foriginal-tariffs-indicator-3e69640ddb9179db38221479a52429cbda1df970.jpg 2x\"data-size=\"fallbackImageSizeMobile\"",
+          "height=\"315\" srcset=\"https://npr.brightspotcdn.com/dims4/default/d9ed0c9/2147483647/strip/true/crop/1200x900+0+0/resize/420x315!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F20%2Foriginal-tariffs-indicator-3e69640ddb9179db38221479a52429cbda1df970.jpg\"data-size=\"fallbackImageSizeMobile\"",
+          "height=\"660\" srcset=\"https://npr.brightspotcdn.com/dims4/default/71ff459/2147483647/strip/true/crop/1200x900+0+0/resize/1760x1320!/format/webp/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F20%2Foriginal-tariffs-indicator-3e69640ddb9179db38221479a52429cbda1df970.jpg 2x\"data-size=\"fallbackImageSize\"",
+          "height=\"660\" srcset=\"https://npr.brightspotcdn.com/dims4/default/9855f3b/2147483647/strip/true/crop/1200x900+0+0/resize/880x660!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F20%2Foriginal-tariffs-indicator-3e69640ddb9179db38221479a52429cbda1df970.jpg\"data-size=\"fallbackImageSize\"",
+          "<img class=\"Image\" alt=\"\" srcset=\"https://npr.brightspotcdn.com/dims4/default/7e12ae8/2147483647/strip/true/crop/1200x900+0+0/resize/1760x1320!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F20%2Foriginal-tariffs-indicator-3e69640ddb9179db38221479a52429cbda1df970.jpg 2x\" width=\"880\" height=\"660\" loading=\"lazy\" src=\"https://npr.brightspotcdn.com/dims4/default/9855f3b/2147483647/strip/true/crop/1200x900+0+0/resize/880x660!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F20%2Foriginal-tariffs-indicator-3e69640ddb9179db38221479a52429cbda1df970.jpg\">",
+          "<img alt=\"\" src=\"https://npr.brightspotcdn.com/dims4/default/9d6db92/2147483647/strip/true/crop/422x563+0+0/resize/150x200!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F07%2Fheadshot_vert-03ff7356b3bcf151311675c71bfa0febab6de08b.jpg\" srcset=\"https://npr.brightspotcdn.com/dims4/default/8cfc309/2147483647/strip/true/crop/422x563+0+0/resize/300x400!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F07%2Fheadshot_vert-03ff7356b3bcf151311675c71bfa0febab6de08b.jpg 2x\" width=\"150\" height=\"200\">",
+          "<img alt=\"\" src=\"https://npr.brightspotcdn.com/dims4/default/3654140/2147483647/strip/true/crop/589x785+0+0/resize/150x200!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F04%2Fcs-3_vert-ea3f1de7137f4f2a21ed1f986bb8539f521d36ef.jpg\" srcset=\"https://npr.brightspotcdn.com/dims4/default/fc3470b/2147483647/strip/true/crop/589x785+0+0/resize/300x400!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F04%2Fcs-3_vert-ea3f1de7137f4f2a21ed1f986bb8539f521d36ef.jpg 2x\" width=\"150\" height=\"200\">"
+        ]
+      }
+    },
+    {
+      "reference_date": "2018-03-21",
+      "reference_title": "Trump vs. Trudeau: Both Right, Both Wrong",
+      "source_url": "https://news.wypr.org/2018-03-21/trump-vs-trudeau-both-right-both-wrong",
+      "source_domain": "news.wypr.org",
+      "status": "inspected",
+      "findings": {
+        "mp3_urls": [
+          "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
+        ],
+        "audio_urls": [
+          "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
+        ],
+        "iframe_urls": [
+          "https://www.googletagmanager.com/ns.html?id=GTM-N39QFDR"
+        ],
+        "npr_urls": [
+          "https://www.npr.org/sections/money/2018/03/21/595769659/trump-vs-trudeau-both-right-both-wrong?ft=nprml&f=595769659"
+        ],
+        "jsonld_audio_objects": [],
+        "possible_ids": [],
+        "interesting_lines": [
+          "<meta name=\"twitter:image\" content=\"https://npr.brightspotcdn.com/dims4/default/6e5b375/2147483647/strip/true/crop/1200x675+0+113/resize/1200x675!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F21%2Fbillions-indicator-eb1adbc8a0e97849a52b5c964d311e9732370aee.jpg\"/>",
+          "<meta property=\"og:image\" content=\"https://npr.brightspotcdn.com/dims4/default/97c8cfc/2147483647/strip/true/crop/1200x630+0+135/resize/1200x630!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F21%2Fbillions-indicator-eb1adbc8a0e97849a52b5c964d311e9732370aee.jpg\">",
+          "<meta property=\"og:image:url\" content=\"https://npr.brightspotcdn.com/dims4/default/97c8cfc/2147483647/strip/true/crop/1200x630+0+135/resize/1200x630!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F21%2Fbillions-indicator-eb1adbc8a0e97849a52b5c964d311e9732370aee.jpg\">",
+          "\"bspStoryId\" : \"00000176-776b-dc2f-ad76-7f6b4b7a0000\",",
+          "\"nprStoryId\" : \"595769659\",",
+          "<script type=\"application/ld+json\">{\"@context\":\"http://schema.org\",\"@type\":\"NewsArticle\",\"author\":[{\"@context\":\"http://schema.org\",\"@type\":\"Person\",\"name\":\"Stacey Vanek Smith\",\"url\":\"https://news.wypr.org/people/stacey-vanek-smith\"},{\"@context\":\"http://schema.org\",\"@type\":\"Person\",\"name\":\"Cardiff Garcia\",\"url\":\"https://news.wypr.org/people/cardiff-garcia\"}],\"dateModified\":\"2020-12-21T13:45:42Z\",\"datePublished\":\"2018-03-21T15:51:00Z\",\"headline\":\"Trump vs. Trudeau: Both Right, Both Wrong\",\"image\":{\"@context\":\"http://schema.org\",\"@type\":\"ImageObject\",\"url\":\"https://media.npr.org/assets/img/2018/03/21/billions-indicator-eb1adbc8a0e97849a52b5c964d311e9732370aee.jpg\"},\"mainEntityOfPage\":{\"@type\":\"NewsArticle\",\"@id\":\"https://news.wypr.org/2018-03-21/trump-vs-trudeau-both-right-both-wrong\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"WYPR Archive\",\"logo\":{\"@context\":\"http://schema.org\",\"@type\":\"ImageObject\",\"height\":\"60\",\"url\":\"https://npr.brightspotcdn.com/dims4/default/cc74955/2147483647/resize/x60/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fd1%2F9f%2F22bee6dc4f9aaaae47c7be531de0%2Fwyprhireslarge.jpg\",\"width\":\"174\"}}}</script><!-- no longer used, moved disqus script to be loaded by ps-disqus-comment-module.js to avoid errors --><script>",
+          "\"gtmBspStoryId\" : \"00000176-776b-dc2f-ad76-7f6b4b7a0000\",",
+          "\"gtmNprStoryId\" : \"595769659\",",
+          "data-stream-url=\"https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3\">",
+          "height=\"315\" srcset=\"https://npr.brightspotcdn.com/dims4/default/456f2a2/2147483647/strip/true/crop/1200x900+0+0/resize/840x630!/format/webp/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F21%2Fbillions-indicator-eb1adbc8a0e97849a52b5c964d311e9732370aee.jpg 2x\"data-size=\"fallbackImageSizeMobile\"",
+          "height=\"315\" srcset=\"https://npr.brightspotcdn.com/dims4/default/d0f4fe7/2147483647/strip/true/crop/1200x900+0+0/resize/420x315!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F21%2Fbillions-indicator-eb1adbc8a0e97849a52b5c964d311e9732370aee.jpg\"data-size=\"fallbackImageSizeMobile\"",
+          "height=\"660\" srcset=\"https://npr.brightspotcdn.com/dims4/default/db29903/2147483647/strip/true/crop/1200x900+0+0/resize/1760x1320!/format/webp/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F21%2Fbillions-indicator-eb1adbc8a0e97849a52b5c964d311e9732370aee.jpg 2x\"data-size=\"fallbackImageSize\"",
+          "height=\"660\" srcset=\"https://npr.brightspotcdn.com/dims4/default/435a40b/2147483647/strip/true/crop/1200x900+0+0/resize/880x660!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F21%2Fbillions-indicator-eb1adbc8a0e97849a52b5c964d311e9732370aee.jpg\"data-size=\"fallbackImageSize\"",
+          "<img class=\"Image\" alt=\"\" srcset=\"https://npr.brightspotcdn.com/dims4/default/90f3cd7/2147483647/strip/true/crop/1200x900+0+0/resize/1760x1320!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F21%2Fbillions-indicator-eb1adbc8a0e97849a52b5c964d311e9732370aee.jpg 2x\" width=\"880\" height=\"660\" loading=\"lazy\" src=\"https://npr.brightspotcdn.com/dims4/default/435a40b/2147483647/strip/true/crop/1200x900+0+0/resize/880x660!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F21%2Fbillions-indicator-eb1adbc8a0e97849a52b5c964d311e9732370aee.jpg\">",
+          "<img alt=\"\" src=\"https://npr.brightspotcdn.com/dims4/default/9d6db92/2147483647/strip/true/crop/422x563+0+0/resize/150x200!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F07%2Fheadshot_vert-03ff7356b3bcf151311675c71bfa0febab6de08b.jpg\" srcset=\"https://npr.brightspotcdn.com/dims4/default/8cfc309/2147483647/strip/true/crop/422x563+0+0/resize/300x400!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F07%2Fheadshot_vert-03ff7356b3bcf151311675c71bfa0febab6de08b.jpg 2x\" width=\"150\" height=\"200\">",
+          "<img alt=\"\" src=\"https://npr.brightspotcdn.com/dims4/default/3654140/2147483647/strip/true/crop/589x785+0+0/resize/150x200!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F04%2Fcs-3_vert-ea3f1de7137f4f2a21ed1f986bb8539f521d36ef.jpg\" srcset=\"https://npr.brightspotcdn.com/dims4/default/fc3470b/2147483647/strip/true/crop/589x785+0+0/resize/300x400!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F04%2Fcs-3_vert-ea3f1de7137f4f2a21ed1f986bb8539f521d36ef.jpg 2x\" width=\"150\" height=\"200\">"
+        ]
+      }
+    },
+    {
+      "reference_date": "2018-03-22",
+      "reference_title": "Too Small To Fail",
+      "source_url": "https://news.wypr.org/2018-03-22/too-small-to-fail",
+      "source_domain": "news.wypr.org",
+      "status": "inspected",
+      "findings": {
+        "mp3_urls": [
+          "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
+        ],
+        "audio_urls": [
+          "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
+        ],
+        "iframe_urls": [
+          "https://www.googletagmanager.com/ns.html?id=GTM-N39QFDR"
+        ],
+        "npr_urls": [
+          "https://www.npr.org/sections/money/2018/03/22/596162292/too-small-to-fail?ft=nprml&f=596162292"
+        ],
+        "jsonld_audio_objects": [],
+        "possible_ids": [],
+        "interesting_lines": [
+          "<meta property=\"og:image\" content=\"https://npr.brightspotcdn.com/dims4/default/c239c6c/2147483647/strip/true/crop/1200x630+0+135/resize/1200x630!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F22%2F2321-indicator-622fd633b38ec968f02c0ce3dce7112140e1777b.jpg\">",
+          "<meta property=\"og:image:url\" content=\"https://npr.brightspotcdn.com/dims4/default/c239c6c/2147483647/strip/true/crop/1200x630+0+135/resize/1200x630!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F22%2F2321-indicator-622fd633b38ec968f02c0ce3dce7112140e1777b.jpg\">",
+          "<meta name=\"twitter:image\" content=\"https://npr.brightspotcdn.com/dims4/default/b28bee3/2147483647/strip/true/crop/1200x675+0+113/resize/1200x675!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F22%2F2321-indicator-622fd633b38ec968f02c0ce3dce7112140e1777b.jpg\"/>",
+          "\"bspStoryId\" : \"00000176-776b-dc2f-ad76-7f6b4b9f0000\",",
+          "\"nprStoryId\" : \"596162292\",",
+          "\"gtmBspStoryId\" : \"00000176-776b-dc2f-ad76-7f6b4b9f0000\",",
+          "\"gtmNprStoryId\" : \"596162292\",",
+          "})(window,document,'script','dataLayer','GTM-N39QFDR');</script><script type=\"application/ld+json\">{\"@context\":\"http://schema.org\",\"@type\":\"NewsArticle\",\"author\":[{\"@context\":\"http://schema.org\",\"@type\":\"Person\",\"name\":\"Stacey Vanek Smith\",\"url\":\"https://news.wypr.org/people/stacey-vanek-smith\"},{\"@context\":\"http://schema.org\",\"@type\":\"Person\",\"name\":\"Paddy Hirsch\"}],\"dateModified\":\"2020-12-21T13:45:46Z\",\"datePublished\":\"2018-03-22T16:12:54Z\",\"headline\":\"Too Small To Fail\",\"image\":{\"@context\":\"http://schema.org\",\"@type\":\"ImageObject\",\"url\":\"https://media.npr.org/assets/img/2018/03/22/2321-indicator-622fd633b38ec968f02c0ce3dce7112140e1777b.jpg\"},\"mainEntityOfPage\":{\"@type\":\"NewsArticle\",\"@id\":\"https://news.wypr.org/2018-03-22/too-small-to-fail\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"WYPR Archive\",\"logo\":{\"@context\":\"http://schema.org\",\"@type\":\"ImageObject\",\"height\":\"60\",\"url\":\"https://npr.brightspotcdn.com/dims4/default/cc74955/2147483647/resize/x60/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fd1%2F9f%2F22bee6dc4f9aaaae47c7be531de0%2Fwyprhireslarge.jpg\",\"width\":\"174\"}}}</script><script>window.addEventListener('DOMContentLoaded', (event) => {",
+          "data-stream-url=\"https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3\">",
+          "height=\"315\" srcset=\"https://npr.brightspotcdn.com/dims4/default/478147a/2147483647/strip/true/crop/1200x900+0+0/resize/840x630!/format/webp/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F22%2F2321-indicator-622fd633b38ec968f02c0ce3dce7112140e1777b.jpg 2x\"data-size=\"fallbackImageSizeMobile\"",
+          "height=\"315\" srcset=\"https://npr.brightspotcdn.com/dims4/default/e00f5eb/2147483647/strip/true/crop/1200x900+0+0/resize/420x315!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F22%2F2321-indicator-622fd633b38ec968f02c0ce3dce7112140e1777b.jpg\"data-size=\"fallbackImageSizeMobile\"",
+          "height=\"660\" srcset=\"https://npr.brightspotcdn.com/dims4/default/b83ad52/2147483647/strip/true/crop/1200x900+0+0/resize/1760x1320!/format/webp/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F22%2F2321-indicator-622fd633b38ec968f02c0ce3dce7112140e1777b.jpg 2x\"data-size=\"fallbackImageSize\"",
+          "height=\"660\" srcset=\"https://npr.brightspotcdn.com/dims4/default/7893401/2147483647/strip/true/crop/1200x900+0+0/resize/880x660!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F22%2F2321-indicator-622fd633b38ec968f02c0ce3dce7112140e1777b.jpg\"data-size=\"fallbackImageSize\"",
+          "<img class=\"Image\" alt=\"\" srcset=\"https://npr.brightspotcdn.com/dims4/default/71d15b3/2147483647/strip/true/crop/1200x900+0+0/resize/1760x1320!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F22%2F2321-indicator-622fd633b38ec968f02c0ce3dce7112140e1777b.jpg 2x\" width=\"880\" height=\"660\" loading=\"lazy\" src=\"https://npr.brightspotcdn.com/dims4/default/7893401/2147483647/strip/true/crop/1200x900+0+0/resize/880x660!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F22%2F2321-indicator-622fd633b38ec968f02c0ce3dce7112140e1777b.jpg\">",
+          "<img alt=\"\" src=\"https://npr.brightspotcdn.com/dims4/default/9d6db92/2147483647/strip/true/crop/422x563+0+0/resize/150x200!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F07%2Fheadshot_vert-03ff7356b3bcf151311675c71bfa0febab6de08b.jpg\" srcset=\"https://npr.brightspotcdn.com/dims4/default/8cfc309/2147483647/strip/true/crop/422x563+0+0/resize/300x400!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F07%2Fheadshot_vert-03ff7356b3bcf151311675c71bfa0febab6de08b.jpg 2x\" width=\"150\" height=\"200\">"
+        ]
+      }
+    },
+    {
+      "reference_date": "2018-03-23",
+      "reference_title": "The Oil Rig Count",
+      "source_url": "https://news.wypr.org/2018-03-23/the-oil-rig-count",
+      "source_domain": "news.wypr.org",
+      "status": "inspected",
+      "findings": {
+        "mp3_urls": [
+          "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
+        ],
+        "audio_urls": [
+          "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
+        ],
+        "iframe_urls": [
+          "https://www.googletagmanager.com/ns.html?id=GTM-N39QFDR"
+        ],
+        "npr_urls": [
+          "https://www.npr.org/sections/money/2018/03/23/596526299/the-oil-rig-count?ft=nprml&f=596526299"
+        ],
+        "jsonld_audio_objects": [],
+        "possible_ids": [],
+        "interesting_lines": [
+          "<meta property=\"og:image\" content=\"https://npr.brightspotcdn.com/dims4/default/2878fe5/2147483647/strip/true/crop/1200x630+0+135/resize/1200x630!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F23%2Findicator_episode-number_maker-bdec8608ad4d803d0fe8ac1168f009ff35f9de28.jpg\">",
+          "<meta property=\"og:image:url\" content=\"https://npr.brightspotcdn.com/dims4/default/2878fe5/2147483647/strip/true/crop/1200x630+0+135/resize/1200x630!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F23%2Findicator_episode-number_maker-bdec8608ad4d803d0fe8ac1168f009ff35f9de28.jpg\">",
+          "<meta name=\"twitter:image\" content=\"https://npr.brightspotcdn.com/dims4/default/0161c80/2147483647/strip/true/crop/1200x675+0+113/resize/1200x675!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F23%2Findicator_episode-number_maker-bdec8608ad4d803d0fe8ac1168f009ff35f9de28.jpg\"/>",
+          "\"bspStoryId\" : \"00000176-776b-dc2f-ad76-7f6b4bbf0000\",",
+          "\"nprStoryId\" : \"596526299\",",
+          "\"gtmBspStoryId\" : \"00000176-776b-dc2f-ad76-7f6b4bbf0000\",",
+          "\"gtmNprStoryId\" : \"596526299\",",
+          "})(window,document,'script','dataLayer','GTM-N39QFDR');</script><script type=\"application/ld+json\">{\"@context\":\"http://schema.org\",\"@type\":\"NewsArticle\",\"author\":[{\"@context\":\"http://schema.org\",\"@type\":\"Person\",\"name\":\"Stacey Vanek Smith\",\"url\":\"https://news.wypr.org/people/stacey-vanek-smith\"},{\"@context\":\"http://schema.org\",\"@type\":\"Person\",\"name\":\"Cardiff Garcia\",\"url\":\"https://news.wypr.org/people/cardiff-garcia\"}],\"dateModified\":\"2020-12-21T13:45:50Z\",\"datePublished\":\"2018-03-23T16:04:45Z\",\"headline\":\"The Oil Rig Count\",\"image\":{\"@context\":\"http://schema.org\",\"@type\":\"ImageObject\",\"url\":\"https://media.npr.org/assets/img/2018/03/23/indicator_episode-number_maker-bdec8608ad4d803d0fe8ac1168f009ff35f9de28.jpg\"},\"mainEntityOfPage\":{\"@type\":\"NewsArticle\",\"@id\":\"https://news.wypr.org/2018-03-23/the-oil-rig-count\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"WYPR Archive\",\"logo\":{\"@context\":\"http://schema.org\",\"@type\":\"ImageObject\",\"height\":\"60\",\"url\":\"https://npr.brightspotcdn.com/dims4/default/cc74955/2147483647/resize/x60/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fd1%2F9f%2F22bee6dc4f9aaaae47c7be531de0%2Fwyprhireslarge.jpg\",\"width\":\"174\"}}}</script><script>",
+          "data-stream-url=\"https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3\">",
+          "height=\"315\" srcset=\"https://npr.brightspotcdn.com/dims4/default/4cb603c/2147483647/strip/true/crop/1200x900+0+0/resize/840x630!/format/webp/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F23%2Findicator_episode-number_maker-bdec8608ad4d803d0fe8ac1168f009ff35f9de28.jpg 2x\"data-size=\"fallbackImageSizeMobile\"",
+          "height=\"315\" srcset=\"https://npr.brightspotcdn.com/dims4/default/adc8b6a/2147483647/strip/true/crop/1200x900+0+0/resize/420x315!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F23%2Findicator_episode-number_maker-bdec8608ad4d803d0fe8ac1168f009ff35f9de28.jpg\"data-size=\"fallbackImageSizeMobile\"",
+          "height=\"660\" srcset=\"https://npr.brightspotcdn.com/dims4/default/ee48650/2147483647/strip/true/crop/1200x900+0+0/resize/1760x1320!/format/webp/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F23%2Findicator_episode-number_maker-bdec8608ad4d803d0fe8ac1168f009ff35f9de28.jpg 2x\"data-size=\"fallbackImageSize\"",
+          "height=\"660\" srcset=\"https://npr.brightspotcdn.com/dims4/default/1154a19/2147483647/strip/true/crop/1200x900+0+0/resize/880x660!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F23%2Findicator_episode-number_maker-bdec8608ad4d803d0fe8ac1168f009ff35f9de28.jpg\"data-size=\"fallbackImageSize\"",
+          "<img class=\"Image\" alt=\"\" srcset=\"https://npr.brightspotcdn.com/dims4/default/cd7adf4/2147483647/strip/true/crop/1200x900+0+0/resize/1760x1320!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F23%2Findicator_episode-number_maker-bdec8608ad4d803d0fe8ac1168f009ff35f9de28.jpg 2x\" width=\"880\" height=\"660\" loading=\"lazy\" src=\"https://npr.brightspotcdn.com/dims4/default/1154a19/2147483647/strip/true/crop/1200x900+0+0/resize/880x660!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F23%2Findicator_episode-number_maker-bdec8608ad4d803d0fe8ac1168f009ff35f9de28.jpg\">",
+          "<img alt=\"\" src=\"https://npr.brightspotcdn.com/dims4/default/9d6db92/2147483647/strip/true/crop/422x563+0+0/resize/150x200!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F07%2Fheadshot_vert-03ff7356b3bcf151311675c71bfa0febab6de08b.jpg\" srcset=\"https://npr.brightspotcdn.com/dims4/default/8cfc309/2147483647/strip/true/crop/422x563+0+0/resize/300x400!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F07%2Fheadshot_vert-03ff7356b3bcf151311675c71bfa0febab6de08b.jpg 2x\" width=\"150\" height=\"200\">",
+          "<img alt=\"\" src=\"https://npr.brightspotcdn.com/dims4/default/3654140/2147483647/strip/true/crop/589x785+0+0/resize/150x200!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F04%2Fcs-3_vert-ea3f1de7137f4f2a21ed1f986bb8539f521d36ef.jpg\" srcset=\"https://npr.brightspotcdn.com/dims4/default/fc3470b/2147483647/strip/true/crop/589x785+0+0/resize/300x400!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F04%2Fcs-3_vert-ea3f1de7137f4f2a21ed1f986bb8539f521d36ef.jpg 2x\" width=\"150\" height=\"200\">"
+        ]
+      }
+    },
+    {
+      "reference_date": "2018-03-26",
+      "reference_title": "Dollars for Data",
+      "source_url": "https://news.wypr.org/2018-03-26/dollars-for-data",
+      "source_domain": "news.wypr.org",
+      "status": "inspected",
+      "findings": {
+        "mp3_urls": [
+          "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
+        ],
+        "audio_urls": [
+          "https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3"
+        ],
+        "iframe_urls": [
+          "https://www.googletagmanager.com/ns.html?id=GTM-N39QFDR"
+        ],
+        "npr_urls": [
+          "https://www.npr.org/sections/money/2018/03/26/597036173/dollars-for-data?ft=nprml&f=597036173"
+        ],
+        "jsonld_audio_objects": [],
+        "possible_ids": [],
+        "interesting_lines": [
+          "<meta property=\"og:image\" content=\"https://npr.brightspotcdn.com/dims4/default/6862c32/2147483647/strip/true/crop/1200x630+0+135/resize/1200x630!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F26%2F144-indicator-1833d149cb3758b5670cbce75ac697f372a927f5.jpg\">",
+          "<meta property=\"og:image:url\" content=\"https://npr.brightspotcdn.com/dims4/default/6862c32/2147483647/strip/true/crop/1200x630+0+135/resize/1200x630!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F26%2F144-indicator-1833d149cb3758b5670cbce75ac697f372a927f5.jpg\">",
+          "<meta name=\"twitter:image\" content=\"https://npr.brightspotcdn.com/dims4/default/01efa78/2147483647/strip/true/crop/1200x675+0+113/resize/1200x675!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F26%2F144-indicator-1833d149cb3758b5670cbce75ac697f372a927f5.jpg\"/>",
+          "\"bspStoryId\" : \"00000176-776b-dc2f-ad76-7f6b4bfb0000\",",
+          "\"nprStoryId\" : \"597036173\",",
+          "\"gtmBspStoryId\" : \"00000176-776b-dc2f-ad76-7f6b4bfb0000\",",
+          "\"gtmNprStoryId\" : \"597036173\",",
+          "})(window,document,'script','dataLayer','GTM-N39QFDR');</script><script type=\"application/ld+json\">{\"@context\":\"http://schema.org\",\"@type\":\"NewsArticle\",\"author\":[{\"@context\":\"http://schema.org\",\"@type\":\"Person\",\"name\":\"Cardiff Garcia\",\"url\":\"https://news.wypr.org/people/cardiff-garcia\"},{\"@context\":\"http://schema.org\",\"@type\":\"Person\",\"name\":\"Stacey Vanek Smith\",\"url\":\"https://news.wypr.org/people/stacey-vanek-smith\"}],\"dateModified\":\"2020-12-21T13:45:55Z\",\"datePublished\":\"2018-03-26T16:24:00Z\",\"headline\":\"Dollars for Data\",\"image\":{\"@context\":\"http://schema.org\",\"@type\":\"ImageObject\",\"url\":\"https://media.npr.org/assets/img/2018/03/26/144-indicator-1833d149cb3758b5670cbce75ac697f372a927f5.jpg\"},\"mainEntityOfPage\":{\"@type\":\"NewsArticle\",\"@id\":\"https://news.wypr.org/2018-03-26/dollars-for-data\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"WYPR Archive\",\"logo\":{\"@context\":\"http://schema.org\",\"@type\":\"ImageObject\",\"height\":\"60\",\"url\":\"https://npr.brightspotcdn.com/dims4/default/cc74955/2147483647/resize/x60/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fd1%2F9f%2F22bee6dc4f9aaaae47c7be531de0%2Fwyprhireslarge.jpg\",\"width\":\"174\"}}}</script><script>window.addEventListener('DOMContentLoaded', (event) => {",
+          "data-stream-url=\"https://playerservices.streamtheworld.com/api/livestream-redirect/WYPR_HD1.mp3\">",
+          "height=\"315\" srcset=\"https://npr.brightspotcdn.com/dims4/default/00b4337/2147483647/strip/true/crop/1200x900+0+0/resize/840x630!/format/webp/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F26%2F144-indicator-1833d149cb3758b5670cbce75ac697f372a927f5.jpg 2x\"data-size=\"fallbackImageSizeMobile\"",
+          "height=\"315\" srcset=\"https://npr.brightspotcdn.com/dims4/default/a72b261/2147483647/strip/true/crop/1200x900+0+0/resize/420x315!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F26%2F144-indicator-1833d149cb3758b5670cbce75ac697f372a927f5.jpg\"data-size=\"fallbackImageSizeMobile\"",
+          "height=\"660\" srcset=\"https://npr.brightspotcdn.com/dims4/default/6e12f08/2147483647/strip/true/crop/1200x900+0+0/resize/1760x1320!/format/webp/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F26%2F144-indicator-1833d149cb3758b5670cbce75ac697f372a927f5.jpg 2x\"data-size=\"fallbackImageSize\"",
+          "height=\"660\" srcset=\"https://npr.brightspotcdn.com/dims4/default/497b350/2147483647/strip/true/crop/1200x900+0+0/resize/880x660!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F26%2F144-indicator-1833d149cb3758b5670cbce75ac697f372a927f5.jpg\"data-size=\"fallbackImageSize\"",
+          "<img class=\"Image\" alt=\"\" srcset=\"https://npr.brightspotcdn.com/dims4/default/1cf81ea/2147483647/strip/true/crop/1200x900+0+0/resize/1760x1320!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F26%2F144-indicator-1833d149cb3758b5670cbce75ac697f372a927f5.jpg 2x\" width=\"880\" height=\"660\" loading=\"lazy\" src=\"https://npr.brightspotcdn.com/dims4/default/497b350/2147483647/strip/true/crop/1200x900+0+0/resize/880x660!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2018%2F03%2F26%2F144-indicator-1833d149cb3758b5670cbce75ac697f372a927f5.jpg\">",
+          "<img alt=\"\" src=\"https://npr.brightspotcdn.com/dims4/default/3654140/2147483647/strip/true/crop/589x785+0+0/resize/150x200!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F04%2Fcs-3_vert-ea3f1de7137f4f2a21ed1f986bb8539f521d36ef.jpg\" srcset=\"https://npr.brightspotcdn.com/dims4/default/fc3470b/2147483647/strip/true/crop/589x785+0+0/resize/300x400!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F04%2Fcs-3_vert-ea3f1de7137f4f2a21ed1f986bb8539f521d36ef.jpg 2x\" width=\"150\" height=\"200\">",
+          "<img alt=\"\" src=\"https://npr.brightspotcdn.com/dims4/default/9d6db92/2147483647/strip/true/crop/422x563+0+0/resize/150x200!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F07%2Fheadshot_vert-03ff7356b3bcf151311675c71bfa0febab6de08b.jpg\" srcset=\"https://npr.brightspotcdn.com/dims4/default/8cfc309/2147483647/strip/true/crop/422x563+0+0/resize/300x400!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2017%2F12%2F07%2Fheadshot_vert-03ff7356b3bcf151311675c71bfa0febab6de08b.jpg 2x\" width=\"150\" height=\"200\">"
+        ]
+      }
+    }
+  ]
+}
