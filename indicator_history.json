@@ -1,6 +1,6 @@
 {
-  "next_date": "2021-03-28T18:46:18-04:00",
-  "episode_count": 991,
+  "next_date": "2021-01-18T18:11:25-05:00",
+  "episode_count": 1039,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -8920,6 +8920,438 @@
       "audio_id": "982694103",
       "player_url": "https://www.npr.org/player/embed/982470955/982694103",
       "description": "Women now make up nearly half of entry level work workers, but there's still a gap higher up on the corporate ladder. One possibility for why this is happening? Schmoozing."
+    },
+    {
+      "title": "Boats And Bull Markets: Indicators Of The Week",
+      "date": "2021-03-26T17:30:16-04:00",
+      "npr_url": "https://www.npr.org/2021/03/26/981742343/boats-and-bull-markets-indicators-of-the-week",
+      "story_id": "981742343",
+      "audio_id": "981771036",
+      "player_url": "https://www.npr.org/player/embed/981742343/981771036",
+      "description": "On Indicators of the week, we discuss the Suez Canal blockage hindering global trade and the stock market recovery since last year's low point. Plus, listeners chime in with their indicators!"
+    },
+    {
+      "title": "Stimulus And The Shopper",
+      "date": "2021-03-25T19:11:29-04:00",
+      "npr_url": "https://www.npr.org/2021/03/25/981337023/stimulus-and-the-shopper",
+      "story_id": "981337023",
+      "audio_id": "981398782",
+      "player_url": "https://www.npr.org/player/embed/981337023/981398782",
+      "description": "Stimulus checks have started to hit many Americans' bank accounts. Will this give an extra boost, or maybe even a lifeline, to retailers?"
+    },
+    {
+      "title": "Facebook And The News: It's Complicated",
+      "date": "2021-03-24T18:23:18-04:00",
+      "npr_url": "https://www.npr.org/2021/03/24/980931358/facebook-and-the-news-its-complicated",
+      "story_id": "980931358",
+      "audio_id": "980969304",
+      "player_url": "https://www.npr.org/player/embed/980931358/980969304",
+      "description": "Many media outlets think they need to be on Facebook to reach people. So why did New Zealand's biggest news publisher decide to go it alone?"
+    },
+    {
+      "title": "Rise of the Robocall",
+      "date": "2021-03-23T18:12:00-04:00",
+      "npr_url": "https://www.npr.org/2021/03/23/980478016/rise-of-the-robocall",
+      "story_id": "980478016",
+      "audio_id": "980522666",
+      "player_url": "https://www.npr.org/player/embed/980478016/980522666",
+      "description": "Americans get billions of robocalls every month. They are almost universally despised, so how have they managed to stick around? The answer lies in the economics, of course."
+    },
+    {
+      "title": "Myths And Realities Of America's Rural Economy",
+      "date": "2021-03-22T17:01:29-04:00",
+      "npr_url": "https://www.npr.org/2021/03/22/980064728/myths-and-realities-of-americas-rural-economy",
+      "story_id": "980064728",
+      "audio_id": "980095160",
+      "player_url": "https://www.npr.org/player/embed/980064728/980095160",
+      "description": "Rural communities are sometimes perceived as farmland with a homogenous population, but economist Gbenga Ajilore helps us explain the demographic and economic diversity within Rural America."
+    },
+    {
+      "title": "Indicators of the Week! Interest Rates and Global Poverty",
+      "date": "2021-03-19T17:50:48-04:00",
+      "npr_url": "https://www.npr.org/2021/03/19/979368495/indicators-of-the-week-interest-rates-and-global-poverty",
+      "story_id": "979368495",
+      "audio_id": "979372257",
+      "player_url": "https://www.npr.org/player/embed/979368495/979372257",
+      "description": "On the show, we look back at the number of people globally who fell into poverty last year due to the Covid-19 pandemic, and look forward to where U.S. interest rates are projected to stay until 2023."
+    },
+    {
+      "title": "The Giant Pool Of Unmatched Music Royalties",
+      "date": "2021-03-18T19:42:53-04:00",
+      "npr_url": "https://www.npr.org/2021/03/18/978924200/the-giant-pool-of-unmatched-music-royalties",
+      "story_id": "978924200",
+      "audio_id": "978974970",
+      "player_url": "https://www.npr.org/player/embed/978924200/978974970",
+      "description": "The music industry has boomed thanks to streaming, but with thousands of new songs being added to platforms everyday, sometimes royalties slip through the cracks unpaid. $424 million worth of royalties, to be exact."
+    },
+    {
+      "title": "A Culinary Tour Of Brexit",
+      "date": "2021-03-17T18:18:09-04:00",
+      "npr_url": "https://www.npr.org/2021/03/17/978328915/a-culinary-tour-of-brexit",
+      "story_id": "978328915",
+      "audio_id": "978351815",
+      "player_url": "https://www.npr.org/player/embed/978328915/978351815",
+      "description": "What has trade with the EU been like for Britons post-Brexit? We answer that question by looking at some of the tastiest indicators around."
+    },
+    {
+      "title": "The Covid Reset: A Chat With Constance Hunter",
+      "date": "2021-03-16T18:31:00-04:00",
+      "npr_url": "https://www.npr.org/2021/03/16/977874379/the-covid-reset-a-chat-with-constance-hunter",
+      "story_id": "977874379",
+      "audio_id": "977990693",
+      "player_url": "https://www.npr.org/player/embed/977874379/977990693",
+      "description": "Is an economic reset on the way? Economist Constance Hunter explains how technology and businesses have changed during Covid, and how these trends offer some hope for long-term recovery."
+    },
+    {
+      "title": "PLEASE sell me a home!",
+      "date": "2021-03-15T17:54:00-04:00",
+      "npr_url": "https://www.npr.org/2021/03/15/977533022/please-sell-me-a-home",
+      "story_id": "977533022",
+      "audio_id": "977570096",
+      "player_url": "https://www.npr.org/player/embed/977533022/977570096",
+      "description": "The median price of a single family home in Bozeman, Mont., is now over half a million dollars — nearly a 20% increase from last year. Why has the housing market gotten so hot so fast?"
+    },
+    {
+      "title": "Chips, Cars and the Baby Bust",
+      "date": "2021-03-12T17:03:26-05:00",
+      "npr_url": "https://www.npr.org/2021/03/12/976569019/chips-cars-and-the-baby-bust",
+      "story_id": "976569019",
+      "audio_id": "976636277",
+      "player_url": "https://www.npr.org/player/embed/976569019/976636277",
+      "description": "The Covid-19 pandemic has caused demand shifts and supply chain snafus that have led to many shortages. For Indicators of the Week, we'll be looking at two more: cars and ... babies?"
+    },
+    {
+      "title": "One Year Later: Indicators On The Pandemic Economy",
+      "date": "2021-03-11T19:07:18-05:00",
+      "npr_url": "https://www.npr.org/2021/03/11/976189502/one-year-later-indicators-on-the-pandemic-economy",
+      "story_id": "976189502",
+      "audio_id": "976239305",
+      "player_url": "https://www.npr.org/player/embed/976189502/976239305",
+      "description": "What's happened since the Covid-19 pandemic was declared a year ago? On the show, we discuss the differing effects on workers across the economy and the government's larger role in recession recovery."
+    },
+    {
+      "title": "Market Power To The Beeple",
+      "date": "2021-03-10T20:14:18-05:00",
+      "npr_url": "https://www.npr.org/2021/03/10/975782582/market-power-to-the-beeple",
+      "story_id": "975782582",
+      "audio_id": "975887122",
+      "player_url": "https://www.npr.org/player/embed/975782582/975887122",
+      "description": "Digital art has been largely neglected by the traditional art market, but one artist has made millions selling his work as non-fungible tokens (NFTs). And his work is now being auctioned at Christie's."
+    },
+    {
+      "title": "The $200k NBA NFT",
+      "date": "2021-03-09T19:55:03-05:00",
+      "npr_url": "https://www.npr.org/2021/03/09/975450173/the-200k-nba-nft",
+      "story_id": "975450173",
+      "audio_id": "975473392",
+      "player_url": "https://www.npr.org/player/embed/975450173/975473392",
+      "description": "A non-fungible token (NFT) for a LeBron James dunk recently sold for over $200,000 on NBA Top Shot. Anyone can watch the clip online, so why is the NFT worth so much money?"
+    },
+    {
+      "title": "Grateful For Taxes",
+      "date": "2021-03-08T17:01:00-05:00",
+      "npr_url": "https://www.npr.org/2021/03/08/974881298/grateful-for-taxes",
+      "story_id": "974881298",
+      "audio_id": "974897341",
+      "player_url": "https://www.npr.org/player/embed/974881298/974897341",
+      "description": "In the modern U.S. people may avoid or begrudgingly pay taxes. But in ancient Athens, wealthy people considered it an honor."
+    },
+    {
+      "title": "Jobs Friday: Better! Still Not Good Tho",
+      "date": "2021-03-05T19:30:59-05:00",
+      "npr_url": "https://www.npr.org/2021/03/05/974208929/jobs-friday-better-still-not-good-tho",
+      "story_id": "974208929",
+      "audio_id": "974261350",
+      "player_url": "https://www.npr.org/player/embed/974208929/974261350",
+      "description": "It's Jobs Friday! The February jobs report shows signs of recovery, but there's still a long way to go. We talk to three experts about their indicators on how things will change and when."
+    },
+    {
+      "title": "Of Puppies and Profits: The Beigie Awards",
+      "date": "2021-03-04T20:15:00-05:00",
+      "npr_url": "https://www.npr.org/2021/03/04/973839484/of-puppies-and-profits-the-beigie-awards",
+      "story_id": "973839484",
+      "audio_id": "973869255",
+      "player_url": "https://www.npr.org/player/embed/973839484/973869255",
+      "description": "The Covid-19 pandemic has been a tough time for everyone, so many people have turned to a familiar source of comfort: pets!"
+    },
+    {
+      "title": "The Biden Relief Bill: Who Gets What",
+      "date": "2021-03-03T19:35:38-05:00",
+      "npr_url": "https://www.npr.org/2021/03/03/973468718/the-biden-relief-bill-who-gets-what",
+      "story_id": "973468718",
+      "audio_id": "973501808",
+      "player_url": "https://www.npr.org/player/embed/973468718/973501808",
+      "description": "President Biden's Covid relief plan calls for about $1.9 trillion in government spending. Where is all that money going? We discuss a few of the biggest items in the bill."
+    },
+    {
+      "title": "Are The Simpsons Still Middle Class?",
+      "date": "2021-03-02T18:40:00-05:00",
+      "npr_url": "https://www.npr.org/2021/03/02/973050861/are-the-simpsons-still-middle-class",
+      "story_id": "973050861",
+      "audio_id": "973051299",
+      "player_url": "https://www.npr.org/player/embed/973050861/973051299",
+      "description": "The Simpsons were the quintessential American family when the show first aired back in 1989. But while the Simpsons have stayed largely the same, American middle class life has changed a lot."
+    },
+    {
+      "title": "Empty Houses, Reclaimed",
+      "date": "2021-03-01T17:02:00-05:00",
+      "npr_url": "https://www.npr.org/2021/02/26/971873769/empty-houses-reclaimed",
+      "story_id": "971873769",
+      "audio_id": "971874118",
+      "player_url": "https://www.npr.org/player/embed/971873769/971874118",
+      "description": "Homes owned by California's department of transportation lay vacant. So people reclaimed them."
+    },
+    {
+      "title": "Unemployment Insurance And Vaccines: Who's Left Behind?",
+      "date": "2021-02-26T17:43:13-05:00",
+      "npr_url": "https://www.npr.org/2021/02/26/971931873/unemployment-insurance-and-vaccines-whos-left-behind",
+      "story_id": "971931873",
+      "audio_id": "971945268",
+      "player_url": "https://www.npr.org/player/embed/971931873/971945268",
+      "description": "Two of the most important ways the government is supporting Americans right now is through distributing vaccines and providing unemployment insurance. But are there cracks in the system?"
+    },
+    {
+      "title": "2021: The Year Of The Recovery?",
+      "date": "2021-02-25T17:16:29-05:00",
+      "npr_url": "https://www.npr.org/2021/02/25/971422033/2021-the-year-of-the-recovery",
+      "story_id": "971422033",
+      "audio_id": "971547567",
+      "player_url": "https://www.npr.org/player/embed/971422033/971547567",
+      "description": "2020 was a horrific year for the economy. We're hoping 2021 will be better, but will it? We discuss 3 indicators that suggest this year is shaping up to be better than last year."
+    },
+    {
+      "title": "The $1,000 Power Bill",
+      "date": "2021-02-24T14:23:00-05:00",
+      "npr_url": "https://www.npr.org/2021/02/24/971125969/the-1-000-power-bill",
+      "story_id": "971125969",
+      "audio_id": "971132137",
+      "player_url": "https://www.npr.org/player/embed/971125969/971132137",
+      "description": "The recent winter storm caused thousands of Texans to see their power bill climb to hundreds, even thousands of dollars. Can economics explain what happened?"
+    },
+    {
+      "title": "Seeking Refuge On The Open Road",
+      "date": "2021-02-23T18:16:00-05:00",
+      "npr_url": "https://www.npr.org/2021/02/23/970726684/seeking-refuge-on-the-open-road",
+      "story_id": "970726684",
+      "audio_id": "970729430",
+      "player_url": "https://www.npr.org/player/embed/970726684/970729430",
+      "description": "Living on the open road is more than just an Instagram photo opportunity; for many it's both an economic necessity and a countercultural movement. Just ask Bob Wells, the evangelist of nomad life."
+    },
+    {
+      "title": "Alabama: The Newest Union Battleground",
+      "date": "2021-02-22T17:01:24-05:00",
+      "npr_url": "https://www.npr.org/2021/02/22/970178388/alabama-the-newest-union-battleground",
+      "story_id": "970178388",
+      "audio_id": "970188398",
+      "player_url": "https://www.npr.org/player/embed/970178388/970188398",
+      "description": "Amazon workers in Alabama are voting on whether to form the company's FIRST U.S. union. We explain how the union has succeeded in getting this far, and the potential ramifications of the vote."
+    },
+    {
+      "title": "Cold Fronts, Propane And New Jobs - Indicators Of The Week",
+      "date": "2021-02-19T17:48:07-05:00",
+      "npr_url": "https://www.npr.org/2021/02/19/969560047/cold-fronts-propane-and-new-jobs-indicators-of-the-week",
+      "story_id": "969560047",
+      "audio_id": "969600744",
+      "player_url": "https://www.npr.org/player/embed/969560047/969600744",
+      "description": "For our indicators of the week, we're talking about shortages of heating sources during the recent cold snap and trends amongst unemployed Americans."
+    },
+    {
+      "title": "Bitcoin - The Religion",
+      "date": "2021-02-18T18:32:59-05:00",
+      "npr_url": "https://www.npr.org/2021/02/18/969182201/bitcoin-the-religion",
+      "story_id": "969182201",
+      "audio_id": "969238778",
+      "player_url": "https://www.npr.org/player/embed/969182201/969238778",
+      "description": "As the value of a bitcoin recently passed $50,000, market watchers struggled to explain how a virtual currency could reach such dizzy heights. One possible answer? It's kind of like a religion."
+    },
+    {
+      "title": "Inside A Restaurant's Final Days",
+      "date": "2021-02-17T17:14:00-05:00",
+      "npr_url": "https://www.npr.org/2021/02/17/968650675/inside-a-restaurants-final-days",
+      "story_id": "968650675",
+      "audio_id": "968793508",
+      "player_url": "https://www.npr.org/player/embed/968650675/968793508",
+      "description": "We've heard about how hard it's been for restaurants to stay open during this pandemic. But what we often don't hear is that closing can be just as tough."
+    },
+    {
+      "title": "Unsung Economists: Arthur Lewis",
+      "date": "2021-02-16T17:54:58-05:00",
+      "npr_url": "https://www.npr.org/2021/02/16/968412484/unsung-economists-arthur-lewis",
+      "story_id": "968412484",
+      "audio_id": "968487849",
+      "player_url": "https://www.npr.org/player/embed/968412484/968487849",
+      "description": "Arthur Lewis changed our understanding of how poor countries can improve their economies — and became the first Black economist to win the Economics Nobel"
+    },
+    {
+      "title": "Days Of COVID And Roses",
+      "date": "2021-02-12T20:11:10-05:00",
+      "npr_url": "https://www.npr.org/2021/02/12/967509137/days-of-covid-and-roses",
+      "story_id": "967509137",
+      "audio_id": "967539546",
+      "player_url": "https://www.npr.org/player/embed/967509137/967539546",
+      "description": "The Covid-19 lockdown sent the flower market into free fall, but recently, flower prices have been picking up again. Who are the culprits behind this? Our old friends supply and demand, of course!"
+    },
+    {
+      "title": "The Pen Is Mightier Than The Suit",
+      "date": "2021-02-11T17:48:00-05:00",
+      "npr_url": "https://www.npr.org/2021/02/10/966549190/the-pen-is-mightier-than-the-suit",
+      "story_id": "966549190",
+      "audio_id": "967132941",
+      "player_url": "https://www.npr.org/player/embed/966549190/967132941",
+      "description": "The Hollywood Writers Guild just declared victory in their fight with talent agencies. Who do they have to thank for their historic win? Among other factors, possibly ... the pandemic?"
+    },
+    {
+      "title": "China-U.S. Trade Agreement Fail",
+      "date": "2021-02-10T18:50:50-05:00",
+      "npr_url": "https://www.npr.org/2021/02/10/966574798/china-u-s-trade-agreement-fail",
+      "story_id": "966574798",
+      "audio_id": "966590782",
+      "player_url": "https://www.npr.org/player/embed/966574798/966590782",
+      "description": "Last year, China pledged to vastly increase its U.S. imports during 2020 and 2021. We ask economist Chad Bown if actual spending has been keeping pace with what was promised."
+    },
+    {
+      "title": "Who Let The Doge(coin) Out?",
+      "date": "2021-02-09T19:45:26-05:00",
+      "npr_url": "https://www.npr.org/2021/02/09/965995556/who-let-the-doge-coin-out",
+      "story_id": "965995556",
+      "audio_id": "966101336",
+      "player_url": "https://www.npr.org/player/embed/965995556/966101336",
+      "description": "Dogecoin, a cryptocurrency created in 2013 as a joke, recently broke a $10 billion market cap. The coin's creator tells us how the joke became real and if he has regrets."
+    },
+    {
+      "title": "The Power of Humor",
+      "date": "2021-02-08T17:54:18-05:00",
+      "npr_url": "https://www.npr.org/2021/02/08/965572857/the-power-of-humor",
+      "story_id": "965572857",
+      "audio_id": "965575347",
+      "player_url": "https://www.npr.org/player/embed/965572857/965575347",
+      "description": "Everyone enjoys a good laugh, but could humor be the secret to success in the workplace?"
+    },
+    {
+      "title": "Jobs Friday: Extremely Not Good",
+      "date": "2021-02-05T19:51:24-05:00",
+      "npr_url": "https://www.npr.org/2021/02/05/964552802/jobs-friday-extremely-not-good",
+      "story_id": "964552802",
+      "audio_id": "964663872",
+      "player_url": "https://www.npr.org/player/embed/964552802/964663872",
+      "description": "The US economy created 49,000 jobs last month, according to the Bureau of Labor Statistics. That's a lot less that people had hoped and shows that the recovery has slowed."
+    },
+    {
+      "title": "Diamond Hands To The Moon! Reddit's Market Movers",
+      "date": "2021-02-04T19:22:18-05:00",
+      "npr_url": "https://www.npr.org/2021/02/04/964172276/diamond-hands-to-the-moon-reddits-market-movers",
+      "story_id": "964172276",
+      "audio_id": "964260407",
+      "player_url": "https://www.npr.org/player/embed/964172276/964260407",
+      "description": "Over the past couple of weeks, the WallStreetBets Subreddit were responsible for the surge in GameStop stock, among others. Who are these people? And what do they want?"
+    },
+    {
+      "title": "Hi Lo Silver",
+      "date": "2021-02-03T18:40:09-05:00",
+      "npr_url": "https://www.npr.org/2021/02/03/963791189/hi-lo-silver",
+      "story_id": "963791189",
+      "audio_id": "963807490",
+      "player_url": "https://www.npr.org/player/embed/963791189/963807490",
+      "description": "The price of silver shot up this week. Theories abound about what drove the trading."
+    },
+    {
+      "title": "Emojiconomics",
+      "date": "2021-02-02T18:36:21-05:00",
+      "npr_url": "https://www.npr.org/2021/02/02/963370085/emojiconomics",
+      "story_id": "963370085",
+      "audio_id": "963428944",
+      "player_url": "https://www.npr.org/player/embed/963370085/963428944",
+      "description": "What secretive forces were behind getting the pickup truck emoji onto phones and laptops around the world? And how much did it cost?"
+    },
+    {
+      "title": "Fisher Vs. Keynes: Investing Tragedy And Triumph",
+      "date": "2021-02-01T18:13:00-05:00",
+      "npr_url": "https://www.npr.org/2021/02/01/962828669/fisher-vs-keynes-investing-tragedy-and-triumph",
+      "story_id": "962828669",
+      "audio_id": "962997824",
+      "player_url": "https://www.npr.org/player/embed/962828669/962997824",
+      "description": "Irving Fisher and John Maynard Keynes suffered terrible losses in the Great Wall Street Crash of 1929. But they responded in different ways, leading to tragedy for Fisher and triumph for Keynes."
+    },
+    {
+      "title": "Should We Raise The Minimum Wage?",
+      "date": "2021-01-29T18:46:34-05:00",
+      "npr_url": "https://www.npr.org/2021/01/29/962124776/should-we-raise-the-minimum-wage",
+      "story_id": "962124776",
+      "audio_id": "962254878",
+      "player_url": "https://www.npr.org/player/embed/962124776/962254878",
+      "description": "Biden is calling for a $15 federal minimum wage. Is that a good idea for workers and small businesses? Stacey and Cardiff duke it out."
+    },
+    {
+      "title": "Why Consumer Confidence Is So High",
+      "date": "2021-01-28T17:37:30-05:00",
+      "npr_url": "https://www.npr.org/2021/01/28/961744268/why-consumer-confidence-is-so-high",
+      "story_id": "961744268",
+      "audio_id": "961791104",
+      "player_url": "https://www.npr.org/player/embed/961744268/961791104",
+      "description": "The nation is reeling from the effects of the coronavirus pandemic. Lockdowns and layoffs have devastated the economy. But consumer confidence is higher than expected."
+    },
+    {
+      "title": "GameStop And The Short Squeeze",
+      "date": "2021-01-27T18:20:49-05:00",
+      "npr_url": "https://www.npr.org/2021/01/27/961291455/gamestop-and-the-short-squeeze",
+      "story_id": "961291455",
+      "audio_id": "961369950",
+      "player_url": "https://www.npr.org/player/embed/961291455/961369950",
+      "description": "The price of GameStop shares have surged this week, in part because of something called a short squeeze."
+    },
+    {
+      "title": "The Hispanic Economic Outlook",
+      "date": "2021-01-26T18:20:27-05:00",
+      "npr_url": "https://www.npr.org/2021/01/26/960884670/the-hispanic-economic-outlook",
+      "story_id": "960884670",
+      "audio_id": "960940266",
+      "player_url": "https://www.npr.org/player/embed/960884670/960940266",
+      "description": "Hispanics in the US have been disproportionately affected by COVID-19, in terms of job losses, household income and schooling. Their road to recovery could be long and hard as a result."
+    },
+    {
+      "title": "The College Buyout Boom",
+      "date": "2021-01-25T18:33:00-05:00",
+      "npr_url": "https://www.npr.org/2021/01/25/960478751/the-college-buyout-boom",
+      "story_id": "960478751",
+      "audio_id": "961257714",
+      "player_url": "https://www.npr.org/player/embed/960478751/961257714",
+      "description": "Small liberal arts colleges across the US have been struggling for years. COVID has made things worse. Now many are facing the prospect of closing down. Or being gobbled up in a merger."
+    },
+    {
+      "title": "The Straw That Broke The Bucatini Supply Chain",
+      "date": "2021-01-22T18:08:00-05:00",
+      "npr_url": "https://www.npr.org/2021/01/22/959688829/the-straw-that-broke-the-bucatini-supply-chain",
+      "story_id": "959688829",
+      "audio_id": "959771897",
+      "player_url": "https://www.npr.org/player/embed/959688829/959771897",
+      "description": "Bucatini is a specialty pasta that looks a lot like spaghetti with a hole in it. For pasta lovers, it's a fan-favorite...but it has mysteriously gone missing from grocery stores across the U.S."
+    },
+    {
+      "title": "Economics In Space",
+      "date": "2021-01-21T17:31:05-05:00",
+      "npr_url": "https://www.npr.org/2021/01/21/959199550/economics-in-space",
+      "story_id": "959199550",
+      "audio_id": "959392185",
+      "player_url": "https://www.npr.org/player/embed/959199550/959392185",
+      "description": "Economics is the earthiest of the social sciences. But its principles apply equally in space. The difference is how certain goods, services and even experiences gain currency in zero gravity."
+    },
+    {
+      "title": "Biden's Econ Plan: 3 Indicators To Watch",
+      "date": "2021-01-20T17:40:00-05:00",
+      "npr_url": "https://www.npr.org/2021/01/20/958958671/bidens-econ-plan-3-indicators-to-watch",
+      "story_id": "958958671",
+      "audio_id": "958965878",
+      "player_url": "https://www.npr.org/player/embed/958958671/958965878",
+      "description": "President Biden recently announced his $1.9 trillion American Rescue Plan, targeting pandemic relief and economic recovery. We discuss 3 indicators to watch to measure the Biden economic agenda's success in the coming years."
+    },
+    {
+      "title": "The Social Media Crisis",
+      "date": "2021-01-19T18:11:25-05:00",
+      "npr_url": "https://www.npr.org/2021/01/19/958542152/the-social-media-crisis",
+      "story_id": "958542152",
+      "audio_id": "958554840",
+      "player_url": "https://www.npr.org/player/embed/958542152/958554840",
+      "description": "Social media played a big part in the demonstration and riot at the U.S. Capitol last week. For many it was a surprise, but to social media watchers, it was simply the culmination of 10 years of influence."
     }
   ]
 }
