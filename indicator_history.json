@@ -1,6 +1,6 @@
 {
-  "next_date": "2022-02-13T19:47:12-05:00",
-  "episode_count": 768,
+  "next_date": "2021-11-18T18:54:00-05:00",
+  "episode_count": 825,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -6913,6 +6913,519 @@
       "audio_id": "1080746284",
       "player_url": "https://www.npr.org/player/embed/1080714262/1080746284",
       "description": "If sports bettors in the U.S. have a sacred holiday, it might be the Super Bowl."
+    },
+    {
+      "title": "Indicators of the week: International trade edition",
+      "date": "2022-02-11T19:00:12-05:00",
+      "npr_url": "https://www.npr.org/2022/02/11/1080233136/indicators-of-the-week-international-trade-edition",
+      "story_id": "1080233136",
+      "audio_id": "1080295752",
+      "player_url": "https://www.npr.org/player/embed/1080233136/1080295752",
+      "description": "Our indicators of the week have to do with trade. On one hand, protests against covid restrictions on the Canadian border are blocking trade with America's biggest trading partner. On the other, a historic high for the national trade deficit."
+    },
+    {
+      "title": "How to bring down inflation",
+      "date": "2022-02-10T18:14:08-05:00",
+      "npr_url": "https://www.npr.org/2022/02/10/1079953239/how-to-bring-down-inflation",
+      "story_id": "1079953239",
+      "audio_id": "1079980623",
+      "player_url": "https://www.npr.org/player/embed/1079953239/1079980623",
+      "description": "Today, inflation hit a 40-year high of 7.5%. The Federal Reserve is expected to start raising interest rates next month, but how exactly does that affect inflation?"
+    },
+    {
+      "title": "Nightmare on wall street?",
+      "date": "2022-02-09T19:23:32-05:00",
+      "npr_url": "https://www.npr.org/2022/02/09/1079618509/nightmare-on-wall-street",
+      "story_id": "1079618509",
+      "audio_id": "1079742128",
+      "player_url": "https://www.npr.org/player/embed/1079618509/1079742128",
+      "description": "January was a rocky month for many tech companies as earnings reports came in. Paddy Hirsch joins the show to share what's scaring many investors in this correction market."
+    },
+    {
+      "title": "Doing business quietly in Beijing",
+      "date": "2022-02-08T18:05:46-05:00",
+      "npr_url": "https://www.npr.org/2022/02/08/1079268461/doing-business-quietly-in-beijing",
+      "story_id": "1079268461",
+      "audio_id": "1079358371",
+      "player_url": "https://www.npr.org/player/embed/1079268461/1079358371",
+      "description": "The 2022 Beijing Olympics are in full swing. But do many of the official sponsors seem a little quiet?"
+    },
+    {
+      "title": "Five vital signs for scaling your big idea",
+      "date": "2022-02-07T18:09:53-05:00",
+      "npr_url": "https://www.npr.org/2022/02/07/1078958844/five-vital-signs-for-scaling-your-big-idea",
+      "story_id": "1078958844",
+      "audio_id": "1078980452",
+      "player_url": "https://www.npr.org/player/embed/1078958844/1078980452",
+      "description": "The Mcdonald's Arch Deluxe is one of the most infamous product failures in history. Economist John List helps us understand what happened and how it could've been averted."
+    },
+    {
+      "title": "Jobs Friday: Return of the airhorn?",
+      "date": "2022-02-04T19:23:49-05:00",
+      "npr_url": "https://www.npr.org/2022/02/04/1078378111/jobs-friday-return-of-the-airhorn",
+      "story_id": "1078378111",
+      "audio_id": "1078418148",
+      "player_url": "https://www.npr.org/player/embed/1078378111/1078418148",
+      "description": "The January jobs report exceeded the expectations of many. Will the better-than-expected numbers merit the return of our old friend the airhorn?"
+    },
+    {
+      "title": "Black Agenda: A conversation with Anna Gifty Opoku-Agyeman",
+      "date": "2022-02-03T19:32:33-05:00",
+      "npr_url": "https://www.npr.org/2022/02/03/1078038540/black-agenda-a-conversation-with-anna-gifty-opoku-agyeman",
+      "story_id": "1078038540",
+      "audio_id": "1078091728",
+      "player_url": "https://www.npr.org/player/embed/1078038540/1078091728",
+      "description": "Anna Gifty Opoku-Agyeman is a rising star in the world of economics. Today, she joins us to talk about the collection of essays she edited, Black Agenda: Bold Solutions for a Broken System."
+    },
+    {
+      "title": "The Beigie Awards: Begging for bus drivers",
+      "date": "2022-02-02T18:45:44-05:00",
+      "npr_url": "https://www.npr.org/sections/money/2022/02/02/1077729257/the-beigie-awards-begging-for-bus-drivers",
+      "story_id": "1077729257",
+      "audio_id": "1077765394",
+      "player_url": "https://www.npr.org/player/embed/1077729257/1077765394",
+      "description": "Trouble attracting employees has some companies offering free pet care and \"No-meeting Wednesdays.\" One CEO was \"liberally begging\" for workers."
+    },
+    {
+      "title": "Multimillion dollar music catalogs",
+      "date": "2022-02-01T18:03:54-05:00",
+      "npr_url": "https://www.npr.org/2022/02/01/1077385249/multimillion-dollar-music-catalogs",
+      "story_id": "1077385249",
+      "audio_id": "1077429611",
+      "player_url": "https://www.npr.org/player/embed/1077385249/1077429611",
+      "description": "An increasing number of major musicians are selling their songwriting catalogs for tens – and even hundreds – of millions of dollars. What's going on?"
+    },
+    {
+      "title": "Is it time to control rent?",
+      "date": "2022-01-31T18:00:12-05:00",
+      "npr_url": "https://www.npr.org/2022/01/31/1077086398/is-it-time-to-control-rent",
+      "story_id": "1077086398",
+      "audio_id": "1077088942",
+      "player_url": "https://www.npr.org/player/embed/1077086398/1077088942",
+      "description": "Rent control is one of the most unpopular policies among economists and policy reporters. But current housing shortages have one long-time critic rethinking her position."
+    },
+    {
+      "title": "Revisiting Indicators: Bitcoin, masks, GDP",
+      "date": "2022-01-28T19:39:57-05:00",
+      "npr_url": "https://www.npr.org/2022/01/28/1076524775/revisiting-indicators-bitcoin-masks-gdp",
+      "story_id": "1076524775",
+      "audio_id": "1076609348",
+      "player_url": "https://www.npr.org/player/embed/1076524775/1076609348",
+      "description": "The team comes together to showcase what's happened since we last checked on some previous headline-grabbing indicators."
+    },
+    {
+      "title": "Revenge of the venture capitalists",
+      "date": "2022-01-27T17:53:41-05:00",
+      "npr_url": "https://www.npr.org/2022/01/27/1076232689/revenge-of-the-venture-capitalists",
+      "story_id": "1076232689",
+      "audio_id": "1076248678",
+      "player_url": "https://www.npr.org/player/embed/1076232689/1076248678",
+      "description": "Uber's CEO Travis Kalanick grew the company fast, but oversaw scandal after scandal. One venture capitalist wanted Travis out. Today: The epic tug-of-war between venture capital and founders in tech."
+    },
+    {
+      "title": "Cheese wars",
+      "date": "2022-01-26T18:52:00-05:00",
+      "npr_url": "https://www.npr.org/2022/01/26/1075911354/cheese-wars",
+      "story_id": "1075911354",
+      "audio_id": "1075966985",
+      "player_url": "https://www.npr.org/player/embed/1075911354/1075966985",
+      "description": "A US District Court just ruled Gruyere cheese can be made outside of the Swiss French border region – including here in the US. Today, what this court battle over a cheese has to do with global trade."
+    },
+    {
+      "title": "The opioid business plan",
+      "date": "2022-01-25T18:57:35-05:00",
+      "npr_url": "https://www.npr.org/2022/01/14/1073199358/the-opioid-business-plan",
+      "story_id": "1073199358",
+      "audio_id": "1075672965",
+      "player_url": "https://www.npr.org/player/embed/1073199358/1075672965",
+      "description": "Insys Therapeutics was an opioid startup that made lots of money for its addictive nasal spray. Today, we hear from Evan Hughes, author of the book Hard Sell: Crime and Punishment at an Opioid Startup, on how the company's carelessness led to its ultimate downfall."
+    },
+    {
+      "title": "Overdraft fees: From perk to penalty",
+      "date": "2022-01-24T17:59:00-05:00",
+      "npr_url": "https://www.npr.org/2022/01/20/1074521609/overdraft-fees-from-perk-to-penalty",
+      "story_id": "1074521609",
+      "audio_id": "1075424002",
+      "player_url": "https://www.npr.org/player/embed/1074521609/1075424002",
+      "description": "Banks make billions on overdraft fees every year. So why are some of them walking away now?"
+    },
+    {
+      "title": "Indicators to watch in 2022",
+      "date": "2022-01-21T16:59:16-05:00",
+      "npr_url": "https://www.npr.org/2022/01/18/1073938720/indicators-to-watch-in-2022",
+      "story_id": "1073938720",
+      "audio_id": "1074905109",
+      "player_url": "https://www.npr.org/player/embed/1073938720/1074905109",
+      "description": "It's a new year so that means it's time to choose our indicators to watch! Listen to find out what we will be tracking in the economy for 2022."
+    },
+    {
+      "title": "How a bank messaging system could decimate Russia",
+      "date": "2022-01-20T18:29:43-05:00",
+      "npr_url": "https://www.npr.org/2022/01/18/1073944103/how-a-bank-messaging-system-could-decimate-russia",
+      "story_id": "1073944103",
+      "audio_id": "1074579679",
+      "player_url": "https://www.npr.org/player/embed/1073944103/1074579679",
+      "description": "Russia has the United States and its allies worried about a potential invasion of Ukraine. One of the most painful sanctions NATO could impose would cut Russia's economy from the world."
+    },
+    {
+      "title": "Even you can buy a house with cash",
+      "date": "2022-01-19T18:45:21-05:00",
+      "npr_url": "https://www.npr.org/2022/01/18/1073944283/even-you-can-buy-a-house-with-cash",
+      "story_id": "1073944283",
+      "audio_id": "1074227379",
+      "player_url": "https://www.npr.org/player/embed/1073944283/1074227379",
+      "description": "In this frenzied housing market, offering cash gives you a huge advantage. It used to be only wealthy people and investors could do it. But now some lenders will let everyday homebuyers put in a cash offer too."
+    },
+    {
+      "title": "Metabucks: Microsoft offers $69 billion to buy Activision Blizzard",
+      "date": "2022-01-18T20:00:00-05:00",
+      "npr_url": "https://www.npr.org/2022/01/18/1073939239/metabucks-microsoft-offers-69-billion-to-buy-activision-blizzard",
+      "story_id": "1073939239",
+      "audio_id": "1073968014",
+      "player_url": "https://www.npr.org/player/embed/1073939239/1073968014",
+      "description": "Microsoft just announced its intention to buy video game developer, Activision Blizzard, for almost $70 billion. This has some people speculating about Microsoft's future metaverse aspirations."
+    },
+    {
+      "title": "TikTok made me buy it",
+      "date": "2022-01-14T18:22:45-05:00",
+      "npr_url": "https://www.npr.org/2022/01/14/1073199737/tiktok-made-me-buy-it",
+      "story_id": "1073199737",
+      "audio_id": "1073257644",
+      "player_url": "https://www.npr.org/player/embed/1073199737/1073257644",
+      "description": "TikTok has become one of the most popular social media platforms in the world, and increasingly, a powerful tool for marketing. Today, we learn why TikTok makes us buy."
+    },
+    {
+      "title": "What nails can tell us about the economy",
+      "date": "2022-01-13T18:07:38-05:00",
+      "npr_url": "https://www.npr.org/2022/01/12/1072557499/what-nails-can-tell-us-about-the-economy",
+      "story_id": "1072557499",
+      "audio_id": "1072911500",
+      "player_url": "https://www.npr.org/player/embed/1072557499/1072911500",
+      "description": "Despite being fairly simple items, nails can actually reveal a lot about the greater economy. Today, we talk to economist Dan Sichel about the history of nails and what they can teach us about economic trends."
+    },
+    {
+      "title": "The beef over price controls",
+      "date": "2022-01-12T18:42:01-05:00",
+      "npr_url": "https://www.npr.org/2022/01/12/1072558469/the-beef-over-price-controls",
+      "story_id": "1072558469",
+      "audio_id": "1072612324",
+      "player_url": "https://www.npr.org/player/embed/1072558469/1072612324",
+      "description": "Inflation reached a 40-year high today of 7%! There's been a storm of debate about an old anti-inflation policy: Price controls. So we dust off the history books and see what happened in World War II."
+    },
+    {
+      "title": "Why are McDonald's ice cream machines always broken?",
+      "date": "2022-01-11T19:00:51-05:00",
+      "npr_url": "https://www.npr.org/2022/01/11/1072164745/why-are-mcdonalds-ice-cream-machines-always-broken",
+      "story_id": "1072164745",
+      "audio_id": "1072275340",
+      "player_url": "https://www.npr.org/player/embed/1072164745/1072275340",
+      "description": "McDonald's is notorious for frequent malfunctions of its ice cream machine. What's behind those malfunctions and why is the government getting involved?"
+    },
+    {
+      "title": "Inland port priority",
+      "date": "2022-01-10T18:47:00-05:00",
+      "npr_url": "https://www.npr.org/2022/01/10/1071932095/inland-port-priority",
+      "story_id": "1071932095",
+      "audio_id": "1071945750",
+      "player_url": "https://www.npr.org/player/embed/1071932095/1071945750",
+      "description": "Disruptive backlogs at west coast ports in the U.S. have caused some shippers to get creative with their routes. Today, we tell you why one vessel took the long route from Shanghai to Cleveland, Ohio."
+    },
+    {
+      "title": "Why full employment doesn't mean everyone has a job",
+      "date": "2022-01-07T18:02:09-05:00",
+      "npr_url": "https://www.npr.org/2022/01/07/1071460102/why-full-employment-doesnt-mean-everyone-has-a-job",
+      "story_id": "1071460102",
+      "audio_id": "1071460138",
+      "player_url": "https://www.npr.org/player/embed/1071460102/1071460138",
+      "description": "Unemployment is at 3.9%. Is this full employment? Some Americans aren't so sure. We look at this complex situation through the eyes of someone who has been job hunting for a long time."
+    },
+    {
+      "title": "Nurses and the never-ending shifts",
+      "date": "2022-01-06T18:52:00-05:00",
+      "npr_url": "https://www.npr.org/2022/01/06/1071095317/nurses-and-the-never-ending-shifts",
+      "story_id": "1071095317",
+      "audio_id": "1071124887",
+      "player_url": "https://www.npr.org/player/embed/1071095317/1071124887",
+      "description": "In hospitals, it's standard for nurses to work a 12-hour shift. But research shows that may not be such a good idea for patients — or nurses."
+    },
+    {
+      "title": "J&J tries the 'Texas Two-Step'",
+      "date": "2022-01-05T18:24:31-05:00",
+      "npr_url": "https://www.npr.org/2022/01/05/1070765481/j-j-tries-the-texas-two-step",
+      "story_id": "1070765481",
+      "audio_id": "1070768500",
+      "player_url": "https://www.npr.org/player/embed/1070765481/1070768500",
+      "description": "For years, Johnson & Johnson has been entangled in lawsuits regarding its talcum based products being linked to causing ovarian cancer. And to save itself from future lawsuits, the company is betting big on a tricky legal move named after a famous dance."
+    },
+    {
+      "title": "Full (ware)house",
+      "date": "2022-01-04T17:01:29-05:00",
+      "npr_url": "https://www.npr.org/2022/01/04/1070342216/full-ware-house",
+      "story_id": "1070342216",
+      "audio_id": "1070343326",
+      "player_url": "https://www.npr.org/player/embed/1070342216/1070343326",
+      "description": "Although there are more warehouses in the U.S. than ever before, these warehouses are running out of space. Today on the show, we go behind the scenes into the warehousing world to understand why warehouses are running out of space."
+    },
+    {
+      "title": "How to keep your New Year's resolutions",
+      "date": "2022-01-03T17:00:19-05:00",
+      "npr_url": "https://www.npr.org/2022/01/03/1069988390/how-to-keep-your-new-years-resolutions",
+      "story_id": "1069988390",
+      "audio_id": "1069995256",
+      "player_url": "https://www.npr.org/player/embed/1069988390/1069995256",
+      "description": "2022 is finally here, and many people are excited for their fresh starts. But, it's no secret that following through with New Year's resolutions can be challenging. Today on the show, behavioral economist Katy Milkman shares her tips on how you can follow through."
+    },
+    {
+      "title": "How do you measure inflation? (Indicator favorite)",
+      "date": "2021-12-30T17:11:40-05:00",
+      "npr_url": "https://www.npr.org/2021/12/29/1068853249/how-do-you-measure-inflation-indicator-favorite",
+      "story_id": "1068853249",
+      "audio_id": "1069326762",
+      "player_url": "https://www.npr.org/player/embed/1068853249/1069326762",
+      "description": "It's Encore Week at The Indicator! We're sharing some of our favorite episodes of 2021.Today, we hear one of Stacey's favorite episodes from this year. It's a deep dive into how the Bureau of Labor Statistics calculates a key economic indicator, the Consumer Price Index (CPI), the most widely used measure of inflation.This episode originally came out in July."
+    },
+    {
+      "title": "The COVID small business boom (Indicator favorite)",
+      "date": "2021-12-29T17:08:00-05:00",
+      "npr_url": "https://www.npr.org/2021/12/29/1068899497/the-covid-small-business-boom-indicator-favorite",
+      "story_id": "1068899497",
+      "audio_id": "1068910039",
+      "player_url": "https://www.npr.org/player/embed/1068899497/1068910039",
+      "description": "It's Encore Week at The Indicator! We're sharing some of our favorite episodes of 2021.Today, we hear about people who became small business owners after losing their jobs due to the pandemic. AKA the hotdog guy episode!This episode originally came out in July."
+    },
+    {
+      "title": "Saving birds with economics (Indicator favorite)",
+      "date": "2021-12-28T17:07:12-05:00",
+      "npr_url": "https://www.npr.org/2021/12/23/1067473682/saving-birds-with-economics-indicator-favorite",
+      "story_id": "1067473682",
+      "audio_id": "1068610100",
+      "player_url": "https://www.npr.org/player/embed/1067473682/1068610100",
+      "description": "It's Encore Week at The Indicator! We're sharing some of our favorite episodes from 2021. Today, we hear Darian's favorite episode to work on this year. It's a story about one economist's idea to conserve wetland habitats and save birds from losing their homes. This episode originally came out in July."
+    },
+    {
+      "title": "The time the US paid off all its debt (Indicator favorite)",
+      "date": "2021-12-27T17:04:40-05:00",
+      "npr_url": "https://www.npr.org/2021/12/23/1067429082/the-time-the-us-paid-off-all-its-debt-indigator-favorite",
+      "story_id": "1067429082",
+      "audio_id": "1068357046",
+      "player_url": "https://www.npr.org/player/embed/1067429082/1068357046",
+      "description": "Hey Indigators! It's Encore Week at The Indicator. We're sharing some of our favorite episodes of the year.Today, we're kicking things off with a listener favorite about the time President Andrew Jackson paid off all of America's interest-bearing debt...with disastrous results.This episode originally came out in August."
+    },
+    {
+      "title": "One indicator to rule them all",
+      "date": "2021-12-23T15:50:00-05:00",
+      "npr_url": "https://www.npr.org/2021/12/23/1067405584/one-indicator-to-rule-them-all",
+      "story_id": "1067405584",
+      "audio_id": "1067544371",
+      "player_url": "https://www.npr.org/player/embed/1067405584/1067544371",
+      "description": "Indicator family feud is back, and the stakes are higher than ever! Stacey is joined by our friends from Planet Money as everyone makes their case for the indicator of the year. Who will win?"
+    },
+    {
+      "title": "The Beigie Awards: Great (inflation) expectations",
+      "date": "2021-12-22T18:49:55-05:00",
+      "npr_url": "https://www.npr.org/2021/12/22/1067080779/the-beigie-awards-great-inflation-expectations",
+      "story_id": "1067080779",
+      "audio_id": "1067112903",
+      "player_url": "https://www.npr.org/player/embed/1067080779/1067112903",
+      "description": "It's time to award our last Beigie of the year! And we find out that reading the Beige Book from back to front makes all the difference in the world."
+    },
+    {
+      "title": "The semiconductor founding father",
+      "date": "2021-12-21T19:00:00-05:00",
+      "npr_url": "https://www.npr.org/2021/12/21/1066548023/the-semiconductor-founding-father",
+      "story_id": "1066548023",
+      "audio_id": "1066573884",
+      "player_url": "https://www.npr.org/player/embed/1066548023/1066573884",
+      "description": "One Taiwanese company, TSMC, makes 90% of the most advanced semiconductors — the chips for your phone or car. From Hong Kong to Boston to Texas to Taipei: This is TSMC founder Morris Chang's story."
+    },
+    {
+      "title": "Cells for sale",
+      "date": "2021-12-20T18:09:36-05:00",
+      "npr_url": "https://www.npr.org/2021/12/20/1066079798/cells-for-sale",
+      "story_id": "1066079798",
+      "audio_id": "1066082387",
+      "player_url": "https://www.npr.org/player/embed/1066079798/1066082387",
+      "description": "You can buy almost anything online, including ... human cells. Culturing and selling cells is a multibillion dollar global industry that supports all sorts of scientific research. But where do those cells come from?"
+    },
+    {
+      "title": "Powell pivots, COVID spikes",
+      "date": "2021-12-17T19:34:00-05:00",
+      "npr_url": "https://www.npr.org/2021/12/17/1065399811/powell-pivots-covid-spikes",
+      "story_id": "1065399811",
+      "audio_id": "1065406363",
+      "player_url": "https://www.npr.org/player/embed/1065399811/1065406363",
+      "description": "Concern about inflation has the Federal Reserve pivoting from its earlier plans. Meanwhile, a spike in COVID cases disrupts Broadway, ball games, and businesses."
+    },
+    {
+      "title": "Why economists hate gifts (Encore)",
+      "date": "2021-12-16T17:20:11-05:00",
+      "npr_url": "https://www.npr.org/2021/12/16/1064865987/why-economists-hate-gifts-encore",
+      "story_id": "1064865987",
+      "audio_id": "1064984718",
+      "player_url": "https://www.npr.org/player/embed/1064865987/1064984718",
+      "description": "When economists see holiday gifts, they see waste: sweaters that never get worn; books that never get read. Many recommend cash or no gift at all. Economist Tim Harford proposes a different solution in this encore episode from 2019."
+    },
+    {
+      "title": "The growing discontent within the National Guard",
+      "date": "2021-12-15T19:15:50-05:00",
+      "npr_url": "https://www.npr.org/2021/12/15/1064679135/the-growing-discontent-within-the-national-guard",
+      "story_id": "1064679135",
+      "audio_id": "1064690728",
+      "player_url": "https://www.npr.org/player/embed/1064679135/1064690728",
+      "description": "The recruiting message for the National Guard, \"one weekend a month, two weeks a year,\" is well known. But the job has changed. Today on the show, we discuss the growing discontent among Guard members and why some want to unionize."
+    },
+    {
+      "title": "How much did fried chicken cost in 1915?",
+      "date": "2021-12-14T19:06:00-05:00",
+      "npr_url": "https://www.npr.org/2021/12/14/1064318235/how-much-did-fried-chicken-cost-in-1915",
+      "story_id": "1064318235",
+      "audio_id": "1064322790",
+      "player_url": "https://www.npr.org/player/embed/1064318235/1064322790",
+      "description": "With inflation on the rise, some of our favorite menu items have gotten a little more expensive. So we wanted to know if eating out is now cheaper or more expensive than in the past, adjusted for inflation. We look at a New York City restaurant menu from 1915 and compare it to today's."
+    },
+    {
+      "title": "The toymakers' (supply chain) nightmare before Christmas...",
+      "date": "2021-12-13T18:33:00-05:00",
+      "npr_url": "https://www.npr.org/2021/12/13/1063901970/the-toymakers-supply-chain-nightmare-before-christmas",
+      "story_id": "1063901970",
+      "audio_id": "1063905843",
+      "player_url": "https://www.npr.org/player/embed/1063901970/1063905843",
+      "description": "Supply chain delays are always challenging. But during the holidays, slow shipping can make or break a company's bottom line. Today on the show, a toy company that makes Tonka trucks musters a shipment tracking war room."
+    },
+    {
+      "title": "Two music indicators",
+      "date": "2021-12-10T20:06:27-05:00",
+      "npr_url": "https://www.npr.org/2021/12/09/1062790386/two-music-indicators",
+      "story_id": "1062790386",
+      "audio_id": "1198960377",
+      "player_url": "https://www.npr.org/player/embed/1062790386/1198960377",
+      "description": "Ticket scalping frustrates fans, but it fascinates economists. It's been a favorite topic of ours in the past. This time, Darian turns to friends and experts to navigate the world of concert tickets like an economist who is also a music fan. Then we find out just how big Adele is on vinyl. So big her latest album disrupted the whole market for vinyl, the material itself. | These stories come from our daily podcast The Indicator. Go subscribe if you haven't already."
+    },
+    {
+      "title": "Inflation indicators: The dollar store, the dollar slice and SPAM",
+      "date": "2021-12-10T18:57:09-05:00",
+      "npr_url": "https://www.npr.org/2021/12/10/1063190321/inflation-indicators-the-dollar-store-the-dollar-slice-and-spam",
+      "story_id": "1063190321",
+      "audio_id": "1063254501",
+      "player_url": "https://www.npr.org/player/embed/1063190321/1063254501",
+      "description": "Inflation has officially reached a nearly 40-year high and some businesses have been forced to raise their prices. But it becomes a bit of a dilemma when being 'cheap' is your brand. Today on the show, how are businesses with price-centric brands dealing with inflation?"
+    },
+    {
+      "title": "Baseball's major league monopolies",
+      "date": "2021-12-09T18:52:26-05:00",
+      "npr_url": "https://www.npr.org/2021/12/09/1062857150/baseballs-major-league-monopolies",
+      "story_id": "1062857150",
+      "audio_id": "1062866548",
+      "player_url": "https://www.npr.org/player/embed/1062857150/1062866548",
+      "description": "Since last week, the MLB has been in a lockout due to ongoing labor negotiations between players and owners. Today on the show, how a 100-year-old court case gave the MLB an 'antitrust exemption' and how that set the stage for the labor unrest we see today."
+    },
+    {
+      "title": "Becky the junk bond: Where is she now?",
+      "date": "2021-12-08T18:52:12-05:00",
+      "npr_url": "https://www.npr.org/2021/12/08/1062536574/becky-the-junk-bond-where-is-she-now",
+      "story_id": "1062536574",
+      "audio_id": "1062544260",
+      "player_url": "https://www.npr.org/player/embed/1062536574/1062544260",
+      "description": "In 2019, we bought a junk bond and named her Becky. Two years later, Becky has been on a journey that's included Chapter 11 bankruptcy and reorganization. On today's show, Becky's journey finally comes to an end as we see how much we made on our investment."
+    },
+    {
+      "title": "The U.K.'s most famous family firm in crisis",
+      "date": "2021-12-07T18:29:17-05:00",
+      "npr_url": "https://www.npr.org/2021/12/07/1062223310/the-u-k-s-most-famous-family-firm-in-crisis",
+      "story_id": "1062223310",
+      "audio_id": "1062236427",
+      "player_url": "https://www.npr.org/player/embed/1062223310/1062236427",
+      "description": "The last couple of years have been rough for most of us, the British royal family included. Due to a pair of scandals and Queen Elizabeth's recent poor health, the future of the royal family feels less certain than it has in years. Today on the show, the finance that drives \"The Firm\" and can it survive without its CEO?"
+    },
+    {
+      "title": "The conglomerate paradox",
+      "date": "2021-12-06T17:24:00-05:00",
+      "npr_url": "https://www.npr.org/2021/12/06/1061912358/the-conglomerate-paradox",
+      "story_id": "1061912358",
+      "audio_id": "1061925536",
+      "player_url": "https://www.npr.org/player/embed/1061912358/1061925536",
+      "description": "General Electric and Johnson & Johnson are the most recent conglomerates to have a messy breakup. However, Techglomerates like Amazon and Facebook are doing just fine. Today on the show, will today's tech conglomerates eventually suffer the same fate as their predecessors?"
+    },
+    {
+      "title": "Jobs Friday: The case for better wages",
+      "date": "2021-12-03T18:31:32-05:00",
+      "npr_url": "https://www.npr.org/2021/12/03/1061381280/jobs-friday-the-case-for-better-wages",
+      "story_id": "1061381280",
+      "audio_id": "1061399053",
+      "player_url": "https://www.npr.org/player/embed/1061381280/1061399053",
+      "description": "Today's jobs report found that workers received a small raise last month. And, yes, higher pay is great for attracting workers and boosting morale, but sometimes it can even pay for itself."
+    },
+    {
+      "title": "2021: A year in indicators",
+      "date": "2021-12-02T18:42:00-05:00",
+      "npr_url": "https://www.npr.org/2021/12/02/1061078103/2021-a-year-in-indicators",
+      "story_id": "1061078103",
+      "audio_id": "1061086022",
+      "player_url": "https://www.npr.org/player/embed/1061078103/1061086022",
+      "description": "After a tumultuous 2020, we welcomed the new year by picking three indicators to watch for economic recovery. As 2021 wraps up, we revisit those indicators to see how they've fared. Our old friend Cardiff Garcia returns for this walk down indicator memory lane."
+    },
+    {
+      "title": "Falling down the \"junk insurance\" rabbit hole",
+      "date": "2021-12-01T18:32:29-05:00",
+      "npr_url": "https://www.npr.org/2021/12/01/1060639201/falling-down-the-junk-insurance-rabbit-hole",
+      "story_id": "1060639201",
+      "audio_id": "1060673352",
+      "player_url": "https://www.npr.org/player/embed/1060639201/1060673352",
+      "description": "If you Google \"Obamacare signup,\" good luck finding healthcare.gov. It'll be buried under several ads trying to lure you to something less healthy. Today's show looks at a classic bait and switch."
+    },
+    {
+      "title": "Women, career and family: A conversation with Claudia Goldin",
+      "date": "2021-11-30T17:50:00-05:00",
+      "npr_url": "https://www.npr.org/2021/11/30/1060229250/women-career-and-family-a-conversation-with-claudia-goldin",
+      "story_id": "1060229250",
+      "audio_id": "1060230974",
+      "player_url": "https://www.npr.org/player/embed/1060229250/1060230974",
+      "description": "Caregiving responsibilities for women have drastically increased since the start of the pandemic. And with new demands at home and at work, many women have struggled to find a balance between work and family. On today's show, economist Claudia Goldin joins us to talk about that and other issues in her new book, \"Career and Family: Women's Century Long Journey Towards Equity.\""
+    },
+    {
+      "title": "The rise and fall (and rise?) of organized labor",
+      "date": "2021-11-29T17:59:29-05:00",
+      "npr_url": "https://www.npr.org/2021/11/29/1059910517/the-rise-and-fall-and-rise-of-organized-labor",
+      "story_id": "1059910517",
+      "audio_id": "1059911549",
+      "player_url": "https://www.npr.org/player/embed/1059910517/1059911549",
+      "description": "In the wake of the \"great resignation\", organized labor may be having a moment in the U.S. Tens of thousands of workers have protested working conditions at companies like John Deere and Kellogg's and, in recent months, workers across the country have chosen or threatened strike action. Today on the show, author Erik Loomis shares how the history of America's unions explains today's labor movement."
+    },
+    {
+      "title": "Indicators-giving! How much does Thanksgiving cost this year?",
+      "date": "2021-11-24T18:20:47-05:00",
+      "npr_url": "https://www.npr.org/2021/11/24/1059074418/indicators-giving-how-much-does-thanksgiving-cost-this-year",
+      "story_id": "1059074418",
+      "audio_id": "1059116161",
+      "player_url": "https://www.npr.org/player/embed/1059074418/1059116161",
+      "description": "How much will Thanksgiving dinner cost compared to last year? Today on the show, the Indicator team gathers around the virtual Thanksgiving table to let you know how much prices have changed for each holiday favorite."
+    },
+    {
+      "title": "Ticket scalpers: The real ticket masters",
+      "date": "2021-11-23T18:29:36-05:00",
+      "npr_url": "https://www.npr.org/2021/11/23/1058704237/ticket-scalpers-the-real-ticket-masters",
+      "story_id": "1058704237",
+      "audio_id": "1058713142",
+      "player_url": "https://www.npr.org/player/embed/1058704237/1058713142",
+      "description": "Ticket scalpers. They're the bane of every fan's existence because they manage to snag concert tickets before fans can even get their webpages to load. An economist would tell you the story is more complicated than that."
+    },
+    {
+      "title": "Jeromonomics 2.0",
+      "date": "2021-11-22T18:33:12-05:00",
+      "npr_url": "https://www.npr.org/2021/11/22/1058161193/jeromonomics-2-0",
+      "story_id": "1058161193",
+      "audio_id": "1058174190",
+      "player_url": "https://www.npr.org/player/embed/1058161193/1058174190",
+      "description": "Today President Biden reappointed Jerome Powell as chair of the Federal Reserve. So we revisit a recent episode about Jay Powell's first term and his approach to steering the economy — Jeromonomics."
+    },
+    {
+      "title": "An exuberant bid for the Constitution",
+      "date": "2021-11-19T18:54:00-05:00",
+      "npr_url": "https://www.npr.org/2021/11/19/1057461646/an-exuberant-bid-for-the-constitution",
+      "story_id": "1057461646",
+      "audio_id": "1057518999",
+      "player_url": "https://www.npr.org/player/embed/1057461646/1057518999",
+      "description": "It's that time again! A crypto group fails to buy an original copy of the U.S. Constitution, Crypto.com succeeds in renaming LA's Staples Center, and warnings the economy might be too exuberant."
     }
   ]
 }
