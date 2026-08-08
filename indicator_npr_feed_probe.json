@@ -1,0 +1,65 @@
+{
+  "method": "official-npr-indicator-feed-probe",
+  "show_id": "510325",
+  "targets": [
+    {
+      "title": "Paranormal Profits",
+      "date": "2018-10-31",
+      "story_id": "662708285",
+      "player_story_id": "662706955",
+      "audio_id": "662707862"
+    },
+    {
+      "title": "The Traffic Tariff",
+      "date": "2019-04-22",
+      "story_id": "716132270",
+      "player_story_id": "716127469",
+      "audio_id": "730102905"
+    }
+  ],
+  "feeds": [
+    {
+      "name": "official_npr_indicator_feed",
+      "requested_url": "https://feeds.npr.org/510325/podcast.xml",
+      "status": "fetched",
+      "item_count": 300,
+      "target_results": [
+        {
+          "target": {
+            "title": "Paranormal Profits",
+            "date": "2018-10-31",
+            "story_id": "662708285",
+            "player_story_id": "662706955",
+            "audio_id": "662707862"
+          },
+          "matching_item_count": 0,
+          "matches": [],
+          "raw_xml_id_hits": {
+            "story_id": false,
+            "player_story_id": false,
+            "audio_id": false
+          }
+        },
+        {
+          "target": {
+            "title": "The Traffic Tariff",
+            "date": "2019-04-22",
+            "story_id": "716132270",
+            "player_story_id": "716127469",
+            "audio_id": "730102905"
+          },
+          "matching_item_count": 0,
+          "matches": [],
+          "raw_xml_id_hits": {
+            "story_id": false,
+            "player_story_id": false,
+            "audio_id": false
+          }
+        }
+      ],
+      "final_url": "https://feeds.npr.org/510325/podcast.xml",
+      "status_code": 200,
+      "content_type": "application/xml; charset=utf-8"
+    }
+  ]
+}
