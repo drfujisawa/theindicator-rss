@@ -19,13 +19,13 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Recover missing Indicator episodes
+      - name: Test WNYC to NPR recovery
         run: python recover_missing_episodes.py
 
-      - name: Save recovered episodes
+      - name: Save recovery test
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add indicator_recovered_episodes.json
-          git diff --cached --quiet || git commit -m "Recover early Indicator episodes"
+          git add indicator_recovery_test.json
+          git diff --cached --quiet || git commit -m "Test WNYC to NPR recovery"
           git push
