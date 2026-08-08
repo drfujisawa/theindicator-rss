@@ -4,75 +4,51 @@ import html
 import json
 import re
 import time
-from urllib.error import HTTPError, URLError
-from urllib.parse import urlparse
 from urllib.request import Request, urlopen
-
+from urllib.parse import urljoin
 
 AUDIT_FILE = "indicator_early_audit.json"
-OUTPUT_FILE = "indicator_recovered_episodes.json"
+OUTPUT_FILE = "indicator_recovery_test.json"
 
-TIMEOUT = 20
-REQUEST_DELAY = 0.15
+TEST_LIMIT = 10
+TIMEOUT = 30
 
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 "
-        "(compatible; IndicatorArchiveRecovery/4.0)"
+        "(compatible; IndicatorArchiveRecovery/5.0)"
     )
 }
 
-AFFILIATES = [
-    "https://news.wypr.org",
-    "https://www.wfae.org",
-    "https://www.apr.org",
-    "https://www.delmarvapublicmedia.org",
-    "https://www.kclu.org",
+# Cardiff's WNYC archive has paginated historical Indicator entries.
+WNYC_PAGES = [
+    f"https://www.wnyc.org/people/cardiff-garcia/{page}/"
+    for page in range(1, 25)
 ]
-
-SECTION_PREFIXES = [
-    "",
-    "business",
-    "business-education",
-    "business-economy",
-    "economy",
-    "npr-news",
-]
-
-
-def slugify(title):
-    value = html.unescape(title).lower()
-    value = value.replace("&", " and ")
-    value = re.sub(r"\([^)]*\)", "", value)
-    value = re.sub(r"[^a-z0-9]+", "-", value)
-    return value.strip("-")
 
 
 def fetch(url):
-    request = Request(url, headers=HEADERS)
+    req = Request(url, headers=HEADERS)
 
-    with urlopen(request, timeout=TIMEOUT) as response:
-        return (
-            response.geturl(),
-            response.headers.get("Content-Type", ""),
-            response.read().decode("utf-8", errors="replace"),
+    with urlopen(req, timeout=TIMEOUT) as response:
+        return response.read().decode(
+            "utf-8",
+            errors="replace"
         )
 
 
 def clean(value):
     if not value:
-        return None
+        return ""
 
     value = html.unescape(value)
     value = re.sub(r"<[^>]+>", " ", value)
     value = re.sub(r"\s+", " ", value)
+
     return value.strip()
 
 
 def normalize(value):
-    if not value:
-        return ""
-
     value = clean(value).lower()
     value = value.replace("&", " and ")
     value = re.sub(r"\([^)]*\)", "", value)
@@ -81,233 +57,288 @@ def normalize(value):
     return " ".join(value.split())
 
 
-def title_score(reference, candidate):
-    ref_words = set(normalize(reference).split())
-    candidate_words = set(normalize(candidate).split())
+def title_score(a, b):
+    a_words = set(normalize(a).split())
+    b_words = set(normalize(b).split())
 
-    if not ref_words or not candidate_words:
+    if not a_words or not b_words:
         return 0.0
 
     return (
-        len(ref_words & candidate_words)
-        / len(ref_words | candidate_words)
+        len(a_words & b_words)
+        / len(a_words | b_words)
     )
 
 
-def extract_meta(page):
-    title = None
-    description = None
+def build_wnyc_index():
+    """
+    Crawl Cardiff Garcia's WNYC archive and locate
+    NPR links associated with historical Indicator entries.
+    """
 
-    title_patterns = [
-        (
-            r'<meta[^>]+property=["\']og:title["\']'
-            r'[^>]+content=["\']([^"\']+)'
-        ),
-        (
-            r'<meta[^>]+content=["\']([^"\']+)["\']'
-            r'[^>]+property=["\']og:title["\']'
-        ),
-        r"<title>(.*?)</title>",
-    ]
+    records = []
 
-    for pattern in title_patterns:
-        match = re.search(pattern, page, re.I | re.S)
-        if match:
-            title = clean(match.group(1))
-            break
+    for page_url in WNYC_PAGES:
+        print("Reading WNYC:", page_url)
 
-    description_patterns = [
-        (
-            r'<meta[^>]+name=["\']description["\']'
-            r'[^>]+content=["\']([^"\']*)'
-        ),
-        (
-            r'<meta[^>]+property=["\']og:description["\']'
-            r'[^>]+content=["\']([^"\']*)'
-        ),
-    ]
+        try:
+            page = fetch(page_url)
+        except Exception as exc:
+            print("  Failed:", exc)
+            continue
 
-    for pattern in description_patterns:
-        match = re.search(pattern, page, re.I | re.S)
-        if match:
-            description = clean(match.group(1))
-            break
+        # Capture blocks around NPR links.
+        npr_links = re.findall(
+            r'href=["\']'
+            r'(https?://www\.npr\.org/[^"\']+)'
+            r'["\']',
+            page,
+            re.I
+        )
 
-    return title, description
+        for npr_url in npr_links:
+            npr_url = html.unescape(npr_url)
+
+            # Locate surrounding HTML so we can recover
+            # the WNYC title/date associated with this link.
+            position = page.find(npr_url)
+
+            start = max(0, position - 2500)
+            end = min(len(page), position + 1000)
+
+            block = page[start:end]
+
+            headings = re.findall(
+                r"<h[1-4][^>]*>(.*?)</h[1-4]>",
+                block,
+                re.I | re.S
+            )
+
+            title = None
+
+            if headings:
+                # The last heading before the NPR link is
+                # usually the story title.
+                title = clean(headings[-1])
+
+            date_match = re.search(
+                r"(January|February|March|April|May|June|"
+                r"July|August|September|October|November|December)"
+                r"\s+\d{1,2},\s+201[89]",
+                clean(block),
+                re.I
+            )
+
+            date = (
+                date_match.group(0)
+                if date_match
+                else None
+            )
+
+            if title:
+                records.append({
+                    "title": title,
+                    "date": date,
+                    "npr_url": npr_url,
+                })
+
+        time.sleep(0.3)
+
+    return records
 
 
-def extract_media(page):
-    audio_urls = []
-    possible_ids = []
-
+def extract_player(npr_page):
     patterns = [
-        r'https?://[^"\'>\s\\]+\.mp3(?:\?[^"\'>\s\\]*)?',
-        r'https?://ondemand\.npr\.org/[^"\'>\s\\]+',
-        r'https?://play\.podtrac\.com/[^"\'>\s\\]+',
-        r'https?://media\.npr\.org/[^"\'>\s\\]+',
-        r'https?://[^"\'>\s\\]*triton[^"\'>\s\\]+',
+        (
+            r"/player/embed/"
+            r"([^/\"'<>\s]+)/"
+            r"([^/?\"'<>\s]+)"
+        ),
+        (
+            r"www\.npr\.org/player/embed/"
+            r"([^/\"'<>\s]+)/"
+            r"([^/?\"'<>\s]+)"
+        ),
     ]
 
     for pattern in patterns:
-        for match in re.findall(pattern, page, re.I):
-            value = html.unescape(match)
-            value = value.replace("\\/", "/")
-            value = value.replace("\\u0026", "&")
+        match = re.search(
+            pattern,
+            npr_page
+        )
 
-            if value not in audio_urls:
-                audio_urls.append(value)
+        if match:
+            return {
+                "story_id": match.group(1),
+                "audio_id": match.group(2),
+            }
 
-    id_patterns = [
-        r'"storyId"\s*:\s*"?(\d{6,})"?',
-        r'"story_id"\s*:\s*"?(\d{6,})"?',
-        r'"audioId"\s*:\s*"?(\d{6,})"?',
-        r'"audio_id"\s*:\s*"?(\d{6,})"?',
-        r'"contentId"\s*:\s*"?(\d{6,})"?',
-        r'"content_id"\s*:\s*"?(\d{6,})"?',
-    ]
-
-    for pattern in id_patterns:
-        for value in re.findall(pattern, page, re.I):
-            if value not in possible_ids:
-                possible_ids.append(value)
-
-    return audio_urls, possible_ids
+    return None
 
 
-def make_candidate_urls(date, title):
-    slug = slugify(title)
-    urls = []
-
-    for domain in AFFILIATES:
-        for prefix in SECTION_PREFIXES:
-            if prefix:
-                url = f"{domain}/{prefix}/{date}/{slug}"
-            else:
-                url = f"{domain}/{date}/{slug}"
-
-            if url not in urls:
-                urls.append(url)
-
-    return urls
-
-
-def recover_episode(reference):
-    title = reference["title"]
-    date = reference["date"]
-
-    urls = make_candidate_urls(date, title)
-
-    failure_counts = {
-        "http_404": 0,
-        "other_http": 0,
-        "request_error": 0,
-        "page_mismatch": 0,
-        "no_audio": 0,
-    }
-
-    for url in urls:
-        try:
-            final_url, content_type, page = fetch(url)
-
-        except HTTPError as exc:
-            if exc.code == 404:
-                failure_counts["http_404"] += 1
-            else:
-                failure_counts["other_http"] += 1
-
-            continue
-
-        except (URLError, TimeoutError):
-            failure_counts["request_error"] += 1
-            continue
-
-        except Exception:
-            failure_counts["request_error"] += 1
-            continue
-
-        page_title, description = extract_meta(page)
-        score = title_score(title, page_title)
-
-        if score < 0.65:
-            failure_counts["page_mismatch"] += 1
-            continue
-
-        audio_urls, possible_ids = extract_media(page)
-
-        if not audio_urls:
-            failure_counts["no_audio"] += 1
-            continue
-
-        return {
-            "status": "recovered",
-            "reference_date": date,
-            "reference_title": title,
-            "reference_year": reference.get("reference_year"),
-            "reference_episode": reference.get("reference_episode"),
-            "source_url": final_url,
-            "source_domain": urlparse(final_url).netloc,
-            "source_title": page_title,
-            "title_score": round(score, 3),
-            "description": description,
-            "audio_url": audio_urls[0],
-            "all_audio_urls": audio_urls[:10],
-            "possible_ids": possible_ids[:10],
-        }
-
-        time.sleep(REQUEST_DELAY)
-
-    return {
-        "status": "not_recovered",
-        "reference_date": date,
-        "reference_title": title,
-        "reference_year": reference.get("reference_year"),
-        "reference_episode": reference.get("reference_episode"),
-        "failure_summary": failure_counts,
-    }
-
-
-with open(AUDIT_FILE, "r", encoding="utf-8") as file:
+with open(
+    AUDIT_FILE,
+    "r",
+    encoding="utf-8"
+) as file:
     audit = json.load(file)
 
-missing = audit.get("possible_missing", [])
 
-recovered = []
-failed = []
+missing = audit.get(
+    "possible_missing",
+    []
+)[:TEST_LIMIT]
 
-for number, episode in enumerate(missing, start=1):
-    print(
-        f"[{number}/{len(missing)}] "
-        f"{episode['date']} — {episode['title']}"
+
+print("Building WNYC historical index...")
+
+wnyc_records = build_wnyc_index()
+
+print(
+    f"WNYC records discovered: "
+    f"{len(wnyc_records)}"
+)
+
+
+results = []
+found = 0
+player_found = 0
+
+
+for reference in missing:
+
+    ref_title = reference["title"]
+
+    candidates = []
+
+    for record in wnyc_records:
+        score = title_score(
+            ref_title,
+            record["title"]
+        )
+
+        if score >= 0.65:
+            candidates.append(
+                (
+                    score,
+                    record
+                )
+            )
+
+    candidates.sort(
+        key=lambda item: item[0],
+        reverse=True
     )
 
-    result = recover_episode(episode)
+    result = {
+        "reference_date":
+            reference["date"],
 
-    if result["status"] == "recovered":
-        recovered.append(result)
+        "reference_title":
+            ref_title,
+
+        "status":
+            "not_found",
+    }
+
+    if candidates:
+
+        score, best = candidates[0]
+
+        result.update({
+            "status":
+                "npr_url_found",
+
+            "wnyc_title":
+                best["title"],
+
+            "wnyc_date":
+                best["date"],
+
+            "title_score":
+                round(score, 3),
+
+            "npr_url":
+                best["npr_url"],
+        })
+
+        found += 1
+
+        print()
+        print(
+            "FOUND NPR URL:",
+            ref_title
+        )
 
         print(
-            "  RECOVERED:",
-            result["source_domain"],
-            result["audio_url"]
+            best["npr_url"]
         )
-    else:
-        failed.append(result)
-        print("  Not recovered.")
 
-    time.sleep(0.5)
+        try:
+
+            npr_page = fetch(
+                best["npr_url"]
+            )
+
+            player = extract_player(
+                npr_page
+            )
+
+            if player:
+
+                result.update(
+                    player
+                )
+
+                result[
+                    "status"
+                ] = "player_found"
+
+                player_found += 1
+
+                print(
+                    "Player:",
+                    player
+                )
+
+        except Exception as exc:
+
+            result[
+                "npr_fetch_error"
+            ] = str(exc)
+
+    results.append(
+        result
+    )
 
 
 report = {
-    "method": "direct-affiliate-recovery",
-    "reference_missing_count": len(missing),
-    "recovered_count": len(recovered),
-    "failed_count": len(failed),
-    "recovered": recovered,
-    "failed": failed,
+    "method":
+        "wnyc-to-original-npr",
+
+    "attempted_count":
+        len(missing),
+
+    "wnyc_index_count":
+        len(wnyc_records),
+
+    "npr_url_found_count":
+        found,
+
+    "player_found_count":
+        player_found,
+
+    "results":
+        results,
 }
 
 
-with open(OUTPUT_FILE, "w", encoding="utf-8") as file:
+with open(
+    OUTPUT_FILE,
+    "w",
+    encoding="utf-8"
+) as file:
+
     json.dump(
         report,
         file,
@@ -317,10 +348,10 @@ with open(OUTPUT_FILE, "w", encoding="utf-8") as file:
 
 
 print()
-print("================================")
-print("Full early-history recovery complete")
-print("Missing reference entries:", len(missing))
-print("Recovered:", len(recovered))
-print("Failed:", len(failed))
+print("============================")
+print("WNYC → NPR recovery test")
+print("Attempted:", len(missing))
+print("NPR URLs found:", found)
+print("NPR players found:", player_found)
 print("Saved:", OUTPUT_FILE)
-print("================================")
+print("============================")
