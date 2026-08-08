@@ -1,649 +1,79 @@
 {
   "proof_of_concept": true,
-  "test_limit": 10,
+  "method": "affiliate-search",
   "attempted_count": 10,
-  "found_count": 0,
-  "not_found_count": 10,
+  "candidate_page_count": 0,
+  "audio_found_count": 0,
   "results": [
     {
       "reference_date": "2018-03-12",
       "reference_title": "Hurricane Joseph & The Calculator That Time Forgot",
       "reference_year": 2018,
       "reference_episode": 1,
-      "best_candidate": {
-        "npr_url": "https://www.npr.org/series/tiny-desk-concerts/",
-        "npr_title": "Tiny Desk",
-        "title_score": 0.0
-      },
-      "candidates_checked": [
-        {
-          "npr_url": "https://www.npr.org/series/tiny-desk-concerts/",
-          "npr_title": "Tiny Desk",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/allsongs/606254804/new-music-friday",
-          "npr_title": "New Music Friday",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/allsongs/",
-          "npr_title": "All Songs Considered",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/music-features",
-          "npr_title": "Music Features",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/series/770565791/npr-music-live-sessions",
-          "npr_title": "Live Sessions",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/programs/wait-wait-dont-tell-me/",
-          "npr_title": "Wait Wait...Don",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/programs/fresh-air/",
-          "npr_title": "Fresh Air",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510379/wild-card-with-rachel-martin",
-          "npr_title": "Wild Card with Rachel Martin",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510317/its-been-a-minute",
-          "npr_title": "It&#039;s Been a Minute",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510311/embedded",
-          "npr_title": "Embedded",
-          "title_score": 0.0
-        }
-      ],
-      "status": "not_found"
+      "search_results": []
     },
     {
       "reference_date": "2018-03-13",
       "reference_title": "Bonds... Japanese Bonds",
       "reference_year": 2018,
       "reference_episode": 2,
-      "best_candidate": {
-        "npr_url": "https://www.npr.org/series/tiny-desk-concerts/",
-        "npr_title": "Tiny Desk",
-        "title_score": 0.0
-      },
-      "candidates_checked": [
-        {
-          "npr_url": "https://www.npr.org/series/tiny-desk-concerts/",
-          "npr_title": "Tiny Desk",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/allsongs/606254804/new-music-friday",
-          "npr_title": "New Music Friday",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/allsongs/",
-          "npr_title": "All Songs Considered",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/music-features",
-          "npr_title": "Music Features",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/series/770565791/npr-music-live-sessions",
-          "npr_title": "Live Sessions",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/programs/wait-wait-dont-tell-me/",
-          "npr_title": "Wait Wait...Don",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/programs/fresh-air/",
-          "npr_title": "Fresh Air",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510379/wild-card-with-rachel-martin",
-          "npr_title": "Wild Card with Rachel Martin",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510317/its-been-a-minute",
-          "npr_title": "It&#039;s Been a Minute",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510311/embedded",
-          "npr_title": "Embedded",
-          "title_score": 0.0
-        }
-      ],
-      "status": "not_found"
+      "search_results": []
     },
     {
       "reference_date": "2018-03-14",
       "reference_title": "What Trade Organization?",
       "reference_year": 2018,
       "reference_episode": 3,
-      "best_candidate": {
-        "npr_url": "https://www.npr.org/series/tiny-desk-concerts/",
-        "npr_title": "Tiny Desk",
-        "title_score": 0.0
-      },
-      "candidates_checked": [
-        {
-          "npr_url": "https://www.npr.org/series/tiny-desk-concerts/",
-          "npr_title": "Tiny Desk",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/allsongs/606254804/new-music-friday",
-          "npr_title": "New Music Friday",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/allsongs/",
-          "npr_title": "All Songs Considered",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/music-features",
-          "npr_title": "Music Features",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/series/770565791/npr-music-live-sessions",
-          "npr_title": "Live Sessions",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/programs/wait-wait-dont-tell-me/",
-          "npr_title": "Wait Wait...Don",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/programs/fresh-air/",
-          "npr_title": "Fresh Air",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510379/wild-card-with-rachel-martin",
-          "npr_title": "Wild Card with Rachel Martin",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510317/its-been-a-minute",
-          "npr_title": "It&#039;s Been a Minute",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510311/embedded",
-          "npr_title": "Embedded",
-          "title_score": 0.0
-        }
-      ],
-      "status": "not_found"
+      "search_results": []
     },
     {
       "reference_date": "2018-03-15",
       "reference_title": "Calculated Risk, Calculated Caution",
       "reference_year": 2018,
       "reference_episode": 4,
-      "best_candidate": {
-        "npr_url": "https://www.npr.org/series/tiny-desk-concerts/",
-        "npr_title": "Tiny Desk",
-        "title_score": 0.0
-      },
-      "candidates_checked": [
-        {
-          "npr_url": "https://www.npr.org/series/tiny-desk-concerts/",
-          "npr_title": "Tiny Desk",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/allsongs/606254804/new-music-friday",
-          "npr_title": "New Music Friday",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/allsongs/",
-          "npr_title": "All Songs Considered",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/music-features",
-          "npr_title": "Music Features",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/series/770565791/npr-music-live-sessions",
-          "npr_title": "Live Sessions",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/programs/wait-wait-dont-tell-me/",
-          "npr_title": "Wait Wait...Don",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/programs/fresh-air/",
-          "npr_title": "Fresh Air",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510379/wild-card-with-rachel-martin",
-          "npr_title": "Wild Card with Rachel Martin",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510317/its-been-a-minute",
-          "npr_title": "It&#039;s Been a Minute",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510311/embedded",
-          "npr_title": "Embedded",
-          "title_score": 0.0
-        }
-      ],
-      "status": "not_found"
+      "search_results": []
     },
     {
       "reference_date": "2018-03-15",
       "reference_title": "Buying A College Degree: Did Aunt Becky Overpay?",
       "reference_year": 2019,
       "reference_episode": 51,
-      "best_candidate": {
-        "npr_url": "https://www.npr.org/podcasts/510317/its-been-a-minute",
-        "npr_title": "It&#039;s Been a Minute",
-        "title_score": 0.077
-      },
-      "candidates_checked": [
-        {
-          "npr_url": "https://www.npr.org/series/tiny-desk-concerts/",
-          "npr_title": "Tiny Desk",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/allsongs/606254804/new-music-friday",
-          "npr_title": "New Music Friday",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/allsongs/",
-          "npr_title": "All Songs Considered",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/music-features",
-          "npr_title": "Music Features",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/series/770565791/npr-music-live-sessions",
-          "npr_title": "Live Sessions",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/programs/wait-wait-dont-tell-me/",
-          "npr_title": "Wait Wait...Don",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/programs/fresh-air/",
-          "npr_title": "Fresh Air",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510379/wild-card-with-rachel-martin",
-          "npr_title": "Wild Card with Rachel Martin",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510317/its-been-a-minute",
-          "npr_title": "It&#039;s Been a Minute",
-          "title_score": 0.077
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510311/embedded",
-          "npr_title": "Embedded",
-          "title_score": 0.0
-        }
-      ],
-      "status": "not_found"
+      "search_results": []
     },
     {
       "reference_date": "2018-03-16",
       "reference_title": "The Bear Necessities",
       "reference_year": 2018,
       "reference_episode": 5,
-      "best_candidate": {
-        "npr_url": "https://www.npr.org/series/tiny-desk-concerts/",
-        "npr_title": "Tiny Desk",
-        "title_score": 0.0
-      },
-      "candidates_checked": [
-        {
-          "npr_url": "https://www.npr.org/series/tiny-desk-concerts/",
-          "npr_title": "Tiny Desk",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/allsongs/606254804/new-music-friday",
-          "npr_title": "New Music Friday",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/allsongs/",
-          "npr_title": "All Songs Considered",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/music-features",
-          "npr_title": "Music Features",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/series/770565791/npr-music-live-sessions",
-          "npr_title": "Live Sessions",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/programs/wait-wait-dont-tell-me/",
-          "npr_title": "Wait Wait...Don",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/programs/fresh-air/",
-          "npr_title": "Fresh Air",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510379/wild-card-with-rachel-martin",
-          "npr_title": "Wild Card with Rachel Martin",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510317/its-been-a-minute",
-          "npr_title": "It&#039;s Been a Minute",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510311/embedded",
-          "npr_title": "Embedded",
-          "title_score": 0.0
-        }
-      ],
-      "status": "not_found"
+      "search_results": []
     },
     {
       "reference_date": "2018-03-19",
       "reference_title": "The Reinvention Of The IPO",
       "reference_year": 2018,
       "reference_episode": 6,
-      "best_candidate": {
-        "npr_url": "https://www.npr.org/series/tiny-desk-concerts/",
-        "npr_title": "Tiny Desk",
-        "title_score": 0.0
-      },
-      "candidates_checked": [
-        {
-          "npr_url": "https://www.npr.org/series/tiny-desk-concerts/",
-          "npr_title": "Tiny Desk",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/allsongs/606254804/new-music-friday",
-          "npr_title": "New Music Friday",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/allsongs/",
-          "npr_title": "All Songs Considered",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/music-features",
-          "npr_title": "Music Features",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/series/770565791/npr-music-live-sessions",
-          "npr_title": "Live Sessions",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/programs/wait-wait-dont-tell-me/",
-          "npr_title": "Wait Wait...Don",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/programs/fresh-air/",
-          "npr_title": "Fresh Air",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510379/wild-card-with-rachel-martin",
-          "npr_title": "Wild Card with Rachel Martin",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510317/its-been-a-minute",
-          "npr_title": "It&#039;s Been a Minute",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510311/embedded",
-          "npr_title": "Embedded",
-          "title_score": 0.0
-        }
-      ],
-      "status": "not_found"
+      "search_results": []
     },
     {
       "reference_date": "2018-03-20",
       "reference_title": "A Brief History of Tariffs",
       "reference_year": 2018,
       "reference_episode": 7,
-      "best_candidate": {
-        "npr_url": "https://www.npr.org/podcasts/510317/its-been-a-minute",
-        "npr_title": "It&#039;s Been a Minute",
-        "title_score": 0.1
-      },
-      "candidates_checked": [
-        {
-          "npr_url": "https://www.npr.org/series/tiny-desk-concerts/",
-          "npr_title": "Tiny Desk",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/allsongs/606254804/new-music-friday",
-          "npr_title": "New Music Friday",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/allsongs/",
-          "npr_title": "All Songs Considered",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/music-features",
-          "npr_title": "Music Features",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/series/770565791/npr-music-live-sessions",
-          "npr_title": "Live Sessions",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/programs/wait-wait-dont-tell-me/",
-          "npr_title": "Wait Wait...Don",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/programs/fresh-air/",
-          "npr_title": "Fresh Air",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510379/wild-card-with-rachel-martin",
-          "npr_title": "Wild Card with Rachel Martin",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510317/its-been-a-minute",
-          "npr_title": "It&#039;s Been a Minute",
-          "title_score": 0.1
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510311/embedded",
-          "npr_title": "Embedded",
-          "title_score": 0.0
-        }
-      ],
-      "status": "not_found"
+      "search_results": []
     },
     {
       "reference_date": "2018-03-21",
       "reference_title": "Trump vs. Trudeau: Both Right, Both Wrong",
       "reference_year": 2018,
       "reference_episode": 8,
-      "best_candidate": {
-        "npr_url": "https://www.npr.org/series/tiny-desk-concerts/",
-        "npr_title": "Tiny Desk",
-        "title_score": 0.0
-      },
-      "candidates_checked": [
-        {
-          "npr_url": "https://www.npr.org/series/tiny-desk-concerts/",
-          "npr_title": "Tiny Desk",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/allsongs/606254804/new-music-friday",
-          "npr_title": "New Music Friday",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/allsongs/",
-          "npr_title": "All Songs Considered",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/music-features",
-          "npr_title": "Music Features",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/series/770565791/npr-music-live-sessions",
-          "npr_title": "Live Sessions",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/programs/wait-wait-dont-tell-me/",
-          "npr_title": "Wait Wait...Don",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/programs/fresh-air/",
-          "npr_title": "Fresh Air",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510379/wild-card-with-rachel-martin",
-          "npr_title": "Wild Card with Rachel Martin",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510317/its-been-a-minute",
-          "npr_title": "It&#039;s Been a Minute",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510311/embedded",
-          "npr_title": "Embedded",
-          "title_score": 0.0
-        }
-      ],
-      "status": "not_found"
+      "search_results": []
     },
     {
       "reference_date": "2018-03-22",
       "reference_title": "Too Small To Fail",
       "reference_year": 2018,
       "reference_episode": 9,
-      "best_candidate": {
-        "npr_url": "https://www.npr.org/series/tiny-desk-concerts/",
-        "npr_title": "Tiny Desk",
-        "title_score": 0.0
-      },
-      "candidates_checked": [
-        {
-          "npr_url": "https://www.npr.org/series/tiny-desk-concerts/",
-          "npr_title": "Tiny Desk",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/allsongs/606254804/new-music-friday",
-          "npr_title": "New Music Friday",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/allsongs/",
-          "npr_title": "All Songs Considered",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/sections/music-features",
-          "npr_title": "Music Features",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/series/770565791/npr-music-live-sessions",
-          "npr_title": "Live Sessions",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/programs/wait-wait-dont-tell-me/",
-          "npr_title": "Wait Wait...Don",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/programs/fresh-air/",
-          "npr_title": "Fresh Air",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510379/wild-card-with-rachel-martin",
-          "npr_title": "Wild Card with Rachel Martin",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510317/its-been-a-minute",
-          "npr_title": "It&#039;s Been a Minute",
-          "title_score": 0.0
-        },
-        {
-          "npr_url": "https://www.npr.org/podcasts/510311/embedded",
-          "npr_title": "Embedded",
-          "title_score": 0.0
-        }
-      ],
-      "status": "not_found"
+      "search_results": []
     }
   ]
 }
