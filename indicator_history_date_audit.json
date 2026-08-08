@@ -1,0 +1,75 @@
+{
+  "audit_period": {
+    "start": "2018-03-01",
+    "end": "2019-04-30"
+  },
+  "total_archive_episodes": 1470,
+  "episodes_in_period": 1,
+  "monthly_counts": [
+    {
+      "month": "2018-03",
+      "episode_count": 0
+    },
+    {
+      "month": "2018-04",
+      "episode_count": 0
+    },
+    {
+      "month": "2018-05",
+      "episode_count": 0
+    },
+    {
+      "month": "2018-06",
+      "episode_count": 0
+    },
+    {
+      "month": "2018-07",
+      "episode_count": 0
+    },
+    {
+      "month": "2018-08",
+      "episode_count": 0
+    },
+    {
+      "month": "2018-09",
+      "episode_count": 0
+    },
+    {
+      "month": "2018-10",
+      "episode_count": 0
+    },
+    {
+      "month": "2018-11",
+      "episode_count": 0
+    },
+    {
+      "month": "2018-12",
+      "episode_count": 0
+    },
+    {
+      "month": "2019-01",
+      "episode_count": 0
+    },
+    {
+      "month": "2019-02",
+      "episode_count": 0
+    },
+    {
+      "month": "2019-03",
+      "episode_count": 0
+    },
+    {
+      "month": "2019-04",
+      "episode_count": 1
+    }
+  ],
+  "episodes": [
+    {
+      "date": "2019-04-30T16:46:00-04:00",
+      "title": "How Grocery Shelves Get Stacked",
+      "npr_url": "https://www.npr.org/2019/04/30/718711109/how-grocery-shelves-get-stacked",
+      "story_id": "718711109",
+      "audio_id": "730090982"
+    }
+  ]
+}
