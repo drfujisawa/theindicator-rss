@@ -1,0 +1,3016 @@
+{
+  "audit_version": 1,
+  "purpose": "Non-destructive completeness audit before rebuilding Indicator history",
+  "source_counts": {
+    "history_episode_count": 1470,
+    "reference_episode_count": 287,
+    "standard_validated_recovery_count": 232,
+    "special_recovery_count": 2,
+    "total_validated_recovery_count": 234,
+    "combined_unique_episode_count": 1704
+  },
+  "reference_accounting": {
+    "already_in_history": 1,
+    "recovered_and_validated": 234,
+    "still_unresolved": 52,
+    "accounted_for_total": 235
+  },
+  "special_recoveries": [
+    {
+      "date": "2018-10-31",
+      "title": "Paranormal Profits",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/10/20181031_indicator_1031_horror_final.mp3?orgId=1&d=565&p=510325&story=662706955&t=podcast&e=662706955&sc=embed",
+      "source": "archived NPR player via Wayback"
+    },
+    {
+      "date": "2019-04-22",
+      "title": "The Traffic Tariff",
+      "audio_url": "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/04/20190422_indicator_042219_congestion_pricing_final-a883fa7f-efbe-4a76-9153-043fa9e2c51b.mp3",
+      "source": "WBUR page -> NPR-hosted audio"
+    }
+  ],
+  "unresolved_reference_count": 52,
+  "unresolved_reference_episodes": [
+    {
+      "date": "2018-03-12",
+      "title": "Hurricane Joseph & The Calculator That Time Forgot",
+      "reference_year": 2018,
+      "reference_episode": 1,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-03-15",
+      "title": "Buying A College Degree: Did Aunt Becky Overpay?",
+      "reference_year": 2019,
+      "reference_episode": 51,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-04-23",
+      "title": "3 Things You Didn't Know About LA",
+      "reference_year": 2018,
+      "reference_episode": 30,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-04-24",
+      "title": "When China's Ships Come In",
+      "reference_year": 2018,
+      "reference_episode": 31,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-04-26",
+      "title": "California's Housing Conundrum",
+      "reference_year": 2018,
+      "reference_episode": 33,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-05-29",
+      "title": "Banking's Regulation Rollback",
+      "reference_year": 2018,
+      "reference_episode": 55,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-06-13",
+      "title": "Dude, Where's My Trade War?",
+      "reference_year": 2018,
+      "reference_episode": 66,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-06-21",
+      "title": "Teenage (Employment) Wasteland",
+      "reference_year": 2018,
+      "reference_episode": 72,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-06-26",
+      "title": "Sallie Krawcheck on #MeToo, Dodd Frank, & Cronuts",
+      "reference_year": 2018,
+      "reference_episode": 75,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-06-29",
+      "title": "Dungeons & Dragons & Balance Sheets",
+      "reference_year": 2018,
+      "reference_episode": 78,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-07-10",
+      "title": "The Price of A Hyundai in Iran",
+      "reference_year": 2018,
+      "reference_episode": 84,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-07-11",
+      "title": "Fed Accounts For All!",
+      "reference_year": 2018,
+      "reference_episode": 85,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-07-12",
+      "title": "The Last Straw",
+      "reference_year": 2018,
+      "reference_episode": 86,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-07-13",
+      "title": "We Hear You",
+      "reference_year": 2018,
+      "reference_episode": 87,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-07-16",
+      "title": "Japan's Ninja Shortage",
+      "reference_year": 2018,
+      "reference_episode": 88,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-07-17",
+      "title": "Saving Women",
+      "reference_year": 2018,
+      "reference_episode": 89,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-07-19",
+      "title": "Three Indicators To Keep A (Side)eye On",
+      "reference_year": 2018,
+      "reference_episode": 91,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-07-23",
+      "title": "Google's Mobile Monopoly",
+      "reference_year": 2018,
+      "reference_episode": 93,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-07-30",
+      "title": "Putin Vs. Russia's Economy",
+      "reference_year": 2018,
+      "reference_episode": 98,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-07-31",
+      "title": "What's In Your Paycheck?",
+      "reference_year": 2018,
+      "reference_episode": 99,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-08-03",
+      "title": "Beating The Clock On Jobs (Summer) Friday",
+      "reference_year": 2018,
+      "reference_episode": 102,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-08-10",
+      "title": "Privacy Please: Why Public Companies Go Private (Or Vice Versa)",
+      "reference_year": 2018,
+      "reference_episode": 107,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-08-13",
+      "title": "Messy Desks, Light Bulbs & Dune",
+      "reference_year": 2018,
+      "reference_episode": 108,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-08-17",
+      "title": "Donald Trump's Economic Strategy... Maybe?",
+      "reference_year": 2018,
+      "reference_episode": 112,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-08-21",
+      "title": "Why People Can't Get Work Done At Work",
+      "reference_year": 2018,
+      "reference_episode": 114,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-08-24",
+      "title": "The Art of War. It's Not For Everyone",
+      "reference_year": 2018,
+      "reference_episode": 117,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-08-28",
+      "title": "Hurricane Joseph & The Calculator That Time Forgot",
+      "reference_year": 2018,
+      "reference_episode": 119,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-09-06",
+      "title": "Why Aren't We More Productive?",
+      "reference_year": 2018,
+      "reference_episode": 125,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-09-24",
+      "title": "Saudi Arabia & The Paradox of Plenty",
+      "reference_year": 2018,
+      "reference_episode": 137,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-10-05",
+      "title": "Who's Hiring?",
+      "reference_year": 2018,
+      "reference_episode": 146,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-10-09",
+      "title": "China's Social Credit System",
+      "reference_year": 2018,
+      "reference_episode": 148,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-10-10",
+      "title": "Life On China's Blacklist",
+      "reference_year": 2018,
+      "reference_episode": 149,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-10-11",
+      "title": "China's Brave New World",
+      "reference_year": 2018,
+      "reference_episode": 150,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-10-29",
+      "title": "Judgement Bonds",
+      "reference_year": 2018,
+      "reference_episode": 162,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-11-02",
+      "title": "How Companies Cope (With A Tight Labor Market)",
+      "reference_year": 2018,
+      "reference_episode": 166,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-11-09",
+      "title": "The 401(k) Turns 40",
+      "reference_year": 2018,
+      "reference_episode": 171,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-11-20",
+      "title": "The Ins & Outs Of The Minimum Wage",
+      "reference_year": 2018,
+      "reference_episode": 178,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-12-06",
+      "title": "The Fed's Mistake?",
+      "reference_year": 2018,
+      "reference_episode": 189,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-12-11",
+      "title": "Citi Bike's Better Angels",
+      "reference_year": 2018,
+      "reference_episode": 192,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-12-19",
+      "title": "You've Got Mail!",
+      "reference_year": 2018,
+      "reference_episode": 198,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2019-01-08",
+      "title": "Don't Fear The Fear Index",
+      "reference_year": 2019,
+      "reference_episode": 5,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2019-01-25",
+      "title": "The End Of The Shutdown?",
+      "reference_year": 2019,
+      "reference_episode": 17,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2019-01-31",
+      "title": "Lights Out For PG&E?",
+      "reference_year": 2019,
+      "reference_episode": 21,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2019-02-05",
+      "title": "The Fed's Sweet Spot For Interest Rates",
+      "reference_year": 2019,
+      "reference_episode": 24,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2019-02-06",
+      "title": "India's Poverty Paradox",
+      "reference_year": 2019,
+      "reference_episode": 25,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2019-02-20",
+      "title": "Why Americans Can't Quit Tipping",
+      "reference_year": 2019,
+      "reference_episode": 34,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2019-02-26",
+      "title": "TV Vs. Video Games: Who's Winning?",
+      "reference_year": 2019,
+      "reference_episode": 38,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2019-03-22",
+      "title": "Are Neighbors Overrated? (And Other Questions)",
+      "reference_year": 2019,
+      "reference_episode": 56,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2019-03-25",
+      "title": "Spotify's Long, Winding Road To India",
+      "reference_year": 2019,
+      "reference_episode": 57,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2019-03-27",
+      "title": "An Economist in Caracas: Day In The Life",
+      "reference_year": 2019,
+      "reference_episode": 59,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2019-04-09",
+      "title": "Trade War With Cheese: Trump's New EU Tariffs",
+      "reference_year": 2019,
+      "reference_episode": 68,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2019-04-26",
+      "title": "Why Superman Doesn't Take Over The World",
+      "reference_year": 2019,
+      "reference_episode": 80,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    }
+  ],
+  "duplicate_and_gap_checks": {
+    "dates_with_multiple_titles_count": 18,
+    "repeated_normalized_titles_count": 7,
+    "large_gap_count": 16,
+    "dates_with_multiple_titles": [
+      {
+        "date": "2020-02-19",
+        "titles": [
+          "Indicate This",
+          "Meet Our Junk Bond!"
+        ]
+      },
+      {
+        "date": "2020-06-05",
+        "titles": [
+          "Police Unions And Police Violence",
+          "Unemployment And The Racial Divide"
+        ]
+      },
+      {
+        "date": "2020-09-09",
+        "titles": [
+          "Parenting In The Time of Corona",
+          "We Buy A Junk Bond"
+        ]
+      },
+      {
+        "date": "2021-07-07",
+        "titles": [
+          "How Do You Reduce Child Poverty?",
+          "Two Indicators: Clogged Ports And Corporate Vets"
+        ]
+      },
+      {
+        "date": "2021-08-20",
+        "titles": [
+          "Jabs And Retail: Indicators Of The Week",
+          "Two Indicators: Will Remote Work Kill The Office?"
+        ]
+      },
+      {
+        "date": "2021-09-03",
+        "titles": [
+          "Two Indicators: Water Pressure",
+          "When A Drought Boils Over"
+        ]
+      },
+      {
+        "date": "2021-09-17",
+        "titles": [
+          "'Machiavelli for Women'; Plus, 'What We Do in the Shadows'",
+          "Indicators Of The Week: Colleges, Poverty, Airlines",
+          "Two Indicators: Women And Work"
+        ]
+      },
+      {
+        "date": "2021-10-22",
+        "titles": [
+          "Indicators of the Week: IPOs, ETFs, GHGs",
+          "Two Indicators: Congressional game theory and the debt ceiling"
+        ]
+      },
+      {
+        "date": "2021-12-10",
+        "titles": [
+          "Inflation indicators: The dollar store, the dollar slice and SPAM",
+          "Two music indicators"
+        ]
+      },
+      {
+        "date": "2022-03-23",
+        "titles": [
+          "How an empty office becomes a home",
+          "Two inflation Indicators: Corporate greed and mortgage rates"
+        ]
+      },
+      {
+        "date": "2022-12-02",
+        "titles": [
+          "Should we worry about another dot-com bust?",
+          "Water works (except when it doesn't)"
+        ]
+      },
+      {
+        "date": "2022-12-28",
+        "titles": [
+          "Are you being tricked into working harder? (Indicator favorite)",
+          "Which economic indicator defined 2022?"
+        ]
+      },
+      {
+        "date": "2023-04-12",
+        "titles": [
+          "Prices: What goes up, doesn't always come down",
+          "Two innovation market indicators"
+        ]
+      },
+      {
+        "date": "2023-12-06",
+        "titles": [
+          "Two food and drink indicators",
+          "What can we learn from the year's most popular econ terms?"
+        ]
+      },
+      {
+        "date": "2023-12-27",
+        "titles": [
+          "A lesson in Barbie labor economics (Classic)",
+          "The Indicators of this year and next"
+        ]
+      },
+      {
+        "date": "2024-07-17",
+        "titles": [
+          "The conservative roots behind the Chevron doctrine",
+          "Why the EU can regulate big tech faster"
+        ]
+      },
+      {
+        "date": "2024-10-23",
+        "titles": [
+          "How American heiresses became Dollar Princesses",
+          "Romance on the screen and on the page: Two Indicators"
+        ]
+      },
+      {
+        "date": "2025-05-12",
+        "titles": [
+          "It's actually really hard to make a robot, guys",
+          "The Indicator: American science brain drain"
+        ]
+      }
+    ],
+    "repeated_normalized_titles": [
+      {
+        "normalized_title": "the original bailout",
+        "dates": [
+          "2018-04-03",
+          "2018-08-31"
+        ]
+      },
+      {
+        "normalized_title": "mind the pay gap",
+        "dates": [
+          "2018-04-09",
+          "2018-08-29"
+        ]
+      },
+      {
+        "normalized_title": "aging up",
+        "dates": [
+          "2018-05-02",
+          "2018-08-30"
+        ]
+      },
+      {
+        "normalized_title": "the semiconductor standoff",
+        "dates": [
+          "2018-05-14",
+          "2020-10-06"
+        ]
+      },
+      {
+        "normalized_title": "the measure of a tragedy",
+        "dates": [
+          "2018-06-19",
+          "2018-08-27"
+        ]
+      },
+      {
+        "normalized_title": "trade war and peace",
+        "dates": [
+          "2018-12-03",
+          "2019-03-05"
+        ]
+      },
+      {
+        "normalized_title": "we buy a junk bond",
+        "dates": [
+          "2019-12-19",
+          "2020-09-09"
+        ]
+      }
+    ],
+    "large_gaps": [
+      {
+        "after": "2018-04-20",
+        "before": "2018-04-25",
+        "calendar_days": 5
+      },
+      {
+        "after": "2018-05-25",
+        "before": "2018-05-30",
+        "calendar_days": 5
+      },
+      {
+        "after": "2018-07-09",
+        "before": "2018-07-18",
+        "calendar_days": 9
+      },
+      {
+        "after": "2018-07-27",
+        "before": "2018-08-01",
+        "calendar_days": 5
+      },
+      {
+        "after": "2018-08-09",
+        "before": "2018-08-14",
+        "calendar_days": 5
+      },
+      {
+        "after": "2019-03-21",
+        "before": "2019-03-26",
+        "calendar_days": 5
+      },
+      {
+        "after": "2019-11-27",
+        "before": "2019-12-02",
+        "calendar_days": 5
+      },
+      {
+        "after": "2020-02-13",
+        "before": "2020-02-18",
+        "calendar_days": 5
+      },
+      {
+        "after": "2020-12-23",
+        "before": "2020-12-28",
+        "calendar_days": 5
+      },
+      {
+        "after": "2021-11-24",
+        "before": "2021-11-29",
+        "calendar_days": 5
+      },
+      {
+        "after": "2022-11-23",
+        "before": "2022-11-28",
+        "calendar_days": 5
+      },
+      {
+        "after": "2023-11-22",
+        "before": "2023-11-27",
+        "calendar_days": 5
+      },
+      {
+        "after": "2024-01-11",
+        "before": "2024-01-16",
+        "calendar_days": 5
+      },
+      {
+        "after": "2024-01-29",
+        "before": "2024-02-20",
+        "calendar_days": 22
+      },
+      {
+        "after": "2024-11-01",
+        "before": "2024-12-02",
+        "calendar_days": 31
+      },
+      {
+        "after": "2024-12-20",
+        "before": "2025-01-21",
+        "calendar_days": 32
+      }
+    ]
+  },
+  "reference_classification": [
+    {
+      "date": "2018-03-12",
+      "title": "Hurricane Joseph & The Calculator That Time Forgot",
+      "reference_year": 2018,
+      "reference_episode": 1,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-03-13",
+      "title": "Bonds... Japanese Bonds",
+      "reference_year": 2018,
+      "reference_episode": 2,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-03-14",
+      "title": "What Trade Organization?",
+      "reference_year": 2018,
+      "reference_episode": 3,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-03-15",
+      "title": "Calculated Risk, Calculated Caution",
+      "reference_year": 2018,
+      "reference_episode": 4,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-03-15",
+      "title": "Buying A College Degree: Did Aunt Becky Overpay?",
+      "reference_year": 2019,
+      "reference_episode": 51,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-03-16",
+      "title": "The Bear Necessities",
+      "reference_year": 2018,
+      "reference_episode": 5,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-03-19",
+      "title": "The Reinvention Of The IPO",
+      "reference_year": 2018,
+      "reference_episode": 6,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-03-20",
+      "title": "A Brief History of Tariffs",
+      "reference_year": 2018,
+      "reference_episode": 7,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-03-21",
+      "title": "Trump vs. Trudeau: Both Right, Both Wrong",
+      "reference_year": 2018,
+      "reference_episode": 8,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-03-22",
+      "title": "Too Small To Fail",
+      "reference_year": 2018,
+      "reference_episode": 9,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-03-23",
+      "title": "The Oil Rig Count",
+      "reference_year": 2018,
+      "reference_episode": 10,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-03-26",
+      "title": "Dollars for Data",
+      "reference_year": 2018,
+      "reference_episode": 11,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-03-27",
+      "title": "Costly Care In America",
+      "reference_year": 2018,
+      "reference_episode": 12,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-03-28",
+      "title": "Dollars And Census",
+      "reference_year": 2018,
+      "reference_episode": 13,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-03-29",
+      "title": "Disability In Decline",
+      "reference_year": 2018,
+      "reference_episode": 14,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-04-02",
+      "title": "China, Tariffs, And The Hogs Of War",
+      "reference_year": 2018,
+      "reference_episode": 15,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-04-03",
+      "title": "The Original Bailout",
+      "reference_year": 2018,
+      "reference_episode": 16,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-04-04",
+      "title": "Stop, Collaborate, And Listen",
+      "reference_year": 2018,
+      "reference_episode": 17,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-04-05",
+      "title": "Morbidity, Peak Child, And Collective Pessimism",
+      "reference_year": 2018,
+      "reference_episode": 18,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-04-06",
+      "title": "Where The Jobs Are",
+      "reference_year": 2018,
+      "reference_episode": 19,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-04-09",
+      "title": "Mind The Pay Gap",
+      "reference_year": 2018,
+      "reference_episode": 20,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-04-10",
+      "title": "Tyler Cowen Rates America",
+      "reference_year": 2018,
+      "reference_episode": 21,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-04-11",
+      "title": "Deficit Attention Disorder",
+      "reference_year": 2018,
+      "reference_episode": 22,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-04-12",
+      "title": "Unsung Indicators",
+      "reference_year": 2018,
+      "reference_episode": 23,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-04-13",
+      "title": "Congress Does Not Compute",
+      "reference_year": 2018,
+      "reference_episode": 24,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-04-16",
+      "title": "The Loan Ranger",
+      "reference_year": 2018,
+      "reference_episode": 25,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-04-17",
+      "title": "Tax Refunds, A Habitual Health Problem",
+      "reference_year": 2018,
+      "reference_episode": 26,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-04-18",
+      "title": "Lawn Chair Economics",
+      "reference_year": 2018,
+      "reference_episode": 27,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-04-19",
+      "title": "Amazon vs Trump Goes Postal",
+      "reference_year": 2018,
+      "reference_episode": 28,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-04-20",
+      "title": "The New Bond Villain",
+      "reference_year": 2018,
+      "reference_episode": 29,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-04-23",
+      "title": "3 Things You Didn't Know About LA",
+      "reference_year": 2018,
+      "reference_episode": 30,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-04-24",
+      "title": "When China's Ships Come In",
+      "reference_year": 2018,
+      "reference_episode": 31,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-04-25",
+      "title": "The Farm Labor Drought",
+      "reference_year": 2018,
+      "reference_episode": 32,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-04-26",
+      "title": "California's Housing Conundrum",
+      "reference_year": 2018,
+      "reference_episode": 33,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-04-27",
+      "title": "The Homeless Count",
+      "reference_year": 2018,
+      "reference_episode": 34,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-04-30",
+      "title": "Inflation Target Acquired",
+      "reference_year": 2018,
+      "reference_episode": 35,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-05-01",
+      "title": "The Only Prescription Is More Transparency",
+      "reference_year": 2018,
+      "reference_episode": 36,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-05-02",
+      "title": "Aging Up",
+      "reference_year": 2018,
+      "reference_episode": 37,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-05-03",
+      "title": "Baby Bubbles",
+      "reference_year": 2018,
+      "reference_episode": 38,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-05-04",
+      "title": "The Perks Of Counting The Wallflowers",
+      "reference_year": 2018,
+      "reference_episode": 39,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-05-07",
+      "title": "The 'I' Of The LIBOR",
+      "reference_year": 2018,
+      "reference_episode": 40,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-05-08",
+      "title": "The Good, The Bad and The Tax Cuts",
+      "reference_year": 2018,
+      "reference_episode": 41,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-05-09",
+      "title": "Indicator and Beyond",
+      "reference_year": 2018,
+      "reference_episode": 42,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-05-10",
+      "title": "Failing College",
+      "reference_year": 2018,
+      "reference_episode": 43,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-05-11",
+      "title": "In Vino, Veritas by Numbers",
+      "reference_year": 2018,
+      "reference_episode": 44,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-05-14",
+      "title": "The Semiconductor Standoff",
+      "reference_year": 2018,
+      "reference_episode": 45,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-05-15",
+      "title": "Rising Rates Vs. The Housing Market",
+      "reference_year": 2018,
+      "reference_episode": 46,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-05-16",
+      "title": "All Bets Are On",
+      "reference_year": 2018,
+      "reference_episode": 47,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-05-17",
+      "title": "SNAP Back To Reality",
+      "reference_year": 2018,
+      "reference_episode": 48,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-05-18",
+      "title": "Time Bandits",
+      "reference_year": 2018,
+      "reference_episode": 49,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-05-21",
+      "title": "Stacey And Cardiff Take On The Commencement Speech",
+      "reference_year": 2018,
+      "reference_episode": 50,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-05-22",
+      "title": "Women in Bondland",
+      "reference_year": 2018,
+      "reference_episode": 51,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-05-23",
+      "title": "Most Inane Deduction?",
+      "reference_year": 2018,
+      "reference_episode": 52,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-05-24",
+      "title": "The Money Detectives",
+      "reference_year": 2018,
+      "reference_episode": 53,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-05-25",
+      "title": "Earnings Calls Gone Wild",
+      "reference_year": 2018,
+      "reference_episode": 54,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-05-29",
+      "title": "Banking's Regulation Rollback",
+      "reference_year": 2018,
+      "reference_episode": 55,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-05-30",
+      "title": "Money For Moms",
+      "reference_year": 2018,
+      "reference_episode": 56,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-05-31",
+      "title": "Internet a la Carte",
+      "reference_year": 2018,
+      "reference_episode": 57,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-06-01",
+      "title": "To Err Is Human, To Revise Divine",
+      "reference_year": 2018,
+      "reference_episode": 58,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-06-04",
+      "title": "The Economics of Vaccines",
+      "reference_year": 2018,
+      "reference_episode": 59,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-06-05",
+      "title": "Do You Have $400?",
+      "reference_year": 2018,
+      "reference_episode": 60,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-06-06",
+      "title": "Social Insecurity",
+      "reference_year": 2018,
+      "reference_episode": 61,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-06-07",
+      "title": "When Retirement Advice Goes Viral",
+      "reference_year": 2018,
+      "reference_episode": 62,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-06-08",
+      "title": "Positively 23rd Street",
+      "reference_year": 2018,
+      "reference_episode": 63,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-06-11",
+      "title": "Let Them Eat Marshmallows",
+      "reference_year": 2018,
+      "reference_episode": 64,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-06-12",
+      "title": "CBO vs. POTUS",
+      "reference_year": 2018,
+      "reference_episode": 65,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-06-13",
+      "title": "Dude, Where's My Trade War?",
+      "reference_year": 2018,
+      "reference_episode": 66,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-06-14",
+      "title": "Trading Spaces",
+      "reference_year": 2018,
+      "reference_episode": 67,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-06-15",
+      "title": "Gettin' Giggy With It",
+      "reference_year": 2018,
+      "reference_episode": 68,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-06-18",
+      "title": "The Art Of The Trade War",
+      "reference_year": 2018,
+      "reference_episode": 69,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-06-19",
+      "title": "The Measure Of A Tragedy",
+      "reference_year": 2018,
+      "reference_episode": 70,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-06-20",
+      "title": "The Plight Of The Living Dead",
+      "reference_year": 2018,
+      "reference_episode": 71,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-06-21",
+      "title": "Teenage (Employment) Wasteland",
+      "reference_year": 2018,
+      "reference_episode": 72,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-06-22",
+      "title": "MoviePass / Fail?",
+      "reference_year": 2018,
+      "reference_episode": 73,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-06-25",
+      "title": "The Beautiful Indicator",
+      "reference_year": 2018,
+      "reference_episode": 74,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-06-26",
+      "title": "Sallie Krawcheck on #MeToo, Dodd Frank, & Cronuts",
+      "reference_year": 2018,
+      "reference_episode": 75,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-06-27",
+      "title": "Happy Birthday, Smith v. Keynes",
+      "reference_year": 2018,
+      "reference_episode": 76,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-06-28",
+      "title": "Bubble, Bubble, Oil And Trouble",
+      "reference_year": 2018,
+      "reference_episode": 77,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-06-29",
+      "title": "Dungeons & Dragons & Balance Sheets",
+      "reference_year": 2018,
+      "reference_episode": 78,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-07-02",
+      "title": "The Problem With Unobservable Variables",
+      "reference_year": 2018,
+      "reference_episode": 79,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-07-03",
+      "title": "Star Spangled Indicator",
+      "reference_year": 2018,
+      "reference_episode": 80,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-07-05",
+      "title": "The Long French Goodbye",
+      "reference_year": 2018,
+      "reference_episode": 81,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-07-06",
+      "title": "Jobs: 10 Questions in 10 Minutes",
+      "reference_year": 2018,
+      "reference_episode": 82,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-07-09",
+      "title": "The Recession Predictor, Still Predictive?",
+      "reference_year": 2018,
+      "reference_episode": 83,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-07-10",
+      "title": "The Price of A Hyundai in Iran",
+      "reference_year": 2018,
+      "reference_episode": 84,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-07-11",
+      "title": "Fed Accounts For All!",
+      "reference_year": 2018,
+      "reference_episode": 85,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-07-12",
+      "title": "The Last Straw",
+      "reference_year": 2018,
+      "reference_episode": 86,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-07-13",
+      "title": "We Hear You",
+      "reference_year": 2018,
+      "reference_episode": 87,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-07-16",
+      "title": "Japan's Ninja Shortage",
+      "reference_year": 2018,
+      "reference_episode": 88,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-07-17",
+      "title": "Saving Women",
+      "reference_year": 2018,
+      "reference_episode": 89,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-07-18",
+      "title": "Trade Wars And The Batman Problem",
+      "reference_year": 2018,
+      "reference_episode": 90,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-07-19",
+      "title": "Three Indicators To Keep A (Side)eye On",
+      "reference_year": 2018,
+      "reference_episode": 91,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-07-20",
+      "title": "The Market For Air",
+      "reference_year": 2018,
+      "reference_episode": 92,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-07-23",
+      "title": "Google's Mobile Monopoly",
+      "reference_year": 2018,
+      "reference_episode": 93,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-07-24",
+      "title": "Trump Vs. The Fed, Or Trump Vs... Trump?",
+      "reference_year": 2018,
+      "reference_episode": 94,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-07-25",
+      "title": "The Diamond-Water Paradox",
+      "reference_year": 2018,
+      "reference_episode": 95,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-07-26",
+      "title": "When Oracles Err",
+      "reference_year": 2018,
+      "reference_episode": 96,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-07-27",
+      "title": "GDP, OMG!",
+      "reference_year": 2018,
+      "reference_episode": 97,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-07-30",
+      "title": "Putin Vs. Russia's Economy",
+      "reference_year": 2018,
+      "reference_episode": 98,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-07-31",
+      "title": "What's In Your Paycheck?",
+      "reference_year": 2018,
+      "reference_episode": 99,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-08-01",
+      "title": "What A Tariff Looks Like",
+      "reference_year": 2018,
+      "reference_episode": 100,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-08-02",
+      "title": "Grey Poupon And The Cultural Divide",
+      "reference_year": 2018,
+      "reference_episode": 101,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-08-03",
+      "title": "Beating The Clock On Jobs (Summer) Friday",
+      "reference_year": 2018,
+      "reference_episode": 102,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-08-06",
+      "title": "Tariffs, Now With Extra Cheese",
+      "reference_year": 2018,
+      "reference_episode": 103,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-08-07",
+      "title": "Sanctions, Iran, And The Battle Over SWIFT",
+      "reference_year": 2018,
+      "reference_episode": 104,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-08-08",
+      "title": "Trickle-down Economics: Pricing H2O",
+      "reference_year": 2018,
+      "reference_episode": 105,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-08-09",
+      "title": "The OG Yield Curve Whisperer",
+      "reference_year": 2018,
+      "reference_episode": 106,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-08-10",
+      "title": "Privacy Please: Why Public Companies Go Private (Or Vice Versa)",
+      "reference_year": 2018,
+      "reference_episode": 107,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-08-13",
+      "title": "Messy Desks, Light Bulbs & Dune",
+      "reference_year": 2018,
+      "reference_episode": 108,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-08-14",
+      "title": "From Prison To The Workforce",
+      "reference_year": 2018,
+      "reference_episode": 109,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-08-15",
+      "title": "Cryptokitties: The Download On Digital Cats",
+      "reference_year": 2018,
+      "reference_episode": 110,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-08-16",
+      "title": "We Buy A Cryptokitty!",
+      "reference_year": 2018,
+      "reference_episode": 111,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-08-17",
+      "title": "Donald Trump's Economic Strategy... Maybe?",
+      "reference_year": 2018,
+      "reference_episode": 112,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-08-20",
+      "title": "The Indicator Goes To The Beach With Tim Harford",
+      "reference_year": 2018,
+      "reference_episode": 113,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-08-21",
+      "title": "Why People Can't Get Work Done At Work",
+      "reference_year": 2018,
+      "reference_episode": 114,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-08-22",
+      "title": "The Underrated Economists",
+      "reference_year": 2018,
+      "reference_episode": 115,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-08-23",
+      "title": "Beyond GDP",
+      "reference_year": 2018,
+      "reference_episode": 116,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-08-24",
+      "title": "The Art of War. It's Not For Everyone",
+      "reference_year": 2018,
+      "reference_episode": 117,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-08-27",
+      "title": "The Measure Of A Tragedy",
+      "reference_year": 2018,
+      "reference_episode": 118,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-08-28",
+      "title": "Hurricane Joseph & The Calculator That Time Forgot",
+      "reference_year": 2018,
+      "reference_episode": 119,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-08-29",
+      "title": "Mind the Pay Gap (REBROADCAST)",
+      "reference_year": 2018,
+      "reference_episode": 120,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-08-30",
+      "title": "Aging Up (REBROADCAST)",
+      "reference_year": 2018,
+      "reference_episode": 121,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-08-31",
+      "title": "The Original Bailout",
+      "reference_year": 2018,
+      "reference_episode": 122,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-09-04",
+      "title": "Making The Case For Removing Tariffs",
+      "reference_year": 2018,
+      "reference_episode": 123,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-09-05",
+      "title": "NAFTA-splainer",
+      "reference_year": 2018,
+      "reference_episode": 124,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-09-06",
+      "title": "Why Aren't We More Productive?",
+      "reference_year": 2018,
+      "reference_episode": 125,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-09-07",
+      "title": "Your Jobs Questions, Answered",
+      "reference_year": 2018,
+      "reference_episode": 126,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-09-10",
+      "title": "Call The Midwife Back",
+      "reference_year": 2018,
+      "reference_episode": 127,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-09-11",
+      "title": "The Liars Of Romance",
+      "reference_year": 2018,
+      "reference_episode": 128,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-09-12",
+      "title": "Free Tuition; False Economy?",
+      "reference_year": 2018,
+      "reference_episode": 129,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-09-13",
+      "title": "The Price Of Rice In Japan",
+      "reference_year": 2018,
+      "reference_episode": 130,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-09-14",
+      "title": "Handle With Care",
+      "reference_year": 2018,
+      "reference_episode": 131,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-09-17",
+      "title": "Down Clown",
+      "reference_year": 2018,
+      "reference_episode": 132,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-09-18",
+      "title": "Work Work Work",
+      "reference_year": 2018,
+      "reference_episode": 133,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-09-19",
+      "title": "The Psychological Effects Of The Financial Crisis, Lingering",
+      "reference_year": 2018,
+      "reference_episode": 134,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-09-20",
+      "title": "The Young And The Restless",
+      "reference_year": 2018,
+      "reference_episode": 135,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-09-21",
+      "title": "Rent!",
+      "reference_year": 2018,
+      "reference_episode": 136,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-09-24",
+      "title": "Saudi Arabia & The Paradox of Plenty",
+      "reference_year": 2018,
+      "reference_episode": 137,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-09-25",
+      "title": "Less Risky Business",
+      "reference_year": 2018,
+      "reference_episode": 138,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-09-26",
+      "title": "Tariffs And Tourists And Trade Wars, Oh My!",
+      "reference_year": 2018,
+      "reference_episode": 139,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-09-27",
+      "title": "Baby Got Buybacks",
+      "reference_year": 2018,
+      "reference_episode": 140,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-09-28",
+      "title": "The Case Of The Pricey Frito",
+      "reference_year": 2018,
+      "reference_episode": 141,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-10-01",
+      "title": "D.C.'s Billion-Dollar Lawsuit",
+      "reference_year": 2018,
+      "reference_episode": 142,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-10-02",
+      "title": "Zeitgeist-y Bubbles",
+      "reference_year": 2018,
+      "reference_episode": 143,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-10-03",
+      "title": "What Happened To GE?",
+      "reference_year": 2018,
+      "reference_episode": 144,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-10-04",
+      "title": "What Comes Afta NAFTA",
+      "reference_year": 2018,
+      "reference_episode": 145,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-10-05",
+      "title": "Who's Hiring?",
+      "reference_year": 2018,
+      "reference_episode": 146,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-10-08",
+      "title": "The Iron Lotus",
+      "reference_year": 2018,
+      "reference_episode": 147,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-10-09",
+      "title": "China's Social Credit System",
+      "reference_year": 2018,
+      "reference_episode": 148,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-10-10",
+      "title": "Life On China's Blacklist",
+      "reference_year": 2018,
+      "reference_episode": 149,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-10-11",
+      "title": "China's Brave New World",
+      "reference_year": 2018,
+      "reference_episode": 150,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-10-12",
+      "title": "The Economics of Apologies",
+      "reference_year": 2018,
+      "reference_episode": 151,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-10-15",
+      "title": "Overrated/Underrated: Nobel Prizes, Conversations, And Our Descendants",
+      "reference_year": 2018,
+      "reference_episode": 152,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-10-16",
+      "title": "A Snapshot Of Poverty In America",
+      "reference_year": 2018,
+      "reference_episode": 153,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-10-17",
+      "title": "Gross Dank Product",
+      "reference_year": 2018,
+      "reference_episode": 154,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-10-18",
+      "title": "Beating Bollywood",
+      "reference_year": 2018,
+      "reference_episode": 155,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-10-19",
+      "title": "Tears For Sears",
+      "reference_year": 2018,
+      "reference_episode": 156,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-10-22",
+      "title": "Short Shrift For Short Sellers",
+      "reference_year": 2018,
+      "reference_episode": 157,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-10-23",
+      "title": "Of Wages And Warehouses",
+      "reference_year": 2018,
+      "reference_episode": 158,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-10-24",
+      "title": "The Rise of the Machines",
+      "reference_year": 2018,
+      "reference_episode": 159,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-10-25",
+      "title": "Difficulty With The Deficit",
+      "reference_year": 2018,
+      "reference_episode": 160,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-10-26",
+      "title": "Lotteries And Happiness",
+      "reference_year": 2018,
+      "reference_episode": 161,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-10-29",
+      "title": "Judgement Bonds",
+      "reference_year": 2018,
+      "reference_episode": 162,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-10-30",
+      "title": "The Best Day For Payday",
+      "reference_year": 2018,
+      "reference_episode": 163,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-10-31",
+      "title": "Paranormal Profits",
+      "reference_year": 2018,
+      "reference_episode": 164,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-11-01",
+      "title": "Why Ecuador Uses The Dollar?",
+      "reference_year": 2018,
+      "reference_episode": 165,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-11-02",
+      "title": "How Companies Cope (With A Tight Labor Market)",
+      "reference_year": 2018,
+      "reference_episode": 166,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-11-05",
+      "title": "Ode On A Grecian Tax",
+      "reference_year": 2018,
+      "reference_episode": 167,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-11-06",
+      "title": "Stacey And Cardiff Answer To The People",
+      "reference_year": 2018,
+      "reference_episode": 168,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-11-07",
+      "title": "Your Lifetime Value Score",
+      "reference_year": 2018,
+      "reference_episode": 169,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-11-08",
+      "title": "All Aboard The Bankmobile!",
+      "reference_year": 2018,
+      "reference_episode": 170,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-11-09",
+      "title": "The 401(k) Turns 40",
+      "reference_year": 2018,
+      "reference_episode": 171,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-11-12",
+      "title": "Recession Suppression Needs Policy Aggression",
+      "reference_year": 2018,
+      "reference_episode": 172,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-11-13",
+      "title": "The Problem With The Pink Tax",
+      "reference_year": 2018,
+      "reference_episode": 173,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-11-14",
+      "title": "Oil Up, Oil Down",
+      "reference_year": 2018,
+      "reference_episode": 174,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-11-15",
+      "title": "The Lucky Country",
+      "reference_year": 2018,
+      "reference_episode": 175,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-11-16",
+      "title": "Recession Indicators, Pt 1",
+      "reference_year": 2018,
+      "reference_episode": 176,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-11-19",
+      "title": "Recession Indicators, Pt 2",
+      "reference_year": 2018,
+      "reference_episode": 177,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-11-20",
+      "title": "The Ins & Outs Of The Minimum Wage",
+      "reference_year": 2018,
+      "reference_episode": 178,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-11-21",
+      "title": "The Price Of Your Turkey Dinner",
+      "reference_year": 2018,
+      "reference_episode": 179,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-11-23",
+      "title": "See Stocks Run",
+      "reference_year": 2018,
+      "reference_episode": 180,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-11-26",
+      "title": "Bonds, Rating Agencies And Chocolate",
+      "reference_year": 2018,
+      "reference_episode": 181,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-11-27",
+      "title": "College Side Hustle",
+      "reference_year": 2018,
+      "reference_episode": 182,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-11-28",
+      "title": "Do Sanctions Work?",
+      "reference_year": 2018,
+      "reference_episode": 183,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-11-29",
+      "title": "Space Economics",
+      "reference_year": 2018,
+      "reference_episode": 184,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-11-30",
+      "title": "The Voyages Of The Starship Indicator",
+      "reference_year": 2018,
+      "reference_episode": 185,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-12-03",
+      "title": "Trade War And Peace",
+      "reference_year": 2018,
+      "reference_episode": 186,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-12-04",
+      "title": "Behind The Curve",
+      "reference_year": 2018,
+      "reference_episode": 187,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-12-05",
+      "title": "Paris Is Burning",
+      "reference_year": 2018,
+      "reference_episode": 188,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-12-06",
+      "title": "The Fed's Mistake?",
+      "reference_year": 2018,
+      "reference_episode": 189,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-12-07",
+      "title": "More Jobs, Less Pay",
+      "reference_year": 2018,
+      "reference_episode": 190,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-12-10",
+      "title": "Unto The Brexit",
+      "reference_year": 2018,
+      "reference_episode": 191,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-12-11",
+      "title": "Citi Bike's Better Angels",
+      "reference_year": 2018,
+      "reference_episode": 192,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-12-12",
+      "title": "Economic Insecurity",
+      "reference_year": 2018,
+      "reference_episode": 193,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-12-13",
+      "title": "Why Are There So Many Mattress Stores?",
+      "reference_year": 2018,
+      "reference_episode": 194,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-12-14",
+      "title": "Economics Of A Border Wall",
+      "reference_year": 2018,
+      "reference_episode": 195,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-12-17",
+      "title": "Lowlights Of The Year",
+      "reference_year": 2018,
+      "reference_episode": 196,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-12-18",
+      "title": "The Crypto Crash",
+      "reference_year": 2018,
+      "reference_episode": 197,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-12-19",
+      "title": "You've Got Mail!",
+      "reference_year": 2018,
+      "reference_episode": 198,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2018-12-20",
+      "title": "Friends Of The Indicator, Pt 1",
+      "reference_year": 2018,
+      "reference_episode": 199,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-12-21",
+      "title": "Friends Of The Indicator, Pt 2",
+      "reference_year": 2018,
+      "reference_episode": 200,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-12-24",
+      "title": "Indicators Of The Year: Immigration",
+      "reference_year": 2018,
+      "reference_episode": 201,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-12-26",
+      "title": "Indicators Of The Year: Housing",
+      "reference_year": 2018,
+      "reference_episode": 202,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-12-27",
+      "title": "Indicators Of The Year: Opioids",
+      "reference_year": 2018,
+      "reference_episode": 203,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-12-28",
+      "title": "Indicators Of The Year: #MeToo",
+      "reference_year": 2018,
+      "reference_episode": 204,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2018-12-31",
+      "title": "Economists On Screen, Episode 1: Crazy Rich Asians",
+      "reference_year": 2018,
+      "reference_episode": 205,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-01-02",
+      "title": "Economists On Screen, Episode 2: Jack Ryan, CIA Economist",
+      "reference_year": 2019,
+      "reference_episode": 1,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-01-03",
+      "title": "Economists On Screen, Episode 3: Aaron Sorkin",
+      "reference_year": 2019,
+      "reference_episode": 2,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-01-04",
+      "title": "Economists On Screen, Episode 4: Stockholm",
+      "reference_year": 2019,
+      "reference_episode": 3,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-01-07",
+      "title": "Jobs, Inflation And The Phillips Curve",
+      "reference_year": 2019,
+      "reference_episode": 4,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-01-08",
+      "title": "Don't Fear The Fear Index",
+      "reference_year": 2019,
+      "reference_episode": 5,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2019-01-09",
+      "title": "Are We Ready For A Recession?",
+      "reference_year": 2019,
+      "reference_episode": 6,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-01-10",
+      "title": "U.S.-China Trade: Where Are We Now?",
+      "reference_year": 2019,
+      "reference_episode": 7,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-01-11",
+      "title": "Shutdown Economics",
+      "reference_year": 2019,
+      "reference_episode": 8,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-01-14",
+      "title": "10,000 Economists Walk Into A Bar",
+      "reference_year": 2019,
+      "reference_episode": 9,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-01-15",
+      "title": "Working Women: Why The U.S. Is Behind",
+      "reference_year": 2019,
+      "reference_episode": 10,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-01-16",
+      "title": "The Extremely Cautious Case For Extremely Mild Optimism",
+      "reference_year": 2019,
+      "reference_episode": 11,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-01-17",
+      "title": "R.I.P. Jack Bogle, Democratizer Of Investing",
+      "reference_year": 2019,
+      "reference_episode": 12,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-01-18",
+      "title": "What Keeps Economists Up At Night? And Other Stuff",
+      "reference_year": 2019,
+      "reference_episode": 13,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-01-22",
+      "title": "Shooting Bambi To Save Mother Nature",
+      "reference_year": 2019,
+      "reference_episode": 14,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-01-23",
+      "title": "When Tariffs Hit Home",
+      "reference_year": 2019,
+      "reference_episode": 15,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-01-24",
+      "title": "HAIL To College Access",
+      "reference_year": 2019,
+      "reference_episode": 16,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-01-25",
+      "title": "The End Of The Shutdown?",
+      "reference_year": 2019,
+      "reference_episode": 17,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2019-01-28",
+      "title": "Globalization At Davos: What Happened?",
+      "reference_year": 2019,
+      "reference_episode": 18,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-01-29",
+      "title": "A Bond Is Born",
+      "reference_year": 2019,
+      "reference_episode": 19,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-01-30",
+      "title": "How To Price A Government Shutdown",
+      "reference_year": 2019,
+      "reference_episode": 20,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-01-31",
+      "title": "Lights Out For PG&E?",
+      "reference_year": 2019,
+      "reference_episode": 21,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2019-02-01",
+      "title": "The Jobs Friday 5",
+      "reference_year": 2019,
+      "reference_episode": 22,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-02-04",
+      "title": "Cold-o-nomics",
+      "reference_year": 2019,
+      "reference_episode": 23,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-02-05",
+      "title": "The Fed's Sweet Spot For Interest Rates",
+      "reference_year": 2019,
+      "reference_episode": 24,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2019-02-06",
+      "title": "India's Poverty Paradox",
+      "reference_year": 2019,
+      "reference_episode": 25,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2019-02-07",
+      "title": "The Disease Detectives",
+      "reference_year": 2019,
+      "reference_episode": 26,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-02-08",
+      "title": "Small Town Boom",
+      "reference_year": 2019,
+      "reference_episode": 27,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-02-11",
+      "title": "How Violence Limits Economic Activity",
+      "reference_year": 2019,
+      "reference_episode": 28,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-02-12",
+      "title": "Fortnite Vs. Backpack Kid: Dance Battle Royale",
+      "reference_year": 2019,
+      "reference_episode": 29,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-02-13",
+      "title": "The Strike That Changed U.S. Labor",
+      "reference_year": 2019,
+      "reference_episode": 30,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-02-14",
+      "title": "Your Questions, Answered ❤️",
+      "reference_year": 2019,
+      "reference_episode": 31,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-02-15",
+      "title": "What Does \"National Emergency\" Actually Mean?",
+      "reference_year": 2019,
+      "reference_episode": 32,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-02-19",
+      "title": "The Super Bowl: Key Housing Indicator",
+      "reference_year": 2019,
+      "reference_episode": 33,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-02-20",
+      "title": "Why Americans Can't Quit Tipping",
+      "reference_year": 2019,
+      "reference_episode": 34,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2019-02-21",
+      "title": "Investing: Wait For It...?",
+      "reference_year": 2019,
+      "reference_episode": 35,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-02-22",
+      "title": "Unsung Economists #1: Sadie Alexander",
+      "reference_year": 2019,
+      "reference_episode": 36,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-02-25",
+      "title": "Payday Loans And Debt Traps",
+      "reference_year": 2019,
+      "reference_episode": 37,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-02-26",
+      "title": "TV Vs. Video Games: Who's Winning?",
+      "reference_year": 2019,
+      "reference_episode": 38,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2019-02-27",
+      "title": "More Debt, Less Problems",
+      "reference_year": 2019,
+      "reference_episode": 39,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-02-28",
+      "title": "Dancing On The Debt Ceiling",
+      "reference_year": 2019,
+      "reference_episode": 40,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-03-01",
+      "title": "Who Is The Neoliberal Shill Of The Year?",
+      "reference_year": 2019,
+      "reference_episode": 41,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-03-04",
+      "title": "5 Misconceptions About The Chinese Economy",
+      "reference_year": 2019,
+      "reference_episode": 42,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-03-05",
+      "title": "Trade War And Peace",
+      "reference_year": 2019,
+      "reference_episode": 43,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-03-06",
+      "title": "Tampons: That Bloody Sales Tax",
+      "reference_year": 2019,
+      "reference_episode": 44,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-03-07",
+      "title": "Inequality In America",
+      "reference_year": 2019,
+      "reference_episode": 45,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-03-08",
+      "title": "Gender Segregation In The Workplace",
+      "reference_year": 2019,
+      "reference_episode": 46,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-03-11",
+      "title": "March Madness: Britain Leaving The EU",
+      "reference_year": 2019,
+      "reference_episode": 47,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-03-12",
+      "title": "A Tale Of Two Dollar Stores",
+      "reference_year": 2019,
+      "reference_episode": 48,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-03-13",
+      "title": "The Economy Inside Your Head",
+      "reference_year": 2019,
+      "reference_episode": 49,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-03-14",
+      "title": "Saying 'I Do' To Lab-Grown Diamonds",
+      "reference_year": 2019,
+      "reference_episode": 50,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-03-18",
+      "title": "The Cost Of Student Debt",
+      "reference_year": 2019,
+      "reference_episode": 52,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-03-19",
+      "title": "Coffee? Thank U, Next",
+      "reference_year": 2019,
+      "reference_episode": 53,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-03-20",
+      "title": "Why Are Venezuelans Starving?",
+      "reference_year": 2019,
+      "reference_episode": 54,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-03-21",
+      "title": "Lyft Going Public: The Dual-Class Share Dilemma",
+      "reference_year": 2019,
+      "reference_episode": 55,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-03-22",
+      "title": "Are Neighbors Overrated? (And Other Questions)",
+      "reference_year": 2019,
+      "reference_episode": 56,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2019-03-25",
+      "title": "Spotify's Long, Winding Road To India",
+      "reference_year": 2019,
+      "reference_episode": 57,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2019-03-26",
+      "title": "Venezuela By The Numbers",
+      "reference_year": 2019,
+      "reference_episode": 58,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-03-27",
+      "title": "An Economist in Caracas: Day In The Life",
+      "reference_year": 2019,
+      "reference_episode": 59,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2019-03-28",
+      "title": "Dry Cleaners, Housing, The Stock Market And Rip It",
+      "reference_year": 2019,
+      "reference_episode": 60,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-03-29",
+      "title": "An Indicator In The Hand",
+      "reference_year": 2019,
+      "reference_episode": 61,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-04-01",
+      "title": "A Crisis Of Consumer Confidence?",
+      "reference_year": 2019,
+      "reference_episode": 62,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-04-02",
+      "title": "What Sex Work Reveals About Risk",
+      "reference_year": 2019,
+      "reference_episode": 63,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-04-03",
+      "title": "The 20-Year Quest To Save Nutella",
+      "reference_year": 2019,
+      "reference_episode": 64,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-04-04",
+      "title": "The China Corruption Crackdown: Sincere Or Cynical?",
+      "reference_year": 2019,
+      "reference_episode": 65,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-04-05",
+      "title": "Jobs Friday: Chillaxing Edition",
+      "reference_year": 2019,
+      "reference_episode": 66,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-04-08",
+      "title": "How To Measure Happiness",
+      "reference_year": 2019,
+      "reference_episode": 67,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-04-09",
+      "title": "Trade War With Cheese: Trump's New EU Tariffs",
+      "reference_year": 2019,
+      "reference_episode": 68,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2019-04-10",
+      "title": "The Maple Syrup Cartel",
+      "reference_year": 2019,
+      "reference_episode": 69,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-04-11",
+      "title": "How Trade Helps Explain Inequality",
+      "reference_year": 2019,
+      "reference_episode": 70,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-04-12",
+      "title": "Solving Problems Caused By International Trade",
+      "reference_year": 2019,
+      "reference_episode": 71,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-04-15",
+      "title": "The Cost Of Measles",
+      "reference_year": 2019,
+      "reference_episode": 72,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-04-16",
+      "title": "Why Do We Still Use QWERTY Keyboards?",
+      "reference_year": 2019,
+      "reference_episode": 73,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-04-17",
+      "title": "Why Do Introverts Get Paid Less?",
+      "reference_year": 2019,
+      "reference_episode": 74,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-04-18",
+      "title": "A Brief History of Income Taxes",
+      "reference_year": 2019,
+      "reference_episode": 75,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-04-22",
+      "title": "The Traffic Tariff",
+      "reference_year": 2019,
+      "reference_episode": 76,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-04-23",
+      "title": "What Happened To U.S. Workers?",
+      "reference_year": 2019,
+      "reference_episode": 77,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-04-24",
+      "title": "Is Everything Awesome In The Economy?",
+      "reference_year": 2019,
+      "reference_episode": 78,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-04-25",
+      "title": "Selling A T-Rex On eBay",
+      "reference_year": 2019,
+      "reference_episode": 79,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-04-26",
+      "title": "Why Superman Doesn't Take Over The World",
+      "reference_year": 2019,
+      "reference_episode": 80,
+      "reference_section": "possible_missing",
+      "status": "still_unresolved"
+    },
+    {
+      "date": "2019-04-29",
+      "title": "Where The Gender Pay Gap Is Widest",
+      "reference_year": 2019,
+      "reference_episode": 81,
+      "reference_section": "possible_missing",
+      "status": "recovered_and_validated"
+    },
+    {
+      "date": "2019-04-30",
+      "title": "How Grocery Shelves Get Stacked",
+      "reference_year": 2019,
+      "reference_episode": 82,
+      "reference_section": "matched",
+      "status": "already_in_history"
+    }
+  ]
+}
