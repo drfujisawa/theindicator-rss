@@ -1,0 +1,995 @@
+{
+  "method": "strict-npr-story-identity-resolution",
+  "input_count": 9,
+  "summary": {
+    "no_strong_npr_story_match": 9
+  },
+  "results": [
+    {
+      "date": "2018-04-26",
+      "title": "California's Housing Conundrum",
+      "status": "no_strong_npr_story_match",
+      "search_reports": [
+        {
+          "query": "site:npr.org \"California's Housing Conundrum\" \"2018\"",
+          "status": "fetched",
+          "results": []
+        },
+        {
+          "query": "site:npr.org \"California's Housing Conundrum\" \"The Indicator\"",
+          "status": "fetched",
+          "results": []
+        }
+      ],
+      "candidate_story_count": 6,
+      "qualified_story_count": 0,
+      "qualified_stories": [],
+      "story_candidates": [
+        {
+          "url": "https://www.npr.org/2017/04/26/524744989/when-la-erupted-in-anger-a-look-back-at-the-rodney-king-riots",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2017/04/26/524744989/when-la-erupted-in-anger-a-look-back-at-the-rodney-king-riots",
+          "score": 1,
+          "qualified": false,
+          "best_title": "When LA Erupted In Anger: A Look Back At The Rodney King Riots : NPR",
+          "title_similarity": 0.274,
+          "dates": [
+            "2017-04-26"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2017/04/26/524744989/when-la-erupted-in-anger-a-look-back-at-the-rodney-king-riots",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/2016/08/02/488428577/cesar-chavez-the-life-behind-a-legacy-of-farm-labor-rights",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2016/08/02/488428577/cesar-chavez-the-life-behind-a-legacy-of-farm-labor-rights",
+          "score": 1,
+          "qualified": false,
+          "best_title": "Cesar Chavez: The Life Behind A Legacy Of Farm Labor Rights : NPR",
+          "title_similarity": 0.261,
+          "dates": [
+            "2016-08-12"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2016/08/02/488428577/cesar-chavez-the-life-behind-a-legacy-of-farm-labor-rights",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/2019/04/15/713616857/officials-in-sanctuary-cities-condemn-trumps-proposal-to-move-immigrant-detainee?t=1567429578598",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2019/04/15/713616857/officials-in-sanctuary-cities-condemn-trumps-proposal-to-move-immigrant-detainee?t=1567429578598",
+          "score": 1,
+          "qualified": false,
+          "best_title": "Officials In Sanctuary Cities Condemn Trump",
+          "title_similarity": 0.466,
+          "dates": [
+            "2019-04-15"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2019/04/15/713616857/officials-in-sanctuary-cities-condemn-trumps-proposal-to-move-immigrant-detainee",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/sections/ed/2016/10/29/499867678/the-debate-over-bilingual-education-in-california",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/sections/ed/2016/10/29/499867678/the-debate-over-bilingual-education-in-california",
+          "score": 1,
+          "qualified": false,
+          "best_title": "Proposition 58: California To Vote On Bilingual Education Ban : NPR Ed : NPR",
+          "title_similarity": 0.455,
+          "dates": [
+            "2016-10-29"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/sections/ed/2016/10/29/499867678/the-debate-over-bilingual-education-in-california",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/2025/11/04/nx-s1-5587742/election-results-california-proposition-50-redistricting",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2025/11/04/nx-s1-5587742/election-results-california-proposition-50-redistricting",
+          "score": 1,
+          "qualified": false,
+          "best_title": "California voters allow Democrats to redraw congressional map : NPR",
+          "title_similarity": 0.442,
+          "dates": [
+            "2025-11-04"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2025/11/04/nx-s1-5587742/election-results-california-proposition-50-redistricting",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/2023/01/13/1148846720/california-says-it-will-dismantle-death-row-the-move-brings-cheers-and-anger#:~:text=Technically%2C%20the%20death%20penalty%20still,the%20state%20in%2017%20years.",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2023/01/13/1148846720/california-says-it-will-dismantle-death-row-the-move-brings-cheers-and-anger#:~:text=Technically%2C%20the%20death%20penalty%20still,the%20state%20in%2017%20years.",
+          "score": 1,
+          "qualified": false,
+          "best_title": "California says it will dismantle death row. The move brings cheers and anger",
+          "title_similarity": 0.434,
+          "dates": [
+            "2023-01-13"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2023/01/13/1148846720/california-says-it-will-dismantle-death-row-the-move-brings-cheers-and-anger",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        }
+      ],
+      "wayback_story_reports": [],
+      "player_reports": [],
+      "wayback_player_reports": [],
+      "validated_audio": []
+    },
+    {
+      "date": "2018-07-11",
+      "title": "Fed Accounts For All!",
+      "status": "no_strong_npr_story_match",
+      "search_reports": [
+        {
+          "query": "site:npr.org \"Fed Accounts For All!\" \"2018\"",
+          "status": "fetched",
+          "results": []
+        },
+        {
+          "query": "site:npr.org \"Fed Accounts For All!\" \"The Indicator\"",
+          "status": "fetched",
+          "results": []
+        }
+      ],
+      "candidate_story_count": 1,
+      "qualified_story_count": 0,
+      "qualified_stories": [],
+      "story_candidates": [
+        {
+          "url": "https://www.npr.org/templates/transcript/transcript.php?storyId=129451895",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/transcripts/129451895",
+          "score": 1,
+          "qualified": false,
+          "best_title": "How To Spend $1.25 Trillion",
+          "title_similarity": 0.304,
+          "dates": [
+            "2010-08-26"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/sections/money/2010/08/26/129451895/how-to-spend-1-25-trillion",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        }
+      ],
+      "wayback_story_reports": [],
+      "player_reports": [],
+      "wayback_player_reports": [],
+      "validated_audio": []
+    },
+    {
+      "date": "2018-07-23",
+      "title": "Google's Mobile Monopoly",
+      "status": "no_strong_npr_story_match",
+      "search_reports": [
+        {
+          "query": "site:npr.org \"Google's Mobile Monopoly\" \"2018\"",
+          "status": "fetched",
+          "results": []
+        },
+        {
+          "query": "site:npr.org \"Google's Mobile Monopoly\" \"The Indicator\"",
+          "status": "fetched",
+          "results": []
+        }
+      ],
+      "candidate_story_count": 5,
+      "qualified_story_count": 0,
+      "qualified_stories": [],
+      "story_candidates": [
+        {
+          "url": "https://www.npr.org/2020/10/20/925895658/u-s-files-antitrust-suit-against-google",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2020/10/20/925895658/u-s-files-antitrust-suit-against-google",
+          "score": 1,
+          "qualified": false,
+          "best_title": "U.S. Files Antitrust Suit Against Google : NPR",
+          "title_similarity": 0.269,
+          "dates": [
+            "2020-10-20"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2020/10/20/925895658/u-s-files-antitrust-suit-against-google",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/2018/12/17/677450467/google-will-spend-1-billion-for-new-york-city-campus-on-hudson-river",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2018/12/17/677450467/google-will-spend-1-billion-for-new-york-city-campus-on-hudson-river",
+          "score": 1,
+          "qualified": false,
+          "best_title": "Google Will Spend $1 Billion For New York City Campus On Hudson River",
+          "title_similarity": 0.37,
+          "dates": [
+            "2018-12-17"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2018/12/17/677450467/google-will-spend-1-billion-for-new-york-city-campus-on-hudson-river",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/2024/03/06/1236380984/china-google-fbi-ai",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2024/03/06/1236380984/china-google-fbi-ai",
+          "score": 1,
+          "qualified": false,
+          "best_title": "Chinese national arrested and charged with stealing AI trade secrets from Google : NPR",
+          "title_similarity": 0.167,
+          "dates": [
+            "2024-03-06"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2024/03/06/1236380984/china-google-fbi-ai",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/2020/10/06/920882893/how-are-apple-amazon-facebook-google-monopolies-house-report-counts-the-ways",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2020/10/06/920882893/how-are-apple-amazon-facebook-google-monopolies-house-report-counts-the-ways",
+          "score": 1,
+          "qualified": false,
+          "best_title": "How Are Apple, Amazon, Facebook, Google Monopolies? House Report Counts The Ways",
+          "title_similarity": 0.3,
+          "dates": [
+            "2020-10-06"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2020/10/06/920882893/how-are-apple-amazon-facebook-google-monopolies-house-report-counts-the-ways",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/2023/12/30/1222268415/google-settles-5-billion-privacy-lawsuit",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2023/12/30/1222268415/google-settles-5-billion-privacy-lawsuit",
+          "score": 1,
+          "qualified": false,
+          "best_title": "Google settles $5 billion privacy lawsuit over tracking people using ",
+          "title_similarity": 0.33,
+          "dates": [
+            "2023-12-30"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2023/12/30/1222268415/google-settles-5-billion-privacy-lawsuit",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        }
+      ],
+      "wayback_story_reports": [],
+      "player_reports": [],
+      "wayback_player_reports": [],
+      "validated_audio": []
+    },
+    {
+      "date": "2018-08-10",
+      "title": "Privacy Please: Why Public Companies Go Private (Or Vice Versa)",
+      "status": "no_strong_npr_story_match",
+      "search_reports": [
+        {
+          "query": "site:npr.org \"Privacy Please: Why Public Companies Go Private (Or Vice Versa)\" \"2018\"",
+          "status": "fetched",
+          "results": []
+        },
+        {
+          "query": "site:npr.org \"Privacy Please: Why Public Companies Go Private (Or Vice Versa)\" \"The Indicator\"",
+          "status": "fetched",
+          "results": []
+        }
+      ],
+      "candidate_story_count": 2,
+      "qualified_story_count": 0,
+      "qualified_stories": [],
+      "story_candidates": [
+        {
+          "url": "https://www.npr.org/sections/thetwo-way/2017/08/24/545963181/indian-supreme-court-declares-privacy-a-fundamental-right",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/sections/thetwo-way/2017/08/24/545963181/indian-supreme-court-declares-privacy-a-fundamental-right",
+          "score": 1,
+          "qualified": false,
+          "best_title": "Indian Supreme Court Declares Privacy A Fundamental Right : The Two-Way : NPR",
+          "title_similarity": 0.256,
+          "dates": [
+            "2017-08-24"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/sections/thetwo-way/2017/08/24/545963181/indian-supreme-court-declares-privacy-a-fundamental-right",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/2020/10/09/922262686/your-technology-is-tracking-you-take-these-steps-for-better-online-privacy",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2020/10/09/922262686/your-technology-is-tracking-you-take-these-steps-for-better-online-privacy",
+          "score": 1,
+          "qualified": false,
+          "best_title": "How To Protect Your Privacy Online In 8 Tips : Life Kit : NPR",
+          "title_similarity": 0.325,
+          "dates": [
+            "2020-10-13"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2020/10/09/922262686/your-technology-is-tracking-you-take-these-steps-for-better-online-privacy",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        }
+      ],
+      "wayback_story_reports": [],
+      "player_reports": [],
+      "wayback_player_reports": [],
+      "validated_audio": []
+    },
+    {
+      "date": "2018-08-17",
+      "title": "Donald Trump's Economic Strategy... Maybe?",
+      "status": "no_strong_npr_story_match",
+      "search_reports": [
+        {
+          "query": "site:npr.org \"Donald Trump's Economic Strategy... Maybe?\" \"2018\"",
+          "status": "fetched",
+          "results": []
+        },
+        {
+          "query": "site:npr.org \"Donald Trump's Economic Strategy... Maybe?\" \"The Indicator\"",
+          "status": "fetched",
+          "results": []
+        }
+      ],
+      "candidate_story_count": 20,
+      "qualified_story_count": 0,
+      "qualified_stories": [],
+      "story_candidates": [
+        {
+          "url": "https://www.npr.org/2016/08/10/489476187/trump-s-second-amendment-comment-fit-a-pattern-of-ambiguous-speech",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2016/08/10/489476187/trump-s-second-amendment-comment-fit-a-pattern-of-ambiguous-speech",
+          "score": 1,
+          "qualified": false,
+          "best_title": "Donald Trump",
+          "title_similarity": 0.48,
+          "dates": [
+            "2016-08-10"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2016/08/10/489476187/trump-s-second-amendment-comment-fit-a-pattern-of-ambiguous-speech",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/sections/health-shots/2016/11/09/501203831/trump-can-kill-obamacare-with-or-without-help-from-congress",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/sections/health-shots/2016/11/09/501203831/trump-can-kill-obamacare-with-or-without-help-from-congress",
+          "score": 1,
+          "qualified": false,
+          "best_title": "What Lies Ahead For Obamacare In Donald Trump's Administration : Shots - Health News : NPR",
+          "title_similarity": 0.41,
+          "dates": [
+            "2016-11-09"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/sections/health-shots/2016/11/09/501203831/trump-can-kill-obamacare-with-or-without-help-from-congress",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/2020/10/29/927859091/opioid-crisis-critics-say-trump-fumbled-response-to-another-deadly-epidemic",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2020/10/29/927859091/opioid-crisis-critics-say-trump-fumbled-response-to-another-deadly-epidemic",
+          "score": 1,
+          "qualified": false,
+          "best_title": "Opioid Crisis: Critics Say Trump Fumbled Response To Another Deadly Epidemic : NPR",
+          "title_similarity": 0.291,
+          "dates": [
+            "2020-10-29"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2020/10/29/927859091/opioid-crisis-critics-say-trump-fumbled-response-to-another-deadly-epidemic",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/2018/06/19/621065383/what-we-know-family-separation-and-zero-tolerance-at-the-border",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2018/06/19/621065383/what-we-know-family-separation-and-zero-tolerance-at-the-border",
+          "score": 1,
+          "qualified": false,
+          "best_title": "What We Know: Family Separation And ",
+          "title_similarity": 0.306,
+          "dates": [
+            "2018-06-19"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2018/06/19/621065383/what-we-know-family-separation-and-zero-tolerance-at-the-border",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/2018/03/07/591372397/white-house-staff-turnover-was-already-record-setting-then-more-advisers-left",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2018/03/07/591372397/white-house-staff-turnover-was-already-record-setting-then-more-advisers-left",
+          "score": 1,
+          "qualified": false,
+          "best_title": "White House Staff Turnover Was Already Record-Setting. Then More Advisers Left",
+          "title_similarity": 0.33,
+          "dates": [
+            "2018-03-07"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2018/03/07/591372397/white-house-staff-turnover-was-already-record-setting-then-more-advisers-left",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/2020/03/06/766025774/mick-mulvaney-out-as-white-house-chief-of-staff",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2020/03/06/766025774/mick-mulvaney-out-as-white-house-chief-of-staff",
+          "score": 1,
+          "qualified": false,
+          "best_title": "Trump Ousts White House Chief Of Staff Mick Mulvaney : NPR",
+          "title_similarity": 0.404,
+          "dates": [
+            "2020-03-06"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2020/03/06/766025774/mick-mulvaney-out-as-white-house-chief-of-staff",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/2017/10/12/557122200/trump-leaves-top-administration-positions-unfilled-says-hollow-government-by-des",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2017/10/12/557122200/trump-leaves-top-administration-positions-unfilled-says-hollow-government-by-des",
+          "score": 1,
+          "qualified": false,
+          "best_title": "Trump Leaves Top Administration Positions Unfilled, Says Hollow Government By Design",
+          "title_similarity": 0.347,
+          "dates": [
+            "2017-10-12"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2017/10/12/557122200/trump-leaves-top-administration-positions-unfilled-says-hollow-government-by-des",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/2023/05/09/1174975870/trump-carroll-verdict",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2023/05/09/1174975870/trump-carroll-verdict",
+          "score": 1,
+          "qualified": false,
+          "best_title": "A jury finds Trump liable for battery and defamation in E. Jean Carroll trial",
+          "title_similarity": 0.281,
+          "dates": [
+            "2023-05-09"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2023/05/09/1174975870/trump-carroll-verdict",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/2026/01/19/nx-s1-5640006/trump-has-rolled-out-many-of-the-project-2025-policies-he-once-claimed-ignorance-about",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2026/01/19/nx-s1-5640006/trump-has-rolled-out-many-of-the-project-2025-policies-he-once-claimed-ignorance-about",
+          "score": 1,
+          "qualified": false,
+          "best_title": "Trump's first year Project 2025 policies : NPR",
+          "title_similarity": 0.366,
+          "dates": [
+            "2026-01-19"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2026/01/19/nx-s1-5640006/trump-has-rolled-out-many-of-the-project-2025-policies-he-once-claimed-ignorance-about",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/2025/03/19/nx-s1-5323890/experts-say-trumps-targeting-of-law-firms-is-unprecedented",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2025/03/19/nx-s1-5323890/experts-say-trumps-targeting-of-law-firms-is-unprecedented",
+          "score": 1,
+          "qualified": false,
+          "best_title": "Experts say Trump's targeting of law firms is unprecedented : NPR",
+          "title_similarity": 0.317,
+          "dates": [
+            "2025-03-19"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2025/03/19/nx-s1-5323890/experts-say-trumps-targeting-of-law-firms-is-unprecedented",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/2021/02/09/965472049/the-capitol-siege-the-arrested-and-their-stories",
+          "status": "fetched",
+          "final_url": "https://apps.npr.org/jan-6-archive/",
+          "score": 0,
+          "qualified": false,
+          "best_title": null,
+          "title_similarity": 0.0,
+          "dates": [],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "",
+          "reasons": []
+        },
+        {
+          "url": "https://www.npr.org/2025/08/14/nx-s1-5501591/trump-corporate-america-capitalism",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2025/08/14/nx-s1-5501591/trump-corporate-america-capitalism",
+          "score": 1,
+          "qualified": false,
+          "best_title": "Companies don't want to fight with Trump. That may be reshaping the economy : NPR",
+          "title_similarity": 0.362,
+          "dates": [
+            "2025-08-14"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2025/08/14/nx-s1-5501591/trump-corporate-america-capitalism",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/2025/01/22/nx-s1-5269717/trump-energy-emergency-climate",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2025/01/22/nx-s1-5269717/trump-energy-emergency-climate",
+          "score": 1,
+          "qualified": false,
+          "best_title": "Trump’s energy emergency ignores climate and boosts fossil fuels : NPR",
+          "title_similarity": 0.377,
+          "dates": [
+            "2025-01-22"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2025/01/22/nx-s1-5269717/trump-energy-emergency-climate",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/2025/03/29/nx-s1-5333720/trumps-changes-to-the-smithsonian-are-the-latest-in-his-takeover-of-the-arts",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2025/03/29/nx-s1-5333720/trumps-changes-to-the-smithsonian-are-the-latest-in-his-takeover-of-the-arts",
+          "score": 1,
+          "qualified": false,
+          "best_title": "Trump's changes to the Smithsonian are the latest in his takeover of the arts : NPR",
+          "title_similarity": 0.336,
+          "dates": [
+            "2025-03-29"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2025/03/29/nx-s1-5333720/trumps-changes-to-the-smithsonian-are-the-latest-in-his-takeover-of-the-arts",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/2025/02/07/g-s1-46893/trump-anti-trans-rights-executive-action-gender-ideology-confusion",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2025/02/07/g-s1-46893/trump-anti-trans-rights-executive-action-gender-ideology-confusion",
+          "score": 1,
+          "qualified": false,
+          "best_title": "Trump wants to combat 'gender ideology.' But what does that mean? : NPR",
+          "title_similarity": 0.369,
+          "dates": [
+            "2025-02-07"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2025/02/07/g-s1-46893/trump-anti-trans-rights-executive-action-gender-ideology-confusion",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/2025/09/06/nx-s1-5532148/national-guard-chicago-baltimore-new-orleans",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2025/09/06/nx-s1-5532148/national-guard-chicago-baltimore-new-orleans",
+          "score": 1,
+          "qualified": false,
+          "best_title": "Trump threatens ",
+          "title_similarity": 0.377,
+          "dates": [
+            "2025-09-06"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2025/09/06/nx-s1-5532148/national-guard-chicago-baltimore-new-orleans",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/2025/01/20/g-s1-43650/trump-inauguration-day-one-immigration",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2025/01/20/g-s1-43650/trump-inauguration-day-one-immigration",
+          "score": 1,
+          "qualified": false,
+          "best_title": "Trump signs sweeping actions on immigration and border security on Day 1",
+          "title_similarity": 0.418,
+          "dates": [
+            "2025-01-20"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2025/01/20/g-s1-43650/trump-inauguration-day-one-immigration",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/2018/05/16/611660586/trump-acknowledges-financial-liability-for-stormy-daniels-payment",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2018/05/16/611660586/trump-acknowledges-financial-liability-for-stormy-daniels-payment",
+          "score": 1,
+          "qualified": false,
+          "best_title": "Trump Acknowledges Financial 'Liability' For Stormy Daniels Payment : NPR",
+          "title_similarity": 0.355,
+          "dates": [
+            "2018-05-16"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2018/05/16/611660586/trump-acknowledges-financial-liability-for-stormy-daniels-payment",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "http://www.npr.org/sections/thetwo-way/2016/11/30/503253374/trump-taps-billionaire-investor-wilbur-ross-for-commerce-secretary",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/sections/thetwo-way/2016/11/30/503253374/trump-taps-billionaire-investor-wilbur-ross-for-commerce-secretary",
+          "score": 1,
+          "qualified": false,
+          "best_title": "Trump Taps Billionaire Investor Wilbur Ross For Commerce Secretary : The Two-Way : NPR",
+          "title_similarity": 0.267,
+          "dates": [
+            "2016-11-30"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/sections/thetwo-way/2016/11/30/503253374/trump-taps-billionaire-investor-wilbur-ross-for-commerce-secretary",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/2017/12/19/571754894/charts-see-how-much-of-gop-tax-cuts-will-go-to-the-middle-class",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2017/12/19/571754894/charts-see-how-much-of-gop-tax-cuts-will-go-to-the-middle-class",
+          "score": 1,
+          "qualified": false,
+          "best_title": "CHARTS: See How Much Of GOP Tax Cuts Will Go To The Middle Class : NPR",
+          "title_similarity": 0.229,
+          "dates": [
+            "2017-12-19"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2017/12/19/571754894/charts-see-how-much-of-gop-tax-cuts-will-go-to-the-middle-class",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        }
+      ],
+      "wayback_story_reports": [],
+      "player_reports": [],
+      "wayback_player_reports": [],
+      "validated_audio": []
+    },
+    {
+      "date": "2018-09-24",
+      "title": "Saudi Arabia & The Paradox of Plenty",
+      "status": "no_strong_npr_story_match",
+      "search_reports": [
+        {
+          "query": "site:npr.org \"Saudi Arabia & The Paradox of Plenty\" \"2018\"",
+          "status": "fetched",
+          "results": []
+        },
+        {
+          "query": "site:npr.org \"Saudi Arabia & The Paradox of Plenty\" \"The Indicator\"",
+          "status": "fetched",
+          "results": []
+        }
+      ],
+      "candidate_story_count": 2,
+      "qualified_story_count": 0,
+      "qualified_stories": [],
+      "story_candidates": [
+        {
+          "url": "https://www.npr.org/2011/06/08/137065443/opec-decides-not-to-increase-oil-production",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2011/06/08/137065443/opec-decides-not-to-increase-oil-production",
+          "score": 1,
+          "qualified": false,
+          "best_title": "OPEC Decides Not To Increase Oil Production",
+          "title_similarity": 0.272,
+          "dates": [
+            "2011-06-08"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2011/06/08/137065443/opec-decides-not-to-increase-oil-production",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/2011/05/19/136439885/poverty-hides-amid-saudi-arabias-oil-wealth",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2011/05/19/136439885/poverty-hides-amid-saudi-arabias-oil-wealth",
+          "score": 1,
+          "qualified": false,
+          "best_title": "Poverty Hides Amid Saudi Arabia's Oil Wealth : NPR",
+          "title_similarity": 0.442,
+          "dates": [
+            "2011-05-19"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2011/05/19/136439885/poverty-hides-amid-saudi-arabias-oil-wealth",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        }
+      ],
+      "wayback_story_reports": [],
+      "player_reports": [],
+      "wayback_player_reports": [],
+      "validated_audio": []
+    },
+    {
+      "date": "2018-10-05",
+      "title": "Who's Hiring?",
+      "status": "no_strong_npr_story_match",
+      "search_reports": [
+        {
+          "query": "site:npr.org \"Who's Hiring?\" \"2018\"",
+          "status": "fetched",
+          "results": []
+        },
+        {
+          "query": "site:npr.org \"Who's Hiring?\" \"The Indicator\"",
+          "status": "fetched",
+          "results": []
+        }
+      ],
+      "candidate_story_count": 4,
+      "qualified_story_count": 0,
+      "qualified_stories": [],
+      "story_candidates": [
+        {
+          "url": "https://www.npr.org/sections/goatsandsoda/2015/05/21/408289115/who-calls-for-100-million-emergency-fund-doctor-swat-team",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/sections/goatsandsoda/2015/05/21/408289115/who-calls-for-100-million-emergency-fund-doctor-swat-team",
+          "score": 1,
+          "qualified": false,
+          "best_title": "WHO Calls For $100 Million Emergency Fund, Doctor ",
+          "title_similarity": 0.305,
+          "dates": [
+            "2015-05-21"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/sections/goatsandsoda/2015/05/21/408289115/who-calls-for-100-million-emergency-fund-doctor-swat-team",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/sections/goatsandsoda/2016/05/25/479228380/who-aims-to-reform-itself-but-health-experts-arent-yet-impressed",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/sections/goatsandsoda/2016/05/25/479228380/who-aims-to-reform-itself-but-health-experts-arent-yet-impressed",
+          "score": 1,
+          "qualified": false,
+          "best_title": "WHO Aims To Reform Itself But Health Experts Aren",
+          "title_similarity": 0.295,
+          "dates": [
+            "2016-05-25"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/sections/goatsandsoda/2016/05/25/479228380/who-aims-to-reform-itself-but-health-experts-arent-yet-impressed",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/sections/goatsandsoda/2020/01/30/798894428/who-declares-coronavirus-outbreak-a-global-health-emergency",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/sections/goatsandsoda/2020/01/30/798894428/who-declares-coronavirus-outbreak-a-global-health-emergency",
+          "score": 1,
+          "qualified": false,
+          "best_title": "WHO Declares Coronavirus Outbreak A Global Health Emergency",
+          "title_similarity": 0.254,
+          "dates": [
+            "2020-01-30"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/sections/goatsandsoda/2020/01/30/798894428/who-declares-coronavirus-outbreak-a-global-health-emergency",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/sections/goatsandsoda/2020/04/15/835179442/we-alerted-the-world-to-coronavirus-on-jan-5-who-says-in-response-to-u-s",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/sections/goatsandsoda/2020/04/15/835179442/we-alerted-the-world-to-coronavirus-on-jan-5-who-says-in-response-to-u-s",
+          "score": 1,
+          "qualified": false,
+          "best_title": "WHO Says It Alerted World To Coronavirus On Jan. 5 : Goats and Soda : NPR",
+          "title_similarity": 0.25,
+          "dates": [
+            "2020-04-15"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/sections/goatsandsoda/2020/04/15/835179442/we-alerted-the-world-to-coronavirus-on-jan-5-who-says-in-response-to-u-s",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        }
+      ],
+      "wayback_story_reports": [],
+      "player_reports": [],
+      "wayback_player_reports": [],
+      "validated_audio": []
+    },
+    {
+      "date": "2018-10-09",
+      "title": "China's Social Credit System",
+      "status": "no_strong_npr_story_match",
+      "search_reports": [
+        {
+          "query": "site:npr.org \"China's Social Credit System\" \"2018\"",
+          "status": "fetched",
+          "results": []
+        },
+        {
+          "query": "site:npr.org \"China's Social Credit System\" \"The Indicator\"",
+          "status": "fetched",
+          "results": []
+        }
+      ],
+      "candidate_story_count": 1,
+      "qualified_story_count": 0,
+      "qualified_stories": [],
+      "story_candidates": [
+        {
+          "url": "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s",
+          "score": 1,
+          "qualified": false,
+          "best_title": "China Suppression Of Uighur Minorities Meets U.N. Definition Of Genocide, Report Says",
+          "title_similarity": 0.36,
+          "dates": [
+            "2020-07-04"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        }
+      ],
+      "wayback_story_reports": [],
+      "player_reports": [],
+      "wayback_player_reports": [],
+      "validated_audio": []
+    },
+    {
+      "date": "2018-10-11",
+      "title": "China's Brave New World",
+      "status": "no_strong_npr_story_match",
+      "search_reports": [
+        {
+          "query": "site:npr.org \"China's Brave New World\" \"2018\"",
+          "status": "fetched",
+          "results": []
+        },
+        {
+          "query": "site:npr.org \"China's Brave New World\" \"The Indicator\"",
+          "status": "fetched",
+          "results": []
+        }
+      ],
+      "candidate_story_count": 1,
+      "qualified_story_count": 0,
+      "qualified_stories": [],
+      "story_candidates": [
+        {
+          "url": "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s",
+          "status": "fetched",
+          "final_url": "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s",
+          "score": 1,
+          "qualified": false,
+          "best_title": "China Suppression Of Uighur Minorities Meets U.N. Definition Of Genocide, Report Says",
+          "title_similarity": 0.264,
+          "dates": [
+            "2020-07-04"
+          ],
+          "date_match": false,
+          "url_date_match": false,
+          "canonical": "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s",
+          "reasons": [
+            "canonical_is_npr"
+          ]
+        }
+      ],
+      "wayback_story_reports": [],
+      "player_reports": [],
+      "wayback_player_reports": [],
+      "validated_audio": []
+    }
+  ]
+}
