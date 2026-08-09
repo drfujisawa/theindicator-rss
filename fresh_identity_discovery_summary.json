@@ -1,0 +1,22 @@
+{
+  "run_state": "placeholder",
+  "method": "fresh-identity-discovery",
+  "generated_at": "2026-08-09T20:59:46.095737+00:00",
+  "episodes": [
+    {
+      "reference_date": "2018-07-11",
+      "reference_title": "Fed Accounts For All!",
+      "final_classification": null
+    },
+    {
+      "reference_date": "2018-08-10",
+      "reference_title": "Privacy Please: Why Public Companies Go Private (Or Vice Versa)",
+      "final_classification": null
+    },
+    {
+      "reference_date": "2018-09-24",
+      "reference_title": "Saudi Arabia & The Paradox of Plenty",
+      "final_classification": null
+    }
+  ]
+}
