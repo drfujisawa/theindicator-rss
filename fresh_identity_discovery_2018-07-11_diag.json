@@ -3,8 +3,8 @@
   "placeholder": false,
   "run_complete": true,
   "run_state": "run_complete",
-  "run_id": "31338522455",
-  "generated_at": "2026-08-09T22:05:47.669290+00:00",
+  "run_id": "31340062188",
+  "generated_at": "2026-08-09T22:42:25.562437+00:00",
   "reference_date": "2018-07-11",
   "reference_title": "Fed Accounts For All!",
   "reference_episode": 85,
@@ -38,83 +38,2774 @@
   ],
   "cdx_queries": [
     {
-      "pattern": "https://www.npr.org/2018/07/10/*/*",
+      "pattern": "https://www.npr.org/sections/money/2018/07/10/",
       "from": "20180708",
       "to": "20180718",
       "limit": 40,
-      "rows_returned": 0,
-      "scored_candidates": []
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F07%2F10%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180708&to=20180718&limit=40",
+      "rows_returned": 2,
+      "error_type": null,
+      "error_message": null,
+      "response_length": 305,
+      "zero_row_response": false,
+      "scored_candidates": [
+        {
+          "url": "https://www.npr.org/sections/money/2018/07/10/627818329/the-price-of-a-hyundai-in-iran",
+          "timestamp": "20180710235946",
+          "url_date": "2018-07-10",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/07/10/627818329/the-price-of-a-hyundai-in-iran",
+          "timestamp": "20180713200737",
+          "url_date": "2018-07-10",
+          "score": 0.1
+        }
+      ]
     },
     {
-      "pattern": "https://www.npr.org/sections/*/2018/07/10/*/*",
+      "pattern": "http://www.npr.org/sections/money/2018/07/10/",
       "from": "20180708",
       "to": "20180718",
       "limit": 40,
-      "rows_returned": 0,
-      "scored_candidates": []
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F07%2F10%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180708&to=20180718&limit=40",
+      "rows_returned": 2,
+      "error_type": null,
+      "error_message": null,
+      "response_length": 305,
+      "zero_row_response": false,
+      "scored_candidates": [
+        {
+          "url": "https://www.npr.org/sections/money/2018/07/10/627818329/the-price-of-a-hyundai-in-iran",
+          "timestamp": "20180710235946",
+          "url_date": "2018-07-10",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/07/10/627818329/the-price-of-a-hyundai-in-iran",
+          "timestamp": "20180713200737",
+          "url_date": "2018-07-10",
+          "score": 0.1
+        }
+      ]
     },
     {
-      "pattern": "https://www.npr.org/2018/07/11/*/*",
+      "pattern": "https://www.npr.org/sections/money/2018/07/11/",
       "from": "20180708",
       "to": "20180718",
       "limit": 40,
-      "rows_returned": 0,
-      "scored_candidates": []
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F07%2F11%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180708&to=20180718&limit=40",
+      "rows_returned": 7,
+      "error_type": null,
+      "error_message": null,
+      "response_length": 1011,
+      "zero_row_response": false,
+      "scored_candidates": [
+        {
+          "url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+          "timestamp": "20180711230025",
+          "url_date": "2018-07-11",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+          "timestamp": "20180713215315",
+          "url_date": "2018-07-11",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+          "timestamp": "20180717214543",
+          "url_date": "2018-07-11",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180717215358",
+          "url_date": "2018-07-11",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+          "timestamp": "20180718082058",
+          "url_date": "2018-07-11",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/07/11/628137929/episode-427-lebron-james-is-still-underpaid",
+          "timestamp": "20180712004340",
+          "url_date": "2018-07-11",
+          "score": 0.2
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/07/11/628137929/episode-427-lebron-james-is-still-underpaid",
+          "timestamp": "20180713211821",
+          "url_date": "2018-07-11",
+          "score": 0.2
+        }
+      ]
     },
     {
-      "pattern": "https://www.npr.org/sections/*/2018/07/11/*/*",
+      "pattern": "http://www.npr.org/sections/money/2018/07/11/",
       "from": "20180708",
       "to": "20180718",
       "limit": 40,
-      "rows_returned": 0,
-      "scored_candidates": []
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F07%2F11%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180708&to=20180718&limit=40",
+      "rows_returned": 7,
+      "error_type": null,
+      "error_message": null,
+      "response_length": 1011,
+      "zero_row_response": false,
+      "scored_candidates": [
+        {
+          "url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+          "timestamp": "20180711230025",
+          "url_date": "2018-07-11",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+          "timestamp": "20180713215315",
+          "url_date": "2018-07-11",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+          "timestamp": "20180717214543",
+          "url_date": "2018-07-11",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180717215358",
+          "url_date": "2018-07-11",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+          "timestamp": "20180718082058",
+          "url_date": "2018-07-11",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/07/11/628137929/episode-427-lebron-james-is-still-underpaid",
+          "timestamp": "20180712004340",
+          "url_date": "2018-07-11",
+          "score": 0.2
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/07/11/628137929/episode-427-lebron-james-is-still-underpaid",
+          "timestamp": "20180713211821",
+          "url_date": "2018-07-11",
+          "score": 0.2
+        }
+      ]
     },
     {
-      "pattern": "https://www.npr.org/2018/07/12/*/*",
+      "pattern": "https://www.npr.org/sections/money/2018/07/12/",
       "from": "20180708",
       "to": "20180718",
       "limit": 40,
-      "rows_returned": 0,
-      "scored_candidates": []
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F07%2F12%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180708&to=20180718&limit=40",
+      "rows_returned": 5,
+      "error_type": null,
+      "error_message": null,
+      "response_length": 708,
+      "zero_row_response": false,
+      "scored_candidates": [
+        {
+          "url": "https://www.npr.org/sections/money/2018/07/12/628548830/the-last-straw",
+          "timestamp": "20180713234426",
+          "url_date": "2018-07-12",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/07/12/628548830/the-last-straw",
+          "timestamp": "20180717210458",
+          "url_date": "2018-07-12",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/07/12/628548830/the-last-straw?ft=nprml&f=",
+          "timestamp": "20180713193837",
+          "url_date": "2018-07-12",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/07/12/628548830/the-last-straw?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180717214650",
+          "url_date": "2018-07-12",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/07/12/628548830/the-last-straw?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180717215349",
+          "url_date": "2018-07-12",
+          "score": 0.1
+        }
+      ]
     },
     {
-      "pattern": "https://www.npr.org/sections/*/2018/07/12/*/*",
+      "pattern": "http://www.npr.org/sections/money/2018/07/12/",
       "from": "20180708",
       "to": "20180718",
       "limit": 40,
-      "rows_returned": 0,
-      "scored_candidates": []
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F07%2F12%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180708&to=20180718&limit=40",
+      "rows_returned": 5,
+      "error_type": null,
+      "error_message": null,
+      "response_length": 708,
+      "zero_row_response": false,
+      "scored_candidates": [
+        {
+          "url": "https://www.npr.org/sections/money/2018/07/12/628548830/the-last-straw",
+          "timestamp": "20180713234426",
+          "url_date": "2018-07-12",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/07/12/628548830/the-last-straw",
+          "timestamp": "20180717210458",
+          "url_date": "2018-07-12",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/07/12/628548830/the-last-straw?ft=nprml&f=",
+          "timestamp": "20180713193837",
+          "url_date": "2018-07-12",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/07/12/628548830/the-last-straw?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180717214650",
+          "url_date": "2018-07-12",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/07/12/628548830/the-last-straw?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180717215349",
+          "url_date": "2018-07-12",
+          "score": 0.1
+        }
+      ]
     }
   ],
   "slug_variant_probes": [],
-  "date_window_captures": [],
+  "date_window_captures": [
+    {
+      "timestamp": "20180711230025",
+      "original_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+      "archive_url": "https://web.archive.org/web/20180711230025id_/https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+      "status": "fetched",
+      "page_title": "Fed Accounts For All! : Planet Money : NPR",
+      "pub_date": "2018-07-11",
+      "canonical_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      },
+      "match_score": {
+        "title_score": 1.0,
+        "date_match": true,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": true,
+        "canonical_story_id": "628173553",
+        "discovered_story_id": "628173553",
+        "trusted_story_page": true,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "strong_match"
+      },
+      "story_id": "628173553",
+      "story_evidence": {
+        "story_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+        "story_id": "628173553",
+        "provenance": {
+          "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+          "source_capture_timestamp": "20180711230025",
+          "episode_qualified": true,
+          "target_episode": "2018-07-11",
+          "target_title": "Fed Accounts For All!",
+          "evidence_type": "story_url",
+          "trust_level": "trusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/628169160/628176595",
+          "player_story_id": "628169160",
+          "player_audio_id": "628176595",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "player_url",
+            "trust_level": "trusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?orgId=1&d=565&p=510325&story=628169160&t=podcast&e=628169160&siteplayer=true",
+          "audio_id": "628169160",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "audio_url",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?orgId=1&d=565&p=510325&story=628169160&t=podcast&e=628169160&siteplayer=true&dl=1",
+          "audio_id": "628169160",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "audio_url",
+            "trust_level": "trusted"
+          }
+        }
+      ],
+      "numeric_ids": [
+        {
+          "numeric_id": "628173553",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "93559255",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "10643211755",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "5828686",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "567724614",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "2018071117",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "20501671",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "2535181",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "98679384",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "122356178",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "100920965",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "198341814",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "4692815",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "423302056",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "347139849",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "103063413",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "191663270",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "257657827",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "104566969",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "153588024",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "192827079",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "178659563",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "178640915",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "178660742",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "179803822",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "183726490",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "177066727",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "182673872",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "179881519",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "187046089",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "186948703",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "181961258",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "182675632",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "185546105",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "179008081",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "181909622",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "181881227",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "181880514",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "185550054",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "135599807",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "135511603",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "290783428",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "628169160",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "628176595",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "1320118593",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "350888943",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "567164716",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "471757314",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "179876898",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "179878450",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+            "source_capture_timestamp": "20180711230025",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        }
+      ],
+      "episode_qualified": true,
+      "trust_level": "trusted",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+        "source_capture_timestamp": "20180711230025",
+        "episode_qualified": true,
+        "target_episode": "2018-07-11",
+        "target_title": "Fed Accounts For All!",
+        "evidence_type": "archive_capture",
+        "trust_level": "trusted"
+      },
+      "cdx_score": 1.0,
+      "source": "stage_c_capture_fetch"
+    },
+    {
+      "timestamp": "20180717215358",
+      "original_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+      "archive_url": "https://web.archive.org/web/20180717215358id_/https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+      "status": "fetched",
+      "page_title": "Fed Accounts For All! : Planet Money : NPR",
+      "pub_date": "2018-07-11",
+      "canonical_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      },
+      "match_score": {
+        "title_score": 1.0,
+        "date_match": true,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": true,
+        "canonical_story_id": "628173553",
+        "discovered_story_id": "628173553",
+        "trusted_story_page": true,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "strong_match"
+      },
+      "story_id": "628173553",
+      "story_evidence": {
+        "story_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+        "story_id": "628173553",
+        "provenance": {
+          "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+          "source_capture_timestamp": "20180717215358",
+          "episode_qualified": true,
+          "target_episode": "2018-07-11",
+          "target_title": "Fed Accounts For All!",
+          "evidence_type": "story_url",
+          "trust_level": "trusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/628169160/628176595",
+          "player_story_id": "628169160",
+          "player_audio_id": "628176595",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "player_url",
+            "trust_level": "trusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?orgId=1&d=565&p=510325&story=628169160&t=podcast&e=628169160&siteplayer=true",
+          "audio_id": "628169160",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "audio_url",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?orgId=1&d=565&p=510325&story=628169160&t=podcast&e=628169160&siteplayer=true&dl=1",
+          "audio_id": "628169160",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "audio_url",
+            "trust_level": "trusted"
+          }
+        }
+      ],
+      "numeric_ids": [
+        {
+          "numeric_id": "628173553",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "93559255",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "10643211755",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "5828686",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "567724614",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "2018071117",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "20501671",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "2535181",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "98679384",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "122356178",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "100920965",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "198341814",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "4692815",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "423302056",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "347139849",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "103063413",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "191663270",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "257657827",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "104566969",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "153588024",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "192827079",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "178659563",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "178640915",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "178660742",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "179803822",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "183726490",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "177066727",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "182673872",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "179881519",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "187046089",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "186948703",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "181961258",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "182675632",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "185546105",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "179008081",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "181909622",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "181881227",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "181880514",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "185550054",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "135599807",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "135511603",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "290783428",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "628169160",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "628176595",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "1320118593",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "350888943",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "567164716",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "471757314",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "179876898",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "179878450",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "3472094",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180717215358",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        }
+      ],
+      "episode_qualified": true,
+      "trust_level": "trusted",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+        "source_capture_timestamp": "20180717215358",
+        "episode_qualified": true,
+        "target_episode": "2018-07-11",
+        "target_title": "Fed Accounts For All!",
+        "evidence_type": "archive_capture",
+        "trust_level": "trusted"
+      },
+      "cdx_score": 1.0,
+      "source": "stage_c_capture_fetch"
+    },
+    {
+      "timestamp": "20180718082058",
+      "original_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+      "archive_url": "https://web.archive.org/web/20180718082058id_/https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+      "status": "fetched",
+      "page_title": "Fed Accounts For All! : Planet Money : NPR",
+      "pub_date": "2018-07-11",
+      "canonical_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      },
+      "match_score": {
+        "title_score": 1.0,
+        "date_match": true,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": true,
+        "canonical_story_id": "628173553",
+        "discovered_story_id": "628173553",
+        "trusted_story_page": true,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "strong_match"
+      },
+      "story_id": "628173553",
+      "story_evidence": {
+        "story_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+        "story_id": "628173553",
+        "provenance": {
+          "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+          "source_capture_timestamp": "20180718082058",
+          "episode_qualified": true,
+          "target_episode": "2018-07-11",
+          "target_title": "Fed Accounts For All!",
+          "evidence_type": "story_url",
+          "trust_level": "trusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/628169160/628176595",
+          "player_story_id": "628169160",
+          "player_audio_id": "628176595",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "player_url",
+            "trust_level": "trusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?orgId=1&d=565&p=510325&story=628169160&t=podcast&e=628169160&siteplayer=true",
+          "audio_id": "628169160",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "audio_url",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?orgId=1&d=565&p=510325&story=628169160&t=podcast&e=628169160&siteplayer=true&dl=1",
+          "audio_id": "628169160",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "audio_url",
+            "trust_level": "trusted"
+          }
+        }
+      ],
+      "numeric_ids": [
+        {
+          "numeric_id": "628173553",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "93559255",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "10643211755",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "5828686",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "567724614",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "2018071117",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "20501671",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "2535181",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "98679384",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "122356178",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "100920965",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "198341814",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "4692815",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "423302056",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "347139849",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "103063413",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "191663270",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "257657827",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "104566969",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "153588024",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "192827079",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "178659563",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "178640915",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "178660742",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "179803822",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "183726490",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "177066727",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "182673872",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "179881519",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "187046089",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "186948703",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "181961258",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "182675632",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "185546105",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "179008081",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "181909622",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "181881227",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "181880514",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "185550054",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "135599807",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "135511603",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "290783428",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "628169160",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "628176595",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "1320118593",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "350888943",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "567164716",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "471757314",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "179876898",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "179878450",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "3472094",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+            "source_capture_timestamp": "20180718082058",
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        }
+      ],
+      "episode_qualified": true,
+      "trust_level": "trusted",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+        "source_capture_timestamp": "20180718082058",
+        "episode_qualified": true,
+        "target_episode": "2018-07-11",
+        "target_title": "Fed Accounts For All!",
+        "evidence_type": "archive_capture",
+        "trust_level": "trusted"
+      },
+      "cdx_score": 1.0,
+      "source": "stage_c_capture_fetch"
+    }
+  ],
   "numeric_id_probes": [],
   "numeric_probe_status": "disabled_advisory_only",
   "identity_candidates": [],
-  "confirmed_identity": null,
-  "player_probes": [],
-  "trusted_audio_evidence": [],
+  "confirmed_identity": {
+    "source": "stage_c_capture_fetch",
+    "trusted": true,
+    "episode_qualified": true,
+    "archive_url": "https://web.archive.org/web/20180711230025id_/https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+    "original_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+    "page_title": "Fed Accounts For All! : Planet Money : NPR",
+    "pub_date": "2018-07-11",
+    "canonical_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+    "story_evidence": {
+      "story_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+      "story_id": "628173553",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+        "source_capture_timestamp": "20180711230025",
+        "episode_qualified": true,
+        "target_episode": "2018-07-11",
+        "target_title": "Fed Accounts For All!",
+        "evidence_type": "story_url",
+        "trust_level": "trusted"
+      }
+    },
+    "story_id": "628173553",
+    "player_embeds": [
+      {
+        "player_url": "https://www.npr.org/player/embed/628169160/628176595",
+        "player_story_id": "628169160",
+        "player_audio_id": "628176595",
+        "provenance": {
+          "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+          "source_capture_timestamp": "20180711230025",
+          "episode_qualified": true,
+          "target_episode": "2018-07-11",
+          "target_title": "Fed Accounts For All!",
+          "evidence_type": "player_url",
+          "trust_level": "trusted"
+        }
+      }
+    ],
+    "program_context": {
+      "program_id": "510325",
+      "show_name": null,
+      "indicator_signals": [
+        "program_id_510325"
+      ],
+      "has_indicator_branding": false
+    },
+    "match_score": {
+      "title_score": 1.0,
+      "date_match": true,
+      "date_adjacent": true,
+      "date_source": "publication_date",
+      "has_story_id": true,
+      "has_trusted_story_id": true,
+      "canonical_story_id": "628173553",
+      "discovered_story_id": "628173553",
+      "trusted_story_page": true,
+      "has_indicator_branding": false,
+      "has_episode_context": true,
+      "indicator_signals": [
+        "program_id_510325"
+      ],
+      "verdict": "strong_match"
+    },
+    "archive_capture_provenance": {
+      "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+      "source_capture_timestamp": "20180711230025",
+      "episode_qualified": true,
+      "target_episode": "2018-07-11",
+      "target_title": "Fed Accounts For All!",
+      "evidence_type": "archive_capture",
+      "trust_level": "trusted"
+    },
+    "evidence_chain": {
+      "title_score": 1.0,
+      "date_source": "publication_date",
+      "date_match": true,
+      "story_id": "628173553",
+      "player_embed_count": 1
+    }
+  },
+  "player_probes": [
+    {
+      "url": "https://www.npr.org/player/embed/628169160/628176595",
+      "status": "fetched",
+      "source": "trusted_live_player",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+        "source_capture_timestamp": "20180711230025",
+        "episode_qualified": true,
+        "target_episode": "2018-07-11",
+        "target_title": "Fed Accounts For All!",
+        "evidence_type": "player_url",
+        "trust_level": "trusted"
+      },
+      "final_url": "https://www.npr.org/player/embed/628169160/628176595",
+      "audio_candidates": [
+        {
+          "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?d=565&e=628169160&t=podcast&p=510325",
+          "audio_id": "628169160",
+          "provenance": {
+            "source_url": "https://www.npr.org/player/embed/628169160/628176595",
+            "source_capture_timestamp": null,
+            "episode_qualified": true,
+            "target_episode": "2018-07-11",
+            "target_title": "Fed Accounts For All!",
+            "evidence_type": "audio_url_from_live_player",
+            "trust_level": "trusted"
+          }
+        }
+      ]
+    }
+  ],
+  "trusted_audio_evidence": [
+    {
+      "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?orgId=1&d=565&p=510325&story=628169160&t=podcast&e=628169160&siteplayer=true",
+      "audio_id": "628169160",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+        "source_capture_timestamp": "20180711230025",
+        "episode_qualified": true,
+        "target_episode": "2018-07-11",
+        "target_title": "Fed Accounts For All!",
+        "evidence_type": "audio_url",
+        "trust_level": "trusted"
+      }
+    },
+    {
+      "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?orgId=1&d=565&p=510325&story=628169160&t=podcast&e=628169160&siteplayer=true&dl=1",
+      "audio_id": "628169160",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+        "source_capture_timestamp": "20180711230025",
+        "episode_qualified": true,
+        "target_episode": "2018-07-11",
+        "target_title": "Fed Accounts For All!",
+        "evidence_type": "audio_url",
+        "trust_level": "trusted"
+      }
+    },
+    {
+      "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?orgId=1&d=565&p=510325&story=628169160&t=podcast&e=628169160&siteplayer=true",
+      "audio_id": "628169160",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+        "source_capture_timestamp": "20180717215358",
+        "episode_qualified": true,
+        "target_episode": "2018-07-11",
+        "target_title": "Fed Accounts For All!",
+        "evidence_type": "audio_url",
+        "trust_level": "trusted"
+      }
+    },
+    {
+      "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?orgId=1&d=565&p=510325&story=628169160&t=podcast&e=628169160&siteplayer=true&dl=1",
+      "audio_id": "628169160",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=planetmoney",
+        "source_capture_timestamp": "20180717215358",
+        "episode_qualified": true,
+        "target_episode": "2018-07-11",
+        "target_title": "Fed Accounts For All!",
+        "evidence_type": "audio_url",
+        "trust_level": "trusted"
+      }
+    },
+    {
+      "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?orgId=1&d=565&p=510325&story=628169160&t=podcast&e=628169160&siteplayer=true",
+      "audio_id": "628169160",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+        "source_capture_timestamp": "20180718082058",
+        "episode_qualified": true,
+        "target_episode": "2018-07-11",
+        "target_title": "Fed Accounts For All!",
+        "evidence_type": "audio_url",
+        "trust_level": "trusted"
+      }
+    },
+    {
+      "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?orgId=1&d=565&p=510325&story=628169160&t=podcast&e=628169160&siteplayer=true&dl=1",
+      "audio_id": "628169160",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+        "source_capture_timestamp": "20180718082058",
+        "episode_qualified": true,
+        "target_episode": "2018-07-11",
+        "target_title": "Fed Accounts For All!",
+        "evidence_type": "audio_url",
+        "trust_level": "trusted"
+      }
+    },
+    {
+      "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?orgId=1&d=565&p=510325&story=628169160&t=podcast&e=628169160&siteplayer=true",
+      "audio_id": "628169160",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+        "source_capture_timestamp": "20180711230025",
+        "episode_qualified": true,
+        "target_episode": "2018-07-11",
+        "target_title": "Fed Accounts For All!",
+        "evidence_type": "audio_url",
+        "trust_level": "trusted"
+      }
+    },
+    {
+      "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?orgId=1&d=565&p=510325&story=628169160&t=podcast&e=628169160&siteplayer=true&dl=1",
+      "audio_id": "628169160",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+        "source_capture_timestamp": "20180711230025",
+        "episode_qualified": true,
+        "target_episode": "2018-07-11",
+        "target_title": "Fed Accounts For All!",
+        "evidence_type": "audio_url",
+        "trust_level": "trusted"
+      }
+    },
+    {
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?d=565&e=628169160&t=podcast&p=510325",
+      "audio_id": "628169160",
+      "provenance": {
+        "source_url": "https://www.npr.org/player/embed/628169160/628176595",
+        "source_capture_timestamp": null,
+        "episode_qualified": true,
+        "target_episode": "2018-07-11",
+        "target_title": "Fed Accounts For All!",
+        "evidence_type": "audio_url_from_live_player",
+        "trust_level": "trusted"
+      }
+    }
+  ],
   "untrusted_audio_evidence": [],
-  "audio_candidates_tested": [],
-  "validated_audio": [],
-  "final_classification": "no_identity_found",
-  "validation_summary": "Bounded CDX discovery exhausted. No episode-qualified NPR story page found for 2018-07-11. Trusted audio candidates tested: 0.",
+  "audio_candidates_tested": [
+    {
+      "candidate_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?orgId=1&d=565&p=510325&story=628169160&t=podcast&e=628169160&siteplayer=true",
+      "validation_status": "validated",
+      "reason": null,
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?orgId=1&d=565&p=510325&story=628169160&t=podcast&e=628169160&siteplayer=true",
+      "status_code": 206,
+      "content_type": "audio/mpeg",
+      "is_indicator_path": true,
+      "valid_npr_indicator_audio": true,
+      "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?orgId=1&d=565&p=510325&story=628169160&t=podcast&e=628169160&siteplayer=true",
+      "audio_id": "628169160",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+        "source_capture_timestamp": "20180711230025",
+        "episode_qualified": true,
+        "target_episode": "2018-07-11",
+        "target_title": "Fed Accounts For All!",
+        "evidence_type": "audio_url",
+        "trust_level": "trusted"
+      },
+      "trusted_for_recovery": true
+    },
+    {
+      "candidate_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?orgId=1&d=565&p=510325&story=628169160&t=podcast&e=628169160&siteplayer=true&dl=1",
+      "validation_status": "rejected_non_npr",
+      "reason": "Not an NPR-hosted audio URL.",
+      "final_url": null,
+      "status_code": null,
+      "content_type": null,
+      "is_indicator_path": false,
+      "valid_npr_indicator_audio": false,
+      "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?orgId=1&d=565&p=510325&story=628169160&t=podcast&e=628169160&siteplayer=true&dl=1",
+      "audio_id": "628169160",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+        "source_capture_timestamp": "20180711230025",
+        "episode_qualified": true,
+        "target_episode": "2018-07-11",
+        "target_title": "Fed Accounts For All!",
+        "evidence_type": "audio_url",
+        "trust_level": "trusted"
+      },
+      "trusted_for_recovery": false
+    },
+    {
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?d=565&e=628169160&t=podcast&p=510325",
+      "validation_status": "validated",
+      "reason": null,
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?d=565&e=628169160&t=podcast&p=510325",
+      "status_code": 206,
+      "content_type": "audio/mpeg",
+      "is_indicator_path": true,
+      "valid_npr_indicator_audio": true,
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?d=565&e=628169160&t=podcast&p=510325",
+      "audio_id": "628169160",
+      "provenance": {
+        "source_url": "https://www.npr.org/player/embed/628169160/628176595",
+        "source_capture_timestamp": null,
+        "episode_qualified": true,
+        "target_episode": "2018-07-11",
+        "target_title": "Fed Accounts For All!",
+        "evidence_type": "audio_url_from_live_player",
+        "trust_level": "trusted"
+      },
+      "trusted_for_recovery": true
+    }
+  ],
+  "validated_audio": [
+    {
+      "candidate_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?orgId=1&d=565&p=510325&story=628169160&t=podcast&e=628169160&siteplayer=true",
+      "validation_status": "validated",
+      "reason": null,
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?orgId=1&d=565&p=510325&story=628169160&t=podcast&e=628169160&siteplayer=true",
+      "status_code": 206,
+      "content_type": "audio/mpeg",
+      "is_indicator_path": true,
+      "valid_npr_indicator_audio": true,
+      "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?orgId=1&d=565&p=510325&story=628169160&t=podcast&e=628169160&siteplayer=true",
+      "audio_id": "628169160",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+        "source_capture_timestamp": "20180711230025",
+        "episode_qualified": true,
+        "target_episode": "2018-07-11",
+        "target_title": "Fed Accounts For All!",
+        "evidence_type": "audio_url",
+        "trust_level": "trusted"
+      },
+      "trusted_for_recovery": true
+    },
+    {
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?d=565&e=628169160&t=podcast&p=510325",
+      "validation_status": "validated",
+      "reason": null,
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?d=565&e=628169160&t=podcast&p=510325",
+      "status_code": 206,
+      "content_type": "audio/mpeg",
+      "is_indicator_path": true,
+      "valid_npr_indicator_audio": true,
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3?d=565&e=628169160&t=podcast&p=510325",
+      "audio_id": "628169160",
+      "provenance": {
+        "source_url": "https://www.npr.org/player/embed/628169160/628176595",
+        "source_capture_timestamp": null,
+        "episode_qualified": true,
+        "target_episode": "2018-07-11",
+        "target_title": "Fed Accounts For All!",
+        "evidence_type": "audio_url_from_live_player",
+        "trust_level": "trusted"
+      },
+      "trusted_for_recovery": true
+    }
+  ],
+  "final_classification": "recovered",
+  "validation_summary": "RECOVERED: verified identity plus 2 trusted NPR Indicator audio file(s) for 2018-07-11.",
   "discovery_exhausted_for_window": true,
   "counts": {
-    "cdx_queries_issued": 6,
-    "cdx_urls_returned": 0,
-    "candidate_urls_scored": 0,
-    "captures_fetched": 0,
+    "cdx_queries_issued": 7,
+    "cdx_urls_returned": 28,
+    "candidate_urls_scored": 28,
+    "captures_fetched": 3,
     "captures_failed": 0,
-    "strong_matches": 0,
+    "strong_matches": 3,
     "partial_matches": 0,
-    "player_pages_fetched": 0,
+    "player_pages_fetched": 1,
     "player_pages_failed": 0,
-    "audio_candidates_tested": 0,
-    "audio_validated": 0,
-    "trusted_audio_candidates": 0,
+    "audio_candidates_tested": 3,
+    "audio_validated": 2,
+    "trusted_audio_candidates": 3,
     "untrusted_audio_candidates": 0,
     "numeric_ids_probed": 0,
-    "logical_requests_issued": 6
+    "logical_requests_issued": 14
   }
 }

@@ -2,9 +2,34 @@
   "placeholder": false,
   "run_complete": true,
   "run_state": "run_complete",
-  "run_id": "31338522455",
+  "run_id": "31340062188",
   "method": "fresh-identity-discovery",
-  "generated_at": "2026-08-09T22:05:47.669228+00:00",
+  "generated_at": "2026-08-09T22:42:25.562359+00:00",
+  "cdx_self_test": {
+    "passed": true,
+    "results": [
+      {
+        "url": "https://www.npr.org/sections/money/2018/10/31/662708285/paranormal-profits",
+        "passed": true,
+        "capture_count": 2,
+        "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F10%2F31%2F662708285%2Fparanormal-profits&matchType=exact&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=2",
+        "error_type": null,
+        "error_message": null,
+        "response_length": 281,
+        "zero_row_response": false
+      },
+      {
+        "url": "https://www.npr.org/player/embed/662706955/662707862",
+        "passed": true,
+        "capture_count": 2,
+        "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fplayer%2Fembed%2F662706955%2F662707862&matchType=exact&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=2",
+        "error_type": null,
+        "error_message": null,
+        "response_length": 237,
+        "zero_row_response": false
+      }
+    ]
+  },
   "targets_investigated": 3,
   "request_budget": {
     "per_episode": {
@@ -29,70 +54,70 @@
     {
       "reference_date": "2018-07-11",
       "reference_title": "Fed Accounts For All!",
-      "final_classification": "no_identity_found",
-      "validation_summary": "Bounded CDX discovery exhausted. No episode-qualified NPR story page found for 2018-07-11. Trusted audio candidates tested: 0.",
+      "final_classification": "recovered",
+      "validation_summary": "RECOVERED: verified identity plus 2 trusted NPR Indicator audio file(s) for 2018-07-11.",
       "counts": {
-        "cdx_queries_issued": 6,
-        "cdx_urls_returned": 0,
-        "candidate_urls_scored": 0,
-        "captures_fetched": 0,
+        "cdx_queries_issued": 7,
+        "cdx_urls_returned": 28,
+        "candidate_urls_scored": 28,
+        "captures_fetched": 3,
         "captures_failed": 0,
-        "strong_matches": 0,
+        "strong_matches": 3,
         "partial_matches": 0,
-        "player_pages_fetched": 0,
+        "player_pages_fetched": 1,
         "player_pages_failed": 0,
-        "audio_candidates_tested": 0,
-        "audio_validated": 0,
-        "trusted_audio_candidates": 0,
+        "audio_candidates_tested": 3,
+        "audio_validated": 2,
+        "trusted_audio_candidates": 3,
         "untrusted_audio_candidates": 0,
         "numeric_ids_probed": 0,
-        "logical_requests_issued": 6
+        "logical_requests_issued": 14
       }
     },
     {
       "reference_date": "2018-08-10",
       "reference_title": "Privacy Please: Why Public Companies Go Private (Or Vice Versa)",
-      "final_classification": "no_identity_found",
-      "validation_summary": "Bounded CDX discovery exhausted. No episode-qualified NPR story page found for 2018-08-10. Trusted audio candidates tested: 0.",
+      "final_classification": "recovered",
+      "validation_summary": "RECOVERED: verified identity plus 2 trusted NPR Indicator audio file(s) for 2018-08-10.",
       "counts": {
-        "cdx_queries_issued": 6,
-        "cdx_urls_returned": 0,
-        "candidate_urls_scored": 0,
-        "captures_fetched": 0,
-        "captures_failed": 0,
-        "strong_matches": 0,
-        "partial_matches": 0,
-        "player_pages_fetched": 0,
+        "cdx_queries_issued": 7,
+        "cdx_urls_returned": 116,
+        "candidate_urls_scored": 116,
+        "captures_fetched": 1,
+        "captures_failed": 3,
+        "strong_matches": 1,
+        "partial_matches": 3,
+        "player_pages_fetched": 1,
         "player_pages_failed": 0,
-        "audio_candidates_tested": 0,
-        "audio_validated": 0,
-        "trusted_audio_candidates": 0,
+        "audio_candidates_tested": 3,
+        "audio_validated": 2,
+        "trusted_audio_candidates": 3,
         "untrusted_audio_candidates": 0,
         "numeric_ids_probed": 0,
-        "logical_requests_issued": 6
+        "logical_requests_issued": 15
       }
     },
     {
       "reference_date": "2018-09-24",
       "reference_title": "Saudi Arabia & The Paradox of Plenty",
-      "final_classification": "no_identity_found",
-      "validation_summary": "Bounded CDX discovery exhausted. No episode-qualified NPR story page found for 2018-09-24. Trusted audio candidates tested: 0.",
+      "final_classification": "recovered",
+      "validation_summary": "RECOVERED: verified identity plus 2 trusted NPR Indicator audio file(s) for 2018-09-24.",
       "counts": {
-        "cdx_queries_issued": 6,
-        "cdx_urls_returned": 0,
-        "candidate_urls_scored": 0,
-        "captures_fetched": 0,
+        "cdx_queries_issued": 7,
+        "cdx_urls_returned": 58,
+        "candidate_urls_scored": 58,
+        "captures_fetched": 4,
         "captures_failed": 0,
-        "strong_matches": 0,
+        "strong_matches": 4,
         "partial_matches": 0,
-        "player_pages_fetched": 0,
+        "player_pages_fetched": 2,
         "player_pages_failed": 0,
-        "audio_candidates_tested": 0,
-        "audio_validated": 0,
-        "trusted_audio_candidates": 0,
+        "audio_candidates_tested": 3,
+        "audio_validated": 2,
+        "trusted_audio_candidates": 3,
         "untrusted_audio_candidates": 0,
         "numeric_ids_probed": 0,
-        "logical_requests_issued": 6
+        "logical_requests_issued": 16
       }
     }
   ],
@@ -101,6 +126,6 @@
     "completed": 3,
     "failed": 0,
     "skipped": 0,
-    "recovered": 0
+    "recovered": 3
   }
 }
