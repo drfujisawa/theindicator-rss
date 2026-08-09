@@ -131,6 +131,9 @@ class EpisodeClassificationTests(unittest.TestCase):
         ledger["validation_results"] = [
             {
                 "validation_status": "validated_npr_episode_audio",
+                # Audio must carry source_verified=True to confirm recovery;
+                # this simulates audio discovered from an episode-specific page.
+                "source_verified": True,
                 "candidate_url": (
                     "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/"
                     "indicator/2018/10/example.mp3"
@@ -191,6 +194,152 @@ class EpisodeClassificationTests(unittest.TestCase):
         status, _ = pipeline.determine_episode_status(ledger)
 
         self.assertNotEqual(status, "confirmed_recovered")
+
+
+class AdditionalValidationTests(unittest.TestCase):
+    """Additional validation paths required by the PR review."""
+
+    def test_indicator_path_missing_is_rejected(self):
+        """NPR ondemand host but no /indicator/ in path → rejected."""
+        result = pipeline.classify_audio_candidate(
+            candidate_url=(
+                "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/"
+                "someothershow/2018/10/example.mp3"
+            ),
+            final_url=(
+                "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/"
+                "someothershow/2018/10/example.mp3"
+            ),
+            content_type="audio/mpeg",
+            status_code=200,
+        )
+
+        self.assertEqual(result["status"], "rejected_generic_audio")
+        self.assertFalse(result["accepted"])
+
+    def test_filename_date_differs_from_pub_date_not_rejected(self):
+        """NPR sometimes stores audio under a date different from the
+        episode publication date.  The validation must not reject it
+        solely because of that filename date difference."""
+        # Pub date is 2018-09-28 but the audio file lives under 2018/10.
+        result = pipeline.classify_audio_candidate(
+            candidate_url=(
+                "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/"
+                "indicator/2018/10/20181002_indicator_filename_date.mp3"
+            ),
+            final_url=(
+                "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/"
+                "indicator/2018/10/20181002_indicator_filename_date.mp3"
+            ),
+            content_type="audio/mpeg",
+            status_code=200,
+        )
+
+        self.assertEqual(result["status"], "validated_npr_episode_audio")
+        self.assertTrue(result["accepted"])
+
+    def test_unverified_source_audio_with_identity_does_not_confirm(self):
+        """Valid NPR Indicator audio whose source_verified=False (e.g.
+        discovered via a sidebar or unrelated player embed) must NOT
+        produce confirmed_recovered even when credible identity exists."""
+        ledger = pipeline.create_ledger({
+            "date": "2018-10-29",
+            "title": "Judgement Bonds",
+        })
+        ledger["npr_story_ids"] = ["760000001"]
+        ledger["validation_results"] = [
+            {
+                "validation_status": "validated_npr_episode_audio",
+                "source_verified": False,
+                "candidate_url": (
+                    "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/"
+                    "indicator/2018/10/sidebar_audio.mp3"
+                ),
+            }
+        ]
+
+        status, _ = pipeline.determine_episode_status(ledger)
+
+        self.assertNotEqual(status, "confirmed_recovered")
+
+    def test_non_audio_mime_is_rejected(self):
+        """A content-type that does not start with audio/ must be
+        rejected regardless of the URL."""
+        result = pipeline.classify_audio_candidate(
+            candidate_url=(
+                "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/"
+                "indicator/2018/10/example.mp3"
+            ),
+            final_url=(
+                "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/"
+                "indicator/2018/10/example.mp3"
+            ),
+            content_type="video/mpeg",
+            status_code=200,
+        )
+
+        self.assertEqual(result["status"], "rejected_non_audio_response")
+        self.assertFalse(result["accepted"])
+
+    def test_third_party_cdn_with_indicator_path_is_rejected(self):
+        """A final URL on a third-party CDN that contains /indicator/ in its
+        path must be rejected — ondemand.npr.org must be on the final URL."""
+        result = pipeline.classify_audio_candidate(
+            candidate_url=(
+                "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/"
+                "indicator/2018/10/example.mp3"
+            ),
+            final_url=(
+                "https://cdn.thirdparty.example.com/indicator/2018/10/example.mp3"
+            ),
+            content_type="audio/mpeg",
+            status_code=200,
+        )
+
+        self.assertEqual(result["status"], "rejected_non_npr_audio")
+        self.assertFalse(result["accepted"])
+
+    def test_http_network_failure_is_rejected(self):
+        """status_code=None (transport/network failure) must produce a
+        rejection, never a recovery."""
+        result = pipeline.classify_audio_candidate(
+            candidate_url=(
+                "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/"
+                "indicator/2018/10/example.mp3"
+            ),
+            final_url=(
+                "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/"
+                "indicator/2018/10/example.mp3"
+            ),
+            content_type="audio/mpeg",
+            status_code=None,
+        )
+
+        self.assertFalse(result.get("accepted", True))
+
+    def test_identity_found_but_audio_unresolved_classification(self):
+        """When identity evidence exists but all audio candidates are
+        rejected the status must be identity_found_but_audio_unresolved,
+        not confirmed_recovered or no_identity_found."""
+        ledger = pipeline.create_ledger({
+            "date": "2018-10-29",
+            "title": "Judgement Bonds",
+        })
+        ledger["npr_story_ids"] = ["760000001"]
+        ledger["npr_story_urls"] = [
+            "https://www.npr.org/2018/10/29/760000001/judgement-bonds"
+        ]
+        ledger["validation_results"] = [
+            {
+                "validation_status": "rejected_non_npr_audio",
+                "source_verified": True,
+                "candidate_url": "https://example.org/audio/episode.mp3",
+            }
+        ]
+
+        status, _ = pipeline.determine_episode_status(ledger)
+
+        self.assertEqual(status, "identity_found_but_audio_unresolved")
 
 
 if __name__ == "__main__":

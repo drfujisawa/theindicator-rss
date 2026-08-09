@@ -1,0 +1,46 @@
+name: Probe Top 3 Ranked Prospects
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  probe-top3:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Run unit tests
+        run: python -m unittest test_top3_ranked_prospects -v
+
+      - name: Run top-3 investigation
+        run: python probe_top3_ranked_prospects.py
+
+      - name: Upload diagnostic artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: top3-prospect-diagnostics
+          path: |
+            top3_prospect_*_diag.json
+            top3_prospects_summary.json
+          if-no-files-found: warn
+          retention-days: 90
+
+      - name: Commit diagnostic JSON files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add top3_prospect_*_diag.json top3_prospects_summary.json
+          git diff --cached --quiet || git commit -m "Probe top-3 ranked prospects diagnostics"
+          git push
