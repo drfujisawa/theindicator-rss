@@ -1,0 +1,1259 @@
+{
+  "method": "strict-review-of-unresolved-indicator-evidence",
+  "input_count": 52,
+  "summary": {
+    "possible_duplicate_or_rebroadcast": 2,
+    "episode_audio_candidate_found": 0,
+    "has_identity_or_page_evidence": 1,
+    "needs_fresh_discovery": 49,
+    "rejected_stream_record_count": 1
+  },
+  "results": [
+    {
+      "date": "2018-03-12",
+      "title": "Hurricane Joseph & The Calculator That Time Forgot",
+      "reference_year": 2018,
+      "reference_episode": 1,
+      "previous_status": "possible_duplicate_or_rebroadcast",
+      "strict_status": "possible_duplicate_or_rebroadcast",
+      "duplicate_reference_dates": [
+        "2018-08-28"
+      ],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[0]"
+        },
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[26]"
+        },
+        {
+          "file": "indicator_recovery_test.json",
+          "path": "root.results[0]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[0]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[26]"
+        }
+      ]
+    },
+    {
+      "date": "2018-03-15",
+      "title": "Buying A College Degree: Did Aunt Becky Overpay?",
+      "reference_year": 2019,
+      "reference_episode": 51,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_early_audit.json",
+          "path": "root.reference_anomalies[0]"
+        },
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[1]"
+        },
+        {
+          "file": "indicator_recovery_test.json",
+          "path": "root.results[4]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[1]"
+        }
+      ]
+    },
+    {
+      "date": "2018-04-23",
+      "title": "3 Things You Didn't Know About LA",
+      "reference_year": 2018,
+      "reference_episode": 30,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[2]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[2]"
+        }
+      ]
+    },
+    {
+      "date": "2018-04-24",
+      "title": "When China's Ships Come In",
+      "reference_year": 2018,
+      "reference_episode": 31,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[3]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[3]"
+        }
+      ]
+    },
+    {
+      "date": "2018-04-26",
+      "title": "California's Housing Conundrum",
+      "reference_year": 2018,
+      "reference_episode": 33,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[4]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[4]"
+        }
+      ]
+    },
+    {
+      "date": "2018-05-29",
+      "title": "Banking's Regulation Rollback",
+      "reference_year": 2018,
+      "reference_episode": 55,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[5]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[5]"
+        }
+      ]
+    },
+    {
+      "date": "2018-06-13",
+      "title": "Dude, Where's My Trade War?",
+      "reference_year": 2018,
+      "reference_episode": 66,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[6]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[6]"
+        }
+      ]
+    },
+    {
+      "date": "2018-06-21",
+      "title": "Teenage (Employment) Wasteland",
+      "reference_year": 2018,
+      "reference_episode": 72,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[7]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[7]"
+        }
+      ]
+    },
+    {
+      "date": "2018-06-26",
+      "title": "Sallie Krawcheck on #MeToo, Dodd Frank, & Cronuts",
+      "reference_year": 2018,
+      "reference_episode": 75,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[8]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[8]"
+        }
+      ]
+    },
+    {
+      "date": "2018-06-29",
+      "title": "Dungeons & Dragons & Balance Sheets",
+      "reference_year": 2018,
+      "reference_episode": 78,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[9]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[9]"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-10",
+      "title": "The Price of A Hyundai in Iran",
+      "reference_year": 2018,
+      "reference_episode": 84,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[10]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[10]"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-11",
+      "title": "Fed Accounts For All!",
+      "reference_year": 2018,
+      "reference_episode": 85,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[11]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[11]"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-12",
+      "title": "The Last Straw",
+      "reference_year": 2018,
+      "reference_episode": 86,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[12]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[12]"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-13",
+      "title": "We Hear You",
+      "reference_year": 2018,
+      "reference_episode": 87,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[13]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[13]"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-16",
+      "title": "Japan's Ninja Shortage",
+      "reference_year": 2018,
+      "reference_episode": 88,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[14]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[14]"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-17",
+      "title": "Saving Women",
+      "reference_year": 2018,
+      "reference_episode": 89,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[15]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[15]"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-19",
+      "title": "Three Indicators To Keep A (Side)eye On",
+      "reference_year": 2018,
+      "reference_episode": 91,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[16]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[16]"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-23",
+      "title": "Google's Mobile Monopoly",
+      "reference_year": 2018,
+      "reference_episode": 93,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[17]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[17]"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-30",
+      "title": "Putin Vs. Russia's Economy",
+      "reference_year": 2018,
+      "reference_episode": 98,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[18]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[18]"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-31",
+      "title": "What's In Your Paycheck?",
+      "reference_year": 2018,
+      "reference_episode": 99,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[19]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[19]"
+        }
+      ]
+    },
+    {
+      "date": "2018-08-03",
+      "title": "Beating The Clock On Jobs (Summer) Friday",
+      "reference_year": 2018,
+      "reference_episode": 102,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[20]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[20]"
+        }
+      ]
+    },
+    {
+      "date": "2018-08-10",
+      "title": "Privacy Please: Why Public Companies Go Private (Or Vice Versa)",
+      "reference_year": 2018,
+      "reference_episode": 107,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[21]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[21]"
+        }
+      ]
+    },
+    {
+      "date": "2018-08-13",
+      "title": "Messy Desks, Light Bulbs & Dune",
+      "reference_year": 2018,
+      "reference_episode": 108,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[22]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[22]"
+        }
+      ]
+    },
+    {
+      "date": "2018-08-17",
+      "title": "Donald Trump's Economic Strategy... Maybe?",
+      "reference_year": 2018,
+      "reference_episode": 112,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[23]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[23]"
+        }
+      ]
+    },
+    {
+      "date": "2018-08-21",
+      "title": "Why People Can't Get Work Done At Work",
+      "reference_year": 2018,
+      "reference_episode": 114,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[24]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[24]"
+        }
+      ]
+    },
+    {
+      "date": "2018-08-24",
+      "title": "The Art of War. It's Not For Everyone",
+      "reference_year": 2018,
+      "reference_episode": 117,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[25]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[25]"
+        }
+      ]
+    },
+    {
+      "date": "2018-08-28",
+      "title": "Hurricane Joseph & The Calculator That Time Forgot",
+      "reference_year": 2018,
+      "reference_episode": 119,
+      "previous_status": "possible_duplicate_or_rebroadcast",
+      "strict_status": "possible_duplicate_or_rebroadcast",
+      "duplicate_reference_dates": [
+        "2018-03-12"
+      ],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[0]"
+        },
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[26]"
+        },
+        {
+          "file": "indicator_recovery_test.json",
+          "path": "root.results[0]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[0]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[26]"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-06",
+      "title": "Why Aren't We More Productive?",
+      "reference_year": 2018,
+      "reference_episode": 125,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[27]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[27]"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-24",
+      "title": "Saudi Arabia & The Paradox of Plenty",
+      "reference_year": 2018,
+      "reference_episode": 137,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[28]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[28]"
+        }
+      ]
+    },
+    {
+      "date": "2018-10-05",
+      "title": "Who's Hiring?",
+      "reference_year": 2018,
+      "reference_episode": 146,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[29]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[29]"
+        }
+      ]
+    },
+    {
+      "date": "2018-10-09",
+      "title": "China's Social Credit System",
+      "reference_year": 2018,
+      "reference_episode": 148,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[30]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[30]"
+        }
+      ]
+    },
+    {
+      "date": "2018-10-10",
+      "title": "Life On China's Blacklist",
+      "reference_year": 2018,
+      "reference_episode": 149,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[31]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[31]"
+        }
+      ]
+    },
+    {
+      "date": "2018-10-11",
+      "title": "China's Brave New World",
+      "reference_year": 2018,
+      "reference_episode": 150,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[32]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[32]"
+        }
+      ]
+    },
+    {
+      "date": "2018-10-29",
+      "title": "Judgement Bonds",
+      "reference_year": 2018,
+      "reference_episode": 162,
+      "previous_status": "recovered_and_validated",
+      "strict_status": "has_identity_or_page_evidence",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [
+        "https://playerservices.streamtheworld.com/api/livestream-redirect/WSCLFM.mp3",
+        "https://playerservices.streamtheworld.com/api/livestream-redirect/WSDLFM.mp3",
+        "https://playerservices.streamtheworld.com/api/livestream-redirect/WESMFM.mp3",
+        "https://27143.live.streamtheworld.com:443/WSCLFM.mp3",
+        "https://26223.live.streamtheworld.com:443/WSCLFM.mp3",
+        "https://14843.live.streamtheworld.com:443/WSDLFM.mp3",
+        "https://18123.live.streamtheworld.com:443/WESMFM.mp3"
+      ],
+      "useful_page_urls": [
+        "https://www.delmarvapublicmedia.org/business/2018-10-29/judgement-bonds"
+      ],
+      "evidence_sources": [
+        {
+          "file": "indicator_npr_identities.json",
+          "path": "root.results[129]"
+        },
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.recovered[129]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.clean_candidates[0]"
+        }
+      ]
+    },
+    {
+      "date": "2018-11-02",
+      "title": "How Companies Cope (With A Tight Labor Market)",
+      "reference_year": 2018,
+      "reference_episode": 166,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[33]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[33]"
+        }
+      ]
+    },
+    {
+      "date": "2018-11-09",
+      "title": "The 401(k) Turns 40",
+      "reference_year": 2018,
+      "reference_episode": 171,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[34]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[34]"
+        }
+      ]
+    },
+    {
+      "date": "2018-11-20",
+      "title": "The Ins & Outs Of The Minimum Wage",
+      "reference_year": 2018,
+      "reference_episode": 178,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[35]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[35]"
+        }
+      ]
+    },
+    {
+      "date": "2018-12-06",
+      "title": "The Fed's Mistake?",
+      "reference_year": 2018,
+      "reference_episode": 189,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[36]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[36]"
+        }
+      ]
+    },
+    {
+      "date": "2018-12-11",
+      "title": "Citi Bike's Better Angels",
+      "reference_year": 2018,
+      "reference_episode": 192,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[37]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[37]"
+        }
+      ]
+    },
+    {
+      "date": "2018-12-19",
+      "title": "You've Got Mail!",
+      "reference_year": 2018,
+      "reference_episode": 198,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[38]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[38]"
+        }
+      ]
+    },
+    {
+      "date": "2019-01-08",
+      "title": "Don't Fear The Fear Index",
+      "reference_year": 2019,
+      "reference_episode": 5,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[39]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[39]"
+        }
+      ]
+    },
+    {
+      "date": "2019-01-25",
+      "title": "The End Of The Shutdown?",
+      "reference_year": 2019,
+      "reference_episode": 17,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[40]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[40]"
+        }
+      ]
+    },
+    {
+      "date": "2019-01-31",
+      "title": "Lights Out For PG&E?",
+      "reference_year": 2019,
+      "reference_episode": 21,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[41]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[41]"
+        }
+      ]
+    },
+    {
+      "date": "2019-02-05",
+      "title": "The Fed's Sweet Spot For Interest Rates",
+      "reference_year": 2019,
+      "reference_episode": 24,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[42]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[42]"
+        }
+      ]
+    },
+    {
+      "date": "2019-02-06",
+      "title": "India's Poverty Paradox",
+      "reference_year": 2019,
+      "reference_episode": 25,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[43]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[43]"
+        }
+      ]
+    },
+    {
+      "date": "2019-02-20",
+      "title": "Why Americans Can't Quit Tipping",
+      "reference_year": 2019,
+      "reference_episode": 34,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[44]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[44]"
+        }
+      ]
+    },
+    {
+      "date": "2019-02-26",
+      "title": "TV Vs. Video Games: Who's Winning?",
+      "reference_year": 2019,
+      "reference_episode": 38,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[45]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[45]"
+        }
+      ]
+    },
+    {
+      "date": "2019-03-22",
+      "title": "Are Neighbors Overrated? (And Other Questions)",
+      "reference_year": 2019,
+      "reference_episode": 56,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[46]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[46]"
+        }
+      ]
+    },
+    {
+      "date": "2019-03-25",
+      "title": "Spotify's Long, Winding Road To India",
+      "reference_year": 2019,
+      "reference_episode": 57,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[47]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[47]"
+        }
+      ]
+    },
+    {
+      "date": "2019-03-27",
+      "title": "An Economist in Caracas: Day In The Life",
+      "reference_year": 2019,
+      "reference_episode": 59,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[48]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[48]"
+        }
+      ]
+    },
+    {
+      "date": "2019-04-09",
+      "title": "Trade War With Cheese: Trump's New EU Tariffs",
+      "reference_year": 2019,
+      "reference_episode": 68,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[49]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[49]"
+        }
+      ]
+    },
+    {
+      "date": "2019-04-26",
+      "title": "Why Superman Doesn't Take Over The World",
+      "reference_year": 2019,
+      "reference_episode": 80,
+      "previous_status": "unresolved_with_prior_evidence",
+      "strict_status": "needs_fresh_discovery",
+      "duplicate_reference_dates": [],
+      "known_ids": {},
+      "episode_audio_candidates": [],
+      "rejected_stream_urls": [],
+      "useful_page_urls": [],
+      "evidence_sources": [
+        {
+          "file": "indicator_recovered_episodes.json",
+          "path": "root.failed[50]"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[50]"
+        }
+      ]
+    }
+  ]
+}
