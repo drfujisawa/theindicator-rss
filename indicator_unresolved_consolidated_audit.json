@@ -1,18 +1,33 @@
 {
   "method": "consolidated-recovery-pipeline-for-unresolved-indicator-episodes",
-  "generated_at": "2026-08-09T17:49:39+00:00",
+  "generated_at": "2026-08-09T17:58:06+00:00",
   "canonical_input": "indicator_completeness_audit.json",
   "summary": {
     "confirmed_recovered": 0,
-    "probable_duplicate_rebroadcast": 0,
+    "probable_duplicate_rebroadcast": 2,
     "identity_found_but_audio_unresolved": 12,
-    "no_identity_found": 40,
+    "no_identity_found": 38,
     "rejected_false_positive_count": 78,
     "input_unresolved_count": 52,
-    "unique_missing_production_count_excluding_probable_duplicates": 52
+    "unique_missing_production_count_excluding_probable_duplicates": 50
   },
   "confirmed_recovered": [],
-  "probable_duplicate_rebroadcast": [],
+  "probable_duplicate_rebroadcast": [
+    {
+      "reference_date": "2018-03-12",
+      "reference_title": "Hurricane Joseph & The Calculator That Time Forgot",
+      "reference_year": 2018,
+      "reference_episode": 1,
+      "evidence_confidence_explanation": "Reference audit links this episode to duplicate/rebroadcast date(s) 2018-08-28. No independent NPR identity chain was established to count both entries as separate missing productions."
+    },
+    {
+      "reference_date": "2018-08-28",
+      "reference_title": "Hurricane Joseph & The Calculator That Time Forgot",
+      "reference_year": 2018,
+      "reference_episode": 119,
+      "evidence_confidence_explanation": "Reference audit links this episode to duplicate/rebroadcast date(s) 2018-03-12. No independent NPR identity chain was established to count both entries as separate missing productions."
+    }
+  ],
   "identity_found_but_audio_unresolved": [
     {
       "reference_date": "2018-04-24",
@@ -100,13 +115,6 @@
     }
   ],
   "no_identity_found": [
-    {
-      "reference_date": "2018-03-12",
-      "reference_title": "Hurricane Joseph & The Calculator That Time Forgot",
-      "reference_year": 2018,
-      "reference_episode": 1,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
     {
       "reference_date": "2018-03-15",
       "reference_title": "Buying A College Degree: Did Aunt Becky Overpay?",
@@ -224,13 +232,6 @@
       "reference_title": "The Art of War. It's Not For Everyone",
       "reference_year": 2018,
       "reference_episode": 117,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
-    {
-      "reference_date": "2018-08-28",
-      "reference_title": "Hurricane Joseph & The Calculator That Time Forgot",
-      "reference_year": 2018,
-      "reference_episode": 119,
       "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
     },
     {

@@ -1,15 +1,15 @@
 {
   "method": "consolidated-recovery-pipeline-for-unresolved-indicator-episodes",
-  "generated_at": "2026-08-09T17:49:39+00:00",
+  "generated_at": "2026-08-09T17:58:06+00:00",
   "canonical_input": "indicator_completeness_audit.json",
   "summary": {
     "confirmed_recovered": 0,
-    "probable_duplicate_rebroadcast": 0,
+    "probable_duplicate_rebroadcast": 2,
     "identity_found_but_audio_unresolved": 12,
-    "no_identity_found": 40,
+    "no_identity_found": 38,
     "rejected_false_positive_count": 78,
     "input_unresolved_count": 52,
-    "unique_missing_production_count_excluding_probable_duplicates": 52
+    "unique_missing_production_count_excluding_probable_duplicates": 50
   },
   "episodes": [
     {
@@ -55,9 +55,11 @@
           "status": "not_recovered"
         }
       ],
-      "final_status": "no_identity_found",
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages.",
-      "duplicate_reference_dates": []
+      "final_status": "probable_duplicate_rebroadcast",
+      "evidence_confidence_explanation": "Reference audit links this episode to duplicate/rebroadcast date(s) 2018-08-28. No independent NPR identity chain was established to count both entries as separate missing productions.",
+      "duplicate_reference_dates": [
+        "2018-08-28"
+      ]
     },
     {
       "reference_date": "2018-03-15",
@@ -2868,9 +2870,11 @@
           "status": "not_recovered"
         }
       ],
-      "final_status": "no_identity_found",
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages.",
-      "duplicate_reference_dates": []
+      "final_status": "probable_duplicate_rebroadcast",
+      "evidence_confidence_explanation": "Reference audit links this episode to duplicate/rebroadcast date(s) 2018-03-12. No independent NPR identity chain was established to count both entries as separate missing productions.",
+      "duplicate_reference_dates": [
+        "2018-03-12"
+      ]
     },
     {
       "reference_date": "2018-09-06",
