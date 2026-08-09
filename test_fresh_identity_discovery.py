@@ -148,7 +148,7 @@ class TestScoreUrlForTarget(unittest.TestCase):
 
 
 # ---------------------------------------------------------------------------
-# Page scoring (confirmed identity requires title + date + indicator)
+# Page scoring (confirmed identity requires title + date + trusted story page)
 # ---------------------------------------------------------------------------
 
 
@@ -172,7 +172,21 @@ class TestScorePageForTarget(unittest.TestCase):
         self.assertEqual(result["verdict"], "strong_match")
         self.assertTrue(result["date_match"])
         self.assertTrue(result["has_story_id"])
+        self.assertTrue(result["has_trusted_story_id"])
+        self.assertTrue(result["trusted_story_page"])
         self.assertTrue(result["has_episode_context"])
+
+    def test_sections_money_story_page_is_trusted(self):
+        result = self._score(
+            "Fed Accounts For All! : The Indicator from Planet Money",
+            "2018-07-11",
+            "https://www.npr.org/sections/money/2018/07/11/628123456/fed-accounts-for-all",
+            {"has_indicator_branding": True, "program_id": "510325"},
+            "2018-07-11",
+            "Fed Accounts For All!",
+        )
+        self.assertEqual(result["verdict"], "strong_match")
+        self.assertTrue(result["trusted_story_page"])
 
     def test_title_match_not_indicator_program(self):
         result = self._score(
@@ -229,6 +243,34 @@ class TestScorePageForTarget(unittest.TestCase):
             "Fed Accounts For All!",
         )
         self.assertIsNone(result["date_match"])
+
+    def test_transcript_url_rejected_as_trusted_identity(self):
+        result = self._score(
+            "Fed Accounts For All! : The Indicator from Planet Money",
+            "2018-07-11",
+            "https://www.npr.org/templates/transcript/transcript.php?storyId=628123456",
+            {"has_indicator_branding": True, "program_id": "510325"},
+            "2018-07-11",
+            "Fed Accounts For All!",
+        )
+        self.assertEqual(result["verdict"], "title_date_story_id_no_trusted_story_page")
+        self.assertTrue(result["has_story_id"])
+        self.assertFalse(result["has_trusted_story_id"])
+        self.assertFalse(result["trusted_story_page"])
+
+    def test_sections_theindicator_url_rejected_as_trusted_identity(self):
+        result = self._score(
+            "Fed Accounts For All! : The Indicator from Planet Money",
+            "2018-07-11",
+            "https://www.npr.org/sections/theindicator/2018/07/11/628123456/fed-accounts-for-all",
+            {"has_indicator_branding": True, "program_id": "510325"},
+            "2018-07-11",
+            "Fed Accounts For All!",
+        )
+        self.assertEqual(result["verdict"], "title_date_story_id_no_trusted_story_page")
+        self.assertTrue(result["has_story_id"])
+        self.assertFalse(result["has_trusted_story_id"])
+        self.assertFalse(result["trusted_story_page"])
 
 
 # ---------------------------------------------------------------------------
@@ -564,6 +606,18 @@ class TestNprStoryIdExtraction(unittest.TestCase):
         )
         self.assertEqual(sid, "628123456")
 
+    def test_transcript_url_not_trusted_story_page(self):
+        self.assertFalse(
+            probe.is_trusted_story_page_url(
+                "https://www.npr.org/templates/transcript/transcript.php?storyId=628123456"
+            )
+        )
+        self.assertIsNone(
+            probe._trusted_npr_story_id_from_url(
+                "https://www.npr.org/templates/transcript/transcript.php?storyId=628123456"
+            )
+        )
+
     def test_no_id_in_url(self):
         sid = probe._npr_story_id_from_url(
             "https://www.npr.org/sections/theindicator/"
@@ -577,6 +631,23 @@ class TestNprStoryIdExtraction(unittest.TestCase):
         )
         # Not a dated story URL — returns None (player embeds extracted separately)
         self.assertIsNone(sid)
+
+
+class TestTrustedStoryPageUrlPatterns(unittest.TestCase):
+    def test_root_dated_story_page_is_trusted(self):
+        url = "https://www.npr.org/2019/04/30/718711109/how-grocery-shelves-get-stacked"
+        self.assertTrue(probe.is_trusted_story_page_url(url))
+        self.assertEqual(probe._trusted_npr_story_id_from_url(url), "718711109")
+
+    def test_sections_money_story_page_is_trusted(self):
+        url = "https://www.npr.org/sections/money/2018/03/13/593261790/bonds-japanese-bonds"
+        self.assertTrue(probe.is_trusted_story_page_url(url))
+        self.assertEqual(probe._trusted_npr_story_id_from_url(url), "593261790")
+
+    def test_sections_theindicator_story_page_not_trusted(self):
+        url = "https://www.npr.org/sections/theindicator/2018/07/11/628123456/fed-accounts-for-all"
+        self.assertFalse(probe.is_trusted_story_page_url(url))
+        self.assertIsNone(probe._trusted_npr_story_id_from_url(url))
 
 
 # ---------------------------------------------------------------------------

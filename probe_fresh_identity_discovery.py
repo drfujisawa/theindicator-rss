@@ -77,6 +77,21 @@ MAX_ARCHIVED_PLAYER_FETCHES = 2
 MAX_AUDIO_CANDIDATES = 4
 FETCH_SCORE_THRESHOLD = 0.35
 
+# Trusted NPR story-page URL structures observed in repository-validated
+# recoveries/current history. Only these forms may anchor confirmed identity:
+#   - https://www.npr.org/YYYY/MM/DD/<story-id>/<slug>
+#   - https://www.npr.org/sections/money/YYYY/MM/DD/<story-id>/<slug>
+TRUSTED_STORY_PAGE_PATTERNS = (
+    re.compile(
+        r"^https?://(?:www\.)?npr\.org/\d{4}/\d{2}/\d{2}/(\d{7,12})/[^/?#]+/?(?:[?#].*)?$",
+        re.I,
+    ),
+    re.compile(
+        r"^https?://(?:www\.)?npr\.org/sections/money/\d{4}/\d{2}/\d{2}/(\d{7,12})/[^/?#]+/?(?:[?#].*)?$",
+        re.I,
+    ),
+)
+
 # Numeric ID bounds remain advisory metadata only. The sparse probe is disabled
 # in this workflow so it cannot expand request volume or establish identity.
 NUMERIC_PROBE_STEP = 50_000
@@ -393,10 +408,14 @@ def extract_program_context(page: str) -> dict:
 
 def _npr_story_id_from_url(url: str):
     """
-    Extract the NPR story ID from a dated story URL like
+    Extract a discovered NPR story ID from a URL like
     https://www.npr.org/2018/07/11/628123456/fed-accounts-for-all
     or transcript.php?storyId=628123456
     Returns the ID string or None.
+
+    This is intentionally broader than the trusted-identity gate: transcript
+    and query-style URLs may expose a story ID, but that evidence is
+    discovered/unverified and must not by itself establish trusted identity.
 
     Player embed URLs (/player/embed/story/audio) are excluded because they
     contain two IDs; those are extracted separately by extract_player_embeds.
@@ -411,6 +430,27 @@ def _npr_story_id_from_url(url: str):
     if m:
         return m.group(1)
     return None
+
+
+def _trusted_story_page_match(url: str):
+    """Return the regex match for an allowed trusted NPR story-page URL."""
+    cleaned = clean_text(url or "").strip()
+    for pattern in TRUSTED_STORY_PAGE_PATTERNS:
+        match = pattern.match(cleaned)
+        if match:
+            return match
+    return None
+
+
+def is_trusted_story_page_url(url: str) -> bool:
+    """True only for explicitly allowed NPR episode story-page URL forms."""
+    return _trusted_story_page_match(url) is not None
+
+
+def _trusted_npr_story_id_from_url(url: str):
+    """Extract a story ID only when the URL matches an allowed trusted story page."""
+    match = _trusted_story_page_match(url)
+    return match.group(1) if match else None
 
 
 def _extract_url_date(url: str):
@@ -820,7 +860,9 @@ def score_page_for_target(
     Returns a dict with individual scores and overall verdict.
     """
     title_score = title_token_overlap(page_title, reference_title)
-    canonical_story_id = _npr_story_id_from_url(canonical)
+    discovered_story_id = _npr_story_id_from_url(canonical)
+    canonical_story_id = _trusted_npr_story_id_from_url(canonical)
+    trusted_story_page = is_trusted_story_page_url(canonical)
     url_date = _extract_url_date(canonical)
     date_value = pub_date or url_date
     date_match = (date_value == reference_date) if date_value else None
@@ -829,14 +871,29 @@ def score_page_for_target(
              - datetime.date.fromisoformat(reference_date)).days) <= 1
         if date_value else False
     )
-    has_story_id = bool(canonical_story_id)
+    has_story_id = bool(discovered_story_id)
+    has_trusted_story_id = bool(canonical_story_id)
     has_indicator_branding = bool(program_ctx.get("has_indicator_branding"))
-    has_episode_context = has_indicator_branding or "/theindicator/" in (canonical or "").lower()
+    has_indicator_program = program_ctx.get("program_id") == "510325"
+    has_episode_context = has_indicator_branding or has_indicator_program
 
     verdict = "no_match"
-    if title_score >= TITLE_MATCH_THRESHOLD and has_story_id and (date_match or date_adjacent) and has_episode_context:
+    if (
+        title_score >= TITLE_MATCH_THRESHOLD
+        and has_trusted_story_id
+        and trusted_story_page
+        and (date_match or date_adjacent)
+        and has_episode_context
+    ):
         verdict = "strong_match"
-    elif title_score >= TITLE_MATCH_THRESHOLD and has_story_id and (date_match or date_adjacent):
+    elif (
+        title_score >= TITLE_MATCH_THRESHOLD
+        and has_story_id
+        and (date_match or date_adjacent)
+        and not trusted_story_page
+    ):
+        verdict = "title_date_story_id_no_trusted_story_page"
+    elif title_score >= TITLE_MATCH_THRESHOLD and has_trusted_story_id and (date_match or date_adjacent):
         verdict = "title_date_story_id_no_episode_context"
     elif title_score >= TITLE_MATCH_THRESHOLD and has_story_id:
         verdict = "title_match_story_id_no_date"
@@ -851,7 +908,10 @@ def score_page_for_target(
         "date_adjacent": date_adjacent,
         "date_source": "publication_date" if pub_date else ("canonical_url" if url_date else None),
         "has_story_id": has_story_id,
+        "has_trusted_story_id": has_trusted_story_id,
         "canonical_story_id": canonical_story_id,
+        "discovered_story_id": discovered_story_id,
+        "trusted_story_page": trusted_story_page,
         "has_indicator_branding": has_indicator_branding,
         "has_episode_context": has_episode_context,
         "indicator_signals": program_ctx.get("indicator_signals", []),
