@@ -1,0 +1,45 @@
+{
+  "method": "targeted-wayback-probe-for-npr-story-id",
+  "target_title": "Judgement Bonds",
+  "target_date": "2018-10-29",
+  "npr_story_id": "661827210",
+  "queries": [
+    {
+      "name": "npr_anywhere_https",
+      "pattern": "https://www.npr.org/*661827210*",
+      "capture_count": 0,
+      "rows": []
+    },
+    {
+      "name": "npr_anywhere_http",
+      "pattern": "http://www.npr.org/*661827210*",
+      "capture_count": 0,
+      "rows": []
+    },
+    {
+      "name": "npr_sections_https",
+      "pattern": "https://www.npr.org/sections/*/*661827210*",
+      "capture_count": 0,
+      "rows": []
+    },
+    {
+      "name": "npr_player_embed_story_id",
+      "pattern": "https://www.npr.org/player/embed/661827210/*",
+      "capture_count": 0,
+      "rows": []
+    },
+    {
+      "name": "npr_player_anywhere",
+      "pattern": "https://www.npr.org/player/*661827210*",
+      "capture_count": 0,
+      "rows": []
+    }
+  ],
+  "unique_captures": [],
+  "player_pages": [],
+  "validated_audio": [],
+  "query_capture_total": 0,
+  "unique_capture_count": 0,
+  "player_page_count": 0,
+  "validated_audio_count": 0
+}
