@@ -171,11 +171,18 @@ def path_lower(url):
         return ""
 
 
+def host_matches_domain(host, domain):
+    host = (host or "").lower()
+    domain = (domain or "").lower()
+
+    return host == domain or host.endswith("." + domain)
+
+
 def is_npr_story_url(url):
     host = hostname(url)
     path = path_lower(url)
     return (
-        host.endswith("npr.org")
+        host_matches_domain(host, "npr.org")
         and "/player/" not in path
         and "/transcripts/" not in path
     )
@@ -184,7 +191,10 @@ def is_npr_story_url(url):
 def is_npr_player_url(url):
     host = hostname(url)
     path = path_lower(url)
-    return host.endswith("npr.org") and "/player/embed/" in path
+    return (
+        host_matches_domain(host, "npr.org")
+        and "/player/embed/" in path
+    )
 
 
 def is_wayback_url(url):
@@ -194,11 +204,15 @@ def is_wayback_url(url):
 def looks_like_affiliate_url(url):
     host = hostname(url)
 
-    if not host or host.endswith("npr.org") or is_wayback_url(url):
+    if (
+        not host
+        or host_matches_domain(host, "npr.org")
+        or is_wayback_url(url)
+    ):
         return False
 
     return any(
-        marker in host
+        host_matches_domain(host, marker)
         for marker in AFFILIATE_DOMAIN_MARKERS
     )
 
