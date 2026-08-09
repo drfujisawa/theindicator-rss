@@ -595,7 +595,7 @@ def classify_audio_candidate(
             "reason": "livestream_or_station_stream",
         }
 
-    success = status_code in {200, 206, None}
+    success = status_code in {200, 206}
 
     if not success:
         return {
@@ -627,26 +627,24 @@ def classify_audio_candidate(
             "reason": "audio_not_hosted_by_npr",
         }
 
-    if "/indicator/" not in lower_final:
+    if (
+        "/indicator/" not in lower_final
+        and "/indicator/" not in lower_candidate
+    ):
         return {
             "status": "rejected_generic_audio",
             "accepted": False,
             "reason": "npr_audio_not_indicator_specific",
         }
 
-    if not lower_final.endswith(AUDIO_EXTENSIONS):
-        if not any(ext in lower_final for ext in AUDIO_EXTENSIONS):
-            return {
-                "status": "rejected_generic_audio",
-                "accepted": False,
-                "reason": "npr_audio_not_episode_file",
-            }
-
-    if lower_candidate != lower_final and looks_like_livestream(lower_candidate):
+    if not any(
+        path_lower(final_url).endswith(ext)
+        for ext in AUDIO_EXTENSIONS
+    ):
         return {
-            "status": "rejected_livestream",
+            "status": "rejected_generic_audio",
             "accepted": False,
-            "reason": "redirected_from_livestream_candidate",
+            "reason": "npr_audio_not_episode_file",
         }
 
     return {
@@ -765,12 +763,18 @@ def page_record(url, source_file, source_path, source_kind):
     }
 
 
-def audio_record(url, source_file, source_path, source_kind):
+def audio_record(
+    url,
+    source_file,
+    source_path,
+    source_kind,
+    source_url=None,
+):
     return {
         "url": clean_url(url),
         "discovered_from": source_file,
         "source_type": source_kind,
-        "source_url": clean_url(url),
+        "source_url": clean_url(source_url),
         "source_path": source_path,
     }
 
@@ -936,11 +940,10 @@ def seed_from_matched_record(
         add_id_values(ledger, "npr_player_story_ids", player_story_ids)
         add_id_values(ledger, "npr_audio_ids", audio_ids)
 
-    for key in ["npr_story_urls"]:
-        for url in item.get(key, []) or []:
-            url = clean_url(url)
-            if url and url not in ledger["npr_story_urls"]:
-                ledger["npr_story_urls"].append(url)
+    for url in item.get("npr_story_urls", []) or []:
+        url = clean_url(url)
+        if url and url not in ledger["npr_story_urls"]:
+            ledger["npr_story_urls"].append(url)
 
     for key in ["player_urls", "npr_player_embeds", "player_embeds"]:
         for url in item.get(key, []) or []:
@@ -948,16 +951,15 @@ def seed_from_matched_record(
             if url and url not in ledger["player_urls"]:
                 ledger["player_urls"].append(url)
 
-    for key in ["episode_audio_candidates"]:
-        for url in item.get(key, []) or []:
-            record = audio_record(
-                url,
-                source_file,
-                source_path,
-                key,
-            )
-            if record["url"]:
-                ledger["candidate_audio_urls"].append(record)
+    for url in item.get("episode_audio_candidates", []) or []:
+        record = audio_record(
+            url,
+            source_file,
+            source_path,
+            "episode_audio_candidates",
+        )
+        if record["url"]:
+            ledger["candidate_audio_urls"].append(record)
 
     for evidence in item.get("prior_evidence", []) or []:
         for url in evidence.get("urls", []) or []:
@@ -1017,6 +1019,10 @@ def seed_from_matched_record(
                     source_file,
                     source_path,
                     report_key,
+                    source_url=(
+                        report.get("final_url")
+                        or report.get("requested_url")
+                    ),
                 )
                 if record["url"]:
                     ledger["candidate_audio_urls"].append(record)
@@ -1037,6 +1043,10 @@ def seed_from_matched_record(
                 source_file,
                 source_path,
                 "story_pages",
+                source_url=(
+                    story_page.get("final_url")
+                    or story_page.get("url")
+                ),
             )
             if record["url"]:
                 ledger["candidate_audio_urls"].append(record)
@@ -1067,6 +1077,10 @@ def seed_from_matched_record(
                 source_file,
                 source_path,
                 "player_pages",
+                source_url=(
+                    player_page.get("final_url")
+                    or player_page.get("player_url")
+                ),
             )
             if record["url"]:
                 ledger["candidate_audio_urls"].append(record)
@@ -1098,7 +1112,13 @@ def seed_from_matched_record(
             if record["url"]:
                 ledger["candidate_audio_urls"].append(record)
 
-    for collection_key in ["wayback_players", "wayback_story_reports", "wayback_player_reports"]:
+    collection_keys = [
+        "wayback_players",
+        "wayback_story_reports",
+        "wayback_player_reports",
+    ]
+
+    for collection_key in collection_keys:
         for row in item.get(collection_key, []) or []:
             captures = row.get("captures") if isinstance(row, dict) else None
 
@@ -1129,6 +1149,7 @@ def seed_from_matched_record(
                         source_file,
                         source_path,
                         collection_key,
+                        source_url=archive_url,
                     )
                     if record["url"]:
                         ledger["candidate_audio_urls"].append(record)
@@ -1571,7 +1592,7 @@ def build_audit(ledgers):
     false_positives = []
 
     for ledger in ledgers:
-        grouped[ledger["final_status"]].append({
+        grouped.setdefault(ledger["final_status"], []).append({
             "reference_date": ledger["reference_date"],
             "reference_title": ledger["reference_title"],
             "reference_year": ledger.get("reference_year"),

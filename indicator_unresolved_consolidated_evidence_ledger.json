@@ -1,6 +1,6 @@
 {
   "method": "consolidated-recovery-pipeline-for-unresolved-indicator-episodes",
-  "generated_at": "2026-08-09T17:58:06+00:00",
+  "generated_at": "2026-08-09T18:25:20+00:00",
   "canonical_input": "indicator_completeness_audit.json",
   "summary": {
     "confirmed_recovered": 0,
@@ -81,84 +81,84 @@
           "url": "https://static.xx.fbcdn.net/rsrc.php/yI/r/bg9JBgZmoaC.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://static.xx.fbcdn.net/rsrc.php/yI/r/bg9JBgZmoaC.mp3",
+          "source_url": null,
           "source_path": "root.results[0]"
         },
         {
           "url": "https://static.xx.fbcdn.net/rsrc.php/yf/r/XyTteqB51ob.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://static.xx.fbcdn.net/rsrc.php/yf/r/XyTteqB51ob.mp3",
+          "source_url": null,
           "source_path": "root.results[0]"
         },
         {
           "url": "https://static.xx.fbcdn.net/rsrc.php/yL/r/qi5pP1651Bi.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://static.xx.fbcdn.net/rsrc.php/yL/r/qi5pP1651Bi.mp3",
+          "source_url": null,
           "source_path": "root.results[0]"
         },
         {
           "url": "https://static.xx.fbcdn.net/rsrc.php/y8/r/a6onsWOBhsg.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://static.xx.fbcdn.net/rsrc.php/y8/r/a6onsWOBhsg.mp3",
+          "source_url": null,
           "source_path": "root.results[0]"
         },
         {
           "url": "https://static.xx.fbcdn.net/rsrc.php/yP/r/NUhwZHJ8fUZ.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://static.xx.fbcdn.net/rsrc.php/yP/r/NUhwZHJ8fUZ.mp3",
+          "source_url": null,
           "source_path": "root.results[0]"
         },
         {
           "url": "https://static.xx.fbcdn.net/rsrc.php/yM/r/1Vcznk-uUR-.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://static.xx.fbcdn.net/rsrc.php/yM/r/1Vcznk-uUR-.mp3",
+          "source_url": null,
           "source_path": "root.results[0]"
         },
         {
           "url": "https://static.xx.fbcdn.net/rsrc.php/yI/r/bg9JBgZmoaC.mp3",
           "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
           "source_type": "non_npr_audio",
-          "source_url": "https://static.xx.fbcdn.net/rsrc.php/yI/r/bg9JBgZmoaC.mp3",
+          "source_url": null,
           "source_path": "root.results[0]"
         },
         {
           "url": "https://static.xx.fbcdn.net/rsrc.php/yf/r/XyTteqB51ob.mp3",
           "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
           "source_type": "non_npr_audio",
-          "source_url": "https://static.xx.fbcdn.net/rsrc.php/yf/r/XyTteqB51ob.mp3",
+          "source_url": null,
           "source_path": "root.results[0]"
         },
         {
           "url": "https://static.xx.fbcdn.net/rsrc.php/yL/r/qi5pP1651Bi.mp3",
           "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
           "source_type": "non_npr_audio",
-          "source_url": "https://static.xx.fbcdn.net/rsrc.php/yL/r/qi5pP1651Bi.mp3",
+          "source_url": null,
           "source_path": "root.results[0]"
         },
         {
           "url": "https://static.xx.fbcdn.net/rsrc.php/y8/r/a6onsWOBhsg.mp3",
           "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
           "source_type": "non_npr_audio",
-          "source_url": "https://static.xx.fbcdn.net/rsrc.php/y8/r/a6onsWOBhsg.mp3",
+          "source_url": null,
           "source_path": "root.results[0]"
         },
         {
           "url": "https://static.xx.fbcdn.net/rsrc.php/yP/r/NUhwZHJ8fUZ.mp3",
           "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
           "source_type": "non_npr_audio",
-          "source_url": "https://static.xx.fbcdn.net/rsrc.php/yP/r/NUhwZHJ8fUZ.mp3",
+          "source_url": null,
           "source_path": "root.results[0]"
         },
         {
           "url": "https://static.xx.fbcdn.net/rsrc.php/yM/r/1Vcznk-uUR-.mp3",
           "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
           "source_type": "non_npr_audio",
-          "source_url": "https://static.xx.fbcdn.net/rsrc.php/yM/r/1Vcznk-uUR-.mp3",
+          "source_url": null,
           "source_path": "root.results[0]"
         }
       ],
@@ -167,7 +167,7 @@
           "candidate_url": "https://static.xx.fbcdn.net/rsrc.php/yI/r/bg9JBgZmoaC.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://static.xx.fbcdn.net/rsrc.php/yI/r/bg9JBgZmoaC.mp3",
+          "source_url": null,
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -175,7 +175,7 @@
           "candidate_url": "https://static.xx.fbcdn.net/rsrc.php/yf/r/XyTteqB51ob.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://static.xx.fbcdn.net/rsrc.php/yf/r/XyTteqB51ob.mp3",
+          "source_url": null,
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -183,7 +183,7 @@
           "candidate_url": "https://static.xx.fbcdn.net/rsrc.php/yL/r/qi5pP1651Bi.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://static.xx.fbcdn.net/rsrc.php/yL/r/qi5pP1651Bi.mp3",
+          "source_url": null,
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -191,7 +191,7 @@
           "candidate_url": "https://static.xx.fbcdn.net/rsrc.php/y8/r/a6onsWOBhsg.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://static.xx.fbcdn.net/rsrc.php/y8/r/a6onsWOBhsg.mp3",
+          "source_url": null,
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -199,7 +199,7 @@
           "candidate_url": "https://static.xx.fbcdn.net/rsrc.php/yP/r/NUhwZHJ8fUZ.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://static.xx.fbcdn.net/rsrc.php/yP/r/NUhwZHJ8fUZ.mp3",
+          "source_url": null,
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -207,7 +207,7 @@
           "candidate_url": "https://static.xx.fbcdn.net/rsrc.php/yM/r/1Vcznk-uUR-.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://static.xx.fbcdn.net/rsrc.php/yM/r/1Vcznk-uUR-.mp3",
+          "source_url": null,
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         }
@@ -330,70 +330,70 @@
           "url": "https://audio.dictionary.com/NEW2016/when_010/when_010.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://audio.dictionary.com/NEW2016/when_010/when_010.mp3",
+          "source_url": null,
           "source_path": "root.results[2]"
         },
         {
           "url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/whe/when_/when__gb_1.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/whe/when_/when__gb_1.mp3",
+          "source_url": null,
           "source_path": "root.results[2]"
         },
         {
           "url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/w/whe/when_/when__us_1_rr.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/w/whe/when_/when__us_1_rr.mp3",
+          "source_url": null,
           "source_path": "root.results[2]"
         },
         {
           "url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ado/adopt/adopt__gb_1.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ado/adopt/adopt__gb_1.mp3",
+          "source_url": null,
           "source_path": "root.results[2]"
         },
         {
           "url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/a/ado/adopt/adopt__us_1.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/a/ado/adopt/adopt__us_1.mp3",
+          "source_url": null,
           "source_path": "root.results[2]"
         },
         {
           "url": "https://audio.dictionary.com/NEW2016/when_010/when_010.mp3",
           "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
           "source_type": "non_npr_audio",
-          "source_url": "https://audio.dictionary.com/NEW2016/when_010/when_010.mp3",
+          "source_url": null,
           "source_path": "root.results[1]"
         },
         {
           "url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/whe/when_/when__gb_1.mp3",
           "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
           "source_type": "non_npr_audio",
-          "source_url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/whe/when_/when__gb_1.mp3",
+          "source_url": null,
           "source_path": "root.results[1]"
         },
         {
           "url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/w/whe/when_/when__us_1_rr.mp3",
           "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
           "source_type": "non_npr_audio",
-          "source_url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/w/whe/when_/when__us_1_rr.mp3",
+          "source_url": null,
           "source_path": "root.results[1]"
         },
         {
           "url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ado/adopt/adopt__gb_1.mp3",
           "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
           "source_type": "non_npr_audio",
-          "source_url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ado/adopt/adopt__gb_1.mp3",
+          "source_url": null,
           "source_path": "root.results[1]"
         },
         {
           "url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/a/ado/adopt/adopt__us_1.mp3",
           "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
           "source_type": "non_npr_audio",
-          "source_url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/a/ado/adopt/adopt__us_1.mp3",
+          "source_url": null,
           "source_path": "root.results[1]"
         }
       ],
@@ -402,7 +402,7 @@
           "candidate_url": "https://audio.dictionary.com/NEW2016/when_010/when_010.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://audio.dictionary.com/NEW2016/when_010/when_010.mp3",
+          "source_url": null,
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -410,7 +410,7 @@
           "candidate_url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/whe/when_/when__gb_1.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/whe/when_/when__gb_1.mp3",
+          "source_url": null,
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -418,7 +418,7 @@
           "candidate_url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/w/whe/when_/when__us_1_rr.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/w/whe/when_/when__us_1_rr.mp3",
+          "source_url": null,
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -426,7 +426,7 @@
           "candidate_url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ado/adopt/adopt__gb_1.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ado/adopt/adopt__gb_1.mp3",
+          "source_url": null,
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -434,7 +434,7 @@
           "candidate_url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/a/ado/adopt/adopt__us_1.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/a/ado/adopt/adopt__us_1.mp3",
+          "source_url": null,
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         }
@@ -601,112 +601,112 @@
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2&sc=siteplayer",
+          "source_url": "https://www.npr.org/2019/04/15/713616857/officials-in-sanctuary-cities-condemn-trumps-proposal-to-move-immigrant-detainee?t=1567429578598",
           "source_path": "root.results[0]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/2019/04/15/713616857/officials-in-sanctuary-cities-condemn-trumps-proposal-to-move-immigrant-detainee?t=1567429578598",
           "source_path": "root.results[0]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7&sc=siteplayer",
+          "source_url": "https://www.npr.org/sections/ed/2016/10/29/499867678/the-debate-over-bilingual-education-in-california",
           "source_path": "root.results[0]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/sections/ed/2016/10/29/499867678/the-debate-over-bilingual-education-in-california",
           "source_path": "root.results[0]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2023/01/20230112_atc_dismantling_cas_death_row.mp3?d=283&size=4542843&e=1148846720&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2023/01/20230112_atc_dismantling_cas_death_row.mp3?d=283&size=4542843&e=1148846720&sc=siteplayer",
+          "source_url": "https://www.npr.org/2023/01/13/1148846720/california-says-it-will-dismantle-death-row-the-move-brings-cheers-and-anger#:~:text=Technically%2C%20the%20death%20penalty%20still,the%20state%20in%2017%20years.",
           "source_path": "root.results[0]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2023/01/20230112_atc_dismantling_cas_death_row.mp3?d=283&size=4542843&e=1148846720&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2023/01/20230112_atc_dismantling_cas_death_row.mp3?d=283&size=4542843&e=1148846720&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/2023/01/13/1148846720/california-says-it-will-dismantle-death-row-the-move-brings-cheers-and-anger#:~:text=Technically%2C%20the%20death%20penalty%20still,the%20state%20in%2017%20years.",
           "source_path": "root.results[0]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_florence.mp3?d=20&e=524744989",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_florence.mp3?d=20&e=524744989",
+          "source_url": "https://www.npr.org/player/embed/524744989/525551088",
           "source_path": "root.results[0]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_waterfall.mp3?d=38&e=524744989",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_waterfall.mp3?d=38&e=524744989",
+          "source_url": "https://www.npr.org/player/embed/524744989/525551085",
           "source_path": "root.results[0]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2",
+          "source_url": "https://www.npr.org/player/embed/713616857/713616858",
           "source_path": "root.results[0]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7",
+          "source_url": "https://www.npr.org/player/embed/499867678/499867679",
           "source_path": "root.results[0]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2023/01/20230112_atc_dismantling_cas_death_row.mp3?d=283&size=4542843&e=1148846720",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2023/01/20230112_atc_dismantling_cas_death_row.mp3?d=283&size=4542843&e=1148846720",
+          "source_url": "https://www.npr.org/player/embed/1148846720/1149148322",
           "source_path": "root.results[0]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_waterfall.mp3?orgId=1&topicId=1003&aggIds=525773617&d=38&story=524744989",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "wayback_players",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_waterfall.mp3?orgId=1&topicId=1003&aggIds=525773617&d=38&story=524744989",
+          "source_url": "https://web.archive.org/web/20170504000609id_/https://www.npr.org/player/embed/524744989/525551088",
           "source_path": "root.results[0]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_florence.mp3?orgId=1&topicId=1003&aggIds=525773617&d=20&story=524744989",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "wayback_players",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_florence.mp3?orgId=1&topicId=1003&aggIds=525773617&d=20&story=524744989",
+          "source_url": "https://web.archive.org/web/20170504000609id_/https://www.npr.org/player/embed/524744989/525551088",
           "source_path": "root.results[0]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?orgId=150&topicId=1003&d=230&p=2&story=713616857&sc=embed",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "wayback_players",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?orgId=150&topicId=1003&d=230&p=2&story=713616857&sc=embed",
+          "source_url": "https://web.archive.org/web/20190416150544id_/https://www.npr.org/player/embed/713616857/713616858",
           "source_path": "root.results[0]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "wayback_players",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2",
+          "source_url": "https://web.archive.org/web/20250801202822id_/https://www.npr.org/player/embed/713616857/713616858",
           "source_path": "root.results[0]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "wayback_players",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7",
+          "source_url": "https://web.archive.org/web/20250401014726id_/https://www.npr.org/player/embed/499867678/499867679",
           "source_path": "root.results[0]"
         }
       ],
@@ -715,7 +715,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2&sc=siteplayer",
+          "source_url": "https://www.npr.org/2019/04/15/713616857/officials-in-sanctuary-cities-condemn-trumps-proposal-to-move-immigrant-detainee?t=1567429578598",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -723,7 +723,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/2019/04/15/713616857/officials-in-sanctuary-cities-condemn-trumps-proposal-to-move-immigrant-detainee?t=1567429578598",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -731,7 +731,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7&sc=siteplayer",
+          "source_url": "https://www.npr.org/sections/ed/2016/10/29/499867678/the-debate-over-bilingual-education-in-california",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -739,7 +739,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/sections/ed/2016/10/29/499867678/the-debate-over-bilingual-education-in-california",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -747,7 +747,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2023/01/20230112_atc_dismantling_cas_death_row.mp3?d=283&size=4542843&e=1148846720&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2023/01/20230112_atc_dismantling_cas_death_row.mp3?d=283&size=4542843&e=1148846720&sc=siteplayer",
+          "source_url": "https://www.npr.org/2023/01/13/1148846720/california-says-it-will-dismantle-death-row-the-move-brings-cheers-and-anger#:~:text=Technically%2C%20the%20death%20penalty%20still,the%20state%20in%2017%20years.",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -755,7 +755,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2023/01/20230112_atc_dismantling_cas_death_row.mp3?d=283&size=4542843&e=1148846720&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2023/01/20230112_atc_dismantling_cas_death_row.mp3?d=283&size=4542843&e=1148846720&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/2023/01/13/1148846720/california-says-it-will-dismantle-death-row-the-move-brings-cheers-and-anger#:~:text=Technically%2C%20the%20death%20penalty%20still,the%20state%20in%2017%20years.",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -763,7 +763,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_florence.mp3?d=20&e=524744989",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_florence.mp3?d=20&e=524744989",
+          "source_url": "https://www.npr.org/player/embed/524744989/525551088",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -771,7 +771,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_waterfall.mp3?d=38&e=524744989",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_waterfall.mp3?d=38&e=524744989",
+          "source_url": "https://www.npr.org/player/embed/524744989/525551085",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -779,7 +779,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2",
+          "source_url": "https://www.npr.org/player/embed/713616857/713616858",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -787,7 +787,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7",
+          "source_url": "https://www.npr.org/player/embed/499867678/499867679",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -795,7 +795,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2023/01/20230112_atc_dismantling_cas_death_row.mp3?d=283&size=4542843&e=1148846720",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2023/01/20230112_atc_dismantling_cas_death_row.mp3?d=283&size=4542843&e=1148846720",
+          "source_url": "https://www.npr.org/player/embed/1148846720/1149148322",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -803,7 +803,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_waterfall.mp3?orgId=1&topicId=1003&aggIds=525773617&d=38&story=524744989",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "wayback_players",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_waterfall.mp3?orgId=1&topicId=1003&aggIds=525773617&d=38&story=524744989",
+          "source_url": "https://web.archive.org/web/20170504000609id_/https://www.npr.org/player/embed/524744989/525551088",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         }
@@ -1009,28 +1009,28 @@
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2025/07/20250730_atc_48508176-7726-4c02-8315-a4fe560f3064.mp3?t=progseg&e=nx-s1-5469192&p=2&seg=12&d=206&sc=siteplayer",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2025/07/20250730_atc_48508176-7726-4c02-8315-a4fe560f3064.mp3?t=progseg&e=nx-s1-5469192&p=2&seg=12&d=206&sc=siteplayer",
+          "source_url": null,
           "source_path": "root.results[5]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2025/07/20250730_atc_48508176-7726-4c02-8315-a4fe560f3064.mp3?t=progseg&e=nx-s1-5469192&p=2&seg=12&d=206&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2025/07/20250730_atc_48508176-7726-4c02-8315-a4fe560f3064.mp3?t=progseg&e=nx-s1-5469192&p=2&seg=12&d=206&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": null,
           "source_path": "root.results[5]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2025/07/20250730_atc_48508176-7726-4c02-8315-a4fe560f3064.mp3?t=progseg&e=nx-s1-5469192&p=2&seg=12&d=206&sc=siteplayer",
           "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
           "source_type": "non_npr_audio",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2025/07/20250730_atc_48508176-7726-4c02-8315-a4fe560f3064.mp3?t=progseg&e=nx-s1-5469192&p=2&seg=12&d=206&sc=siteplayer",
+          "source_url": null,
           "source_path": "root.results[2]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2025/07/20250730_atc_48508176-7726-4c02-8315-a4fe560f3064.mp3?t=progseg&e=nx-s1-5469192&p=2&seg=12&d=206&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
           "source_type": "non_npr_audio",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2025/07/20250730_atc_48508176-7726-4c02-8315-a4fe560f3064.mp3?t=progseg&e=nx-s1-5469192&p=2&seg=12&d=206&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": null,
           "source_path": "root.results[2]"
         }
       ],
@@ -1039,7 +1039,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2025/07/20250730_atc_48508176-7726-4c02-8315-a4fe560f3064.mp3?t=progseg&e=nx-s1-5469192&p=2&seg=12&d=206&sc=siteplayer",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2025/07/20250730_atc_48508176-7726-4c02-8315-a4fe560f3064.mp3?t=progseg&e=nx-s1-5469192&p=2&seg=12&d=206&sc=siteplayer",
+          "source_url": null,
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -1047,7 +1047,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2025/07/20250730_atc_48508176-7726-4c02-8315-a4fe560f3064.mp3?t=progseg&e=nx-s1-5469192&p=2&seg=12&d=206&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2025/07/20250730_atc_48508176-7726-4c02-8315-a4fe560f3064.mp3?t=progseg&e=nx-s1-5469192&p=2&seg=12&d=206&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": null,
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         }
@@ -1152,28 +1152,28 @@
           "url": "https://audio.dictionary.net/audio/pronunciations/20260312/teenage-uk-phfqLnsz.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://audio.dictionary.net/audio/pronunciations/20260312/teenage-uk-phfqLnsz.mp3",
+          "source_url": null,
           "source_path": "root.results[6]"
         },
         {
           "url": "https://audio.dictionary.net/audio/pronunciations/20260312/teenage-us-AEIusmfl.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://audio.dictionary.net/audio/pronunciations/20260312/teenage-us-AEIusmfl.mp3",
+          "source_url": null,
           "source_path": "root.results[6]"
         },
         {
           "url": "https://audio.dictionary.net/audio/pronunciations/20260312/teenage-uk-phfqLnsz.mp3",
           "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
           "source_type": "non_npr_audio",
-          "source_url": "https://audio.dictionary.net/audio/pronunciations/20260312/teenage-uk-phfqLnsz.mp3",
+          "source_url": null,
           "source_path": "root.results[3]"
         },
         {
           "url": "https://audio.dictionary.net/audio/pronunciations/20260312/teenage-us-AEIusmfl.mp3",
           "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
           "source_type": "non_npr_audio",
-          "source_url": "https://audio.dictionary.net/audio/pronunciations/20260312/teenage-us-AEIusmfl.mp3",
+          "source_url": null,
           "source_path": "root.results[3]"
         }
       ],
@@ -1182,7 +1182,7 @@
           "candidate_url": "https://audio.dictionary.net/audio/pronunciations/20260312/teenage-uk-phfqLnsz.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://audio.dictionary.net/audio/pronunciations/20260312/teenage-uk-phfqLnsz.mp3",
+          "source_url": null,
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -1190,7 +1190,7 @@
           "candidate_url": "https://audio.dictionary.net/audio/pronunciations/20260312/teenage-us-AEIusmfl.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://audio.dictionary.net/audio/pronunciations/20260312/teenage-us-AEIusmfl.mp3",
+          "source_url": null,
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         }
@@ -1373,14 +1373,14 @@
           "url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "source_url": null,
           "source_path": "root.results[9]"
         },
         {
           "url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
           "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
           "source_type": "non_npr_audio",
-          "source_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "source_url": null,
           "source_path": "root.results[4]"
         }
       ],
@@ -1389,7 +1389,7 @@
           "candidate_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "source_url": null,
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         }
@@ -1469,28 +1469,28 @@
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2010/08/20100826_atc_02.mp3?d=310&e=129451895&t=progseg&seg=2&p=2&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2010/08/20100826_atc_02.mp3?d=310&e=129451895&t=progseg&seg=2&p=2&sc=siteplayer",
+          "source_url": "https://www.npr.org/transcripts/129451895",
           "source_path": "root.results[1]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2010/08/20100826_atc_02.mp3?d=310&e=129451895&t=progseg&seg=2&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2010/08/20100826_atc_02.mp3?d=310&e=129451895&t=progseg&seg=2&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/transcripts/129451895",
           "source_path": "root.results[1]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2010/08/20100826_atc_02.mp3?d=310&e=129451895&t=progseg&seg=2&p=2",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2010/08/20100826_atc_02.mp3?d=310&e=129451895&t=progseg&seg=2&p=2",
+          "source_url": "https://www.npr.org/player/embed/129451895/129454071",
           "source_path": "root.results[1]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2010/08/20100826_atc_02.mp3?d=310&e=129451895&t=progseg&seg=2&p=2",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "wayback_players",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2010/08/20100826_atc_02.mp3?d=310&e=129451895&t=progseg&seg=2&p=2",
+          "source_url": "https://web.archive.org/web/20250406234220id_/https://www.npr.org/player/embed/129451895/129454071",
           "source_path": "root.results[1]"
         }
       ],
@@ -1499,7 +1499,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2010/08/20100826_atc_02.mp3?d=310&e=129451895&t=progseg&seg=2&p=2&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2010/08/20100826_atc_02.mp3?d=310&e=129451895&t=progseg&seg=2&p=2&sc=siteplayer",
+          "source_url": "https://www.npr.org/transcripts/129451895",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -1507,7 +1507,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2010/08/20100826_atc_02.mp3?d=310&e=129451895&t=progseg&seg=2&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2010/08/20100826_atc_02.mp3?d=310&e=129451895&t=progseg&seg=2&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/transcripts/129451895",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -1515,7 +1515,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2010/08/20100826_atc_02.mp3?d=310&e=129451895&t=progseg&seg=2&p=2",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2010/08/20100826_atc_02.mp3?d=310&e=129451895&t=progseg&seg=2&p=2",
+          "source_url": "https://www.npr.org/player/embed/129451895/129454071",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         }
@@ -1600,14 +1600,14 @@
           "url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "source_url": null,
           "source_path": "root.results[11]"
         },
         {
           "url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
           "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
           "source_type": "non_npr_audio",
-          "source_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "source_url": null,
           "source_path": "root.results[5]"
         }
       ],
@@ -1616,7 +1616,7 @@
           "candidate_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "source_url": null,
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         }
@@ -1896,7 +1896,7 @@
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2020/10/20201020_atc_us_files_antitrust_suit_against_google.mp3?d=229&size=3659175&e=925895658&t=progseg&seg=1&p=2",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2020/10/20201020_atc_us_files_antitrust_suit_against_google.mp3?d=229&size=3659175&e=925895658&t=progseg&seg=1&p=2",
+          "source_url": "https://www.npr.org/player/embed/925895658/925895659",
           "source_path": "root.results[2]"
         }
       ],
@@ -1905,7 +1905,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2020/10/20201020_atc_us_files_antitrust_suit_against_google.mp3?d=229&size=3659175&e=925895658&t=progseg&seg=1&p=2",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2020/10/20201020_atc_us_files_antitrust_suit_against_google.mp3?d=229&size=3659175&e=925895658&t=progseg&seg=1&p=2",
+          "source_url": "https://www.npr.org/player/embed/925895658/925895659",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         }
@@ -2106,14 +2106,14 @@
           "url": "https://audio.dictionary.com/B01/B0180600/B0180600.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://audio.dictionary.com/B01/B0180600/B0180600.mp3",
+          "source_url": null,
           "source_path": "root.results[19]"
         },
         {
           "url": "https://audio.dictionary.com/B01/B0180600/B0180600.mp3",
           "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
           "source_type": "non_npr_audio",
-          "source_url": "https://audio.dictionary.com/B01/B0180600/B0180600.mp3",
+          "source_url": null,
           "source_path": "root.results[6]"
         }
       ],
@@ -2122,7 +2122,7 @@
           "candidate_url": "https://audio.dictionary.com/B01/B0180600/B0180600.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://audio.dictionary.com/B01/B0180600/B0180600.mp3",
+          "source_url": null,
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         }
@@ -2406,112 +2406,112 @@
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/11/20161109_atc_trump_can_kill_obamacare_with_or_without_help_from_congress.mp3?d=189&e=501203831&t=progseg&seg=10&p=2&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/11/20161109_atc_trump_can_kill_obamacare_with_or_without_help_from_congress.mp3?d=189&e=501203831&t=progseg&seg=10&p=2&sc=siteplayer",
+          "source_url": "https://www.npr.org/sections/health-shots/2016/11/09/501203831/trump-can-kill-obamacare-with-or-without-help-from-congress",
           "source_path": "root.results[4]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/11/20161109_atc_trump_can_kill_obamacare_with_or_without_help_from_congress.mp3?d=189&e=501203831&t=progseg&seg=10&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/11/20161109_atc_trump_can_kill_obamacare_with_or_without_help_from_congress.mp3?d=189&e=501203831&t=progseg&seg=10&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/sections/health-shots/2016/11/09/501203831/trump-can-kill-obamacare-with-or-without-help-from-congress",
           "source_path": "root.results[4]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2020/10/20201030_atc_opioid_crisis_critics_say_trump_fumbled_response_to_another_deadly_epidemic_.mp3?d=257&size=4118709&e=927859091&t=progseg&seg=11&p=2&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2020/10/20201030_atc_opioid_crisis_critics_say_trump_fumbled_response_to_another_deadly_epidemic_.mp3?d=257&size=4118709&e=927859091&t=progseg&seg=11&p=2&sc=siteplayer",
+          "source_url": "https://www.npr.org/2020/10/29/927859091/opioid-crisis-critics-say-trump-fumbled-response-to-another-deadly-epidemic",
           "source_path": "root.results[4]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2020/10/20201030_atc_opioid_crisis_critics_say_trump_fumbled_response_to_another_deadly_epidemic_.mp3?d=257&size=4118709&e=927859091&t=progseg&seg=11&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2020/10/20201030_atc_opioid_crisis_critics_say_trump_fumbled_response_to_another_deadly_epidemic_.mp3?d=257&size=4118709&e=927859091&t=progseg&seg=11&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/2020/10/29/927859091/opioid-crisis-critics-say-trump-fumbled-response-to-another-deadly-epidemic",
           "source_path": "root.results[4]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2017/10/20171010_atc_many_cabinet_positions_remain_open_in_trump_administration.mp3?d=228&e=557122200&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2017/10/20171010_atc_many_cabinet_positions_remain_open_in_trump_administration.mp3?d=228&e=557122200&sc=siteplayer",
+          "source_url": "https://www.npr.org/2017/10/12/557122200/trump-leaves-top-administration-positions-unfilled-says-hollow-government-by-des",
           "source_path": "root.results[4]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2017/10/20171010_atc_many_cabinet_positions_remain_open_in_trump_administration.mp3?d=228&e=557122200&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2017/10/20171010_atc_many_cabinet_positions_remain_open_in_trump_administration.mp3?d=228&e=557122200&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/2017/10/12/557122200/trump-leaves-top-administration-positions-unfilled-says-hollow-government-by-des",
           "source_path": "root.results[4]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2026/01/20260119_atc_trump_has_rolled_out_many_of_the_project_2025_policies_he_once_claimed_ignorance_about.mp3?t=progseg&e=nx-s1-5663790&p=2&seg=4&d=241&size=3857390&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2026/01/20260119_atc_trump_has_rolled_out_many_of_the_project_2025_policies_he_once_claimed_ignorance_about.mp3?t=progseg&e=nx-s1-5663790&p=2&seg=4&d=241&size=3857390&sc=siteplayer",
+          "source_url": "https://www.npr.org/2026/01/19/nx-s1-5640006/trump-has-rolled-out-many-of-the-project-2025-policies-he-once-claimed-ignorance-about",
           "source_path": "root.results[4]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2026/01/20260119_atc_trump_has_rolled_out_many_of_the_project_2025_policies_he_once_claimed_ignorance_about.mp3?t=progseg&e=nx-s1-5663790&p=2&seg=4&d=241&size=3857390&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2026/01/20260119_atc_trump_has_rolled_out_many_of_the_project_2025_policies_he_once_claimed_ignorance_about.mp3?t=progseg&e=nx-s1-5663790&p=2&seg=4&d=241&size=3857390&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/2026/01/19/nx-s1-5640006/trump-has-rolled-out-many-of-the-project-2025-policies-he-once-claimed-ignorance-about",
           "source_path": "root.results[4]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2025/03/20250319_atc_trump_targets_law_firms.mp3?t=progseg&e=nx-s1-5313291&p=2&seg=0&d=256&size=4096880&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2025/03/20250319_atc_trump_targets_law_firms.mp3?t=progseg&e=nx-s1-5313291&p=2&seg=0&d=256&size=4096880&sc=siteplayer",
+          "source_url": "https://www.npr.org/2025/03/19/nx-s1-5323890/experts-say-trumps-targeting-of-law-firms-is-unprecedented",
           "source_path": "root.results[4]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2025/03/20250319_atc_trump_targets_law_firms.mp3?t=progseg&e=nx-s1-5313291&p=2&seg=0&d=256&size=4096880&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2025/03/20250319_atc_trump_targets_law_firms.mp3?t=progseg&e=nx-s1-5313291&p=2&seg=0&d=256&size=4096880&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/2025/03/19/nx-s1-5323890/experts-say-trumps-targeting-of-law-firms-is-unprecedented",
           "source_path": "root.results[4]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/11/20161109_atc_trump_can_kill_obamacare_with_or_without_help_from_congress.mp3?d=189&e=501203831&t=progseg&seg=10&p=2",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/11/20161109_atc_trump_can_kill_obamacare_with_or_without_help_from_congress.mp3?d=189&e=501203831&t=progseg&seg=10&p=2",
+          "source_url": "https://www.npr.org/player/embed/501203831/501477057",
           "source_path": "root.results[4]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2020/10/20201030_atc_opioid_crisis_critics_say_trump_fumbled_response_to_another_deadly_epidemic_.mp3?d=257&size=4118709&e=927859091&t=progseg&seg=11&p=2",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2020/10/20201030_atc_opioid_crisis_critics_say_trump_fumbled_response_to_another_deadly_epidemic_.mp3?d=257&size=4118709&e=927859091&t=progseg&seg=11&p=2",
+          "source_url": "https://www.npr.org/player/embed/927859091/929609241",
           "source_path": "root.results[4]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2017/10/20171010_atc_many_cabinet_positions_remain_open_in_trump_administration.mp3?d=228&e=557122200",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2017/10/20171010_atc_many_cabinet_positions_remain_open_in_trump_administration.mp3?d=228&e=557122200",
+          "source_url": "https://www.npr.org/player/embed/557122200/557122550",
           "source_path": "root.results[4]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/11/20161109_atc_trump_can_kill_obamacare_with_or_without_help_from_congress.mp3?orgId=1&topicId=1128&d=189&p=2&story=501203831&sc=embed",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "wayback_players",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/11/20161109_atc_trump_can_kill_obamacare_with_or_without_help_from_congress.mp3?orgId=1&topicId=1128&d=189&p=2&story=501203831&sc=embed",
+          "source_url": "https://web.archive.org/web/20200106201941id_/https://www.npr.org/player/embed/501203831/501477057",
           "source_path": "root.results[4]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/11/20161109_atc_trump_can_kill_obamacare_with_or_without_help_from_congress.mp3?d=189&e=501203831&t=progseg&seg=10&p=2",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "wayback_players",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/11/20161109_atc_trump_can_kill_obamacare_with_or_without_help_from_congress.mp3?d=189&e=501203831&t=progseg&seg=10&p=2",
+          "source_url": "https://web.archive.org/web/20250428222810id_/https://www.npr.org/player/embed/501203831/501477057",
           "source_path": "root.results[4]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2020/10/20201030_atc_opioid_crisis_critics_say_trump_fumbled_response_to_another_deadly_epidemic_.mp3?d=257&size=4118709&e=927859091&t=progseg&seg=11&p=2",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "wayback_players",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2020/10/20201030_atc_opioid_crisis_critics_say_trump_fumbled_response_to_another_deadly_epidemic_.mp3?d=257&size=4118709&e=927859091&t=progseg&seg=11&p=2",
+          "source_url": "https://web.archive.org/web/20250410062746id_/https://www.npr.org/player/embed/927859091/929609241",
           "source_path": "root.results[4]"
         }
       ],
@@ -2520,7 +2520,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/11/20161109_atc_trump_can_kill_obamacare_with_or_without_help_from_congress.mp3?d=189&e=501203831&t=progseg&seg=10&p=2&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/11/20161109_atc_trump_can_kill_obamacare_with_or_without_help_from_congress.mp3?d=189&e=501203831&t=progseg&seg=10&p=2&sc=siteplayer",
+          "source_url": "https://www.npr.org/sections/health-shots/2016/11/09/501203831/trump-can-kill-obamacare-with-or-without-help-from-congress",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -2528,7 +2528,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/11/20161109_atc_trump_can_kill_obamacare_with_or_without_help_from_congress.mp3?d=189&e=501203831&t=progseg&seg=10&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/11/20161109_atc_trump_can_kill_obamacare_with_or_without_help_from_congress.mp3?d=189&e=501203831&t=progseg&seg=10&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/sections/health-shots/2016/11/09/501203831/trump-can-kill-obamacare-with-or-without-help-from-congress",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -2536,7 +2536,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2020/10/20201030_atc_opioid_crisis_critics_say_trump_fumbled_response_to_another_deadly_epidemic_.mp3?d=257&size=4118709&e=927859091&t=progseg&seg=11&p=2&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2020/10/20201030_atc_opioid_crisis_critics_say_trump_fumbled_response_to_another_deadly_epidemic_.mp3?d=257&size=4118709&e=927859091&t=progseg&seg=11&p=2&sc=siteplayer",
+          "source_url": "https://www.npr.org/2020/10/29/927859091/opioid-crisis-critics-say-trump-fumbled-response-to-another-deadly-epidemic",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -2544,7 +2544,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2020/10/20201030_atc_opioid_crisis_critics_say_trump_fumbled_response_to_another_deadly_epidemic_.mp3?d=257&size=4118709&e=927859091&t=progseg&seg=11&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2020/10/20201030_atc_opioid_crisis_critics_say_trump_fumbled_response_to_another_deadly_epidemic_.mp3?d=257&size=4118709&e=927859091&t=progseg&seg=11&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/2020/10/29/927859091/opioid-crisis-critics-say-trump-fumbled-response-to-another-deadly-epidemic",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -2552,7 +2552,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2017/10/20171010_atc_many_cabinet_positions_remain_open_in_trump_administration.mp3?d=228&e=557122200&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2017/10/20171010_atc_many_cabinet_positions_remain_open_in_trump_administration.mp3?d=228&e=557122200&sc=siteplayer",
+          "source_url": "https://www.npr.org/2017/10/12/557122200/trump-leaves-top-administration-positions-unfilled-says-hollow-government-by-des",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -2560,7 +2560,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2017/10/20171010_atc_many_cabinet_positions_remain_open_in_trump_administration.mp3?d=228&e=557122200&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2017/10/20171010_atc_many_cabinet_positions_remain_open_in_trump_administration.mp3?d=228&e=557122200&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/2017/10/12/557122200/trump-leaves-top-administration-positions-unfilled-says-hollow-government-by-des",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -2568,7 +2568,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2026/01/20260119_atc_trump_has_rolled_out_many_of_the_project_2025_policies_he_once_claimed_ignorance_about.mp3?t=progseg&e=nx-s1-5663790&p=2&seg=4&d=241&size=3857390&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2026/01/20260119_atc_trump_has_rolled_out_many_of_the_project_2025_policies_he_once_claimed_ignorance_about.mp3?t=progseg&e=nx-s1-5663790&p=2&seg=4&d=241&size=3857390&sc=siteplayer",
+          "source_url": "https://www.npr.org/2026/01/19/nx-s1-5640006/trump-has-rolled-out-many-of-the-project-2025-policies-he-once-claimed-ignorance-about",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -2576,7 +2576,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2026/01/20260119_atc_trump_has_rolled_out_many_of_the_project_2025_policies_he_once_claimed_ignorance_about.mp3?t=progseg&e=nx-s1-5663790&p=2&seg=4&d=241&size=3857390&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2026/01/20260119_atc_trump_has_rolled_out_many_of_the_project_2025_policies_he_once_claimed_ignorance_about.mp3?t=progseg&e=nx-s1-5663790&p=2&seg=4&d=241&size=3857390&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/2026/01/19/nx-s1-5640006/trump-has-rolled-out-many-of-the-project-2025-policies-he-once-claimed-ignorance-about",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -2584,7 +2584,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2025/03/20250319_atc_trump_targets_law_firms.mp3?t=progseg&e=nx-s1-5313291&p=2&seg=0&d=256&size=4096880&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2025/03/20250319_atc_trump_targets_law_firms.mp3?t=progseg&e=nx-s1-5313291&p=2&seg=0&d=256&size=4096880&sc=siteplayer",
+          "source_url": "https://www.npr.org/2025/03/19/nx-s1-5323890/experts-say-trumps-targeting-of-law-firms-is-unprecedented",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -2592,7 +2592,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2025/03/20250319_atc_trump_targets_law_firms.mp3?t=progseg&e=nx-s1-5313291&p=2&seg=0&d=256&size=4096880&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2025/03/20250319_atc_trump_targets_law_firms.mp3?t=progseg&e=nx-s1-5313291&p=2&seg=0&d=256&size=4096880&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/2025/03/19/nx-s1-5323890/experts-say-trumps-targeting-of-law-firms-is-unprecedented",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -2600,7 +2600,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/11/20161109_atc_trump_can_kill_obamacare_with_or_without_help_from_congress.mp3?d=189&e=501203831&t=progseg&seg=10&p=2",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/11/20161109_atc_trump_can_kill_obamacare_with_or_without_help_from_congress.mp3?d=189&e=501203831&t=progseg&seg=10&p=2",
+          "source_url": "https://www.npr.org/player/embed/501203831/501477057",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -2608,7 +2608,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2020/10/20201030_atc_opioid_crisis_critics_say_trump_fumbled_response_to_another_deadly_epidemic_.mp3?d=257&size=4118709&e=927859091&t=progseg&seg=11&p=2",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2020/10/20201030_atc_opioid_crisis_critics_say_trump_fumbled_response_to_another_deadly_epidemic_.mp3?d=257&size=4118709&e=927859091&t=progseg&seg=11&p=2",
+          "source_url": "https://www.npr.org/player/embed/927859091/929609241",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         }
@@ -2772,14 +2772,14 @@
           "url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "source_url": null,
           "source_path": "root.results[24]"
         },
         {
           "url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
           "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
           "source_type": "non_npr_audio",
-          "source_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "source_url": null,
           "source_path": "root.results[7]"
         }
       ],
@@ -2788,7 +2788,7 @@
           "candidate_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "source_url": null,
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         }
@@ -2975,49 +2975,49 @@
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2011/06/20110608_atc_03.mp3?d=250&e=137065443&t=progseg&seg=3&p=2&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2011/06/20110608_atc_03.mp3?d=250&e=137065443&t=progseg&seg=3&p=2&sc=siteplayer",
+          "source_url": "https://www.npr.org/2011/06/08/137065443/opec-decides-not-to-increase-oil-production",
           "source_path": "root.results[5]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2011/06/20110608_atc_03.mp3?d=250&e=137065443&t=progseg&seg=3&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2011/06/20110608_atc_03.mp3?d=250&e=137065443&t=progseg&seg=3&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/2011/06/08/137065443/opec-decides-not-to-increase-oil-production",
           "source_path": "root.results[5]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2011/05/20110519_me_02.mp3?d=275&e=136439885&t=progseg&seg=2&p=3&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2011/05/20110519_me_02.mp3?d=275&e=136439885&t=progseg&seg=2&p=3&sc=siteplayer",
+          "source_url": "https://www.npr.org/2011/05/19/136439885/poverty-hides-amid-saudi-arabias-oil-wealth",
           "source_path": "root.results[5]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2011/05/20110519_me_02.mp3?d=275&e=136439885&t=progseg&seg=2&p=3&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2011/05/20110519_me_02.mp3?d=275&e=136439885&t=progseg&seg=2&p=3&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/2011/05/19/136439885/poverty-hides-amid-saudi-arabias-oil-wealth",
           "source_path": "root.results[5]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2011/06/20110608_atc_03.mp3?d=250&e=137065443&t=progseg&seg=3&p=2",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2011/06/20110608_atc_03.mp3?d=250&e=137065443&t=progseg&seg=3&p=2",
+          "source_url": "https://www.npr.org/player/embed/137065443/137065428",
           "source_path": "root.results[5]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2011/05/20110519_me_02.mp3?d=275&e=136439885&t=progseg&seg=2&p=3",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2011/05/20110519_me_02.mp3?d=275&e=136439885&t=progseg&seg=2&p=3",
+          "source_url": "https://www.npr.org/player/embed/136439885/136453311",
           "source_path": "root.results[5]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2011/06/20110608_atc_03.mp3?d=250&e=137065443&t=progseg&seg=3&p=2",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "wayback_players",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2011/06/20110608_atc_03.mp3?d=250&e=137065443&t=progseg&seg=3&p=2",
+          "source_url": "https://web.archive.org/web/20250507214914id_/https://www.npr.org/player/embed/137065443/137065428",
           "source_path": "root.results[5]"
         }
       ],
@@ -3026,7 +3026,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2011/06/20110608_atc_03.mp3?d=250&e=137065443&t=progseg&seg=3&p=2&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2011/06/20110608_atc_03.mp3?d=250&e=137065443&t=progseg&seg=3&p=2&sc=siteplayer",
+          "source_url": "https://www.npr.org/2011/06/08/137065443/opec-decides-not-to-increase-oil-production",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -3034,7 +3034,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2011/06/20110608_atc_03.mp3?d=250&e=137065443&t=progseg&seg=3&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2011/06/20110608_atc_03.mp3?d=250&e=137065443&t=progseg&seg=3&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/2011/06/08/137065443/opec-decides-not-to-increase-oil-production",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -3042,7 +3042,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2011/05/20110519_me_02.mp3?d=275&e=136439885&t=progseg&seg=2&p=3&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2011/05/20110519_me_02.mp3?d=275&e=136439885&t=progseg&seg=2&p=3&sc=siteplayer",
+          "source_url": "https://www.npr.org/2011/05/19/136439885/poverty-hides-amid-saudi-arabias-oil-wealth",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -3050,7 +3050,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2011/05/20110519_me_02.mp3?d=275&e=136439885&t=progseg&seg=2&p=3&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2011/05/20110519_me_02.mp3?d=275&e=136439885&t=progseg&seg=2&p=3&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/2011/05/19/136439885/poverty-hides-amid-saudi-arabias-oil-wealth",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -3058,7 +3058,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2011/06/20110608_atc_03.mp3?d=250&e=137065443&t=progseg&seg=3&p=2",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2011/06/20110608_atc_03.mp3?d=250&e=137065443&t=progseg&seg=3&p=2",
+          "source_url": "https://www.npr.org/player/embed/137065443/137065428",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -3066,7 +3066,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2011/05/20110519_me_02.mp3?d=275&e=136439885&t=progseg&seg=2&p=3",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2011/05/20110519_me_02.mp3?d=275&e=136439885&t=progseg&seg=2&p=3",
+          "source_url": "https://www.npr.org/player/embed/136439885/136453311",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         }
@@ -3194,49 +3194,49 @@
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2015/05/20150521_me_who_calls_for_100_million_emergency_fund_doctor_swat_team.mp3?d=234&e=408289115&t=progseg&seg=2&p=3&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2015/05/20150521_me_who_calls_for_100_million_emergency_fund_doctor_swat_team.mp3?d=234&e=408289115&t=progseg&seg=2&p=3&sc=siteplayer",
+          "source_url": "https://www.npr.org/sections/goatsandsoda/2015/05/21/408289115/who-calls-for-100-million-emergency-fund-doctor-swat-team",
           "source_path": "root.results[6]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2015/05/20150521_me_who_calls_for_100_million_emergency_fund_doctor_swat_team.mp3?d=234&e=408289115&t=progseg&seg=2&p=3&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2015/05/20150521_me_who_calls_for_100_million_emergency_fund_doctor_swat_team.mp3?d=234&e=408289115&t=progseg&seg=2&p=3&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/sections/goatsandsoda/2015/05/21/408289115/who-calls-for-100-million-emergency-fund-doctor-swat-team",
           "source_path": "root.results[6]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/05/20160524_atc_who_aims_to_reform_itself_but_health_experts_arent_yet_impressed.mp3?d=225&e=479228380&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/05/20160524_atc_who_aims_to_reform_itself_but_health_experts_arent_yet_impressed.mp3?d=225&e=479228380&sc=siteplayer",
+          "source_url": "https://www.npr.org/sections/goatsandsoda/2016/05/25/479228380/who-aims-to-reform-itself-but-health-experts-arent-yet-impressed",
           "source_path": "root.results[6]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/05/20160524_atc_who_aims_to_reform_itself_but_health_experts_arent_yet_impressed.mp3?d=225&e=479228380&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/05/20160524_atc_who_aims_to_reform_itself_but_health_experts_arent_yet_impressed.mp3?d=225&e=479228380&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/sections/goatsandsoda/2016/05/25/479228380/who-aims-to-reform-itself-but-health-experts-arent-yet-impressed",
           "source_path": "root.results[6]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2015/05/20150521_me_who_calls_for_100_million_emergency_fund_doctor_swat_team.mp3?d=234&e=408289115&t=progseg&seg=2&p=3",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2015/05/20150521_me_who_calls_for_100_million_emergency_fund_doctor_swat_team.mp3?d=234&e=408289115&t=progseg&seg=2&p=3",
+          "source_url": "https://www.npr.org/player/embed/408289115/408407230",
           "source_path": "root.results[6]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/05/20160524_atc_who_aims_to_reform_itself_but_health_experts_arent_yet_impressed.mp3?d=225&e=479228380",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/05/20160524_atc_who_aims_to_reform_itself_but_health_experts_arent_yet_impressed.mp3?d=225&e=479228380",
+          "source_url": "https://www.npr.org/player/embed/479228380/479349681",
           "source_path": "root.results[6]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2015/05/20150521_me_who_calls_for_100_million_emergency_fund_doctor_swat_team.mp3?d=234&e=408289115&t=progseg&seg=2&p=3",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "wayback_players",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2015/05/20150521_me_who_calls_for_100_million_emergency_fund_doctor_swat_team.mp3?d=234&e=408289115&t=progseg&seg=2&p=3",
+          "source_url": "https://web.archive.org/web/20250424123325id_/https://www.npr.org/player/embed/408289115/408407230",
           "source_path": "root.results[6]"
         }
       ],
@@ -3245,7 +3245,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2015/05/20150521_me_who_calls_for_100_million_emergency_fund_doctor_swat_team.mp3?d=234&e=408289115&t=progseg&seg=2&p=3&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2015/05/20150521_me_who_calls_for_100_million_emergency_fund_doctor_swat_team.mp3?d=234&e=408289115&t=progseg&seg=2&p=3&sc=siteplayer",
+          "source_url": "https://www.npr.org/sections/goatsandsoda/2015/05/21/408289115/who-calls-for-100-million-emergency-fund-doctor-swat-team",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -3253,7 +3253,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2015/05/20150521_me_who_calls_for_100_million_emergency_fund_doctor_swat_team.mp3?d=234&e=408289115&t=progseg&seg=2&p=3&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2015/05/20150521_me_who_calls_for_100_million_emergency_fund_doctor_swat_team.mp3?d=234&e=408289115&t=progseg&seg=2&p=3&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/sections/goatsandsoda/2015/05/21/408289115/who-calls-for-100-million-emergency-fund-doctor-swat-team",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -3261,7 +3261,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/05/20160524_atc_who_aims_to_reform_itself_but_health_experts_arent_yet_impressed.mp3?d=225&e=479228380&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/05/20160524_atc_who_aims_to_reform_itself_but_health_experts_arent_yet_impressed.mp3?d=225&e=479228380&sc=siteplayer",
+          "source_url": "https://www.npr.org/sections/goatsandsoda/2016/05/25/479228380/who-aims-to-reform-itself-but-health-experts-arent-yet-impressed",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -3269,7 +3269,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/05/20160524_atc_who_aims_to_reform_itself_but_health_experts_arent_yet_impressed.mp3?d=225&e=479228380&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/05/20160524_atc_who_aims_to_reform_itself_but_health_experts_arent_yet_impressed.mp3?d=225&e=479228380&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/sections/goatsandsoda/2016/05/25/479228380/who-aims-to-reform-itself-but-health-experts-arent-yet-impressed",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -3277,7 +3277,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2015/05/20150521_me_who_calls_for_100_million_emergency_fund_doctor_swat_team.mp3?d=234&e=408289115&t=progseg&seg=2&p=3",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2015/05/20150521_me_who_calls_for_100_million_emergency_fund_doctor_swat_team.mp3?d=234&e=408289115&t=progseg&seg=2&p=3",
+          "source_url": "https://www.npr.org/player/embed/408289115/408407230",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -3285,7 +3285,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/05/20160524_atc_who_aims_to_reform_itself_but_health_experts_arent_yet_impressed.mp3?d=225&e=479228380",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/05/20160524_atc_who_aims_to_reform_itself_but_health_experts_arent_yet_impressed.mp3?d=225&e=479228380",
+          "source_url": "https://www.npr.org/player/embed/479228380/479349681",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         }
@@ -3414,35 +3414,35 @@
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7&sc=siteplayer",
+          "source_url": "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s",
           "source_path": "root.results[7]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s",
           "source_path": "root.results[7]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7",
+          "source_url": "https://www.npr.org/player/embed/887239225/887239226",
           "source_path": "root.results[7]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?orgId=1&topicId=1125&d=304&p=7&story=887239225&dl=1",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "wayback_players",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?orgId=1&topicId=1125&d=304&p=7&story=887239225&dl=1",
+          "source_url": "https://web.archive.org/web/20200718205915id_/https://www.npr.org/player/embed/887239225/887239226",
           "source_path": "root.results[7]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "wayback_players",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7",
+          "source_url": "https://web.archive.org/web/20250404031618id_/https://www.npr.org/player/embed/887239225/887239226",
           "source_path": "root.results[7]"
         }
       ],
@@ -3451,7 +3451,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7&sc=siteplayer",
+          "source_url": "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -3459,7 +3459,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -3467,7 +3467,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7",
+          "source_url": "https://www.npr.org/player/embed/887239225/887239226",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -3475,7 +3475,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?orgId=1&topicId=1125&d=304&p=7&story=887239225&dl=1",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "wayback_players",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?orgId=1&topicId=1125&d=304&p=7&story=887239225&dl=1",
+          "source_url": "https://web.archive.org/web/20200718205915id_/https://www.npr.org/player/embed/887239225/887239226",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         }
@@ -3634,35 +3634,35 @@
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7&sc=siteplayer",
+          "source_url": "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s",
           "source_path": "root.results[8]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s",
           "source_path": "root.results[8]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7",
+          "source_url": "https://www.npr.org/player/embed/887239225/887239226",
           "source_path": "root.results[8]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?orgId=1&topicId=1125&d=304&p=7&story=887239225&dl=1",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "wayback_players",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?orgId=1&topicId=1125&d=304&p=7&story=887239225&dl=1",
+          "source_url": "https://web.archive.org/web/20200718205915id_/https://www.npr.org/player/embed/887239225/887239226",
           "source_path": "root.results[8]"
         },
         {
           "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "wayback_players",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7",
+          "source_url": "https://web.archive.org/web/20250404031618id_/https://www.npr.org/player/embed/887239225/887239226",
           "source_path": "root.results[8]"
         }
       ],
@@ -3671,7 +3671,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7&sc=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7&sc=siteplayer",
+          "source_url": "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -3679,7 +3679,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7&sc=siteplayer&aw_0_1st.playerid=siteplayer",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "story_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "source_url": "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -3687,7 +3687,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "player_pages",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7",
+          "source_url": "https://www.npr.org/player/embed/887239225/887239226",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -3695,7 +3695,7 @@
           "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?orgId=1&topicId=1125&d=304&p=7&story=887239225&dl=1",
           "discovered_from": "indicator_npr_story_found_recovery.json",
           "source_type": "wayback_players",
-          "source_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?orgId=1&topicId=1125&d=304&p=7&story=887239225&dl=1",
+          "source_url": "https://web.archive.org/web/20200718205915id_/https://www.npr.org/player/embed/887239225/887239226",
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         }
@@ -3787,42 +3787,42 @@
           "url": "https://www.delmarvapublicmedia.org/business/2018-10-29/judgement-bonds",
           "discovered_from": "indicator_unresolved_batch_recovery.json",
           "source_type": "prior_evidence_url",
-          "source_url": "https://www.delmarvapublicmedia.org/business/2018-10-29/judgement-bonds",
+          "source_url": null,
           "source_path": "root.results[33]"
         },
         {
           "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WSCLFM.mp3",
           "discovered_from": "indicator_unresolved_batch_recovery.json",
           "source_type": "prior_evidence_url",
-          "source_url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WSCLFM.mp3",
+          "source_url": null,
           "source_path": "root.results[33]"
         },
         {
           "url": "https://27143.live.streamtheworld.com:443/WSCLFM.mp3",
           "discovered_from": "indicator_unresolved_batch_recovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://27143.live.streamtheworld.com:443/WSCLFM.mp3",
+          "source_url": null,
           "source_path": "root.results[33]"
         },
         {
           "url": "https://26223.live.streamtheworld.com:443/WSCLFM.mp3",
           "discovered_from": "indicator_unresolved_batch_recovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://26223.live.streamtheworld.com:443/WSCLFM.mp3",
+          "source_url": null,
           "source_path": "root.results[33]"
         },
         {
           "url": "https://14843.live.streamtheworld.com:443/WSDLFM.mp3",
           "discovered_from": "indicator_unresolved_batch_recovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://14843.live.streamtheworld.com:443/WSDLFM.mp3",
+          "source_url": null,
           "source_path": "root.results[33]"
         },
         {
           "url": "https://18123.live.streamtheworld.com:443/WESMFM.mp3",
           "discovered_from": "indicator_unresolved_batch_recovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://18123.live.streamtheworld.com:443/WESMFM.mp3",
+          "source_url": null,
           "source_path": "root.results[33]"
         }
       ],
@@ -3831,7 +3831,7 @@
           "candidate_url": "https://www.delmarvapublicmedia.org/business/2018-10-29/judgement-bonds",
           "discovered_from": "indicator_unresolved_batch_recovery.json",
           "source_type": "prior_evidence_url",
-          "source_url": "https://www.delmarvapublicmedia.org/business/2018-10-29/judgement-bonds",
+          "source_url": null,
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         },
@@ -3839,7 +3839,7 @@
           "candidate_url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WSCLFM.mp3",
           "discovered_from": "indicator_unresolved_batch_recovery.json",
           "source_type": "prior_evidence_url",
-          "source_url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WSCLFM.mp3",
+          "source_url": null,
           "validation_status": "rejected_livestream",
           "reason": "livestream_or_station_stream"
         },
@@ -3847,7 +3847,7 @@
           "candidate_url": "https://27143.live.streamtheworld.com:443/WSCLFM.mp3",
           "discovered_from": "indicator_unresolved_batch_recovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://27143.live.streamtheworld.com:443/WSCLFM.mp3",
+          "source_url": null,
           "validation_status": "rejected_livestream",
           "reason": "livestream_or_station_stream"
         },
@@ -3855,7 +3855,7 @@
           "candidate_url": "https://26223.live.streamtheworld.com:443/WSCLFM.mp3",
           "discovered_from": "indicator_unresolved_batch_recovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://26223.live.streamtheworld.com:443/WSCLFM.mp3",
+          "source_url": null,
           "validation_status": "rejected_livestream",
           "reason": "livestream_or_station_stream"
         },
@@ -3863,7 +3863,7 @@
           "candidate_url": "https://14843.live.streamtheworld.com:443/WSDLFM.mp3",
           "discovered_from": "indicator_unresolved_batch_recovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://14843.live.streamtheworld.com:443/WSDLFM.mp3",
+          "source_url": null,
           "validation_status": "rejected_livestream",
           "reason": "livestream_or_station_stream"
         },
@@ -3871,7 +3871,7 @@
           "candidate_url": "https://18123.live.streamtheworld.com:443/WESMFM.mp3",
           "discovered_from": "indicator_unresolved_batch_recovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://18123.live.streamtheworld.com:443/WESMFM.mp3",
+          "source_url": null,
           "validation_status": "rejected_livestream",
           "reason": "livestream_or_station_stream"
         }
@@ -3989,14 +3989,14 @@
           "url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "source_url": null,
           "source_path": "root.results[33]"
         },
         {
           "url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
           "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
           "source_type": "non_npr_audio",
-          "source_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "source_url": null,
           "source_path": "root.results[8]"
         }
       ],
@@ -4005,7 +4005,7 @@
           "candidate_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "source_url": null,
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         }
@@ -4070,14 +4070,14 @@
           "url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "source_url": null,
           "source_path": "root.results[34]"
         },
         {
           "url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
           "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
           "source_type": "non_npr_audio",
-          "source_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "source_url": null,
           "source_path": "root.results[9]"
         }
       ],
@@ -4086,7 +4086,7 @@
           "candidate_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "source_url": null,
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         }
@@ -4150,14 +4150,14 @@
           "url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "source_url": null,
           "source_path": "root.results[35]"
         },
         {
           "url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
           "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
           "source_type": "non_npr_audio",
-          "source_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "source_url": null,
           "source_path": "root.results[10]"
         }
       ],
@@ -4166,7 +4166,7 @@
           "candidate_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "source_url": null,
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         }
@@ -4383,14 +4383,14 @@
           "url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "source_url": null,
           "source_path": "root.results[39]"
         },
         {
           "url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
           "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
           "source_type": "non_npr_audio",
-          "source_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "source_url": null,
           "source_path": "root.results[11]"
         }
       ],
@@ -4399,7 +4399,7 @@
           "candidate_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "source_url": null,
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         }
@@ -4515,14 +4515,14 @@
           "url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "source_url": null,
           "source_path": "root.results[41]"
         },
         {
           "url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
           "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
           "source_type": "non_npr_audio",
-          "source_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "source_url": null,
           "source_path": "root.results[12]"
         }
       ],
@@ -4531,7 +4531,7 @@
           "candidate_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
           "discovered_from": "indicator_unresolved_web_discovery.json",
           "source_type": "validated_audio",
-          "source_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "source_url": null,
           "validation_status": "rejected_request_error",
           "reason": "<urlopen error [Errno -5] No address associated with hostname>"
         }
