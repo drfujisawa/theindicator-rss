@@ -1,0 +1,31 @@
+name: Probe Wayback Traffic Tariff MP3
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  probe-traffic-tariff:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Search Wayback for Traffic Tariff MP3
+        run: python probe_wayback_traffic_tariff_mp3.py
+
+      - name: Save Traffic Tariff probe
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add indicator_traffic_tariff_wayback_mp3.json
+          git diff --cached --quiet || git commit -m "Search Wayback for Traffic Tariff audio"
+          git push
