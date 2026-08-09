@@ -619,13 +619,11 @@ def classify_audio_candidate(
             "reason": "http_or_transport_failure",
         }
 
-    is_audio = (
-        content_type.startswith("audio/")
-        or "mpeg" in content_type
-        or "mp3" in content_type
-        or "aac" in content_type
-        or "m4a" in content_type
-    )
+    # Require an explicit audio/* content-type.  Bare codec hints such as
+    # "mpeg" or "mp3" are not sufficient because third-party CDNs and
+    # misconfigured servers occasionally return those strings for non-audio
+    # resources.
+    is_audio = content_type.startswith("audio/")
 
     if not is_audio:
         return {
@@ -634,6 +632,9 @@ def classify_audio_candidate(
             "reason": "content_type_not_audio",
         }
 
+    # Enforce ondemand.npr.org on the *final* post-redirect URL.  A
+    # third-party CDN that merely contains "/indicator/" in its path is
+    # not an NPR-hosted file.
     if "ondemand.npr.org" not in lower_final:
         return {
             "status": "rejected_non_npr_audio",
@@ -641,10 +642,11 @@ def classify_audio_candidate(
             "reason": "audio_not_hosted_by_npr",
         }
 
-    if (
-        "/indicator/" not in lower_final
-        and "/indicator/" not in lower_candidate
-    ):
+    # Check the Indicator audio path only on the final URL.  The
+    # candidate (pre-redirect) URL may resolve to an NPR CDN path that
+    # legitimately differs from the original request; the filename date
+    # in that URL is not required to match the episode publication date.
+    if "/indicator/" not in lower_final:
         return {
             "status": "rejected_generic_audio",
             "accepted": False,
@@ -676,6 +678,9 @@ def validate_audio_candidate(entry):
         "discovered_from": entry.get("discovered_from"),
         "source_type": entry.get("source_type"),
         "source_url": entry.get("source_url"),
+        # Carry provenance forward so determine_episode_status can require
+        # that accepted audio came from an episode-verified evidence chain.
+        "source_verified": entry.get("source_verified", False),
         "validation_status": None,
     }
 
@@ -783,6 +788,7 @@ def audio_record(
     source_path,
     source_kind,
     source_url=None,
+    source_verified=False,
 ):
     return {
         "url": clean_url(url),
@@ -790,6 +796,7 @@ def audio_record(
         "source_type": source_kind,
         "source_url": clean_url(source_url),
         "source_path": source_path,
+        "source_verified": source_verified,
     }
 
 
@@ -1290,9 +1297,15 @@ def investigate_page(
         if story_url not in ledger["npr_story_urls"]:
             ledger["npr_story_urls"].append(story_url)
 
-    for player_url in player_urls:
-        if player_url not in ledger["player_urls"]:
-            ledger["player_urls"].append(player_url)
+    # Only propagate player embeds to the investigation pool when the
+    # current page is a verified episode-specific context.  Embeds found
+    # on weakly matched or unrelated pages must not pollute the pool.
+    page_qualified = page_score.get("qualified", False)
+
+    if page_qualified:
+        for player_url in player_urls:
+            if player_url not in ledger["player_urls"]:
+                ledger["player_urls"].append(player_url)
 
     for audio_url in audio_urls:
         ledger["candidate_audio_urls"].append({
@@ -1300,6 +1313,9 @@ def investigate_page(
             "discovered_from": source_type,
             "source_type": source_type,
             "source_url": response["final_url"],
+            "source_path": source_type,
+            # Audio from a non-qualified page cannot anchor a recovery.
+            "source_verified": page_qualified,
         })
 
     return record
@@ -1440,11 +1456,17 @@ def determine_episode_status(ledger):
             explanation,
         )
 
+    # Only audio whose provenance traces back to an episode-verified
+    # context (affiliate/NPR/archive page that qualified by title+date,
+    # or prior evidence already matched to this episode) may anchor a
+    # recovery decision.  Audio discovered from sidebars, related stories,
+    # or weakly matched pages is excluded here.
     valid_audio = [
         item
         for item in ledger["validation_results"]
         if item.get("validation_status")
         == "validated_npr_episode_audio"
+        and item.get("source_verified", False)
     ]
 
     strong_page_matches = 0
@@ -1595,7 +1617,7 @@ def process_episode(reference):
     return ledger
 
 
-def build_audit(ledgers):
+def build_audit(ledgers, candidate_counts=None):
     grouped = {
         "confirmed_recovered": [],
         "probable_duplicate_rebroadcast": [],
@@ -1617,6 +1639,8 @@ def build_audit(ledgers):
         })
         false_positives.extend(build_false_positive_rows(ledger))
 
+    counts = candidate_counts or {}
+
     summary = {
         "confirmed_recovered": len(grouped["confirmed_recovered"]),
         "probable_duplicate_rebroadcast": len(
@@ -1632,6 +1656,11 @@ def build_audit(ledgers):
             len(ledgers)
             - len(grouped["probable_duplicate_rebroadcast"])
         ),
+        "candidates_discovered": counts.get("discovered", 0),
+        "candidates_attempted": counts.get("attempted", 0),
+        "candidates_completed": counts.get("completed", 0),
+        "candidates_failed": counts.get("failed", 0),
+        "candidates_skipped": counts.get("skipped", 0),
     }
 
     return {
@@ -1642,6 +1671,8 @@ def build_audit(ledgers):
             .isoformat()
         ),
         "canonical_input": INPUT_FILE,
+        "placeholder": False,
+        "run_complete": True,
         "summary": summary,
         "confirmed_recovered": grouped["confirmed_recovered"],
         "probable_duplicate_rebroadcast": grouped[
@@ -1674,6 +1705,16 @@ def main():
     print("CONSOLIDATED UNRESOLVED RECOVERY")
     print("================================")
 
+    # Write placeholder sentinels immediately so that a partial run (e.g.
+    # interrupted by a CI timeout) can never be mistaken for a complete one.
+    placeholder_stub = {
+        "placeholder": True,
+        "run_complete": False,
+        "method": "consolidated-recovery-pipeline-for-unresolved-indicator-episodes",
+    }
+    save_json(OUTPUT_LEDGER_FILE, placeholder_stub)
+    save_json(OUTPUT_AUDIT_FILE, placeholder_stub)
+
     for index, reference in enumerate(unresolved, start=1):
         print(
             f"[{index}/{len(unresolved)}]",
@@ -1686,7 +1727,57 @@ def main():
 
         print("  ->", ledger["final_status"])
 
-    audit = build_audit(ledgers)
+    # Tally candidate probe statistics across all ledgers.
+    discovered = sum(
+        len(ledger.get("candidate_audio_urls", []))
+        for ledger in ledgers
+    )
+    attempted = sum(
+        len(ledger.get("validation_results", []))
+        for ledger in ledgers
+    )
+    completed = sum(
+        1
+        for ledger in ledgers
+        for result in ledger.get("validation_results", [])
+        if result.get("validation_status")
+        and result["validation_status"] != "rejected_request_error"
+    )
+    failed = sum(
+        1
+        for ledger in ledgers
+        for result in ledger.get("validation_results", [])
+        if result.get("validation_status") == "rejected_request_error"
+    )
+    # "Skipped" = candidates that were discovered but never attempted because
+    # the per-episode cap (MAX_AUDIO_CANDIDATES_PER_EPISODE) was reached.
+    # Compute it by comparing each ledger's discovered list against what was
+    # actually attempted, rather than relying on cross-ledger length arithmetic.
+    skipped = sum(
+        max(
+            0,
+            len(
+                # unique_dicts de-duplication mirrors validate_episode_audio
+                list(dict.fromkeys(
+                    c.get("url")
+                    for c in ledger.get("candidate_audio_urls", [])
+                    if c.get("url")
+                ))
+            )
+            - len(ledger.get("validation_results", []))
+        )
+        for ledger in ledgers
+    )
+
+    candidate_counts = {
+        "discovered": discovered,
+        "attempted": attempted,
+        "completed": completed,
+        "failed": failed,
+        "skipped": skipped,
+    }
+
+    audit = build_audit(ledgers, candidate_counts=candidate_counts)
 
     save_json(
         OUTPUT_LEDGER_FILE,
@@ -1694,6 +1785,8 @@ def main():
             "method": audit["method"],
             "generated_at": audit["generated_at"],
             "canonical_input": INPUT_FILE,
+            "placeholder": False,
+            "run_complete": True,
             "summary": audit["summary"],
             "episodes": ledgers,
         },
@@ -1706,6 +1799,7 @@ def main():
         print(f"{key}: {value}")
 
     print()
+    print("run_complete: true")
     print("Saved:", OUTPUT_LEDGER_FILE)
     print("Saved:", OUTPUT_AUDIT_FILE)
     print("================================")
