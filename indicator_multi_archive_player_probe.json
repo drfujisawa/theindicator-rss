@@ -1,0 +1,193 @@
+{
+  "method": "multi-web-archive-npr-player-probe",
+  "targets": [
+    {
+      "title": "Paranormal Profits",
+      "date": "2018-10-31",
+      "player_story_id": "662706955",
+      "audio_id": "662707862",
+      "player_url": "https://www.npr.org/player/embed/662706955/662707862",
+      "wayback": {
+        "archive": "wayback",
+        "queries": [
+          {
+            "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fplayer%2Fembed%2F662706955%2F662707862&output=json&filter=statuscode:200&collapse=digest&fl=timestamp,original,statuscode,mimetype,digest&limit=50",
+            "status": "fetched",
+            "capture_count": 3
+          },
+          {
+            "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fplayer%2Fembed%2F662706955%2F662707862&output=json&filter=statuscode:200&collapse=digest&fl=timestamp,original,statuscode,mimetype,digest&limit=50",
+            "status": "fetched",
+            "capture_count": 3
+          },
+          {
+            "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fplayer%2Fembed%2F662706955%2F662707862%2F&output=json&filter=statuscode:200&collapse=digest&fl=timestamp,original,statuscode,mimetype,digest&limit=50",
+            "status": "error",
+            "capture_count": 0,
+            "error": "<urlopen error [Errno 111] Connection refused>"
+          },
+          {
+            "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fplayer%2Fembed%2F662706955%2F%2A&output=json&filter=statuscode:200&collapse=digest&fl=timestamp,original,statuscode,mimetype,digest&limit=50",
+            "status": "error",
+            "capture_count": 0,
+            "error": "<urlopen error [Errno 111] Connection refused>"
+          },
+          {
+            "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fplayer%2F%2A662707862%2A&output=json&filter=statuscode:200&collapse=digest&fl=timestamp,original,statuscode,mimetype,digest&limit=50",
+            "status": "fetched",
+            "capture_count": 0
+          }
+        ],
+        "captures": [
+          {
+            "timestamp": "20181106160541",
+            "original": "https://www.npr.org/player/embed/662706955/662707862"
+          },
+          {
+            "timestamp": "20200812104824",
+            "original": "https://www.npr.org/player/embed/662706955/662707862"
+          },
+          {
+            "timestamp": "20250407140643",
+            "original": "https://www.npr.org/player/embed/662706955/662707862"
+          }
+        ],
+        "fetched_captures": [
+          {
+            "timestamp": "20181106160541",
+            "original": "https://www.npr.org/player/embed/662706955/662707862",
+            "archived_url": "https://web.archive.org/web/20181106160541id_/https://www.npr.org/player/embed/662706955/662707862",
+            "status": "fetched",
+            "content_type": "text/html;;charset=UTF-8",
+            "audio_clues": {
+              "mp3_urls": [
+                "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/10/20181031_indicator_1031_horror_final.mp3?orgId=1&d=565&p=510325&story=662706955&t=podcast&e=662706955&sc=embed"
+              ],
+              "ondemand_urls": [
+                "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/10/20181031_indicator_1031_horror_final.mp3?orgId=1&d=565&p=510325&story=662706955&t=podcast&e=662706955&sc=embed",
+                "https://ondemand.npr.org/npr-mp4/npr/indicator/2018/10/20181031_indicator_1031_horror_final.mp4?orgId=1&d=565&p=510325&story=662706955&t=podcast&e=662706955&sc=embed"
+              ],
+              "podtrac_urls": [],
+              "spotify_urls": [],
+              "npr_player_urls": []
+            }
+          },
+          {
+            "timestamp": "20200812104824",
+            "original": "https://www.npr.org/player/embed/662706955/662707862",
+            "archived_url": "https://web.archive.org/web/20200812104824id_/https://www.npr.org/player/embed/662706955/662707862",
+            "status": "error",
+            "error": "<urlopen error [Errno 111] Connection refused>"
+          },
+          {
+            "timestamp": "20250407140643",
+            "original": "https://www.npr.org/player/embed/662706955/662707862",
+            "archived_url": "https://web.archive.org/web/20250407140643id_/https://www.npr.org/player/embed/662706955/662707862",
+            "status": "fetched",
+            "content_type": "text/html;charset=UTF-8",
+            "audio_clues": {
+              "mp3_urls": [],
+              "ondemand_urls": [],
+              "podtrac_urls": [],
+              "spotify_urls": [],
+              "npr_player_urls": [
+                "https://www.npr.org/player/embed/662706955/662707862"
+              ]
+            }
+          }
+        ]
+      },
+      "arquivo_pt": {
+        "archive": "arquivo.pt",
+        "status": "fetched",
+        "query_url": "https://arquivo.pt/textsearch?versionHistory=https%3A%2F%2Fwww.npr.org%2Fplayer%2Fembed%2F662706955%2F662707862&maxItems=50",
+        "results": [],
+        "content_type": "application/json",
+        "interesting_lines": [
+          "\"next_page\" : \"https://arquivo.pt/textsearch?versionHistory=https%3A%2F%2Fwww.npr.org%2Fplayer%2Fembed%2F662706955%2F662707862&maxItems=50&offset=50\","
+        ],
+        "audio_clues": {
+          "mp3_urls": [],
+          "ondemand_urls": [],
+          "podtrac_urls": [],
+          "spotify_urls": [],
+          "npr_player_urls": []
+        },
+        "raw_length": 314
+      }
+    },
+    {
+      "title": "The Traffic Tariff",
+      "date": "2019-04-22",
+      "player_story_id": "716127469",
+      "audio_id": "730102905",
+      "player_url": "https://www.npr.org/player/embed/716127469/730102905",
+      "wayback": {
+        "archive": "wayback",
+        "queries": [
+          {
+            "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fplayer%2Fembed%2F716127469%2F730102905&output=json&filter=statuscode:200&collapse=digest&fl=timestamp,original,statuscode,mimetype,digest&limit=50",
+            "status": "error",
+            "capture_count": 0,
+            "error": "HTTP Error 503: Service Unavailable"
+          },
+          {
+            "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fplayer%2Fembed%2F716127469%2F730102905&output=json&filter=statuscode:200&collapse=digest&fl=timestamp,original,statuscode,mimetype,digest&limit=50",
+            "status": "error",
+            "capture_count": 0,
+            "error": "<urlopen error [Errno 111] Connection refused>"
+          },
+          {
+            "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fplayer%2Fembed%2F716127469%2F730102905%2F&output=json&filter=statuscode:200&collapse=digest&fl=timestamp,original,statuscode,mimetype,digest&limit=50",
+            "status": "fetched",
+            "capture_count": 1
+          },
+          {
+            "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fplayer%2Fembed%2F716127469%2F%2A&output=json&filter=statuscode:200&collapse=digest&fl=timestamp,original,statuscode,mimetype,digest&limit=50",
+            "status": "fetched",
+            "capture_count": 1
+          },
+          {
+            "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fplayer%2F%2A730102905%2A&output=json&filter=statuscode:200&collapse=digest&fl=timestamp,original,statuscode,mimetype,digest&limit=50",
+            "status": "error",
+            "capture_count": 0,
+            "error": "<urlopen error [Errno 111] Connection refused>"
+          }
+        ],
+        "captures": [
+          {
+            "timestamp": "20250516214012",
+            "original": "https://www.npr.org/player/embed/716127469/730102905"
+          }
+        ],
+        "fetched_captures": [
+          {
+            "timestamp": "20250516214012",
+            "original": "https://www.npr.org/player/embed/716127469/730102905",
+            "archived_url": "https://web.archive.org/web/20250516214012id_/https://www.npr.org/player/embed/716127469/730102905",
+            "status": "error",
+            "error": "<urlopen error [Errno 111] Connection refused>"
+          }
+        ]
+      },
+      "arquivo_pt": {
+        "archive": "arquivo.pt",
+        "status": "fetched",
+        "query_url": "https://arquivo.pt/textsearch?versionHistory=https%3A%2F%2Fwww.npr.org%2Fplayer%2Fembed%2F716127469%2F730102905&maxItems=50",
+        "results": [],
+        "content_type": "application/json",
+        "interesting_lines": [
+          "\"next_page\" : \"https://arquivo.pt/textsearch?versionHistory=https%3A%2F%2Fwww.npr.org%2Fplayer%2Fembed%2F716127469%2F730102905&maxItems=50&offset=50\","
+        ],
+        "audio_clues": {
+          "mp3_urls": [],
+          "ondemand_urls": [],
+          "podtrac_urls": [],
+          "spotify_urls": [],
+          "npr_player_urls": []
+        },
+        "raw_length": 314
+      }
+    }
+  ]
+}
