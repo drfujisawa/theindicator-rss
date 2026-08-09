@@ -945,5 +945,417 @@ class TestTrustedAudioContract(unittest.TestCase):
         self.assertFalse(result["trusted_for_recovery"])
 
 
+# ---------------------------------------------------------------------------
+# Stage-A CDX pattern construction
+# ---------------------------------------------------------------------------
+
+
+class TestStageAPatterns(unittest.TestCase):
+    """Verify that stage_a_patterns() produces historically valid NPR URL
+    prefixes with no mid-path wildcards."""
+
+    def setUp(self):
+        self.patterns_0711 = probe.stage_a_patterns("2018-07-11")
+        self.patterns_0810 = probe.stage_a_patterns("2018-08-10")
+        self.patterns_0924 = probe.stage_a_patterns("2018-09-24")
+
+    # ---- count / budget -------------------------------------------------
+
+    def test_count_within_budget(self):
+        self.assertLessEqual(len(self.patterns_0711), probe.MAX_STAGE_A_CDX_QUERIES)
+
+    def test_exactly_two_variants_per_day(self):
+        # 3 days × 2 schemes (HTTPS + HTTP) = 6 total (or MAX_STAGE_A_CDX_QUERIES, whichever is lower)
+        self.assertEqual(len(self.patterns_0711), min(6, probe.MAX_STAGE_A_CDX_QUERIES))
+
+    # ---- correct sections/money/ path ----------------------------------
+
+    def test_all_patterns_use_sections_money(self):
+        for pat in self.patterns_0711:
+            self.assertIn("/sections/money/", pat, f"Pattern missing /sections/money/: {pat}")
+
+    def test_reference_date_covered(self):
+        self.assertTrue(
+            any("/2018/07/11/" in p for p in self.patterns_0711),
+            "No pattern covers the reference date 2018-07-11",
+        )
+
+    def test_day_before_covered(self):
+        self.assertTrue(
+            any("/2018/07/10/" in p for p in self.patterns_0711),
+            "No pattern covers day-1 (2018-07-10)",
+        )
+
+    def test_day_after_covered(self):
+        self.assertTrue(
+            any("/2018/07/12/" in p for p in self.patterns_0711),
+            "No pattern covers day+1 (2018-07-12)",
+        )
+
+    # ---- HTTPS and HTTP variants both present ---------------------------
+
+    def test_https_variant_present(self):
+        self.assertTrue(
+            any(p.startswith("https://") for p in self.patterns_0711),
+            "No HTTPS pattern generated",
+        )
+
+    def test_http_variant_present(self):
+        self.assertTrue(
+            any(p.startswith("http://") and not p.startswith("https://") for p in self.patterns_0711),
+            "No HTTP pattern generated",
+        )
+
+    def test_https_and_http_are_distinct(self):
+        https_patterns = [p for p in self.patterns_0711 if p.startswith("https://")]
+        http_patterns = [p for p in self.patterns_0711 if p.startswith("http://") and not p.startswith("https://")]
+        self.assertTrue(https_patterns)
+        self.assertTrue(http_patterns)
+        # They must differ only in scheme, same path
+        for h in https_patterns:
+            plain = "http://" + h[len("https://"):]
+            self.assertIn(plain, http_patterns, f"No HTTP counterpart for {h}")
+
+    # ---- no wildcards anywhere in pattern ----------------------------
+
+    def test_no_wildcard_character_in_patterns(self):
+        for pat in self.patterns_0711:
+            self.assertNotIn("*", pat, f"Wildcard (*) found in pattern: {pat}")
+
+    def test_no_mid_path_wildcard_fragments(self):
+        # None of the old broken forms ("/sections/*/…" or "/YYYY/MM/DD/") should appear
+        for pat in self.patterns_0711:
+            self.assertNotIn("sections/*/", pat,
+                             f"Mid-path section wildcard found: {pat}")
+            # bare date root without /sections/ prefix is the other broken form
+            segments = pat.split("/")
+            try:
+                year_idx = segments.index("2018")
+                prefix_before_year = "/".join(segments[:year_idx])
+                self.assertIn("sections/money", prefix_before_year,
+                              f"Pattern has year directly after host (no sections/money): {pat}")
+            except ValueError:
+                pass  # year not in path — shouldn't happen
+
+    # ---- other targets -----------------------------------------------
+
+    def test_august_target_sections_money(self):
+        for pat in self.patterns_0810:
+            self.assertIn("/sections/money/", pat)
+
+    def test_september_target_sections_money(self):
+        for pat in self.patterns_0924:
+            self.assertIn("/sections/money/", pat)
+
+
+# ---------------------------------------------------------------------------
+# CDX helper: matchType=prefix and result-dict structure
+# ---------------------------------------------------------------------------
+
+
+class TestCdxQueryParameters(unittest.TestCase):
+    """Verify that wayback_cdx_date_window sends matchType=prefix and
+    returns the expected result-dict shape."""
+
+    def _capture_url(self, fn, *args, **kwargs):
+        """Call fn with a no-op network stub; return (captured_url, result)."""
+        captured = {}
+
+        def fake_fetch(url, retries=1):
+            captured["url"] = url
+            raise OSError("stub: no network")
+
+        import unittest.mock as mock
+        with mock.patch.object(probe, "fetch_text", fake_fetch):
+            result = fn(*args, **kwargs)
+        return captured.get("url", ""), result
+
+    def test_date_window_sends_match_type_prefix(self):
+        from urllib.parse import urlparse, parse_qs
+        url, _ = self._capture_url(
+            probe.wayback_cdx_date_window,
+            "https://www.npr.org/sections/money/2018/07/11/",
+            "20180708",
+            "20180718",
+        )
+        qs = parse_qs(urlparse(url).query)
+        self.assertEqual(qs.get("matchType"), ["prefix"])
+
+    def test_url_exact_sends_match_type_exact(self):
+        from urllib.parse import urlparse, parse_qs
+        url, _ = self._capture_url(
+            probe.wayback_cdx_url_exact,
+            "https://www.npr.org/sections/money/2018/10/31/662708285/paranormal-profits",
+        )
+        qs = parse_qs(urlparse(url).query)
+        self.assertEqual(qs.get("matchType"), ["exact"])
+
+    def test_date_window_result_has_required_keys(self):
+        _, result = self._capture_url(
+            probe.wayback_cdx_date_window,
+            "https://www.npr.org/sections/money/2018/07/11/",
+            "20180708",
+            "20180718",
+        )
+        for key in ("rows", "query_url", "error_type", "error_message", "response_length", "zero_row_response"):
+            self.assertIn(key, result, f"Missing key '{key}' in CDX result dict")
+
+    def test_url_exact_result_has_required_keys(self):
+        _, result = self._capture_url(
+            probe.wayback_cdx_url_exact,
+            "https://www.npr.org/sections/money/2018/10/31/662708285/paranormal-profits",
+        )
+        for key in ("rows", "query_url", "error_type", "error_message", "response_length", "zero_row_response"):
+            self.assertIn(key, result, f"Missing key '{key}' in CDX result dict")
+
+    def test_query_url_recorded_on_network_error(self):
+        _, result = self._capture_url(
+            probe.wayback_cdx_date_window,
+            "https://www.npr.org/sections/money/2018/07/11/",
+            "20180708",
+            "20180718",
+        )
+        self.assertTrue(result["query_url"].startswith("https://web.archive.org/cdx/"))
+
+    def test_network_error_sets_error_type(self):
+        _, result = self._capture_url(
+            probe.wayback_cdx_date_window,
+            "https://www.npr.org/sections/money/2018/07/11/",
+            "20180708",
+            "20180718",
+        )
+        # A stub OSError becomes error_type="network_error"
+        self.assertEqual(result["error_type"], "network_error")
+        self.assertIsNotNone(result["error_message"])
+        self.assertIsInstance(result["rows"], list)
+        self.assertEqual(len(result["rows"]), 0)
+
+
+# ---------------------------------------------------------------------------
+# CDX diagnostics: zero-row response vs network/API error
+# ---------------------------------------------------------------------------
+
+
+class TestCdxZeroRowVsNetworkError(unittest.TestCase):
+    """Zero-row CDX responses and network errors must be distinguishable."""
+
+    def _run_with_response(self, text_body):
+        """Inject a fake HTTP response body and return the CDX result dict."""
+        import unittest.mock as mock
+
+        def fake_fetch(url, retries=1):
+            return {"text": text_body, "status_code": 200, "final_url": url, "content_type": "application/json", "data": text_body.encode()}
+
+        with mock.patch.object(probe, "fetch_text", fake_fetch):
+            return probe.wayback_cdx_date_window(
+                "https://www.npr.org/sections/money/2018/07/11/",
+                "20180708",
+                "20180718",
+            )
+
+    def _run_with_network_error(self, exc):
+        import unittest.mock as mock
+
+        def fake_fetch(url, retries=1):
+            raise exc
+
+        with mock.patch.object(probe, "fetch_text", fake_fetch):
+            return probe.wayback_cdx_date_window(
+                "https://www.npr.org/sections/money/2018/07/11/",
+                "20180708",
+                "20180718",
+            )
+
+    def test_header_only_response_sets_zero_row_response_true(self):
+        # CDX returns just a header row = genuine empty result, not an error
+        import json
+        body = json.dumps([["timestamp", "original", "statuscode", "mimetype"]])
+        result = self._run_with_response(body)
+        self.assertTrue(result["zero_row_response"])
+        self.assertIsNone(result["error_type"])
+        self.assertEqual(result["rows"], [])
+
+    def test_empty_array_response_sets_zero_row_response_true(self):
+        import json
+        result = self._run_with_response(json.dumps([]))
+        self.assertTrue(result["zero_row_response"])
+        self.assertIsNone(result["error_type"])
+
+    def test_one_data_row_returns_rows(self):
+        import json
+        body = json.dumps([
+            ["timestamp", "original", "statuscode", "mimetype"],
+            ["20180712120000", "https://www.npr.org/sections/money/2018/07/11/628123/slug", "200", "text/html"],
+        ])
+        result = self._run_with_response(body)
+        self.assertFalse(result["zero_row_response"])
+        self.assertIsNone(result["error_type"])
+        self.assertEqual(len(result["rows"]), 1)
+        self.assertEqual(result["rows"][0]["timestamp"], "20180712120000")
+
+    def test_network_oserror_sets_error_type_network_error(self):
+        result = self._run_with_network_error(OSError("connection refused"))
+        self.assertEqual(result["error_type"], "network_error")
+        self.assertFalse(result["zero_row_response"])
+        self.assertEqual(result["rows"], [])
+
+    def test_json_decode_error_sets_error_type_parse_error(self):
+        import json as _json
+        result = self._run_with_network_error(_json.JSONDecodeError("unexpected", "", 0))
+        self.assertEqual(result["error_type"], "parse_error")
+        self.assertFalse(result["zero_row_response"])
+
+    def test_response_length_recorded_on_success(self):
+        import json
+        body = json.dumps([["timestamp", "original", "statuscode", "mimetype"]])
+        result = self._run_with_response(body)
+        self.assertEqual(result["response_length"], len(body))
+
+    def test_response_length_zero_on_network_error(self):
+        result = self._run_with_network_error(OSError("timeout"))
+        self.assertEqual(result["response_length"], 0)
+
+
+# ---------------------------------------------------------------------------
+# CDX self-test gating
+# ---------------------------------------------------------------------------
+
+
+class TestCdxSelfTest(unittest.TestCase):
+    """cdx_self_test() must correctly identify pass/fail, and a failed
+    self-test must prevent the run from producing misleading 'run_complete'
+    results."""
+
+    def _run_self_test_with(self, capture_counts):
+        """
+        Inject a stub for wayback_cdx_url_exact that returns the given number
+        of rows for each CDX_SELF_TEST_URLS entry (in order).
+        """
+        import unittest.mock as mock
+        import json
+
+        call_idx = [0]
+
+        def fake_cdx_exact(url, limit=5):
+            n = capture_counts[call_idx[0] % len(capture_counts)]
+            call_idx[0] += 1
+            if n is None:
+                return {
+                    "rows": [],
+                    "query_url": "https://web.archive.org/cdx/…",
+                    "error_type": "network_error",
+                    "error_message": "stub network error",
+                    "response_length": 0,
+                    "zero_row_response": False,
+                }
+            rows = [{"timestamp": f"2018010{i}120000", "original": url} for i in range(n)]
+            return {
+                "rows": rows,
+                "query_url": "https://web.archive.org/cdx/…",
+                "error_type": None,
+                "error_message": None,
+                "response_length": 42,
+                "zero_row_response": n == 0,
+            }
+
+        with mock.patch.object(probe, "wayback_cdx_url_exact", fake_cdx_exact):
+            return probe.cdx_self_test()
+
+    def test_passes_when_all_known_urls_return_captures(self):
+        result = self._run_self_test_with([2, 3])
+        self.assertTrue(result["passed"])
+        self.assertTrue(all(r["passed"] for r in result["results"]))
+
+    def test_fails_when_any_known_url_returns_no_captures(self):
+        result = self._run_self_test_with([2, 0])  # second URL returns 0 rows
+        self.assertFalse(result["passed"])
+
+    def test_fails_on_network_error(self):
+        result = self._run_self_test_with([None, None])
+        self.assertFalse(result["passed"])
+        for r in result["results"]:
+            self.assertEqual(r["error_type"], "network_error")
+
+    def test_result_contains_per_url_entries(self):
+        result = self._run_self_test_with([1, 1])
+        self.assertEqual(len(result["results"]), len(probe.CDX_SELF_TEST_URLS))
+        for entry in result["results"]:
+            self.assertIn("url", entry)
+            self.assertIn("passed", entry)
+            self.assertIn("capture_count", entry)
+            self.assertIn("query_url", entry)
+            self.assertIn("error_type", entry)
+
+    def test_failed_self_test_produces_cdx_self_test_failed_run_state(self):
+        """When the CDX self-test fails, run() must write a summary with
+        run_state='cdx_self_test_failed' and must NOT mark any episode as
+        'no_identity_found' (i.e. must not run target investigation)."""
+        import unittest.mock as mock
+        import json
+        from pathlib import Path
+
+        def fake_cdx_exact(url, limit=5):
+            return {
+                "rows": [],
+                "query_url": "https://web.archive.org/cdx/…",
+                "error_type": "network_error",
+                "error_message": "stub",
+                "response_length": 0,
+                "zero_row_response": False,
+            }
+
+        written_summaries = []
+
+        def fake_write(path, payload):
+            written_summaries.append(payload)
+
+        with mock.patch.object(probe, "wayback_cdx_url_exact", fake_cdx_exact), \
+             mock.patch.object(probe, "_write_json", fake_write), \
+             mock.patch.object(probe, "write_placeholders", lambda: None):
+            result = probe.run()
+
+        # run() must return the self-test-failed summary
+        self.assertEqual(result.get("run_state"), "cdx_self_test_failed")
+        self.assertFalse(result.get("run_complete"))
+        self.assertEqual(result.get("counts", {}).get("attempted"), 0)
+        # No episodes should have been investigated
+        self.assertEqual(len(result.get("episodes", [])), 0)
+        # The written summary must also be marked as failed
+        self.assertTrue(any(s.get("run_state") == "cdx_self_test_failed" for s in written_summaries))
+
+    def test_passed_self_test_runs_targets(self):
+        """When the CDX self-test passes, run() must attempt all targets."""
+        import unittest.mock as mock
+
+        def fake_cdx_exact(url, limit=5):
+            return {
+                "rows": [{"timestamp": "20181101120000", "original": url, "statuscode": "200", "mimetype": "text/html"}],
+                "query_url": "https://web.archive.org/cdx/…",
+                "error_type": None,
+                "error_message": None,
+                "response_length": 42,
+                "zero_row_response": False,
+            }
+
+        def fake_cdx_date_window(url_pattern, from_date, to_date, limit=40):
+            return {
+                "rows": [],
+                "query_url": "https://web.archive.org/cdx/…",
+                "error_type": None,
+                "error_message": None,
+                "response_length": 2,
+                "zero_row_response": True,
+            }
+
+        with mock.patch.object(probe, "wayback_cdx_url_exact", fake_cdx_exact), \
+             mock.patch.object(probe, "wayback_cdx_date_window", fake_cdx_date_window), \
+             mock.patch.object(probe, "_write_json", lambda path, payload: None), \
+             mock.patch.object(probe, "write_placeholders", lambda: None):
+            result = probe.run()
+
+        # Self-test passed → all targets must be attempted
+        self.assertEqual(result.get("counts", {}).get("attempted"), len(probe.TARGETS))
+
+
 if __name__ == "__main__":
     unittest.main()
