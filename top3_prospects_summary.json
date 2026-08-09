@@ -1,0 +1,7 @@
+{
+  "method": "top3-ranked-prospect-investigation-summary",
+  "note": "Placeholder — run the probe-top3-ranked-prospects workflow to populate this file.",
+  "source_ranked_report": "indicator_identity_audio_unresolved_ranked_report.json",
+  "target_ranks": [1, 2, 3],
+  "episodes_investigated": []
+}
