@@ -1,7 +1,42 @@
 {
   "method": "top3-ranked-prospect-investigation-summary",
-  "note": "Placeholder — run the probe-top3-ranked-prospects workflow to populate this file.",
+  "generated_at": "2026-08-09T20:13:08.353143+00:00",
   "source_ranked_report": "indicator_identity_audio_unresolved_ranked_report.json",
-  "target_ranks": [1, 2, 3],
-  "episodes_investigated": []
+  "target_ranks": [
+    1,
+    2,
+    3
+  ],
+  "episodes_investigated": [
+    {
+      "rank": 1,
+      "reference_date": "2018-07-11",
+      "reference_title": "Fed Accounts For All!",
+      "final_classification": "identity_found_but_audio_unresolved",
+      "validated_audio_count": 0,
+      "candidates_tested": 3,
+      "output_file": "top3_prospect_2018-07-11_diag.json",
+      "validation_summary": "No valid NPR Indicator audio confirmed. Tested 3 candidates. Rejection reasons: rejected_not_indicator_path."
+    },
+    {
+      "rank": 2,
+      "reference_date": "2018-08-10",
+      "reference_title": "Privacy Please: Why Public Companies Go Private (Or Vice Versa)",
+      "final_classification": "identity_found_but_audio_unresolved",
+      "validated_audio_count": 0,
+      "candidates_tested": 9,
+      "output_file": "top3_prospect_2018-08-10_diag.json",
+      "validation_summary": "No valid NPR Indicator audio confirmed. Tested 9 candidates. Rejection reasons: rejected_not_indicator_path, rejected_non_npr."
+    },
+    {
+      "rank": 3,
+      "reference_date": "2018-09-24",
+      "reference_title": "Saudi Arabia & The Paradox of Plenty",
+      "final_classification": "identity_found_but_audio_unresolved",
+      "validated_audio_count": 0,
+      "candidates_tested": 6,
+      "output_file": "top3_prospect_2018-09-24_diag.json",
+      "validation_summary": "No valid NPR Indicator audio confirmed. Tested 6 candidates. Rejection reasons: rejected_not_indicator_path."
+    }
+  ]
 }
