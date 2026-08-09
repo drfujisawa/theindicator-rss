@@ -1,0 +1,32 @@
+name: Recover Unresolved Indicator Episodes
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  recover-unresolved:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Recover and triage unresolved episodes
+        run: python recover_unresolved_indicator_batch.py
+
+      - name: Save unresolved recovery report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add indicator_unresolved_batch_recovery.json
+          git diff --cached --quiet || git commit -m "Recover and triage unresolved Indicator episodes"
+          git push
