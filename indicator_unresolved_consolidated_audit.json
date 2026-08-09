@@ -1,0 +1,1167 @@
+{
+  "method": "consolidated-recovery-pipeline-for-unresolved-indicator-episodes",
+  "generated_at": "2026-08-09T18:25:20+00:00",
+  "canonical_input": "indicator_completeness_audit.json",
+  "summary": {
+    "confirmed_recovered": 0,
+    "probable_duplicate_rebroadcast": 2,
+    "identity_found_but_audio_unresolved": 12,
+    "no_identity_found": 38,
+    "rejected_false_positive_count": 78,
+    "input_unresolved_count": 52,
+    "unique_missing_production_count_excluding_probable_duplicates": 50
+  },
+  "confirmed_recovered": [],
+  "probable_duplicate_rebroadcast": [
+    {
+      "reference_date": "2018-03-12",
+      "reference_title": "Hurricane Joseph & The Calculator That Time Forgot",
+      "reference_year": 2018,
+      "reference_episode": 1,
+      "evidence_confidence_explanation": "Reference audit links this episode to duplicate/rebroadcast date(s) 2018-08-28. No independent NPR identity chain was established to count both entries as separate missing productions."
+    },
+    {
+      "reference_date": "2018-08-28",
+      "reference_title": "Hurricane Joseph & The Calculator That Time Forgot",
+      "reference_year": 2018,
+      "reference_episode": 119,
+      "evidence_confidence_explanation": "Reference audit links this episode to duplicate/rebroadcast date(s) 2018-03-12. No independent NPR identity chain was established to count both entries as separate missing productions."
+    }
+  ],
+  "identity_found_but_audio_unresolved": [
+    {
+      "reference_date": "2018-04-24",
+      "reference_title": "When China's Ships Come In",
+      "reference_year": 2018,
+      "reference_episode": 31,
+      "evidence_confidence_explanation": "Credible NPR identity evidence was found (story/page/player IDs or URLs), but no strong episode-specific working NPR-hosted audio file could be validated. Candidate audio was rejected as rejected_request_error."
+    },
+    {
+      "reference_date": "2018-04-26",
+      "reference_title": "California's Housing Conundrum",
+      "reference_year": 2018,
+      "reference_episode": 33,
+      "evidence_confidence_explanation": "Credible NPR identity evidence was found (story/page/player IDs or URLs), but no strong episode-specific working NPR-hosted audio file could be validated. Candidate audio was rejected as rejected_request_error."
+    },
+    {
+      "reference_date": "2018-06-13",
+      "reference_title": "Dude, Where's My Trade War?",
+      "reference_year": 2018,
+      "reference_episode": 66,
+      "evidence_confidence_explanation": "Credible NPR identity evidence was found (story/page/player IDs or URLs), but no strong episode-specific working NPR-hosted audio file could be validated. Candidate audio was rejected as rejected_request_error."
+    },
+    {
+      "reference_date": "2018-06-21",
+      "reference_title": "Teenage (Employment) Wasteland",
+      "reference_year": 2018,
+      "reference_episode": 72,
+      "evidence_confidence_explanation": "Credible NPR identity evidence was found (story/page/player IDs or URLs), but no strong episode-specific working NPR-hosted audio file could be validated. Candidate audio was rejected as rejected_request_error."
+    },
+    {
+      "reference_date": "2018-07-11",
+      "reference_title": "Fed Accounts For All!",
+      "reference_year": 2018,
+      "reference_episode": 85,
+      "evidence_confidence_explanation": "Credible NPR identity evidence was found (story/page/player IDs or URLs), but no strong episode-specific working NPR-hosted audio file could be validated. Candidate audio was rejected as rejected_request_error."
+    },
+    {
+      "reference_date": "2018-07-23",
+      "reference_title": "Google's Mobile Monopoly",
+      "reference_year": 2018,
+      "reference_episode": 93,
+      "evidence_confidence_explanation": "Credible NPR identity evidence was found (story/page/player IDs or URLs), but no strong episode-specific working NPR-hosted audio file could be validated. Candidate audio was rejected as rejected_request_error."
+    },
+    {
+      "reference_date": "2018-08-10",
+      "reference_title": "Privacy Please: Why Public Companies Go Private (Or Vice Versa)",
+      "reference_year": 2018,
+      "reference_episode": 107,
+      "evidence_confidence_explanation": "Credible NPR identity evidence was found (story/page/player IDs or URLs), but no strong episode-specific working NPR-hosted audio file could be validated."
+    },
+    {
+      "reference_date": "2018-08-17",
+      "reference_title": "Donald Trump's Economic Strategy... Maybe?",
+      "reference_year": 2018,
+      "reference_episode": 112,
+      "evidence_confidence_explanation": "Credible NPR identity evidence was found (story/page/player IDs or URLs), but no strong episode-specific working NPR-hosted audio file could be validated. Candidate audio was rejected as rejected_request_error."
+    },
+    {
+      "reference_date": "2018-09-24",
+      "reference_title": "Saudi Arabia & The Paradox of Plenty",
+      "reference_year": 2018,
+      "reference_episode": 137,
+      "evidence_confidence_explanation": "Credible NPR identity evidence was found (story/page/player IDs or URLs), but no strong episode-specific working NPR-hosted audio file could be validated. Candidate audio was rejected as rejected_request_error."
+    },
+    {
+      "reference_date": "2018-10-05",
+      "reference_title": "Who's Hiring?",
+      "reference_year": 2018,
+      "reference_episode": 146,
+      "evidence_confidence_explanation": "Credible NPR identity evidence was found (story/page/player IDs or URLs), but no strong episode-specific working NPR-hosted audio file could be validated. Candidate audio was rejected as rejected_request_error."
+    },
+    {
+      "reference_date": "2018-10-09",
+      "reference_title": "China's Social Credit System",
+      "reference_year": 2018,
+      "reference_episode": 148,
+      "evidence_confidence_explanation": "Credible NPR identity evidence was found (story/page/player IDs or URLs), but no strong episode-specific working NPR-hosted audio file could be validated. Candidate audio was rejected as rejected_request_error."
+    },
+    {
+      "reference_date": "2018-10-11",
+      "reference_title": "China's Brave New World",
+      "reference_year": 2018,
+      "reference_episode": 150,
+      "evidence_confidence_explanation": "Credible NPR identity evidence was found (story/page/player IDs or URLs), but no strong episode-specific working NPR-hosted audio file could be validated. Candidate audio was rejected as rejected_request_error."
+    }
+  ],
+  "no_identity_found": [
+    {
+      "reference_date": "2018-03-15",
+      "reference_title": "Buying A College Degree: Did Aunt Becky Overpay?",
+      "reference_year": 2019,
+      "reference_episode": 51,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2018-04-23",
+      "reference_title": "3 Things You Didn't Know About LA",
+      "reference_year": 2018,
+      "reference_episode": 30,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2018-05-29",
+      "reference_title": "Banking's Regulation Rollback",
+      "reference_year": 2018,
+      "reference_episode": 55,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2018-06-26",
+      "reference_title": "Sallie Krawcheck on #MeToo, Dodd Frank, & Cronuts",
+      "reference_year": 2018,
+      "reference_episode": 75,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2018-06-29",
+      "reference_title": "Dungeons & Dragons & Balance Sheets",
+      "reference_year": 2018,
+      "reference_episode": 78,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2018-07-10",
+      "reference_title": "The Price of A Hyundai in Iran",
+      "reference_year": 2018,
+      "reference_episode": 84,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2018-07-12",
+      "reference_title": "The Last Straw",
+      "reference_year": 2018,
+      "reference_episode": 86,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2018-07-13",
+      "reference_title": "We Hear You",
+      "reference_year": 2018,
+      "reference_episode": 87,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2018-07-16",
+      "reference_title": "Japan's Ninja Shortage",
+      "reference_year": 2018,
+      "reference_episode": 88,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2018-07-17",
+      "reference_title": "Saving Women",
+      "reference_year": 2018,
+      "reference_episode": 89,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2018-07-19",
+      "reference_title": "Three Indicators To Keep A (Side)eye On",
+      "reference_year": 2018,
+      "reference_episode": 91,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2018-07-30",
+      "reference_title": "Putin Vs. Russia's Economy",
+      "reference_year": 2018,
+      "reference_episode": 98,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2018-07-31",
+      "reference_title": "What's In Your Paycheck?",
+      "reference_year": 2018,
+      "reference_episode": 99,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2018-08-03",
+      "reference_title": "Beating The Clock On Jobs (Summer) Friday",
+      "reference_year": 2018,
+      "reference_episode": 102,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2018-08-13",
+      "reference_title": "Messy Desks, Light Bulbs & Dune",
+      "reference_year": 2018,
+      "reference_episode": 108,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2018-08-21",
+      "reference_title": "Why People Can't Get Work Done At Work",
+      "reference_year": 2018,
+      "reference_episode": 114,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2018-08-24",
+      "reference_title": "The Art of War. It's Not For Everyone",
+      "reference_year": 2018,
+      "reference_episode": 117,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2018-09-06",
+      "reference_title": "Why Aren't We More Productive?",
+      "reference_year": 2018,
+      "reference_episode": 125,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2018-10-10",
+      "reference_title": "Life On China's Blacklist",
+      "reference_year": 2018,
+      "reference_episode": 149,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2018-10-29",
+      "reference_title": "Judgement Bonds",
+      "reference_year": 2018,
+      "reference_episode": 162,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2018-11-02",
+      "reference_title": "How Companies Cope (With A Tight Labor Market)",
+      "reference_year": 2018,
+      "reference_episode": 166,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2018-11-09",
+      "reference_title": "The 401(k) Turns 40",
+      "reference_year": 2018,
+      "reference_episode": 171,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2018-11-20",
+      "reference_title": "The Ins & Outs Of The Minimum Wage",
+      "reference_year": 2018,
+      "reference_episode": 178,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2018-12-06",
+      "reference_title": "The Fed's Mistake?",
+      "reference_year": 2018,
+      "reference_episode": 189,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2018-12-11",
+      "reference_title": "Citi Bike's Better Angels",
+      "reference_year": 2018,
+      "reference_episode": 192,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2018-12-19",
+      "reference_title": "You've Got Mail!",
+      "reference_year": 2018,
+      "reference_episode": 198,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2019-01-08",
+      "reference_title": "Don't Fear The Fear Index",
+      "reference_year": 2019,
+      "reference_episode": 5,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2019-01-25",
+      "reference_title": "The End Of The Shutdown?",
+      "reference_year": 2019,
+      "reference_episode": 17,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2019-01-31",
+      "reference_title": "Lights Out For PG&E?",
+      "reference_year": 2019,
+      "reference_episode": 21,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2019-02-05",
+      "reference_title": "The Fed's Sweet Spot For Interest Rates",
+      "reference_year": 2019,
+      "reference_episode": 24,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2019-02-06",
+      "reference_title": "India's Poverty Paradox",
+      "reference_year": 2019,
+      "reference_episode": 25,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2019-02-20",
+      "reference_title": "Why Americans Can't Quit Tipping",
+      "reference_year": 2019,
+      "reference_episode": 34,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2019-02-26",
+      "reference_title": "TV Vs. Video Games: Who's Winning?",
+      "reference_year": 2019,
+      "reference_episode": 38,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2019-03-22",
+      "reference_title": "Are Neighbors Overrated? (And Other Questions)",
+      "reference_year": 2019,
+      "reference_episode": 56,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2019-03-25",
+      "reference_title": "Spotify's Long, Winding Road To India",
+      "reference_year": 2019,
+      "reference_episode": 57,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2019-03-27",
+      "reference_title": "An Economist in Caracas: Day In The Life",
+      "reference_year": 2019,
+      "reference_episode": 59,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2019-04-09",
+      "reference_title": "Trade War With Cheese: Trump's New EU Tariffs",
+      "reference_year": 2019,
+      "reference_episode": 68,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    },
+    {
+      "reference_date": "2019-04-26",
+      "reference_title": "Why Superman Doesn't Take Over The World",
+      "reference_year": 2019,
+      "reference_episode": 80,
+      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
+    }
+  ],
+  "rejected_false_positives": [
+    {
+      "reference_date": "2018-03-15",
+      "reference_title": "Buying A College Degree: Did Aunt Becky Overpay?",
+      "candidate_url": "https://static.xx.fbcdn.net/rsrc.php/yI/r/bg9JBgZmoaC.mp3",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "validated_audio",
+      "source_url": null
+    },
+    {
+      "reference_date": "2018-03-15",
+      "reference_title": "Buying A College Degree: Did Aunt Becky Overpay?",
+      "candidate_url": "https://static.xx.fbcdn.net/rsrc.php/yf/r/XyTteqB51ob.mp3",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "validated_audio",
+      "source_url": null
+    },
+    {
+      "reference_date": "2018-03-15",
+      "reference_title": "Buying A College Degree: Did Aunt Becky Overpay?",
+      "candidate_url": "https://static.xx.fbcdn.net/rsrc.php/yL/r/qi5pP1651Bi.mp3",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "validated_audio",
+      "source_url": null
+    },
+    {
+      "reference_date": "2018-03-15",
+      "reference_title": "Buying A College Degree: Did Aunt Becky Overpay?",
+      "candidate_url": "https://static.xx.fbcdn.net/rsrc.php/y8/r/a6onsWOBhsg.mp3",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "validated_audio",
+      "source_url": null
+    },
+    {
+      "reference_date": "2018-03-15",
+      "reference_title": "Buying A College Degree: Did Aunt Becky Overpay?",
+      "candidate_url": "https://static.xx.fbcdn.net/rsrc.php/yP/r/NUhwZHJ8fUZ.mp3",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "validated_audio",
+      "source_url": null
+    },
+    {
+      "reference_date": "2018-03-15",
+      "reference_title": "Buying A College Degree: Did Aunt Becky Overpay?",
+      "candidate_url": "https://static.xx.fbcdn.net/rsrc.php/yM/r/1Vcznk-uUR-.mp3",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "validated_audio",
+      "source_url": null
+    },
+    {
+      "reference_date": "2018-04-24",
+      "reference_title": "When China's Ships Come In",
+      "candidate_url": "https://audio.dictionary.com/NEW2016/when_010/when_010.mp3",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "validated_audio",
+      "source_url": null
+    },
+    {
+      "reference_date": "2018-04-24",
+      "reference_title": "When China's Ships Come In",
+      "candidate_url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/whe/when_/when__gb_1.mp3",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "validated_audio",
+      "source_url": null
+    },
+    {
+      "reference_date": "2018-04-24",
+      "reference_title": "When China's Ships Come In",
+      "candidate_url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/w/whe/when_/when__us_1_rr.mp3",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "validated_audio",
+      "source_url": null
+    },
+    {
+      "reference_date": "2018-04-24",
+      "reference_title": "When China's Ships Come In",
+      "candidate_url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ado/adopt/adopt__gb_1.mp3",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "validated_audio",
+      "source_url": null
+    },
+    {
+      "reference_date": "2018-04-24",
+      "reference_title": "When China's Ships Come In",
+      "candidate_url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/a/ado/adopt/adopt__us_1.mp3",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "validated_audio",
+      "source_url": null
+    },
+    {
+      "reference_date": "2018-04-26",
+      "reference_title": "California's Housing Conundrum",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2&sc=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/2019/04/15/713616857/officials-in-sanctuary-cities-condemn-trumps-proposal-to-move-immigrant-detainee?t=1567429578598"
+    },
+    {
+      "reference_date": "2018-04-26",
+      "reference_title": "California's Housing Conundrum",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/2019/04/15/713616857/officials-in-sanctuary-cities-condemn-trumps-proposal-to-move-immigrant-detainee?t=1567429578598"
+    },
+    {
+      "reference_date": "2018-04-26",
+      "reference_title": "California's Housing Conundrum",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7&sc=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/sections/ed/2016/10/29/499867678/the-debate-over-bilingual-education-in-california"
+    },
+    {
+      "reference_date": "2018-04-26",
+      "reference_title": "California's Housing Conundrum",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/sections/ed/2016/10/29/499867678/the-debate-over-bilingual-education-in-california"
+    },
+    {
+      "reference_date": "2018-04-26",
+      "reference_title": "California's Housing Conundrum",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2023/01/20230112_atc_dismantling_cas_death_row.mp3?d=283&size=4542843&e=1148846720&sc=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/2023/01/13/1148846720/california-says-it-will-dismantle-death-row-the-move-brings-cheers-and-anger#:~:text=Technically%2C%20the%20death%20penalty%20still,the%20state%20in%2017%20years."
+    },
+    {
+      "reference_date": "2018-04-26",
+      "reference_title": "California's Housing Conundrum",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2023/01/20230112_atc_dismantling_cas_death_row.mp3?d=283&size=4542843&e=1148846720&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/2023/01/13/1148846720/california-says-it-will-dismantle-death-row-the-move-brings-cheers-and-anger#:~:text=Technically%2C%20the%20death%20penalty%20still,the%20state%20in%2017%20years."
+    },
+    {
+      "reference_date": "2018-04-26",
+      "reference_title": "California's Housing Conundrum",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_florence.mp3?d=20&e=524744989",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "player_pages",
+      "source_url": "https://www.npr.org/player/embed/524744989/525551088"
+    },
+    {
+      "reference_date": "2018-04-26",
+      "reference_title": "California's Housing Conundrum",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_waterfall.mp3?d=38&e=524744989",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "player_pages",
+      "source_url": "https://www.npr.org/player/embed/524744989/525551085"
+    },
+    {
+      "reference_date": "2018-04-26",
+      "reference_title": "California's Housing Conundrum",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "player_pages",
+      "source_url": "https://www.npr.org/player/embed/713616857/713616858"
+    },
+    {
+      "reference_date": "2018-04-26",
+      "reference_title": "California's Housing Conundrum",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "player_pages",
+      "source_url": "https://www.npr.org/player/embed/499867678/499867679"
+    },
+    {
+      "reference_date": "2018-04-26",
+      "reference_title": "California's Housing Conundrum",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2023/01/20230112_atc_dismantling_cas_death_row.mp3?d=283&size=4542843&e=1148846720",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "player_pages",
+      "source_url": "https://www.npr.org/player/embed/1148846720/1149148322"
+    },
+    {
+      "reference_date": "2018-04-26",
+      "reference_title": "California's Housing Conundrum",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_waterfall.mp3?orgId=1&topicId=1003&aggIds=525773617&d=38&story=524744989",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "wayback_players",
+      "source_url": "https://web.archive.org/web/20170504000609id_/https://www.npr.org/player/embed/524744989/525551088"
+    },
+    {
+      "reference_date": "2018-06-13",
+      "reference_title": "Dude, Where's My Trade War?",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2025/07/20250730_atc_48508176-7726-4c02-8315-a4fe560f3064.mp3?t=progseg&e=nx-s1-5469192&p=2&seg=12&d=206&sc=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "validated_audio",
+      "source_url": null
+    },
+    {
+      "reference_date": "2018-06-13",
+      "reference_title": "Dude, Where's My Trade War?",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2025/07/20250730_atc_48508176-7726-4c02-8315-a4fe560f3064.mp3?t=progseg&e=nx-s1-5469192&p=2&seg=12&d=206&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "validated_audio",
+      "source_url": null
+    },
+    {
+      "reference_date": "2018-06-21",
+      "reference_title": "Teenage (Employment) Wasteland",
+      "candidate_url": "https://audio.dictionary.net/audio/pronunciations/20260312/teenage-uk-phfqLnsz.mp3",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "validated_audio",
+      "source_url": null
+    },
+    {
+      "reference_date": "2018-06-21",
+      "reference_title": "Teenage (Employment) Wasteland",
+      "candidate_url": "https://audio.dictionary.net/audio/pronunciations/20260312/teenage-us-AEIusmfl.mp3",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "validated_audio",
+      "source_url": null
+    },
+    {
+      "reference_date": "2018-07-10",
+      "reference_title": "The Price of A Hyundai in Iran",
+      "candidate_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "validated_audio",
+      "source_url": null
+    },
+    {
+      "reference_date": "2018-07-11",
+      "reference_title": "Fed Accounts For All!",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2010/08/20100826_atc_02.mp3?d=310&e=129451895&t=progseg&seg=2&p=2&sc=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/transcripts/129451895"
+    },
+    {
+      "reference_date": "2018-07-11",
+      "reference_title": "Fed Accounts For All!",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2010/08/20100826_atc_02.mp3?d=310&e=129451895&t=progseg&seg=2&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/transcripts/129451895"
+    },
+    {
+      "reference_date": "2018-07-11",
+      "reference_title": "Fed Accounts For All!",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2010/08/20100826_atc_02.mp3?d=310&e=129451895&t=progseg&seg=2&p=2",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "player_pages",
+      "source_url": "https://www.npr.org/player/embed/129451895/129454071"
+    },
+    {
+      "reference_date": "2018-07-12",
+      "reference_title": "The Last Straw",
+      "candidate_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "validated_audio",
+      "source_url": null
+    },
+    {
+      "reference_date": "2018-07-23",
+      "reference_title": "Google's Mobile Monopoly",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2020/10/20201020_atc_us_files_antitrust_suit_against_google.mp3?d=229&size=3659175&e=925895658&t=progseg&seg=1&p=2",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "player_pages",
+      "source_url": "https://www.npr.org/player/embed/925895658/925895659"
+    },
+    {
+      "reference_date": "2018-08-03",
+      "reference_title": "Beating The Clock On Jobs (Summer) Friday",
+      "candidate_url": "https://audio.dictionary.com/B01/B0180600/B0180600.mp3",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "validated_audio",
+      "source_url": null
+    },
+    {
+      "reference_date": "2018-08-17",
+      "reference_title": "Donald Trump's Economic Strategy... Maybe?",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/11/20161109_atc_trump_can_kill_obamacare_with_or_without_help_from_congress.mp3?d=189&e=501203831&t=progseg&seg=10&p=2&sc=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/sections/health-shots/2016/11/09/501203831/trump-can-kill-obamacare-with-or-without-help-from-congress"
+    },
+    {
+      "reference_date": "2018-08-17",
+      "reference_title": "Donald Trump's Economic Strategy... Maybe?",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/11/20161109_atc_trump_can_kill_obamacare_with_or_without_help_from_congress.mp3?d=189&e=501203831&t=progseg&seg=10&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/sections/health-shots/2016/11/09/501203831/trump-can-kill-obamacare-with-or-without-help-from-congress"
+    },
+    {
+      "reference_date": "2018-08-17",
+      "reference_title": "Donald Trump's Economic Strategy... Maybe?",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2020/10/20201030_atc_opioid_crisis_critics_say_trump_fumbled_response_to_another_deadly_epidemic_.mp3?d=257&size=4118709&e=927859091&t=progseg&seg=11&p=2&sc=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/2020/10/29/927859091/opioid-crisis-critics-say-trump-fumbled-response-to-another-deadly-epidemic"
+    },
+    {
+      "reference_date": "2018-08-17",
+      "reference_title": "Donald Trump's Economic Strategy... Maybe?",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2020/10/20201030_atc_opioid_crisis_critics_say_trump_fumbled_response_to_another_deadly_epidemic_.mp3?d=257&size=4118709&e=927859091&t=progseg&seg=11&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/2020/10/29/927859091/opioid-crisis-critics-say-trump-fumbled-response-to-another-deadly-epidemic"
+    },
+    {
+      "reference_date": "2018-08-17",
+      "reference_title": "Donald Trump's Economic Strategy... Maybe?",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2017/10/20171010_atc_many_cabinet_positions_remain_open_in_trump_administration.mp3?d=228&e=557122200&sc=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/2017/10/12/557122200/trump-leaves-top-administration-positions-unfilled-says-hollow-government-by-des"
+    },
+    {
+      "reference_date": "2018-08-17",
+      "reference_title": "Donald Trump's Economic Strategy... Maybe?",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2017/10/20171010_atc_many_cabinet_positions_remain_open_in_trump_administration.mp3?d=228&e=557122200&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/2017/10/12/557122200/trump-leaves-top-administration-positions-unfilled-says-hollow-government-by-des"
+    },
+    {
+      "reference_date": "2018-08-17",
+      "reference_title": "Donald Trump's Economic Strategy... Maybe?",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2026/01/20260119_atc_trump_has_rolled_out_many_of_the_project_2025_policies_he_once_claimed_ignorance_about.mp3?t=progseg&e=nx-s1-5663790&p=2&seg=4&d=241&size=3857390&sc=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/2026/01/19/nx-s1-5640006/trump-has-rolled-out-many-of-the-project-2025-policies-he-once-claimed-ignorance-about"
+    },
+    {
+      "reference_date": "2018-08-17",
+      "reference_title": "Donald Trump's Economic Strategy... Maybe?",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2026/01/20260119_atc_trump_has_rolled_out_many_of_the_project_2025_policies_he_once_claimed_ignorance_about.mp3?t=progseg&e=nx-s1-5663790&p=2&seg=4&d=241&size=3857390&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/2026/01/19/nx-s1-5640006/trump-has-rolled-out-many-of-the-project-2025-policies-he-once-claimed-ignorance-about"
+    },
+    {
+      "reference_date": "2018-08-17",
+      "reference_title": "Donald Trump's Economic Strategy... Maybe?",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2025/03/20250319_atc_trump_targets_law_firms.mp3?t=progseg&e=nx-s1-5313291&p=2&seg=0&d=256&size=4096880&sc=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/2025/03/19/nx-s1-5323890/experts-say-trumps-targeting-of-law-firms-is-unprecedented"
+    },
+    {
+      "reference_date": "2018-08-17",
+      "reference_title": "Donald Trump's Economic Strategy... Maybe?",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2025/03/20250319_atc_trump_targets_law_firms.mp3?t=progseg&e=nx-s1-5313291&p=2&seg=0&d=256&size=4096880&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/2025/03/19/nx-s1-5323890/experts-say-trumps-targeting-of-law-firms-is-unprecedented"
+    },
+    {
+      "reference_date": "2018-08-17",
+      "reference_title": "Donald Trump's Economic Strategy... Maybe?",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/11/20161109_atc_trump_can_kill_obamacare_with_or_without_help_from_congress.mp3?d=189&e=501203831&t=progseg&seg=10&p=2",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "player_pages",
+      "source_url": "https://www.npr.org/player/embed/501203831/501477057"
+    },
+    {
+      "reference_date": "2018-08-17",
+      "reference_title": "Donald Trump's Economic Strategy... Maybe?",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2020/10/20201030_atc_opioid_crisis_critics_say_trump_fumbled_response_to_another_deadly_epidemic_.mp3?d=257&size=4118709&e=927859091&t=progseg&seg=11&p=2",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "player_pages",
+      "source_url": "https://www.npr.org/player/embed/927859091/929609241"
+    },
+    {
+      "reference_date": "2018-08-24",
+      "reference_title": "The Art of War. It's Not For Everyone",
+      "candidate_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "validated_audio",
+      "source_url": null
+    },
+    {
+      "reference_date": "2018-09-24",
+      "reference_title": "Saudi Arabia & The Paradox of Plenty",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2011/06/20110608_atc_03.mp3?d=250&e=137065443&t=progseg&seg=3&p=2&sc=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/2011/06/08/137065443/opec-decides-not-to-increase-oil-production"
+    },
+    {
+      "reference_date": "2018-09-24",
+      "reference_title": "Saudi Arabia & The Paradox of Plenty",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2011/06/20110608_atc_03.mp3?d=250&e=137065443&t=progseg&seg=3&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/2011/06/08/137065443/opec-decides-not-to-increase-oil-production"
+    },
+    {
+      "reference_date": "2018-09-24",
+      "reference_title": "Saudi Arabia & The Paradox of Plenty",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2011/05/20110519_me_02.mp3?d=275&e=136439885&t=progseg&seg=2&p=3&sc=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/2011/05/19/136439885/poverty-hides-amid-saudi-arabias-oil-wealth"
+    },
+    {
+      "reference_date": "2018-09-24",
+      "reference_title": "Saudi Arabia & The Paradox of Plenty",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2011/05/20110519_me_02.mp3?d=275&e=136439885&t=progseg&seg=2&p=3&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/2011/05/19/136439885/poverty-hides-amid-saudi-arabias-oil-wealth"
+    },
+    {
+      "reference_date": "2018-09-24",
+      "reference_title": "Saudi Arabia & The Paradox of Plenty",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2011/06/20110608_atc_03.mp3?d=250&e=137065443&t=progseg&seg=3&p=2",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "player_pages",
+      "source_url": "https://www.npr.org/player/embed/137065443/137065428"
+    },
+    {
+      "reference_date": "2018-09-24",
+      "reference_title": "Saudi Arabia & The Paradox of Plenty",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2011/05/20110519_me_02.mp3?d=275&e=136439885&t=progseg&seg=2&p=3",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "player_pages",
+      "source_url": "https://www.npr.org/player/embed/136439885/136453311"
+    },
+    {
+      "reference_date": "2018-10-05",
+      "reference_title": "Who's Hiring?",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2015/05/20150521_me_who_calls_for_100_million_emergency_fund_doctor_swat_team.mp3?d=234&e=408289115&t=progseg&seg=2&p=3&sc=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/sections/goatsandsoda/2015/05/21/408289115/who-calls-for-100-million-emergency-fund-doctor-swat-team"
+    },
+    {
+      "reference_date": "2018-10-05",
+      "reference_title": "Who's Hiring?",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2015/05/20150521_me_who_calls_for_100_million_emergency_fund_doctor_swat_team.mp3?d=234&e=408289115&t=progseg&seg=2&p=3&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/sections/goatsandsoda/2015/05/21/408289115/who-calls-for-100-million-emergency-fund-doctor-swat-team"
+    },
+    {
+      "reference_date": "2018-10-05",
+      "reference_title": "Who's Hiring?",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/05/20160524_atc_who_aims_to_reform_itself_but_health_experts_arent_yet_impressed.mp3?d=225&e=479228380&sc=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/sections/goatsandsoda/2016/05/25/479228380/who-aims-to-reform-itself-but-health-experts-arent-yet-impressed"
+    },
+    {
+      "reference_date": "2018-10-05",
+      "reference_title": "Who's Hiring?",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/05/20160524_atc_who_aims_to_reform_itself_but_health_experts_arent_yet_impressed.mp3?d=225&e=479228380&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/sections/goatsandsoda/2016/05/25/479228380/who-aims-to-reform-itself-but-health-experts-arent-yet-impressed"
+    },
+    {
+      "reference_date": "2018-10-05",
+      "reference_title": "Who's Hiring?",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/me/2015/05/20150521_me_who_calls_for_100_million_emergency_fund_doctor_swat_team.mp3?d=234&e=408289115&t=progseg&seg=2&p=3",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "player_pages",
+      "source_url": "https://www.npr.org/player/embed/408289115/408407230"
+    },
+    {
+      "reference_date": "2018-10-05",
+      "reference_title": "Who's Hiring?",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2016/05/20160524_atc_who_aims_to_reform_itself_but_health_experts_arent_yet_impressed.mp3?d=225&e=479228380",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "player_pages",
+      "source_url": "https://www.npr.org/player/embed/479228380/479349681"
+    },
+    {
+      "reference_date": "2018-10-09",
+      "reference_title": "China's Social Credit System",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7&sc=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s"
+    },
+    {
+      "reference_date": "2018-10-09",
+      "reference_title": "China's Social Credit System",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s"
+    },
+    {
+      "reference_date": "2018-10-09",
+      "reference_title": "China's Social Credit System",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "player_pages",
+      "source_url": "https://www.npr.org/player/embed/887239225/887239226"
+    },
+    {
+      "reference_date": "2018-10-09",
+      "reference_title": "China's Social Credit System",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?orgId=1&topicId=1125&d=304&p=7&story=887239225&dl=1",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "wayback_players",
+      "source_url": "https://web.archive.org/web/20200718205915id_/https://www.npr.org/player/embed/887239225/887239226"
+    },
+    {
+      "reference_date": "2018-10-11",
+      "reference_title": "China's Brave New World",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7&sc=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s"
+    },
+    {
+      "reference_date": "2018-10-11",
+      "reference_title": "China's Brave New World",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "story_pages",
+      "source_url": "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s"
+    },
+    {
+      "reference_date": "2018-10-11",
+      "reference_title": "China's Brave New World",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "player_pages",
+      "source_url": "https://www.npr.org/player/embed/887239225/887239226"
+    },
+    {
+      "reference_date": "2018-10-11",
+      "reference_title": "China's Brave New World",
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?orgId=1&topicId=1125&d=304&p=7&story=887239225&dl=1",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "wayback_players",
+      "source_url": "https://web.archive.org/web/20200718205915id_/https://www.npr.org/player/embed/887239225/887239226"
+    },
+    {
+      "reference_date": "2018-10-29",
+      "reference_title": "Judgement Bonds",
+      "candidate_url": "https://www.delmarvapublicmedia.org/business/2018-10-29/judgement-bonds",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "prior_evidence_url",
+      "source_url": null
+    },
+    {
+      "reference_date": "2018-10-29",
+      "reference_title": "Judgement Bonds",
+      "candidate_url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WSCLFM.mp3",
+      "final_url": null,
+      "validation_status": "rejected_livestream",
+      "reason": "livestream_or_station_stream",
+      "source_type": "prior_evidence_url",
+      "source_url": null
+    },
+    {
+      "reference_date": "2018-10-29",
+      "reference_title": "Judgement Bonds",
+      "candidate_url": "https://27143.live.streamtheworld.com:443/WSCLFM.mp3",
+      "final_url": null,
+      "validation_status": "rejected_livestream",
+      "reason": "livestream_or_station_stream",
+      "source_type": "validated_audio",
+      "source_url": null
+    },
+    {
+      "reference_date": "2018-10-29",
+      "reference_title": "Judgement Bonds",
+      "candidate_url": "https://26223.live.streamtheworld.com:443/WSCLFM.mp3",
+      "final_url": null,
+      "validation_status": "rejected_livestream",
+      "reason": "livestream_or_station_stream",
+      "source_type": "validated_audio",
+      "source_url": null
+    },
+    {
+      "reference_date": "2018-10-29",
+      "reference_title": "Judgement Bonds",
+      "candidate_url": "https://14843.live.streamtheworld.com:443/WSDLFM.mp3",
+      "final_url": null,
+      "validation_status": "rejected_livestream",
+      "reason": "livestream_or_station_stream",
+      "source_type": "validated_audio",
+      "source_url": null
+    },
+    {
+      "reference_date": "2018-10-29",
+      "reference_title": "Judgement Bonds",
+      "candidate_url": "https://18123.live.streamtheworld.com:443/WESMFM.mp3",
+      "final_url": null,
+      "validation_status": "rejected_livestream",
+      "reason": "livestream_or_station_stream",
+      "source_type": "validated_audio",
+      "source_url": null
+    },
+    {
+      "reference_date": "2018-11-09",
+      "reference_title": "The 401(k) Turns 40",
+      "candidate_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "validated_audio",
+      "source_url": null
+    },
+    {
+      "reference_date": "2018-11-20",
+      "reference_title": "The Ins & Outs Of The Minimum Wage",
+      "candidate_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "validated_audio",
+      "source_url": null
+    },
+    {
+      "reference_date": "2018-12-06",
+      "reference_title": "The Fed's Mistake?",
+      "candidate_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "validated_audio",
+      "source_url": null
+    },
+    {
+      "reference_date": "2019-01-25",
+      "reference_title": "The End Of The Shutdown?",
+      "candidate_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "validated_audio",
+      "source_url": null
+    },
+    {
+      "reference_date": "2019-02-05",
+      "reference_title": "The Fed's Sweet Spot For Interest Rates",
+      "candidate_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+      "final_url": null,
+      "validation_status": "rejected_request_error",
+      "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+      "source_type": "validated_audio",
+      "source_url": null
+    }
+  ]
+}
