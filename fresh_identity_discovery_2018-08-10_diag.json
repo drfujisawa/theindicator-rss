@@ -1,6 +1,11 @@
 {
+  "placeholder": true,
+  "run_complete": false,
   "run_state": "placeholder",
+  "run_id": "31336950930",
+  "generated_at": "2026-08-09T21:36:17.233892+00:00",
   "reference_date": "2018-08-10",
   "reference_title": "Privacy Please: Why Public Companies Go Private (Or Vice Versa)",
+  "reference_episode": 107,
   "final_classification": null
 }

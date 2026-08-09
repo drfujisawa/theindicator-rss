@@ -20,6 +20,9 @@ jobs:
         with:
           python-version: "3.x"
 
+      - name: Initialize fresh diagnostic placeholders
+        run: python probe_fresh_identity_discovery.py --write-placeholders-only
+
       - name: Run unit tests
         run: python -m unittest test_fresh_identity_discovery -v
 
@@ -38,6 +41,7 @@ jobs:
           retention-days: 90
 
       - name: Commit diagnostic JSON files
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

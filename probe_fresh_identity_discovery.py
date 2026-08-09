@@ -12,26 +12,22 @@ programs.  This script starts fresh:
 
 Strategy
 --------
-1. Query the Wayback CDX API over a bounded date window around each target
-   date, using NPR URL patterns:
-     - https://www.npr.org/* (filtered to story-like paths)
-     - https://www.npr.org/sections/money/*
-     - https://www.npr.org/sections/theindicator/*
-     - https://www.npr.org/podcasts/510325/* (The Indicator programme page)
-2. Search returned original URLs and fetched page titles for slug/title
-   similarity to the exact target title.
-3. Fetch promising captures and verify: page title, publication date, canonical
-   NPR URL, NPR story ID, player/embed ID, audio ID, Indicator show context.
-4. Also probe known-slug-variant URLs directly via CDX.
-5. Use adjacent validated-corpus IDs to bound a sparse numeric probe
-   (never treated as proof — advisory only).
-6. If an authentic identity is found, probe live and archived NPR player pages
+1. Issue a small, date-bounded set of CDX queries over NPR's dated story URL
+   structures (including /YYYY/MM/DD/ forms and section wrappers).
+2. Score returned original URLs locally using title/slug/date similarity without
+   fetching them all.
+3. Fetch only the top few candidate captures and require an episode-specific
+   proof chain: strong title match, date evidence, same-page NPR story URL/story
+   ID, and trusted provenance.
+4. Only after identity is confirmed, probe live and archived NPR player pages
    and validate audio using the existing Indicator validator rules:
      - explicit audio/* MIME type;
      - final URL must be NPR-controlled and contain /indicator/;
-     - episode date match in filename is not required (only advisory);
      - unrelated/sidebar/related-story audio cannot anchor a recovery;
-     - filename similarity alone is never enough.
+     - filename similarity, 510325, or generic Indicator context are never
+       enough on their own.
+5. Always write fresh placeholder diagnostics first; only overwrite them with
+   run_complete results after the full probe finishes.
 
 Writes (per episode):
   fresh_identity_discovery_<YYYY-MM-DD>_diag.json
