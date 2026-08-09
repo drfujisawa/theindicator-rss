@@ -22,6 +22,7 @@ Writes:
   top3_prospects_summary.json            — small summary
 """
 
+import datetime
 import html
 import json
 import re
@@ -432,47 +433,47 @@ def investigate_episode(episode, ledger):
     # Probe live NPR story pages
     # ------------------------------------------------------------------
     for url in story_urls[:5]:
-        probe = {"url": url, "status": None}
+        probe_result = {"url": url, "status": None}
         try:
             resp = fetch_text(url)
             page = resp["text"]
-            probe["status"] = "fetched"
-            probe["final_url"] = resp["final_url"]
-            probe["player_embeds"] = extract_player_embeds(page)
-            probe["npr_story_urls"] = extract_npr_story_urls(page)
-            probe["numeric_ids"] = extract_numeric_ids(page)
-            probe["audio_candidates"] = extract_audio_urls(page)
-            probe["interesting_lines"] = extract_interesting_lines(
+            probe_result["status"] = "fetched"
+            probe_result["final_url"] = resp["final_url"]
+            probe_result["player_embeds"] = extract_player_embeds(page)
+            probe_result["npr_story_urls"] = extract_npr_story_urls(page)
+            probe_result["numeric_ids"] = extract_numeric_ids(page)
+            probe_result["audio_candidates"] = extract_audio_urls(page)
+            probe_result["interesting_lines"] = extract_interesting_lines(
                 page, title_keywords
             )
-            all_audio.extend(probe["audio_candidates"])
-            all_player_urls.extend(probe["player_embeds"])
+            all_audio.extend(probe_result["audio_candidates"])
+            all_player_urls.extend(probe_result["player_embeds"])
         except Exception as exc:
-            probe["status"] = "error"
-            probe["error"] = str(exc)
-        diag["live_story_probes"].append(probe)
+            probe_result["status"] = "error"
+            probe_result["error"] = str(exc)
+        diag["live_story_probes"].append(probe_result)
 
     # ------------------------------------------------------------------
     # Probe live NPR player pages
     # ------------------------------------------------------------------
     for url in unique(all_player_urls)[:MAX_PLAYER_PAGES]:
-        probe = {"url": url, "status": None}
+        probe_result = {"url": url, "status": None}
         try:
             resp = fetch_text(url)
             page = resp["text"]
-            probe["status"] = "fetched"
-            probe["final_url"] = resp["final_url"]
-            probe["player_embeds"] = extract_player_embeds(page)
-            probe["numeric_ids"] = extract_numeric_ids(page)
-            probe["audio_candidates"] = extract_audio_urls(page)
-            probe["interesting_lines"] = extract_interesting_lines(
+            probe_result["status"] = "fetched"
+            probe_result["final_url"] = resp["final_url"]
+            probe_result["player_embeds"] = extract_player_embeds(page)
+            probe_result["numeric_ids"] = extract_numeric_ids(page)
+            probe_result["audio_candidates"] = extract_audio_urls(page)
+            probe_result["interesting_lines"] = extract_interesting_lines(
                 page, title_keywords
             )
-            all_audio.extend(probe["audio_candidates"])
+            all_audio.extend(probe_result["audio_candidates"])
         except Exception as exc:
-            probe["status"] = "error"
-            probe["error"] = str(exc)
-        diag["live_player_probes"].append(probe)
+            probe_result["status"] = "error"
+            probe_result["error"] = str(exc)
+        diag["live_player_probes"].append(probe_result)
 
     # ------------------------------------------------------------------
     # Wayback CDX + capture for story URLs
@@ -645,7 +646,6 @@ def run_investigation():
 
 
 def _now_iso():
-    import datetime
     return datetime.datetime.now(datetime.timezone.utc).isoformat()
 
 

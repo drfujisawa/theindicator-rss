@@ -20,11 +20,11 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Run top-3 investigation
-        run: python probe_top3_ranked_prospects.py
-
       - name: Run unit tests
         run: python -m unittest test_top3_ranked_prospects -v
+
+      - name: Run top-3 investigation
+        run: python probe_top3_ranked_prospects.py
 
       - name: Upload diagnostic artifacts
         if: always()
