@@ -40,9 +40,11 @@ Writes (summary):
   fresh_identity_discovery_summary.json
 """
 
+import argparse
 import datetime
 import html
 import json
+import os
 import re
 import time
 from pathlib import Path
@@ -63,21 +65,25 @@ HEADERS = {
     )
 }
 
-TIMEOUT = 30
-RETRIES = 3
-RETRY_DELAY = 2  # seconds between retries
+REQUEST_TIMEOUT_SECONDS = 8
+WAYBACK_DISCOVERY_RETRIES = 2
+CONTENT_RETRIES = 1
+RETRY_DELAY = 1  # seconds between retries
 
-# CDX: per-pattern limit.  Keep small to avoid huge Wayback requests.
-CDX_DATE_WINDOW_LIMIT = 100
-CDX_SLUG_LIMIT = 20
-# After CDX, max captures to actually fetch.
-MAX_CAPTURES_PER_PATTERN = 5
-MAX_PLAYER_PAGES = 10
-MAX_AUDIO_CANDIDATES = 40
+# CDX / fetch funnel caps.
+CDX_DATE_WINDOW_LIMIT = 40
+CDX_EXACT_LIMIT = 5
+MAX_STAGE_A_CDX_QUERIES = 6
+MAX_FETCHED_CAPTURES = 4
+MAX_PLAYER_PAGES = 2
+MAX_PLAYER_CDX_LOOKUPS = 2
+MAX_ARCHIVED_PLAYER_FETCHES = 2
+MAX_AUDIO_CANDIDATES = 4
+FETCH_SCORE_THRESHOLD = 0.35
 
-# Numeric ID probe: sparse step size — do not brute-force.
-NUMERIC_PROBE_STEP = 50_000   # probe every 50 k IDs across the window
-NUMERIC_PROBE_MAX = 20        # hard cap on IDs to probe per episode
+# Numeric ID bounds remain advisory metadata only.
+NUMERIC_PROBE_STEP = 50_000
+NUMERIC_PROBE_MAX = 0
 
 # Patterns indicating a generic / live / non-Indicator audio source.
 REJECTED_PATTERNS = [
@@ -173,16 +179,16 @@ TARGETS = [
 # ---------------------------------------------------------------------------
 
 
-def _fetch_raw(url, range_request=False, max_bytes=2_000_000):
+def _fetch_raw(url, range_request=False, max_bytes=2_000_000, retries=CONTENT_RETRIES):
     headers = dict(HEADERS)
     if range_request:
         headers["Range"] = "bytes=0-4095"
 
     last_error = None
-    for attempt in range(1, RETRIES + 1):
+    for attempt in range(1, retries + 1):
         try:
             req = Request(url, headers=headers)
-            with urlopen(req, timeout=TIMEOUT) as resp:
+            with urlopen(req, timeout=REQUEST_TIMEOUT_SECONDS) as resp:
                 data = resp.read(4096 if range_request else max_bytes)
                 return {
                     "status_code": getattr(resp, "status", None),
@@ -192,14 +198,14 @@ def _fetch_raw(url, range_request=False, max_bytes=2_000_000):
                 }
         except Exception as exc:
             last_error = exc
-            if attempt < RETRIES:
+            if attempt < retries:
                 time.sleep(attempt * RETRY_DELAY)
 
     raise last_error
 
 
-def fetch_text(url):
-    resp = _fetch_raw(url)
+def fetch_text(url, retries=CONTENT_RETRIES):
+    resp = _fetch_raw(url, retries=retries)
     resp["text"] = resp["data"].decode("utf-8", errors="replace")
     return resp
 
@@ -365,26 +371,25 @@ def extract_canonical_url(page: str) -> str:
 
 
 def extract_program_context(page: str) -> dict:
-    """Extract NPR program/show context from bootstrap JSON or meta tags."""
+    """Extract NPR program/show context signals without treating them as proof."""
     page = clean_text(page)
     result = {
         "program_id": None,
         "show_name": None,
-        "is_indicator": False,
+        "indicator_signals": [],
+        "has_indicator_branding": False,
     }
-    # Look for program ID 510325 (The Indicator from Planet Money)
     if "510325" in page:
         result["program_id"] = "510325"
-        result["is_indicator"] = True
-    # Look for "indicator" specifically in known program/show title context keys
+        result["indicator_signals"].append("program_id_510325")
     m = re.search(r'(?:showTitle|programTitle|showName)["\s:]+["\']([^"\']{3,80})["\']', page, re.I)
     if m:
         result["show_name"] = m.group(1).strip()
-        if "indicator" in result["show_name"].lower():
-            result["is_indicator"] = True
-    # Check for explicit theindicator section path (strong signal)
+        if "the indicator" in result["show_name"].lower():
+            result["has_indicator_branding"] = True
+            result["indicator_signals"].append("show_name_the_indicator")
     if "theindicator" in page.lower():
-        result["is_indicator"] = True
+        result["indicator_signals"].append("theindicator_substring")
     return result
 
 
@@ -408,6 +413,121 @@ def _npr_story_id_from_url(url: str):
     if m:
         return m.group(1)
     return None
+
+
+def _extract_url_date(url: str):
+    m = re.search(r'/(\d{4})/(\d{2})/(\d{2})/', url or "")
+    if not m:
+        return None
+    return f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
+
+
+def _player_ids_from_url(url: str) -> dict:
+    m = re.search(r'/player/embed/(\d{7,12})/(\d{7,12})', url or "", re.I)
+    if not m:
+        return {"story_id": None, "audio_id": None}
+    return {"story_id": m.group(1), "audio_id": m.group(2)}
+
+
+def _audio_id_from_url(url: str):
+    matches = re.findall(r'(\d{7,12})', url or "")
+    return matches[-1] if matches else None
+
+
+def _run_id() -> str:
+    return os.environ.get("GITHUB_RUN_ID") or f"local-{int(time.time())}"
+
+
+def _provenance(
+    *,
+    source_url: str,
+    target: dict,
+    evidence_type: str,
+    trust_level: str = "untrusted",
+    source_capture_timestamp: str = None,
+    episode_qualified: bool = False,
+) -> dict:
+    return {
+        "source_url": source_url,
+        "source_capture_timestamp": source_capture_timestamp,
+        "episode_qualified": episode_qualified,
+        "target_episode": target["reference_date"],
+        "target_title": target["reference_title"],
+        "evidence_type": evidence_type,
+        "trust_level": trust_level,
+    }
+
+
+def _clone_with_trust(evidence: dict, trust_level: str, episode_qualified: bool):
+    clone = dict(evidence)
+    clone["provenance"] = dict(clone.get("provenance") or {})
+    clone["provenance"]["trust_level"] = trust_level
+    clone["provenance"]["episode_qualified"] = episode_qualified
+    return clone
+
+
+def _make_story_evidence(url: str, target: dict, timestamp: str, qualified: bool):
+    if not url:
+        return None
+    story_id = _npr_story_id_from_url(url)
+    return {
+        "story_url": url,
+        "story_id": story_id,
+        "provenance": _provenance(
+            source_url=url,
+            source_capture_timestamp=timestamp,
+            target=target,
+            evidence_type="story_url",
+            trust_level="trusted" if qualified else "untrusted",
+            episode_qualified=qualified,
+        ),
+    }
+
+
+def _make_player_evidence(url: str, target: dict, source_url: str, timestamp: str, qualified: bool):
+    ids = _player_ids_from_url(url)
+    return {
+        "player_url": url,
+        "player_story_id": ids["story_id"],
+        "player_audio_id": ids["audio_id"],
+        "provenance": _provenance(
+            source_url=source_url,
+            source_capture_timestamp=timestamp,
+            target=target,
+            evidence_type="player_url",
+            trust_level="trusted" if qualified else "untrusted",
+            episode_qualified=qualified,
+        ),
+    }
+
+
+def _make_audio_evidence(url: str, target: dict, source_url: str, timestamp: str, qualified: bool):
+    return {
+        "audio_url": url,
+        "audio_id": _audio_id_from_url(url),
+        "provenance": _provenance(
+            source_url=source_url,
+            source_capture_timestamp=timestamp,
+            target=target,
+            evidence_type="audio_url",
+            trust_level="trusted" if qualified else "untrusted",
+            episode_qualified=qualified,
+        ),
+    }
+
+
+def _make_numeric_evidence(value: str, target: dict, source_url: str, timestamp: str, qualified: bool):
+    return {
+        "numeric_id": value,
+        "provenance": _provenance(
+            source_url=source_url,
+            source_capture_timestamp=timestamp,
+            target=target,
+            evidence_type="numeric_id",
+            trust_level="trusted" if qualified else "untrusted",
+            episode_qualified=qualified,
+        ),
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -532,6 +652,19 @@ def validate_audio_candidate_live(url: str, reference_date: str) -> dict:
     return result
 
 
+def validate_audio_evidence_live(audio_evidence: dict, reference_date: str) -> dict:
+    result = validate_audio_candidate_live(audio_evidence.get("audio_url"), reference_date)
+    result["audio_url"] = audio_evidence.get("audio_url")
+    result["audio_id"] = audio_evidence.get("audio_id")
+    result["provenance"] = dict(audio_evidence.get("provenance") or {})
+    result["trusted_for_recovery"] = (
+        result.get("valid_npr_indicator_audio")
+        and result["provenance"].get("trust_level") == "trusted"
+        and result["provenance"].get("episode_qualified") is True
+    )
+    return result
+
+
 # ---------------------------------------------------------------------------
 # Wayback CDX API
 # ---------------------------------------------------------------------------
@@ -559,7 +692,7 @@ def wayback_cdx_date_window(
     }
     query = "https://web.archive.org/cdx/search/cdx?" + urlencode(params)
     try:
-        resp = fetch_text(query)
+        resp = fetch_text(query, retries=WAYBACK_DISCOVERY_RETRIES)
         data = json.loads(resp["text"])
         if not isinstance(data, list) or len(data) < 2:
             return []
@@ -569,7 +702,7 @@ def wayback_cdx_date_window(
         return []
 
 
-def wayback_cdx_url_exact(url: str, limit: int = CDX_SLUG_LIMIT) -> list:
+def wayback_cdx_url_exact(url: str, limit: int = CDX_EXACT_LIMIT) -> list:
     """Query CDX for exact URL matches (no wildcards)."""
     params = {
         "url": url,
@@ -581,7 +714,7 @@ def wayback_cdx_url_exact(url: str, limit: int = CDX_SLUG_LIMIT) -> list:
     }
     query = "https://web.archive.org/cdx/search/cdx?" + urlencode(params)
     try:
-        resp = fetch_text(query)
+        resp = fetch_text(query, retries=WAYBACK_DISCOVERY_RETRIES)
         data = json.loads(resp["text"])
         if not isinstance(data, list) or len(data) < 2:
             return []
@@ -597,6 +730,19 @@ def _cdx_date_window(reference_date: str, days_before: int = 3, days_after: int 
     from_d = d - datetime.timedelta(days=days_before)
     to_d = d + datetime.timedelta(days=days_after)
     return from_d.strftime("%Y%m%d"), to_d.strftime("%Y%m%d")
+
+
+def stage_a_patterns(reference_date: str) -> list:
+    base = datetime.date.fromisoformat(reference_date)
+    patterns = []
+    for offset in (-1, 0, 1):
+        day = base + datetime.timedelta(days=offset)
+        y = day.strftime("%Y")
+        m = day.strftime("%m")
+        d = day.strftime("%d")
+        patterns.append(f"https://www.npr.org/{y}/{m}/{d}/*/*")
+        patterns.append(f"https://www.npr.org/sections/*/{y}/{m}/{d}/*/*")
+    return patterns[:MAX_STAGE_A_CDX_QUERIES]
 
 
 # ---------------------------------------------------------------------------
@@ -628,6 +774,41 @@ def score_url_for_target(url: str, reference_title: str, slug_variants: list) ->
     return max(best_slug, title_score)
 
 
+def request_budget() -> dict:
+    per_episode = {
+        "stage_a_cdx_queries": MAX_STAGE_A_CDX_QUERIES,
+        "capture_fetches": MAX_FETCHED_CAPTURES,
+        "live_player_fetches": MAX_PLAYER_PAGES,
+        "player_cdx_queries": MAX_PLAYER_CDX_LOOKUPS,
+        "archived_player_fetches": MAX_ARCHIVED_PLAYER_FETCHES,
+        "audio_validations": MAX_AUDIO_CANDIDATES,
+    }
+    per_episode["max_logical_requests"] = sum(per_episode.values())
+    discovery_max = MAX_STAGE_A_CDX_QUERIES + MAX_PLAYER_CDX_LOOKUPS
+    content_max = (
+        MAX_FETCHED_CAPTURES
+        + MAX_PLAYER_PAGES
+        + MAX_ARCHIVED_PLAYER_FETCHES
+        + MAX_AUDIO_CANDIDATES
+    )
+    per_episode["conservative_timeout_ceiling_seconds"] = (
+        discovery_max * REQUEST_TIMEOUT_SECONDS * WAYBACK_DISCOVERY_RETRIES
+        + content_max * REQUEST_TIMEOUT_SECONDS * CONTENT_RETRIES
+    )
+    per_episode["realistic_worst_case_runtime_seconds"] = (
+        discovery_max * 4 + content_max * 5
+    )
+    return {
+        "per_episode": per_episode,
+        "per_run": {
+            "targets": len(TARGETS),
+            "max_logical_requests": per_episode["max_logical_requests"] * len(TARGETS),
+            "realistic_worst_case_runtime_seconds": per_episode["realistic_worst_case_runtime_seconds"] * len(TARGETS),
+            "conservative_timeout_ceiling_seconds": per_episode["conservative_timeout_ceiling_seconds"] * len(TARGETS),
+        },
+    }
+
+
 def score_page_for_target(
     page_title: str,
     pub_date: str,
@@ -641,30 +822,41 @@ def score_page_for_target(
     Returns a dict with individual scores and overall verdict.
     """
     title_score = title_token_overlap(page_title, reference_title)
-    date_match = (pub_date == reference_date) if pub_date else None
+    canonical_story_id = _npr_story_id_from_url(canonical)
+    url_date = _extract_url_date(canonical)
+    date_value = pub_date or url_date
+    date_match = (date_value == reference_date) if date_value else None
     date_adjacent = (
-        abs((datetime.date.fromisoformat(pub_date)
+        abs((datetime.date.fromisoformat(date_value)
              - datetime.date.fromisoformat(reference_date)).days) <= 1
-        if pub_date else False
+        if date_value else False
     )
-    is_indicator = program_ctx.get("is_indicator", False)
+    has_story_id = bool(canonical_story_id)
+    has_indicator_branding = bool(program_ctx.get("has_indicator_branding"))
+    has_episode_context = has_indicator_branding or "/theindicator/" in (canonical or "").lower()
 
     verdict = "no_match"
-    if title_score >= TITLE_MATCH_THRESHOLD and is_indicator:
-        if date_match or date_adjacent:
-            verdict = "strong_match"
-        else:
-            verdict = "partial_match_no_date"
+    if title_score >= TITLE_MATCH_THRESHOLD and has_story_id and (date_match or date_adjacent) and has_episode_context:
+        verdict = "strong_match"
+    elif title_score >= TITLE_MATCH_THRESHOLD and has_story_id and (date_match or date_adjacent):
+        verdict = "title_date_story_id_no_episode_context"
+    elif title_score >= TITLE_MATCH_THRESHOLD and has_story_id:
+        verdict = "title_match_story_id_no_date"
     elif title_score >= TITLE_MATCH_THRESHOLD:
-        verdict = "title_match_not_indicator"
-    elif is_indicator and (date_match or date_adjacent):
-        verdict = "indicator_date_match_not_title"
+        verdict = "title_match_no_story_id"
+    elif has_story_id and (date_match or date_adjacent):
+        verdict = "story_id_date_match_not_title"
 
     return {
         "title_score": round(title_score, 3),
         "date_match": date_match,
         "date_adjacent": date_adjacent,
-        "is_indicator": is_indicator,
+        "date_source": "publication_date" if pub_date else ("canonical_url" if url_date else None),
+        "has_story_id": has_story_id,
+        "canonical_story_id": canonical_story_id,
+        "has_indicator_branding": has_indicator_branding,
+        "has_episode_context": has_episode_context,
+        "indicator_signals": program_ctx.get("indicator_signals", []),
         "verdict": verdict,
     }
 
@@ -674,8 +866,7 @@ def score_page_for_target(
 # ---------------------------------------------------------------------------
 
 
-def analyse_capture(archive_url: str, original_url: str, timestamp: str,
-                    reference_date: str, reference_title: str) -> dict:
+def analyse_capture(archive_url: str, original_url: str, timestamp: str, target: dict) -> dict:
     item = {
         "timestamp": timestamp,
         "original_url": original_url,
@@ -687,9 +878,20 @@ def analyse_capture(archive_url: str, original_url: str, timestamp: str,
         "program_context": None,
         "match_score": None,
         "story_id": None,
+        "story_evidence": None,
         "player_embeds": [],
         "audio_candidates": [],
         "numeric_ids": [],
+        "episode_qualified": False,
+        "trust_level": "untrusted",
+        "provenance": _provenance(
+            source_url=original_url,
+            source_capture_timestamp=timestamp,
+            target=target,
+            evidence_type="archive_capture",
+            trust_level="untrusted",
+            episode_qualified=False,
+        ),
     }
     try:
         resp = fetch_text(archive_url)
@@ -700,9 +902,30 @@ def analyse_capture(archive_url: str, original_url: str, timestamp: str,
         pub_date = extract_publication_date(page)
         canonical = extract_canonical_url(page)
         program_ctx = extract_program_context(page)
-        embeds = extract_player_embeds(page)
-        audio = extract_audio_urls(page)
-        num_ids = extract_numeric_ids(page)
+        story_url = canonical or original_url
+        item["match_score"] = score_page_for_target(
+            page_title,
+            pub_date,
+            story_url,
+            program_ctx,
+            target["reference_date"],
+            target["reference_title"],
+        )
+        qualified = item["match_score"]["verdict"] == "strong_match"
+        trust_level = "trusted" if qualified else "untrusted"
+        story_evidence = _make_story_evidence(story_url, target, timestamp, qualified)
+        embeds = [
+            _make_player_evidence(url, target, original_url, timestamp, qualified)
+            for url in extract_player_embeds(page)
+        ]
+        audio = [
+            _make_audio_evidence(url, target, original_url, timestamp, qualified)
+            for url in extract_audio_urls(page)
+        ]
+        num_ids = [
+            _make_numeric_evidence(value, target, original_url, timestamp, qualified)
+            for value in extract_numeric_ids(page)
+        ]
 
         item["page_title"] = page_title
         item["pub_date"] = pub_date
@@ -711,15 +934,12 @@ def analyse_capture(archive_url: str, original_url: str, timestamp: str,
         item["player_embeds"] = embeds
         item["audio_candidates"] = audio
         item["numeric_ids"] = num_ids
-
-        # Try to extract story ID from canonical/original URL
-        story_id = _npr_story_id_from_url(canonical) or _npr_story_id_from_url(original_url)
-        item["story_id"] = story_id
-
-        item["match_score"] = score_page_for_target(
-            page_title, pub_date, canonical, program_ctx,
-            reference_date, reference_title,
-        )
+        item["story_evidence"] = story_evidence
+        item["story_id"] = (story_evidence or {}).get("story_id")
+        item["episode_qualified"] = qualified
+        item["trust_level"] = trust_level
+        item["provenance"]["episode_qualified"] = qualified
+        item["provenance"]["trust_level"] = trust_level
 
     except Exception as exc:
         item["status"] = "error"
@@ -802,20 +1022,25 @@ def investigate_episode(target: dict) -> dict:
     reference_date = target["reference_date"]
     reference_title = target["reference_title"]
     slug_variants = target["slug_variants"]
-    section_paths = target["section_paths"]
     id_lower = target["id_lower_bound"]
     id_upper = target["id_upper_bound"]
 
     from_date, to_date = _cdx_date_window(reference_date)
+    budget = request_budget()["per_episode"]
 
     diag = {
         "method": "fresh-identity-discovery",
+        "placeholder": False,
+        "run_complete": True,
         "run_state": "run_complete",
+        "run_id": _run_id(),
+        "generated_at": _now_iso(),
         "reference_date": reference_date,
         "reference_title": reference_title,
         "reference_episode": target["reference_episode"],
-        "strategy": "cdx_date_window_plus_slug_variants_plus_sparse_numeric",
+        "strategy": "staged_cdx_funnel_identity_first",
         "date_window": {"from": from_date, "to": to_date},
+        "request_budget": budget,
         "id_bounds": {
             "lower": id_lower,
             "upper": id_upper,
@@ -823,6 +1048,7 @@ def investigate_episode(target: dict) -> dict:
             "upper_from_episode": target["id_upper_episode"],
             "advisory_only": True,
         },
+        "slug_filters_used": list(slug_variants),
         "cdx_queries": [],
         "slug_variant_probes": [],
         "date_window_captures": [],
@@ -830,6 +1056,8 @@ def investigate_episode(target: dict) -> dict:
         "identity_candidates": [],
         "confirmed_identity": None,
         "player_probes": [],
+        "trusted_audio_evidence": [],
+        "untrusted_audio_evidence": [],
         "audio_candidates_tested": [],
         "validated_audio": [],
         "final_classification": None,
@@ -838,26 +1066,29 @@ def investigate_episode(target: dict) -> dict:
         "counts": {
             "cdx_queries_issued": 0,
             "cdx_urls_returned": 0,
-            "slug_candidates_found": 0,
+            "candidate_urls_scored": 0,
             "captures_fetched": 0,
             "captures_failed": 0,
             "strong_matches": 0,
             "partial_matches": 0,
+            "player_pages_fetched": 0,
+            "player_pages_failed": 0,
             "audio_candidates_tested": 0,
             "audio_validated": 0,
+            "trusted_audio_candidates": 0,
+            "untrusted_audio_candidates": 0,
             "numeric_ids_probed": 0,
+            "logical_requests_issued": 0,
         },
     }
 
-    all_audio = []
-    all_player_urls = []
-    best_identity = None  # Will be set if a strong/partial match is confirmed
+    candidate_map = {}
+    best_identity = None
 
     # ------------------------------------------------------------------
-    # Step 1: CDX date-window queries for each section path
+    # Stage A/B: bounded date-window CDX queries + local scoring only
     # ------------------------------------------------------------------
-    for section_path in section_paths:
-        url_pattern = f"https://www.npr.org/{section_path}/*"
+    for url_pattern in stage_a_patterns(reference_date):
         cdx_entry = {
             "pattern": url_pattern,
             "from": from_date,
@@ -869,214 +1100,243 @@ def investigate_episode(target: dict) -> dict:
 
         rows = wayback_cdx_date_window(url_pattern, from_date, to_date, limit=CDX_DATE_WINDOW_LIMIT)
         diag["counts"]["cdx_queries_issued"] += 1
+        diag["counts"]["logical_requests_issued"] += 1
         diag["counts"]["cdx_urls_returned"] += len(rows)
         cdx_entry["rows_returned"] = len(rows)
 
-        # Score each CDX row by slug similarity — pick best candidates
         scored = []
         for row in rows:
             orig = row.get("original", "")
+            url_date = _extract_url_date(orig)
             score = score_url_for_target(orig, reference_title, slug_variants)
-            scored.append({"url": orig, "timestamp": row.get("timestamp"), "score": round(score, 3)})
+            if url_date == reference_date:
+                score = min(1.0, score + 0.2)
+            elif url_date and abs(
+                (datetime.date.fromisoformat(url_date) - datetime.date.fromisoformat(reference_date)).days
+            ) <= 1:
+                score = min(1.0, score + 0.1)
+            entry = {
+                "url": orig,
+                "timestamp": row.get("timestamp"),
+                "url_date": url_date,
+                "score": round(score, 3),
+            }
+            scored.append(entry)
+            prev = candidate_map.get(orig)
+            if prev is None or entry["score"] > prev["score"]:
+                candidate_map[orig] = entry
         scored.sort(key=lambda x: x["score"], reverse=True)
         cdx_entry["scored_candidates"] = scored[:20]  # top 20 for evidence
 
         diag["cdx_queries"].append(cdx_entry)
-        diag["counts"]["slug_candidates_found"] += len([s for s in scored if s["score"] >= SLUG_MATCH_THRESHOLD])
+        diag["counts"]["candidate_urls_scored"] += len(scored)
 
-        # Fetch promising captures (score >= threshold)
-        fetched_this_pattern = 0
-        for item in scored:
-            if fetched_this_pattern >= MAX_CAPTURES_PER_PATTERN:
-                break
-            if item["score"] < SLUG_MATCH_THRESHOLD:
-                break
-
-            ts = item["timestamp"]
-            orig = item["url"]
-            arch = f"https://web.archive.org/web/{ts}id_/{orig}"
-            cap = analyse_capture(arch, orig, ts, reference_date, reference_title)
-            cap["cdx_score"] = item["score"]
-            cap["source"] = "cdx_date_window"
-            diag["date_window_captures"].append(cap)
-            fetched_this_pattern += 1
-
-            if cap["status"] == "fetched":
-                diag["counts"]["captures_fetched"] += 1
-            else:
-                diag["counts"]["captures_failed"] += 1
-
-            all_audio.extend(cap.get("audio_candidates", []))
-            all_player_urls.extend(cap.get("player_embeds", []))
-
-            verdict = (cap.get("match_score") or {}).get("verdict", "")
-            if verdict == "strong_match":
-                diag["counts"]["strong_matches"] += 1
-                if best_identity is None:
-                    best_identity = cap
-            elif verdict in ("partial_match_no_date", "indicator_date_match_not_title", "title_match_not_indicator"):
-                diag["counts"]["partial_matches"] += 1
-                diag["identity_candidates"].append(cap)
+    ranked_candidates = sorted(candidate_map.values(), key=lambda x: x["score"], reverse=True)
+    fetch_queue = [item for item in ranked_candidates if item["score"] >= FETCH_SCORE_THRESHOLD][:MAX_FETCHED_CAPTURES]
+    if not fetch_queue and ranked_candidates:
+        fetch_queue = ranked_candidates[:1]
 
     # ------------------------------------------------------------------
-    # Step 2: Direct slug-variant CDX probes
-    # For each slug variant, try both section/theindicator and dated paths.
+    # Stage C: fetch only the highest-scoring candidate captures
     # ------------------------------------------------------------------
-    year, month, day = reference_date.split("-")
-    for sv in slug_variants:
-        for section in ["sections/theindicator", "sections/money/theindicator"]:
-            candidate_url = f"https://www.npr.org/{section}/{year}/{month}/{day}/{sv}"
-            rows = wayback_cdx_url_exact(candidate_url, limit=CDX_SLUG_LIMIT)
-            diag["counts"]["cdx_queries_issued"] += 1
-            entry = {
-                "slug_variant": sv,
-                "url_tried": candidate_url,
-                "rows_found": len(rows),
-                "captures": [],
-            }
-            for row in rows[:2]:
-                ts = row.get("timestamp", "")
-                orig = row.get("original", "")
-                if not ts or not orig:
-                    continue
-                arch = f"https://web.archive.org/web/{ts}id_/{orig}"
-                cap = analyse_capture(arch, orig, ts, reference_date, reference_title)
-                cap["source"] = "slug_variant_probe"
-                entry["captures"].append(cap)
-                diag["counts"]["captures_fetched" if cap["status"] == "fetched" else "captures_failed"] += 1
-                all_audio.extend(cap.get("audio_candidates", []))
-                all_player_urls.extend(cap.get("player_embeds", []))
-                verdict = (cap.get("match_score") or {}).get("verdict", "")
-                if verdict == "strong_match" and best_identity is None:
-                    best_identity = cap
-                elif verdict not in ("no_match",):
-                    diag["identity_candidates"].append(cap)
-            diag["slug_variant_probes"].append(entry)
+    for item in fetch_queue:
+        ts = item.get("timestamp")
+        orig = item.get("url")
+        if not ts or not orig:
+            continue
+        arch = f"https://web.archive.org/web/{ts}id_/{orig}"
+        diag["counts"]["logical_requests_issued"] += 1
+        cap = analyse_capture(arch, orig, ts, target)
+        cap["cdx_score"] = item["score"]
+        cap["source"] = "stage_c_capture_fetch"
+        diag["date_window_captures"].append(cap)
 
-    # ------------------------------------------------------------------
-    # Step 3: Sparse numeric ID probe (advisory)
-    # ------------------------------------------------------------------
-    numeric_results = sparse_numeric_probe(id_lower, id_upper, reference_date, reference_title)
-    diag["numeric_id_probes"] = numeric_results
-    diag["counts"]["numeric_ids_probed"] = sum(
-        len(r.get("captures", [])) for r in numeric_results
-    )
-    for nr in numeric_results:
-        for cap in nr.get("captures", []):
-            all_audio.extend(cap.get("audio_candidates", []))
-            all_player_urls.extend(cap.get("player_embeds", []))
-            verdict = (cap.get("match_score") or {}).get("verdict", "")
-            if verdict == "strong_match" and best_identity is None:
+        if cap["status"] == "fetched":
+            diag["counts"]["captures_fetched"] += 1
+        else:
+            diag["counts"]["captures_failed"] += 1
+
+        if cap.get("episode_qualified"):
+            diag["trusted_audio_evidence"].extend(cap.get("audio_candidates", []))
+        else:
+            diag["untrusted_audio_evidence"].extend(cap.get("audio_candidates", []))
+        verdict = (cap.get("match_score") or {}).get("verdict", "")
+        if verdict == "strong_match":
+            diag["counts"]["strong_matches"] += 1
+            if best_identity is None:
                 best_identity = cap
-                best_identity["source"] = "numeric_id_probe_advisory"
-            elif verdict not in ("no_match",):
-                cap["source"] = "numeric_id_probe_advisory"
-                diag["identity_candidates"].append(cap)
+        elif verdict != "no_match":
+            diag["counts"]["partial_matches"] += 1
+            diag["identity_candidates"].append(cap)
 
     # ------------------------------------------------------------------
-    # Step 4: Record confirmed identity (if found)
+    # Stage D: identity-gated player/audio probing
     # ------------------------------------------------------------------
     if best_identity:
         diag["confirmed_identity"] = {
             "source": best_identity.get("source"),
+            "trusted": True,
+            "episode_qualified": True,
             "archive_url": best_identity.get("archive_url"),
             "original_url": best_identity.get("original_url"),
             "page_title": best_identity.get("page_title"),
             "pub_date": best_identity.get("pub_date"),
             "canonical_url": best_identity.get("canonical_url"),
+            "story_evidence": best_identity.get("story_evidence"),
             "story_id": best_identity.get("story_id"),
             "player_embeds": best_identity.get("player_embeds", []),
             "program_context": best_identity.get("program_context"),
             "match_score": best_identity.get("match_score"),
-            "advisory_note": (
-                "Confirmed only if title + date + NPR story page evidence align. "
-                "Numeric ID estimates are advisory only and cannot confirm identity alone."
-            ),
+            "archive_capture_provenance": best_identity.get("provenance"),
+            "evidence_chain": {
+                "title_score": best_identity.get("match_score", {}).get("title_score"),
+                "date_source": best_identity.get("match_score", {}).get("date_source"),
+                "date_match": best_identity.get("match_score", {}).get("date_match"),
+                "story_id": best_identity.get("story_id"),
+                "player_embed_count": len(best_identity.get("player_embeds", [])),
+            },
         }
-        all_audio.extend(best_identity.get("audio_candidates", []))
-        all_player_urls.extend(best_identity.get("player_embeds", []))
+        trusted_audio = [
+            _clone_with_trust(audio, "trusted", True)
+            for audio in best_identity.get("audio_candidates", [])
+        ]
+        trusted_players = [
+            _clone_with_trust(player, "trusted", True)
+            for player in best_identity.get("player_embeds", [])
+        ]
+    else:
+        trusted_audio = []
+        trusted_players = []
 
-    # ------------------------------------------------------------------
-    # Step 5: Probe live and archived NPR player pages (only if identity found)
-    # ------------------------------------------------------------------
-    player_urls_to_probe = unique(all_player_urls)[:MAX_PLAYER_PAGES]
-    for pu in player_urls_to_probe:
-        pr = {"url": pu, "status": None}
+    diag["trusted_audio_evidence"].extend(trusted_audio)
+    diag["counts"]["trusted_audio_candidates"] = len(diag["trusted_audio_evidence"])
+    diag["counts"]["untrusted_audio_candidates"] = len(diag["untrusted_audio_evidence"])
+
+    for player_evidence in trusted_players[:MAX_PLAYER_PAGES]:
+        pu = player_evidence.get("player_url")
+        pr = {
+            "url": pu,
+            "status": None,
+            "source": "trusted_live_player",
+            "provenance": player_evidence.get("provenance"),
+        }
         try:
+            diag["counts"]["logical_requests_issued"] += 1
             resp = fetch_text(pu)
             page = resp["text"]
             pr["status"] = "fetched"
             pr["final_url"] = resp["final_url"]
-            pr["player_embeds"] = extract_player_embeds(page)
-            pr["audio_candidates"] = extract_audio_urls(page)
-            pr["numeric_ids"] = extract_numeric_ids(page)
-            all_audio.extend(pr["audio_candidates"])
+            pr["audio_candidates"] = []
+            for url in extract_audio_urls(page):
+                evidence = _make_audio_evidence(url, target, pu, None, True)
+                evidence["provenance"]["evidence_type"] = "audio_url_from_live_player"
+                pr["audio_candidates"].append(evidence)
+                diag["trusted_audio_evidence"].append(evidence)
+            diag["counts"]["player_pages_fetched"] += 1
         except Exception as exc:
             pr["status"] = "error"
             pr["error"] = str(exc)
+            diag["counts"]["player_pages_failed"] += 1
         diag["player_probes"].append(pr)
 
-    # Also probe Wayback for any discovered player URLs
-    for pu in player_urls_to_probe[:5]:
-        rows = wayback_cdx_url_exact(pu, limit=5)
-        for row in rows[:2]:
+    archived_player_fetches = 0
+    for player_evidence in trusted_players[:MAX_PLAYER_CDX_LOOKUPS]:
+        pu = player_evidence.get("player_url")
+        diag["counts"]["cdx_queries_issued"] += 1
+        diag["counts"]["logical_requests_issued"] += 1
+        rows = wayback_cdx_url_exact(pu, limit=CDX_EXACT_LIMIT)
+        for row in rows:
+            if archived_player_fetches >= MAX_ARCHIVED_PLAYER_FETCHES:
+                break
             ts = row.get("timestamp", "")
             orig = row.get("original", "")
             if not ts or not orig:
                 continue
             arch = f"https://web.archive.org/web/{ts}id_/{orig}"
-            cap = analyse_capture(arch, orig, ts, reference_date, reference_title)
-            cap["source"] = "wayback_player_probe"
-            diag["player_probes"].append(cap)
-            all_audio.extend(cap.get("audio_candidates", []))
+            probe_item = {
+                "url": pu,
+                "archive_url": arch,
+                "timestamp": ts,
+                "status": None,
+                "source": "trusted_archived_player",
+                "provenance": player_evidence.get("provenance"),
+                "audio_candidates": [],
+            }
+            try:
+                diag["counts"]["logical_requests_issued"] += 1
+                resp = fetch_text(arch)
+                probe_item["status"] = "fetched"
+                probe_item["final_url"] = resp["final_url"]
+                for url in extract_audio_urls(resp["text"]):
+                    evidence = _make_audio_evidence(url, target, pu, ts, True)
+                    evidence["provenance"]["evidence_type"] = "audio_url_from_archived_player"
+                    probe_item["audio_candidates"].append(evidence)
+                    diag["trusted_audio_evidence"].append(evidence)
+                diag["counts"]["player_pages_fetched"] += 1
+            except Exception as exc:
+                probe_item["status"] = "error"
+                probe_item["error"] = str(exc)
+                diag["counts"]["player_pages_failed"] += 1
+            diag["player_probes"].append(probe_item)
+            archived_player_fetches += 1
 
     # ------------------------------------------------------------------
-    # Step 6: Validate all discovered audio candidates
+    # Validate only trusted audio evidence descending from confirmed identity
     # ------------------------------------------------------------------
-    all_audio = unique(all_audio)
+    deduped_audio = []
+    seen_audio_urls = set()
+    for evidence in diag["trusted_audio_evidence"]:
+        url = evidence.get("audio_url")
+        if not url or url in seen_audio_urls:
+            continue
+        seen_audio_urls.add(url)
+        deduped_audio.append(evidence)
     tested = []
     validated = []
-    for candidate_url in all_audio[:MAX_AUDIO_CANDIDATES]:
-        check = validate_audio_candidate_live(candidate_url, reference_date)
+    for audio_evidence in deduped_audio[:MAX_AUDIO_CANDIDATES]:
+        diag["counts"]["logical_requests_issued"] += 1
+        check = validate_audio_evidence_live(audio_evidence, reference_date)
         tested.append(check)
-        if check.get("valid_npr_indicator_audio"):
+        if check.get("trusted_for_recovery"):
             validated.append(check)
 
     diag["audio_candidates_tested"] = tested
     diag["validated_audio"] = validated
+    diag["counts"]["trusted_audio_candidates"] = len(deduped_audio)
+    diag["counts"]["untrusted_audio_candidates"] = len(diag["untrusted_audio_evidence"])
     diag["counts"]["audio_candidates_tested"] = len(tested)
     diag["counts"]["audio_validated"] = len(validated)
 
     # ------------------------------------------------------------------
-    # Step 7: Final classification
+    # Final classification
     # ------------------------------------------------------------------
     diag["discovery_exhausted_for_window"] = True  # we probed all planned patterns
 
-    if validated:
+    if diag["confirmed_identity"] and validated:
         diag["final_classification"] = "recovered"
         diag["validation_summary"] = (
-            f"RECOVERED: {len(validated)} validated NPR Indicator audio "
-            f"file(s) confirmed for {reference_date}."
+            f"RECOVERED: verified identity plus {len(validated)} trusted NPR Indicator audio "
+            f"file(s) for {reference_date}."
         )
     elif best_identity:
         diag["final_classification"] = "identity_found_audio_unresolved"
         diag["validation_summary"] = (
-            f"Identity candidate found (verdict={best_identity.get('match_score', {}).get('verdict')}) "
-            f"but no validated NPR Indicator audio. "
+            f"Verified identity found (verdict={best_identity.get('match_score', {}).get('verdict')}) "
+            f"but no trusted validated NPR Indicator audio. "
             f"Tested {len(tested)} audio candidates."
         )
     elif diag["identity_candidates"]:
         diag["final_classification"] = "partial_identity_no_audio"
         diag["validation_summary"] = (
             f"Partial identity candidates found ({len(diag['identity_candidates'])}) "
-            f"but none confirmed (title+date+indicator). No audio validated."
+            f"but none satisfied the title+date+story-ID proof chain. No trusted audio validated."
         )
     else:
         diag["final_classification"] = "no_identity_found"
         diag["validation_summary"] = (
-            f"CDX date-window and slug probes exhausted. "
-            f"No NPR Indicator story page found for {reference_date} with title similarity >= {TITLE_MATCH_THRESHOLD}. "
-            f"Tested {len(tested)} audio candidates."
+            f"Bounded CDX discovery exhausted. "
+            f"No episode-qualified NPR story page found for {reference_date}. "
+            f"Trusted audio candidates tested: {len(tested)}."
         )
 
     return diag
@@ -1089,22 +1349,31 @@ def investigate_episode(target: dict) -> dict:
 
 def _placeholder_diag(target: dict) -> dict:
     return {
+        "placeholder": True,
+        "run_complete": False,
         "run_state": "placeholder",
+        "run_id": _run_id(),
+        "generated_at": _now_iso(),
         "reference_date": target["reference_date"],
         "reference_title": target["reference_title"],
+        "reference_episode": target["reference_episode"],
         "final_classification": None,
     }
 
 
 def _placeholder_summary(targets: list) -> dict:
     return {
+        "placeholder": True,
+        "run_complete": False,
         "run_state": "placeholder",
+        "run_id": _run_id(),
         "method": "fresh-identity-discovery",
         "generated_at": _now_iso(),
         "episodes": [
             {
                 "reference_date": t["reference_date"],
                 "reference_title": t["reference_title"],
+                "reference_episode": t["reference_episode"],
                 "final_classification": None,
             }
             for t in targets
@@ -1125,29 +1394,39 @@ def output_filename(reference_date: str) -> str:
     return f"fresh_identity_discovery_{reference_date}_diag.json"
 
 
+def _write_json(path: Path, payload: dict):
+    tmp_path = path.with_suffix(path.suffix + ".tmp")
+    with open(tmp_path, "w", encoding="utf-8") as fh:
+        json.dump(payload, fh, indent=2, ensure_ascii=False)
+    os.replace(tmp_path, path)
+
+
+def write_placeholders():
+    for target in TARGETS:
+        _write_json(BASE_DIR / output_filename(target["reference_date"]), _placeholder_diag(target))
+    _write_json(BASE_DIR / SUMMARY_OUTPUT, _placeholder_summary(TARGETS))
+
+
 # ---------------------------------------------------------------------------
 # Entry point
 # ---------------------------------------------------------------------------
 
 
-def run():
-    # Write placeholder files immediately so the workflow can always upload
-    for t in TARGETS:
-        path = BASE_DIR / output_filename(t["reference_date"])
-        if not path.exists():
-            with open(path, "w", encoding="utf-8") as fh:
-                json.dump(_placeholder_diag(t), fh, indent=2, ensure_ascii=False)
+def run(write_placeholders_only: bool = False):
+    write_placeholders()
+    if write_placeholders_only:
+        return _placeholder_summary(TARGETS)
 
-    summary_path = BASE_DIR / SUMMARY_OUTPUT
-    if not summary_path.exists():
-        with open(summary_path, "w", encoding="utf-8") as fh:
-            json.dump(_placeholder_summary(TARGETS), fh, indent=2, ensure_ascii=False)
-
+    episode_results = []
     summary = {
+        "placeholder": False,
+        "run_complete": True,
         "run_state": "run_complete",
+        "run_id": _run_id(),
         "method": "fresh-identity-discovery",
         "generated_at": _now_iso(),
         "targets_investigated": len(TARGETS),
+        "request_budget": request_budget(),
         "episodes": [],
         "counts": {
             "attempted": 0,
@@ -1171,9 +1450,14 @@ def run():
         except Exception as exc:
             print(f"  ERROR: {exc}")
             diag = {
+                "placeholder": False,
+                "run_complete": True,
                 "run_state": "failed",
+                "run_id": _run_id(),
+                "generated_at": _now_iso(),
                 "reference_date": ref_date,
                 "reference_title": ref_title,
+                "reference_episode": target["reference_episode"],
                 "error": str(exc),
                 "final_classification": "failed",
                 "validation_summary": f"Investigation failed: {exc}",
@@ -1184,12 +1468,7 @@ def run():
             if diag.get("final_classification") == "recovered":
                 summary["counts"]["recovered"] += 1
 
-        out_path = BASE_DIR / output_filename(ref_date)
-        with open(out_path, "w", encoding="utf-8") as fh:
-            json.dump(diag, fh, indent=2, ensure_ascii=False)
-        print(f"  → Written: {out_path.name}")
-        print(f"  → {diag.get('validation_summary') or diag.get('final_classification')}")
-
+        episode_results.append((ref_date, diag))
         summary["episodes"].append({
             "reference_date": ref_date,
             "reference_title": ref_title,
@@ -1198,11 +1477,24 @@ def run():
             "counts": diag.get("counts", {}),
         })
 
-    with open(summary_path, "w", encoding="utf-8") as fh:
-        json.dump(summary, fh, indent=2, ensure_ascii=False)
+    for ref_date, diag in episode_results:
+        out_path = BASE_DIR / output_filename(ref_date)
+        _write_json(out_path, diag)
+        print(f"  → Written: {out_path.name}")
+        print(f"  → {diag.get('validation_summary') or diag.get('final_classification')}")
+
+    summary_path = BASE_DIR / SUMMARY_OUTPUT
+    _write_json(summary_path, summary)
     print(f"\nSummary written: {summary_path.name}")
     return summary
 
 
 if __name__ == "__main__":
-    run()
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--write-placeholders-only",
+        action="store_true",
+        help="Overwrite all diagnostic outputs with placeholder sentinels and exit.",
+    )
+    args = parser.parse_args()
+    run(write_placeholders_only=args.write_placeholders_only)

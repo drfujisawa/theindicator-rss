@@ -165,47 +165,47 @@ class TestScorePageForTarget(unittest.TestCase):
             "Fed Accounts For All! : The Indicator from Planet Money",
             "2018-07-11",
             "https://www.npr.org/2018/07/11/628123456/fed-accounts-for-all",
-            {"is_indicator": True, "program_id": "510325"},
+            {"has_indicator_branding": True, "program_id": "510325"},
             "2018-07-11",
             "Fed Accounts For All!",
         )
         self.assertEqual(result["verdict"], "strong_match")
         self.assertTrue(result["date_match"])
-        self.assertTrue(result["is_indicator"])
+        self.assertTrue(result["has_story_id"])
+        self.assertTrue(result["has_episode_context"])
 
     def test_title_match_not_indicator_program(self):
         result = self._score(
             "Fed Accounts For All! : Planet Money",
             "2018-07-11",
             "https://www.npr.org/2018/07/11/628123456/fed-accounts-for-all",
-            {"is_indicator": False, "program_id": None},
+            {"has_indicator_branding": False, "program_id": None},
             "2018-07-11",
             "Fed Accounts For All!",
         )
-        self.assertEqual(result["verdict"], "title_match_not_indicator")
+        self.assertEqual(result["verdict"], "title_date_story_id_no_episode_context")
 
     def test_indicator_date_no_title(self):
         result = self._score(
             "Something Completely Unrelated : The Indicator",
             "2018-07-11",
             "https://www.npr.org/2018/07/11/628123456/something-else",
-            {"is_indicator": True},
+            {"has_indicator_branding": True},
             "2018-07-11",
             "Fed Accounts For All!",
         )
-        # title_score will be near 0 since "Unrelated Something" doesn't overlap "Fed Accounts"
-        self.assertIn(result["verdict"], ("no_match", "indicator_date_match_not_title"))
+        self.assertIn(result["verdict"], ("no_match", "story_id_date_match_not_title"))
 
     def test_wrong_date_no_match(self):
         result = self._score(
             "Fed Accounts For All! : The Indicator",
             "2020-10-13",  # wrong date — Life Kit year
             "https://www.npr.org/2020/10/13/922262686/life-kit-privacy",
-            {"is_indicator": True},
+            {"has_indicator_branding": True},
             "2018-07-11",
             "Fed Accounts For All!",
         )
-        self.assertIn(result["verdict"], ("partial_match_no_date", "no_match"))
+        self.assertIn(result["verdict"], ("title_match_story_id_no_date", "no_match"))
         self.assertFalse(result["date_match"])
 
     def test_adjacent_date_accepted(self):
@@ -213,7 +213,7 @@ class TestScorePageForTarget(unittest.TestCase):
             "Fed Accounts For All! : The Indicator",
             "2018-07-10",   # 1 day before — adjacent
             "https://www.npr.org/2018/07/10/628000000/fed-accounts-for-all",
-            {"is_indicator": True},
+            {"has_indicator_branding": True},
             "2018-07-11",
             "Fed Accounts For All!",
         )
@@ -224,7 +224,7 @@ class TestScorePageForTarget(unittest.TestCase):
             "Fed Accounts For All! : The Indicator",
             "",   # no date extracted
             "https://www.npr.org/something",
-            {"is_indicator": True},
+            {"has_indicator_branding": True},
             "2018-07-11",
             "Fed Accounts For All!",
         )
@@ -248,7 +248,7 @@ class TestKeywordOverlapRejection(unittest.TestCase):
             "Fed Makes Accounts Change: ATC Explains",
             "2018-07-11",
             "https://www.npr.org/2018/07/11/628000000/fed-accounts-atc",
-            {"is_indicator": False, "program_id": "2"},   # ATC program ID
+            {"has_indicator_branding": False, "program_id": "2"},   # ATC program ID
             "2018-07-11",
             "Fed Accounts For All!",
         )
@@ -260,7 +260,7 @@ class TestKeywordOverlapRejection(unittest.TestCase):
             "Indian Supreme Court Declares Privacy Fundamental Right",
             "2017-08-24",
             "https://www.npr.org/sections/thetwo-way/2017/08/24/545963181/indian-privacy",
-            {"is_indicator": False, "program_id": None},
+            {"has_indicator_branding": False, "program_id": None},
             "2018-08-10",
             "Privacy Please: Why Public Companies Go Private (Or Vice Versa)",
         )
@@ -273,7 +273,7 @@ class TestKeywordOverlapRejection(unittest.TestCase):
             "OPEC Decides Not To Increase Oil Production : Saudi Arabia",
             "2011-06-08",   # 7 years before the target
             "https://www.npr.org/2011/06/08/137065443/opec-saudi-oil",
-            {"is_indicator": False, "program_id": "2"},
+            {"has_indicator_branding": False, "program_id": "2"},
             "2018-09-24",
             "Saudi Arabia & The Paradox of Plenty",
         )
@@ -337,12 +337,12 @@ class TestNumericIdBoundsAdvisory(unittest.TestCase):
 
 class TestConfirmedIdentityContract(unittest.TestCase):
     def test_strong_match_verdict_requires_all_three(self):
-        # title_score >= 0.5, is_indicator True, date_match True → strong_match
+        # title score + date + story ID + episode context are all required
         r = probe.score_page_for_target(
             "Fed Accounts For All! The Indicator",
             "2018-07-11",
             "https://www.npr.org/2018/07/11/628000000/fed-accounts-for-all",
-            {"is_indicator": True},
+            {"has_indicator_branding": True},
             "2018-07-11",
             "Fed Accounts For All!",
         )
@@ -353,7 +353,7 @@ class TestConfirmedIdentityContract(unittest.TestCase):
             "Fed Accounts For All!",
             "2018-07-11",
             "https://www.npr.org/2018/07/11/628000000/something",
-            {"is_indicator": False},
+            {"has_indicator_branding": False},
             "2018-07-11",
             "Fed Accounts For All!",
         )
@@ -364,7 +364,7 @@ class TestConfirmedIdentityContract(unittest.TestCase):
             "Fed Accounts For All! The Indicator",
             "",   # no date
             "https://www.npr.org/something",
-            {"is_indicator": True},
+            {"has_indicator_branding": True},
             "2018-07-11",
             "Fed Accounts For All!",
         )
@@ -375,7 +375,7 @@ class TestConfirmedIdentityContract(unittest.TestCase):
             "Random Topic Unrelated Story : The Indicator",
             "2018-07-11",
             "https://www.npr.org/2018/07/11/628000000/random",
-            {"is_indicator": True},
+            {"has_indicator_branding": True},
             "2018-07-11",
             "Fed Accounts For All!",
         )
@@ -536,14 +536,14 @@ class TestCdxLimits(unittest.TestCase):
         # Must be small enough to avoid huge Wayback requests
         self.assertLessEqual(probe.CDX_DATE_WINDOW_LIMIT, 200)
 
-    def test_slug_limit_not_excessive(self):
-        self.assertLessEqual(probe.CDX_SLUG_LIMIT, 50)
+    def test_stage_a_query_count_bounded(self):
+        self.assertLessEqual(probe.MAX_STAGE_A_CDX_QUERIES, 6)
 
-    def test_max_captures_per_pattern_small(self):
-        self.assertLessEqual(probe.MAX_CAPTURES_PER_PATTERN, 10)
+    def test_max_capture_fetches_small(self):
+        self.assertLessEqual(probe.MAX_FETCHED_CAPTURES, 6)
 
     def test_max_audio_candidates_bounded(self):
-        self.assertLessEqual(probe.MAX_AUDIO_CANDIDATES, 60)
+        self.assertLessEqual(probe.MAX_AUDIO_CANDIDATES, 10)
 
 
 # ---------------------------------------------------------------------------
@@ -614,17 +614,18 @@ class TestExtractProgramContext(unittest.TestCase):
     def test_program_id_510325_detected(self):
         ctx = probe.extract_program_context("p=510325&story=628123456")
         self.assertEqual(ctx["program_id"], "510325")
-        self.assertTrue(ctx["is_indicator"])
+        self.assertIn("program_id_510325", ctx["indicator_signals"])
+        self.assertFalse(ctx["has_indicator_branding"])
 
     def test_indicator_in_show_name(self):
         ctx = probe.extract_program_context(
             'showTitle: "The Indicator from Planet Money"'
         )
-        self.assertTrue(ctx["is_indicator"])
+        self.assertTrue(ctx["has_indicator_branding"])
 
     def test_no_indicator_context(self):
         ctx = probe.extract_program_context("p=2&story=129451895&program=ATC")
-        self.assertFalse(ctx["is_indicator"])
+        self.assertFalse(ctx["has_indicator_branding"])
         self.assertIsNone(ctx["program_id"])
 
 
@@ -741,11 +742,15 @@ class TestPlaceholderStructure(unittest.TestCase):
     def test_placeholder_has_run_state(self):
         t = probe.TARGETS[0]
         ph = probe._placeholder_diag(t)
+        self.assertTrue(ph["placeholder"])
+        self.assertFalse(ph["run_complete"])
         self.assertEqual(ph["run_state"], "placeholder")
         self.assertIsNone(ph["final_classification"])
 
     def test_placeholder_summary_run_state(self):
         ph = probe._placeholder_summary(probe.TARGETS)
+        self.assertTrue(ph["placeholder"])
+        self.assertFalse(ph["run_complete"])
         self.assertEqual(ph["run_state"], "placeholder")
         self.assertEqual(len(ph["episodes"]), len(probe.TARGETS))
 
@@ -824,6 +829,48 @@ class TestRunStateFields(unittest.TestCase):
         src = inspect.getsource(probe.run)
         for key in ("attempted", "completed", "failed", "skipped", "recovered"):
             self.assertIn(key, src)
+
+
+class TestRequestBudget(unittest.TestCase):
+    def test_budget_has_bounded_requests(self):
+        budget = probe.request_budget()
+        self.assertLessEqual(budget["per_episode"]["max_logical_requests"], 20)
+        self.assertLessEqual(budget["per_run"]["max_logical_requests"], 60)
+
+    def test_stage_a_patterns_are_date_based(self):
+        patterns = probe.stage_a_patterns("2018-07-11")
+        self.assertLessEqual(len(patterns), probe.MAX_STAGE_A_CDX_QUERIES)
+        self.assertTrue(any("/2018/07/11/" in pattern for pattern in patterns))
+
+
+class TestTrustedAudioContract(unittest.TestCase):
+    def test_validated_audio_requires_trusted_provenance(self):
+        audio_evidence = {
+            "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/file.mp3",
+            "audio_id": "20180711",
+            "provenance": {
+                "source_url": "https://www.npr.org/story",
+                "source_capture_timestamp": "20180711120000",
+                "episode_qualified": False,
+                "target_episode": "2018-07-11",
+                "target_title": "Fed Accounts For All!",
+                "evidence_type": "audio_url",
+                "trust_level": "untrusted",
+            },
+        }
+
+        original = probe.validate_audio_candidate_live
+        try:
+            probe.validate_audio_candidate_live = lambda url, reference_date: {
+                "candidate_url": url,
+                "validation_status": "validated",
+                "valid_npr_indicator_audio": True,
+            }
+            result = probe.validate_audio_evidence_live(audio_evidence, "2018-07-11")
+        finally:
+            probe.validate_audio_candidate_live = original
+
+        self.assertFalse(result["trusted_for_recovery"])
 
 
 if __name__ == "__main__":
