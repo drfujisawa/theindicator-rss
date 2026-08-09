@@ -1,0 +1,32 @@
+name: Resolve NPR Story Identity Strictly
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  resolve-npr-identity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Resolve correct NPR story identities
+        run: python resolve_npr_story_identity_strict.py
+
+      - name: Save strict NPR identity report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add indicator_npr_story_identity_strict.json
+          git diff --cached --quiet || git commit -m "Strictly resolve NPR story identities"
+          git push
