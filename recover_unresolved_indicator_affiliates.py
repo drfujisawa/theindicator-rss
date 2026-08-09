@@ -2,6 +2,7 @@
 
 import html
 import json
+import os
 import re
 import time
 import xml.etree.ElementTree as ET
@@ -12,26 +13,39 @@ from urllib.request import Request, urlopen
 
 
 STRICT_REVIEW_FILE = "indicator_unresolved_strict_review.json"
-WEB_DISCOVERY_FILE = "indicator_unresolved_web_discovery.json"
 
-OUTPUT_FILE = "indicator_unresolved_affiliate_recovery.json"
+START_INDEX = int(
+    os.environ.get(
+        "START_INDEX",
+        "0"
+    )
+)
+
+BATCH_SIZE = int(
+    os.environ.get(
+        "BATCH_SIZE",
+        "10"
+    )
+)
+
+OUTPUT_FILE = (
+    "indicator_unresolved_affiliate_recovery_"
+    f"{START_INDEX:02d}_"
+    f"{START_INDEX + BATCH_SIZE - 1:02d}.json"
+)
 
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 "
-        "(compatible; IndicatorAffiliateRecovery/1.0)"
+        "(compatible; IndicatorAffiliateRecovery/2.0)"
     )
 }
 
-TIMEOUT = 30
-RETRIES = 3
-SEARCH_DELAY = 1.0
+TIMEOUT = 25
+RETRIES = 2
+SEARCH_DELAY = 0.6
 
 
-#
-# Public-radio / NPR-affiliate domains we have
-# encountered or that are useful for this recovery.
-#
 AFFILIATE_DOMAINS = [
     "wbur.org",
     "wypr.org",
@@ -59,7 +73,11 @@ AFFILIATE_DOMAINS = [
 ]
 
 
-def fetch(url, max_bytes=3000000, range_request=False):
+def fetch(
+    url,
+    max_bytes=2500000,
+    range_request=False
+):
 
     headers = dict(HEADERS)
 
@@ -68,7 +86,10 @@ def fetch(url, max_bytes=3000000, range_request=False):
 
     last_error = None
 
-    for attempt in range(1, RETRIES + 1):
+    for attempt in range(
+        1,
+        RETRIES + 1
+    ):
 
         try:
 
@@ -115,7 +136,7 @@ def fetch(url, max_bytes=3000000, range_request=False):
 
             if attempt < RETRIES:
                 time.sleep(
-                    attempt * 2
+                    attempt * 1.5
                 )
 
     raise last_error
@@ -123,7 +144,9 @@ def fetch(url, max_bytes=3000000, range_request=False):
 
 def fetch_text(url):
 
-    response = fetch(url)
+    response = fetch(
+        url
+    )
 
     response["text"] = (
         response["data"]
@@ -196,21 +219,35 @@ def unique(values):
 
     for value in values:
 
-        if value and value not in output:
-            output.append(value)
+        if (
+            value
+            and value not in output
+        ):
+            output.append(
+                value
+            )
 
     return output
 
 
 def extract_metadata(page):
 
-    page = html.unescape(page)
+    page = html.unescape(
+        page
+    )
 
     result = {
-        "html_title": None,
-        "og_title": None,
-        "canonical": None,
-        "dates": [],
+        "html_title":
+            None,
+
+        "og_title":
+            None,
+
+        "canonical":
+            None,
+
+        "dates":
+            [],
     }
 
 
@@ -222,7 +259,9 @@ def extract_metadata(page):
 
     if match:
 
-        result["html_title"] = re.sub(
+        result[
+            "html_title"
+        ] = re.sub(
             r"\s+",
             " ",
             match.group(1)
@@ -257,8 +296,13 @@ def extract_metadata(page):
             re.I
         )
 
-        if match and not result[key]:
-            result[key] = match.group(1)
+        if (
+            match
+            and not result[key]
+        ):
+            result[
+                key
+            ] = match.group(1)
 
 
     date_patterns = [
@@ -283,13 +327,20 @@ def extract_metadata(page):
             )
 
             if match:
-                result["dates"].append(
+
+                result[
+                    "dates"
+                ].append(
                     match.group(1)
                 )
 
 
-    result["dates"] = unique(
-        result["dates"]
+    result[
+        "dates"
+    ] = unique(
+        result[
+            "dates"
+        ]
     )
 
     return result
@@ -298,8 +349,13 @@ def extract_metadata(page):
 def extract_npr_story_urls(page):
 
     page = (
-        html.unescape(page)
-        .replace("\\/", "/")
+        html.unescape(
+            page
+        )
+        .replace(
+            "\\/",
+            "/"
+        )
     )
 
     urls = re.findall(
@@ -309,14 +365,21 @@ def extract_npr_story_urls(page):
         re.I
     )
 
-    return unique(urls)
+    return unique(
+        urls
+    )
 
 
 def extract_player_embeds(page):
 
     page = (
-        html.unescape(page)
-        .replace("\\/", "/")
+        html.unescape(
+            page
+        )
+        .replace(
+            "\\/",
+            "/"
+        )
     )
 
     values = re.findall(
@@ -330,23 +393,37 @@ def extract_player_embeds(page):
 
     for value in values:
 
-        if value.startswith("/"):
+        if value.startswith(
+            "/"
+        ):
             value = (
                 "https://www.npr.org"
                 + value
             )
 
-        output.append(value)
+        output.append(
+            value
+        )
 
-    return unique(output)
+    return unique(
+        output
+    )
 
 
 def extract_audio_urls(page):
 
     page = (
-        html.unescape(page)
-        .replace("\\/", "/")
-        .replace("\\u0026", "&")
+        html.unescape(
+            page
+        )
+        .replace(
+            "\\/",
+            "/"
+        )
+        .replace(
+            "\\u0026",
+            "&"
+        )
     )
 
     patterns = [
@@ -375,10 +452,14 @@ def extract_audio_urls(page):
             )
         )
 
-    return unique(found)
+    return unique(
+        found
+    )
 
 
-def validate_npr_indicator_audio(url):
+def validate_npr_indicator_audio(
+    url
+):
 
     try:
 
@@ -443,7 +524,6 @@ def validate_npr_indicator_audio(url):
                 valid,
         }
 
-
     except Exception as exc:
 
         return {
@@ -479,17 +559,27 @@ def score_affiliate_page(
     best_title = None
 
 
-    for candidate in candidate_titles:
+    for candidate in (
+        candidate_titles
+    ):
 
         value = similarity(
             expected_title,
             candidate
         )
 
-        if value > best_similarity:
+        if (
+            value
+            > best_similarity
+        ):
 
-            best_similarity = value
-            best_title = candidate
+            best_similarity = (
+                value
+            )
+
+            best_title = (
+                candidate
+            )
 
 
     date_match = (
@@ -512,21 +602,18 @@ def score_affiliate_page(
     )
 
 
-    #
-    # Some affiliates may not expose a machine-readable
-    # publication date. Require a very strong title match
-    # in that situation.
-    #
     qualified = (
         (
-            best_similarity >= 0.75
+            best_similarity
+            >= 0.75
             and (
                 date_match
                 or url_date_match
             )
         )
         or (
-            best_similarity >= 0.92
+            best_similarity
+            >= 0.92
         )
     )
 
@@ -535,16 +622,24 @@ def score_affiliate_page(
     reasons = []
 
 
-    if best_similarity >= 0.92:
+    if (
+        best_similarity
+        >= 0.92
+    ):
 
         score += 8
+
         reasons.append(
             "near_exact_title"
         )
 
-    elif best_similarity >= 0.75:
+    elif (
+        best_similarity
+        >= 0.75
+    ):
 
         score += 5
+
         reasons.append(
             "strong_title_match"
         )
@@ -553,6 +648,7 @@ def score_affiliate_page(
     if date_match:
 
         score += 5
+
         reasons.append(
             "exact_date"
         )
@@ -560,6 +656,7 @@ def score_affiliate_page(
     elif url_date_match:
 
         score += 3
+
         reasons.append(
             "date_in_url"
         )
@@ -573,9 +670,13 @@ def score_affiliate_page(
     )
 
 
-    if "npr.org" in canonical.lower():
+    if (
+        "npr.org"
+        in canonical.lower()
+    ):
 
         score += 4
+
         reasons.append(
             "canonical_points_to_npr"
         )
@@ -618,7 +719,9 @@ def bing_search(query):
     url = (
         "https://www.bing.com/search"
         "?format=rss&q="
-        + quote(query)
+        + quote(
+            query
+        )
     )
 
     report = {
@@ -635,25 +738,35 @@ def bing_search(query):
 
     try:
 
-        response = fetch_text(url)
+        response = fetch_text(
+            url
+        )
 
-        root = ET.fromstring(
-            response[
-                "text"
-            ]
+        root = (
+            ET.fromstring(
+                response[
+                    "text"
+                ]
+            )
         )
 
 
-        for item in root.findall(
-            ".//item"
+        for item in (
+            root.findall(
+                ".//item"
+            )
         ):
 
-            link = item.findtext(
-                "link"
+            link = (
+                item.findtext(
+                    "link"
+                )
             )
 
-            title = item.findtext(
-                "title"
+            title = (
+                item.findtext(
+                    "title"
+                )
             )
 
             description = (
@@ -698,24 +811,18 @@ def bing_search(query):
     return report
 
 
-#
-# Load the clean 52-record review.
-#
-
 with open(
     STRICT_REVIEW_FILE,
     "r",
     encoding="utf-8"
 ) as file:
 
-    strict = json.load(file)
+    strict = json.load(
+        file
+    )
 
 
-#
-# We want the 50 non-duplicate records.
-#
-
-targets = [
+all_targets = [
     item
     for item in strict.get(
         "results",
@@ -723,13 +830,52 @@ targets = [
     )
     if item.get(
         "strict_status"
-    ) != (
+    )
+    != (
         "possible_duplicate_or_rebroadcast"
     )
 ]
 
 
+targets = all_targets[
+    START_INDEX:
+    START_INDEX
+    + BATCH_SIZE
+]
+
+
 results = []
+
+
+print()
+print(
+    "================================"
+)
+
+print(
+    "AFFILIATE RECOVERY BATCH"
+)
+
+print(
+    "Start index:",
+    START_INDEX
+)
+
+print(
+    "Batch size:",
+    BATCH_SIZE
+)
+
+print(
+    "Actual targets:",
+    len(
+        targets
+    )
+)
+
+print(
+    "================================"
+)
 
 
 for number, target in enumerate(
@@ -762,14 +908,8 @@ for number, target in enumerate(
 
 
     search_reports = []
-
     candidate_urls = []
 
-
-    #
-    # First search exact title broadly with public-radio
-    # terminology.
-    #
 
     broad_queries = [
         f'"{title}" NPR public radio',
@@ -777,10 +917,14 @@ for number, target in enumerate(
     ]
 
 
-    for query in broad_queries:
+    for query in (
+        broad_queries
+    ):
 
-        report = bing_search(
-            query
+        report = (
+            bing_search(
+                query
+            )
         )
 
         search_reports.append(
@@ -788,16 +932,22 @@ for number, target in enumerate(
         )
 
 
-        for result in report.get(
-            "results",
-            []
+        for result in (
+            report.get(
+                "results",
+                []
+            )
         ):
 
-            candidate_urls.append(
-                result.get(
-                    "url"
-                )
+            url = result.get(
+                "url"
             )
+
+            if url:
+
+                candidate_urls.append(
+                    url
+                )
 
 
         time.sleep(
@@ -805,33 +955,31 @@ for number, target in enumerate(
         )
 
 
-    #
-    # Then do targeted affiliate-domain searches.
-    #
-    # Split into groups so we do not perform 20+
-    # searches per episode.
-    #
-
     domain_groups = [
         AFFILIATE_DOMAINS[
-            0:7
+            0:8
         ],
 
         AFFILIATE_DOMAINS[
-            7:14
+            8:16
         ],
 
         AFFILIATE_DOMAINS[
-            14:
+            16:
         ],
     ]
 
 
-    for group in domain_groups:
+    for group in (
+        domain_groups
+    ):
 
-        domain_query = " OR ".join(
-            f"site:{domain}"
-            for domain in group
+        domain_query = (
+            " OR ".join(
+                f"site:{domain}"
+                for domain
+                in group
+            )
         )
 
         query = (
@@ -840,8 +988,10 @@ for number, target in enumerate(
         )
 
 
-        report = bing_search(
-            query
+        report = (
+            bing_search(
+                query
+            )
         )
 
         search_reports.append(
@@ -856,21 +1006,23 @@ for number, target in enumerate(
             )
         ):
 
-            candidate_urls.append(
+            url = (
                 search_result.get(
                     "url"
                 )
             )
+
+            if url:
+
+                candidate_urls.append(
+                    url
+                )
 
 
         time.sleep(
             SEARCH_DELAY
         )
 
-
-    #
-    # Include any pages we already knew.
-    #
 
     candidate_urls.extend(
         target.get(
@@ -880,26 +1032,26 @@ for number, target in enumerate(
     )
 
 
-    candidate_urls = unique(
-        value
-        for value in candidate_urls
-        if value
+    candidate_urls = (
+        unique(
+            value
+            for value
+            in candidate_urls
+            if value
+        )
     )
 
 
     page_reports = []
-
     qualified_pages = []
 
     all_npr_story_urls = []
-
     all_player_embeds = []
-
     all_audio_candidates = []
 
 
     for page_url in (
-        candidate_urls[:30]
+        candidate_urls[:24]
     ):
 
         report = {
@@ -937,13 +1089,15 @@ for number, target in enumerate(
             )
 
 
-            scoring = score_affiliate_page(
-                title,
-                date,
-                metadata,
-                page[
-                    "final_url"
-                ]
+            scoring = (
+                score_affiliate_page(
+                    title,
+                    date,
+                    metadata,
+                    page[
+                        "final_url"
+                    ]
+                )
             )
 
 
@@ -1056,16 +1210,22 @@ for number, target in enumerate(
     )
 
 
-    all_npr_story_urls = unique(
-        all_npr_story_urls
+    all_npr_story_urls = (
+        unique(
+            all_npr_story_urls
+        )
     )
 
-    all_player_embeds = unique(
-        all_player_embeds
+    all_player_embeds = (
+        unique(
+            all_player_embeds
+        )
     )
 
-    all_audio_candidates = unique(
-        all_audio_candidates
+    all_audio_candidates = (
+        unique(
+            all_audio_candidates
+        )
     )
 
 
@@ -1092,19 +1252,18 @@ for number, target in enumerate(
             )
 
 
-    #
-    # Deduplicate final NPR audio.
-    #
-
     deduped_audio = []
-
     seen_audio = set()
 
 
-    for audio in validated_audio:
+    for audio in (
+        validated_audio
+    ):
 
-        final_url = audio.get(
-            "final_url"
+        final_url = (
+            audio.get(
+                "final_url"
+            )
         )
 
 
@@ -1122,10 +1281,6 @@ for number, target in enumerate(
                 audio
             )
 
-
-    #
-    # Classification.
-    #
 
     if deduped_audio:
 
@@ -1163,6 +1318,11 @@ for number, target in enumerate(
 
 
     result = {
+        "global_index":
+            START_INDEX
+            + number
+            - 1,
+
         "date":
             date,
 
@@ -1181,9 +1341,6 @@ for number, target in enumerate(
 
         "status":
             status,
-
-        "search_reports":
-            search_reports,
 
         "candidate_page_count":
             len(
@@ -1206,6 +1363,9 @@ for number, target in enumerate(
 
         "validated_npr_audio":
             deduped_audio,
+
+        "search_reports":
+            search_reports,
 
         "page_reports":
             page_reports,
@@ -1261,10 +1421,18 @@ for item in results:
 
 report = {
     "method":
-        "strict-affiliate-first-recovery-of-unresolved-indicator-episodes",
+        "strict-affiliate-first-recovery-batched",
+
+    "start_index":
+        START_INDEX,
+
+    "batch_size_requested":
+        BATCH_SIZE,
 
     "input_count":
-        len(results),
+        len(
+            results
+        ),
 
     "summary":
         summary,
@@ -1294,13 +1462,21 @@ print(
 )
 
 print(
-    "AFFILIATE RECOVERY COMPLETE"
+    "AFFILIATE RECOVERY BATCH COMPLETE"
 )
 
 print(
-    "Input:",
-    len(results)
+    "Output:",
+    OUTPUT_FILE
 )
+
+print(
+    "Input count:",
+    len(
+        results
+    )
+)
+
 
 for key, value in sorted(
     summary.items()
@@ -1311,10 +1487,6 @@ for key, value in sorted(
         value
     )
 
-print(
-    "Saved:",
-    OUTPUT_FILE
-)
 
 print(
     "================================"
