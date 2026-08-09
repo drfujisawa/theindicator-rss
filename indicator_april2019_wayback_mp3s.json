@@ -1,0 +1,103 @@
+{
+  "method": "wayback-enumerate-april-2019-indicator-mp3s",
+  "target_date": "2019-04-22",
+  "cdx_status": "fetched",
+  "total_archived_urls": 5,
+  "nearby_count": 4,
+  "keyword_match_count": 0,
+  "top_candidates": [
+    {
+      "timestamp": "20220928094047",
+      "original": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/04/20190423_indicator_ft_live_panel_full.mp3",
+      "filename": "20190423_indicator_ft_live_panel_full.mp3",
+      "file_date": "2019-04-23",
+      "day_distance": 1,
+      "keyword_hits": [],
+      "score": 15,
+      "mimetype": "audio/mpeg"
+    },
+    {
+      "timestamp": "20220928094118",
+      "original": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/04/20190423_indicator_ft_live_panel_full.mp3?d=1674&size=26727198&e=716413259&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "filename": "20190423_indicator_ft_live_panel_full.mp3",
+      "file_date": "2019-04-23",
+      "day_distance": 1,
+      "keyword_hits": [],
+      "score": 15,
+      "mimetype": "audio/mpeg"
+    },
+    {
+      "timestamp": "20250516214107",
+      "original": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/04/20190423_indicator_ft_live_panel_full.mp3?d=1674&size=26727198&e=716413259",
+      "filename": "20190423_indicator_ft_live_panel_full.mp3",
+      "file_date": "2019-04-23",
+      "day_distance": 1,
+      "keyword_hits": [],
+      "score": 15,
+      "mimetype": "audio/mpeg"
+    },
+    {
+      "timestamp": "20190428164409",
+      "original": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/04/20190423_indicator_ft_live_panel_full.mp3?orgId=1&d=1674&story=716413259&ft=rss",
+      "filename": "20190423_indicator_ft_live_panel_full.mp3",
+      "file_date": "2019-04-23",
+      "day_distance": 1,
+      "keyword_hits": [],
+      "score": 15,
+      "mimetype": "audio/mpeg"
+    },
+    {
+      "timestamp": "20190501215615",
+      "original": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/04/20190430_indicator_043019_shelf_wars_final.mp3?orgId=1&d=599&story=718711109&t=podcast&e=718711109&ft=rss",
+      "filename": "20190430_indicator_043019_shelf_wars_final.mp3",
+      "file_date": "2019-04-30",
+      "day_distance": 8,
+      "keyword_hits": [],
+      "score": 0,
+      "mimetype": "audio/mpeg"
+    }
+  ],
+  "nearby": [
+    {
+      "timestamp": "20220928094047",
+      "original": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/04/20190423_indicator_ft_live_panel_full.mp3",
+      "filename": "20190423_indicator_ft_live_panel_full.mp3",
+      "file_date": "2019-04-23",
+      "day_distance": 1,
+      "keyword_hits": [],
+      "score": 15,
+      "mimetype": "audio/mpeg"
+    },
+    {
+      "timestamp": "20220928094118",
+      "original": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/04/20190423_indicator_ft_live_panel_full.mp3?d=1674&size=26727198&e=716413259&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "filename": "20190423_indicator_ft_live_panel_full.mp3",
+      "file_date": "2019-04-23",
+      "day_distance": 1,
+      "keyword_hits": [],
+      "score": 15,
+      "mimetype": "audio/mpeg"
+    },
+    {
+      "timestamp": "20250516214107",
+      "original": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/04/20190423_indicator_ft_live_panel_full.mp3?d=1674&size=26727198&e=716413259",
+      "filename": "20190423_indicator_ft_live_panel_full.mp3",
+      "file_date": "2019-04-23",
+      "day_distance": 1,
+      "keyword_hits": [],
+      "score": 15,
+      "mimetype": "audio/mpeg"
+    },
+    {
+      "timestamp": "20190428164409",
+      "original": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/04/20190423_indicator_ft_live_panel_full.mp3?orgId=1&d=1674&story=716413259&ft=rss",
+      "filename": "20190423_indicator_ft_live_panel_full.mp3",
+      "file_date": "2019-04-23",
+      "day_distance": 1,
+      "keyword_hits": [],
+      "score": 15,
+      "mimetype": "audio/mpeg"
+    }
+  ],
+  "keyword_matches": []
+}
