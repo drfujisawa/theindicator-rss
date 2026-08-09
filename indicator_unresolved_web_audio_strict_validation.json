@@ -1,0 +1,418 @@
+{
+  "method": "strict-validation-of-web-discovered-indicator-audio",
+  "input_candidate_count": 13,
+  "summary": {
+    "confirmed_npr_episode_audio": 0,
+    "suspicious_audio_candidate": 0,
+    "rejected_audio_candidate": 13
+  },
+  "results": [
+    {
+      "date": "2018-03-15",
+      "title": "Buying A College Degree: Did Aunt Becky Overpay?",
+      "status": "rejected_audio_candidate",
+      "reasons": [
+        "no_validated_npr_indicator_mp3"
+      ],
+      "npr_indicator_audio": [],
+      "non_npr_audio": [
+        {
+          "candidate_url": "https://static.xx.fbcdn.net/rsrc.php/yI/r/bg9JBgZmoaC.mp3",
+          "status_code": 206,
+          "final_url": "https://static.xx.fbcdn.net/rsrc.php/yI/r/bg9JBgZmoaC.mp3",
+          "content_type": "audio/mpeg",
+          "sample_size": 3148,
+          "is_audio": true
+        },
+        {
+          "candidate_url": "https://static.xx.fbcdn.net/rsrc.php/yf/r/XyTteqB51ob.mp3",
+          "status_code": 206,
+          "final_url": "https://static.xx.fbcdn.net/rsrc.php/yf/r/XyTteqB51ob.mp3",
+          "content_type": "audio/mpeg",
+          "sample_size": 4096,
+          "is_audio": true
+        },
+        {
+          "candidate_url": "https://static.xx.fbcdn.net/rsrc.php/yL/r/qi5pP1651Bi.mp3",
+          "status_code": 206,
+          "final_url": "https://static.xx.fbcdn.net/rsrc.php/yL/r/qi5pP1651Bi.mp3",
+          "content_type": "audio/mpeg",
+          "sample_size": 4096,
+          "is_audio": true
+        },
+        {
+          "candidate_url": "https://static.xx.fbcdn.net/rsrc.php/y8/r/a6onsWOBhsg.mp3",
+          "status_code": 206,
+          "final_url": "https://static.xx.fbcdn.net/rsrc.php/y8/r/a6onsWOBhsg.mp3",
+          "content_type": "audio/mpeg",
+          "sample_size": 4096,
+          "is_audio": true
+        },
+        {
+          "candidate_url": "https://static.xx.fbcdn.net/rsrc.php/yP/r/NUhwZHJ8fUZ.mp3",
+          "status_code": 206,
+          "final_url": "https://static.xx.fbcdn.net/rsrc.php/yP/r/NUhwZHJ8fUZ.mp3",
+          "content_type": "audio/mpeg",
+          "sample_size": 3698,
+          "is_audio": true
+        },
+        {
+          "candidate_url": "https://static.xx.fbcdn.net/rsrc.php/yM/r/1Vcznk-uUR-.mp3",
+          "status_code": 206,
+          "final_url": "https://static.xx.fbcdn.net/rsrc.php/yM/r/1Vcznk-uUR-.mp3",
+          "content_type": "audio/mpeg",
+          "sample_size": 4096,
+          "is_audio": true
+        }
+      ],
+      "best_page_score": 0,
+      "best_page_evidence": []
+    },
+    {
+      "date": "2018-04-24",
+      "title": "When China's Ships Come In",
+      "status": "rejected_audio_candidate",
+      "reasons": [
+        "no_validated_npr_indicator_mp3"
+      ],
+      "npr_indicator_audio": [],
+      "non_npr_audio": [
+        {
+          "candidate_url": "https://audio.dictionary.com/NEW2016/when_010/when_010.mp3",
+          "status_code": 206,
+          "final_url": "https://audio.dictionary.com/NEW2016/when_010/when_010.mp3",
+          "content_type": "audio/mpeg",
+          "sample_size": 4096,
+          "is_audio": true
+        },
+        {
+          "candidate_url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/whe/when_/when__gb_1.mp3",
+          "status_code": 206,
+          "final_url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/whe/when_/when__gb_1.mp3",
+          "content_type": "audio/mpeg",
+          "sample_size": 4096,
+          "is_audio": true
+        },
+        {
+          "candidate_url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/w/whe/when_/when__us_1_rr.mp3",
+          "status_code": 206,
+          "final_url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/w/whe/when_/when__us_1_rr.mp3",
+          "content_type": "audio/mpeg",
+          "sample_size": 4096,
+          "is_audio": true
+        },
+        {
+          "candidate_url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ado/adopt/adopt__gb_1.mp3",
+          "status_code": 206,
+          "final_url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ado/adopt/adopt__gb_1.mp3",
+          "content_type": "audio/mpeg",
+          "sample_size": 4096,
+          "is_audio": true
+        },
+        {
+          "candidate_url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/a/ado/adopt/adopt__us_1.mp3",
+          "status_code": 206,
+          "final_url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/a/ado/adopt/adopt__us_1.mp3",
+          "content_type": "audio/mpeg",
+          "sample_size": 4096,
+          "is_audio": true
+        }
+      ],
+      "best_page_score": 3,
+      "best_page_evidence": [
+        {
+          "requested_url": "https://dictionary.cambridge.org/us/dictionary/english/when",
+          "final_url": "https://dictionary.cambridge.org/us/dictionary/english/when",
+          "score": 3,
+          "reasons": [
+            "npr_story_url_present"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2018-06-13",
+      "title": "Dude, Where's My Trade War?",
+      "status": "rejected_audio_candidate",
+      "reasons": [
+        "strong_source_page_relationship",
+        "no_validated_npr_indicator_mp3"
+      ],
+      "npr_indicator_audio": [],
+      "non_npr_audio": [
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2025/07/20250730_atc_48508176-7726-4c02-8315-a4fe560f3064.mp3?t=progseg&e=nx-s1-5469192&p=2&seg=12&d=206&sc=siteplayer",
+          "status_code": 206,
+          "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2025/07/20250730_atc_48508176-7726-4c02-8315-a4fe560f3064.mp3?t=progseg&e=nx-s1-5469192&p=2&seg=12&d=206&sc=siteplayer",
+          "content_type": "audio/mpeg",
+          "sample_size": 4096,
+          "is_audio": true
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2025/07/20250730_atc_48508176-7726-4c02-8315-a4fe560f3064.mp3?t=progseg&e=nx-s1-5469192&p=2&seg=12&d=206&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "status_code": 206,
+          "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2025/07/20250730_atc_48508176-7726-4c02-8315-a4fe560f3064.mp3?t=progseg&e=nx-s1-5469192&p=2&seg=12&d=206&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "content_type": "audio/mpeg",
+          "sample_size": 4096,
+          "is_audio": true
+        }
+      ],
+      "best_page_score": 9,
+      "best_page_evidence": [
+        {
+          "requested_url": "https://www.npr.org/2025/07/30/nx-s1-5482984/dude-big-lebowski-surfer-origin-etymology",
+          "final_url": "https://www.npr.org/2025/07/30/nx-s1-5482984/dude-big-lebowski-surfer-origin-etymology",
+          "score": 9,
+          "reasons": [
+            "npr_story_url_present",
+            "npr_player_present",
+            "npr_audio_present"
+          ]
+        },
+        {
+          "requested_url": "https://en.wikipedia.org/wiki/Dude",
+          "final_url": "https://en.wikipedia.org/wiki/Dude",
+          "score": 3,
+          "reasons": [
+            "npr_story_url_present"
+          ]
+        },
+        {
+          "requested_url": "https://www.rd.com/article/where-the-word-dude-came-from/",
+          "final_url": "https://www.rd.com/article/where-the-word-dude-came-from/",
+          "score": 2,
+          "reasons": [
+            "moderate_title_overlap"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2018-06-21",
+      "title": "Teenage (Employment) Wasteland",
+      "status": "rejected_audio_candidate",
+      "reasons": [
+        "no_validated_npr_indicator_mp3"
+      ],
+      "npr_indicator_audio": [],
+      "non_npr_audio": [
+        {
+          "candidate_url": "https://audio.dictionary.net/audio/pronunciations/20260312/teenage-uk-phfqLnsz.mp3",
+          "status_code": 206,
+          "final_url": "https://audio.dictionary.net/audio/pronunciations/20260312/teenage-uk-phfqLnsz.mp3",
+          "content_type": "audio/mpeg",
+          "sample_size": 4096,
+          "is_audio": true
+        },
+        {
+          "candidate_url": "https://audio.dictionary.net/audio/pronunciations/20260312/teenage-us-AEIusmfl.mp3",
+          "status_code": 206,
+          "final_url": "https://audio.dictionary.net/audio/pronunciations/20260312/teenage-us-AEIusmfl.mp3",
+          "content_type": "audio/mpeg",
+          "sample_size": 4096,
+          "is_audio": true
+        }
+      ],
+      "best_page_score": 3,
+      "best_page_evidence": [
+        {
+          "requested_url": "https://dictionary.cambridge.org/us/dictionary/english/teenage",
+          "final_url": "https://dictionary.cambridge.org/us/dictionary/english/teenage",
+          "score": 3,
+          "reasons": [
+            "npr_story_url_present"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2018-07-10",
+      "title": "The Price of A Hyundai in Iran",
+      "status": "rejected_audio_candidate",
+      "reasons": [
+        "no_validated_npr_indicator_mp3"
+      ],
+      "npr_indicator_audio": [],
+      "non_npr_audio": [
+        {
+          "candidate_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "status_code": 206,
+          "final_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "content_type": "audio/mpeg",
+          "sample_size": 1507,
+          "is_audio": true
+        }
+      ],
+      "best_page_score": 0,
+      "best_page_evidence": []
+    },
+    {
+      "date": "2018-07-12",
+      "title": "The Last Straw",
+      "status": "rejected_audio_candidate",
+      "reasons": [
+        "no_validated_npr_indicator_mp3"
+      ],
+      "npr_indicator_audio": [],
+      "non_npr_audio": [
+        {
+          "candidate_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "status_code": 206,
+          "final_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "content_type": "audio/mpeg",
+          "sample_size": 1507,
+          "is_audio": true
+        }
+      ],
+      "best_page_score": 0,
+      "best_page_evidence": []
+    },
+    {
+      "date": "2018-08-03",
+      "title": "Beating The Clock On Jobs (Summer) Friday",
+      "status": "rejected_audio_candidate",
+      "reasons": [
+        "no_validated_npr_indicator_mp3"
+      ],
+      "npr_indicator_audio": [],
+      "non_npr_audio": [
+        {
+          "candidate_url": "https://audio.dictionary.com/B01/B0180600/B0180600.mp3",
+          "status_code": 206,
+          "final_url": "https://audio.dictionary.com/B01/B0180600/B0180600.mp3",
+          "content_type": "audio/mpeg",
+          "sample_size": 2134,
+          "is_audio": true
+        }
+      ],
+      "best_page_score": 0,
+      "best_page_evidence": []
+    },
+    {
+      "date": "2018-08-24",
+      "title": "The Art of War. It's Not For Everyone",
+      "status": "rejected_audio_candidate",
+      "reasons": [
+        "no_validated_npr_indicator_mp3"
+      ],
+      "npr_indicator_audio": [],
+      "non_npr_audio": [
+        {
+          "candidate_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "status_code": 206,
+          "final_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "content_type": "audio/mpeg",
+          "sample_size": 1507,
+          "is_audio": true
+        }
+      ],
+      "best_page_score": 0,
+      "best_page_evidence": []
+    },
+    {
+      "date": "2018-11-09",
+      "title": "The 401(k) Turns 40",
+      "status": "rejected_audio_candidate",
+      "reasons": [
+        "no_validated_npr_indicator_mp3"
+      ],
+      "npr_indicator_audio": [],
+      "non_npr_audio": [
+        {
+          "candidate_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "status_code": 206,
+          "final_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "content_type": "audio/mpeg",
+          "sample_size": 1507,
+          "is_audio": true
+        }
+      ],
+      "best_page_score": 0,
+      "best_page_evidence": []
+    },
+    {
+      "date": "2018-11-20",
+      "title": "The Ins & Outs Of The Minimum Wage",
+      "status": "rejected_audio_candidate",
+      "reasons": [
+        "no_validated_npr_indicator_mp3"
+      ],
+      "npr_indicator_audio": [],
+      "non_npr_audio": [
+        {
+          "candidate_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "status_code": 206,
+          "final_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "content_type": "audio/mpeg",
+          "sample_size": 1507,
+          "is_audio": true
+        }
+      ],
+      "best_page_score": 0,
+      "best_page_evidence": []
+    },
+    {
+      "date": "2018-12-06",
+      "title": "The Fed's Mistake?",
+      "status": "rejected_audio_candidate",
+      "reasons": [
+        "no_validated_npr_indicator_mp3"
+      ],
+      "npr_indicator_audio": [],
+      "non_npr_audio": [
+        {
+          "candidate_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "status_code": 206,
+          "final_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "content_type": "audio/mpeg",
+          "sample_size": 1507,
+          "is_audio": true
+        }
+      ],
+      "best_page_score": 0,
+      "best_page_evidence": []
+    },
+    {
+      "date": "2019-01-25",
+      "title": "The End Of The Shutdown?",
+      "status": "rejected_audio_candidate",
+      "reasons": [
+        "no_validated_npr_indicator_mp3"
+      ],
+      "npr_indicator_audio": [],
+      "non_npr_audio": [
+        {
+          "candidate_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "status_code": 206,
+          "final_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "content_type": "audio/mpeg",
+          "sample_size": 1507,
+          "is_audio": true
+        }
+      ],
+      "best_page_score": 0,
+      "best_page_evidence": []
+    },
+    {
+      "date": "2019-02-05",
+      "title": "The Fed's Sweet Spot For Interest Rates",
+      "status": "rejected_audio_candidate",
+      "reasons": [
+        "no_validated_npr_indicator_mp3"
+      ],
+      "npr_indicator_audio": [],
+      "non_npr_audio": [
+        {
+          "candidate_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "status_code": 206,
+          "final_url": "https://audio.dictionary.com/NEW/NEW15226/NEW15226.mp3",
+          "content_type": "audio/mpeg",
+          "sample_size": 1507,
+          "is_audio": true
+        }
+      ],
+      "best_page_score": 0,
+      "best_page_evidence": []
+    }
+  ]
+}
