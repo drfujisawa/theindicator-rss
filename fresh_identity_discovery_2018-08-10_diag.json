@@ -1,11 +1,121 @@
 {
-  "placeholder": true,
-  "run_complete": false,
-  "run_state": "placeholder",
-  "run_id": "31336950930",
-  "generated_at": "2026-08-09T21:36:17.233892+00:00",
+  "method": "fresh-identity-discovery",
+  "placeholder": false,
+  "run_complete": true,
+  "run_state": "run_complete",
+  "run_id": "31338522455",
+  "generated_at": "2026-08-09T22:07:47.664772+00:00",
   "reference_date": "2018-08-10",
   "reference_title": "Privacy Please: Why Public Companies Go Private (Or Vice Versa)",
   "reference_episode": 107,
-  "final_classification": null
+  "strategy": "staged_cdx_funnel_identity_first",
+  "date_window": {
+    "from": "20180807",
+    "to": "20180817"
+  },
+  "request_budget": {
+    "stage_a_cdx_queries": 6,
+    "capture_fetches": 4,
+    "live_player_fetches": 2,
+    "player_cdx_queries": 2,
+    "archived_player_fetches": 2,
+    "audio_validations": 4,
+    "max_logical_requests": 20,
+    "conservative_timeout_ceiling_seconds": 384,
+    "realistic_worst_case_runtime_seconds": 92
+  },
+  "id_bounds": {
+    "lower": 637224491,
+    "upper": 638649514,
+    "lower_from_episode": "2018-08-09",
+    "upper_from_episode": "2018-08-14",
+    "advisory_only": true
+  },
+  "slug_filters_used": [
+    "privacy-please",
+    "public-companies-go-private",
+    "why-public-companies-go-private",
+    "companies-go-private"
+  ],
+  "cdx_queries": [
+    {
+      "pattern": "https://www.npr.org/2018/08/09/*/*",
+      "from": "20180807",
+      "to": "20180817",
+      "limit": 40,
+      "rows_returned": 0,
+      "scored_candidates": []
+    },
+    {
+      "pattern": "https://www.npr.org/sections/*/2018/08/09/*/*",
+      "from": "20180807",
+      "to": "20180817",
+      "limit": 40,
+      "rows_returned": 0,
+      "scored_candidates": []
+    },
+    {
+      "pattern": "https://www.npr.org/2018/08/10/*/*",
+      "from": "20180807",
+      "to": "20180817",
+      "limit": 40,
+      "rows_returned": 0,
+      "scored_candidates": []
+    },
+    {
+      "pattern": "https://www.npr.org/sections/*/2018/08/10/*/*",
+      "from": "20180807",
+      "to": "20180817",
+      "limit": 40,
+      "rows_returned": 0,
+      "scored_candidates": []
+    },
+    {
+      "pattern": "https://www.npr.org/2018/08/11/*/*",
+      "from": "20180807",
+      "to": "20180817",
+      "limit": 40,
+      "rows_returned": 0,
+      "scored_candidates": []
+    },
+    {
+      "pattern": "https://www.npr.org/sections/*/2018/08/11/*/*",
+      "from": "20180807",
+      "to": "20180817",
+      "limit": 40,
+      "rows_returned": 0,
+      "scored_candidates": []
+    }
+  ],
+  "slug_variant_probes": [],
+  "date_window_captures": [],
+  "numeric_id_probes": [],
+  "numeric_probe_status": "disabled_advisory_only",
+  "identity_candidates": [],
+  "confirmed_identity": null,
+  "player_probes": [],
+  "trusted_audio_evidence": [],
+  "untrusted_audio_evidence": [],
+  "audio_candidates_tested": [],
+  "validated_audio": [],
+  "final_classification": "no_identity_found",
+  "validation_summary": "Bounded CDX discovery exhausted. No episode-qualified NPR story page found for 2018-08-10. Trusted audio candidates tested: 0.",
+  "discovery_exhausted_for_window": true,
+  "counts": {
+    "cdx_queries_issued": 6,
+    "cdx_urls_returned": 0,
+    "candidate_urls_scored": 0,
+    "captures_fetched": 0,
+    "captures_failed": 0,
+    "strong_matches": 0,
+    "partial_matches": 0,
+    "player_pages_fetched": 0,
+    "player_pages_failed": 0,
+    "audio_candidates_tested": 0,
+    "audio_validated": 0,
+    "trusted_audio_candidates": 0,
+    "untrusted_audio_candidates": 0,
+    "numeric_ids_probed": 0,
+    "logical_requests_issued": 6
+  }
 }

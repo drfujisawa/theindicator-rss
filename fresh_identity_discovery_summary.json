@@ -1,28 +1,106 @@
 {
-  "placeholder": true,
-  "run_complete": false,
-  "run_state": "placeholder",
-  "run_id": "31336950930",
+  "placeholder": false,
+  "run_complete": true,
+  "run_state": "run_complete",
+  "run_id": "31338522455",
   "method": "fresh-identity-discovery",
-  "generated_at": "2026-08-09T21:36:17.234305+00:00",
+  "generated_at": "2026-08-09T22:05:47.669228+00:00",
+  "targets_investigated": 3,
+  "request_budget": {
+    "per_episode": {
+      "stage_a_cdx_queries": 6,
+      "capture_fetches": 4,
+      "live_player_fetches": 2,
+      "player_cdx_queries": 2,
+      "archived_player_fetches": 2,
+      "audio_validations": 4,
+      "max_logical_requests": 20,
+      "conservative_timeout_ceiling_seconds": 384,
+      "realistic_worst_case_runtime_seconds": 92
+    },
+    "per_run": {
+      "targets": 3,
+      "max_logical_requests": 60,
+      "realistic_worst_case_runtime_seconds": 276,
+      "conservative_timeout_ceiling_seconds": 1152
+    }
+  },
   "episodes": [
     {
       "reference_date": "2018-07-11",
       "reference_title": "Fed Accounts For All!",
-      "reference_episode": 85,
-      "final_classification": null
+      "final_classification": "no_identity_found",
+      "validation_summary": "Bounded CDX discovery exhausted. No episode-qualified NPR story page found for 2018-07-11. Trusted audio candidates tested: 0.",
+      "counts": {
+        "cdx_queries_issued": 6,
+        "cdx_urls_returned": 0,
+        "candidate_urls_scored": 0,
+        "captures_fetched": 0,
+        "captures_failed": 0,
+        "strong_matches": 0,
+        "partial_matches": 0,
+        "player_pages_fetched": 0,
+        "player_pages_failed": 0,
+        "audio_candidates_tested": 0,
+        "audio_validated": 0,
+        "trusted_audio_candidates": 0,
+        "untrusted_audio_candidates": 0,
+        "numeric_ids_probed": 0,
+        "logical_requests_issued": 6
+      }
     },
     {
       "reference_date": "2018-08-10",
       "reference_title": "Privacy Please: Why Public Companies Go Private (Or Vice Versa)",
-      "reference_episode": 107,
-      "final_classification": null
+      "final_classification": "no_identity_found",
+      "validation_summary": "Bounded CDX discovery exhausted. No episode-qualified NPR story page found for 2018-08-10. Trusted audio candidates tested: 0.",
+      "counts": {
+        "cdx_queries_issued": 6,
+        "cdx_urls_returned": 0,
+        "candidate_urls_scored": 0,
+        "captures_fetched": 0,
+        "captures_failed": 0,
+        "strong_matches": 0,
+        "partial_matches": 0,
+        "player_pages_fetched": 0,
+        "player_pages_failed": 0,
+        "audio_candidates_tested": 0,
+        "audio_validated": 0,
+        "trusted_audio_candidates": 0,
+        "untrusted_audio_candidates": 0,
+        "numeric_ids_probed": 0,
+        "logical_requests_issued": 6
+      }
     },
     {
       "reference_date": "2018-09-24",
       "reference_title": "Saudi Arabia & The Paradox of Plenty",
-      "reference_episode": 137,
-      "final_classification": null
+      "final_classification": "no_identity_found",
+      "validation_summary": "Bounded CDX discovery exhausted. No episode-qualified NPR story page found for 2018-09-24. Trusted audio candidates tested: 0.",
+      "counts": {
+        "cdx_queries_issued": 6,
+        "cdx_urls_returned": 0,
+        "candidate_urls_scored": 0,
+        "captures_fetched": 0,
+        "captures_failed": 0,
+        "strong_matches": 0,
+        "partial_matches": 0,
+        "player_pages_fetched": 0,
+        "player_pages_failed": 0,
+        "audio_candidates_tested": 0,
+        "audio_validated": 0,
+        "trusted_audio_candidates": 0,
+        "untrusted_audio_candidates": 0,
+        "numeric_ids_probed": 0,
+        "logical_requests_issued": 6
+      }
     }
-  ]
+  ],
+  "counts": {
+    "attempted": 3,
+    "completed": 3,
+    "failed": 0,
+    "skipped": 0,
+    "recovered": 0
+  }
 }
