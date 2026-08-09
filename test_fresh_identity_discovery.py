@@ -823,6 +823,7 @@ class TestRunStateFields(unittest.TestCase):
         import inspect
         src = inspect.getsource(probe.run)
         self.assertIn('"run_state": "failed"', src)
+        self.assertIn('"run_complete": False', src)
 
     def test_counts_present_in_run_summary(self):
         import inspect

@@ -62,8 +62,8 @@ HEADERS = {
 }
 
 REQUEST_TIMEOUT_SECONDS = 8
-WAYBACK_DISCOVERY_RETRIES = 2
-CONTENT_RETRIES = 1
+WAYBACK_DISCOVERY_RETRIES = 2  # additional retries after the initial attempt
+CONTENT_RETRIES = 1  # additional retries after the initial attempt
 RETRY_DELAY = 1  # seconds between retries
 
 # CDX / fetch funnel caps.
@@ -77,7 +77,8 @@ MAX_ARCHIVED_PLAYER_FETCHES = 2
 MAX_AUDIO_CANDIDATES = 4
 FETCH_SCORE_THRESHOLD = 0.35
 
-# Numeric ID bounds remain advisory metadata only.
+# Numeric ID bounds remain advisory metadata only. The sparse probe is disabled
+# in this workflow so it cannot expand request volume or establish identity.
 NUMERIC_PROBE_STEP = 50_000
 NUMERIC_PROBE_MAX = 0
 
@@ -181,7 +182,8 @@ def _fetch_raw(url, range_request=False, max_bytes=2_000_000, retries=CONTENT_RE
         headers["Range"] = "bytes=0-4095"
 
     last_error = None
-    for attempt in range(1, retries + 1):
+    total_attempts = retries + 1
+    for attempt in range(1, total_attempts + 1):
         try:
             req = Request(url, headers=headers)
             with urlopen(req, timeout=REQUEST_TIMEOUT_SECONDS) as resp:
@@ -194,7 +196,7 @@ def _fetch_raw(url, range_request=False, max_bytes=2_000_000, retries=CONTENT_RE
                 }
         except Exception as exc:
             last_error = exc
-            if attempt < retries:
+            if attempt < total_attempts:
                 time.sleep(attempt * RETRY_DELAY)
 
     raise last_error
@@ -788,8 +790,8 @@ def request_budget() -> dict:
         + MAX_AUDIO_CANDIDATES
     )
     per_episode["conservative_timeout_ceiling_seconds"] = (
-        discovery_max * REQUEST_TIMEOUT_SECONDS * WAYBACK_DISCOVERY_RETRIES
-        + content_max * REQUEST_TIMEOUT_SECONDS * CONTENT_RETRIES
+        discovery_max * REQUEST_TIMEOUT_SECONDS * (WAYBACK_DISCOVERY_RETRIES + 1)
+        + content_max * REQUEST_TIMEOUT_SECONDS * (CONTENT_RETRIES + 1)
     )
     per_episode["realistic_worst_case_runtime_seconds"] = (
         discovery_max * 4 + content_max * 5
@@ -958,7 +960,7 @@ def sparse_numeric_probe(id_lower: int, id_upper: int,
     Advisory only — a match here is only evidence, never proof.
     """
     window = id_upper - id_lower
-    if window <= 0:
+    if window <= 0 or NUMERIC_PROBE_MAX <= 0:
         return []
 
     # Build probe IDs: evenly spaced points across the window + midpoint
@@ -1000,7 +1002,15 @@ def sparse_numeric_probe(id_lower: int, id_upper: int,
             if not ts or not orig:
                 continue
             arch = f"https://web.archive.org/web/{ts}id_/{orig}"
-            cap = analyse_capture(arch, orig, ts, reference_date, reference_title)
+            cap = analyse_capture(
+                arch,
+                orig,
+                ts,
+                {
+                    "reference_date": reference_date,
+                    "reference_title": reference_title,
+                },
+            )
             cap["source"] = "numeric_id_probe_advisory"
             probe_result["captures"].append(cap)
 
@@ -1049,6 +1059,7 @@ def investigate_episode(target: dict) -> dict:
         "slug_variant_probes": [],
         "date_window_captures": [],
         "numeric_id_probes": [],
+        "numeric_probe_status": "disabled_advisory_only",
         "identity_candidates": [],
         "confirmed_identity": None,
         "player_probes": [],
@@ -1447,7 +1458,7 @@ def run(write_placeholders_only: bool = False):
             print(f"  ERROR: {exc}")
             diag = {
                 "placeholder": False,
-                "run_complete": True,
+                "run_complete": False,
                 "run_state": "failed",
                 "run_id": _run_id(),
                 "generated_at": _now_iso(),
@@ -1472,6 +1483,10 @@ def run(write_placeholders_only: bool = False):
             "validation_summary": diag.get("validation_summary"),
             "counts": diag.get("counts", {}),
         })
+
+    if summary["counts"]["failed"]:
+        summary["run_complete"] = False
+        summary["run_state"] = "failed"
 
     for ref_date, diag in episode_results:
         out_path = BASE_DIR / output_filename(ref_date)
