@@ -69,7 +69,17 @@ RETRY_DELAY = 1  # seconds between retries
 # CDX / fetch funnel caps.
 CDX_DATE_WINDOW_LIMIT = 40
 CDX_EXACT_LIMIT = 5
+CDX_MATCH_TYPE = "prefix"  # Wayback CDX explicit prefix matching — no mid-path wildcards
 MAX_STAGE_A_CDX_QUERIES = 6
+
+# Known-good archived NPR URLs used to self-test CDX connectivity before a run.
+# Both have been proven to return captures in repository-validated probes.
+CDX_SELF_TEST_URLS = [
+    # Paranormal Profits story page: 24 known captures (indicator_wayback_npr_probe.json)
+    "https://www.npr.org/sections/money/2018/10/31/662708285/paranormal-profits",
+    # Paranormal Profits player: 3 known captures (indicator_multi_archive_player_probe.json)
+    "https://www.npr.org/player/embed/662706955/662707862",
+]
 MAX_FETCHED_CAPTURES = 4
 MAX_PLAYER_PAGES = 2
 MAX_PLAYER_CDX_LOOKUPS = 2
@@ -707,19 +717,37 @@ def validate_audio_evidence_live(audio_evidence: dict, reference_date: str) -> d
 # Wayback CDX API
 # ---------------------------------------------------------------------------
 
+# CDX result dict shape returned by both CDX helpers:
+#   rows            – list of row dicts (may be empty on a genuine zero-row response)
+#   query_url       – full CDX URL as issued
+#   error_type      – None | "network_error" | "parse_error" | "empty_response"
+#   error_message   – string description when error_type is set
+#   response_length – byte length of raw response text (0 on network failure)
+#   zero_row_response – True when the CDX API responded successfully but
+#                       returned only a header row (genuine empty result);
+#                       False on errors and on results with ≥ 1 data row.
+
 
 def wayback_cdx_date_window(
     url_pattern: str,
     from_date: str,
     to_date: str,
     limit: int = CDX_DATE_WINDOW_LIMIT,
-) -> list:
+) -> dict:
     """
     Query the Wayback CDX API for captures of url_pattern in [from_date, to_date].
-    Returns a list of row dicts.  from_date/to_date format: YYYYMMDD.
+
+    Uses matchType=prefix so that url_pattern is treated as a URL prefix with
+    trailing-only matching — the same semantics as a trailing ``*`` wildcard
+    but expressed through an explicit CDX parameter, avoiding mid-path wildcard
+    ambiguity.
+
+    Returns a CDX result dict (see module-level comment above).
+    from_date/to_date format: YYYYMMDD.
     """
     params = {
         "url": url_pattern,
+        "matchType": CDX_MATCH_TYPE,
         "output": "json",
         "filter": "statuscode:200",
         "collapse": "digest",
@@ -728,38 +756,129 @@ def wayback_cdx_date_window(
         "to": to_date,
         "limit": str(limit),
     }
-    query = "https://web.archive.org/cdx/search/cdx?" + urlencode(params)
+    query_url = "https://web.archive.org/cdx/search/cdx?" + urlencode(params)
+    result: dict = {
+        "rows": [],
+        "query_url": query_url,
+        "error_type": None,
+        "error_message": None,
+        "response_length": 0,
+        "zero_row_response": False,
+    }
     try:
-        resp = fetch_text(query, retries=WAYBACK_DISCOVERY_RETRIES)
-        data = json.loads(resp["text"])
-        if not isinstance(data, list) or len(data) < 2:
-            return []
+        resp = fetch_text(query_url, retries=WAYBACK_DISCOVERY_RETRIES)
+        raw = resp["text"]
+        result["response_length"] = len(raw)
+        data = json.loads(raw)
+        if not isinstance(data, list):
+            result["error_type"] = "parse_error"
+            result["error_message"] = "CDX response was not a JSON array"
+            return result
+        if len(data) < 2:
+            # Valid response from CDX with no data rows (header-only or empty array)
+            result["zero_row_response"] = True
+            return result
         header = data[0]
-        return [dict(zip(header, row)) for row in data[1:]]
-    except Exception:
-        return []
+        result["rows"] = [dict(zip(header, row)) for row in data[1:]]
+        return result
+    except OSError as exc:
+        result["error_type"] = "network_error"
+        result["error_message"] = str(exc)
+        return result
+    except (json.JSONDecodeError, ValueError) as exc:
+        result["error_type"] = "parse_error"
+        result["error_message"] = str(exc)
+        return result
+    except Exception as exc:  # noqa: BLE001
+        result["error_type"] = "network_error"
+        result["error_message"] = str(exc)
+        return result
 
 
-def wayback_cdx_url_exact(url: str, limit: int = CDX_EXACT_LIMIT) -> list:
-    """Query CDX for exact URL matches (no wildcards)."""
+def wayback_cdx_url_exact(url: str, limit: int = CDX_EXACT_LIMIT) -> dict:
+    """
+    Query CDX for exact URL matches (no wildcards, matchType=exact).
+
+    Returns a CDX result dict (see module-level comment above).
+    """
     params = {
         "url": url,
+        "matchType": "exact",
         "output": "json",
         "filter": "statuscode:200",
         "collapse": "digest",
         "fl": "timestamp,original,statuscode,mimetype",
         "limit": str(limit),
     }
-    query = "https://web.archive.org/cdx/search/cdx?" + urlencode(params)
+    query_url = "https://web.archive.org/cdx/search/cdx?" + urlencode(params)
+    result: dict = {
+        "rows": [],
+        "query_url": query_url,
+        "error_type": None,
+        "error_message": None,
+        "response_length": 0,
+        "zero_row_response": False,
+    }
     try:
-        resp = fetch_text(query, retries=WAYBACK_DISCOVERY_RETRIES)
-        data = json.loads(resp["text"])
-        if not isinstance(data, list) or len(data) < 2:
-            return []
+        resp = fetch_text(query_url, retries=WAYBACK_DISCOVERY_RETRIES)
+        raw = resp["text"]
+        result["response_length"] = len(raw)
+        data = json.loads(raw)
+        if not isinstance(data, list):
+            result["error_type"] = "parse_error"
+            result["error_message"] = "CDX response was not a JSON array"
+            return result
+        if len(data) < 2:
+            result["zero_row_response"] = True
+            return result
         header = data[0]
-        return [dict(zip(header, row)) for row in data[1:]]
-    except Exception:
-        return []
+        result["rows"] = [dict(zip(header, row)) for row in data[1:]]
+        return result
+    except OSError as exc:
+        result["error_type"] = "network_error"
+        result["error_message"] = str(exc)
+        return result
+    except (json.JSONDecodeError, ValueError) as exc:
+        result["error_type"] = "parse_error"
+        result["error_message"] = str(exc)
+        return result
+    except Exception as exc:  # noqa: BLE001
+        result["error_type"] = "network_error"
+        result["error_message"] = str(exc)
+        return result
+
+
+def cdx_self_test() -> dict:
+    """
+    Verify that the CDX helper can retrieve at least one capture for each URL
+    in CDX_SELF_TEST_URLS before a real run begins.
+
+    These URLs are proven to have Wayback captures in repository-validated
+    probes (indicator_wayback_npr_probe.json,
+    indicator_multi_archive_player_probe.json).
+
+    Returns ``{"passed": bool, "results": [...per-url dicts...]}``.
+    A failed self-test means CDX connectivity or response parsing is broken;
+    zero-row target results should not be interpreted as evidence of no archive
+    coverage until the self-test passes.
+    """
+    results = []
+    for url in CDX_SELF_TEST_URLS:
+        cdx = wayback_cdx_url_exact(url, limit=2)
+        results.append({
+            "url": url,
+            "passed": len(cdx["rows"]) > 0,
+            "capture_count": len(cdx["rows"]),
+            "query_url": cdx["query_url"],
+            "error_type": cdx["error_type"],
+            "error_message": cdx["error_message"],
+            "response_length": cdx["response_length"],
+            "zero_row_response": cdx["zero_row_response"],
+        })
+    return {
+        "passed": all(r["passed"] for r in results),
+        "results": results,
+    }
 
 
 def _cdx_date_window(reference_date: str, days_before: int = 3, days_after: int = 7) -> tuple:
@@ -771,6 +890,18 @@ def _cdx_date_window(reference_date: str, days_before: int = 3, days_after: int 
 
 
 def stage_a_patterns(reference_date: str) -> list:
+    """
+    Return the Stage-A CDX URL prefixes for the given reference date.
+
+    Each pattern covers one day (day-1, day, day+1 relative to reference_date)
+    in both HTTPS and HTTP, targeting the historically valid NPR Planet Money
+    story URL structure:
+
+        https://www.npr.org/sections/money/YYYY/MM/DD/
+
+    These are passed to ``wayback_cdx_date_window`` which sets
+    ``matchType=prefix``, so no trailing wildcard is needed or used.
+    """
     base = datetime.date.fromisoformat(reference_date)
     patterns = []
     for offset in (-1, 0, 1):
@@ -778,8 +909,8 @@ def stage_a_patterns(reference_date: str) -> list:
         y = day.strftime("%Y")
         m = day.strftime("%m")
         d = day.strftime("%d")
-        patterns.append(f"https://www.npr.org/{y}/{m}/{d}/*/*")
-        patterns.append(f"https://www.npr.org/sections/*/{y}/{m}/{d}/*/*")
+        patterns.append(f"https://www.npr.org/sections/money/{y}/{m}/{d}/")
+        patterns.append(f"http://www.npr.org/sections/money/{y}/{m}/{d}/")
     return patterns[:MAX_STAGE_A_CDX_QUERIES]
 
 
@@ -1040,14 +1171,18 @@ def sparse_numeric_probe(id_lower: int, id_upper: int,
 
     results = []
     for nid in probe_ids:
-        # Try to find Wayback captures for a dated NPR story URL with this ID
-        cdx_rows = wayback_cdx_url_exact(
-            f"https://www.npr.org/*/{nid}/*", limit=5
+        # Try to find Wayback captures for the numeric story ID using two
+        # well-known NPR story URL structures.  Both are exact-URL lookups;
+        # wildcard patterns are not compatible with wayback_cdx_url_exact.
+        cdx_result = wayback_cdx_url_exact(
+            f"https://www.npr.org/sections/money/{nid}", limit=3
         )
+        cdx_rows = cdx_result["rows"]
         if not cdx_rows:
-            cdx_rows = wayback_cdx_url_exact(
+            cdx_result = wayback_cdx_url_exact(
                 f"https://www.npr.org/{nid}", limit=3
             )
+            cdx_rows = cdx_result["rows"]
 
         probe_result = {
             "probe_id": nid,
@@ -1161,11 +1296,22 @@ def investigate_episode(target: dict) -> dict:
             "from": from_date,
             "to": to_date,
             "limit": CDX_DATE_WINDOW_LIMIT,
+            "query_url": "",
             "rows_returned": 0,
+            "error_type": None,
+            "error_message": None,
+            "response_length": 0,
+            "zero_row_response": False,
             "scored_candidates": [],
         }
 
-        rows = wayback_cdx_date_window(url_pattern, from_date, to_date, limit=CDX_DATE_WINDOW_LIMIT)
+        cdx_result = wayback_cdx_date_window(url_pattern, from_date, to_date, limit=CDX_DATE_WINDOW_LIMIT)
+        rows = cdx_result["rows"]
+        cdx_entry["query_url"] = cdx_result["query_url"]
+        cdx_entry["error_type"] = cdx_result["error_type"]
+        cdx_entry["error_message"] = cdx_result["error_message"]
+        cdx_entry["response_length"] = cdx_result["response_length"]
+        cdx_entry["zero_row_response"] = cdx_result["zero_row_response"]
         diag["counts"]["cdx_queries_issued"] += 1
         diag["counts"]["logical_requests_issued"] += 1
         diag["counts"]["cdx_urls_returned"] += len(rows)
@@ -1311,7 +1457,8 @@ def investigate_episode(target: dict) -> dict:
         pu = player_evidence.get("player_url")
         diag["counts"]["cdx_queries_issued"] += 1
         diag["counts"]["logical_requests_issued"] += 1
-        rows = wayback_cdx_url_exact(pu, limit=CDX_EXACT_LIMIT)
+        player_cdx = wayback_cdx_url_exact(pu, limit=CDX_EXACT_LIMIT)
+        rows = player_cdx["rows"]
         for row in rows:
             if archived_player_fetches >= MAX_ARCHIVED_PLAYER_FETCHES:
                 break
@@ -1484,6 +1631,45 @@ def run(write_placeholders_only: bool = False):
     if write_placeholders_only:
         return _placeholder_summary(TARGETS)
 
+    # ------------------------------------------------------------------
+    # CDX self-test: verify connectivity using known-good archived URLs
+    # before running any target investigation.  If the self-test fails,
+    # zero-row CDX results from target queries must NOT be interpreted
+    # as evidence that no archive coverage exists for those targets.
+    # ------------------------------------------------------------------
+    print("\nRunning CDX self-test …")
+    self_test = cdx_self_test()
+    print(f"  CDX self-test passed: {self_test['passed']}")
+    for r in self_test["results"]:
+        status = "OK" if r["passed"] else f"FAIL (error_type={r['error_type']})"
+        print(f"    {status}  captures={r['capture_count']}  {r['url']}")
+
+    if not self_test["passed"]:
+        print("\nCDX self-test failed — aborting target investigation.")
+        print("Zero-row results cannot be used as evidence of no archive coverage.")
+        self_test_summary = {
+            "placeholder": False,
+            "run_complete": False,
+            "run_state": "cdx_self_test_failed",
+            "run_id": _run_id(),
+            "method": "fresh-identity-discovery",
+            "generated_at": _now_iso(),
+            "cdx_self_test": self_test,
+            "targets_investigated": 0,
+            "request_budget": request_budget(),
+            "episodes": [],
+            "counts": {
+                "attempted": 0,
+                "completed": 0,
+                "failed": 0,
+                "skipped": len(TARGETS),
+                "recovered": 0,
+            },
+        }
+        _write_json(BASE_DIR / SUMMARY_OUTPUT, self_test_summary)
+        print(f"\nSummary written: {SUMMARY_OUTPUT}")
+        return self_test_summary
+
     episode_results = []
     summary = {
         "placeholder": False,
@@ -1492,6 +1678,7 @@ def run(write_placeholders_only: bool = False):
         "run_id": _run_id(),
         "method": "fresh-identity-discovery",
         "generated_at": _now_iso(),
+        "cdx_self_test": self_test,
         "targets_investigated": len(TARGETS),
         "request_budget": request_budget(),
         "episodes": [],
