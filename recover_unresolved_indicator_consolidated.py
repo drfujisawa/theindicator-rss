@@ -889,6 +889,18 @@ def seed_from_matched_record(
         or item.get("validation_status"),
     })
 
+    duplicate_dates = item.get("duplicate_reference_dates", [])
+
+    if isinstance(duplicate_dates, list):
+        ledger["duplicate_reference_dates"] = unique(
+            ledger["duplicate_reference_dates"]
+            + [
+                normalize_date(value)
+                for value in duplicate_dates
+                if normalize_date(value)
+            ]
+        )
+
     aliases = []
 
     for key in [
