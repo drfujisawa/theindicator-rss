@@ -1,0 +1,9 @@
+{
+  "method": "wayback-indicator-date-wildcard-mp3-search",
+  "target_date": "2019-04-22",
+  "target_title": "The Traffic Tariff",
+  "wayback_pattern": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/04/20190422_indicator_*",
+  "cdx_status": "fetched",
+  "candidate_count": 0,
+  "candidates": []
+}
