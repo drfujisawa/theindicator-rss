@@ -54,7 +54,11 @@ class IdentityAudioUnresolvedReportTests(unittest.TestCase):
     def test_checked_in_report_matches_builder_output(self):
         expected = report.build_report(generated_at="CHECKED_IN")
 
-        with open(report.OUTPUT_REPORT_FILE, "r", encoding="utf-8") as file:
+        with open(
+            report.BASE_DIR / report.OUTPUT_REPORT_FILE,
+            "r",
+            encoding="utf-8",
+        ) as file:
             checked_in = json.load(file)
 
         checked_in["generated_at"] = "CHECKED_IN"

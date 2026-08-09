@@ -3,12 +3,14 @@
 import json
 import re
 from datetime import datetime, timezone
+from pathlib import Path
 
 
 INPUT_LEDGER_FILE = "indicator_unresolved_consolidated_evidence_ledger.json"
 INPUT_AUDIT_FILE = "indicator_unresolved_consolidated_audit.json"
 OUTPUT_REPORT_FILE = "indicator_identity_audio_unresolved_ranked_report.json"
 TARGET_STATUS = "identity_found_but_audio_unresolved"
+BASE_DIR = Path(__file__).resolve().parent
 
 
 MANUAL_REVIEW_NOTES = {
@@ -477,20 +479,22 @@ MANUAL_REVIEW_NOTES = {
 
 
 def load_json(filename):
-    with open(filename, "r", encoding="utf-8") as file:
+    with open(BASE_DIR / filename, "r", encoding="utf-8") as file:
         return json.load(file)
 
 
 def save_json(filename, payload):
-    with open(filename, "w", encoding="utf-8") as file:
+    with open(BASE_DIR / filename, "w", encoding="utf-8") as file:
         json.dump(payload, file, indent=2, ensure_ascii=False)
 
 
 def unique(values):
     output = []
+    seen = set()
 
     for value in values:
-        if value and value not in output:
+        if value and value not in seen:
+            seen.add(value)
             output.append(value)
 
     return output
@@ -602,7 +606,6 @@ def build_episode_report(ledger):
 
 def build_report(generated_at=None):
     ledger = load_json(INPUT_LEDGER_FILE)
-    audit = load_json(INPUT_AUDIT_FILE)
     episodes = [
         episode
         for episode in ledger.get("episodes", [])
@@ -611,8 +614,8 @@ def build_report(generated_at=None):
 
     if len(episodes) != len(MANUAL_REVIEW_NOTES):
         raise ValueError(
-            "Expected %d target episodes, found %d"
-            % (len(MANUAL_REVIEW_NOTES), len(episodes))
+            "Expected %d target episodes from the ledger, found %d manual-note entries"
+            % (len(episodes), len(MANUAL_REVIEW_NOTES))
         )
 
     missing_notes = [
@@ -654,7 +657,7 @@ def build_report(generated_at=None):
         "environment_limitations": [
             "Direct fetches to npr.org, ondemand.npr.org, and web.archive.org were not resolvable from this sandbox, so the report relies on already-captured repository evidence and previously preserved archive URLs.",
         ],
-        "current_summary": audit.get("summary", {}),
+        "current_summary": load_json(INPUT_AUDIT_FILE).get("summary", {}),
         "episodes": report_episodes,
     }
 
