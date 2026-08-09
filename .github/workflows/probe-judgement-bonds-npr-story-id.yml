@@ -1,0 +1,32 @@
+name: Probe Judgement Bonds NPR Story ID
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  probe-judgement-bonds-npr-id:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Probe NPR story ID 661827210
+        run: python probe_judgement_bonds_npr_story_id.py
+
+      - name: Save NPR story ID probe
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add indicator_judgement_bonds_npr_story_id_probe.json
+          git diff --cached --quiet || git commit -m "Probe Judgement Bonds NPR story ID"
+          git push
