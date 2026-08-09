@@ -555,10 +555,12 @@ def score_page_match(
     score = 0
     reasons = []
 
-    if best_similarity >= 0.92:
+    date_confirmed = date_match or url_date_match
+
+    if best_similarity >= 0.92 and date_confirmed:
         score += 6
         reasons.append("near_exact_title")
-    elif best_similarity >= 0.75:
+    elif best_similarity >= 0.75 and date_confirmed:
         score += 4
         reasons.append("strong_title_match")
     elif best_similarity >= 0.60:
@@ -573,7 +575,7 @@ def score_page_match(
         reasons.append("date_in_url")
 
     qualified = (
-        best_similarity >= 0.75 and (date_match or url_date_match)
+        best_similarity >= 0.75 and date_confirmed
     )
 
     return {
