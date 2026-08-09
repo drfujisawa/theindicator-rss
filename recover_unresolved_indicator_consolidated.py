@@ -573,8 +573,7 @@ def score_page_match(
         reasons.append("date_in_url")
 
     qualified = (
-        (best_similarity >= 0.75 and (date_match or url_date_match))
-        or best_similarity >= 0.92
+        best_similarity >= 0.75 and (date_match or url_date_match)
     )
 
     return {
@@ -624,7 +623,6 @@ def classify_audio_candidate(
         or "mp3" in content_type
         or "aac" in content_type
         or "m4a" in content_type
-        or "octet-stream" in content_type
     )
 
     if not is_audio:
