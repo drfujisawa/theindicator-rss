@@ -20,7 +20,9 @@ import re
 import sys
 import time
 import xml.etree.ElementTree as ET
+from email.utils import parsedate_to_datetime
 from urllib.error import HTTPError, URLError
+from urllib.parse import urlparse
 from urllib.request import Request, urlopen
 
 HISTORY_FILE = "indicator_history.json"
@@ -203,10 +205,9 @@ def extract_audio_candidates(html, story_id, audio_id):
     ):
         add(m, "inline_json_host")
 
-    # 7. Player embed iframes
+    # 7. Player embed iframes — record embed src URLs for diagnostic context
     for m in RE_PLAYER_EMBED.findall(html):
-        # Not an audio URL itself but record as context
-        pass
+        found.append({"url": m, "method": "player_embed_iframe"})
 
     return found
 
@@ -311,7 +312,6 @@ def validate_audio_url(url):
         and "npr.org" in final.lower()
     )
 
-    from urllib.parse import urlparse
     host = urlparse(final).netloc if r["ok"] else ""
 
     return {
@@ -382,10 +382,16 @@ def select_control_episodes():
         if not m:
             continue
         story_id = m.group(1)
+        # Normalise pubDate (RFC 2822) to YYYY-MM-DD ISO date string
+        raw_date = item.findtext("pubDate") or ""
+        try:
+            iso_date = parsedate_to_datetime(raw_date).strftime("%Y-%m-%d")
+        except Exception:
+            iso_date = raw_date
         # Build matching history entry if possible
         controls.append({
             "title": item.findtext("title") or "",
-            "date": item.findtext("pubDate") or "",
+            "date": iso_date,
             "npr_url": link,
             "story_id": story_id,
             "audio_id": "",
@@ -476,7 +482,6 @@ def process_episode(ep):
         url = c["url"]
         method = c["method"]
         print(f"  Validating [{method}] {url[:90]} …")
-        time.sleep(DELAY)
         v = validate_audio_url(url)
         c["validation"] = v
         if v["is_audio"] and best is None:
