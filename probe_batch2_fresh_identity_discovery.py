@@ -703,7 +703,7 @@ def validate_audio_candidate_live(url: str, reference_date: str) -> dict:
     if not ind:
         result["validation_status"] = "rejected_not_indicator_path"
         result["reason"] = (
-            "Final URL does not contain /indicator/ — likely another NPR programme."
+            "Final URL does not contain /indicator/ — likely another NPR program."
         )
         return result
 
@@ -1161,6 +1161,10 @@ def sparse_numeric_probe(id_lower: int, id_upper: int,
     Uses CDX to find Wayback captures for each candidate ID.
     Returns a list of probe result dicts.
     Advisory only — a match here is only evidence, never proof.
+
+    NOTE: This function is intentionally disabled via NUMERIC_PROBE_MAX=0.
+    Numeric probing must remain disabled unless separately justified and
+    reviewed per the investigation safety rules.
     """
     window = id_upper - id_lower
     if window <= 0 or NUMERIC_PROBE_MAX <= 0:
