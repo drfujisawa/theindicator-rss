@@ -1,16 +1,27 @@
 #!/usr/bin/env python3
 """
-Batch 2: Fresh NPR identity discovery for the next three unresolved Indicator
-episodes (ranks 4–6 from indicator_identity_audio_unresolved_ranked_report.json):
+Batch 2: Fresh NPR identity discovery for the next nine unresolved Indicator
+episodes (ranks 4–12 from indicator_identity_audio_unresolved_ranked_report.json):
 
-  1. 2018-10-09 — "China's Social Credit System"
-  2. 2018-10-11 — "China's Brave New World"
-  3. 2018-07-23 — "Google's Mobile Monopoly"
+  1. 2018-10-09 — "China's Social Credit System"          (rank 4)
+  2. 2018-10-11 — "China's Brave New World"               (rank 5)
+  3. 2018-07-23 — "Google's Mobile Monopoly"              (rank 6)
+  4. 2018-04-26 — "California's Housing Conundrum"        (rank 7)
+  5. 2018-08-17 — "Donald Trump's Economic Strategy... Maybe?" (rank 8)
+  6. 2018-10-05 — "Who's Hiring?"                         (rank 9)
+  7. 2018-04-24 — "When China's Ships Come In"            (rank 10)
+  8. 2018-06-21 — "Teenage (Employment) Wasteland"        (rank 11)
+  9. 2018-06-13 — "Dude, Where's My Trade War?"           (rank 12)
 
 The first batch (probe_fresh_identity_discovery.py) successfully recovered:
   - 2018-07-11 "Fed Accounts For All!" (merged in PR #7)
   - 2018-08-10 "Privacy Please: Why Public Companies Go Private (Or Vice Versa)"
   - 2018-09-24 "Saudi Arabia & The Paradox of Plenty"
+
+Ranks 1–3 are already recovered; the consolidated audit
+(indicator_identity_audio_unresolved_ranked_report.json) contains exactly 9
+remaining identity_found_but_audio_unresolved episodes (ranks 4–12, none
+marked as probable_duplicate_rebroadcast).
 
 This script applies exactly the same proven method to the next batch.
 
@@ -204,6 +215,146 @@ TARGETS = [
             "google-mobile-monopoly",
             "google-monopoly",
             "google-antitrust",
+        ],
+    },
+    {
+        "reference_date": "2018-04-26",
+        "reference_title": "California's Housing Conundrum",
+        "reference_episode": 33,
+        # Validated adjacent episodes from indicator_npr_audio_validation.json:
+        #   2018-04-25 e=606819103 (The Farm Labor Drought — story_id)
+        #   2018-04-27 e=606586601 (The Homeless Count — story_id)
+        "id_lower_bound": 605_819_103,   # story_id from 2018-04-25 (validated)
+        "id_upper_bound": 606_586_601,   # story_id from 2018-04-27 (validated)
+        "id_lower_episode": "2018-04-25",
+        "id_upper_episode": "2018-04-27",
+        "section_paths": [
+            "sections/money/theindicator",
+            "sections/theindicator",
+            "sections/money",
+        ],
+        "slug_variants": [
+            "californias-housing-conundrum",
+            "california-housing-conundrum",
+            "california-housing",
+            "housing-conundrum",
+        ],
+    },
+    {
+        "reference_date": "2018-08-17",
+        "reference_title": "Donald Trump's Economic Strategy... Maybe?",
+        "reference_episode": 112,
+        # Validated adjacent episodes from indicator_npr_audio_validation.json:
+        #   2018-08-16 e=639346300 (validated)
+        #   2018-08-20 e=640319086 (validated)
+        "id_lower_bound": 639_346_300,   # story_id from 2018-08-16 (validated)
+        "id_upper_bound": 640_319_086,   # story_id from 2018-08-20 (validated)
+        "id_lower_episode": "2018-08-16",
+        "id_upper_episode": "2018-08-20",
+        "section_paths": [
+            "sections/money/theindicator",
+            "sections/theindicator",
+            "sections/money",
+        ],
+        "slug_variants": [
+            "donald-trumps-economic-strategy-maybe",
+            "trump-economic-strategy",
+            "trumps-economic-strategy",
+            "trump-economy-strategy",
+        ],
+    },
+    {
+        "reference_date": "2018-10-05",
+        "reference_title": "Who's Hiring?",
+        "reference_episode": 146,
+        # Validated adjacent episodes from indicator_npr_audio_validation.json:
+        #   2018-10-04 e=654533556 (validated)
+        #   2018-10-08 e=655634932 (validated)
+        # Note: 2018-10-08 is "The Iron Lotus" — adjacent but not same window
+        # as the two China episodes (2018-10-09, 2018-10-11).
+        "id_lower_bound": 654_533_556,   # story_id from 2018-10-04 (validated)
+        "id_upper_bound": 655_634_932,   # story_id from 2018-10-08 (validated)
+        "id_lower_episode": "2018-10-04",
+        "id_upper_episode": "2018-10-08",
+        "section_paths": [
+            "sections/money/theindicator",
+            "sections/theindicator",
+            "sections/money",
+        ],
+        "slug_variants": [
+            "whos-hiring",
+            "who-is-hiring",
+            "jobs-report",
+            "hiring-report",
+        ],
+    },
+    {
+        "reference_date": "2018-04-24",
+        "reference_title": "When China's Ships Come In",
+        "reference_episode": 31,
+        # Validated adjacent episodes from indicator_npr_audio_validation.json:
+        #   2018-04-20 e=604419798 (validated)
+        #   2018-04-25 e=605819103 (validated)
+        "id_lower_bound": 604_419_798,   # story_id from 2018-04-20 (validated)
+        "id_upper_bound": 605_819_103,   # story_id from 2018-04-25 (validated)
+        "id_lower_episode": "2018-04-20",
+        "id_upper_episode": "2018-04-25",
+        "section_paths": [
+            "sections/money/theindicator",
+            "sections/theindicator",
+            "sections/money",
+        ],
+        "slug_variants": [
+            "when-chinas-ships-come-in",
+            "china-ships",
+            "china-trade-ships",
+            "chinas-ships",
+        ],
+    },
+    {
+        "reference_date": "2018-06-21",
+        "reference_title": "Teenage (Employment) Wasteland",
+        "reference_episode": 72,
+        # Validated adjacent episodes from indicator_npr_audio_validation.json:
+        #   2018-06-20 e=622042080 (validated)
+        #   2018-06-22 e=622699133 (validated)
+        "id_lower_bound": 622_042_080,   # story_id from 2018-06-20 (validated)
+        "id_upper_bound": 622_699_133,   # story_id from 2018-06-22 (validated)
+        "id_lower_episode": "2018-06-20",
+        "id_upper_episode": "2018-06-22",
+        "section_paths": [
+            "sections/money/theindicator",
+            "sections/theindicator",
+            "sections/money",
+        ],
+        "slug_variants": [
+            "teenage-employment-wasteland",
+            "teen-employment-wasteland",
+            "teenage-wasteland",
+            "teen-jobs",
+        ],
+    },
+    {
+        "reference_date": "2018-06-13",
+        "reference_title": "Dude, Where's My Trade War?",
+        "reference_episode": 66,
+        # Validated adjacent episodes from indicator_npr_audio_validation.json:
+        #   2018-06-12 e=619309279 (validated)
+        #   2018-06-14 e=620106332 (validated)
+        "id_lower_bound": 619_309_279,   # story_id from 2018-06-12 (validated)
+        "id_upper_bound": 620_106_332,   # story_id from 2018-06-14 (validated)
+        "id_lower_episode": "2018-06-12",
+        "id_upper_episode": "2018-06-14",
+        "section_paths": [
+            "sections/money/theindicator",
+            "sections/theindicator",
+            "sections/money",
+        ],
+        "slug_variants": [
+            "dude-wheres-my-trade-war",
+            "trade-war",
+            "where-is-my-trade-war",
+            "trade-war-tariffs",
         ],
     },
 ]

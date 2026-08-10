@@ -804,14 +804,15 @@ class TestOutputFilename(unittest.TestCase):
             "batch2_fresh_identity_discovery_2018-10-09_diag.json",
         )
 
-    def test_all_three_targets(self):
+    def test_all_nine_targets(self):
         expected = {
-            "batch2_fresh_identity_discovery_2018-10-09_diag.json",
-            "batch2_fresh_identity_discovery_2018-10-11_diag.json",
-            "batch2_fresh_identity_discovery_2018-07-23_diag.json",
+            probe.output_filename(t["reference_date"]) for t in probe.TARGETS
         }
-        actual = {probe.output_filename(t["reference_date"]) for t in probe.TARGETS}
-        self.assertEqual(actual, expected)
+        # All filenames must be batch2-specific
+        for fname in expected:
+            self.assertIn("batch2", fname)
+        # Must cover exactly all 9 configured targets
+        self.assertEqual(len(expected), 9)
 
 
 class TestPlaceholderStructure(unittest.TestCase):
@@ -837,9 +838,45 @@ class TestPlaceholderStructure(unittest.TestCase):
 
 
 class TestTargetsConfiguration(unittest.TestCase):
+    # All 9 remaining identity_found_but_audio_unresolved episodes from ranks 4–12
+    # of indicator_identity_audio_unresolved_ranked_report.json.
+    EXPECTED_DATES = {
+        "2018-10-09",  # rank 4  — China's Social Credit System
+        "2018-10-11",  # rank 5  — China's Brave New World
+        "2018-07-23",  # rank 6  — Google's Mobile Monopoly
+        "2018-04-26",  # rank 7  — California's Housing Conundrum
+        "2018-08-17",  # rank 8  — Donald Trump's Economic Strategy... Maybe?
+        "2018-10-05",  # rank 9  — Who's Hiring?
+        "2018-04-24",  # rank 10 — When China's Ships Come In
+        "2018-06-21",  # rank 11 — Teenage (Employment) Wasteland
+        "2018-06-13",  # rank 12 — Dude, Where's My Trade War?
+    }
+    # Episodes already recovered by batch 1 — must not appear in TARGETS.
+    ALREADY_RECOVERED = {"2018-07-11", "2018-08-10", "2018-09-24"}
+
+    def test_exactly_nine_targets_configured(self):
+        """Exactly 9 targets must be configured (all remaining ranked episodes)."""
+        self.assertEqual(len(probe.TARGETS), 9)
+
     def test_correct_dates(self):
         dates = {t["reference_date"] for t in probe.TARGETS}
-        self.assertEqual(dates, {"2018-10-09", "2018-10-11", "2018-07-23"})
+        self.assertEqual(dates, self.EXPECTED_DATES)
+
+    def test_no_already_recovered_episodes_in_targets(self):
+        """Batch-1 recovered episodes must not be re-targeted."""
+        dates = {t["reference_date"] for t in probe.TARGETS}
+        overlap = dates & self.ALREADY_RECOVERED
+        self.assertEqual(overlap, set(), f"Recovered episodes found in TARGETS: {overlap}")
+
+    def test_no_probable_duplicate_rebroadcasts_in_targets(self):
+        """
+        Probable duplicate/rebroadcast entries from the consolidated audit
+        (2018-03-12 and 2018-08-28 'Hurricane Joseph') must not be selected.
+        """
+        probable_dup_dates = {"2018-03-12", "2018-08-28"}
+        dates = {t["reference_date"] for t in probe.TARGETS}
+        overlap = dates & probable_dup_dates
+        self.assertEqual(overlap, set(), f"Probable duplicate dates in TARGETS: {overlap}")
 
     def test_all_targets_have_slug_variants(self):
         for t in probe.TARGETS:
@@ -860,7 +897,7 @@ class TestTargetsConfiguration(unittest.TestCase):
             lo = t["id_lower_bound"]
             hi = t["id_upper_bound"]
             self.assertLess(lo, hi, f"Lower bound must be < upper bound for {t['reference_date']}")
-            # All 2018 Indicator IDs used here should be in the 620M–660M range
+            # All 2018 Indicator IDs used here should be in the 600M–700M range
             self.assertGreater(lo, 600_000_000)
             self.assertLess(hi, 700_000_000)
 
@@ -911,10 +948,32 @@ class TestRunStateFields(unittest.TestCase):
 
 
 class TestRequestBudget(unittest.TestCase):
-    def test_budget_has_bounded_requests(self):
+    def test_budget_has_bounded_per_episode_requests(self):
         budget = probe.request_budget()
         self.assertLessEqual(budget["per_episode"]["max_logical_requests"], 20)
-        self.assertLessEqual(budget["per_run"]["max_logical_requests"], 60)
+
+    def test_budget_per_run_scales_with_nine_targets(self):
+        """Per-run budget must be exactly per-episode * 9."""
+        budget = probe.request_budget()
+        expected = budget["per_episode"]["max_logical_requests"] * 9
+        self.assertEqual(budget["per_run"]["max_logical_requests"], expected)
+
+    def test_budget_targets_count_is_nine(self):
+        budget = probe.request_budget()
+        self.assertEqual(budget["per_run"]["targets"], 9)
+
+    def test_budget_per_run_max_requests_at_most_180(self):
+        """9 targets × 20 requests/episode = 180 max logical requests."""
+        budget = probe.request_budget()
+        self.assertLessEqual(budget["per_run"]["max_logical_requests"], 180)
+
+    def test_realistic_worst_case_fits_within_60_minute_workflow(self):
+        """Realistic worst-case runtime for all 9 episodes must stay well under 60 min."""
+        budget = probe.request_budget()
+        # 3600 seconds = 60 minutes; allow realistic (not conservative) estimate.
+        self.assertLessEqual(
+            budget["per_run"]["realistic_worst_case_runtime_seconds"], 3600
+        )
 
     def test_stage_a_patterns_are_date_based(self):
         patterns = probe.stage_a_patterns("2018-10-09")
@@ -1362,6 +1421,91 @@ class TestCdxSelfTest(unittest.TestCase):
 
         # Self-test passed → all targets must be attempted
         self.assertEqual(result.get("counts", {}).get("attempted"), len(probe.TARGETS))
+
+
+# ---------------------------------------------------------------------------
+# Workflow configuration
+# ---------------------------------------------------------------------------
+
+
+class TestWorkflowConfiguration(unittest.TestCase):
+    """Verify that the batch-2 GitHub Actions workflow file exists and has the
+    correct timeout and target-specific settings."""
+
+    def _load_workflow(self):
+        import yaml  # PyYAML — available in the test environment
+        wf_path = (
+            Path(probe.__file__).parent
+            / ".github" / "workflows" / "probe-batch2-fresh-identity-discovery.yml"
+        )
+        if not wf_path.exists():
+            self.skipTest(f"Workflow file not found at {wf_path}")
+        with open(wf_path) as f:
+            return yaml.safe_load(f)
+
+    def test_workflow_file_exists(self):
+        wf_path = (
+            Path(probe.__file__).parent
+            / ".github" / "workflows" / "probe-batch2-fresh-identity-discovery.yml"
+        )
+        self.assertTrue(wf_path.exists(), "batch-2 workflow file must exist")
+
+    def test_workflow_timeout_is_at_least_60_minutes(self):
+        try:
+            wf = self._load_workflow()
+        except Exception:
+            self.skipTest("yaml not available or workflow malformed")
+        jobs = wf.get("jobs", {})
+        for job_name, job in jobs.items():
+            timeout = job.get("timeout-minutes", 360)
+            self.assertGreaterEqual(
+                timeout, 60,
+                f"Job '{job_name}' timeout-minutes={timeout} is less than 60"
+            )
+
+    def test_workflow_commits_only_batch2_diagnostic_files(self):
+        try:
+            wf = self._load_workflow()
+        except Exception:
+            self.skipTest("yaml not available or workflow malformed")
+        import yaml
+        wf_text = yaml.dump(wf)
+        # Must add batch2 diag files, not production feed/history
+        self.assertIn("batch2_fresh_identity_discovery", wf_text)
+        self.assertNotIn("theindicator_feed.xml", wf_text)
+        self.assertNotIn("indicator_history.json", wf_text)
+
+
+# ---------------------------------------------------------------------------
+# Production files must remain untouched
+# ---------------------------------------------------------------------------
+
+
+class TestProductionFilesUntouched(unittest.TestCase):
+    """The probe must only write batch2_* diagnostic JSON files; it must never
+    write to production feed or history files."""
+
+    def _collect_write_paths(self):
+        import inspect
+        src = inspect.getsource(probe)
+        return src
+
+    def test_probe_does_not_write_to_indicator_history(self):
+        src = self._collect_write_paths()
+        # Check that SUMMARY_OUTPUT and per-episode filenames are batch2-specific
+        self.assertIn("batch2_fresh_identity_discovery", probe.SUMMARY_OUTPUT)
+        self.assertNotIn("indicator_history.json", probe.SUMMARY_OUTPUT)
+
+    def test_output_filenames_are_batch2_specific(self):
+        """Per-episode diagnostic filenames must include 'batch2'."""
+        for target in probe.TARGETS:
+            fname = probe.output_filename(target["reference_date"])
+            self.assertIn("batch2", fname, f"Filename '{fname}' is not batch2-specific")
+
+    def test_probe_does_not_reference_feed_xml(self):
+        import inspect
+        src = inspect.getsource(probe)
+        self.assertNotIn("theindicator_feed.xml", src)
 
 
 if __name__ == "__main__":

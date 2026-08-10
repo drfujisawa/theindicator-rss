@@ -1,0 +1,50 @@
+name: Probe Batch 2 Fresh Identity Discovery
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  batch2-fresh-identity-discovery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Initialize fresh diagnostic placeholders
+        run: python probe_batch2_fresh_identity_discovery.py --write-placeholders-only
+
+      - name: Run unit tests
+        run: python -m unittest test_batch2_fresh_identity_discovery -v
+
+      - name: Run batch 2 fresh identity discovery probe
+        run: python probe_batch2_fresh_identity_discovery.py
+
+      - name: Upload diagnostic artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: batch2-fresh-identity-discovery-diagnostics
+          path: |
+            batch2_fresh_identity_discovery_*_diag.json
+            batch2_fresh_identity_discovery_summary.json
+          if-no-files-found: warn
+          retention-days: 90
+
+      - name: Commit diagnostic JSON files
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add batch2_fresh_identity_discovery_*_diag.json batch2_fresh_identity_discovery_summary.json
+          git diff --cached --quiet || git commit -m "Batch 2 fresh identity discovery diagnostics"
+          git push
