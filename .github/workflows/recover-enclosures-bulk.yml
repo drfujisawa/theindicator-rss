@@ -1,0 +1,64 @@
+name: Recover Enclosures Bulk
+
+on:
+  workflow_dispatch:
+    inputs:
+      batch_size:
+        description: "Number of episodes to process this run (default: 100)"
+        required: false
+        default: "100"
+      force_retry_no_audio:
+        description: "Re-attempt episodes previously marked no_audio (true/false)"
+        required: false
+        default: "false"
+      force_retry_exhausted:
+        description: "Re-attempt network_failed_exhausted episodes (true/false)"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+
+jobs:
+  recover-enclosures:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: copilot/analyze-indicator-feed-and-history
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Run bulk enclosure recovery
+        env:
+          BATCH_SIZE: ${{ github.event.inputs.batch_size }}
+          FORCE_RETRY_NO_AUDIO: ${{ github.event.inputs.force_retry_no_audio }}
+          FORCE_RETRY_EXHAUSTED: ${{ github.event.inputs.force_retry_exhausted }}
+        run: python recover_enclosures_bulk.py
+
+      - name: Upload map artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: indicator-enclosure-map
+          path: indicator_enclosure_map.json
+          retention-days: 90
+
+      - name: Commit updated map to branch
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add indicator_enclosure_map.json
+          if git diff --cached --quiet; then
+            echo "No changes to indicator_enclosure_map.json — skipping commit."
+          else
+            git commit -m "chore: update indicator_enclosure_map.json from Actions run"
+            git push
+          fi
