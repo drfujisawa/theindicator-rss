@@ -3,8 +3,8 @@
   "placeholder": false,
   "run_complete": true,
   "run_state": "run_complete",
-  "run_id": "31357286745",
-  "generated_at": "2026-08-10T05:28:22.927549+00:00",
+  "run_id": "31359960823",
+  "generated_at": "2026-08-10T05:57:07.450251+00:00",
   "reference_date": "2018-04-26",
   "reference_title": "California's Housing Conundrum",
   "reference_episode": 33,
@@ -1875,134 +1875,33 @@
     {
       "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
       "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F26%2F606151956%2Fcalifornia-s-housing-conundrum&matchType=exact&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=8",
-      "rows_returned": 0,
-      "error_type": "network_error",
-      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
+      "rows_returned": 8,
+      "error_type": null,
+      "error_message": null
     },
     {
       "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
       "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F26%2F606151956%2Fcalifornia-s-housing-conundrum%3Futm_medium%3DJSONFeed%26utm_campaign%3Dbusiness&matchType=exact&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=8",
       "rows_returned": 0,
       "error_type": "network_error",
-      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
+      "error_message": "<urlopen error timed out>"
     },
     {
       "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
       "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F26%2F606151956%2Fcalifornia-s-housing-conundrum%3Futm_medium%3DJSONFeed%26utm_campaign%3Dcardiffgarcia&matchType=exact&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=8",
       "rows_returned": 0,
       "error_type": "network_error",
-      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
+      "error_message": "<urlopen error timed out>"
     },
     {
       "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
       "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F26%2F606151956%2Fcalifornia-s-housing-conundrum%3Futm_medium%3DJSONFeed%26utm_campaign%3Dplanetmoney&matchType=exact&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=8",
       "rows_returned": 0,
       "error_type": "network_error",
-      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
-    },
-    {
-      "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought",
-      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F25%2F605819103%2Fthe-farm-labor-drought&matchType=exact&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=8",
-      "rows_returned": 0,
-      "error_type": "network_error",
-      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
-    },
-    {
-      "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=business",
-      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F25%2F605819103%2Fthe-farm-labor-drought%3Futm_medium%3DJSONFeed%26utm_campaign%3Dbusiness&matchType=exact&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=8",
-      "rows_returned": 0,
-      "error_type": "network_error",
-      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
-    },
-    {
-      "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages",
-      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F27%2F606528176%2Fepisode-838-a-series-of-mysterious-packages&matchType=exact&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=8",
-      "rows_returned": 0,
-      "error_type": "network_error",
-      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
-    },
-    {
-      "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages?utm_medium=JSONFeed&utm_campaign=planetmoney",
-      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F27%2F606528176%2Fepisode-838-a-series-of-mysterious-packages%3Futm_medium%3DJSONFeed%26utm_campaign%3Dplanetmoney&matchType=exact&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=8",
-      "rows_returned": 0,
-      "error_type": "network_error",
-      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
+      "error_message": "<urlopen error timed out>"
     }
   ],
-  "discovery_cdx_queries": [
-    {
-      "pattern": "https://www.npr.org/sections/money/2018/04/24/",
-      "from": "20180423",
-      "to": "20180430",
-      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F24%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180423&to=20180430&limit=40",
-      "rows_returned": 0,
-      "error_type": "network_error",
-      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
-    },
-    {
-      "pattern": "http://www.npr.org/sections/money/2018/04/24/",
-      "from": "20180423",
-      "to": "20180430",
-      "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F24%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180423&to=20180430&limit=40",
-      "rows_returned": 0,
-      "error_type": "network_error",
-      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
-    },
-    {
-      "pattern": "https://www.npr.org/sections/theindicator/2018/04/24/",
-      "from": "20180423",
-      "to": "20180430",
-      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Ftheindicator%2F2018%2F04%2F24%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180423&to=20180430&limit=40",
-      "rows_returned": 0,
-      "error_type": "network_error",
-      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
-    },
-    {
-      "pattern": "http://www.npr.org/sections/theindicator/2018/04/24/",
-      "from": "20180423",
-      "to": "20180430",
-      "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fsections%2Ftheindicator%2F2018%2F04%2F24%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180423&to=20180430&limit=40",
-      "rows_returned": 0,
-      "error_type": "network_error",
-      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
-    },
-    {
-      "pattern": "https://www.npr.org/sections/money/theindicator/2018/04/24/",
-      "from": "20180423",
-      "to": "20180430",
-      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2Ftheindicator%2F2018%2F04%2F24%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180423&to=20180430&limit=40",
-      "rows_returned": 0,
-      "error_type": "network_error",
-      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
-    },
-    {
-      "pattern": "http://www.npr.org/sections/money/theindicator/2018/04/24/",
-      "from": "20180423",
-      "to": "20180430",
-      "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2Ftheindicator%2F2018%2F04%2F24%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180423&to=20180430&limit=40",
-      "rows_returned": 0,
-      "error_type": "network_error",
-      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
-    },
-    {
-      "pattern": "https://www.npr.org/sections/money/2018/04/25/",
-      "from": "20180423",
-      "to": "20180430",
-      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F25%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180423&to=20180430&limit=40",
-      "rows_returned": 0,
-      "error_type": "network_error",
-      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
-    },
-    {
-      "pattern": "http://www.npr.org/sections/money/2018/04/25/",
-      "from": "20180423",
-      "to": "20180430",
-      "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F25%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180423&to=20180430&limit=40",
-      "rows_returned": 0,
-      "error_type": "network_error",
-      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
-    }
-  ],
+  "discovery_cdx_queries": [],
   "archive_captures_tried": [
     {
       "timestamp": "20180426234034",
@@ -2011,7 +1910,7 @@
       "archive_variant": "id_",
       "source": "prior_stage_c",
       "status": "error",
-      "error": "<urlopen error [Errno -5] No address associated with hostname>"
+      "error": "<urlopen error timed out>"
     },
     {
       "timestamp": "20180426234034",
@@ -2019,8 +1918,111 @@
       "archive_url": "https://web.archive.org/web/20180426234034/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
       "archive_variant": "raw",
       "source": "prior_stage_c",
-      "status": "error",
-      "error": "<urlopen error [Errno -5] No address associated with hostname>"
+      "status": "fetched",
+      "page_title": "California's Housing Conundrum : Planet Money : NPR",
+      "pub_date": "2018-04-26",
+      "canonical_url": "https://web.archive.org/web/20180426234034/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "match_score": {
+        "title_score": 1.0,
+        "date_match": true,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": false,
+        "canonical_story_id": null,
+        "discovered_story_id": "606151956",
+        "trusted_story_page": false,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "title_date_story_id_no_trusted_story_page"
+      },
+      "story_id": null,
+      "blocked_adjacent_unrelated": false,
+      "episode_qualified": false,
+      "rejection_reasons": [
+        "score_verdict:title_date_story_id_no_trusted_story_page"
+      ],
+      "story_evidence": {
+        "story_url": "https://web.archive.org/web/20180426234034/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+        "story_id": "606151956",
+        "provenance": {
+          "source_url": "https://web.archive.org/web/20180426234034/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "source_capture_timestamp": "20180426234034",
+          "episode_qualified": false,
+          "target_episode": "2018-04-26",
+          "target_title": "California's Housing Conundrum",
+          "evidence_type": "story_url",
+          "trust_level": "untrusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/606149731/606151258",
+          "player_story_id": "606149731",
+          "player_audio_id": "606151258",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180426234034/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180426234034",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "player_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180426234034/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180426234034",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true&dl=1",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180426234034/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180426234034",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://web.archive.org/web/20180426234034/https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true&dl=1",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180426234034/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180426234034",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      }
     },
     {
       "timestamp": "20180427195754",
@@ -2028,8 +2030,96 @@
       "archive_url": "https://web.archive.org/web/20180427195754id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
       "archive_variant": "id_",
       "source": "prior_cdx_scored",
-      "status": "error",
-      "error": "<urlopen error [Errno -5] No address associated with hostname>"
+      "status": "fetched",
+      "page_title": "California's Housing Conundrum : Planet Money : NPR",
+      "pub_date": "2018-04-26",
+      "canonical_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "match_score": {
+        "title_score": 1.0,
+        "date_match": true,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": true,
+        "canonical_story_id": "606151956",
+        "discovered_story_id": "606151956",
+        "trusted_story_page": true,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "strong_match"
+      },
+      "story_id": "606151956",
+      "blocked_adjacent_unrelated": false,
+      "episode_qualified": true,
+      "rejection_reasons": [],
+      "story_evidence": {
+        "story_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+        "story_id": "606151956",
+        "provenance": {
+          "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "source_capture_timestamp": "20180427195754",
+          "episode_qualified": true,
+          "target_episode": "2018-04-26",
+          "target_title": "California's Housing Conundrum",
+          "evidence_type": "story_url",
+          "trust_level": "trusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/606149731/606151258",
+          "player_story_id": "606149731",
+          "player_audio_id": "606151258",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180427195754",
+            "episode_qualified": true,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "player_url",
+            "trust_level": "trusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180427195754",
+            "episode_qualified": true,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true&dl=1",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180427195754",
+            "episode_qualified": true,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "trusted"
+          }
+        }
+      ],
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      }
     },
     {
       "timestamp": "20180427195754",
@@ -2037,8 +2127,111 @@
       "archive_url": "https://web.archive.org/web/20180427195754/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
       "archive_variant": "raw",
       "source": "prior_cdx_scored",
-      "status": "error",
-      "error": "<urlopen error [Errno -5] No address associated with hostname>"
+      "status": "fetched",
+      "page_title": "California's Housing Conundrum : Planet Money : NPR",
+      "pub_date": "2018-04-26",
+      "canonical_url": "https://web.archive.org/web/20180427195754/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "match_score": {
+        "title_score": 1.0,
+        "date_match": true,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": false,
+        "canonical_story_id": null,
+        "discovered_story_id": "606151956",
+        "trusted_story_page": false,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "title_date_story_id_no_trusted_story_page"
+      },
+      "story_id": null,
+      "blocked_adjacent_unrelated": false,
+      "episode_qualified": false,
+      "rejection_reasons": [
+        "score_verdict:title_date_story_id_no_trusted_story_page"
+      ],
+      "story_evidence": {
+        "story_url": "https://web.archive.org/web/20180427195754/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+        "story_id": "606151956",
+        "provenance": {
+          "source_url": "https://web.archive.org/web/20180427195754/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "source_capture_timestamp": "20180427195754",
+          "episode_qualified": false,
+          "target_episode": "2018-04-26",
+          "target_title": "California's Housing Conundrum",
+          "evidence_type": "story_url",
+          "trust_level": "untrusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/606149731/606151258",
+          "player_story_id": "606149731",
+          "player_audio_id": "606151258",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180427195754/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180427195754",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "player_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180427195754/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180427195754",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true&dl=1",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180427195754/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180427195754",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://web.archive.org/web/20180427195754/https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true&dl=1",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180427195754/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180427195754",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      }
     },
     {
       "timestamp": "20180428205907",
@@ -2046,8 +2239,96 @@
       "archive_url": "https://web.archive.org/web/20180428205907id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
       "archive_variant": "id_",
       "source": "prior_cdx_scored",
-      "status": "error",
-      "error": "<urlopen error [Errno -5] No address associated with hostname>"
+      "status": "fetched",
+      "page_title": "California's Housing Conundrum : Planet Money : NPR",
+      "pub_date": "2018-04-26",
+      "canonical_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "match_score": {
+        "title_score": 1.0,
+        "date_match": true,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": true,
+        "canonical_story_id": "606151956",
+        "discovered_story_id": "606151956",
+        "trusted_story_page": true,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "strong_match"
+      },
+      "story_id": "606151956",
+      "blocked_adjacent_unrelated": false,
+      "episode_qualified": true,
+      "rejection_reasons": [],
+      "story_evidence": {
+        "story_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+        "story_id": "606151956",
+        "provenance": {
+          "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "source_capture_timestamp": "20180428205907",
+          "episode_qualified": true,
+          "target_episode": "2018-04-26",
+          "target_title": "California's Housing Conundrum",
+          "evidence_type": "story_url",
+          "trust_level": "trusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/606149731/606151258",
+          "player_story_id": "606149731",
+          "player_audio_id": "606151258",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180428205907",
+            "episode_qualified": true,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "player_url",
+            "trust_level": "trusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180428205907",
+            "episode_qualified": true,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true&dl=1",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180428205907",
+            "episode_qualified": true,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "trusted"
+          }
+        }
+      ],
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      }
     },
     {
       "timestamp": "20180428205907",
@@ -2055,8 +2336,111 @@
       "archive_url": "https://web.archive.org/web/20180428205907/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
       "archive_variant": "raw",
       "source": "prior_cdx_scored",
-      "status": "error",
-      "error": "<urlopen error [Errno -5] No address associated with hostname>"
+      "status": "fetched",
+      "page_title": "California's Housing Conundrum : Planet Money : NPR",
+      "pub_date": "2018-04-26",
+      "canonical_url": "https://web.archive.org/web/20180428205907/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "match_score": {
+        "title_score": 1.0,
+        "date_match": true,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": false,
+        "canonical_story_id": null,
+        "discovered_story_id": "606151956",
+        "trusted_story_page": false,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "title_date_story_id_no_trusted_story_page"
+      },
+      "story_id": null,
+      "blocked_adjacent_unrelated": false,
+      "episode_qualified": false,
+      "rejection_reasons": [
+        "score_verdict:title_date_story_id_no_trusted_story_page"
+      ],
+      "story_evidence": {
+        "story_url": "https://web.archive.org/web/20180428205907/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+        "story_id": "606151956",
+        "provenance": {
+          "source_url": "https://web.archive.org/web/20180428205907/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "source_capture_timestamp": "20180428205907",
+          "episode_qualified": false,
+          "target_episode": "2018-04-26",
+          "target_title": "California's Housing Conundrum",
+          "evidence_type": "story_url",
+          "trust_level": "untrusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/606149731/606151258",
+          "player_story_id": "606149731",
+          "player_audio_id": "606151258",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180428205907/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180428205907",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "player_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180428205907/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180428205907",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true&dl=1",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180428205907/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180428205907",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://web.archive.org/web/20180428205907/https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true&dl=1",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180428205907/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180428205907",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      }
     },
     {
       "timestamp": "20180429213835",
@@ -2064,8 +2448,96 @@
       "archive_url": "https://web.archive.org/web/20180429213835id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
       "archive_variant": "id_",
       "source": "prior_cdx_scored",
-      "status": "error",
-      "error": "<urlopen error [Errno -5] No address associated with hostname>"
+      "status": "fetched",
+      "page_title": "California's Housing Conundrum : Planet Money : NPR",
+      "pub_date": "2018-04-26",
+      "canonical_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "match_score": {
+        "title_score": 1.0,
+        "date_match": true,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": true,
+        "canonical_story_id": "606151956",
+        "discovered_story_id": "606151956",
+        "trusted_story_page": true,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "strong_match"
+      },
+      "story_id": "606151956",
+      "blocked_adjacent_unrelated": false,
+      "episode_qualified": true,
+      "rejection_reasons": [],
+      "story_evidence": {
+        "story_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+        "story_id": "606151956",
+        "provenance": {
+          "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "source_capture_timestamp": "20180429213835",
+          "episode_qualified": true,
+          "target_episode": "2018-04-26",
+          "target_title": "California's Housing Conundrum",
+          "evidence_type": "story_url",
+          "trust_level": "trusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/606149731/606151258",
+          "player_story_id": "606149731",
+          "player_audio_id": "606151258",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180429213835",
+            "episode_qualified": true,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "player_url",
+            "trust_level": "trusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180429213835",
+            "episode_qualified": true,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true&dl=1",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180429213835",
+            "episode_qualified": true,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "trusted"
+          }
+        }
+      ],
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      }
     },
     {
       "timestamp": "20180429213835",
@@ -2073,8 +2545,111 @@
       "archive_url": "https://web.archive.org/web/20180429213835/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
       "archive_variant": "raw",
       "source": "prior_cdx_scored",
-      "status": "error",
-      "error": "<urlopen error [Errno -5] No address associated with hostname>"
+      "status": "fetched",
+      "page_title": "California's Housing Conundrum : Planet Money : NPR",
+      "pub_date": "2018-04-26",
+      "canonical_url": "https://web.archive.org/web/20180429213835/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "match_score": {
+        "title_score": 1.0,
+        "date_match": true,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": false,
+        "canonical_story_id": null,
+        "discovered_story_id": "606151956",
+        "trusted_story_page": false,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "title_date_story_id_no_trusted_story_page"
+      },
+      "story_id": null,
+      "blocked_adjacent_unrelated": false,
+      "episode_qualified": false,
+      "rejection_reasons": [
+        "score_verdict:title_date_story_id_no_trusted_story_page"
+      ],
+      "story_evidence": {
+        "story_url": "https://web.archive.org/web/20180429213835/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+        "story_id": "606151956",
+        "provenance": {
+          "source_url": "https://web.archive.org/web/20180429213835/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "source_capture_timestamp": "20180429213835",
+          "episode_qualified": false,
+          "target_episode": "2018-04-26",
+          "target_title": "California's Housing Conundrum",
+          "evidence_type": "story_url",
+          "trust_level": "untrusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/606149731/606151258",
+          "player_story_id": "606149731",
+          "player_audio_id": "606151258",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180429213835/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180429213835",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "player_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180429213835/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180429213835",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true&dl=1",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180429213835/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180429213835",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://web.archive.org/web/20180429213835/https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true&dl=1",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180429213835/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180429213835",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      }
     },
     {
       "timestamp": "20180430222230",
@@ -2083,7 +2658,7 @@
       "archive_variant": "id_",
       "source": "prior_cdx_scored",
       "status": "error",
-      "error": "<urlopen error [Errno -5] No address associated with hostname>"
+      "error": "<urlopen error timed out>"
     },
     {
       "timestamp": "20180430222230",
@@ -2092,23 +2667,960 @@
       "archive_variant": "raw",
       "source": "prior_cdx_scored",
       "status": "error",
-      "error": "<urlopen error [Errno -5] No address associated with hostname>"
+      "error": "<urlopen error timed out>"
     }
   ],
-  "captures_successfully_parsed": 0,
-  "archive_captures_failed": 10,
-  "identity_candidates": [],
-  "additional_qualified_captures": [],
-  "confirmed_identity": null,
-  "player_probes": [],
-  "audio_candidates_tested": [],
-  "validated_audio": [],
-  "audio_candidates_total": 0,
-  "final_classification": "archive_fetch_failed_identity_unresolved",
-  "validation_summary": "Known archive captures failed to fetch/parse; unresolved due to archive/network retrieval, not no-identity proof.",
-  "remaining_recovery_avenues": [
-    "Retry exact timestamps later and widen alternate timestamp retrieval window."
+  "captures_successfully_parsed": 7,
+  "archive_captures_failed": 3,
+  "identity_candidates": [
+    {
+      "timestamp": "20180426234034",
+      "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_url": "https://web.archive.org/web/20180426234034/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_variant": "raw",
+      "source": "prior_stage_c",
+      "status": "fetched",
+      "page_title": "California's Housing Conundrum : Planet Money : NPR",
+      "pub_date": "2018-04-26",
+      "canonical_url": "https://web.archive.org/web/20180426234034/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "match_score": {
+        "title_score": 1.0,
+        "date_match": true,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": false,
+        "canonical_story_id": null,
+        "discovered_story_id": "606151956",
+        "trusted_story_page": false,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "title_date_story_id_no_trusted_story_page"
+      },
+      "story_id": null,
+      "blocked_adjacent_unrelated": false,
+      "episode_qualified": false,
+      "rejection_reasons": [
+        "score_verdict:title_date_story_id_no_trusted_story_page"
+      ],
+      "story_evidence": {
+        "story_url": "https://web.archive.org/web/20180426234034/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+        "story_id": "606151956",
+        "provenance": {
+          "source_url": "https://web.archive.org/web/20180426234034/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "source_capture_timestamp": "20180426234034",
+          "episode_qualified": false,
+          "target_episode": "2018-04-26",
+          "target_title": "California's Housing Conundrum",
+          "evidence_type": "story_url",
+          "trust_level": "untrusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/606149731/606151258",
+          "player_story_id": "606149731",
+          "player_audio_id": "606151258",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180426234034/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180426234034",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "player_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180426234034/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180426234034",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true&dl=1",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180426234034/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180426234034",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://web.archive.org/web/20180426234034/https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true&dl=1",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180426234034/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180426234034",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      }
+    },
+    {
+      "timestamp": "20180427195754",
+      "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_url": "https://web.archive.org/web/20180427195754/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_variant": "raw",
+      "source": "prior_cdx_scored",
+      "status": "fetched",
+      "page_title": "California's Housing Conundrum : Planet Money : NPR",
+      "pub_date": "2018-04-26",
+      "canonical_url": "https://web.archive.org/web/20180427195754/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "match_score": {
+        "title_score": 1.0,
+        "date_match": true,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": false,
+        "canonical_story_id": null,
+        "discovered_story_id": "606151956",
+        "trusted_story_page": false,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "title_date_story_id_no_trusted_story_page"
+      },
+      "story_id": null,
+      "blocked_adjacent_unrelated": false,
+      "episode_qualified": false,
+      "rejection_reasons": [
+        "score_verdict:title_date_story_id_no_trusted_story_page"
+      ],
+      "story_evidence": {
+        "story_url": "https://web.archive.org/web/20180427195754/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+        "story_id": "606151956",
+        "provenance": {
+          "source_url": "https://web.archive.org/web/20180427195754/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "source_capture_timestamp": "20180427195754",
+          "episode_qualified": false,
+          "target_episode": "2018-04-26",
+          "target_title": "California's Housing Conundrum",
+          "evidence_type": "story_url",
+          "trust_level": "untrusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/606149731/606151258",
+          "player_story_id": "606149731",
+          "player_audio_id": "606151258",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180427195754/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180427195754",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "player_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180427195754/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180427195754",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true&dl=1",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180427195754/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180427195754",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://web.archive.org/web/20180427195754/https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true&dl=1",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180427195754/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180427195754",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      }
+    },
+    {
+      "timestamp": "20180428205907",
+      "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_url": "https://web.archive.org/web/20180428205907/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_variant": "raw",
+      "source": "prior_cdx_scored",
+      "status": "fetched",
+      "page_title": "California's Housing Conundrum : Planet Money : NPR",
+      "pub_date": "2018-04-26",
+      "canonical_url": "https://web.archive.org/web/20180428205907/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "match_score": {
+        "title_score": 1.0,
+        "date_match": true,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": false,
+        "canonical_story_id": null,
+        "discovered_story_id": "606151956",
+        "trusted_story_page": false,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "title_date_story_id_no_trusted_story_page"
+      },
+      "story_id": null,
+      "blocked_adjacent_unrelated": false,
+      "episode_qualified": false,
+      "rejection_reasons": [
+        "score_verdict:title_date_story_id_no_trusted_story_page"
+      ],
+      "story_evidence": {
+        "story_url": "https://web.archive.org/web/20180428205907/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+        "story_id": "606151956",
+        "provenance": {
+          "source_url": "https://web.archive.org/web/20180428205907/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "source_capture_timestamp": "20180428205907",
+          "episode_qualified": false,
+          "target_episode": "2018-04-26",
+          "target_title": "California's Housing Conundrum",
+          "evidence_type": "story_url",
+          "trust_level": "untrusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/606149731/606151258",
+          "player_story_id": "606149731",
+          "player_audio_id": "606151258",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180428205907/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180428205907",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "player_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180428205907/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180428205907",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true&dl=1",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180428205907/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180428205907",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://web.archive.org/web/20180428205907/https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true&dl=1",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180428205907/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180428205907",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      }
+    },
+    {
+      "timestamp": "20180429213835",
+      "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_url": "https://web.archive.org/web/20180429213835/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_variant": "raw",
+      "source": "prior_cdx_scored",
+      "status": "fetched",
+      "page_title": "California's Housing Conundrum : Planet Money : NPR",
+      "pub_date": "2018-04-26",
+      "canonical_url": "https://web.archive.org/web/20180429213835/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "match_score": {
+        "title_score": 1.0,
+        "date_match": true,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": false,
+        "canonical_story_id": null,
+        "discovered_story_id": "606151956",
+        "trusted_story_page": false,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "title_date_story_id_no_trusted_story_page"
+      },
+      "story_id": null,
+      "blocked_adjacent_unrelated": false,
+      "episode_qualified": false,
+      "rejection_reasons": [
+        "score_verdict:title_date_story_id_no_trusted_story_page"
+      ],
+      "story_evidence": {
+        "story_url": "https://web.archive.org/web/20180429213835/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+        "story_id": "606151956",
+        "provenance": {
+          "source_url": "https://web.archive.org/web/20180429213835/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "source_capture_timestamp": "20180429213835",
+          "episode_qualified": false,
+          "target_episode": "2018-04-26",
+          "target_title": "California's Housing Conundrum",
+          "evidence_type": "story_url",
+          "trust_level": "untrusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/606149731/606151258",
+          "player_story_id": "606149731",
+          "player_audio_id": "606151258",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180429213835/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180429213835",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "player_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180429213835/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180429213835",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true&dl=1",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180429213835/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180429213835",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://web.archive.org/web/20180429213835/https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true&dl=1",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180429213835/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180429213835",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      }
+    }
   ],
-  "story_id": null,
-  "player_ids": []
+  "additional_qualified_captures": [
+    {
+      "timestamp": "20180428205907",
+      "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_url": "https://web.archive.org/web/20180428205907id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_variant": "id_",
+      "source": "prior_cdx_scored",
+      "status": "fetched",
+      "page_title": "California's Housing Conundrum : Planet Money : NPR",
+      "pub_date": "2018-04-26",
+      "canonical_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "match_score": {
+        "title_score": 1.0,
+        "date_match": true,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": true,
+        "canonical_story_id": "606151956",
+        "discovered_story_id": "606151956",
+        "trusted_story_page": true,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "strong_match"
+      },
+      "story_id": "606151956",
+      "blocked_adjacent_unrelated": false,
+      "episode_qualified": true,
+      "rejection_reasons": [],
+      "story_evidence": {
+        "story_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+        "story_id": "606151956",
+        "provenance": {
+          "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "source_capture_timestamp": "20180428205907",
+          "episode_qualified": true,
+          "target_episode": "2018-04-26",
+          "target_title": "California's Housing Conundrum",
+          "evidence_type": "story_url",
+          "trust_level": "trusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/606149731/606151258",
+          "player_story_id": "606149731",
+          "player_audio_id": "606151258",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180428205907",
+            "episode_qualified": true,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "player_url",
+            "trust_level": "trusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180428205907",
+            "episode_qualified": true,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true&dl=1",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180428205907",
+            "episode_qualified": true,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "trusted"
+          }
+        }
+      ],
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      }
+    },
+    {
+      "timestamp": "20180429213835",
+      "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_url": "https://web.archive.org/web/20180429213835id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_variant": "id_",
+      "source": "prior_cdx_scored",
+      "status": "fetched",
+      "page_title": "California's Housing Conundrum : Planet Money : NPR",
+      "pub_date": "2018-04-26",
+      "canonical_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "match_score": {
+        "title_score": 1.0,
+        "date_match": true,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": true,
+        "canonical_story_id": "606151956",
+        "discovered_story_id": "606151956",
+        "trusted_story_page": true,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "strong_match"
+      },
+      "story_id": "606151956",
+      "blocked_adjacent_unrelated": false,
+      "episode_qualified": true,
+      "rejection_reasons": [],
+      "story_evidence": {
+        "story_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+        "story_id": "606151956",
+        "provenance": {
+          "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "source_capture_timestamp": "20180429213835",
+          "episode_qualified": true,
+          "target_episode": "2018-04-26",
+          "target_title": "California's Housing Conundrum",
+          "evidence_type": "story_url",
+          "trust_level": "trusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/606149731/606151258",
+          "player_story_id": "606149731",
+          "player_audio_id": "606151258",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180429213835",
+            "episode_qualified": true,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "player_url",
+            "trust_level": "trusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180429213835",
+            "episode_qualified": true,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true&dl=1",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180429213835",
+            "episode_qualified": true,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url",
+            "trust_level": "trusted"
+          }
+        }
+      ],
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      }
+    }
+  ],
+  "confirmed_identity": {
+    "trusted": true,
+    "episode_qualified": true,
+    "archive_url": "https://web.archive.org/web/20180427195754id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+    "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+    "story_id": "606151956",
+    "story_evidence": {
+      "story_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "story_id": "606151956",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+        "source_capture_timestamp": "20180427195754",
+        "episode_qualified": true,
+        "target_episode": "2018-04-26",
+        "target_title": "California's Housing Conundrum",
+        "evidence_type": "story_url",
+        "trust_level": "trusted"
+      }
+    },
+    "page_title": "California's Housing Conundrum : Planet Money : NPR",
+    "pub_date": "2018-04-26",
+    "canonical_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+    "match_score": {
+      "title_score": 1.0,
+      "date_match": true,
+      "date_adjacent": true,
+      "date_source": "publication_date",
+      "has_story_id": true,
+      "has_trusted_story_id": true,
+      "canonical_story_id": "606151956",
+      "discovered_story_id": "606151956",
+      "trusted_story_page": true,
+      "has_indicator_branding": false,
+      "has_episode_context": true,
+      "indicator_signals": [
+        "program_id_510325"
+      ],
+      "verdict": "strong_match"
+    },
+    "player_embeds": [
+      {
+        "player_url": "https://www.npr.org/player/embed/606149731/606151258",
+        "player_story_id": "606149731",
+        "player_audio_id": "606151258",
+        "provenance": {
+          "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "source_capture_timestamp": "20180427195754",
+          "episode_qualified": true,
+          "target_episode": "2018-04-26",
+          "target_title": "California's Housing Conundrum",
+          "evidence_type": "player_url",
+          "trust_level": "trusted"
+        }
+      }
+    ]
+  },
+  "player_probes": [
+    {
+      "url": "https://www.npr.org/player/embed/606149731/606151258",
+      "source": "trusted_live_player",
+      "status": "fetched",
+      "audio_candidates": [
+        {
+          "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?d=490&e=606149731&t=podcast&p=510325",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://www.npr.org/player/embed/606149731/606151258",
+            "source_capture_timestamp": null,
+            "episode_qualified": true,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url_from_live_player",
+            "trust_level": "trusted"
+          }
+        }
+      ]
+    },
+    {
+      "url": "https://www.npr.org/player/embed/606149731/606151258",
+      "archive_url": "https://web.archive.org/web/20200807190501id_/https://www.npr.org/player/embed/606149731/606151258",
+      "timestamp": "20200807190501",
+      "source": "trusted_archived_player",
+      "status": "fetched",
+      "audio_candidates": [
+        {
+          "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&dl=1",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://www.npr.org/player/embed/606149731/606151258",
+            "source_capture_timestamp": "20200807190501",
+            "episode_qualified": true,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url_from_archived_player",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "audio_url": "https://ondemand.npr.org/npr-mp4/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp4?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://www.npr.org/player/embed/606149731/606151258",
+            "source_capture_timestamp": "20200807190501",
+            "episode_qualified": true,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url_from_archived_player",
+            "trust_level": "trusted"
+          }
+        }
+      ]
+    },
+    {
+      "url": "https://www.npr.org/player/embed/606149731/606151258",
+      "archive_url": "https://web.archive.org/web/20250517034034id_/https://www.npr.org/player/embed/606149731/606151258",
+      "timestamp": "20250517034034",
+      "source": "trusted_archived_player",
+      "status": "fetched",
+      "audio_candidates": [
+        {
+          "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?d=490&e=606149731&t=podcast&p=510325",
+          "audio_id": "606149731",
+          "provenance": {
+            "source_url": "https://www.npr.org/player/embed/606149731/606151258",
+            "source_capture_timestamp": "20250517034034",
+            "episode_qualified": true,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "audio_url_from_archived_player",
+            "trust_level": "trusted"
+          }
+        }
+      ]
+    }
+  ],
+  "audio_candidates_tested": [
+    {
+      "candidate_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true",
+      "validation_status": "validated",
+      "reason": null,
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true",
+      "status_code": 206,
+      "content_type": "audio/mpeg",
+      "is_indicator_path": true,
+      "valid_npr_indicator_audio": true,
+      "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true",
+      "audio_id": "606149731",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+        "source_capture_timestamp": "20180427195754",
+        "episode_qualified": true,
+        "target_episode": "2018-04-26",
+        "target_title": "California's Housing Conundrum",
+        "evidence_type": "audio_url",
+        "trust_level": "trusted"
+      },
+      "trusted_for_recovery": true
+    },
+    {
+      "candidate_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true&dl=1",
+      "validation_status": "rejected_non_npr",
+      "reason": "Not an NPR-hosted audio URL.",
+      "final_url": null,
+      "status_code": null,
+      "content_type": null,
+      "is_indicator_path": false,
+      "valid_npr_indicator_audio": false,
+      "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true&dl=1",
+      "audio_id": "606149731",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+        "source_capture_timestamp": "20180427195754",
+        "episode_qualified": true,
+        "target_episode": "2018-04-26",
+        "target_title": "California's Housing Conundrum",
+        "evidence_type": "audio_url",
+        "trust_level": "trusted"
+      },
+      "trusted_for_recovery": false
+    },
+    {
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?d=490&e=606149731&t=podcast&p=510325",
+      "validation_status": "validated",
+      "reason": null,
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?d=490&e=606149731&t=podcast&p=510325",
+      "status_code": 206,
+      "content_type": "audio/mpeg",
+      "is_indicator_path": true,
+      "valid_npr_indicator_audio": true,
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?d=490&e=606149731&t=podcast&p=510325",
+      "audio_id": "606149731",
+      "provenance": {
+        "source_url": "https://www.npr.org/player/embed/606149731/606151258",
+        "source_capture_timestamp": null,
+        "episode_qualified": true,
+        "target_episode": "2018-04-26",
+        "target_title": "California's Housing Conundrum",
+        "evidence_type": "audio_url_from_live_player",
+        "trust_level": "trusted"
+      },
+      "trusted_for_recovery": true
+    },
+    {
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&dl=1",
+      "validation_status": "validated",
+      "reason": null,
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&dl=1",
+      "status_code": 206,
+      "content_type": "audio/mpeg",
+      "is_indicator_path": true,
+      "valid_npr_indicator_audio": true,
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&dl=1",
+      "audio_id": "606149731",
+      "provenance": {
+        "source_url": "https://www.npr.org/player/embed/606149731/606151258",
+        "source_capture_timestamp": "20200807190501",
+        "episode_qualified": true,
+        "target_episode": "2018-04-26",
+        "target_title": "California's Housing Conundrum",
+        "evidence_type": "audio_url_from_archived_player",
+        "trust_level": "trusted"
+      },
+      "trusted_for_recovery": true
+    }
+  ],
+  "validated_audio": [
+    {
+      "candidate_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true",
+      "validation_status": "validated",
+      "reason": null,
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true",
+      "status_code": 206,
+      "content_type": "audio/mpeg",
+      "is_indicator_path": true,
+      "valid_npr_indicator_audio": true,
+      "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&siteplayer=true",
+      "audio_id": "606149731",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+        "source_capture_timestamp": "20180427195754",
+        "episode_qualified": true,
+        "target_episode": "2018-04-26",
+        "target_title": "California's Housing Conundrum",
+        "evidence_type": "audio_url",
+        "trust_level": "trusted"
+      },
+      "trusted_for_recovery": true
+    },
+    {
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?d=490&e=606149731&t=podcast&p=510325",
+      "validation_status": "validated",
+      "reason": null,
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?d=490&e=606149731&t=podcast&p=510325",
+      "status_code": 206,
+      "content_type": "audio/mpeg",
+      "is_indicator_path": true,
+      "valid_npr_indicator_audio": true,
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?d=490&e=606149731&t=podcast&p=510325",
+      "audio_id": "606149731",
+      "provenance": {
+        "source_url": "https://www.npr.org/player/embed/606149731/606151258",
+        "source_capture_timestamp": null,
+        "episode_qualified": true,
+        "target_episode": "2018-04-26",
+        "target_title": "California's Housing Conundrum",
+        "evidence_type": "audio_url_from_live_player",
+        "trust_level": "trusted"
+      },
+      "trusted_for_recovery": true
+    },
+    {
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&dl=1",
+      "validation_status": "validated",
+      "reason": null,
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&dl=1",
+      "status_code": 206,
+      "content_type": "audio/mpeg",
+      "is_indicator_path": true,
+      "valid_npr_indicator_audio": true,
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3?orgId=1&d=490&p=510325&story=606149731&t=podcast&e=606149731&dl=1",
+      "audio_id": "606149731",
+      "provenance": {
+        "source_url": "https://www.npr.org/player/embed/606149731/606151258",
+        "source_capture_timestamp": "20200807190501",
+        "episode_qualified": true,
+        "target_episode": "2018-04-26",
+        "target_title": "California's Housing Conundrum",
+        "evidence_type": "audio_url_from_archived_player",
+        "trust_level": "trusted"
+      },
+      "trusted_for_recovery": true
+    }
+  ],
+  "audio_candidates_total": 5,
+  "final_classification": "recovered",
+  "validation_summary": "Recovered: trusted identity and 3 validated NPR Indicator audio file(s).",
+  "remaining_recovery_avenues": [],
+  "story_id": "606151956",
+  "player_ids": [
+    {
+      "player_story_id": "606149731",
+      "player_audio_id": "606151258",
+      "player_url": "https://www.npr.org/player/embed/606149731/606151258"
+    }
+  ]
 }
