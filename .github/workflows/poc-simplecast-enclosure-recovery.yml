@@ -2,12 +2,6 @@ name: POC Simplecast Enclosure Recovery
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - copilot/analyze-indicator-feed-and-history
-    paths:
-      - poc_simplecast_enclosure_recovery.py
-      - .github/workflows/poc-simplecast-enclosure-recovery.yml
 
 permissions:
   contents: write
