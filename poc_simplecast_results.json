@@ -7,15 +7,24 @@
     "audio_id": "730090982",
     "npr_url": "https://www.npr.org/2019/04/30/718711109/how-grocery-shelves-get-stacked",
     "known_enclosure": null,
-    "http_status": 0,
-    "candidates": [],
+    "http_status": 200,
+    "candidates": [
+      "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/04/20190430_indicator_043019_shelf_wars_final-989bf109-d2a1-4704-9114-8fff44ec6bb2.mp3?d=599&size=9576611&e=718711109&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+    ],
     "simplecast_uuids": [],
     "api_probes": [],
-    "validation": null,
-    "audio_found": false,
-    "host": "",
-    "extraction_method": "",
-    "validation_result": "page fetch failed: HTTP 0",
+    "validation": {
+      "status": 200,
+      "final_url": "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/04/20190430_indicator_043019_shelf_wars_final-989bf109-d2a1-4704-9114-8fff44ec6bb2.mp3?d=599&size=9576611&e=718711109&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "content_type": "audio/mpeg",
+      "is_audio": true,
+      "is_player_page": false,
+      "host": "ondemand.npr.org"
+    },
+    "audio_found": true,
+    "host": "ondemand.npr.org",
+    "extraction_method": "regex_direct",
+    "validation_result": "HTTP 200 \u2192 https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/04/2019043",
     "control_rediscovered": null
   },
   {
@@ -26,15 +35,24 @@
     "audio_id": "755097342",
     "npr_url": "https://www.npr.org/2019/08/27/754837871/not-all-goods-are-traded-equal",
     "known_enclosure": null,
-    "http_status": 0,
-    "candidates": [],
+    "http_status": 200,
+    "candidates": [
+      "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/08/20190827_indicator_082719_lydia_depillis_final_2-c516402f-c356-4b37-94df-262a3efd3f2f.mp3?d=595&size=9511142&e=754837871&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+    ],
     "simplecast_uuids": [],
     "api_probes": [],
-    "validation": null,
-    "audio_found": false,
-    "host": "",
-    "extraction_method": "",
-    "validation_result": "page fetch failed: HTTP 0",
+    "validation": {
+      "status": 200,
+      "final_url": "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/08/20190827_indicator_082719_lydia_depillis_final_2-c516402f-c356-4b37-94df-262a3efd3f2f.mp3?d=595&size=9511142&e=754837871&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "content_type": "audio/mpeg",
+      "is_audio": true,
+      "is_player_page": false,
+      "host": "ondemand.npr.org"
+    },
+    "audio_found": true,
+    "host": "ondemand.npr.org",
+    "extraction_method": "regex_direct",
+    "validation_result": "HTTP 200 \u2192 https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/08/2019082",
     "control_rediscovered": null
   },
   {
@@ -45,15 +63,24 @@
     "audio_id": "793108109",
     "npr_url": "https://www.npr.org/2019/12/23/790972284/the-bubble-that-broke-kuwait",
     "known_enclosure": null,
-    "http_status": 0,
-    "candidates": [],
+    "http_status": 200,
+    "candidates": [
+      "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2020/01/20200102_indicator_200102_kuwait_bubble_final_final_-fc4a1fca-fb03-43a1-90c9-8887bcd2b998.mp3?d=582&size=9292217&e=790972284&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+    ],
     "simplecast_uuids": [],
     "api_probes": [],
-    "validation": null,
-    "audio_found": false,
-    "host": "",
-    "extraction_method": "",
-    "validation_result": "page fetch failed: HTTP 0",
+    "validation": {
+      "status": 200,
+      "final_url": "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2020/01/20200102_indicator_200102_kuwait_bubble_final_final_-fc4a1fca-fb03-43a1-90c9-8887bcd2b998.mp3?d=582&size=9292217&e=790972284&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "content_type": "audio/mpeg",
+      "is_audio": true,
+      "is_player_page": false,
+      "host": "ondemand.npr.org"
+    },
+    "audio_found": true,
+    "host": "ondemand.npr.org",
+    "extraction_method": "regex_direct",
+    "validation_result": "HTTP 200 \u2192 https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2020/01/2020010",
     "control_rediscovered": null
   },
   {
@@ -64,15 +91,24 @@
     "audio_id": "886350201",
     "npr_url": "https://www.npr.org/2020/07/01/886346296/the-market-for-student-loans",
     "known_enclosure": null,
-    "http_status": 0,
-    "candidates": [],
+    "http_status": 200,
+    "candidates": [
+      "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2020/07/20200701_indicator_200316_student_loans_final-c9070bcb-fe0a-477b-bff0-919dfb05d546.mp3?d=580&size=9261776&e=886346296&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+    ],
     "simplecast_uuids": [],
     "api_probes": [],
-    "validation": null,
-    "audio_found": false,
-    "host": "",
-    "extraction_method": "",
-    "validation_result": "page fetch failed: HTTP 0",
+    "validation": {
+      "status": 200,
+      "final_url": "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2020/07/20200701_indicator_200316_student_loans_final-c9070bcb-fe0a-477b-bff0-919dfb05d546.mp3?d=580&size=9261776&e=886346296&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "content_type": "audio/mpeg",
+      "is_audio": true,
+      "is_player_page": false,
+      "host": "ondemand.npr.org"
+    },
+    "audio_found": true,
+    "host": "ondemand.npr.org",
+    "extraction_method": "regex_direct",
+    "validation_result": "HTTP 200 \u2192 https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2020/07/2020070",
     "control_rediscovered": null
   },
   {
@@ -83,15 +119,24 @@
     "audio_id": "953400323",
     "npr_url": "https://www.npr.org/2021/01/04/953267831/the-economy-in-2030",
     "known_enclosure": null,
-    "http_status": 0,
-    "candidates": [],
+    "http_status": 200,
+    "candidates": [
+      "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2021/01/20210104_indicator_guillen_2way_ready_to_publish.mp3?d=533&size=8515557&e=953267831&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+    ],
     "simplecast_uuids": [],
     "api_probes": [],
-    "validation": null,
-    "audio_found": false,
-    "host": "",
-    "extraction_method": "",
-    "validation_result": "page fetch failed: HTTP 0",
+    "validation": {
+      "status": 200,
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2021/01/20210104_indicator_guillen_2way_ready_to_publish.mp3?d=533&size=8515557&e=953267831&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "content_type": "audio/mpeg",
+      "is_audio": true,
+      "is_player_page": false,
+      "host": "ondemand.npr.org"
+    },
+    "audio_found": true,
+    "host": "ondemand.npr.org",
+    "extraction_method": "regex_direct",
+    "validation_result": "HTTP 200 \u2192 https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2021/01/20210104_indicator_g",
     "control_rediscovered": null
   },
   {
@@ -102,15 +147,24 @@
     "audio_id": "1014423933",
     "npr_url": "https://www.npr.org/2021/07/08/1014399406/shrinkflation-inflations-sneaky-cousin",
     "known_enclosure": null,
-    "http_status": 0,
-    "candidates": [],
+    "http_status": 200,
+    "candidates": [
+      "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2021/07/20210708_indicator_shrinkflation_ready_to_publish.mp3?d=599&size=9591415&e=1014399406&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+    ],
     "simplecast_uuids": [],
     "api_probes": [],
-    "validation": null,
-    "audio_found": false,
-    "host": "",
-    "extraction_method": "",
-    "validation_result": "page fetch failed: HTTP 0",
+    "validation": {
+      "status": 200,
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2021/07/20210708_indicator_shrinkflation_ready_to_publish.mp3?d=599&size=9591415&e=1014399406&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "content_type": "audio/mpeg",
+      "is_audio": true,
+      "is_player_page": false,
+      "host": "ondemand.npr.org"
+    },
+    "audio_found": true,
+    "host": "ondemand.npr.org",
+    "extraction_method": "regex_direct",
+    "validation_result": "HTTP 200 \u2192 https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2021/07/20210708_indicator_s",
     "control_rediscovered": null
   },
   {
@@ -121,15 +175,24 @@
     "audio_id": "1069995256",
     "npr_url": "https://www.npr.org/2022/01/03/1069988390/how-to-keep-your-new-years-resolutions",
     "known_enclosure": null,
-    "http_status": 0,
-    "candidates": [],
+    "http_status": 200,
+    "candidates": [
+      "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2022/01/20220103_indicator_milkman_ready_to_publish_2.mp3?d=579&size=9280453&e=1069988390&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer"
+    ],
     "simplecast_uuids": [],
     "api_probes": [],
-    "validation": null,
-    "audio_found": false,
-    "host": "",
-    "extraction_method": "",
-    "validation_result": "page fetch failed: HTTP 0",
+    "validation": {
+      "status": 200,
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2022/01/20220103_indicator_milkman_ready_to_publish_2.mp3?d=579&size=9280453&e=1069988390&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "content_type": "audio/mpeg",
+      "is_audio": true,
+      "is_player_page": false,
+      "host": "ondemand.npr.org"
+    },
+    "audio_found": true,
+    "host": "ondemand.npr.org",
+    "extraction_method": "regex_direct",
+    "validation_result": "HTTP 200 \u2192 https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2022/01/20220103_indicator_m",
     "control_rediscovered": null
   },
   {
@@ -140,15 +203,37 @@
     "audio_id": "1198988657",
     "npr_url": "https://www.npr.org/2022/07/05/1109906572/why-a-gas-tax-holiday-might-not-be-something-to-celebrate",
     "known_enclosure": null,
-    "http_status": 0,
-    "candidates": [],
-    "simplecast_uuids": [],
-    "api_probes": [],
-    "validation": null,
-    "audio_found": false,
-    "host": "",
-    "extraction_method": "",
-    "validation_result": "page fetch failed: HTTP 0",
+    "http_status": 200,
+    "candidates": [
+      "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/951ca467-7f4d-4157-a50d-d1fd8e7137df/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=951ca467-7f4d-4157-a50d-d1fd8e7137df&t=podcast&e=1109906572&p=510325&d=559&size=9223611&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/951ca467-7f4d-4157-a50d-d1fd8e7137df/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=951ca467-7f4d-4157-a50d-d1fd8e7137df&t=podcast&e=1109906572&p=510325&d=559&size=9223611&sc=siteplayer&a"
+    ],
+    "simplecast_uuids": [
+      "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "951ca467-7f4d-4157-a50d-d1fd8e7137df"
+    ],
+    "api_probes": [
+      {
+        "uuid": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "audio_url": null
+      },
+      {
+        "uuid": "951ca467-7f4d-4157-a50d-d1fd8e7137df",
+        "audio_url": "https://npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/951ca467-7f4d-4157-a50d-d1fd8e7137df/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=951ca467-7f4d-4157-a50d-d1fd8e7137df"
+      }
+    ],
+    "validation": {
+      "status": 200,
+      "final_url": "https://npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/951ca467-7f4d-4157-a50d-d1fd8e7137df/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_9071ca6c5f6adc92669fcac0d8635a72_8981287.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=951ca467-7f4d-4157-a50d-d1fd8e7137df&t=podcast&e=1109906572&p=510325&d=559&size=9223611&sc=siteplayer&aw_0_1st.playerid=siteplayer&hash_redirect=1&x-total-bytes=8981287&x-ais-classified=streaming&listeningSessionID=0CD_382_221__1e514c4b835f1856894f9f550b6e9393f44f3a4a",
+      "content_type": "audio/mpeg",
+      "is_audio": true,
+      "is_player_page": false,
+      "host": "npr.simplecastaudio.com"
+    },
+    "audio_found": true,
+    "host": "npr.simplecastaudio.com",
+    "extraction_method": "regex_direct",
+    "validation_result": "HTTP 200 \u2192 https://npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/95",
     "control_rediscovered": null
   },
   {
@@ -159,15 +244,37 @@
     "audio_id": "1198987996",
     "npr_url": "https://www.npr.org/2023/01/03/1146636158/how-to-keep-your-new-years-resolutions-encore",
     "known_enclosure": null,
-    "http_status": 0,
-    "candidates": [],
-    "simplecast_uuids": [],
-    "api_probes": [],
-    "validation": null,
-    "audio_found": false,
-    "host": "",
-    "extraction_method": "",
-    "validation_result": "page fetch failed: HTTP 0",
+    "http_status": 200,
+    "candidates": [
+      "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/723fe654-68f1-479c-90cb-9dcb6f6f03e9/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=723fe654-68f1-479c-90cb-9dcb6f6f03e9&t=podcast&e=1146636158&p=510325&d=567&size=9087313&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/723fe654-68f1-479c-90cb-9dcb6f6f03e9/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=723fe654-68f1-479c-90cb-9dcb6f6f03e9&t=podcast&e=1146636158&p=510325&d=567&size=9087313&sc=siteplayer&a"
+    ],
+    "simplecast_uuids": [
+      "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "723fe654-68f1-479c-90cb-9dcb6f6f03e9"
+    ],
+    "api_probes": [
+      {
+        "uuid": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "audio_url": null
+      },
+      {
+        "uuid": "723fe654-68f1-479c-90cb-9dcb6f6f03e9",
+        "audio_url": "https://npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/723fe654-68f1-479c-90cb-9dcb6f6f03e9/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=723fe654-68f1-479c-90cb-9dcb6f6f03e9"
+      }
+    ],
+    "validation": {
+      "status": 200,
+      "final_url": "https://npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/723fe654-68f1-479c-90cb-9dcb6f6f03e9/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_d4668b4700853ea41d169b07b6123edb_9087858.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=723fe654-68f1-479c-90cb-9dcb6f6f03e9&t=podcast&e=1146636158&p=510325&d=567&size=9087313&sc=siteplayer&aw_0_1st.playerid=siteplayer&hash_redirect=1&x-total-bytes=9087858&x-ais-classified=streaming&listeningSessionID=0CD_382_221__dbfe0370d7b12a7b19031885d558cf65555b0da8",
+      "content_type": "audio/mpeg",
+      "is_audio": true,
+      "is_player_page": false,
+      "host": "npr.simplecastaudio.com"
+    },
+    "audio_found": true,
+    "host": "npr.simplecastaudio.com",
+    "extraction_method": "regex_direct",
+    "validation_result": "HTTP 200 \u2192 https://npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/72",
     "control_rediscovered": null
   },
   {
@@ -178,15 +285,37 @@
     "audio_id": "1198987333",
     "npr_url": "https://www.npr.org/2023/06/29/1185155146/our-fireworks-show",
     "known_enclosure": null,
-    "http_status": 0,
-    "candidates": [],
-    "simplecast_uuids": [],
-    "api_probes": [],
-    "validation": null,
-    "audio_found": false,
-    "host": "",
-    "extraction_method": "",
-    "validation_result": "page fetch failed: HTTP 0",
+    "http_status": 200,
+    "candidates": [
+      "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/6609f9d7-f82e-4ef2-883d-9afefa060b3a/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=6609f9d7-f82e-4ef2-883d-9afefa060b3a&t=podcast&e=1185155146&p=510325&d=547&size=9041756&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/6609f9d7-f82e-4ef2-883d-9afefa060b3a/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=6609f9d7-f82e-4ef2-883d-9afefa060b3a&t=podcast&e=1185155146&p=510325&d=547&size=9041756&sc=siteplayer&a"
+    ],
+    "simplecast_uuids": [
+      "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "6609f9d7-f82e-4ef2-883d-9afefa060b3a"
+    ],
+    "api_probes": [
+      {
+        "uuid": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "audio_url": null
+      },
+      {
+        "uuid": "6609f9d7-f82e-4ef2-883d-9afefa060b3a",
+        "audio_url": "https://npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/6609f9d7-f82e-4ef2-883d-9afefa060b3a/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=6609f9d7-f82e-4ef2-883d-9afefa060b3a"
+      }
+    ],
+    "validation": {
+      "status": 200,
+      "final_url": "https://npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/6609f9d7-f82e-4ef2-883d-9afefa060b3a/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_72b1437594129ca7ffd26fa3475477c7_8760566.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=6609f9d7-f82e-4ef2-883d-9afefa060b3a&t=podcast&e=1185155146&p=510325&d=547&size=9041756&sc=siteplayer&aw_0_1st.playerid=siteplayer&hash_redirect=1&x-total-bytes=8760566&x-ais-classified=streaming&listeningSessionID=0CD_382_221__0f333ffb5bebea03435aae908bcecffd9a41d678",
+      "content_type": "audio/mpeg",
+      "is_audio": true,
+      "is_player_page": false,
+      "host": "npr.simplecastaudio.com"
+    },
+    "audio_found": true,
+    "host": "npr.simplecastaudio.com",
+    "extraction_method": "regex_direct",
+    "validation_result": "HTTP 200 \u2192 https://npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/66",
     "control_rediscovered": null
   },
   {
@@ -197,15 +326,37 @@
     "audio_id": "1222577217",
     "npr_url": "https://www.npr.org/2024/01/02/1197959330/red-sea-tensions-global-shipping",
     "known_enclosure": null,
-    "http_status": 0,
-    "candidates": [],
-    "simplecast_uuids": [],
-    "api_probes": [],
-    "validation": null,
-    "audio_found": false,
-    "host": "",
-    "extraction_method": "",
-    "validation_result": "page fetch failed: HTTP 0",
+    "http_status": 200,
+    "candidates": [
+      "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/64aa3ee5-0ec7-42d1-956f-f47297a45fa8/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=64aa3ee5-0ec7-42d1-956f-f47297a45fa8&t=podcast&e=1197959330&p=510325&d=524&size=8396845&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/64aa3ee5-0ec7-42d1-956f-f47297a45fa8/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=64aa3ee5-0ec7-42d1-956f-f47297a45fa8&t=podcast&e=1197959330&p=510325&d=524&size=8396845&sc=siteplayer&a"
+    ],
+    "simplecast_uuids": [
+      "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "64aa3ee5-0ec7-42d1-956f-f47297a45fa8"
+    ],
+    "api_probes": [
+      {
+        "uuid": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "audio_url": null
+      },
+      {
+        "uuid": "64aa3ee5-0ec7-42d1-956f-f47297a45fa8",
+        "audio_url": "https://npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/64aa3ee5-0ec7-42d1-956f-f47297a45fa8/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=64aa3ee5-0ec7-42d1-956f-f47297a45fa8"
+      }
+    ],
+    "validation": {
+      "status": 200,
+      "final_url": "https://npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/64aa3ee5-0ec7-42d1-956f-f47297a45fa8/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_33a278182e902f9e983952ddecbf226f_8397396.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=64aa3ee5-0ec7-42d1-956f-f47297a45fa8&t=podcast&e=1197959330&p=510325&d=524&size=8396845&sc=siteplayer&aw_0_1st.playerid=siteplayer&hash_redirect=1&x-total-bytes=8397396&x-ais-classified=streaming&listeningSessionID=0CD_382_221__1601a8fe82cb036e112048c11252db50f8009a95",
+      "content_type": "audio/mpeg",
+      "is_audio": true,
+      "is_player_page": false,
+      "host": "npr.simplecastaudio.com"
+    },
+    "audio_found": true,
+    "host": "npr.simplecastaudio.com",
+    "extraction_method": "regex_direct",
+    "validation_result": "HTTP 200 \u2192 https://npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/64",
     "control_rediscovered": null
   },
   {
@@ -216,15 +367,37 @@
     "audio_id": "1254919710",
     "npr_url": "https://www.npr.org/2024/06/27/1197967336/do-polluters-pay-or-do-they-get-paid",
     "known_enclosure": null,
-    "http_status": 0,
-    "candidates": [],
-    "simplecast_uuids": [],
-    "api_probes": [],
-    "validation": null,
-    "audio_found": false,
-    "host": "",
-    "extraction_method": "",
-    "validation_result": "page fetch failed: HTTP 0",
+    "http_status": 200,
+    "candidates": [
+      "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/46c82f2f-c17c-4884-8b8d-d8d420db2447/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=46c82f2f-c17c-4884-8b8d-d8d420db2447&t=podcast&e=1197967336&p=510325&d=543&size=8694892&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/46c82f2f-c17c-4884-8b8d-d8d420db2447/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=46c82f2f-c17c-4884-8b8d-d8d420db2447&t=podcast&e=1197967336&p=510325&d=543&size=8694892&sc=siteplayer&a"
+    ],
+    "simplecast_uuids": [
+      "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "46c82f2f-c17c-4884-8b8d-d8d420db2447"
+    ],
+    "api_probes": [
+      {
+        "uuid": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "audio_url": null
+      },
+      {
+        "uuid": "46c82f2f-c17c-4884-8b8d-d8d420db2447",
+        "audio_url": "https://npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/46c82f2f-c17c-4884-8b8d-d8d420db2447/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=46c82f2f-c17c-4884-8b8d-d8d420db2447"
+      }
+    ],
+    "validation": {
+      "status": 200,
+      "final_url": "https://npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/46c82f2f-c17c-4884-8b8d-d8d420db2447/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_cfe2177f31e022d941b99dd1c38fb9ce_8695384.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=46c82f2f-c17c-4884-8b8d-d8d420db2447&t=podcast&e=1197967336&p=510325&d=543&size=8694892&sc=siteplayer&aw_0_1st.playerid=siteplayer&hash_redirect=1&x-total-bytes=8695384&x-ais-classified=streaming&listeningSessionID=0CD_382_221__63a02b89ea16586b9e2d9c31c89c3cd09a5f370e",
+      "content_type": "audio/mpeg",
+      "is_audio": true,
+      "is_player_page": false,
+      "host": "npr.simplecastaudio.com"
+    },
+    "audio_found": true,
+    "host": "npr.simplecastaudio.com",
+    "extraction_method": "regex_direct",
+    "validation_result": "HTTP 200 \u2192 https://npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/46",
     "control_rediscovered": null
   },
   {
@@ -235,16 +408,38 @@
     "audio_id": "",
     "npr_url": "https://www.npr.org/2025/08/11/1257106922/what-were-reading-on-the-beach-this-summer",
     "known_enclosure": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/931954cc-8dff-4fd7-8cf1-c498ad18e905/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=931954cc-8dff-4fd7-8cf1-c498ad18e905&t=podcast&e=1257106922&p=510325&d=569&size=9120375",
-    "http_status": 0,
-    "candidates": [],
-    "simplecast_uuids": [],
-    "api_probes": [],
-    "validation": null,
-    "audio_found": false,
-    "host": "",
-    "extraction_method": "",
-    "validation_result": "page fetch failed: HTTP 0",
-    "control_rediscovered": null
+    "http_status": 200,
+    "candidates": [
+      "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/931954cc-8dff-4fd7-8cf1-c498ad18e905/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=931954cc-8dff-4fd7-8cf1-c498ad18e905&t=podcast&e=1257106922&p=510325&d=569&size=9120375&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/931954cc-8dff-4fd7-8cf1-c498ad18e905/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=931954cc-8dff-4fd7-8cf1-c498ad18e905&t=podcast&e=1257106922&p=510325&d=569&size=9120375&sc=siteplayer&a"
+    ],
+    "simplecast_uuids": [
+      "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "931954cc-8dff-4fd7-8cf1-c498ad18e905"
+    ],
+    "api_probes": [
+      {
+        "uuid": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "audio_url": null
+      },
+      {
+        "uuid": "931954cc-8dff-4fd7-8cf1-c498ad18e905",
+        "audio_url": "https://npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/931954cc-8dff-4fd7-8cf1-c498ad18e905/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=931954cc-8dff-4fd7-8cf1-c498ad18e905"
+      }
+    ],
+    "validation": {
+      "status": 200,
+      "final_url": "https://npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/931954cc-8dff-4fd7-8cf1-c498ad18e905/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_0e941a52c83355dd875d10c6884c299c_9120872.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=931954cc-8dff-4fd7-8cf1-c498ad18e905&t=podcast&e=1257106922&p=510325&d=569&size=9120375&sc=siteplayer&aw_0_1st.playerid=siteplayer&hash_redirect=1&x-total-bytes=9120872&x-ais-classified=streaming&listeningSessionID=0CD_382_221__8f9e8b70faf685f587214213a92f05efda396219",
+      "content_type": "audio/mpeg",
+      "is_audio": true,
+      "is_player_page": false,
+      "host": "npr.simplecastaudio.com"
+    },
+    "audio_found": true,
+    "host": "npr.simplecastaudio.com",
+    "extraction_method": "regex_direct",
+    "validation_result": "HTTP 200 \u2192 https://npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/93",
+    "control_rediscovered": false
   },
   {
     "sample_label": "control",
@@ -254,15 +449,37 @@
     "audio_id": "",
     "npr_url": "https://www.npr.org/2025/08/08/1257040927/palantir-alex-karp-mrna-rfk-trump-climate",
     "known_enclosure": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/cd7e47dc-9116-4805-8c22-2aae993fbc64/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=cd7e47dc-9116-4805-8c22-2aae993fbc64&t=podcast&e=1257040927&p=510325&d=566&size=9068548",
-    "http_status": 0,
-    "candidates": [],
-    "simplecast_uuids": [],
-    "api_probes": [],
-    "validation": null,
-    "audio_found": false,
-    "host": "",
-    "extraction_method": "",
-    "validation_result": "page fetch failed: HTTP 0",
-    "control_rediscovered": null
+    "http_status": 200,
+    "candidates": [
+      "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/cd7e47dc-9116-4805-8c22-2aae993fbc64/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=cd7e47dc-9116-4805-8c22-2aae993fbc64&t=podcast&e=1257040927&p=510325&d=566&size=9068548&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/cd7e47dc-9116-4805-8c22-2aae993fbc64/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=cd7e47dc-9116-4805-8c22-2aae993fbc64&t=podcast&e=1257040927&p=510325&d=566&size=9068548&sc=siteplayer&a"
+    ],
+    "simplecast_uuids": [
+      "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "cd7e47dc-9116-4805-8c22-2aae993fbc64"
+    ],
+    "api_probes": [
+      {
+        "uuid": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "audio_url": null
+      },
+      {
+        "uuid": "cd7e47dc-9116-4805-8c22-2aae993fbc64",
+        "audio_url": "https://npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/cd7e47dc-9116-4805-8c22-2aae993fbc64/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=cd7e47dc-9116-4805-8c22-2aae993fbc64"
+      }
+    ],
+    "validation": {
+      "status": 200,
+      "final_url": "https://npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/cd7e47dc-9116-4805-8c22-2aae993fbc64/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_e3a164ec17558b4da64166cacae75ade_9069074.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=cd7e47dc-9116-4805-8c22-2aae993fbc64&t=podcast&e=1257040927&p=510325&d=566&size=9068548&sc=siteplayer&aw_0_1st.playerid=siteplayer&hash_redirect=1&x-total-bytes=9069074&x-ais-classified=streaming&listeningSessionID=0CD_382_221__d15a0b3e1a63133f475e05bfd8c76a0d36102c40",
+      "content_type": "audio/mpeg",
+      "is_audio": true,
+      "is_player_page": false,
+      "host": "npr.simplecastaudio.com"
+    },
+    "audio_found": true,
+    "host": "npr.simplecastaudio.com",
+    "extraction_method": "regex_direct",
+    "validation_result": "HTTP 200 \u2192 https://npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/cd",
+    "control_rediscovered": false
   }
 ]
