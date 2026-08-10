@@ -10,12 +10,14 @@
   "reference_episode": 31,
   "request_budget": {
     "discovery_cdx_queries": 8,
+    "seeded_exact_cdx_queries": 4,
     "capture_attempts": 10,
     "live_player_fetches": 2,
+    "archived_player_cdx_queries": 2,
     "archived_player_fetches": 2,
     "audio_validations": 4,
-    "max_logical_requests": 26,
-    "conservative_timeout_ceiling_seconds": 624
+    "max_logical_requests": 32,
+    "conservative_timeout_ceiling_seconds": 768
   },
   "prior_evidence": {
     "sources": {

@@ -248,7 +248,8 @@ class TestRequestBudgetCoverage(unittest.TestCase):
         self.assertEqual(budget["max_logical_requests"], expected)
 
     def test_workflow_timeout_exceeds_conservative_budget(self):
-        workflow = Path("/home/runner/work/theindicator-rss/theindicator-rss/.github/workflows/probe-batch2-final3-identity-recovery.yml")
+        workflow = Path(__file__).resolve().parent / ".github/workflows/probe-batch2-final3-identity-recovery.yml"
+        self.assertTrue(workflow.exists(), f"Missing workflow file: {workflow}")
         text = workflow.read_text(encoding="utf-8")
         match = re.search(r"timeout-minutes:\s*(\d+)", text)
         self.assertIsNotNone(match)

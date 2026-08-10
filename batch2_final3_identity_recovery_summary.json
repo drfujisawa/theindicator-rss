@@ -8,17 +8,19 @@
   "request_budget": {
     "per_episode": {
       "discovery_cdx_queries": 8,
+      "seeded_exact_cdx_queries": 4,
       "capture_attempts": 10,
       "live_player_fetches": 2,
+      "archived_player_cdx_queries": 2,
       "archived_player_fetches": 2,
       "audio_validations": 4,
-      "max_logical_requests": 26,
-      "conservative_timeout_ceiling_seconds": 624
+      "max_logical_requests": 32,
+      "conservative_timeout_ceiling_seconds": 768
     },
     "per_run": {
       "targets": 3,
-      "max_logical_requests": 78,
-      "conservative_timeout_ceiling_seconds": 1872
+      "max_logical_requests": 96,
+      "conservative_timeout_ceiling_seconds": 2304
     }
   },
   "episodes": [
