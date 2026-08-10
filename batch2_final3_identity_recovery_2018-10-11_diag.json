@@ -1,11 +1,2967 @@
 {
-  "placeholder": true,
-  "run_complete": false,
-  "run_state": "placeholder",
-  "run_id": "31362220062",
-  "generated_at": "2026-08-10T06:32:58.154995+00:00",
+  "method": "batch2-final3-targeted-recovery",
+  "placeholder": false,
+  "run_complete": true,
+  "run_state": "run_complete",
+  "run_id": "31364226414",
+  "generated_at": "2026-08-10T07:02:04.010783+00:00",
   "reference_date": "2018-10-11",
   "reference_title": "China's Brave New World",
   "reference_episode": 145,
-  "final_classification": null
+  "request_budget": {
+    "discovery_cdx_queries": 8,
+    "seeded_exact_cdx_queries": 4,
+    "capture_attempts": 10,
+    "live_player_fetches": 2,
+    "archived_player_cdx_queries": 2,
+    "archived_player_fetches": 2,
+    "audio_validations": 4,
+    "max_logical_requests": 32,
+    "conservative_timeout_ceiling_seconds": 768
+  },
+  "prior_evidence": {
+    "sources": {
+      "batch2_diag": "batch2_fresh_identity_discovery_2018-10-11_diag.json",
+      "batch2_summary": "batch2_fresh_identity_discovery_summary.json",
+      "ranked_report": "indicator_identity_audio_unresolved_ranked_report.json",
+      "consolidated_ledger": "indicator_unresolved_consolidated_evidence_ledger.json",
+      "wayback_npr_probe": "indicator_wayback_npr_probe.json",
+      "wayback_player_probe": "indicator_wayback_player_probe.json"
+    },
+    "batch2_diag": {
+      "method": "fresh-identity-discovery",
+      "placeholder": false,
+      "run_complete": true,
+      "run_state": "run_complete",
+      "run_id": "31354166887",
+      "generated_at": "2026-08-10T04:00:25.146652+00:00",
+      "reference_date": "2018-10-11",
+      "reference_title": "China's Brave New World",
+      "reference_episode": 145,
+      "strategy": "staged_cdx_funnel_identity_first",
+      "date_window": {
+        "from": "20181008",
+        "to": "20181018"
+      },
+      "request_budget": {
+        "stage_a_cdx_queries": 6,
+        "capture_fetches": 4,
+        "live_player_fetches": 2,
+        "player_cdx_queries": 2,
+        "archived_player_fetches": 2,
+        "audio_validations": 4,
+        "max_logical_requests": 20,
+        "conservative_timeout_ceiling_seconds": 384,
+        "realistic_worst_case_runtime_seconds": 92
+      },
+      "id_bounds": {
+        "lower": 655629329,
+        "upper": 657017860,
+        "lower_from_episode": "2018-10-08",
+        "upper_from_episode": "2018-10-12",
+        "advisory_only": true
+      },
+      "slug_filters_used": [
+        "chinas-brave-new-world",
+        "china-brave-new-world",
+        "brave-new-world",
+        "china-social-control"
+      ],
+      "cdx_queries": [
+        {
+          "pattern": "https://www.npr.org/sections/money/2018/10/10/",
+          "from": "20181008",
+          "to": "20181018",
+          "limit": 40,
+          "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F10%2F10%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20181008&to=20181018&limit=40",
+          "rows_returned": 0,
+          "error_type": "network_error",
+          "error_message": "<urlopen error timed out>",
+          "response_length": 0,
+          "zero_row_response": false,
+          "scored_candidates": []
+        },
+        {
+          "pattern": "http://www.npr.org/sections/money/2018/10/10/",
+          "from": "20181008",
+          "to": "20181018",
+          "limit": 40,
+          "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F10%2F10%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20181008&to=20181018&limit=40",
+          "rows_returned": 0,
+          "error_type": "network_error",
+          "error_message": "<urlopen error timed out>",
+          "response_length": 0,
+          "zero_row_response": false,
+          "scored_candidates": []
+        },
+        {
+          "pattern": "https://www.npr.org/sections/money/2018/10/11/",
+          "from": "20181008",
+          "to": "20181018",
+          "limit": 40,
+          "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F10%2F11%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20181008&to=20181018&limit=40",
+          "rows_returned": 0,
+          "error_type": "network_error",
+          "error_message": "<urlopen error timed out>",
+          "response_length": 0,
+          "zero_row_response": false,
+          "scored_candidates": []
+        },
+        {
+          "pattern": "http://www.npr.org/sections/money/2018/10/11/",
+          "from": "20181008",
+          "to": "20181018",
+          "limit": 40,
+          "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F10%2F11%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20181008&to=20181018&limit=40",
+          "rows_returned": 0,
+          "error_type": "network_error",
+          "error_message": "<urlopen error timed out>",
+          "response_length": 0,
+          "zero_row_response": false,
+          "scored_candidates": []
+        },
+        {
+          "pattern": "https://www.npr.org/sections/money/2018/10/12/",
+          "from": "20181008",
+          "to": "20181018",
+          "limit": 40,
+          "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F10%2F12%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20181008&to=20181018&limit=40",
+          "rows_returned": 24,
+          "error_type": null,
+          "error_message": null,
+          "response_length": 3770,
+          "zero_row_response": false,
+          "scored_candidates": [
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+              "timestamp": "20181013013833",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+              "timestamp": "20181015023242",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+              "timestamp": "20181018175935",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower?ft=nprml&f=",
+              "timestamp": "20181013122000",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20181014043050",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20181015035215",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies",
+              "timestamp": "20181013010954",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies",
+              "timestamp": "20181013013835",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies",
+              "timestamp": "20181013125332",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies",
+              "timestamp": "20181014021634",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies?ft=nprml&f=",
+              "timestamp": "20181013113947",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20181013025624",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20181014021708",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20181015023322",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20181016032042",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies?utm_medium=RSS&utm_campaign=business",
+              "timestamp": "20181014125324",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20181013025552",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20181014033333",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20181016071430",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20181017070903",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            }
+          ]
+        },
+        {
+          "pattern": "http://www.npr.org/sections/money/2018/10/12/",
+          "from": "20181008",
+          "to": "20181018",
+          "limit": 40,
+          "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F10%2F12%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20181008&to=20181018&limit=40",
+          "rows_returned": 24,
+          "error_type": null,
+          "error_message": null,
+          "response_length": 3770,
+          "zero_row_response": false,
+          "scored_candidates": [
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+              "timestamp": "20181013013833",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+              "timestamp": "20181015023242",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+              "timestamp": "20181018175935",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower?ft=nprml&f=",
+              "timestamp": "20181013122000",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20181014043050",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20181015035215",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies",
+              "timestamp": "20181013010954",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies",
+              "timestamp": "20181013013835",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies",
+              "timestamp": "20181013125332",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies",
+              "timestamp": "20181014021634",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies?ft=nprml&f=",
+              "timestamp": "20181013113947",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20181013025624",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20181014021708",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20181015023322",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20181016032042",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies?utm_medium=RSS&utm_campaign=business",
+              "timestamp": "20181014125324",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20181013025552",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20181014033333",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20181016071430",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20181017070903",
+              "url_date": "2018-10-12",
+              "score": 0.1
+            }
+          ]
+        }
+      ],
+      "slug_variant_probes": [],
+      "date_window_captures": [
+        {
+          "timestamp": "20181013013833",
+          "original_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+          "archive_url": "https://web.archive.org/web/20181013013833id_/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+          "status": "fetched",
+          "page_title": "Episode 869: The Student Loan Whistleblower : Planet Money : NPR",
+          "pub_date": "2018-10-12",
+          "canonical_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+          "program_context": {
+            "program_id": "510325",
+            "show_name": null,
+            "indicator_signals": [
+              "program_id_510325"
+            ],
+            "has_indicator_branding": false
+          },
+          "match_score": {
+            "title_score": 0.0,
+            "date_match": false,
+            "date_adjacent": true,
+            "date_source": "publication_date",
+            "has_story_id": true,
+            "has_trusted_story_id": true,
+            "canonical_story_id": "656978022",
+            "discovered_story_id": "656978022",
+            "trusted_story_page": true,
+            "has_indicator_branding": false,
+            "has_episode_context": true,
+            "indicator_signals": [
+              "program_id_510325"
+            ],
+            "verdict": "story_id_date_match_not_title"
+          },
+          "story_id": "656978022",
+          "story_evidence": {
+            "story_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+            "story_id": "656978022",
+            "provenance": {
+              "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+              "source_capture_timestamp": "20181013013833",
+              "episode_qualified": false,
+              "target_episode": "2018-10-11",
+              "target_title": "China's Brave New World",
+              "evidence_type": "story_url",
+              "trust_level": "untrusted"
+            }
+          },
+          "player_embeds": [
+            {
+              "player_url": "https://www.npr.org/player/embed/657082802/657082916",
+              "player_story_id": "657082802",
+              "player_audio_id": "657082916",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "player_url",
+                "trust_level": "untrusted"
+              }
+            }
+          ],
+          "audio_candidates": [
+            {
+              "audio_url": "https://play.podtrac.com/npr-510289/ondemand.npr.org/anon.npr-mp3/npr/pmoney/2018/10/20181012_pmoney_pmpod869v2.mp3?orgId=1&d=1232&p=510289&story=657082802&t=podcast&e=657082802&siteplayer=true",
+              "audio_id": "657082802",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "audio_url",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "audio_url": "https://play.podtrac.com/npr-510289/npr.mc.tritondigital.com/NPR_510289/media/anon.npr-mp3/npr/pmoney/2018/10/20181012_pmoney_pmpod869v2.mp3?orgId=1&d=1232&p=510289&story=657082802&t=podcast&e=657082802&siteplayer=true&dl=1",
+              "audio_id": "657082802",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "audio_url",
+                "trust_level": "untrusted"
+              }
+            }
+          ],
+          "numeric_ids": [
+            {
+              "numeric_id": "656978022",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "93559255",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "10643211755",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "5828686",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "127413729",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "2018101219",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "20501671",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "11107397707",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "2535181",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "98679384",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "198341814",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "4692815",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "423302056",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "347139849",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "103063413",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "191663270",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "257657827",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "104566969",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "153588024",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "192827079",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "178659563",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "178640915",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "178660742",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "179803822",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "183726490",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "177066727",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "182673872",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "179881519",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "187046089",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "186948703",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "181961258",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "182675632",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "185546105",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "179008081",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "181909622",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "181881227",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "181880514",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "185550054",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "135599807",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "135511603",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "290783428",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "657082802",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "657082916",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "349625027",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "605388008",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "623024822",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "602985918",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "179876898",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "179878450",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            }
+          ],
+          "episode_qualified": false,
+          "trust_level": "untrusted",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+            "source_capture_timestamp": "20181013013833",
+            "episode_qualified": false,
+            "target_episode": "2018-10-11",
+            "target_title": "China's Brave New World",
+            "evidence_type": "archive_capture",
+            "trust_level": "untrusted"
+          },
+          "cdx_score": 0.1,
+          "source": "stage_c_capture_fetch"
+        }
+      ],
+      "numeric_id_probes": [],
+      "numeric_probe_status": "disabled_advisory_only",
+      "identity_candidates": [
+        {
+          "timestamp": "20181013013833",
+          "original_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+          "archive_url": "https://web.archive.org/web/20181013013833id_/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+          "status": "fetched",
+          "page_title": "Episode 869: The Student Loan Whistleblower : Planet Money : NPR",
+          "pub_date": "2018-10-12",
+          "canonical_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+          "program_context": {
+            "program_id": "510325",
+            "show_name": null,
+            "indicator_signals": [
+              "program_id_510325"
+            ],
+            "has_indicator_branding": false
+          },
+          "match_score": {
+            "title_score": 0.0,
+            "date_match": false,
+            "date_adjacent": true,
+            "date_source": "publication_date",
+            "has_story_id": true,
+            "has_trusted_story_id": true,
+            "canonical_story_id": "656978022",
+            "discovered_story_id": "656978022",
+            "trusted_story_page": true,
+            "has_indicator_branding": false,
+            "has_episode_context": true,
+            "indicator_signals": [
+              "program_id_510325"
+            ],
+            "verdict": "story_id_date_match_not_title"
+          },
+          "story_id": "656978022",
+          "story_evidence": {
+            "story_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+            "story_id": "656978022",
+            "provenance": {
+              "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+              "source_capture_timestamp": "20181013013833",
+              "episode_qualified": false,
+              "target_episode": "2018-10-11",
+              "target_title": "China's Brave New World",
+              "evidence_type": "story_url",
+              "trust_level": "untrusted"
+            }
+          },
+          "player_embeds": [
+            {
+              "player_url": "https://www.npr.org/player/embed/657082802/657082916",
+              "player_story_id": "657082802",
+              "player_audio_id": "657082916",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "player_url",
+                "trust_level": "untrusted"
+              }
+            }
+          ],
+          "audio_candidates": [
+            {
+              "audio_url": "https://play.podtrac.com/npr-510289/ondemand.npr.org/anon.npr-mp3/npr/pmoney/2018/10/20181012_pmoney_pmpod869v2.mp3?orgId=1&d=1232&p=510289&story=657082802&t=podcast&e=657082802&siteplayer=true",
+              "audio_id": "657082802",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "audio_url",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "audio_url": "https://play.podtrac.com/npr-510289/npr.mc.tritondigital.com/NPR_510289/media/anon.npr-mp3/npr/pmoney/2018/10/20181012_pmoney_pmpod869v2.mp3?orgId=1&d=1232&p=510289&story=657082802&t=podcast&e=657082802&siteplayer=true&dl=1",
+              "audio_id": "657082802",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "audio_url",
+                "trust_level": "untrusted"
+              }
+            }
+          ],
+          "numeric_ids": [
+            {
+              "numeric_id": "656978022",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "93559255",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "10643211755",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "5828686",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "127413729",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "2018101219",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "20501671",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "11107397707",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "2535181",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "98679384",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "198341814",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "4692815",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "423302056",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "347139849",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "103063413",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "191663270",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "257657827",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "104566969",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "153588024",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "192827079",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "178659563",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "178640915",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "178660742",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "179803822",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "183726490",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "177066727",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "182673872",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "179881519",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "187046089",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "186948703",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "181961258",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "182675632",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "185546105",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "179008081",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "181909622",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "181881227",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "181880514",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "185550054",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "135599807",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "135511603",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "290783428",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "657082802",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "657082916",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "349625027",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "605388008",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "623024822",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "602985918",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "179876898",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            },
+            {
+              "numeric_id": "179878450",
+              "provenance": {
+                "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+                "source_capture_timestamp": "20181013013833",
+                "episode_qualified": false,
+                "target_episode": "2018-10-11",
+                "target_title": "China's Brave New World",
+                "evidence_type": "numeric_id",
+                "trust_level": "untrusted"
+              }
+            }
+          ],
+          "episode_qualified": false,
+          "trust_level": "untrusted",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+            "source_capture_timestamp": "20181013013833",
+            "episode_qualified": false,
+            "target_episode": "2018-10-11",
+            "target_title": "China's Brave New World",
+            "evidence_type": "archive_capture",
+            "trust_level": "untrusted"
+          },
+          "cdx_score": 0.1,
+          "source": "stage_c_capture_fetch"
+        }
+      ],
+      "confirmed_identity": null,
+      "player_probes": [],
+      "trusted_audio_evidence": [],
+      "untrusted_audio_evidence": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510289/ondemand.npr.org/anon.npr-mp3/npr/pmoney/2018/10/20181012_pmoney_pmpod869v2.mp3?orgId=1&d=1232&p=510289&story=657082802&t=podcast&e=657082802&siteplayer=true",
+          "audio_id": "657082802",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+            "source_capture_timestamp": "20181013013833",
+            "episode_qualified": false,
+            "target_episode": "2018-10-11",
+            "target_title": "China's Brave New World",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510289/npr.mc.tritondigital.com/NPR_510289/media/anon.npr-mp3/npr/pmoney/2018/10/20181012_pmoney_pmpod869v2.mp3?orgId=1&d=1232&p=510289&story=657082802&t=podcast&e=657082802&siteplayer=true&dl=1",
+          "audio_id": "657082802",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+            "source_capture_timestamp": "20181013013833",
+            "episode_qualified": false,
+            "target_episode": "2018-10-11",
+            "target_title": "China's Brave New World",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "audio_candidates_tested": [],
+      "validated_audio": [],
+      "final_classification": "partial_identity_no_audio",
+      "validation_summary": "Partial identity candidates found (1) but none satisfied the title+date+story-ID proof chain. No trusted audio validated.",
+      "discovery_exhausted_for_window": true,
+      "counts": {
+        "cdx_queries_issued": 6,
+        "cdx_urls_returned": 48,
+        "candidate_urls_scored": 48,
+        "captures_fetched": 1,
+        "captures_failed": 0,
+        "strong_matches": 0,
+        "partial_matches": 1,
+        "player_pages_fetched": 0,
+        "player_pages_failed": 0,
+        "audio_candidates_tested": 0,
+        "audio_validated": 0,
+        "trusted_audio_candidates": 0,
+        "untrusted_audio_candidates": 2,
+        "numeric_ids_probed": 0,
+        "logical_requests_issued": 7
+      }
+    },
+    "batch2_summary_episode": {
+      "reference_date": "2018-10-11",
+      "reference_title": "China's Brave New World",
+      "final_classification": "partial_identity_no_audio",
+      "validation_summary": "Partial identity candidates found (1) but none satisfied the title+date+story-ID proof chain. No trusted audio validated.",
+      "counts": {
+        "cdx_queries_issued": 6,
+        "cdx_urls_returned": 48,
+        "candidate_urls_scored": 48,
+        "captures_fetched": 1,
+        "captures_failed": 0,
+        "strong_matches": 0,
+        "partial_matches": 1,
+        "player_pages_fetched": 0,
+        "player_pages_failed": 0,
+        "audio_candidates_tested": 0,
+        "audio_validated": 0,
+        "trusted_audio_candidates": 0,
+        "untrusted_audio_candidates": 2,
+        "numeric_ids_probed": 0,
+        "logical_requests_issued": 7
+      }
+    },
+    "global_cdx_self_test_passed": true,
+    "ranked_report_episode": {
+      "rank": 5,
+      "reference_date": "2018-10-11",
+      "reference_title": "China's Brave New World",
+      "reference_year": 2018,
+      "reference_episode": 150,
+      "identity_confidence": "low",
+      "strongest_evidence": "It preserves the same NPR player/audio pair and Wayback captures as the 2018-10-09 episode, which at least proves a recoverable NPR-controlled audio chain existed somewhere, but not which China episode it belonged to.",
+      "npr_ids_found": {
+        "discovered_story_ids": [
+          "887239225"
+        ],
+        "discovered_player_story_ids": [
+          "887239225"
+        ],
+        "discovered_audio_ids": [
+          "887239226"
+        ],
+        "verified_episode_specific_story_ids": [],
+        "verified_episode_specific_audio_ids": [],
+        "rejected_or_unverified_ids": [
+          {
+            "id": "887239225",
+            "reason": "The only surviving story/player ID resolves to a 2020 Uighur report and is shared with the 2018-10-09 target."
+          },
+          {
+            "id": "887239226",
+            "reason": "Audio ID is tied to the same 2020 player chain and does not provide an episode-specific match for the 2018-10-11 title."
+          }
+        ]
+      },
+      "npr_story_urls": [
+        "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s"
+      ],
+      "player_urls": [
+        "https://www.npr.org/player/embed/887239225/887239226"
+      ],
+      "affiliate_pages": [],
+      "archived_captures": [
+        {
+          "archive_url": "https://web.archive.org/web/20200718205915id_/https://www.npr.org/player/embed/887239225/887239226",
+          "original_url": "https://www.npr.org/player/embed/887239225/887239226",
+          "timestamp": "20200718205915",
+          "source_file": "indicator_npr_story_found_recovery.json",
+          "source_path": "root.results[8]"
+        },
+        {
+          "archive_url": "https://web.archive.org/web/20250404031618id_/https://www.npr.org/player/embed/887239225/887239226",
+          "original_url": "https://www.npr.org/player/embed/887239225/887239226",
+          "timestamp": "20250404031618",
+          "source_file": "indicator_npr_story_found_recovery.json",
+          "source_path": "root.results[8]"
+        }
+      ],
+      "known_audio_ids": [
+        "887239226"
+      ],
+      "candidate_audio_urls": [
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7&sc=siteplayer",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "story_pages",
+          "source_url": "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s",
+          "source_path": "root.results[8]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "story_pages",
+          "source_url": "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s",
+          "source_path": "root.results[8]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "player_pages",
+          "source_url": "https://www.npr.org/player/embed/887239225/887239226",
+          "source_path": "root.results[8]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?orgId=1&topicId=1125&d=304&p=7&story=887239225&dl=1",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "wayback_players",
+          "source_url": "https://web.archive.org/web/20200718205915id_/https://www.npr.org/player/embed/887239225/887239226",
+          "source_path": "root.results[8]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "wayback_players",
+          "source_url": "https://web.archive.org/web/20250404031618id_/https://www.npr.org/player/embed/887239225/887239226",
+          "source_path": "root.results[8]"
+        }
+      ],
+      "audio_candidates_tested": [
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7&sc=siteplayer",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+          "final_url": null,
+          "status_code": null,
+          "content_type": null,
+          "source_url": "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s",
+          "source_type": "story_pages",
+          "discovered_from": "indicator_npr_story_found_recovery.json"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+          "final_url": null,
+          "status_code": null,
+          "content_type": null,
+          "source_url": "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s",
+          "source_type": "story_pages",
+          "discovered_from": "indicator_npr_story_found_recovery.json"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+          "final_url": null,
+          "status_code": null,
+          "content_type": null,
+          "source_url": "https://www.npr.org/player/embed/887239225/887239226",
+          "source_type": "player_pages",
+          "discovered_from": "indicator_npr_story_found_recovery.json"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?orgId=1&topicId=1125&d=304&p=7&story=887239225&dl=1",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+          "final_url": null,
+          "status_code": null,
+          "content_type": null,
+          "source_url": "https://web.archive.org/web/20200718205915id_/https://www.npr.org/player/embed/887239225/887239226",
+          "source_type": "wayback_players",
+          "discovered_from": "indicator_npr_story_found_recovery.json"
+        }
+      ],
+      "validation_result": "Credible NPR identity evidence was found (story/page/player IDs or URLs), but no strong episode-specific working NPR-hosted audio file could be validated. Candidate audio was rejected as rejected_request_error.",
+      "rejected_or_dead_end_evidence": [
+        "Every tested audio candidate for this episode duplicated the same unresolved 2020 NPR chain.",
+        "No separate affiliate or archived NPR evidence distinguished this title from the 2018-10-09 episode."
+      ],
+      "remaining_recovery_avenues": [
+        "Find archived affiliate pages or NPR pages for 2018-10-11 that include the exact title or a distinct player ID.",
+        "Search Wayback for station pages carrying the episode transcript/snippet rather than relying on shared China keyword collisions."
+      ],
+      "final_classification": "identity_found_but_audio_unresolved"
+    },
+    "consolidated_ledger_episode": {
+      "reference_date": "2018-10-11",
+      "reference_title": "China's Brave New World",
+      "reference_year": 2018,
+      "reference_episode": 150,
+      "aliases": [
+        "China's Brave New World"
+      ],
+      "affiliate_pages": [],
+      "npr_story_ids": [],
+      "npr_player_story_ids": [
+        "887239225"
+      ],
+      "npr_audio_ids": [
+        "887239226"
+      ],
+      "npr_story_urls": [
+        "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s"
+      ],
+      "player_urls": [
+        "https://www.npr.org/player/embed/887239225/887239226"
+      ],
+      "archive_captures": [
+        {
+          "archive_url": "https://web.archive.org/web/20200718205915id_/https://www.npr.org/player/embed/887239225/887239226",
+          "original_url": "https://www.npr.org/player/embed/887239225/887239226",
+          "timestamp": "20200718205915",
+          "source_file": "indicator_npr_story_found_recovery.json",
+          "source_path": "root.results[8]"
+        },
+        {
+          "archive_url": "https://web.archive.org/web/20250404031618id_/https://www.npr.org/player/embed/887239225/887239226",
+          "original_url": "https://www.npr.org/player/embed/887239225/887239226",
+          "timestamp": "20250404031618",
+          "source_file": "indicator_npr_story_found_recovery.json",
+          "source_path": "root.results[8]"
+        }
+      ],
+      "candidate_audio_urls": [
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7&sc=siteplayer",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "story_pages",
+          "source_url": "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s",
+          "source_path": "root.results[8]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "story_pages",
+          "source_url": "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s",
+          "source_path": "root.results[8]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "player_pages",
+          "source_url": "https://www.npr.org/player/embed/887239225/887239226",
+          "source_path": "root.results[8]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?orgId=1&topicId=1125&d=304&p=7&story=887239225&dl=1",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "wayback_players",
+          "source_url": "https://web.archive.org/web/20200718205915id_/https://www.npr.org/player/embed/887239225/887239226",
+          "source_path": "root.results[8]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "wayback_players",
+          "source_url": "https://web.archive.org/web/20250404031618id_/https://www.npr.org/player/embed/887239225/887239226",
+          "source_path": "root.results[8]"
+        }
+      ],
+      "validation_results": [
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7&sc=siteplayer",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "story_pages",
+          "source_url": "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "story_pages",
+          "source_url": "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?d=304&size=4860135&e=887239225&t=progseg&seg=6&p=7",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "player_pages",
+          "source_url": "https://www.npr.org/player/embed/887239225/887239226",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2020/07/20200704_wesat_uighur_birth_rates.mp3?orgId=1&topicId=1125&d=304&p=7&story=887239225&dl=1",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "wayback_players",
+          "source_url": "https://web.archive.org/web/20200718205915id_/https://www.npr.org/player/embed/887239225/887239226",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>"
+        }
+      ],
+      "current_affiliate_pages": [],
+      "current_npr_story_pages": [
+        {
+          "requested_url": "https://www.npr.org/2020/07/04/887239225/china-suppression-of-uighur-minorities-meets-u-n-definition-of-genocide-report-s",
+          "source_type": "npr_story_page",
+          "source_url": null,
+          "status": "error",
+          "error": "<urlopen error [Errno -5] No address associated with hostname>"
+        }
+      ],
+      "current_player_pages": [
+        {
+          "requested_url": "https://www.npr.org/player/embed/887239225/887239226",
+          "source_type": "npr_player_page",
+          "source_url": null,
+          "status": "error",
+          "error": "<urlopen error [Errno -5] No address associated with hostname>"
+        }
+      ],
+      "prior_evidence": [
+        {
+          "file": "indicator_unresolved_batch_recovery.json",
+          "path": "root.results[32]",
+          "status": "unresolved_with_prior_evidence"
+        },
+        {
+          "file": "indicator_unresolved_strict_review.json",
+          "path": "root.results[32]",
+          "status": "needs_fresh_discovery"
+        },
+        {
+          "file": "indicator_unresolved_web_discovery.json",
+          "path": "root.results[30]",
+          "status": "npr_story_found"
+        },
+        {
+          "file": "indicator_unresolved_affiliate_recovery_20_49.json",
+          "path": "root.results[10]",
+          "status": "no_verified_affiliate_match"
+        },
+        {
+          "file": "indicator_npr_story_found_recovery.json",
+          "path": "root.results[8]",
+          "status": "player_found_no_audio"
+        },
+        {
+          "file": "indicator_npr_story_identity_strict.json",
+          "path": "root.results[8]",
+          "status": "no_strong_npr_story_match"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[32]",
+          "status": "not_recovered"
+        }
+      ],
+      "final_status": "identity_found_but_audio_unresolved",
+      "evidence_confidence_explanation": "Credible NPR identity evidence was found (story/page/player IDs or URLs), but no strong episode-specific working NPR-hosted audio file could be validated. Candidate audio was rejected as rejected_request_error.",
+      "duplicate_reference_dates": []
+    },
+    "wayback_npr_probe_loaded": true,
+    "wayback_player_probe_loaded": true
+  },
+  "global_cdx_self_test_passed": true,
+  "exact_title_affiliate_archive_evidence": {
+    "files_scanned": [
+      "indicator_unresolved_affiliate_recovery_00_09.json",
+      "indicator_unresolved_affiliate_recovery_10_19.json",
+      "indicator_unresolved_affiliate_recovery_20_49.json"
+    ],
+    "matched_sources": [
+      "indicator_unresolved_affiliate_recovery_20_49.json"
+    ],
+    "matched_source_count": 1,
+    "exact_title_urls": []
+  },
+  "exact_cdx_queries": [
+    {
+      "url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F10%2F12%2F656978022%2Fepisode-869-the-student-loan-whistleblower&matchType=exact&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=8",
+      "rows_returned": 8,
+      "error_type": null,
+      "error_message": null
+    },
+    {
+      "url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower?ft=nprml&f=",
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F10%2F12%2F656978022%2Fepisode-869-the-student-loan-whistleblower%3Fft%3Dnprml%26f%3D&matchType=exact&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=8",
+      "rows_returned": 2,
+      "error_type": null,
+      "error_message": null
+    },
+    {
+      "url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower?utm_medium=JSONFeed&utm_campaign=planetmoney",
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F10%2F12%2F656978022%2Fepisode-869-the-student-loan-whistleblower%3Futm_medium%3DJSONFeed%26utm_campaign%3Dplanetmoney&matchType=exact&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=8",
+      "rows_returned": 8,
+      "error_type": null,
+      "error_message": null
+    },
+    {
+      "url": "https://www.npr.org/sections/money/2018/10/12/657023877/the-economics-of-apologies",
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F10%2F12%2F657023877%2Fthe-economics-of-apologies&matchType=exact&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=8",
+      "rows_returned": 8,
+      "error_type": null,
+      "error_message": null
+    }
+  ],
+  "discovery_cdx_queries": [
+    {
+      "pattern": "https://www.npr.org/sections/money/2018/10/11/",
+      "from": "20181008",
+      "to": "20181015",
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F10%2F11%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20181008&to=20181015&limit=40",
+      "rows_returned": 5,
+      "error_type": null,
+      "error_message": null
+    },
+    {
+      "pattern": "http://www.npr.org/sections/money/2018/10/11/",
+      "from": "20181008",
+      "to": "20181015",
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F10%2F11%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20181008&to=20181015&limit=40",
+      "rows_returned": 5,
+      "error_type": null,
+      "error_message": null
+    }
+  ],
+  "archive_captures_tried": [
+    {
+      "timestamp": "20181013013833",
+      "original_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+      "archive_url": "https://web.archive.org/web/20181013013833id_/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+      "archive_variant": "id_",
+      "source": "prior_stage_c",
+      "status": "fetched",
+      "page_title": "Episode 869: The Student Loan Whistleblower : Planet Money : NPR",
+      "pub_date": "2018-10-12",
+      "canonical_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+      "match_score": {
+        "title_score": 0.0,
+        "date_match": false,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": true,
+        "canonical_story_id": "656978022",
+        "discovered_story_id": "656978022",
+        "trusted_story_page": true,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "story_id_date_match_not_title"
+      },
+      "story_id": "656978022",
+      "blocked_adjacent_unrelated": true,
+      "exact_title_match": false,
+      "episode_qualified": false,
+      "rejection_reasons": [
+        "adjacent_unrelated_story",
+        "score_verdict:story_id_date_match_not_title",
+        "date_not_exact",
+        "title_not_exact"
+      ],
+      "story_evidence": {
+        "story_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+        "story_id": "656978022",
+        "provenance": {
+          "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+          "source_capture_timestamp": "20181013013833",
+          "episode_qualified": false,
+          "target_episode": "2018-10-11",
+          "target_title": "China's Brave New World",
+          "evidence_type": "story_url",
+          "trust_level": "untrusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/657082802/657082916",
+          "player_story_id": "657082802",
+          "player_audio_id": "657082916",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+            "source_capture_timestamp": "20181013013833",
+            "episode_qualified": false,
+            "target_episode": "2018-10-11",
+            "target_title": "China's Brave New World",
+            "evidence_type": "player_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510289/ondemand.npr.org/anon.npr-mp3/npr/pmoney/2018/10/20181012_pmoney_pmpod869v2.mp3?orgId=1&d=1232&p=510289&story=657082802&t=podcast&e=657082802&siteplayer=true",
+          "audio_id": "657082802",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+            "source_capture_timestamp": "20181013013833",
+            "episode_qualified": false,
+            "target_episode": "2018-10-11",
+            "target_title": "China's Brave New World",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510289/npr.mc.tritondigital.com/NPR_510289/media/anon.npr-mp3/npr/pmoney/2018/10/20181012_pmoney_pmpod869v2.mp3?orgId=1&d=1232&p=510289&story=657082802&t=podcast&e=657082802&siteplayer=true&dl=1",
+          "audio_id": "657082802",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+            "source_capture_timestamp": "20181013013833",
+            "episode_qualified": false,
+            "target_episode": "2018-10-11",
+            "target_title": "China's Brave New World",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      }
+    },
+    {
+      "timestamp": "20181013013833",
+      "original_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+      "archive_url": "https://web.archive.org/web/20181013013833/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+      "archive_variant": "raw",
+      "source": "prior_stage_c",
+      "status": "fetched",
+      "page_title": "Episode 869: The Student Loan Whistleblower : Planet Money : NPR",
+      "pub_date": "2018-10-12",
+      "canonical_url": "https://web.archive.org/web/20181013013833/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+      "match_score": {
+        "title_score": 0.0,
+        "date_match": false,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": false,
+        "canonical_story_id": null,
+        "discovered_story_id": "656978022",
+        "trusted_story_page": false,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "story_id_date_match_not_title"
+      },
+      "story_id": null,
+      "blocked_adjacent_unrelated": true,
+      "exact_title_match": false,
+      "episode_qualified": false,
+      "rejection_reasons": [
+        "adjacent_unrelated_story",
+        "score_verdict:story_id_date_match_not_title",
+        "date_not_exact",
+        "title_not_exact"
+      ],
+      "story_evidence": {
+        "story_url": "https://web.archive.org/web/20181013013833/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+        "story_id": "656978022",
+        "provenance": {
+          "source_url": "https://web.archive.org/web/20181013013833/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+          "source_capture_timestamp": "20181013013833",
+          "episode_qualified": false,
+          "target_episode": "2018-10-11",
+          "target_title": "China's Brave New World",
+          "evidence_type": "story_url",
+          "trust_level": "untrusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/657082802/657082916",
+          "player_story_id": "657082802",
+          "player_audio_id": "657082916",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20181013013833/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+            "source_capture_timestamp": "20181013013833",
+            "episode_qualified": false,
+            "target_episode": "2018-10-11",
+            "target_title": "China's Brave New World",
+            "evidence_type": "player_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510289/ondemand.npr.org/anon.npr-mp3/npr/pmoney/2018/10/20181012_pmoney_pmpod869v2.mp3?orgId=1&d=1232&p=510289&story=657082802&t=podcast&e=657082802&siteplayer=true",
+          "audio_id": "657082802",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20181013013833/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+            "source_capture_timestamp": "20181013013833",
+            "episode_qualified": false,
+            "target_episode": "2018-10-11",
+            "target_title": "China's Brave New World",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510289/npr.mc.tritondigital.com/NPR_510289/media/anon.npr-mp3/npr/pmoney/2018/10/20181012_pmoney_pmpod869v2.mp3?orgId=1&d=1232&p=510289&story=657082802&t=podcast&e=657082802&siteplayer=true&dl=1",
+          "audio_id": "657082802",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20181013013833/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+            "source_capture_timestamp": "20181013013833",
+            "episode_qualified": false,
+            "target_episode": "2018-10-11",
+            "target_title": "China's Brave New World",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://web.archive.org/web/20181013013833/https://play.podtrac.com/npr-510289/npr.mc.tritondigital.com/NPR_510289/media/anon.npr-mp3/npr/pmoney/2018/10/20181012_pmoney_pmpod869v2.mp3?orgId=1&d=1232&p=510289&story=657082802&t=podcast&e=657082802&siteplayer=true&dl=1",
+          "audio_id": "657082802",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20181013013833/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+            "source_capture_timestamp": "20181013013833",
+            "episode_qualified": false,
+            "target_episode": "2018-10-11",
+            "target_title": "China's Brave New World",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      }
+    },
+    {
+      "timestamp": "20181015023242",
+      "original_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+      "archive_url": "https://web.archive.org/web/20181015023242id_/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+      "archive_variant": "id_",
+      "source": "prior_cdx_scored",
+      "status": "fetched",
+      "page_title": "Episode 869: The Student Loan Whistleblower : Planet Money : NPR",
+      "pub_date": "2018-10-12",
+      "canonical_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+      "match_score": {
+        "title_score": 0.0,
+        "date_match": false,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": true,
+        "canonical_story_id": "656978022",
+        "discovered_story_id": "656978022",
+        "trusted_story_page": true,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "story_id_date_match_not_title"
+      },
+      "story_id": "656978022",
+      "blocked_adjacent_unrelated": true,
+      "exact_title_match": false,
+      "episode_qualified": false,
+      "rejection_reasons": [
+        "adjacent_unrelated_story",
+        "score_verdict:story_id_date_match_not_title",
+        "date_not_exact",
+        "title_not_exact"
+      ],
+      "story_evidence": {
+        "story_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+        "story_id": "656978022",
+        "provenance": {
+          "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+          "source_capture_timestamp": "20181015023242",
+          "episode_qualified": false,
+          "target_episode": "2018-10-11",
+          "target_title": "China's Brave New World",
+          "evidence_type": "story_url",
+          "trust_level": "untrusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/657082802/657082916",
+          "player_story_id": "657082802",
+          "player_audio_id": "657082916",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+            "source_capture_timestamp": "20181015023242",
+            "episode_qualified": false,
+            "target_episode": "2018-10-11",
+            "target_title": "China's Brave New World",
+            "evidence_type": "player_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510289/ondemand.npr.org/anon.npr-mp3/npr/pmoney/2018/10/20181012_pmoney_pmpod869v2.mp3?orgId=1&d=1232&p=510289&story=657082802&t=podcast&e=657082802&siteplayer=true",
+          "audio_id": "657082802",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+            "source_capture_timestamp": "20181015023242",
+            "episode_qualified": false,
+            "target_episode": "2018-10-11",
+            "target_title": "China's Brave New World",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510289/npr.mc.tritondigital.com/NPR_510289/media/anon.npr-mp3/npr/pmoney/2018/10/20181012_pmoney_pmpod869v2.mp3?orgId=1&d=1232&p=510289&story=657082802&t=podcast&e=657082802&siteplayer=true&dl=1",
+          "audio_id": "657082802",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+            "source_capture_timestamp": "20181015023242",
+            "episode_qualified": false,
+            "target_episode": "2018-10-11",
+            "target_title": "China's Brave New World",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      }
+    },
+    {
+      "timestamp": "20181015023242",
+      "original_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+      "archive_url": "https://web.archive.org/web/20181015023242/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+      "archive_variant": "raw",
+      "source": "prior_cdx_scored",
+      "status": "fetched",
+      "page_title": "Episode 869: The Student Loan Whistleblower : Planet Money : NPR",
+      "pub_date": "2018-10-12",
+      "canonical_url": "https://web.archive.org/web/20181015023242/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+      "match_score": {
+        "title_score": 0.0,
+        "date_match": false,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": false,
+        "canonical_story_id": null,
+        "discovered_story_id": "656978022",
+        "trusted_story_page": false,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "story_id_date_match_not_title"
+      },
+      "story_id": null,
+      "blocked_adjacent_unrelated": true,
+      "exact_title_match": false,
+      "episode_qualified": false,
+      "rejection_reasons": [
+        "adjacent_unrelated_story",
+        "score_verdict:story_id_date_match_not_title",
+        "date_not_exact",
+        "title_not_exact"
+      ],
+      "story_evidence": {
+        "story_url": "https://web.archive.org/web/20181015023242/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+        "story_id": "656978022",
+        "provenance": {
+          "source_url": "https://web.archive.org/web/20181015023242/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+          "source_capture_timestamp": "20181015023242",
+          "episode_qualified": false,
+          "target_episode": "2018-10-11",
+          "target_title": "China's Brave New World",
+          "evidence_type": "story_url",
+          "trust_level": "untrusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/657082802/657082916",
+          "player_story_id": "657082802",
+          "player_audio_id": "657082916",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20181015023242/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+            "source_capture_timestamp": "20181015023242",
+            "episode_qualified": false,
+            "target_episode": "2018-10-11",
+            "target_title": "China's Brave New World",
+            "evidence_type": "player_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510289/ondemand.npr.org/anon.npr-mp3/npr/pmoney/2018/10/20181012_pmoney_pmpod869v2.mp3?orgId=1&d=1232&p=510289&story=657082802&t=podcast&e=657082802&siteplayer=true",
+          "audio_id": "657082802",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20181015023242/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+            "source_capture_timestamp": "20181015023242",
+            "episode_qualified": false,
+            "target_episode": "2018-10-11",
+            "target_title": "China's Brave New World",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510289/npr.mc.tritondigital.com/NPR_510289/media/anon.npr-mp3/npr/pmoney/2018/10/20181012_pmoney_pmpod869v2.mp3?orgId=1&d=1232&p=510289&story=657082802&t=podcast&e=657082802&siteplayer=true&dl=1",
+          "audio_id": "657082802",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20181015023242/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+            "source_capture_timestamp": "20181015023242",
+            "episode_qualified": false,
+            "target_episode": "2018-10-11",
+            "target_title": "China's Brave New World",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://web.archive.org/web/20181015023242/https://play.podtrac.com/npr-510289/npr.mc.tritondigital.com/NPR_510289/media/anon.npr-mp3/npr/pmoney/2018/10/20181012_pmoney_pmpod869v2.mp3?orgId=1&d=1232&p=510289&story=657082802&t=podcast&e=657082802&siteplayer=true&dl=1",
+          "audio_id": "657082802",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20181015023242/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+            "source_capture_timestamp": "20181015023242",
+            "episode_qualified": false,
+            "target_episode": "2018-10-11",
+            "target_title": "China's Brave New World",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      }
+    },
+    {
+      "timestamp": "20181018175935",
+      "original_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+      "archive_url": "https://web.archive.org/web/20181018175935id_/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+      "archive_variant": "id_",
+      "source": "prior_cdx_scored",
+      "status": "fetched",
+      "page_title": "Episode 869: The Student Loan Whistleblower : Planet Money : NPR",
+      "pub_date": "2018-10-12",
+      "canonical_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+      "match_score": {
+        "title_score": 0.0,
+        "date_match": false,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": true,
+        "canonical_story_id": "656978022",
+        "discovered_story_id": "656978022",
+        "trusted_story_page": true,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "story_id_date_match_not_title"
+      },
+      "story_id": "656978022",
+      "blocked_adjacent_unrelated": true,
+      "exact_title_match": false,
+      "episode_qualified": false,
+      "rejection_reasons": [
+        "adjacent_unrelated_story",
+        "score_verdict:story_id_date_match_not_title",
+        "date_not_exact",
+        "title_not_exact"
+      ],
+      "story_evidence": {
+        "story_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+        "story_id": "656978022",
+        "provenance": {
+          "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+          "source_capture_timestamp": "20181018175935",
+          "episode_qualified": false,
+          "target_episode": "2018-10-11",
+          "target_title": "China's Brave New World",
+          "evidence_type": "story_url",
+          "trust_level": "untrusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/657082802/657082916",
+          "player_story_id": "657082802",
+          "player_audio_id": "657082916",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+            "source_capture_timestamp": "20181018175935",
+            "episode_qualified": false,
+            "target_episode": "2018-10-11",
+            "target_title": "China's Brave New World",
+            "evidence_type": "player_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510289/ondemand.npr.org/anon.npr-mp3/npr/pmoney/2018/10/20181012_pmoney_pmpod869v2.mp3?orgId=1&d=1232&p=510289&story=657082802&t=podcast&e=657082802&siteplayer=true",
+          "audio_id": "657082802",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+            "source_capture_timestamp": "20181018175935",
+            "episode_qualified": false,
+            "target_episode": "2018-10-11",
+            "target_title": "China's Brave New World",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510289/npr.mc.tritondigital.com/NPR_510289/media/anon.npr-mp3/npr/pmoney/2018/10/20181012_pmoney_pmpod869v2.mp3?orgId=1&d=1232&p=510289&story=657082802&t=podcast&e=657082802&siteplayer=true&dl=1",
+          "audio_id": "657082802",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+            "source_capture_timestamp": "20181018175935",
+            "episode_qualified": false,
+            "target_episode": "2018-10-11",
+            "target_title": "China's Brave New World",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      }
+    },
+    {
+      "timestamp": "20181018175935",
+      "original_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+      "archive_url": "https://web.archive.org/web/20181018175935/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+      "archive_variant": "raw",
+      "source": "prior_cdx_scored",
+      "status": "error",
+      "error": "<urlopen error timed out>"
+    },
+    {
+      "timestamp": "20181013122000",
+      "original_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower?ft=nprml&f=",
+      "archive_url": "https://web.archive.org/web/20181013122000id_/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower?ft=nprml&f=",
+      "archive_variant": "id_",
+      "source": "prior_cdx_scored",
+      "status": "error",
+      "error": "<urlopen error timed out>"
+    },
+    {
+      "timestamp": "20181013122000",
+      "original_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower?ft=nprml&f=",
+      "archive_url": "https://web.archive.org/web/20181013122000/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower?ft=nprml&f=",
+      "archive_variant": "raw",
+      "source": "prior_cdx_scored",
+      "status": "error",
+      "error": "<urlopen error timed out>"
+    },
+    {
+      "timestamp": "20181014043050",
+      "original_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower?utm_medium=JSONFeed&utm_campaign=planetmoney",
+      "archive_url": "https://web.archive.org/web/20181014043050id_/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower?utm_medium=JSONFeed&utm_campaign=planetmoney",
+      "archive_variant": "id_",
+      "source": "prior_cdx_scored",
+      "status": "error",
+      "error": "<urlopen error timed out>"
+    },
+    {
+      "timestamp": "20181014043050",
+      "original_url": "https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower?utm_medium=JSONFeed&utm_campaign=planetmoney",
+      "archive_url": "https://web.archive.org/web/20181014043050/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower?utm_medium=JSONFeed&utm_campaign=planetmoney",
+      "archive_variant": "raw",
+      "source": "prior_cdx_scored",
+      "status": "fetched",
+      "page_title": "Episode 869: The Student Loan Whistleblower : Planet Money : NPR",
+      "pub_date": "2018-10-12",
+      "canonical_url": "https://web.archive.org/web/20181014043050/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+      "match_score": {
+        "title_score": 0.0,
+        "date_match": false,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": false,
+        "canonical_story_id": null,
+        "discovered_story_id": "656978022",
+        "trusted_story_page": false,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "story_id_date_match_not_title"
+      },
+      "story_id": null,
+      "blocked_adjacent_unrelated": true,
+      "exact_title_match": false,
+      "episode_qualified": false,
+      "rejection_reasons": [
+        "adjacent_unrelated_story",
+        "score_verdict:story_id_date_match_not_title",
+        "date_not_exact",
+        "title_not_exact"
+      ],
+      "story_evidence": {
+        "story_url": "https://web.archive.org/web/20181014043050/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+        "story_id": "656978022",
+        "provenance": {
+          "source_url": "https://web.archive.org/web/20181014043050/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+          "source_capture_timestamp": "20181014043050",
+          "episode_qualified": false,
+          "target_episode": "2018-10-11",
+          "target_title": "China's Brave New World",
+          "evidence_type": "story_url",
+          "trust_level": "untrusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/657082802/657082916",
+          "player_story_id": "657082802",
+          "player_audio_id": "657082916",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20181014043050/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+            "source_capture_timestamp": "20181014043050",
+            "episode_qualified": false,
+            "target_episode": "2018-10-11",
+            "target_title": "China's Brave New World",
+            "evidence_type": "player_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510289/ondemand.npr.org/anon.npr-mp3/npr/pmoney/2018/10/20181012_pmoney_pmpod869v2.mp3?orgId=1&d=1232&p=510289&story=657082802&t=podcast&e=657082802&siteplayer=true",
+          "audio_id": "657082802",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20181014043050/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+            "source_capture_timestamp": "20181014043050",
+            "episode_qualified": false,
+            "target_episode": "2018-10-11",
+            "target_title": "China's Brave New World",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510289/npr.mc.tritondigital.com/NPR_510289/media/anon.npr-mp3/npr/pmoney/2018/10/20181012_pmoney_pmpod869v2.mp3?orgId=1&d=1232&p=510289&story=657082802&t=podcast&e=657082802&siteplayer=true&dl=1",
+          "audio_id": "657082802",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20181014043050/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+            "source_capture_timestamp": "20181014043050",
+            "episode_qualified": false,
+            "target_episode": "2018-10-11",
+            "target_title": "China's Brave New World",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://web.archive.org/web/20181014043050/https://play.podtrac.com/npr-510289/npr.mc.tritondigital.com/NPR_510289/media/anon.npr-mp3/npr/pmoney/2018/10/20181012_pmoney_pmpod869v2.mp3?orgId=1&d=1232&p=510289&story=657082802&t=podcast&e=657082802&siteplayer=true&dl=1",
+          "audio_id": "657082802",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20181014043050/https://www.npr.org/sections/money/2018/10/12/656978022/episode-869-the-student-loan-whistleblower",
+            "source_capture_timestamp": "20181014043050",
+            "episode_qualified": false,
+            "target_episode": "2018-10-11",
+            "target_title": "China's Brave New World",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      }
+    }
+  ],
+  "captures_successfully_parsed": 6,
+  "archive_captures_failed": 4,
+  "identity_candidates": [],
+  "additional_qualified_captures": [],
+  "confirmed_identity": null,
+  "player_probes": [],
+  "audio_candidates_tested": [],
+  "validated_audio": [],
+  "audio_candidates_total": 0,
+  "bounded_discovery_required": true,
+  "bounded_discovery_ran": true,
+  "bounded_search_completed": true,
+  "final_classification": "archive_fetch_failed_identity_unresolved",
+  "validation_summary": "Archive/network retrieval failures occurred during bounded search; identity remains unresolved and cannot be demoted.",
+  "remaining_recovery_avenues": [
+    "Retry bounded retrieval when archive/network conditions improve."
+  ],
+  "story_id": null,
+  "player_ids": []
 }

@@ -1,20 +1,64 @@
 {
-  "placeholder": true,
-  "run_complete": false,
-  "run_state": "placeholder",
-  "run_id": "31362220062",
+  "placeholder": false,
+  "run_complete": true,
+  "run_state": "run_complete",
+  "run_id": "31364226414",
   "method": "batch2-final3-targeted-recovery",
-  "generated_at": "2026-08-10T06:32:58.155511+00:00",
+  "generated_at": "2026-08-10T07:02:01.086687+00:00",
+  "request_budget": {
+    "per_episode": {
+      "discovery_cdx_queries": 8,
+      "seeded_exact_cdx_queries": 4,
+      "capture_attempts": 10,
+      "live_player_fetches": 2,
+      "archived_player_cdx_queries": 2,
+      "archived_player_fetches": 2,
+      "audio_validations": 4,
+      "max_logical_requests": 32,
+      "conservative_timeout_ceiling_seconds": 768
+    },
+    "per_run": {
+      "targets": 2,
+      "max_logical_requests": 64,
+      "conservative_timeout_ceiling_seconds": 1536
+    }
+  },
   "episodes": [
     {
       "reference_date": "2018-10-11",
       "reference_title": "China's Brave New World",
-      "reference_episode": 145
+      "final_classification": "archive_fetch_failed_identity_unresolved",
+      "story_id": null,
+      "player_ids": [],
+      "archive_captures_tried": 10,
+      "captures_successfully_parsed": 6,
+      "audio_candidates_tested": 0,
+      "validated_audio": 0,
+      "validation_summary": "Archive/network retrieval failures occurred during bounded search; identity remains unresolved and cannot be demoted.",
+      "remaining_recovery_avenues": [
+        "Retry bounded retrieval when archive/network conditions improve."
+      ]
     },
     {
       "reference_date": "2018-04-24",
       "reference_title": "When China's Ships Come In",
-      "reference_episode": 31
+      "final_classification": "archive_fetch_failed_identity_unresolved",
+      "story_id": null,
+      "player_ids": [],
+      "archive_captures_tried": 10,
+      "captures_successfully_parsed": 9,
+      "audio_candidates_tested": 0,
+      "validated_audio": 0,
+      "validation_summary": "Archive/network retrieval failures occurred during bounded search; identity remains unresolved and cannot be demoted.",
+      "remaining_recovery_avenues": [
+        "Retry bounded retrieval when archive/network conditions improve."
+      ]
     }
-  ]
+  ],
+  "counts": {
+    "attempted": 2,
+    "completed": 2,
+    "failed": 0,
+    "recovered": 0
+  }
 }

@@ -1,11 +1,2068 @@
 {
-  "placeholder": true,
-  "run_complete": false,
-  "run_state": "placeholder",
-  "run_id": "31362220062",
-  "generated_at": "2026-08-10T06:32:58.155282+00:00",
+  "method": "batch2-final3-targeted-recovery",
+  "placeholder": false,
+  "run_complete": true,
+  "run_state": "run_complete",
+  "run_id": "31364226414",
+  "generated_at": "2026-08-10T07:04:17.238158+00:00",
   "reference_date": "2018-04-24",
   "reference_title": "When China's Ships Come In",
   "reference_episode": 31,
-  "final_classification": null
+  "request_budget": {
+    "discovery_cdx_queries": 8,
+    "seeded_exact_cdx_queries": 4,
+    "capture_attempts": 10,
+    "live_player_fetches": 2,
+    "archived_player_cdx_queries": 2,
+    "archived_player_fetches": 2,
+    "audio_validations": 4,
+    "max_logical_requests": 32,
+    "conservative_timeout_ceiling_seconds": 768
+  },
+  "prior_evidence": {
+    "sources": {
+      "batch2_diag": "batch2_fresh_identity_discovery_2018-04-24_diag.json",
+      "batch2_summary": "batch2_fresh_identity_discovery_summary.json",
+      "ranked_report": "indicator_identity_audio_unresolved_ranked_report.json",
+      "consolidated_ledger": "indicator_unresolved_consolidated_evidence_ledger.json",
+      "wayback_npr_probe": "indicator_wayback_npr_probe.json",
+      "wayback_player_probe": "indicator_wayback_player_probe.json"
+    },
+    "batch2_diag": {
+      "method": "fresh-identity-discovery",
+      "placeholder": false,
+      "run_complete": true,
+      "run_state": "run_complete",
+      "run_id": "31354166887",
+      "generated_at": "2026-08-10T04:14:08.513379+00:00",
+      "reference_date": "2018-04-24",
+      "reference_title": "When China's Ships Come In",
+      "reference_episode": 31,
+      "strategy": "staged_cdx_funnel_identity_first",
+      "date_window": {
+        "from": "20180421",
+        "to": "20180501"
+      },
+      "request_budget": {
+        "stage_a_cdx_queries": 6,
+        "capture_fetches": 4,
+        "live_player_fetches": 2,
+        "player_cdx_queries": 2,
+        "archived_player_fetches": 2,
+        "audio_validations": 4,
+        "max_logical_requests": 20,
+        "conservative_timeout_ceiling_seconds": 384,
+        "realistic_worst_case_runtime_seconds": 92
+      },
+      "id_bounds": {
+        "lower": 604419798,
+        "upper": 605819103,
+        "lower_from_episode": "2018-04-20",
+        "upper_from_episode": "2018-04-25",
+        "advisory_only": true
+      },
+      "slug_filters_used": [
+        "when-chinas-ships-come-in",
+        "china-ships",
+        "china-trade-ships",
+        "chinas-ships"
+      ],
+      "cdx_queries": [
+        {
+          "pattern": "https://www.npr.org/sections/money/2018/04/23/",
+          "from": "20180421",
+          "to": "20180501",
+          "limit": 40,
+          "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F23%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180421&to=20180501&limit=40",
+          "rows_returned": 21,
+          "error_type": null,
+          "error_message": null,
+          "response_length": 3647,
+          "zero_row_response": false,
+          "scored_candidates": [
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+              "timestamp": "20180424005159",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+              "timestamp": "20180424173153",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20180426190745",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+              "timestamp": "20180424041842",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+              "timestamp": "20180428065349",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+              "timestamp": "20180429085331",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+              "timestamp": "20180430082708",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+              "timestamp": "20180501092243",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180424183959",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180426202141",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180427210740",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180429224344",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180430232918",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=sonariglinton",
+              "timestamp": "20180423220233",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=sonariglinton",
+              "timestamp": "20180424223459",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=sonariglinton",
+              "timestamp": "20180426052417",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=sonariglinton",
+              "timestamp": "20180429085159",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=sonariglinton",
+              "timestamp": "20180430082555",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=yourmoney",
+              "timestamp": "20180425034916",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=yourmoney",
+              "timestamp": "20180426051739",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            }
+          ]
+        },
+        {
+          "pattern": "http://www.npr.org/sections/money/2018/04/23/",
+          "from": "20180421",
+          "to": "20180501",
+          "limit": 40,
+          "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F23%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180421&to=20180501&limit=40",
+          "rows_returned": 21,
+          "error_type": null,
+          "error_message": null,
+          "response_length": 3647,
+          "zero_row_response": false,
+          "scored_candidates": [
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+              "timestamp": "20180424005159",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+              "timestamp": "20180424173153",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20180426190745",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+              "timestamp": "20180424041842",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+              "timestamp": "20180428065349",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+              "timestamp": "20180429085331",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+              "timestamp": "20180430082708",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+              "timestamp": "20180501092243",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180424183959",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180426202141",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180427210740",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180429224344",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180430232918",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=sonariglinton",
+              "timestamp": "20180423220233",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=sonariglinton",
+              "timestamp": "20180424223459",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=sonariglinton",
+              "timestamp": "20180426052417",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=sonariglinton",
+              "timestamp": "20180429085159",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=sonariglinton",
+              "timestamp": "20180430082555",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=yourmoney",
+              "timestamp": "20180425034916",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=yourmoney",
+              "timestamp": "20180426051739",
+              "url_date": "2018-04-23",
+              "score": 0.1
+            }
+          ]
+        },
+        {
+          "pattern": "https://www.npr.org/sections/money/2018/04/24/",
+          "from": "20180421",
+          "to": "20180501",
+          "limit": 40,
+          "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F24%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180421&to=20180501&limit=40",
+          "rows_returned": 0,
+          "error_type": "network_error",
+          "error_message": "<urlopen error timed out>",
+          "response_length": 0,
+          "zero_row_response": false,
+          "scored_candidates": []
+        },
+        {
+          "pattern": "http://www.npr.org/sections/money/2018/04/24/",
+          "from": "20180421",
+          "to": "20180501",
+          "limit": 40,
+          "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F24%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180421&to=20180501&limit=40",
+          "rows_returned": 0,
+          "error_type": "network_error",
+          "error_message": "<urlopen error timed out>",
+          "response_length": 0,
+          "zero_row_response": false,
+          "scored_candidates": []
+        },
+        {
+          "pattern": "https://www.npr.org/sections/money/2018/04/25/",
+          "from": "20180421",
+          "to": "20180501",
+          "limit": 40,
+          "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F25%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180421&to=20180501&limit=40",
+          "rows_returned": 32,
+          "error_type": null,
+          "error_message": null,
+          "response_length": 5142,
+          "zero_row_response": false,
+          "scored_candidates": [
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought",
+              "timestamp": "20180426190543",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought",
+              "timestamp": "20180427195758",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought",
+              "timestamp": "20180429224237",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought",
+              "timestamp": "20180430232815",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20180426190701",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20180427195934",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+              "timestamp": "20180430082702",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+              "timestamp": "20180501092239",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180426202137",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180427210736",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180428220944",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180429224340",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+              "timestamp": "20180426052122",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+              "timestamp": "20180428065744",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+              "timestamp": "20180501091416",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=yourmoney",
+              "timestamp": "20180427060454",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=yourmoney",
+              "timestamp": "20180428005658",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=yourmoney",
+              "timestamp": "20180429084250",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=yourmoney",
+              "timestamp": "20180430081439",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=yourmoney",
+              "timestamp": "20180501090746",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            }
+          ]
+        },
+        {
+          "pattern": "http://www.npr.org/sections/money/2018/04/25/",
+          "from": "20180421",
+          "to": "20180501",
+          "limit": 40,
+          "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F25%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180421&to=20180501&limit=40",
+          "rows_returned": 0,
+          "error_type": "network_error",
+          "error_message": "<urlopen error timed out>",
+          "response_length": 0,
+          "zero_row_response": false,
+          "scored_candidates": []
+        }
+      ],
+      "slug_variant_probes": [],
+      "date_window_captures": [
+        {
+          "timestamp": "20180424005159",
+          "original_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+          "archive_url": "https://web.archive.org/web/20180424005159id_/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+          "status": "error",
+          "page_title": null,
+          "pub_date": null,
+          "canonical_url": null,
+          "program_context": null,
+          "match_score": null,
+          "story_id": null,
+          "story_evidence": null,
+          "player_embeds": [],
+          "audio_candidates": [],
+          "numeric_ids": [],
+          "episode_qualified": false,
+          "trust_level": "untrusted",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180424005159",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "archive_capture",
+            "trust_level": "untrusted"
+          },
+          "error": "<urlopen error timed out>",
+          "cdx_score": 0.1,
+          "source": "stage_c_capture_fetch"
+        }
+      ],
+      "numeric_id_probes": [],
+      "numeric_probe_status": "disabled_advisory_only",
+      "identity_candidates": [
+        {
+          "timestamp": "20180424005159",
+          "original_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+          "archive_url": "https://web.archive.org/web/20180424005159id_/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+          "status": "error",
+          "page_title": null,
+          "pub_date": null,
+          "canonical_url": null,
+          "program_context": null,
+          "match_score": null,
+          "story_id": null,
+          "story_evidence": null,
+          "player_embeds": [],
+          "audio_candidates": [],
+          "numeric_ids": [],
+          "episode_qualified": false,
+          "trust_level": "untrusted",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180424005159",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "archive_capture",
+            "trust_level": "untrusted"
+          },
+          "error": "<urlopen error timed out>",
+          "cdx_score": 0.1,
+          "source": "stage_c_capture_fetch"
+        }
+      ],
+      "confirmed_identity": null,
+      "player_probes": [],
+      "trusted_audio_evidence": [],
+      "untrusted_audio_evidence": [],
+      "audio_candidates_tested": [],
+      "validated_audio": [],
+      "final_classification": "partial_identity_no_audio",
+      "validation_summary": "Partial identity candidates found (1) but none satisfied the title+date+story-ID proof chain. No trusted audio validated.",
+      "discovery_exhausted_for_window": true,
+      "counts": {
+        "cdx_queries_issued": 6,
+        "cdx_urls_returned": 74,
+        "candidate_urls_scored": 74,
+        "captures_fetched": 0,
+        "captures_failed": 1,
+        "strong_matches": 0,
+        "partial_matches": 1,
+        "player_pages_fetched": 0,
+        "player_pages_failed": 0,
+        "audio_candidates_tested": 0,
+        "audio_validated": 0,
+        "trusted_audio_candidates": 0,
+        "untrusted_audio_candidates": 0,
+        "numeric_ids_probed": 0,
+        "logical_requests_issued": 7
+      }
+    },
+    "batch2_summary_episode": {
+      "reference_date": "2018-04-24",
+      "reference_title": "When China's Ships Come In",
+      "final_classification": "partial_identity_no_audio",
+      "validation_summary": "Partial identity candidates found (1) but none satisfied the title+date+story-ID proof chain. No trusted audio validated.",
+      "counts": {
+        "cdx_queries_issued": 6,
+        "cdx_urls_returned": 74,
+        "candidate_urls_scored": 74,
+        "captures_fetched": 0,
+        "captures_failed": 1,
+        "strong_matches": 0,
+        "partial_matches": 1,
+        "player_pages_fetched": 0,
+        "player_pages_failed": 0,
+        "audio_candidates_tested": 0,
+        "audio_validated": 0,
+        "trusted_audio_candidates": 0,
+        "untrusted_audio_candidates": 0,
+        "numeric_ids_probed": 0,
+        "logical_requests_issued": 7
+      }
+    },
+    "global_cdx_self_test_passed": true,
+    "ranked_report_episode": {
+      "rank": 10,
+      "reference_date": "2018-04-24",
+      "reference_title": "When China's Ships Come In",
+      "reference_year": 2018,
+      "reference_episode": 31,
+      "identity_confidence": "very_low",
+      "strongest_evidence": "Only two NPR story URLs survived, and both appear to have been scraped from unrelated dictionary pages rather than an NPR or affiliate chain tied to the episode.",
+      "npr_ids_found": {
+        "discovered_story_ids": [
+          "126086329",
+          "126309699"
+        ],
+        "discovered_player_story_ids": [],
+        "discovered_audio_ids": [],
+        "verified_episode_specific_story_ids": [],
+        "verified_episode_specific_audio_ids": [],
+        "rejected_or_unverified_ids": [
+          {
+            "id": "126086329",
+            "reason": "Appears only through dictionary-page contamination and was not corroborated by an NPR page, player, archive, or affiliate capture."
+          },
+          {
+            "id": "126309699",
+            "reason": "Resolved NPR URL is a 2010 article on Islamic feminists, not the target episode."
+          }
+        ]
+      },
+      "npr_story_urls": [
+        "http://www.npr.org/templates/story/story.php?storyId=126086329",
+        "http://www.npr.org/2010/04/27/126309699/islamic-feminists-transforming-middle-east"
+      ],
+      "player_urls": [],
+      "affiliate_pages": [],
+      "archived_captures": [],
+      "known_audio_ids": [],
+      "candidate_audio_urls": [
+        {
+          "url": "https://audio.dictionary.com/NEW2016/when_010/when_010.mp3",
+          "discovered_from": "indicator_unresolved_web_discovery.json",
+          "source_type": "validated_audio",
+          "source_url": null,
+          "source_path": "root.results[2]"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/whe/when_/when__gb_1.mp3",
+          "discovered_from": "indicator_unresolved_web_discovery.json",
+          "source_type": "validated_audio",
+          "source_url": null,
+          "source_path": "root.results[2]"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/w/whe/when_/when__us_1_rr.mp3",
+          "discovered_from": "indicator_unresolved_web_discovery.json",
+          "source_type": "validated_audio",
+          "source_url": null,
+          "source_path": "root.results[2]"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ado/adopt/adopt__gb_1.mp3",
+          "discovered_from": "indicator_unresolved_web_discovery.json",
+          "source_type": "validated_audio",
+          "source_url": null,
+          "source_path": "root.results[2]"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/a/ado/adopt/adopt__us_1.mp3",
+          "discovered_from": "indicator_unresolved_web_discovery.json",
+          "source_type": "validated_audio",
+          "source_url": null,
+          "source_path": "root.results[2]"
+        },
+        {
+          "url": "https://audio.dictionary.com/NEW2016/when_010/when_010.mp3",
+          "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
+          "source_type": "non_npr_audio",
+          "source_url": null,
+          "source_path": "root.results[1]"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/whe/when_/when__gb_1.mp3",
+          "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
+          "source_type": "non_npr_audio",
+          "source_url": null,
+          "source_path": "root.results[1]"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/w/whe/when_/when__us_1_rr.mp3",
+          "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
+          "source_type": "non_npr_audio",
+          "source_url": null,
+          "source_path": "root.results[1]"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ado/adopt/adopt__gb_1.mp3",
+          "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
+          "source_type": "non_npr_audio",
+          "source_url": null,
+          "source_path": "root.results[1]"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/a/ado/adopt/adopt__us_1.mp3",
+          "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
+          "source_type": "non_npr_audio",
+          "source_url": null,
+          "source_path": "root.results[1]"
+        }
+      ],
+      "audio_candidates_tested": [
+        {
+          "candidate_url": "https://audio.dictionary.com/NEW2016/when_010/when_010.mp3",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+          "final_url": null,
+          "status_code": null,
+          "content_type": null,
+          "source_url": null,
+          "source_type": "validated_audio",
+          "discovered_from": "indicator_unresolved_web_discovery.json"
+        },
+        {
+          "candidate_url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/whe/when_/when__gb_1.mp3",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+          "final_url": null,
+          "status_code": null,
+          "content_type": null,
+          "source_url": null,
+          "source_type": "validated_audio",
+          "discovered_from": "indicator_unresolved_web_discovery.json"
+        },
+        {
+          "candidate_url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/w/whe/when_/when__us_1_rr.mp3",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+          "final_url": null,
+          "status_code": null,
+          "content_type": null,
+          "source_url": null,
+          "source_type": "validated_audio",
+          "discovered_from": "indicator_unresolved_web_discovery.json"
+        },
+        {
+          "candidate_url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ado/adopt/adopt__gb_1.mp3",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+          "final_url": null,
+          "status_code": null,
+          "content_type": null,
+          "source_url": null,
+          "source_type": "validated_audio",
+          "discovered_from": "indicator_unresolved_web_discovery.json"
+        },
+        {
+          "candidate_url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/a/ado/adopt/adopt__us_1.mp3",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+          "final_url": null,
+          "status_code": null,
+          "content_type": null,
+          "source_url": null,
+          "source_type": "validated_audio",
+          "discovered_from": "indicator_unresolved_web_discovery.json"
+        }
+      ],
+      "validation_result": "Credible NPR identity evidence was found (story/page/player IDs or URLs), but no strong episode-specific working NPR-hosted audio file could be validated. Candidate audio was rejected as rejected_request_error.",
+      "rejected_or_dead_end_evidence": [
+        "All candidate audio URLs came from non-NPR dictionary pronunciation pages.",
+        "No player URL, archive capture, or verified affiliate page survived for this title."
+      ],
+      "remaining_recovery_avenues": [
+        "Search archived affiliate pages carrying the exact title for hidden canonical NPR links.",
+        "Search Wayback for a 2018 NPR episode page using the exact title rather than the word `when`."
+      ],
+      "final_classification": "identity_found_but_audio_unresolved"
+    },
+    "consolidated_ledger_episode": {
+      "reference_date": "2018-04-24",
+      "reference_title": "When China's Ships Come In",
+      "reference_year": 2018,
+      "reference_episode": 31,
+      "aliases": [
+        "When China's Ships Come In"
+      ],
+      "affiliate_pages": [],
+      "npr_story_ids": [],
+      "npr_player_story_ids": [],
+      "npr_audio_ids": [],
+      "npr_story_urls": [
+        "http://www.npr.org/templates/story/story.php?storyId=126086329",
+        "http://www.npr.org/2010/04/27/126309699/islamic-feminists-transforming-middle-east"
+      ],
+      "player_urls": [],
+      "archive_captures": [],
+      "candidate_audio_urls": [
+        {
+          "url": "https://audio.dictionary.com/NEW2016/when_010/when_010.mp3",
+          "discovered_from": "indicator_unresolved_web_discovery.json",
+          "source_type": "validated_audio",
+          "source_url": null,
+          "source_path": "root.results[2]"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/whe/when_/when__gb_1.mp3",
+          "discovered_from": "indicator_unresolved_web_discovery.json",
+          "source_type": "validated_audio",
+          "source_url": null,
+          "source_path": "root.results[2]"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/w/whe/when_/when__us_1_rr.mp3",
+          "discovered_from": "indicator_unresolved_web_discovery.json",
+          "source_type": "validated_audio",
+          "source_url": null,
+          "source_path": "root.results[2]"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ado/adopt/adopt__gb_1.mp3",
+          "discovered_from": "indicator_unresolved_web_discovery.json",
+          "source_type": "validated_audio",
+          "source_url": null,
+          "source_path": "root.results[2]"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/a/ado/adopt/adopt__us_1.mp3",
+          "discovered_from": "indicator_unresolved_web_discovery.json",
+          "source_type": "validated_audio",
+          "source_url": null,
+          "source_path": "root.results[2]"
+        },
+        {
+          "url": "https://audio.dictionary.com/NEW2016/when_010/when_010.mp3",
+          "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
+          "source_type": "non_npr_audio",
+          "source_url": null,
+          "source_path": "root.results[1]"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/whe/when_/when__gb_1.mp3",
+          "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
+          "source_type": "non_npr_audio",
+          "source_url": null,
+          "source_path": "root.results[1]"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/w/whe/when_/when__us_1_rr.mp3",
+          "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
+          "source_type": "non_npr_audio",
+          "source_url": null,
+          "source_path": "root.results[1]"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ado/adopt/adopt__gb_1.mp3",
+          "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
+          "source_type": "non_npr_audio",
+          "source_url": null,
+          "source_path": "root.results[1]"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/a/ado/adopt/adopt__us_1.mp3",
+          "discovered_from": "indicator_unresolved_web_audio_strict_validation.json",
+          "source_type": "non_npr_audio",
+          "source_url": null,
+          "source_path": "root.results[1]"
+        }
+      ],
+      "validation_results": [
+        {
+          "candidate_url": "https://audio.dictionary.com/NEW2016/when_010/when_010.mp3",
+          "discovered_from": "indicator_unresolved_web_discovery.json",
+          "source_type": "validated_audio",
+          "source_url": null,
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>"
+        },
+        {
+          "candidate_url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/whe/when_/when__gb_1.mp3",
+          "discovered_from": "indicator_unresolved_web_discovery.json",
+          "source_type": "validated_audio",
+          "source_url": null,
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>"
+        },
+        {
+          "candidate_url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/w/whe/when_/when__us_1_rr.mp3",
+          "discovered_from": "indicator_unresolved_web_discovery.json",
+          "source_type": "validated_audio",
+          "source_url": null,
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>"
+        },
+        {
+          "candidate_url": "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ado/adopt/adopt__gb_1.mp3",
+          "discovered_from": "indicator_unresolved_web_discovery.json",
+          "source_type": "validated_audio",
+          "source_url": null,
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>"
+        },
+        {
+          "candidate_url": "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/a/ado/adopt/adopt__us_1.mp3",
+          "discovered_from": "indicator_unresolved_web_discovery.json",
+          "source_type": "validated_audio",
+          "source_url": null,
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>"
+        }
+      ],
+      "current_affiliate_pages": [],
+      "current_npr_story_pages": [
+        {
+          "requested_url": "http://www.npr.org/templates/story/story.php?storyId=126086329",
+          "source_type": "npr_story_page",
+          "source_url": null,
+          "status": "error",
+          "error": "<urlopen error [Errno -5] No address associated with hostname>"
+        },
+        {
+          "requested_url": "http://www.npr.org/2010/04/27/126309699/islamic-feminists-transforming-middle-east",
+          "source_type": "npr_story_page",
+          "source_url": null,
+          "status": "error",
+          "error": "<urlopen error [Errno -5] No address associated with hostname>"
+        }
+      ],
+      "current_player_pages": [],
+      "prior_evidence": [
+        {
+          "file": "indicator_unresolved_batch_recovery.json",
+          "path": "root.results[3]",
+          "status": "unresolved_with_prior_evidence"
+        },
+        {
+          "file": "indicator_unresolved_strict_review.json",
+          "path": "root.results[3]",
+          "status": "needs_fresh_discovery"
+        },
+        {
+          "file": "indicator_unresolved_web_discovery.json",
+          "path": "root.results[2]",
+          "status": "episode_audio_recovered"
+        },
+        {
+          "file": "indicator_unresolved_web_audio_strict_validation.json",
+          "path": "root.results[1]",
+          "status": "rejected_audio_candidate"
+        },
+        {
+          "file": "indicator_unresolved_affiliate_recovery_00_09.json",
+          "path": "root.results[2]",
+          "status": "no_verified_affiliate_match"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[3]",
+          "status": "not_recovered"
+        }
+      ],
+      "final_status": "identity_found_but_audio_unresolved",
+      "evidence_confidence_explanation": "Credible NPR identity evidence was found (story/page/player IDs or URLs), but no strong episode-specific working NPR-hosted audio file could be validated. Candidate audio was rejected as rejected_request_error.",
+      "duplicate_reference_dates": []
+    },
+    "wayback_npr_probe_loaded": true,
+    "wayback_player_probe_loaded": true
+  },
+  "global_cdx_self_test_passed": true,
+  "exact_title_affiliate_archive_evidence": {
+    "files_scanned": [
+      "indicator_unresolved_affiliate_recovery_00_09.json",
+      "indicator_unresolved_affiliate_recovery_10_19.json",
+      "indicator_unresolved_affiliate_recovery_20_49.json"
+    ],
+    "matched_sources": [
+      "indicator_unresolved_affiliate_recovery_00_09.json"
+    ],
+    "matched_source_count": 1,
+    "exact_title_urls": []
+  },
+  "exact_cdx_queries": [
+    {
+      "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F23%2F605033696%2F3-things-you-didn-t-know-about-la&matchType=exact&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=8",
+      "rows_returned": 8,
+      "error_type": null,
+      "error_message": null
+    },
+    {
+      "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F23%2F605033696%2F3-things-you-didn-t-know-about-la%3Futm_medium%3DJSONFeed%26utm_campaign%3Dcardiffgarcia&matchType=exact&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=8",
+      "rows_returned": 6,
+      "error_type": null,
+      "error_message": null
+    },
+    {
+      "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought",
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F25%2F605819103%2Fthe-farm-labor-drought&matchType=exact&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=8",
+      "rows_returned": 8,
+      "error_type": null,
+      "error_message": null
+    },
+    {
+      "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=business",
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F25%2F605819103%2Fthe-farm-labor-drought%3Futm_medium%3DJSONFeed%26utm_campaign%3Dbusiness&matchType=exact&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=8",
+      "rows_returned": 2,
+      "error_type": null,
+      "error_message": null
+    }
+  ],
+  "discovery_cdx_queries": [
+    {
+      "pattern": "https://www.npr.org/sections/money/2018/04/24/",
+      "from": "20180421",
+      "to": "20180428",
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F24%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180421&to=20180428&limit=40",
+      "rows_returned": 0,
+      "error_type": "network_error",
+      "error_message": "<urlopen error timed out>"
+    },
+    {
+      "pattern": "http://www.npr.org/sections/money/2018/04/24/",
+      "from": "20180421",
+      "to": "20180428",
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F24%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180421&to=20180428&limit=40",
+      "rows_returned": 0,
+      "error_type": "network_error",
+      "error_message": "<urlopen error timed out>"
+    }
+  ],
+  "archive_captures_tried": [
+    {
+      "timestamp": "20180424005159",
+      "original_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+      "archive_url": "https://web.archive.org/web/20180424005159id_/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+      "archive_variant": "id_",
+      "source": "prior_stage_c",
+      "status": "fetched",
+      "page_title": "3 Things You Didn't Know About LA : Planet Money : NPR",
+      "pub_date": "2018-04-23",
+      "canonical_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+      "match_score": {
+        "title_score": 0.0,
+        "date_match": false,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": true,
+        "canonical_story_id": "605033696",
+        "discovered_story_id": "605033696",
+        "trusted_story_page": true,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "story_id_date_match_not_title"
+      },
+      "story_id": "605033696",
+      "blocked_adjacent_unrelated": true,
+      "exact_title_match": false,
+      "episode_qualified": false,
+      "rejection_reasons": [
+        "adjacent_unrelated_story",
+        "score_verdict:story_id_date_match_not_title",
+        "date_not_exact",
+        "title_not_exact"
+      ],
+      "story_evidence": {
+        "story_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+        "story_id": "605033696",
+        "provenance": {
+          "source_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+          "source_capture_timestamp": "20180424005159",
+          "episode_qualified": false,
+          "target_episode": "2018-04-24",
+          "target_title": "When China's Ships Come In",
+          "evidence_type": "story_url",
+          "trust_level": "untrusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/605032568/605032844",
+          "player_story_id": "605032568",
+          "player_audio_id": "605032844",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180424005159",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "player_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180423_indicator_3_things_about_la_final.mp3?orgId=1&d=585&p=510325&story=605032568&t=podcast&e=605032568&siteplayer=true",
+          "audio_id": "605032568",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180424005159",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180423_indicator_3_things_about_la_final.mp3?orgId=1&d=585&p=510325&story=605032568&t=podcast&e=605032568&siteplayer=true&dl=1",
+          "audio_id": "605032568",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180424005159",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      }
+    },
+    {
+      "timestamp": "20180424005159",
+      "original_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+      "archive_url": "https://web.archive.org/web/20180424005159/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+      "archive_variant": "raw",
+      "source": "prior_stage_c",
+      "status": "fetched",
+      "page_title": "3 Things You Didn't Know About LA : Planet Money : NPR",
+      "pub_date": "2018-04-23",
+      "canonical_url": "https://web.archive.org/web/20180424005159/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+      "match_score": {
+        "title_score": 0.0,
+        "date_match": false,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": false,
+        "canonical_story_id": null,
+        "discovered_story_id": "605033696",
+        "trusted_story_page": false,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "story_id_date_match_not_title"
+      },
+      "story_id": null,
+      "blocked_adjacent_unrelated": true,
+      "exact_title_match": false,
+      "episode_qualified": false,
+      "rejection_reasons": [
+        "adjacent_unrelated_story",
+        "score_verdict:story_id_date_match_not_title",
+        "date_not_exact",
+        "title_not_exact"
+      ],
+      "story_evidence": {
+        "story_url": "https://web.archive.org/web/20180424005159/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+        "story_id": "605033696",
+        "provenance": {
+          "source_url": "https://web.archive.org/web/20180424005159/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+          "source_capture_timestamp": "20180424005159",
+          "episode_qualified": false,
+          "target_episode": "2018-04-24",
+          "target_title": "When China's Ships Come In",
+          "evidence_type": "story_url",
+          "trust_level": "untrusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/605032568/605032844",
+          "player_story_id": "605032568",
+          "player_audio_id": "605032844",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180424005159/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180424005159",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "player_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180423_indicator_3_things_about_la_final.mp3?orgId=1&d=585&p=510325&story=605032568&t=podcast&e=605032568&siteplayer=true",
+          "audio_id": "605032568",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180424005159/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180424005159",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180423_indicator_3_things_about_la_final.mp3?orgId=1&d=585&p=510325&story=605032568&t=podcast&e=605032568&siteplayer=true&dl=1",
+          "audio_id": "605032568",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180424005159/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180424005159",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://web.archive.org/web/20180424005159/https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180423_indicator_3_things_about_la_final.mp3?orgId=1&d=585&p=510325&story=605032568&t=podcast&e=605032568&siteplayer=true&dl=1",
+          "audio_id": "605032568",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180424005159/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180424005159",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      }
+    },
+    {
+      "timestamp": "20180424173153",
+      "original_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+      "archive_url": "https://web.archive.org/web/20180424173153id_/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+      "archive_variant": "id_",
+      "source": "prior_cdx_scored",
+      "status": "fetched",
+      "page_title": "3 Things You Didn't Know About LA : Planet Money : NPR",
+      "pub_date": "2018-04-23",
+      "canonical_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+      "match_score": {
+        "title_score": 0.0,
+        "date_match": false,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": true,
+        "canonical_story_id": "605033696",
+        "discovered_story_id": "605033696",
+        "trusted_story_page": true,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "story_id_date_match_not_title"
+      },
+      "story_id": "605033696",
+      "blocked_adjacent_unrelated": true,
+      "exact_title_match": false,
+      "episode_qualified": false,
+      "rejection_reasons": [
+        "adjacent_unrelated_story",
+        "score_verdict:story_id_date_match_not_title",
+        "date_not_exact",
+        "title_not_exact"
+      ],
+      "story_evidence": {
+        "story_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+        "story_id": "605033696",
+        "provenance": {
+          "source_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+          "source_capture_timestamp": "20180424173153",
+          "episode_qualified": false,
+          "target_episode": "2018-04-24",
+          "target_title": "When China's Ships Come In",
+          "evidence_type": "story_url",
+          "trust_level": "untrusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/605032568/605032844",
+          "player_story_id": "605032568",
+          "player_audio_id": "605032844",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180424173153",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "player_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180423_indicator_3_things_about_la_final.mp3?orgId=1&d=585&p=510325&story=605032568&t=podcast&e=605032568&siteplayer=true",
+          "audio_id": "605032568",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180424173153",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180423_indicator_3_things_about_la_final.mp3?orgId=1&d=585&p=510325&story=605032568&t=podcast&e=605032568&siteplayer=true&dl=1",
+          "audio_id": "605032568",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180424173153",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      }
+    },
+    {
+      "timestamp": "20180424173153",
+      "original_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+      "archive_url": "https://web.archive.org/web/20180424173153/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+      "archive_variant": "raw",
+      "source": "prior_cdx_scored",
+      "status": "fetched",
+      "page_title": "3 Things You Didn't Know About LA : Planet Money : NPR",
+      "pub_date": "2018-04-23",
+      "canonical_url": "https://web.archive.org/web/20180424173153/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+      "match_score": {
+        "title_score": 0.0,
+        "date_match": false,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": false,
+        "canonical_story_id": null,
+        "discovered_story_id": "605033696",
+        "trusted_story_page": false,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "story_id_date_match_not_title"
+      },
+      "story_id": null,
+      "blocked_adjacent_unrelated": true,
+      "exact_title_match": false,
+      "episode_qualified": false,
+      "rejection_reasons": [
+        "adjacent_unrelated_story",
+        "score_verdict:story_id_date_match_not_title",
+        "date_not_exact",
+        "title_not_exact"
+      ],
+      "story_evidence": {
+        "story_url": "https://web.archive.org/web/20180424173153/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+        "story_id": "605033696",
+        "provenance": {
+          "source_url": "https://web.archive.org/web/20180424173153/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+          "source_capture_timestamp": "20180424173153",
+          "episode_qualified": false,
+          "target_episode": "2018-04-24",
+          "target_title": "When China's Ships Come In",
+          "evidence_type": "story_url",
+          "trust_level": "untrusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/605032568/605032844",
+          "player_story_id": "605032568",
+          "player_audio_id": "605032844",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180424173153/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180424173153",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "player_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180423_indicator_3_things_about_la_final.mp3?orgId=1&d=585&p=510325&story=605032568&t=podcast&e=605032568&siteplayer=true",
+          "audio_id": "605032568",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180424173153/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180424173153",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180423_indicator_3_things_about_la_final.mp3?orgId=1&d=585&p=510325&story=605032568&t=podcast&e=605032568&siteplayer=true&dl=1",
+          "audio_id": "605032568",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180424173153/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180424173153",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://web.archive.org/web/20180424173153/https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180423_indicator_3_things_about_la_final.mp3?orgId=1&d=585&p=510325&story=605032568&t=podcast&e=605032568&siteplayer=true&dl=1",
+          "audio_id": "605032568",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180424173153/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180424173153",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      }
+    },
+    {
+      "timestamp": "20180426190745",
+      "original_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=business",
+      "archive_url": "https://web.archive.org/web/20180426190745id_/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=business",
+      "archive_variant": "id_",
+      "source": "prior_cdx_scored",
+      "status": "fetched",
+      "page_title": "3 Things You Didn't Know About LA : Planet Money : NPR",
+      "pub_date": "2018-04-23",
+      "canonical_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+      "match_score": {
+        "title_score": 0.0,
+        "date_match": false,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": true,
+        "canonical_story_id": "605033696",
+        "discovered_story_id": "605033696",
+        "trusted_story_page": true,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "story_id_date_match_not_title"
+      },
+      "story_id": "605033696",
+      "blocked_adjacent_unrelated": true,
+      "exact_title_match": false,
+      "episode_qualified": false,
+      "rejection_reasons": [
+        "adjacent_unrelated_story",
+        "score_verdict:story_id_date_match_not_title",
+        "date_not_exact",
+        "title_not_exact"
+      ],
+      "story_evidence": {
+        "story_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+        "story_id": "605033696",
+        "provenance": {
+          "source_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+          "source_capture_timestamp": "20180426190745",
+          "episode_qualified": false,
+          "target_episode": "2018-04-24",
+          "target_title": "When China's Ships Come In",
+          "evidence_type": "story_url",
+          "trust_level": "untrusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/605032568/605032844",
+          "player_story_id": "605032568",
+          "player_audio_id": "605032844",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180426190745",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "player_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180423_indicator_3_things_about_la_final.mp3?orgId=1&d=585&p=510325&story=605032568&t=podcast&e=605032568&siteplayer=true",
+          "audio_id": "605032568",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180426190745",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180423_indicator_3_things_about_la_final.mp3?orgId=1&d=585&p=510325&story=605032568&t=podcast&e=605032568&siteplayer=true&dl=1",
+          "audio_id": "605032568",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180426190745",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      }
+    },
+    {
+      "timestamp": "20180426190745",
+      "original_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=business",
+      "archive_url": "https://web.archive.org/web/20180426190745/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=business",
+      "archive_variant": "raw",
+      "source": "prior_cdx_scored",
+      "status": "fetched",
+      "page_title": "3 Things You Didn't Know About LA : Planet Money : NPR",
+      "pub_date": "2018-04-23",
+      "canonical_url": "https://web.archive.org/web/20180426190745/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+      "match_score": {
+        "title_score": 0.0,
+        "date_match": false,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": false,
+        "canonical_story_id": null,
+        "discovered_story_id": "605033696",
+        "trusted_story_page": false,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "story_id_date_match_not_title"
+      },
+      "story_id": null,
+      "blocked_adjacent_unrelated": true,
+      "exact_title_match": false,
+      "episode_qualified": false,
+      "rejection_reasons": [
+        "adjacent_unrelated_story",
+        "score_verdict:story_id_date_match_not_title",
+        "date_not_exact",
+        "title_not_exact"
+      ],
+      "story_evidence": {
+        "story_url": "https://web.archive.org/web/20180426190745/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+        "story_id": "605033696",
+        "provenance": {
+          "source_url": "https://web.archive.org/web/20180426190745/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+          "source_capture_timestamp": "20180426190745",
+          "episode_qualified": false,
+          "target_episode": "2018-04-24",
+          "target_title": "When China's Ships Come In",
+          "evidence_type": "story_url",
+          "trust_level": "untrusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/605032568/605032844",
+          "player_story_id": "605032568",
+          "player_audio_id": "605032844",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180426190745/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180426190745",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "player_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180423_indicator_3_things_about_la_final.mp3?orgId=1&d=585&p=510325&story=605032568&t=podcast&e=605032568&siteplayer=true",
+          "audio_id": "605032568",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180426190745/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180426190745",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180423_indicator_3_things_about_la_final.mp3?orgId=1&d=585&p=510325&story=605032568&t=podcast&e=605032568&siteplayer=true&dl=1",
+          "audio_id": "605032568",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180426190745/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180426190745",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://web.archive.org/web/20180426190745/https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180423_indicator_3_things_about_la_final.mp3?orgId=1&d=585&p=510325&story=605032568&t=podcast&e=605032568&siteplayer=true&dl=1",
+          "audio_id": "605032568",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180426190745/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180426190745",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      }
+    },
+    {
+      "timestamp": "20180424041842",
+      "original_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+      "archive_url": "https://web.archive.org/web/20180424041842id_/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+      "archive_variant": "id_",
+      "source": "prior_cdx_scored",
+      "status": "fetched",
+      "page_title": "3 Things You Didn't Know About LA : Planet Money : NPR",
+      "pub_date": "2018-04-23",
+      "canonical_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+      "match_score": {
+        "title_score": 0.0,
+        "date_match": false,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": true,
+        "canonical_story_id": "605033696",
+        "discovered_story_id": "605033696",
+        "trusted_story_page": true,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "story_id_date_match_not_title"
+      },
+      "story_id": "605033696",
+      "blocked_adjacent_unrelated": true,
+      "exact_title_match": false,
+      "episode_qualified": false,
+      "rejection_reasons": [
+        "adjacent_unrelated_story",
+        "score_verdict:story_id_date_match_not_title",
+        "date_not_exact",
+        "title_not_exact"
+      ],
+      "story_evidence": {
+        "story_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+        "story_id": "605033696",
+        "provenance": {
+          "source_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+          "source_capture_timestamp": "20180424041842",
+          "episode_qualified": false,
+          "target_episode": "2018-04-24",
+          "target_title": "When China's Ships Come In",
+          "evidence_type": "story_url",
+          "trust_level": "untrusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/605032568/605032844",
+          "player_story_id": "605032568",
+          "player_audio_id": "605032844",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180424041842",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "player_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180423_indicator_3_things_about_la_final.mp3?orgId=1&d=585&p=510325&story=605032568&t=podcast&e=605032568&siteplayer=true",
+          "audio_id": "605032568",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180424041842",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180423_indicator_3_things_about_la_final.mp3?orgId=1&d=585&p=510325&story=605032568&t=podcast&e=605032568&siteplayer=true&dl=1",
+          "audio_id": "605032568",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180424041842",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      }
+    },
+    {
+      "timestamp": "20180424041842",
+      "original_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+      "archive_url": "https://web.archive.org/web/20180424041842/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+      "archive_variant": "raw",
+      "source": "prior_cdx_scored",
+      "status": "fetched",
+      "page_title": "3 Things You Didn't Know About LA : Planet Money : NPR",
+      "pub_date": "2018-04-23",
+      "canonical_url": "https://web.archive.org/web/20180424041842/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+      "match_score": {
+        "title_score": 0.0,
+        "date_match": false,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": false,
+        "canonical_story_id": null,
+        "discovered_story_id": "605033696",
+        "trusted_story_page": false,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "story_id_date_match_not_title"
+      },
+      "story_id": null,
+      "blocked_adjacent_unrelated": true,
+      "exact_title_match": false,
+      "episode_qualified": false,
+      "rejection_reasons": [
+        "adjacent_unrelated_story",
+        "score_verdict:story_id_date_match_not_title",
+        "date_not_exact",
+        "title_not_exact"
+      ],
+      "story_evidence": {
+        "story_url": "https://web.archive.org/web/20180424041842/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+        "story_id": "605033696",
+        "provenance": {
+          "source_url": "https://web.archive.org/web/20180424041842/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+          "source_capture_timestamp": "20180424041842",
+          "episode_qualified": false,
+          "target_episode": "2018-04-24",
+          "target_title": "When China's Ships Come In",
+          "evidence_type": "story_url",
+          "trust_level": "untrusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/605032568/605032844",
+          "player_story_id": "605032568",
+          "player_audio_id": "605032844",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180424041842/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180424041842",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "player_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180423_indicator_3_things_about_la_final.mp3?orgId=1&d=585&p=510325&story=605032568&t=podcast&e=605032568&siteplayer=true",
+          "audio_id": "605032568",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180424041842/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180424041842",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180423_indicator_3_things_about_la_final.mp3?orgId=1&d=585&p=510325&story=605032568&t=podcast&e=605032568&siteplayer=true&dl=1",
+          "audio_id": "605032568",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180424041842/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180424041842",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://web.archive.org/web/20180424041842/https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180423_indicator_3_things_about_la_final.mp3?orgId=1&d=585&p=510325&story=605032568&t=podcast&e=605032568&siteplayer=true&dl=1",
+          "audio_id": "605032568",
+          "provenance": {
+            "source_url": "https://web.archive.org/web/20180424041842/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180424041842",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      }
+    },
+    {
+      "timestamp": "20180428065349",
+      "original_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+      "archive_url": "https://web.archive.org/web/20180428065349id_/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+      "archive_variant": "id_",
+      "source": "prior_cdx_scored",
+      "status": "fetched",
+      "page_title": "3 Things You Didn't Know About LA : Planet Money : NPR",
+      "pub_date": "2018-04-23",
+      "canonical_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+      "match_score": {
+        "title_score": 0.0,
+        "date_match": false,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": true,
+        "canonical_story_id": "605033696",
+        "discovered_story_id": "605033696",
+        "trusted_story_page": true,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "story_id_date_match_not_title"
+      },
+      "story_id": "605033696",
+      "blocked_adjacent_unrelated": true,
+      "exact_title_match": false,
+      "episode_qualified": false,
+      "rejection_reasons": [
+        "adjacent_unrelated_story",
+        "score_verdict:story_id_date_match_not_title",
+        "date_not_exact",
+        "title_not_exact"
+      ],
+      "story_evidence": {
+        "story_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+        "story_id": "605033696",
+        "provenance": {
+          "source_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+          "source_capture_timestamp": "20180428065349",
+          "episode_qualified": false,
+          "target_episode": "2018-04-24",
+          "target_title": "When China's Ships Come In",
+          "evidence_type": "story_url",
+          "trust_level": "untrusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/605032568/605032844",
+          "player_story_id": "605032568",
+          "player_audio_id": "605032844",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180428065349",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "player_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180423_indicator_3_things_about_la_final.mp3?orgId=1&d=585&p=510325&story=605032568&t=podcast&e=605032568&siteplayer=true",
+          "audio_id": "605032568",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180428065349",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/04/20180423_indicator_3_things_about_la_final.mp3?orgId=1&d=585&p=510325&story=605032568&t=podcast&e=605032568&siteplayer=true&dl=1",
+          "audio_id": "605032568",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "source_capture_timestamp": "20180428065349",
+            "episode_qualified": false,
+            "target_episode": "2018-04-24",
+            "target_title": "When China's Ships Come In",
+            "evidence_type": "audio_url",
+            "trust_level": "untrusted"
+          }
+        }
+      ],
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      }
+    },
+    {
+      "timestamp": "20180428065349",
+      "original_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+      "archive_url": "https://web.archive.org/web/20180428065349/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+      "archive_variant": "raw",
+      "source": "prior_cdx_scored",
+      "status": "error",
+      "error": "<urlopen error timed out>"
+    }
+  ],
+  "captures_successfully_parsed": 9,
+  "archive_captures_failed": 1,
+  "identity_candidates": [],
+  "additional_qualified_captures": [],
+  "confirmed_identity": null,
+  "player_probes": [],
+  "audio_candidates_tested": [],
+  "validated_audio": [],
+  "audio_candidates_total": 0,
+  "bounded_discovery_required": true,
+  "bounded_discovery_ran": true,
+  "bounded_search_completed": true,
+  "final_classification": "archive_fetch_failed_identity_unresolved",
+  "validation_summary": "Archive/network retrieval failures occurred during bounded search; identity remains unresolved and cannot be demoted.",
+  "remaining_recovery_avenues": [
+    "Retry bounded retrieval when archive/network conditions improve."
+  ],
+  "story_id": null,
+  "player_ids": []
 }
