@@ -1,0 +1,1704 @@
+{
+  "method": "fresh-identity-discovery",
+  "placeholder": false,
+  "run_complete": true,
+  "run_state": "run_complete",
+  "run_id": "31354166887",
+  "generated_at": "2026-08-10T04:17:11.786723+00:00",
+  "reference_date": "2018-06-13",
+  "reference_title": "Dude, Where's My Trade War?",
+  "reference_episode": 66,
+  "strategy": "staged_cdx_funnel_identity_first",
+  "date_window": {
+    "from": "20180610",
+    "to": "20180620"
+  },
+  "request_budget": {
+    "stage_a_cdx_queries": 6,
+    "capture_fetches": 4,
+    "live_player_fetches": 2,
+    "player_cdx_queries": 2,
+    "archived_player_fetches": 2,
+    "audio_validations": 4,
+    "max_logical_requests": 20,
+    "conservative_timeout_ceiling_seconds": 384,
+    "realistic_worst_case_runtime_seconds": 92
+  },
+  "id_bounds": {
+    "lower": 619309279,
+    "upper": 620106332,
+    "lower_from_episode": "2018-06-12",
+    "upper_from_episode": "2018-06-14",
+    "advisory_only": true
+  },
+  "slug_filters_used": [
+    "dude-wheres-my-trade-war",
+    "trade-war",
+    "where-is-my-trade-war",
+    "trade-war-tariffs"
+  ],
+  "cdx_queries": [
+    {
+      "pattern": "https://www.npr.org/sections/money/2018/06/12/",
+      "from": "20180610",
+      "to": "20180620",
+      "limit": 40,
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F06%2F12%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180610&to=20180620&limit=40",
+      "rows_returned": 0,
+      "error_type": "network_error",
+      "error_message": "<urlopen error timed out>",
+      "response_length": 0,
+      "zero_row_response": false,
+      "scored_candidates": []
+    },
+    {
+      "pattern": "http://www.npr.org/sections/money/2018/06/12/",
+      "from": "20180610",
+      "to": "20180620",
+      "limit": 40,
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F06%2F12%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180610&to=20180620&limit=40",
+      "rows_returned": 0,
+      "error_type": "network_error",
+      "error_message": "<urlopen error timed out>",
+      "response_length": 0,
+      "zero_row_response": false,
+      "scored_candidates": []
+    },
+    {
+      "pattern": "https://www.npr.org/sections/money/2018/06/13/",
+      "from": "20180610",
+      "to": "20180620",
+      "limit": 40,
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F06%2F13%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180610&to=20180620&limit=40",
+      "rows_returned": 0,
+      "error_type": "network_error",
+      "error_message": "<urlopen error timed out>",
+      "response_length": 0,
+      "zero_row_response": false,
+      "scored_candidates": []
+    },
+    {
+      "pattern": "http://www.npr.org/sections/money/2018/06/13/",
+      "from": "20180610",
+      "to": "20180620",
+      "limit": 40,
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F06%2F13%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180610&to=20180620&limit=40",
+      "rows_returned": 21,
+      "error_type": null,
+      "error_message": null,
+      "response_length": 3185,
+      "zero_row_response": false,
+      "scored_candidates": [
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+          "timestamp": "20180614015208",
+          "url_date": "2018-06-13",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+          "timestamp": "20180615195208",
+          "url_date": "2018-06-13",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+          "timestamp": "20180616023223",
+          "url_date": "2018-06-13",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+          "timestamp": "20180617030057",
+          "url_date": "2018-06-13",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+          "timestamp": "20180618034618",
+          "url_date": "2018-06-13",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180613210947",
+          "url_date": "2018-06-13",
+          "score": 0.95
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180614015307",
+          "url_date": "2018-06-13",
+          "score": 0.95
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180614221525",
+          "url_date": "2018-06-13",
+          "score": 0.95
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180615021108",
+          "url_date": "2018-06-13",
+          "score": 0.95
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180616023349",
+          "url_date": "2018-06-13",
+          "score": 0.95
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180617000227",
+          "url_date": "2018-06-13",
+          "score": 0.95
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+          "timestamp": "20180618151815",
+          "url_date": "2018-06-13",
+          "score": 0.95
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=daniellekurtzleben",
+          "timestamp": "20180615132259",
+          "url_date": "2018-06-13",
+          "score": 0.95
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180613213938",
+          "url_date": "2018-06-13",
+          "score": 0.95
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180614030643",
+          "url_date": "2018-06-13",
+          "score": 0.95
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180618050131",
+          "url_date": "2018-06-13",
+          "score": 0.95
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=yourmoney",
+          "timestamp": "20180614124613",
+          "url_date": "2018-06-13",
+          "score": 0.95
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=yourmoney",
+          "timestamp": "20180615131343",
+          "url_date": "2018-06-13",
+          "score": 0.95
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/13/619713983/episode-847-inventing-accidents",
+          "timestamp": "20180614015211",
+          "url_date": "2018-06-13",
+          "score": 0.2
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/13/619713983/episode-847-inventing-accidents",
+          "timestamp": "20180617041342",
+          "url_date": "2018-06-13",
+          "score": 0.2
+        }
+      ]
+    },
+    {
+      "pattern": "https://www.npr.org/sections/money/2018/06/14/",
+      "from": "20180610",
+      "to": "20180620",
+      "limit": 40,
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F06%2F14%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180610&to=20180620&limit=40",
+      "rows_returned": 15,
+      "error_type": null,
+      "error_message": null,
+      "response_length": 2208,
+      "zero_row_response": false,
+      "scored_candidates": [
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces",
+          "timestamp": "20180615020929",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces",
+          "timestamp": "20180616023153",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces",
+          "timestamp": "20180617030007",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces",
+          "timestamp": "20180618034520",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180614221435",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180615021033",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180616023320",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180617000144",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180618005727",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces?utm_medium=JSONFeed&utm_campaign=daniellekurtzleben",
+          "timestamp": "20180615132257",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces?utm_medium=JSONFeed&utm_campaign=daniellekurtzleben",
+          "timestamp": "20180618151121",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180614224601",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180615032220",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180618012907",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces?utm_medium=JSONFeed&utm_campaign=yourmoney",
+          "timestamp": "20180615131334",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        }
+      ]
+    },
+    {
+      "pattern": "http://www.npr.org/sections/money/2018/06/14/",
+      "from": "20180610",
+      "to": "20180620",
+      "limit": 40,
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F06%2F14%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180610&to=20180620&limit=40",
+      "rows_returned": 15,
+      "error_type": null,
+      "error_message": null,
+      "response_length": 2208,
+      "zero_row_response": false,
+      "scored_candidates": [
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces",
+          "timestamp": "20180615020929",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces",
+          "timestamp": "20180616023153",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces",
+          "timestamp": "20180617030007",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces",
+          "timestamp": "20180618034520",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180614221435",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180615021033",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180616023320",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180617000144",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180618005727",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces?utm_medium=JSONFeed&utm_campaign=daniellekurtzleben",
+          "timestamp": "20180615132257",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces?utm_medium=JSONFeed&utm_campaign=daniellekurtzleben",
+          "timestamp": "20180618151121",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180614224601",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180615032220",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180618012907",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/06/14/620106332/trading-spaces?utm_medium=JSONFeed&utm_campaign=yourmoney",
+          "timestamp": "20180615131334",
+          "url_date": "2018-06-14",
+          "score": 0.1
+        }
+      ]
+    }
+  ],
+  "slug_variant_probes": [],
+  "date_window_captures": [
+    {
+      "timestamp": "20180614015208",
+      "original_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+      "archive_url": "https://web.archive.org/web/20180614015208id_/https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+      "status": "fetched",
+      "page_title": "Dude, Where's My Trade War? : Planet Money : NPR",
+      "pub_date": "2018-06-13",
+      "canonical_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+      "program_context": {
+        "program_id": "510325",
+        "show_name": null,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "has_indicator_branding": false
+      },
+      "match_score": {
+        "title_score": 1.0,
+        "date_match": true,
+        "date_adjacent": true,
+        "date_source": "publication_date",
+        "has_story_id": true,
+        "has_trusted_story_id": true,
+        "canonical_story_id": "619662004",
+        "discovered_story_id": "619662004",
+        "trusted_story_page": true,
+        "has_indicator_branding": false,
+        "has_episode_context": true,
+        "indicator_signals": [
+          "program_id_510325"
+        ],
+        "verdict": "strong_match"
+      },
+      "story_id": "619662004",
+      "story_evidence": {
+        "story_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+        "story_id": "619662004",
+        "provenance": {
+          "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+          "source_capture_timestamp": "20180614015208",
+          "episode_qualified": true,
+          "target_episode": "2018-06-13",
+          "target_title": "Dude, Where's My Trade War?",
+          "evidence_type": "story_url",
+          "trust_level": "trusted"
+        }
+      },
+      "player_embeds": [
+        {
+          "player_url": "https://www.npr.org/player/embed/619658580/619667830",
+          "player_story_id": "619658580",
+          "player_audio_id": "619667830",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "player_url",
+            "trust_level": "trusted"
+          }
+        }
+      ],
+      "audio_candidates": [
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/06/20180613_indicator_0613_tariffied_final_2.mp3?orgId=1&d=663&p=510325&story=619658580&t=podcast&e=619658580&siteplayer=true",
+          "audio_id": "619658580",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "audio_url",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/06/20180613_indicator_0613_tariffied_final_2.mp3?orgId=1&d=663&p=510325&story=619658580&t=podcast&e=619658580&siteplayer=true&dl=1",
+          "audio_id": "619658580",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "audio_url",
+            "trust_level": "trusted"
+          }
+        }
+      ],
+      "numeric_ids": [
+        {
+          "numeric_id": "619662004",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "93559255",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "10643211755",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "5828686",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "567724614",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "2018061316",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "20501671",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "2535181",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "98679384",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "122356178",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "100920965",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "198341814",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "4692815",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "423302056",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "347139849",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "103063413",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "146587997",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "144918893",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "149937282",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "356126782",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "534681872",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "191663270",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "257657827",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "104566969",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "153588024",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "192827079",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "178659563",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "178640915",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "178660742",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "179803822",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "183726490",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "177066727",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "182673872",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "179881519",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "187046089",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "186948703",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "181961258",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "182675632",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "185546105",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "179008081",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "181909622",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "181881227",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "181880514",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "185550054",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "135599807",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "135511603",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "290783428",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "691797987",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "619658580",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "619667830",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "1320118593",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "567164716",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "409798174",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "471757314",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "179876898",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        },
+        {
+          "numeric_id": "179878450",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+            "source_capture_timestamp": "20180614015208",
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "numeric_id",
+            "trust_level": "trusted"
+          }
+        }
+      ],
+      "episode_qualified": true,
+      "trust_level": "trusted",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+        "source_capture_timestamp": "20180614015208",
+        "episode_qualified": true,
+        "target_episode": "2018-06-13",
+        "target_title": "Dude, Where's My Trade War?",
+        "evidence_type": "archive_capture",
+        "trust_level": "trusted"
+      },
+      "cdx_score": 1.0,
+      "source": "stage_c_capture_fetch"
+    },
+    {
+      "timestamp": "20180613210947",
+      "original_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=business",
+      "archive_url": "https://web.archive.org/web/20180613210947id_/https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=business",
+      "status": "error",
+      "page_title": null,
+      "pub_date": null,
+      "canonical_url": null,
+      "program_context": null,
+      "match_score": null,
+      "story_id": null,
+      "story_evidence": null,
+      "player_embeds": [],
+      "audio_candidates": [],
+      "numeric_ids": [],
+      "episode_qualified": false,
+      "trust_level": "untrusted",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=business",
+        "source_capture_timestamp": "20180613210947",
+        "episode_qualified": false,
+        "target_episode": "2018-06-13",
+        "target_title": "Dude, Where's My Trade War?",
+        "evidence_type": "archive_capture",
+        "trust_level": "untrusted"
+      },
+      "error": "<urlopen error timed out>",
+      "cdx_score": 0.95,
+      "source": "stage_c_capture_fetch"
+    },
+    {
+      "timestamp": "20180618151815",
+      "original_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+      "archive_url": "https://web.archive.org/web/20180618151815id_/https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+      "status": "error",
+      "page_title": null,
+      "pub_date": null,
+      "canonical_url": null,
+      "program_context": null,
+      "match_score": null,
+      "story_id": null,
+      "story_evidence": null,
+      "player_embeds": [],
+      "audio_candidates": [],
+      "numeric_ids": [],
+      "episode_qualified": false,
+      "trust_level": "untrusted",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+        "source_capture_timestamp": "20180618151815",
+        "episode_qualified": false,
+        "target_episode": "2018-06-13",
+        "target_title": "Dude, Where's My Trade War?",
+        "evidence_type": "archive_capture",
+        "trust_level": "untrusted"
+      },
+      "error": "<urlopen error timed out>",
+      "cdx_score": 0.95,
+      "source": "stage_c_capture_fetch"
+    },
+    {
+      "timestamp": "20180615132259",
+      "original_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=daniellekurtzleben",
+      "archive_url": "https://web.archive.org/web/20180615132259id_/https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=daniellekurtzleben",
+      "status": "error",
+      "page_title": null,
+      "pub_date": null,
+      "canonical_url": null,
+      "program_context": null,
+      "match_score": null,
+      "story_id": null,
+      "story_evidence": null,
+      "player_embeds": [],
+      "audio_candidates": [],
+      "numeric_ids": [],
+      "episode_qualified": false,
+      "trust_level": "untrusted",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=daniellekurtzleben",
+        "source_capture_timestamp": "20180615132259",
+        "episode_qualified": false,
+        "target_episode": "2018-06-13",
+        "target_title": "Dude, Where's My Trade War?",
+        "evidence_type": "archive_capture",
+        "trust_level": "untrusted"
+      },
+      "error": "<urlopen error timed out>",
+      "cdx_score": 0.95,
+      "source": "stage_c_capture_fetch"
+    }
+  ],
+  "numeric_id_probes": [],
+  "numeric_probe_status": "disabled_advisory_only",
+  "identity_candidates": [
+    {
+      "timestamp": "20180613210947",
+      "original_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=business",
+      "archive_url": "https://web.archive.org/web/20180613210947id_/https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=business",
+      "status": "error",
+      "page_title": null,
+      "pub_date": null,
+      "canonical_url": null,
+      "program_context": null,
+      "match_score": null,
+      "story_id": null,
+      "story_evidence": null,
+      "player_embeds": [],
+      "audio_candidates": [],
+      "numeric_ids": [],
+      "episode_qualified": false,
+      "trust_level": "untrusted",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=business",
+        "source_capture_timestamp": "20180613210947",
+        "episode_qualified": false,
+        "target_episode": "2018-06-13",
+        "target_title": "Dude, Where's My Trade War?",
+        "evidence_type": "archive_capture",
+        "trust_level": "untrusted"
+      },
+      "error": "<urlopen error timed out>",
+      "cdx_score": 0.95,
+      "source": "stage_c_capture_fetch"
+    },
+    {
+      "timestamp": "20180618151815",
+      "original_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+      "archive_url": "https://web.archive.org/web/20180618151815id_/https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+      "status": "error",
+      "page_title": null,
+      "pub_date": null,
+      "canonical_url": null,
+      "program_context": null,
+      "match_score": null,
+      "story_id": null,
+      "story_evidence": null,
+      "player_embeds": [],
+      "audio_candidates": [],
+      "numeric_ids": [],
+      "episode_qualified": false,
+      "trust_level": "untrusted",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+        "source_capture_timestamp": "20180618151815",
+        "episode_qualified": false,
+        "target_episode": "2018-06-13",
+        "target_title": "Dude, Where's My Trade War?",
+        "evidence_type": "archive_capture",
+        "trust_level": "untrusted"
+      },
+      "error": "<urlopen error timed out>",
+      "cdx_score": 0.95,
+      "source": "stage_c_capture_fetch"
+    },
+    {
+      "timestamp": "20180615132259",
+      "original_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=daniellekurtzleben",
+      "archive_url": "https://web.archive.org/web/20180615132259id_/https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=daniellekurtzleben",
+      "status": "error",
+      "page_title": null,
+      "pub_date": null,
+      "canonical_url": null,
+      "program_context": null,
+      "match_score": null,
+      "story_id": null,
+      "story_evidence": null,
+      "player_embeds": [],
+      "audio_candidates": [],
+      "numeric_ids": [],
+      "episode_qualified": false,
+      "trust_level": "untrusted",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war?utm_medium=JSONFeed&utm_campaign=daniellekurtzleben",
+        "source_capture_timestamp": "20180615132259",
+        "episode_qualified": false,
+        "target_episode": "2018-06-13",
+        "target_title": "Dude, Where's My Trade War?",
+        "evidence_type": "archive_capture",
+        "trust_level": "untrusted"
+      },
+      "error": "<urlopen error timed out>",
+      "cdx_score": 0.95,
+      "source": "stage_c_capture_fetch"
+    }
+  ],
+  "confirmed_identity": {
+    "source": "stage_c_capture_fetch",
+    "trusted": true,
+    "episode_qualified": true,
+    "archive_url": "https://web.archive.org/web/20180614015208id_/https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+    "original_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+    "page_title": "Dude, Where's My Trade War? : Planet Money : NPR",
+    "pub_date": "2018-06-13",
+    "canonical_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+    "story_evidence": {
+      "story_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+      "story_id": "619662004",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+        "source_capture_timestamp": "20180614015208",
+        "episode_qualified": true,
+        "target_episode": "2018-06-13",
+        "target_title": "Dude, Where's My Trade War?",
+        "evidence_type": "story_url",
+        "trust_level": "trusted"
+      }
+    },
+    "story_id": "619662004",
+    "player_embeds": [
+      {
+        "player_url": "https://www.npr.org/player/embed/619658580/619667830",
+        "player_story_id": "619658580",
+        "player_audio_id": "619667830",
+        "provenance": {
+          "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+          "source_capture_timestamp": "20180614015208",
+          "episode_qualified": true,
+          "target_episode": "2018-06-13",
+          "target_title": "Dude, Where's My Trade War?",
+          "evidence_type": "player_url",
+          "trust_level": "trusted"
+        }
+      }
+    ],
+    "program_context": {
+      "program_id": "510325",
+      "show_name": null,
+      "indicator_signals": [
+        "program_id_510325"
+      ],
+      "has_indicator_branding": false
+    },
+    "match_score": {
+      "title_score": 1.0,
+      "date_match": true,
+      "date_adjacent": true,
+      "date_source": "publication_date",
+      "has_story_id": true,
+      "has_trusted_story_id": true,
+      "canonical_story_id": "619662004",
+      "discovered_story_id": "619662004",
+      "trusted_story_page": true,
+      "has_indicator_branding": false,
+      "has_episode_context": true,
+      "indicator_signals": [
+        "program_id_510325"
+      ],
+      "verdict": "strong_match"
+    },
+    "archive_capture_provenance": {
+      "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+      "source_capture_timestamp": "20180614015208",
+      "episode_qualified": true,
+      "target_episode": "2018-06-13",
+      "target_title": "Dude, Where's My Trade War?",
+      "evidence_type": "archive_capture",
+      "trust_level": "trusted"
+    },
+    "evidence_chain": {
+      "title_score": 1.0,
+      "date_source": "publication_date",
+      "date_match": true,
+      "story_id": "619662004",
+      "player_embed_count": 1
+    }
+  },
+  "player_probes": [
+    {
+      "url": "https://www.npr.org/player/embed/619658580/619667830",
+      "status": "fetched",
+      "source": "trusted_live_player",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+        "source_capture_timestamp": "20180614015208",
+        "episode_qualified": true,
+        "target_episode": "2018-06-13",
+        "target_title": "Dude, Where's My Trade War?",
+        "evidence_type": "player_url",
+        "trust_level": "trusted"
+      },
+      "final_url": "https://www.npr.org/player/embed/619658580/619667830",
+      "audio_candidates": [
+        {
+          "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/06/20180613_indicator_0613_tariffied_final_2.mp3?d=663&e=619658580&t=podcast&p=510325",
+          "audio_id": "619658580",
+          "provenance": {
+            "source_url": "https://www.npr.org/player/embed/619658580/619667830",
+            "source_capture_timestamp": null,
+            "episode_qualified": true,
+            "target_episode": "2018-06-13",
+            "target_title": "Dude, Where's My Trade War?",
+            "evidence_type": "audio_url_from_live_player",
+            "trust_level": "trusted"
+          }
+        }
+      ]
+    }
+  ],
+  "trusted_audio_evidence": [
+    {
+      "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/06/20180613_indicator_0613_tariffied_final_2.mp3?orgId=1&d=663&p=510325&story=619658580&t=podcast&e=619658580&siteplayer=true",
+      "audio_id": "619658580",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+        "source_capture_timestamp": "20180614015208",
+        "episode_qualified": true,
+        "target_episode": "2018-06-13",
+        "target_title": "Dude, Where's My Trade War?",
+        "evidence_type": "audio_url",
+        "trust_level": "trusted"
+      }
+    },
+    {
+      "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/06/20180613_indicator_0613_tariffied_final_2.mp3?orgId=1&d=663&p=510325&story=619658580&t=podcast&e=619658580&siteplayer=true&dl=1",
+      "audio_id": "619658580",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+        "source_capture_timestamp": "20180614015208",
+        "episode_qualified": true,
+        "target_episode": "2018-06-13",
+        "target_title": "Dude, Where's My Trade War?",
+        "evidence_type": "audio_url",
+        "trust_level": "trusted"
+      }
+    },
+    {
+      "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/06/20180613_indicator_0613_tariffied_final_2.mp3?orgId=1&d=663&p=510325&story=619658580&t=podcast&e=619658580&siteplayer=true",
+      "audio_id": "619658580",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+        "source_capture_timestamp": "20180614015208",
+        "episode_qualified": true,
+        "target_episode": "2018-06-13",
+        "target_title": "Dude, Where's My Trade War?",
+        "evidence_type": "audio_url",
+        "trust_level": "trusted"
+      }
+    },
+    {
+      "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/06/20180613_indicator_0613_tariffied_final_2.mp3?orgId=1&d=663&p=510325&story=619658580&t=podcast&e=619658580&siteplayer=true&dl=1",
+      "audio_id": "619658580",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+        "source_capture_timestamp": "20180614015208",
+        "episode_qualified": true,
+        "target_episode": "2018-06-13",
+        "target_title": "Dude, Where's My Trade War?",
+        "evidence_type": "audio_url",
+        "trust_level": "trusted"
+      }
+    },
+    {
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/06/20180613_indicator_0613_tariffied_final_2.mp3?d=663&e=619658580&t=podcast&p=510325",
+      "audio_id": "619658580",
+      "provenance": {
+        "source_url": "https://www.npr.org/player/embed/619658580/619667830",
+        "source_capture_timestamp": null,
+        "episode_qualified": true,
+        "target_episode": "2018-06-13",
+        "target_title": "Dude, Where's My Trade War?",
+        "evidence_type": "audio_url_from_live_player",
+        "trust_level": "trusted"
+      }
+    }
+  ],
+  "untrusted_audio_evidence": [],
+  "audio_candidates_tested": [
+    {
+      "candidate_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/06/20180613_indicator_0613_tariffied_final_2.mp3?orgId=1&d=663&p=510325&story=619658580&t=podcast&e=619658580&siteplayer=true",
+      "validation_status": "validated",
+      "reason": null,
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/06/20180613_indicator_0613_tariffied_final_2.mp3?orgId=1&d=663&p=510325&story=619658580&t=podcast&e=619658580&siteplayer=true",
+      "status_code": 206,
+      "content_type": "audio/mpeg",
+      "is_indicator_path": true,
+      "valid_npr_indicator_audio": true,
+      "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/06/20180613_indicator_0613_tariffied_final_2.mp3?orgId=1&d=663&p=510325&story=619658580&t=podcast&e=619658580&siteplayer=true",
+      "audio_id": "619658580",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+        "source_capture_timestamp": "20180614015208",
+        "episode_qualified": true,
+        "target_episode": "2018-06-13",
+        "target_title": "Dude, Where's My Trade War?",
+        "evidence_type": "audio_url",
+        "trust_level": "trusted"
+      },
+      "trusted_for_recovery": true
+    },
+    {
+      "candidate_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/06/20180613_indicator_0613_tariffied_final_2.mp3?orgId=1&d=663&p=510325&story=619658580&t=podcast&e=619658580&siteplayer=true&dl=1",
+      "validation_status": "rejected_non_npr",
+      "reason": "Not an NPR-hosted audio URL.",
+      "final_url": null,
+      "status_code": null,
+      "content_type": null,
+      "is_indicator_path": false,
+      "valid_npr_indicator_audio": false,
+      "audio_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/06/20180613_indicator_0613_tariffied_final_2.mp3?orgId=1&d=663&p=510325&story=619658580&t=podcast&e=619658580&siteplayer=true&dl=1",
+      "audio_id": "619658580",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+        "source_capture_timestamp": "20180614015208",
+        "episode_qualified": true,
+        "target_episode": "2018-06-13",
+        "target_title": "Dude, Where's My Trade War?",
+        "evidence_type": "audio_url",
+        "trust_level": "trusted"
+      },
+      "trusted_for_recovery": false
+    },
+    {
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/06/20180613_indicator_0613_tariffied_final_2.mp3?d=663&e=619658580&t=podcast&p=510325",
+      "validation_status": "validated",
+      "reason": null,
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/06/20180613_indicator_0613_tariffied_final_2.mp3?d=663&e=619658580&t=podcast&p=510325",
+      "status_code": 206,
+      "content_type": "audio/mpeg",
+      "is_indicator_path": true,
+      "valid_npr_indicator_audio": true,
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/06/20180613_indicator_0613_tariffied_final_2.mp3?d=663&e=619658580&t=podcast&p=510325",
+      "audio_id": "619658580",
+      "provenance": {
+        "source_url": "https://www.npr.org/player/embed/619658580/619667830",
+        "source_capture_timestamp": null,
+        "episode_qualified": true,
+        "target_episode": "2018-06-13",
+        "target_title": "Dude, Where's My Trade War?",
+        "evidence_type": "audio_url_from_live_player",
+        "trust_level": "trusted"
+      },
+      "trusted_for_recovery": true
+    }
+  ],
+  "validated_audio": [
+    {
+      "candidate_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/06/20180613_indicator_0613_tariffied_final_2.mp3?orgId=1&d=663&p=510325&story=619658580&t=podcast&e=619658580&siteplayer=true",
+      "validation_status": "validated",
+      "reason": null,
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/06/20180613_indicator_0613_tariffied_final_2.mp3?orgId=1&d=663&p=510325&story=619658580&t=podcast&e=619658580&siteplayer=true",
+      "status_code": 206,
+      "content_type": "audio/mpeg",
+      "is_indicator_path": true,
+      "valid_npr_indicator_audio": true,
+      "audio_url": "https://play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/06/20180613_indicator_0613_tariffied_final_2.mp3?orgId=1&d=663&p=510325&story=619658580&t=podcast&e=619658580&siteplayer=true",
+      "audio_id": "619658580",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+        "source_capture_timestamp": "20180614015208",
+        "episode_qualified": true,
+        "target_episode": "2018-06-13",
+        "target_title": "Dude, Where's My Trade War?",
+        "evidence_type": "audio_url",
+        "trust_level": "trusted"
+      },
+      "trusted_for_recovery": true
+    },
+    {
+      "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/06/20180613_indicator_0613_tariffied_final_2.mp3?d=663&e=619658580&t=podcast&p=510325",
+      "validation_status": "validated",
+      "reason": null,
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/06/20180613_indicator_0613_tariffied_final_2.mp3?d=663&e=619658580&t=podcast&p=510325",
+      "status_code": 206,
+      "content_type": "audio/mpeg",
+      "is_indicator_path": true,
+      "valid_npr_indicator_audio": true,
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/06/20180613_indicator_0613_tariffied_final_2.mp3?d=663&e=619658580&t=podcast&p=510325",
+      "audio_id": "619658580",
+      "provenance": {
+        "source_url": "https://www.npr.org/player/embed/619658580/619667830",
+        "source_capture_timestamp": null,
+        "episode_qualified": true,
+        "target_episode": "2018-06-13",
+        "target_title": "Dude, Where's My Trade War?",
+        "evidence_type": "audio_url_from_live_player",
+        "trust_level": "trusted"
+      },
+      "trusted_for_recovery": true
+    }
+  ],
+  "final_classification": "recovered",
+  "validation_summary": "RECOVERED: verified identity plus 2 trusted NPR Indicator audio file(s) for 2018-06-13.",
+  "discovery_exhausted_for_window": true,
+  "counts": {
+    "cdx_queries_issued": 7,
+    "cdx_urls_returned": 51,
+    "candidate_urls_scored": 51,
+    "captures_fetched": 1,
+    "captures_failed": 3,
+    "strong_matches": 1,
+    "partial_matches": 3,
+    "player_pages_fetched": 1,
+    "player_pages_failed": 0,
+    "audio_candidates_tested": 3,
+    "audio_validated": 2,
+    "trusted_audio_candidates": 3,
+    "untrusted_audio_candidates": 0,
+    "numeric_ids_probed": 0,
+    "logical_requests_issued": 15
+  }
+}

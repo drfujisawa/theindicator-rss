@@ -1,0 +1,998 @@
+{
+  "method": "fresh-identity-discovery",
+  "placeholder": false,
+  "run_complete": true,
+  "run_state": "run_complete",
+  "run_id": "31354166887",
+  "generated_at": "2026-08-10T04:05:03.927799+00:00",
+  "reference_date": "2018-04-26",
+  "reference_title": "California's Housing Conundrum",
+  "reference_episode": 33,
+  "strategy": "staged_cdx_funnel_identity_first",
+  "date_window": {
+    "from": "20180423",
+    "to": "20180503"
+  },
+  "request_budget": {
+    "stage_a_cdx_queries": 6,
+    "capture_fetches": 4,
+    "live_player_fetches": 2,
+    "player_cdx_queries": 2,
+    "archived_player_fetches": 2,
+    "audio_validations": 4,
+    "max_logical_requests": 20,
+    "conservative_timeout_ceiling_seconds": 384,
+    "realistic_worst_case_runtime_seconds": 92
+  },
+  "id_bounds": {
+    "lower": 605819103,
+    "upper": 606586601,
+    "lower_from_episode": "2018-04-25",
+    "upper_from_episode": "2018-04-27",
+    "advisory_only": true
+  },
+  "slug_filters_used": [
+    "californias-housing-conundrum",
+    "california-housing-conundrum",
+    "california-housing",
+    "housing-conundrum"
+  ],
+  "cdx_queries": [
+    {
+      "pattern": "https://www.npr.org/sections/money/2018/04/25/",
+      "from": "20180423",
+      "to": "20180503",
+      "limit": 40,
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F25%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180423&to=20180503&limit=40",
+      "rows_returned": 0,
+      "error_type": "network_error",
+      "error_message": "<urlopen error timed out>",
+      "response_length": 0,
+      "zero_row_response": false,
+      "scored_candidates": []
+    },
+    {
+      "pattern": "http://www.npr.org/sections/money/2018/04/25/",
+      "from": "20180423",
+      "to": "20180503",
+      "limit": 40,
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F25%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180423&to=20180503&limit=40",
+      "rows_returned": 40,
+      "error_type": null,
+      "error_message": null,
+      "response_length": 6258,
+      "zero_row_response": false,
+      "scored_candidates": [
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought",
+          "timestamp": "20180426190543",
+          "url_date": "2018-04-25",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought",
+          "timestamp": "20180427195758",
+          "url_date": "2018-04-25",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought",
+          "timestamp": "20180429224237",
+          "url_date": "2018-04-25",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought",
+          "timestamp": "20180430232815",
+          "url_date": "2018-04-25",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought",
+          "timestamp": "20180502024503",
+          "url_date": "2018-04-25",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought",
+          "timestamp": "20180503031209",
+          "url_date": "2018-04-25",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180426190701",
+          "url_date": "2018-04-25",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180427195934",
+          "url_date": "2018-04-25",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+          "timestamp": "20180430082702",
+          "url_date": "2018-04-25",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+          "timestamp": "20180501092239",
+          "url_date": "2018-04-25",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+          "timestamp": "20180502121712",
+          "url_date": "2018-04-25",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180426202137",
+          "url_date": "2018-04-25",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180427210736",
+          "url_date": "2018-04-25",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180428220944",
+          "url_date": "2018-04-25",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180429224340",
+          "url_date": "2018-04-25",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180502024603",
+          "url_date": "2018-04-25",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180503031316",
+          "url_date": "2018-04-25",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+          "timestamp": "20180426052122",
+          "url_date": "2018-04-25",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+          "timestamp": "20180428065744",
+          "url_date": "2018-04-25",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+          "timestamp": "20180501091416",
+          "url_date": "2018-04-25",
+          "score": 0.1
+        }
+      ]
+    },
+    {
+      "pattern": "https://www.npr.org/sections/money/2018/04/26/",
+      "from": "20180423",
+      "to": "20180503",
+      "limit": 40,
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F26%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180423&to=20180503&limit=40",
+      "rows_returned": 27,
+      "error_type": null,
+      "error_message": null,
+      "response_length": 4402,
+      "zero_row_response": false,
+      "scored_candidates": [
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "timestamp": "20180426234034",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "timestamp": "20180427195754",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "timestamp": "20180428205907",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "timestamp": "20180429213835",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "timestamp": "20180430222230",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "timestamp": "20180502024458",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "timestamp": "20180503031206",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180427195907",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180428210055",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180429214012",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180430222400",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+          "timestamp": "20180428065341",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+          "timestamp": "20180501092238",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+          "timestamp": "20180502121711",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+          "timestamp": "20180503134246",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180427210729",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180428220939",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180429224334",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180502024559",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+          "timestamp": "20180427061421",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "pattern": "http://www.npr.org/sections/money/2018/04/26/",
+      "from": "20180423",
+      "to": "20180503",
+      "limit": 40,
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F26%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180423&to=20180503&limit=40",
+      "rows_returned": 27,
+      "error_type": null,
+      "error_message": null,
+      "response_length": 4402,
+      "zero_row_response": false,
+      "scored_candidates": [
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "timestamp": "20180426234034",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "timestamp": "20180427195754",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "timestamp": "20180428205907",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "timestamp": "20180429213835",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "timestamp": "20180430222230",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "timestamp": "20180502024458",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "timestamp": "20180503031206",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180427195907",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180428210055",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180429214012",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180430222400",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+          "timestamp": "20180428065341",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+          "timestamp": "20180501092238",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+          "timestamp": "20180502121711",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+          "timestamp": "20180503134246",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180427210729",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180428220939",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180429224334",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180502024559",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+          "timestamp": "20180427061421",
+          "url_date": "2018-04-26",
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "pattern": "https://www.npr.org/sections/money/2018/04/27/",
+      "from": "20180423",
+      "to": "20180503",
+      "limit": 40,
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F27%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180423&to=20180503&limit=40",
+      "rows_returned": 24,
+      "error_type": null,
+      "error_message": null,
+      "response_length": 3685,
+      "zero_row_response": false,
+      "scored_candidates": [
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages",
+          "timestamp": "20180428205906",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages",
+          "timestamp": "20180429213834",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages",
+          "timestamp": "20180430222151",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages",
+          "timestamp": "20180501161837",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages",
+          "timestamp": "20180502013812",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages",
+          "timestamp": "20180503031156",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180428220931",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180429224326",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180502024553",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180503031305",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count",
+          "timestamp": "20180428205859",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count",
+          "timestamp": "20180501153135",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count",
+          "timestamp": "20180502013839",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count",
+          "timestamp": "20180503031204",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180428210010",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180429213931",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180430222314",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180502013957",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180428220936",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180502024557",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        }
+      ]
+    },
+    {
+      "pattern": "http://www.npr.org/sections/money/2018/04/27/",
+      "from": "20180423",
+      "to": "20180503",
+      "limit": 40,
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F27%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180423&to=20180503&limit=40",
+      "rows_returned": 24,
+      "error_type": null,
+      "error_message": null,
+      "response_length": 3685,
+      "zero_row_response": false,
+      "scored_candidates": [
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages",
+          "timestamp": "20180428205906",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages",
+          "timestamp": "20180429213834",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages",
+          "timestamp": "20180430222151",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages",
+          "timestamp": "20180501161837",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages",
+          "timestamp": "20180502013812",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages",
+          "timestamp": "20180503031156",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180428220931",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180429224326",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180502024553",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180503031305",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count",
+          "timestamp": "20180428205859",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count",
+          "timestamp": "20180501153135",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count",
+          "timestamp": "20180502013839",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count",
+          "timestamp": "20180503031204",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180428210010",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180429213931",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180430222314",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count?utm_medium=JSONFeed&utm_campaign=business",
+          "timestamp": "20180502013957",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180428220936",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        },
+        {
+          "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "timestamp": "20180502024557",
+          "url_date": "2018-04-27",
+          "score": 0.1
+        }
+      ]
+    }
+  ],
+  "slug_variant_probes": [],
+  "date_window_captures": [
+    {
+      "timestamp": "20180426234034",
+      "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_url": "https://web.archive.org/web/20180426234034id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "status": "error",
+      "page_title": null,
+      "pub_date": null,
+      "canonical_url": null,
+      "program_context": null,
+      "match_score": null,
+      "story_id": null,
+      "story_evidence": null,
+      "player_embeds": [],
+      "audio_candidates": [],
+      "numeric_ids": [],
+      "episode_qualified": false,
+      "trust_level": "untrusted",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+        "source_capture_timestamp": "20180426234034",
+        "episode_qualified": false,
+        "target_episode": "2018-04-26",
+        "target_title": "California's Housing Conundrum",
+        "evidence_type": "archive_capture",
+        "trust_level": "untrusted"
+      },
+      "error": "<urlopen error timed out>",
+      "cdx_score": 1.0,
+      "source": "stage_c_capture_fetch"
+    },
+    {
+      "timestamp": "20180427195907",
+      "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+      "archive_url": "https://web.archive.org/web/20180427195907id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+      "status": "error",
+      "page_title": null,
+      "pub_date": null,
+      "canonical_url": null,
+      "program_context": null,
+      "match_score": null,
+      "story_id": null,
+      "story_evidence": null,
+      "player_embeds": [],
+      "audio_candidates": [],
+      "numeric_ids": [],
+      "episode_qualified": false,
+      "trust_level": "untrusted",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+        "source_capture_timestamp": "20180427195907",
+        "episode_qualified": false,
+        "target_episode": "2018-04-26",
+        "target_title": "California's Housing Conundrum",
+        "evidence_type": "archive_capture",
+        "trust_level": "untrusted"
+      },
+      "error": "<urlopen error timed out>",
+      "cdx_score": 1.0,
+      "source": "stage_c_capture_fetch"
+    },
+    {
+      "timestamp": "20180428065341",
+      "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+      "archive_url": "https://web.archive.org/web/20180428065341id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+      "status": "error",
+      "page_title": null,
+      "pub_date": null,
+      "canonical_url": null,
+      "program_context": null,
+      "match_score": null,
+      "story_id": null,
+      "story_evidence": null,
+      "player_embeds": [],
+      "audio_candidates": [],
+      "numeric_ids": [],
+      "episode_qualified": false,
+      "trust_level": "untrusted",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+        "source_capture_timestamp": "20180428065341",
+        "episode_qualified": false,
+        "target_episode": "2018-04-26",
+        "target_title": "California's Housing Conundrum",
+        "evidence_type": "archive_capture",
+        "trust_level": "untrusted"
+      },
+      "error": "<urlopen error timed out>",
+      "cdx_score": 1.0,
+      "source": "stage_c_capture_fetch"
+    },
+    {
+      "timestamp": "20180427210729",
+      "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+      "archive_url": "https://web.archive.org/web/20180427210729id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+      "status": "error",
+      "page_title": null,
+      "pub_date": null,
+      "canonical_url": null,
+      "program_context": null,
+      "match_score": null,
+      "story_id": null,
+      "story_evidence": null,
+      "player_embeds": [],
+      "audio_candidates": [],
+      "numeric_ids": [],
+      "episode_qualified": false,
+      "trust_level": "untrusted",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+        "source_capture_timestamp": "20180427210729",
+        "episode_qualified": false,
+        "target_episode": "2018-04-26",
+        "target_title": "California's Housing Conundrum",
+        "evidence_type": "archive_capture",
+        "trust_level": "untrusted"
+      },
+      "error": "<urlopen error timed out>",
+      "cdx_score": 1.0,
+      "source": "stage_c_capture_fetch"
+    }
+  ],
+  "numeric_id_probes": [],
+  "numeric_probe_status": "disabled_advisory_only",
+  "identity_candidates": [
+    {
+      "timestamp": "20180426234034",
+      "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_url": "https://web.archive.org/web/20180426234034id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "status": "error",
+      "page_title": null,
+      "pub_date": null,
+      "canonical_url": null,
+      "program_context": null,
+      "match_score": null,
+      "story_id": null,
+      "story_evidence": null,
+      "player_embeds": [],
+      "audio_candidates": [],
+      "numeric_ids": [],
+      "episode_qualified": false,
+      "trust_level": "untrusted",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+        "source_capture_timestamp": "20180426234034",
+        "episode_qualified": false,
+        "target_episode": "2018-04-26",
+        "target_title": "California's Housing Conundrum",
+        "evidence_type": "archive_capture",
+        "trust_level": "untrusted"
+      },
+      "error": "<urlopen error timed out>",
+      "cdx_score": 1.0,
+      "source": "stage_c_capture_fetch"
+    },
+    {
+      "timestamp": "20180427195907",
+      "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+      "archive_url": "https://web.archive.org/web/20180427195907id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+      "status": "error",
+      "page_title": null,
+      "pub_date": null,
+      "canonical_url": null,
+      "program_context": null,
+      "match_score": null,
+      "story_id": null,
+      "story_evidence": null,
+      "player_embeds": [],
+      "audio_candidates": [],
+      "numeric_ids": [],
+      "episode_qualified": false,
+      "trust_level": "untrusted",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+        "source_capture_timestamp": "20180427195907",
+        "episode_qualified": false,
+        "target_episode": "2018-04-26",
+        "target_title": "California's Housing Conundrum",
+        "evidence_type": "archive_capture",
+        "trust_level": "untrusted"
+      },
+      "error": "<urlopen error timed out>",
+      "cdx_score": 1.0,
+      "source": "stage_c_capture_fetch"
+    },
+    {
+      "timestamp": "20180428065341",
+      "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+      "archive_url": "https://web.archive.org/web/20180428065341id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+      "status": "error",
+      "page_title": null,
+      "pub_date": null,
+      "canonical_url": null,
+      "program_context": null,
+      "match_score": null,
+      "story_id": null,
+      "story_evidence": null,
+      "player_embeds": [],
+      "audio_candidates": [],
+      "numeric_ids": [],
+      "episode_qualified": false,
+      "trust_level": "untrusted",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+        "source_capture_timestamp": "20180428065341",
+        "episode_qualified": false,
+        "target_episode": "2018-04-26",
+        "target_title": "California's Housing Conundrum",
+        "evidence_type": "archive_capture",
+        "trust_level": "untrusted"
+      },
+      "error": "<urlopen error timed out>",
+      "cdx_score": 1.0,
+      "source": "stage_c_capture_fetch"
+    },
+    {
+      "timestamp": "20180427210729",
+      "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+      "archive_url": "https://web.archive.org/web/20180427210729id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+      "status": "error",
+      "page_title": null,
+      "pub_date": null,
+      "canonical_url": null,
+      "program_context": null,
+      "match_score": null,
+      "story_id": null,
+      "story_evidence": null,
+      "player_embeds": [],
+      "audio_candidates": [],
+      "numeric_ids": [],
+      "episode_qualified": false,
+      "trust_level": "untrusted",
+      "provenance": {
+        "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+        "source_capture_timestamp": "20180427210729",
+        "episode_qualified": false,
+        "target_episode": "2018-04-26",
+        "target_title": "California's Housing Conundrum",
+        "evidence_type": "archive_capture",
+        "trust_level": "untrusted"
+      },
+      "error": "<urlopen error timed out>",
+      "cdx_score": 1.0,
+      "source": "stage_c_capture_fetch"
+    }
+  ],
+  "confirmed_identity": null,
+  "player_probes": [],
+  "trusted_audio_evidence": [],
+  "untrusted_audio_evidence": [],
+  "audio_candidates_tested": [],
+  "validated_audio": [],
+  "final_classification": "partial_identity_no_audio",
+  "validation_summary": "Partial identity candidates found (4) but none satisfied the title+date+story-ID proof chain. No trusted audio validated.",
+  "discovery_exhausted_for_window": true,
+  "counts": {
+    "cdx_queries_issued": 6,
+    "cdx_urls_returned": 142,
+    "candidate_urls_scored": 142,
+    "captures_fetched": 0,
+    "captures_failed": 4,
+    "strong_matches": 0,
+    "partial_matches": 4,
+    "player_pages_fetched": 0,
+    "player_pages_failed": 0,
+    "audio_candidates_tested": 0,
+    "audio_validated": 0,
+    "trusted_audio_candidates": 0,
+    "untrusted_audio_candidates": 0,
+    "numeric_ids_probed": 0,
+    "logical_requests_issued": 10
+  }
+}

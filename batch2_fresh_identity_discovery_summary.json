@@ -1,0 +1,269 @@
+{
+  "placeholder": false,
+  "run_complete": true,
+  "run_state": "run_complete",
+  "run_id": "31354166887",
+  "method": "fresh-identity-discovery",
+  "generated_at": "2026-08-10T04:00:14.766116+00:00",
+  "cdx_self_test": {
+    "passed": true,
+    "results": [
+      {
+        "url": "https://www.npr.org/sections/money/2018/10/31/662708285/paranormal-profits",
+        "passed": true,
+        "capture_count": 2,
+        "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F10%2F31%2F662708285%2Fparanormal-profits&matchType=exact&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=2",
+        "error_type": null,
+        "error_message": null,
+        "response_length": 281,
+        "zero_row_response": false
+      },
+      {
+        "url": "https://www.npr.org/player/embed/662706955/662707862",
+        "passed": true,
+        "capture_count": 2,
+        "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fplayer%2Fembed%2F662706955%2F662707862&matchType=exact&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=2",
+        "error_type": null,
+        "error_message": null,
+        "response_length": 237,
+        "zero_row_response": false
+      }
+    ]
+  },
+  "targets_investigated": 9,
+  "request_budget": {
+    "per_episode": {
+      "stage_a_cdx_queries": 6,
+      "capture_fetches": 4,
+      "live_player_fetches": 2,
+      "player_cdx_queries": 2,
+      "archived_player_fetches": 2,
+      "audio_validations": 4,
+      "max_logical_requests": 20,
+      "conservative_timeout_ceiling_seconds": 384,
+      "realistic_worst_case_runtime_seconds": 92
+    },
+    "per_run": {
+      "targets": 9,
+      "max_logical_requests": 180,
+      "realistic_worst_case_runtime_seconds": 828,
+      "conservative_timeout_ceiling_seconds": 3456
+    }
+  },
+  "episodes": [
+    {
+      "reference_date": "2018-10-09",
+      "reference_title": "China's Social Credit System",
+      "final_classification": "recovered",
+      "validation_summary": "RECOVERED: verified identity plus 3 trusted NPR Indicator audio file(s) for 2018-10-09.",
+      "counts": {
+        "cdx_queries_issued": 7,
+        "cdx_urls_returned": 146,
+        "candidate_urls_scored": 146,
+        "captures_fetched": 4,
+        "captures_failed": 0,
+        "strong_matches": 4,
+        "partial_matches": 0,
+        "player_pages_fetched": 3,
+        "player_pages_failed": 0,
+        "audio_candidates_tested": 4,
+        "audio_validated": 3,
+        "trusted_audio_candidates": 5,
+        "untrusted_audio_candidates": 0,
+        "numeric_ids_probed": 0,
+        "logical_requests_issued": 18
+      }
+    },
+    {
+      "reference_date": "2018-10-11",
+      "reference_title": "China's Brave New World",
+      "final_classification": "partial_identity_no_audio",
+      "validation_summary": "Partial identity candidates found (1) but none satisfied the title+date+story-ID proof chain. No trusted audio validated.",
+      "counts": {
+        "cdx_queries_issued": 6,
+        "cdx_urls_returned": 48,
+        "candidate_urls_scored": 48,
+        "captures_fetched": 1,
+        "captures_failed": 0,
+        "strong_matches": 0,
+        "partial_matches": 1,
+        "player_pages_fetched": 0,
+        "player_pages_failed": 0,
+        "audio_candidates_tested": 0,
+        "audio_validated": 0,
+        "trusted_audio_candidates": 0,
+        "untrusted_audio_candidates": 2,
+        "numeric_ids_probed": 0,
+        "logical_requests_issued": 7
+      }
+    },
+    {
+      "reference_date": "2018-07-23",
+      "reference_title": "Google's Mobile Monopoly",
+      "final_classification": "recovered",
+      "validation_summary": "RECOVERED: verified identity plus 2 trusted NPR Indicator audio file(s) for 2018-07-23.",
+      "counts": {
+        "cdx_queries_issued": 7,
+        "cdx_urls_returned": 48,
+        "candidate_urls_scored": 48,
+        "captures_fetched": 1,
+        "captures_failed": 3,
+        "strong_matches": 1,
+        "partial_matches": 3,
+        "player_pages_fetched": 1,
+        "player_pages_failed": 0,
+        "audio_candidates_tested": 3,
+        "audio_validated": 2,
+        "trusted_audio_candidates": 3,
+        "untrusted_audio_candidates": 0,
+        "numeric_ids_probed": 0,
+        "logical_requests_issued": 15
+      }
+    },
+    {
+      "reference_date": "2018-04-26",
+      "reference_title": "California's Housing Conundrum",
+      "final_classification": "partial_identity_no_audio",
+      "validation_summary": "Partial identity candidates found (4) but none satisfied the title+date+story-ID proof chain. No trusted audio validated.",
+      "counts": {
+        "cdx_queries_issued": 6,
+        "cdx_urls_returned": 142,
+        "candidate_urls_scored": 142,
+        "captures_fetched": 0,
+        "captures_failed": 4,
+        "strong_matches": 0,
+        "partial_matches": 4,
+        "player_pages_fetched": 0,
+        "player_pages_failed": 0,
+        "audio_candidates_tested": 0,
+        "audio_validated": 0,
+        "trusted_audio_candidates": 0,
+        "untrusted_audio_candidates": 0,
+        "numeric_ids_probed": 0,
+        "logical_requests_issued": 10
+      }
+    },
+    {
+      "reference_date": "2018-08-17",
+      "reference_title": "Donald Trump's Economic Strategy... Maybe?",
+      "final_classification": "recovered",
+      "validation_summary": "RECOVERED: verified identity plus 2 trusted NPR Indicator audio file(s) for 2018-08-17.",
+      "counts": {
+        "cdx_queries_issued": 7,
+        "cdx_urls_returned": 42,
+        "candidate_urls_scored": 42,
+        "captures_fetched": 1,
+        "captures_failed": 3,
+        "strong_matches": 1,
+        "partial_matches": 3,
+        "player_pages_fetched": 2,
+        "player_pages_failed": 0,
+        "audio_candidates_tested": 3,
+        "audio_validated": 2,
+        "trusted_audio_candidates": 3,
+        "untrusted_audio_candidates": 0,
+        "numeric_ids_probed": 0,
+        "logical_requests_issued": 16
+      }
+    },
+    {
+      "reference_date": "2018-10-05",
+      "reference_title": "Who's Hiring?",
+      "final_classification": "recovered",
+      "validation_summary": "RECOVERED: verified identity plus 2 trusted NPR Indicator audio file(s) for 2018-10-05.",
+      "counts": {
+        "cdx_queries_issued": 7,
+        "cdx_urls_returned": 52,
+        "candidate_urls_scored": 52,
+        "captures_fetched": 2,
+        "captures_failed": 2,
+        "strong_matches": 2,
+        "partial_matches": 2,
+        "player_pages_fetched": 1,
+        "player_pages_failed": 0,
+        "audio_candidates_tested": 3,
+        "audio_validated": 2,
+        "trusted_audio_candidates": 3,
+        "untrusted_audio_candidates": 0,
+        "numeric_ids_probed": 0,
+        "logical_requests_issued": 15
+      }
+    },
+    {
+      "reference_date": "2018-04-24",
+      "reference_title": "When China's Ships Come In",
+      "final_classification": "partial_identity_no_audio",
+      "validation_summary": "Partial identity candidates found (1) but none satisfied the title+date+story-ID proof chain. No trusted audio validated.",
+      "counts": {
+        "cdx_queries_issued": 6,
+        "cdx_urls_returned": 74,
+        "candidate_urls_scored": 74,
+        "captures_fetched": 0,
+        "captures_failed": 1,
+        "strong_matches": 0,
+        "partial_matches": 1,
+        "player_pages_fetched": 0,
+        "player_pages_failed": 0,
+        "audio_candidates_tested": 0,
+        "audio_validated": 0,
+        "trusted_audio_candidates": 0,
+        "untrusted_audio_candidates": 0,
+        "numeric_ids_probed": 0,
+        "logical_requests_issued": 7
+      }
+    },
+    {
+      "reference_date": "2018-06-21",
+      "reference_title": "Teenage (Employment) Wasteland",
+      "final_classification": "recovered",
+      "validation_summary": "RECOVERED: verified identity plus 2 trusted NPR Indicator audio file(s) for 2018-06-21.",
+      "counts": {
+        "cdx_queries_issued": 7,
+        "cdx_urls_returned": 13,
+        "candidate_urls_scored": 13,
+        "captures_fetched": 1,
+        "captures_failed": 0,
+        "strong_matches": 1,
+        "partial_matches": 0,
+        "player_pages_fetched": 1,
+        "player_pages_failed": 0,
+        "audio_candidates_tested": 3,
+        "audio_validated": 2,
+        "trusted_audio_candidates": 3,
+        "untrusted_audio_candidates": 0,
+        "numeric_ids_probed": 0,
+        "logical_requests_issued": 12
+      }
+    },
+    {
+      "reference_date": "2018-06-13",
+      "reference_title": "Dude, Where's My Trade War?",
+      "final_classification": "recovered",
+      "validation_summary": "RECOVERED: verified identity plus 2 trusted NPR Indicator audio file(s) for 2018-06-13.",
+      "counts": {
+        "cdx_queries_issued": 7,
+        "cdx_urls_returned": 51,
+        "candidate_urls_scored": 51,
+        "captures_fetched": 1,
+        "captures_failed": 3,
+        "strong_matches": 1,
+        "partial_matches": 3,
+        "player_pages_fetched": 1,
+        "player_pages_failed": 0,
+        "audio_candidates_tested": 3,
+        "audio_validated": 2,
+        "trusted_audio_candidates": 3,
+        "untrusted_audio_candidates": 0,
+        "numeric_ids_probed": 0,
+        "logical_requests_issued": 15
+      }
+    }
+  ],
+  "counts": {
+    "attempted": 9,
+    "completed": 9,
+    "failed": 0,
+    "skipped": 0,
+    "recovered": 6
+  }
+}
