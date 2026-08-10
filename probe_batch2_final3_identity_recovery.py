@@ -26,9 +26,17 @@ CONTENT_RETRIES = 2
 
 MAX_DISCOVERY_CDX_QUERIES = 8
 MAX_CAPTURE_ATTEMPTS = 10
+MAX_SEEDED_EXACT_CDX_URLS = 4
 MAX_PLAYER_FETCHES = 2
 MAX_ARCHIVED_PLAYER_FETCHES = 2
+MAX_ARCHIVED_PLAYER_CDX_QUERIES = MAX_ARCHIVED_PLAYER_FETCHES
 MAX_AUDIO_VALIDATIONS = 4
+
+SEED_SOURCE_PRIORITY = {
+    "prior_stage_c": 0,
+    "prior_identity_candidate": 1,
+    "prior_cdx_scored": 2,
+}
 
 TARGETS = [
     {
@@ -151,17 +159,43 @@ def write_placeholders():
 def request_budget() -> dict:
     per_episode = {
         "discovery_cdx_queries": MAX_DISCOVERY_CDX_QUERIES,
+        "seeded_exact_cdx_queries": MAX_SEEDED_EXACT_CDX_URLS,
         "capture_attempts": MAX_CAPTURE_ATTEMPTS,
         "live_player_fetches": MAX_PLAYER_FETCHES,
+        "archived_player_cdx_queries": MAX_ARCHIVED_PLAYER_CDX_QUERIES,
         "archived_player_fetches": MAX_ARCHIVED_PLAYER_FETCHES,
         "audio_validations": MAX_AUDIO_VALIDATIONS,
-        "max_logical_requests": MAX_DISCOVERY_CDX_QUERIES + MAX_CAPTURE_ATTEMPTS + MAX_PLAYER_FETCHES + MAX_ARCHIVED_PLAYER_FETCHES + MAX_AUDIO_VALIDATIONS,
-        "conservative_timeout_ceiling_seconds": (
-            (MAX_DISCOVERY_CDX_QUERIES * REQUEST_TIMEOUT_SECONDS * (WAYBACK_DISCOVERY_RETRIES + 1))
-            + ((MAX_CAPTURE_ATTEMPTS + MAX_PLAYER_FETCHES + MAX_ARCHIVED_PLAYER_FETCHES + MAX_AUDIO_VALIDATIONS)
-               * REQUEST_TIMEOUT_SECONDS * (CONTENT_RETRIES + 1))
-        ),
     }
+    per_episode["max_logical_requests"] = (
+        per_episode["discovery_cdx_queries"]
+        + per_episode["seeded_exact_cdx_queries"]
+        + per_episode["capture_attempts"]
+        + per_episode["live_player_fetches"]
+        + per_episode["archived_player_cdx_queries"]
+        + per_episode["archived_player_fetches"]
+        + per_episode["audio_validations"]
+    )
+    per_episode["conservative_timeout_ceiling_seconds"] = (
+        (
+            (
+                per_episode["discovery_cdx_queries"]
+                + per_episode["seeded_exact_cdx_queries"]
+                + per_episode["archived_player_cdx_queries"]
+            )
+            * REQUEST_TIMEOUT_SECONDS
+            * (WAYBACK_DISCOVERY_RETRIES + 1)
+        )
+        + (
+            (
+                per_episode["capture_attempts"]
+                + per_episode["live_player_fetches"]
+                + per_episode["archived_player_fetches"]
+                + per_episode["audio_validations"]
+            )
+            * REQUEST_TIMEOUT_SECONDS
+            * (CONTENT_RETRIES + 1)
+        )
+    )
     return {
         "per_episode": per_episode,
         "per_run": {
@@ -246,10 +280,40 @@ def _with_backoff_fetch(url: str):
     return base.fetch_text(url, retries=CONTENT_RETRIES)
 
 
+def _seeded_urls_for_exact_cdx(seeds: list[dict]) -> list[str]:
+    by_url = {}
+    for item in seeds:
+        url = item.get("url")
+        if not url:
+            continue
+        ts = item.get("timestamp")
+        source_priority = SEED_SOURCE_PRIORITY.get(item.get("source"), 99)
+        stats = by_url.setdefault(url, {
+            "best_source_priority": source_priority,
+            "seed_count": 0,
+            "earliest_timestamp": ts or "99999999999999",
+        })
+        stats["best_source_priority"] = min(stats["best_source_priority"], source_priority)
+        stats["seed_count"] += 1
+        if ts and ts < stats["earliest_timestamp"]:
+            stats["earliest_timestamp"] = ts
+    ranked = sorted(
+        by_url.items(),
+        key=lambda x: (
+            x[1]["best_source_priority"],
+            -x[1]["seed_count"],
+            x[1]["earliest_timestamp"],
+            x[0],
+        ),
+    )
+    return [url for url, _ in ranked[:MAX_SEEDED_EXACT_CDX_URLS]]
+
+
 def build_capture_retry_plan(target: dict, prior_diag: dict):
     seeds = _capture_seed_from_prior_diag(prior_diag)
     plan = []
     exact_cdx_queries = []
+    selected_exact_cdx_urls = set(_seeded_urls_for_exact_cdx(seeds))
 
     by_url = {}
     for item in seeds:
@@ -267,6 +331,8 @@ def build_capture_retry_plan(target: dict, prior_diag: dict):
                     "source": item["source"],
                 })
 
+        if original_url not in selected_exact_cdx_urls:
+            continue
         cdx = base.wayback_cdx_url_exact(original_url, limit=8)
         exact_cdx_queries.append({
             "url": original_url,
@@ -532,11 +598,15 @@ def _run_player_audio_chain(target: dict, diag: dict, identity_capture: dict):
         diag["player_probes"].append(probe_item)
 
     archived_fetches = 0
+    archived_player_cdx_queries = 0
     for player_evidence in trusted_players:
+        if archived_player_cdx_queries >= MAX_ARCHIVED_PLAYER_CDX_QUERIES:
+            break
         if archived_fetches >= MAX_ARCHIVED_PLAYER_FETCHES:
             break
         player_url = player_evidence.get("player_url")
         cdx = base.wayback_cdx_url_exact(player_url, limit=4)
+        archived_player_cdx_queries += 1
         for row in cdx.get("rows", []):
             if archived_fetches >= MAX_ARCHIVED_PLAYER_FETCHES:
                 break

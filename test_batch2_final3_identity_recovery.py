@@ -3,6 +3,8 @@
 
 import unittest
 from unittest import mock
+from pathlib import Path
+import re
 
 import probe_batch2_final3_identity_recovery as probe
 
@@ -181,6 +183,78 @@ class TestProvenanceLinkedAudioRequirement(unittest.TestCase):
             result = probe.base.validate_audio_evidence_live(audio_evidence, "2018-10-11")
 
         self.assertFalse(result["trusted_for_recovery"])
+
+
+class TestSeededExactCdxCap(unittest.TestCase):
+    def _seed(self, timestamp, url, source):
+        return {"timestamp": timestamp, "url": url, "source": source}
+
+    def test_seeded_exact_cdx_urls_are_hard_capped(self):
+        prior_diag = {
+            "date_window_captures": [
+                {
+                    "timestamp": "20180101000000",
+                    "original_url": f"https://www.npr.org/sections/money/2018/01/01/70{i}/a-{i}",
+                }
+                for i in range(10)
+            ],
+            "identity_candidates": [],
+            "cdx_queries": [],
+        }
+        called = []
+
+        def fake_cdx_exact(url, limit=8):
+            called.append(url)
+            return {"rows": [], "query_url": "q", "error_type": None, "error_message": None}
+
+        with mock.patch.object(probe.base, "wayback_cdx_url_exact", fake_cdx_exact):
+            probe.build_capture_retry_plan(probe.TARGETS[0], prior_diag)
+
+        self.assertEqual(len(called), probe.MAX_SEEDED_EXACT_CDX_URLS)
+
+    def test_highest_priority_seeded_urls_retained(self):
+        u_stage = "https://www.npr.org/sections/money/2018/04/26/111111111/stage"
+        u_identity = "https://www.npr.org/sections/money/2018/04/26/222222222/identity"
+        u_cdx = "https://www.npr.org/sections/money/2018/04/26/333333333/cdx"
+        u_other = "https://www.npr.org/sections/money/2018/04/26/444444444/other"
+        seeds = [
+            self._seed("20180426010101", u_cdx, "prior_cdx_scored"),
+            self._seed("20180426010102", u_identity, "prior_identity_candidate"),
+            self._seed("20180426010103", u_stage, "prior_stage_c"),
+            self._seed("20180426010104", u_other, "unknown_source"),
+        ]
+        with mock.patch.object(probe, "MAX_SEEDED_EXACT_CDX_URLS", 3):
+            selected = probe._seeded_urls_for_exact_cdx(seeds)
+        self.assertEqual(selected, [u_stage, u_identity, u_cdx])
+
+
+class TestRequestBudgetCoverage(unittest.TestCase):
+    def test_budget_includes_seeded_exact_cdx(self):
+        budget = probe.request_budget()["per_episode"]
+        self.assertIn("seeded_exact_cdx_queries", budget)
+        self.assertEqual(budget["seeded_exact_cdx_queries"], probe.MAX_SEEDED_EXACT_CDX_URLS)
+
+    def test_declared_max_matches_capped_code_path(self):
+        budget = probe.request_budget()["per_episode"]
+        expected = (
+            probe.MAX_DISCOVERY_CDX_QUERIES
+            + probe.MAX_SEEDED_EXACT_CDX_URLS
+            + probe.MAX_CAPTURE_ATTEMPTS
+            + probe.MAX_PLAYER_FETCHES
+            + probe.MAX_ARCHIVED_PLAYER_CDX_QUERIES
+            + probe.MAX_ARCHIVED_PLAYER_FETCHES
+            + probe.MAX_AUDIO_VALIDATIONS
+        )
+        self.assertEqual(budget["max_logical_requests"], expected)
+
+    def test_workflow_timeout_exceeds_conservative_budget(self):
+        workflow = Path("/home/runner/work/theindicator-rss/theindicator-rss/.github/workflows/probe-batch2-final3-identity-recovery.yml")
+        text = workflow.read_text(encoding="utf-8")
+        match = re.search(r"timeout-minutes:\s*(\d+)", text)
+        self.assertIsNotNone(match)
+        workflow_timeout_seconds = int(match.group(1)) * 60
+        runtime_ceiling = probe.request_budget()["per_run"]["conservative_timeout_ceiling_seconds"]
+        self.assertGreater(workflow_timeout_seconds, runtime_ceiling)
 
 
 if __name__ == "__main__":
