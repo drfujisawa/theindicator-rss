@@ -142,7 +142,8 @@ def build_audit_from_ledgers(remaining_ledgers, generated_at):
                 "evidence_confidence_explanation", ""
             ),
         })
-        # Carry forward any false positives from the validation results.
+        # Carry forward any false positives from the validation results,
+        # preserving the full schema from the original build_false_positive_rows.
         for result in ep.get("validation_results", []):
             status_val = result.get("validation_status") or ""
             if status_val.startswith("rejected_") and status_val != "rejected_request_error":
@@ -150,8 +151,11 @@ def build_audit_from_ledgers(remaining_ledgers, generated_at):
                     "reference_date": ep["reference_date"],
                     "reference_title": ep["reference_title"],
                     "candidate_url": result.get("candidate_url"),
+                    "final_url": result.get("final_url"),
                     "validation_status": status_val,
                     "reason": result.get("reason"),
+                    "source_type": result.get("source_type"),
+                    "source_url": result.get("source_url"),
                 })
 
     total = len(remaining_ledgers)

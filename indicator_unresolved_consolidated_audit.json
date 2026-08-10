@@ -1,6 +1,6 @@
 {
   "method": "consolidated-recovery-pipeline-for-unresolved-indicator-episodes",
-  "generated_at": "2026-08-10T07:48:18+00:00",
+  "generated_at": "2026-08-10T07:50:22+00:00",
   "canonical_input": "indicator_completeness_audit.json",
   "placeholder": false,
   "run_complete": true,
@@ -319,36 +319,51 @@
       "reference_date": "2018-10-29",
       "reference_title": "Judgement Bonds",
       "candidate_url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WSCLFM.mp3",
+      "final_url": null,
       "validation_status": "rejected_livestream",
-      "reason": "livestream_or_station_stream"
+      "reason": "livestream_or_station_stream",
+      "source_type": "prior_evidence_url",
+      "source_url": null
     },
     {
       "reference_date": "2018-10-29",
       "reference_title": "Judgement Bonds",
       "candidate_url": "https://27143.live.streamtheworld.com:443/WSCLFM.mp3",
+      "final_url": null,
       "validation_status": "rejected_livestream",
-      "reason": "livestream_or_station_stream"
+      "reason": "livestream_or_station_stream",
+      "source_type": "validated_audio",
+      "source_url": null
     },
     {
       "reference_date": "2018-10-29",
       "reference_title": "Judgement Bonds",
       "candidate_url": "https://26223.live.streamtheworld.com:443/WSCLFM.mp3",
+      "final_url": null,
       "validation_status": "rejected_livestream",
-      "reason": "livestream_or_station_stream"
+      "reason": "livestream_or_station_stream",
+      "source_type": "validated_audio",
+      "source_url": null
     },
     {
       "reference_date": "2018-10-29",
       "reference_title": "Judgement Bonds",
       "candidate_url": "https://14843.live.streamtheworld.com:443/WSDLFM.mp3",
+      "final_url": null,
       "validation_status": "rejected_livestream",
-      "reason": "livestream_or_station_stream"
+      "reason": "livestream_or_station_stream",
+      "source_type": "validated_audio",
+      "source_url": null
     },
     {
       "reference_date": "2018-10-29",
       "reference_title": "Judgement Bonds",
       "candidate_url": "https://18123.live.streamtheworld.com:443/WESMFM.mp3",
+      "final_url": null,
       "validation_status": "rejected_livestream",
-      "reason": "livestream_or_station_stream"
+      "reason": "livestream_or_station_stream",
+      "source_type": "validated_audio",
+      "source_url": null
     }
   ]
 }
