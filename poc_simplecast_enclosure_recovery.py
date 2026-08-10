@@ -135,12 +135,24 @@ def clean(value):
     return value.strip()
 
 
+def _netloc_matches(url, *domains):
+    """Return True if the URL's netloc ends with one of the given domain strings."""
+    try:
+        netloc = urlparse(url).netloc.lower()
+        return any(netloc == d or netloc.endswith("." + d) for d in domains)
+    except Exception:
+        return False
+
+
 def is_audio_url(url):
     u = url.lower()
     return (
-        "simplecastaudio.com" in u
-        or "play.podtrac.com/npr-510325" in u
-        or "prfx.byspotify.com" in u
+        _netloc_matches(u, "simplecastaudio.com")
+        or (
+            _netloc_matches(u, "play.podtrac.com")
+            and "/npr-510325" in u
+        )
+        or _netloc_matches(u, "prfx.byspotify.com")
         or u.endswith(".mp3")
         or ".mp3?" in u
         or ".mp3&" in u
@@ -300,19 +312,18 @@ def validate_audio_url(url):
 
     ctype = r.get("content_type", "")
     final = r.get("final_url", url)
+    host = urlparse(final).netloc if r["ok"] else ""
     is_audio = (
         "audio" in ctype.lower()
         or final.lower().endswith(".mp3")
-        or "simplecastaudio.com" in final.lower()
-        or "play.podtrac.com" in final.lower()
-        or "prfx.byspotify.com" in final.lower()
+        or _netloc_matches(final, "simplecastaudio.com")
+        or _netloc_matches(final, "play.podtrac.com")
+        or _netloc_matches(final, "prfx.byspotify.com")
     )
     is_player_page = (
         "text/html" in ctype.lower()
-        and "npr.org" in final.lower()
+        and _netloc_matches(final, "npr.org")
     )
-
-    host = urlparse(final).netloc if r["ok"] else ""
 
     return {
         "status": r["status"],
