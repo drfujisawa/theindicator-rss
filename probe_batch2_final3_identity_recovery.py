@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Targeted recovery probe for the final 3 episodes remaining in
-identity_found_but_audio_unresolved after batch2 fresh identity discovery.
+Targeted narrow recovery probe for the final 2 episodes remaining in
+identity_found_but_audio_unresolved after prior batch2 recovery passes.
 
 Outputs:
   - batch2_final3_identity_recovery_<YYYY-MM-DD>_diag.json
@@ -43,7 +43,8 @@ TARGETS = [
         "reference_date": "2018-10-11",
         "reference_title": "China's Brave New World",
         "reference_episode": 145,
-        "section_paths": ["sections/money", "sections/theindicator", "sections/money/theindicator"],
+        "section_paths": ["sections/money"],
+        "date_offsets": [0],
         "slug_variants": [
             "chinas-brave-new-world",
             "china-brave-new-world",
@@ -55,25 +56,11 @@ TARGETS = [
         "broad_discovery_if_no_identity": True,
     },
     {
-        "reference_date": "2018-04-26",
-        "reference_title": "California's Housing Conundrum",
-        "reference_episode": 33,
-        "section_paths": ["sections/money", "sections/theindicator", "sections/money/theindicator"],
-        "slug_variants": [
-            "californias-housing-conundrum",
-            "california-housing-conundrum",
-            "california-housing",
-            "housing-conundrum",
-        ],
-        "blocked_story_ids": set(),
-        "blocked_title_terms": [],
-        "broad_discovery_if_all_known_unreadable": True,
-    },
-    {
         "reference_date": "2018-04-24",
         "reference_title": "When China's Ships Come In",
         "reference_episode": 31,
-        "section_paths": ["sections/money", "sections/theindicator", "sections/money/theindicator"],
+        "section_paths": ["sections/money"],
+        "date_offsets": [0],
         "slug_variants": [
             "when-chinas-ships-come-in",
             "china-ships",
@@ -81,8 +68,8 @@ TARGETS = [
             "chinas-ships",
             "ships-come-in",
         ],
-        "blocked_story_ids": set(),
-        "blocked_title_terms": [],
+        "blocked_story_ids": {"605033696"},
+        "blocked_title_terms": ["3 things you didn't know about la"],
         "broad_discovery_if_no_identity": True,
     },
 ]
@@ -309,11 +296,58 @@ def _seeded_urls_for_exact_cdx(seeds: list[dict]) -> list[str]:
     return [url for url, _ in ranked[:MAX_SEEDED_EXACT_CDX_URLS]]
 
 
-def build_capture_retry_plan(target: dict, prior_diag: dict):
+def _load_affiliate_exact_title_evidence(target: dict) -> dict:
+    files = [
+        "indicator_unresolved_affiliate_recovery_00_09.json",
+        "indicator_unresolved_affiliate_recovery_10_19.json",
+        "indicator_unresolved_affiliate_recovery_20_49.json",
+    ]
+    matched_sources = []
+    exact_title_urls = []
+
+    for filename in files:
+        payload = _read_json(BASE_DIR / filename)
+        if not isinstance(payload, dict):
+            continue
+        for item in payload.get("results", []):
+            if not isinstance(item, dict):
+                continue
+            if item.get("date") != target["reference_date"]:
+                continue
+            if (item.get("title") or "").strip() != target["reference_title"]:
+                continue
+            matched_sources.append(filename)
+            for key in ("npr_story_urls", "npr_player_embeds"):
+                for url in item.get(key, []):
+                    if isinstance(url, str) and url.startswith("http"):
+                        exact_title_urls.append(url)
+            for page in item.get("qualified_pages", []):
+                if not isinstance(page, dict):
+                    continue
+                for key in ("requested_url", "final_url", "canonical"):
+                    url = page.get(key)
+                    if isinstance(url, str) and url.startswith("http"):
+                        exact_title_urls.append(url)
+
+    return {
+        "files_scanned": files,
+        "matched_sources": matched_sources,
+        "matched_source_count": len(matched_sources),
+        "exact_title_urls": list(dict.fromkeys(exact_title_urls)),
+    }
+
+
+def build_capture_retry_plan(target: dict, prior_diag: dict, supplemental_exact_cdx_urls: list[str] | None = None):
     seeds = _capture_seed_from_prior_diag(prior_diag)
     plan = []
     exact_cdx_queries = []
     selected_exact_cdx_urls = set(_seeded_urls_for_exact_cdx(seeds))
+    if supplemental_exact_cdx_urls:
+        for url in supplemental_exact_cdx_urls:
+            if len(selected_exact_cdx_urls) >= MAX_SEEDED_EXACT_CDX_URLS:
+                break
+            if isinstance(url, str) and url.startswith("http"):
+                selected_exact_cdx_urls.add(url)
 
     by_url = {}
     for item in seeds:
@@ -369,7 +403,7 @@ def build_capture_retry_plan(target: dict, prior_diag: dict):
 def _build_bounded_patterns(target: dict) -> list:
     ref = datetime.date.fromisoformat(target["reference_date"])
     patterns = []
-    for offset in (-2, -1, 0, 1, 2):
+    for offset in target.get("date_offsets", [0]):
         d = ref + datetime.timedelta(days=offset)
         y, m, day = d.strftime("%Y"), d.strftime("%m"), d.strftime("%d")
         for section in target.get("section_paths", []):
@@ -394,6 +428,24 @@ def _is_blocked_adjacent_story(target: dict, story_id: str, page_title: str) -> 
     return False
 
 
+def _normalized_title(value: str) -> str:
+    if not value:
+        return ""
+    text = value.lower()
+    text = text.replace("&", " and ")
+    text = text.replace("’", "'")
+    text = text.replace(":", " ")
+    text = text.replace("'", "")
+    text = "".join(ch if ch.isalnum() else " " for ch in text)
+    return " ".join(text.split())
+
+
+def _exact_title_match(page_title: str, reference_title: str) -> bool:
+    normalized_reference = _normalized_title(reference_title)
+    normalized_page = _normalized_title(page_title)
+    return bool(normalized_reference and normalized_reference in normalized_page)
+
+
 def parse_capture_result(target: dict, plan_item: dict, page_text: str) -> dict:
     page_title = base.extract_page_title(page_text)
     pub_date = base.extract_publication_date(page_text)
@@ -410,10 +462,12 @@ def parse_capture_result(target: dict, plan_item: dict, page_text: str) -> dict:
     )
     story_id = base._trusted_npr_story_id_from_url(story_url)
     blocked_adjacent = _is_blocked_adjacent_story(target, story_id, page_title)
+    exact_title_ok = _exact_title_match(page_title, target["reference_title"])
 
     strict_identity = (
         score.get("verdict") == "strong_match"
         and score.get("date_match") is True
+        and exact_title_ok
         and not blocked_adjacent
     )
 
@@ -424,6 +478,8 @@ def parse_capture_result(target: dict, plan_item: dict, page_text: str) -> dict:
         rejection_reasons.append(f"score_verdict:{score.get('verdict')}")
     if score.get("date_match") is not True:
         rejection_reasons.append("date_not_exact")
+    if not exact_title_ok:
+        rejection_reasons.append("title_not_exact")
 
     story_evidence = base._make_story_evidence(story_url, target, plan_item["timestamp"], strict_identity)
     players = [
@@ -448,6 +504,7 @@ def parse_capture_result(target: dict, plan_item: dict, page_text: str) -> dict:
         "match_score": score,
         "story_id": story_id,
         "blocked_adjacent_unrelated": blocked_adjacent,
+        "exact_title_match": exact_title_ok,
         "episode_qualified": strict_identity,
         "rejection_reasons": rejection_reasons,
         "story_evidence": story_evidence,
@@ -476,44 +533,13 @@ def classify_result(diag: dict) -> tuple[str, str, list]:
             "Trusted identity recovered but no validated provenance-linked NPR Indicator audio.",
             ["Expand player/audio capture retrieval around confirmed story/page IDs."],
         )
-    tried_count = len(diag.get("archive_captures_tried", []))
-    if tried_count == 0:
-        return (
-            "no_archive_candidates_attempted",
-            "No archive capture candidates were available within the bounded targeted plan.",
-            ["Expand bounded URL-prefix discovery window and re-run exact CDX timestamp expansion."],
-        )
-    parsed_count = diag.get("captures_successfully_parsed", 0)
-    failed_count = diag.get("archive_captures_failed", 0)
-    if (
-        failed_count > 0
-        and not diag.get("identity_candidates")
-    ):
-        if parsed_count == 0:
-            summary = (
-                "Known archive captures failed to fetch/parse; unresolved due to "
-                "archive/network retrieval, not no-identity proof."
-            )
-        else:
-            summary = (
-                "Archive retrieval failures blocked completion after partial parsing; "
-                "no trusted identity was confirmed."
-            )
-        return (
-            "archive_fetch_failed_identity_unresolved",
-            summary,
-            ["Retry exact timestamps later and widen alternate timestamp retrieval window."],
-        )
-    if diag.get("identity_candidates"):
-        return (
-            "identity_candidates_rejected",
-            "Identity candidates found but none met exact title/date/story-ID trust proof.",
-            ["Review additional nearby captures for exact-title proof on trusted story-page URL."],
-        )
     return (
-        "no_identity_found_in_bounded_probe",
-        "No identity found within bounded targeted discovery.",
-        ["Re-run with slightly wider date-window prefixes if archival coverage improves."],
+        "lower_priority_unresolved",
+        (
+            "No trusted identity with exact title + exact date + trusted story ID was found; "
+            "classified lower-priority unresolved with no further automatic retries."
+        ),
+        [],
     )
 
 
@@ -662,7 +688,12 @@ def _run_player_audio_chain(target: dict, diag: dict, identity_capture: dict):
 def investigate_target(target: dict) -> dict:
     prior = load_prior_evidence(target["reference_date"])
     prior_diag = prior.get("batch2_diag") or {}
-    plan, exact_cdx_queries = build_capture_retry_plan(target, prior_diag)
+    affiliate_evidence = _load_affiliate_exact_title_evidence(target)
+    plan, exact_cdx_queries = build_capture_retry_plan(
+        target,
+        prior_diag,
+        supplemental_exact_cdx_urls=affiliate_evidence.get("exact_title_urls", []),
+    )
 
     diag = {
         "method": "batch2-final3-targeted-recovery",
@@ -676,6 +707,7 @@ def investigate_target(target: dict) -> dict:
         "reference_episode": target["reference_episode"],
         "request_budget": request_budget()["per_episode"],
         "prior_evidence": prior,
+        "exact_title_affiliate_archive_evidence": affiliate_evidence,
         "exact_cdx_queries": exact_cdx_queries,
         "discovery_cdx_queries": [],
         "archive_captures_tried": [],

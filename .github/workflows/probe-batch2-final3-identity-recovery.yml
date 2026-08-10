@@ -1,4 +1,4 @@
-name: Probe Batch 2 Final3 Identity Recovery
+name: Probe Batch 2 Final Narrow Identity Recovery
 
 on:
   workflow_dispatch:
@@ -26,16 +26,17 @@ jobs:
       - name: Run unit tests
         run: python -m unittest test_batch2_final3_identity_recovery -v
 
-      - name: Run targeted final3 recovery probe
+      - name: Run targeted narrow recovery probe
         run: python probe_batch2_final3_identity_recovery.py
 
       - name: Upload diagnostic artifacts
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: batch2-final3-identity-recovery-diagnostics
+          name: batch2-final-narrow-identity-recovery-diagnostics
           path: |
-            batch2_final3_identity_recovery_*_diag.json
+            batch2_final3_identity_recovery_2018-10-11_diag.json
+            batch2_final3_identity_recovery_2018-04-24_diag.json
             batch2_final3_identity_recovery_summary.json
           if-no-files-found: warn
           retention-days: 90
@@ -45,6 +46,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add batch2_final3_identity_recovery_*_diag.json batch2_final3_identity_recovery_summary.json
-          git diff --cached --quiet || git commit -m "Batch 2 final3 targeted recovery diagnostics"
+          git add batch2_final3_identity_recovery_2018-10-11_diag.json batch2_final3_identity_recovery_2018-04-24_diag.json batch2_final3_identity_recovery_summary.json
+          git diff --cached --quiet || git commit -m "Batch 2 final narrow recovery diagnostics"
           git push
