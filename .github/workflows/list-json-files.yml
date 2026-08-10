@@ -16,3 +16,9 @@ jobs:
           echo "JSON files in repository root:"
           echo
           ls -1 *.json || true
+
+      - name: Probe NPR MP3 headers
+        run: |
+          URL="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3"
+          echo "URL: ${URL}"
+          curl -sSIL "$URL" | sed -n '1,20p'
