@@ -1,6 +1,6 @@
 {
   "next_date": "2017-11-05T16:46:00-04:00",
-  "episode_count": 1473,
+  "episode_count": 1479,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -13233,6 +13233,24 @@
       "description": "The pay-to-play way your supermarket's shelves work."
     },
     {
+      "title": "China's Social Credit System",
+      "date": "2018-10-09T00:00:00-04:00",
+      "npr_url": "https://www.npr.org/sections/money/2018/10/09/655921710/chinas-social-credit-system",
+      "story_id": "655921710",
+      "audio_id": "655914994",
+      "player_url": "https://www.npr.org/player/embed/655914994/655951144",
+      "description": "China's Social Credit System"
+    },
+    {
+      "title": "Who's Hiring?",
+      "date": "2018-10-05T00:00:00-04:00",
+      "npr_url": "https://www.npr.org/sections/money/2018/10/05/654961631/who-s-hiring",
+      "story_id": "654961631",
+      "audio_id": "654946919",
+      "player_url": "https://www.npr.org/player/embed/654946919/654972021",
+      "description": "Who's Hiring?"
+    },
+    {
       "title": "Saudi Arabia & The Paradox of Plenty",
       "date": "2018-09-24T00:00:00-04:00",
       "npr_url": "https://www.npr.org/sections/money/2018/09/24/651231709/saudi-arabia-the-paradox-of-plenty",
@@ -13240,6 +13258,15 @@
       "audio_id": "651231309",
       "player_url": "https://www.npr.org/player/embed/651231309/651260169",
       "description": "Saudi Arabia & The Paradox of Plenty"
+    },
+    {
+      "title": "Donald Trump's Economic Strategy... Maybe?",
+      "date": "2018-08-17T00:00:00-04:00",
+      "npr_url": "https://www.npr.org/sections/money/2018/08/17/639659490/donald-trump-s-economic-strategy-maybe",
+      "story_id": "639659490",
+      "audio_id": "639655796",
+      "player_url": "https://www.npr.org/player/embed/639655796/639658603",
+      "description": "Donald Trump's Economic Strategy... Maybe?"
     },
     {
       "title": "Privacy Please: Why Public Companies Go Private (Or Vice Versa)",
@@ -13251,6 +13278,15 @@
       "description": "Privacy Please: Why Public Companies Go Private (Or Vice Versa)"
     },
     {
+      "title": "Google's Mobile Monopoly",
+      "date": "2018-07-23T00:00:00-04:00",
+      "npr_url": "https://www.npr.org/sections/money/2018/07/23/631652230/google-s-mobile-monopoly",
+      "story_id": "631652230",
+      "audio_id": "631650323",
+      "player_url": "https://www.npr.org/player/embed/631650323/631653051",
+      "description": "Google's Mobile Monopoly"
+    },
+    {
       "title": "Fed Accounts For All!",
       "date": "2018-07-11T00:00:00-04:00",
       "npr_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
@@ -13258,6 +13294,24 @@
       "audio_id": "628169160",
       "player_url": "https://www.npr.org/player/embed/628169160/628176595",
       "description": "Fed Accounts For All!"
+    },
+    {
+      "title": "Teenage (Employment) Wasteland",
+      "date": "2018-06-21T00:00:00-04:00",
+      "npr_url": "https://www.npr.org/sections/money/2018/06/21/622312015/teenage-employment-wasteland",
+      "story_id": "622312015",
+      "audio_id": "622312202",
+      "player_url": "https://www.npr.org/player/embed/622312202/622316725",
+      "description": "Teenage (Employment) Wasteland"
+    },
+    {
+      "title": "Dude, Where's My Trade War?",
+      "date": "2018-06-13T00:00:00-04:00",
+      "npr_url": "https://www.npr.org/sections/money/2018/06/13/619662004/dude-wheres-my-trade-war",
+      "story_id": "619662004",
+      "audio_id": "619658580",
+      "player_url": "https://www.npr.org/player/embed/619658580/619667830",
+      "description": "Dude, Where's My Trade War?"
     }
   ]
 }
