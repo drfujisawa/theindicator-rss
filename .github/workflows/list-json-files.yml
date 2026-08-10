@@ -16,3 +16,20 @@ jobs:
           echo "JSON files in repository root:"
           echo
           ls -1 *.json || true
+
+      - name: Probe Batch 2 MP3 header lengths
+        run: |
+          set -euo pipefail
+          URLS=(
+            "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/10/20181009_indicator_china1_final_fix.mp3"
+            "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180723_indicator_072318_google_fine_final_final.mp3"
+            "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/08/20180817_indicator_081718_trump_econ_philosophy_v2_final.mp3"
+            "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/10/20181005_indicator_051018_jobs_friday_final_1.mp3"
+            "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/06/20180621_indicator_0621_teen_jobs_final.mp3"
+            "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/06/20180613_indicator_0613_tariffied_final_2.mp3"
+          )
+          for u in "${URLS[@]}"; do
+            echo
+            echo "URL: $u"
+            curl -sSIL --range 0-0 "$u" | tr -d '\r'
+          done
