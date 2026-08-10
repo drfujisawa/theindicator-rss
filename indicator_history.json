@@ -1,6 +1,6 @@
 {
   "next_date": "2017-11-05T16:46:00-04:00",
-  "episode_count": 1479,
+  "episode_count": 1480,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -13312,6 +13312,15 @@
       "audio_id": "619658580",
       "player_url": "https://www.npr.org/player/embed/619658580/619667830",
       "description": "Dude, Where's My Trade War?"
+    },
+    {
+      "title": "California’s Housing Conundrum",
+      "date": "2018-04-26T00:00:00-04:00",
+      "npr_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "story_id": "606151956",
+      "audio_id": "606151258",
+      "player_url": "https://www.npr.org/player/embed/606149731/606151258",
+      "description": "California’s Housing Conundrum"
     }
   ]
 }
