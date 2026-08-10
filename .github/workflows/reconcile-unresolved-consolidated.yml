@@ -1,0 +1,33 @@
+name: Reconcile Unresolved Consolidated Audit
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Reconcile unresolved episodes against indicator_history.json
+        run: python reconcile_unresolved_consolidated.py
+
+      - name: Commit updated artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add indicator_unresolved_consolidated_audit.json \
+                  indicator_unresolved_consolidated_evidence_ledger.json
+          git diff --cached --quiet || git commit -m "Reconcile unresolved consolidated audit against current indicator_history.json"
+          git push
