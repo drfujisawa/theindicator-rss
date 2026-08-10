@@ -415,6 +415,44 @@ def select_control_episodes():
     return controls
 
 
+# ── audio identity helpers ─────────────────────────────────────────────────────
+
+_RE_SC_EPISODE_UUID = re.compile(
+    r'/episodes/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/',
+    re.I,
+)
+
+
+def _extract_episode_uuid(url):
+    """Return the Simplecast episode UUID embedded in a URL path, or None."""
+    m = _RE_SC_EPISODE_UUID.search(url)
+    return m.group(1).lower() if m else None
+
+
+def _audio_identity(url):
+    """
+    Return a canonical identity token for an audio URL:
+    - If a Simplecast episode UUID is in the path, use that (most stable).
+    - Otherwise strip query-string and fragment and use the bare path URL,
+      lower-cased, so that tracking-parameter variations don't matter.
+    """
+    uuid = _extract_episode_uuid(url)
+    if uuid:
+        return ("uuid", uuid)
+    parsed = urlparse(url)
+    bare = f"{parsed.scheme}://{parsed.netloc.lower()}{parsed.path.rstrip('/')}"
+    return ("url", bare)
+
+
+def _same_audio_identity(known_url, *candidate_urls):
+    """
+    Return True if any candidate URL resolves to the same audio asset as
+    known_url, using normalised identity rather than literal string equality.
+    """
+    known_id = _audio_identity(known_url)
+    return any(_audio_identity(u) == known_id for u in candidate_urls if u)
+
+
 # ── main ───────────────────────────────────────────────────────────────────────
 
 
@@ -510,10 +548,14 @@ def process_episode(ep):
         print(f"  ✓ AUDIO FOUND via [{best['method']}] host={result['host']}")
 
         # Control check: did we rediscover the known enclosure?
+        # Compare by normalised audio identity (Simplecast episode UUID extracted
+        # from path) so that wrapper-URL / query-string differences don't count
+        # as a failure when both URLs resolve to the same underlying audio asset.
         if known_enc:
-            rediscovered = (
-                best["url"] == known_enc
-                or best["validation"]["final_url"] == known_enc
+            rediscovered = _same_audio_identity(
+                known_enc,
+                best["url"],
+                best["validation"]["final_url"],
             )
             result["control_rediscovered"] = rediscovered
             print(f"  Control rediscovered: {rediscovered}")
