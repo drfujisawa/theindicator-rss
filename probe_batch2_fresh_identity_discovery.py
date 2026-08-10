@@ -222,7 +222,7 @@ TARGETS = [
         "reference_title": "California's Housing Conundrum",
         "reference_episode": 33,
         # Validated adjacent episodes from indicator_npr_audio_validation.json:
-        #   2018-04-25 e=606819103 (The Farm Labor Drought — story_id)
+        #   2018-04-25 e=605819103 (The Farm Labor Drought — story_id)
         #   2018-04-27 e=606586601 (The Homeless Count — story_id)
         "id_lower_bound": 605_819_103,   # story_id from 2018-04-25 (validated)
         "id_upper_bound": 606_586_601,   # story_id from 2018-04-27 (validated)
