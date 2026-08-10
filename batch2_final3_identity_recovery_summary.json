@@ -1,83 +1,20 @@
 {
-  "placeholder": false,
-  "run_complete": true,
-  "run_state": "run_complete",
-  "run_id": "31359960823",
+  "placeholder": true,
+  "run_complete": false,
+  "run_state": "placeholder",
+  "run_id": "31362220062",
   "method": "batch2-final3-targeted-recovery",
-  "generated_at": "2026-08-10T05:52:16.345384+00:00",
-  "request_budget": {
-    "per_episode": {
-      "discovery_cdx_queries": 8,
-      "seeded_exact_cdx_queries": 4,
-      "capture_attempts": 10,
-      "live_player_fetches": 2,
-      "archived_player_cdx_queries": 2,
-      "archived_player_fetches": 2,
-      "audio_validations": 4,
-      "max_logical_requests": 32,
-      "conservative_timeout_ceiling_seconds": 768
-    },
-    "per_run": {
-      "targets": 3,
-      "max_logical_requests": 96,
-      "conservative_timeout_ceiling_seconds": 2304
-    }
-  },
+  "generated_at": "2026-08-10T06:32:58.155511+00:00",
   "episodes": [
     {
       "reference_date": "2018-10-11",
       "reference_title": "China's Brave New World",
-      "final_classification": "archive_fetch_failed_identity_unresolved",
-      "story_id": null,
-      "player_ids": [],
-      "archive_captures_tried": 10,
-      "captures_successfully_parsed": 6,
-      "audio_candidates_tested": 0,
-      "validated_audio": 0,
-      "validation_summary": "Archive retrieval failures blocked completion after partial parsing; no trusted identity was confirmed.",
-      "remaining_recovery_avenues": [
-        "Retry exact timestamps later and widen alternate timestamp retrieval window."
-      ]
-    },
-    {
-      "reference_date": "2018-04-26",
-      "reference_title": "California's Housing Conundrum",
-      "final_classification": "recovered",
-      "story_id": "606151956",
-      "player_ids": [
-        {
-          "player_story_id": "606149731",
-          "player_audio_id": "606151258",
-          "player_url": "https://www.npr.org/player/embed/606149731/606151258"
-        }
-      ],
-      "archive_captures_tried": 10,
-      "captures_successfully_parsed": 7,
-      "audio_candidates_tested": 4,
-      "validated_audio": 3,
-      "validation_summary": "Recovered: trusted identity and 3 validated NPR Indicator audio file(s).",
-      "remaining_recovery_avenues": []
+      "reference_episode": 145
     },
     {
       "reference_date": "2018-04-24",
       "reference_title": "When China's Ships Come In",
-      "final_classification": "identity_candidates_rejected",
-      "story_id": null,
-      "player_ids": [],
-      "archive_captures_tried": 10,
-      "captures_successfully_parsed": 6,
-      "audio_candidates_tested": 0,
-      "validated_audio": 0,
-      "validation_summary": "Identity candidates found but none met exact title/date/story-ID trust proof.",
-      "remaining_recovery_avenues": [
-        "Review additional nearby captures for exact-title proof on trusted story-page URL."
-      ]
+      "reference_episode": 31
     }
-  ],
-  "counts": {
-    "attempted": 3,
-    "completed": 3,
-    "failed": 0,
-    "recovered": 1
-  }
+  ]
 }

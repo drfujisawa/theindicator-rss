@@ -69,7 +69,7 @@ class TestAdjacentDateContaminationRejection(unittest.TestCase):
 
 class TestStrictTitleDateStoryIdGate(unittest.TestCase):
     def test_adjacent_date_not_accepted_for_trusted_identity(self):
-        target = probe.TARGETS[2]
+        target = probe.TARGETS[1]
         plan_item = {
             "timestamp": "20180425010101",
             "url": "https://www.npr.org/sections/money/2018/04/25/605819103/when-chinas-ships-come-in",
@@ -89,30 +89,51 @@ class TestStrictTitleDateStoryIdGate(unittest.TestCase):
         self.assertFalse(parsed["episode_qualified"])  # exact date required
         self.assertIn("date_not_exact", parsed["rejection_reasons"])
 
+    def test_exact_title_required(self):
+        target = probe.TARGETS[1]
+        plan_item = {
+            "timestamp": "20180424010101",
+            "url": "https://www.npr.org/sections/money/2018/04/24/605500000/wrong-title",
+            "archive_url": "https://web.archive.org/web/20180424010101id_/https://www.npr.org/sections/money/2018/04/24/605500000/wrong-title",
+            "archive_variant": "id_",
+            "source": "bounded_discovery",
+        }
+        page = """
+        <html><head>
+        <title>China's Shipping Logjam : The Indicator from Planet Money : NPR</title>
+        <meta property='article:published_time' content='2018-04-24T11:00:00Z'>
+        <link rel='canonical' href='https://www.npr.org/sections/money/2018/04/24/605500000/wrong-title'>
+        </head><body>showTitle: \"The Indicator from Planet Money\" p=510325</body></html>
+        """
+        parsed = probe.parse_capture_result(target, plan_item, page)
+        self.assertFalse(parsed["episode_qualified"])
+        self.assertFalse(parsed["exact_title_match"])
+        self.assertIn("title_not_exact", parsed["rejection_reasons"])
+
 
 class TestAlternateCaptureAfterTimeout(unittest.TestCase):
     def test_second_capture_attempt_used_after_first_timeout(self):
-        target = probe.TARGETS[1]
+        target = probe.TARGETS[0]
         first = {
-            "timestamp": "20180426234034",
-            "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
-            "archive_url": "https://web.archive.org/web/20180426234034id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "timestamp": "20181011180101",
+            "url": "https://www.npr.org/sections/money/2018/10/11/656700000/chinas-brave-new-world",
+            "archive_url": "https://web.archive.org/web/20181011180101id_/https://www.npr.org/sections/money/2018/10/11/656700000/chinas-brave-new-world",
             "archive_variant": "id_",
             "source": "prior_stage_c",
         }
         second = {
-            "timestamp": "20180427195754",
-            "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
-            "archive_url": "https://web.archive.org/web/20180427195754id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "timestamp": "20181011235959",
+            "url": "https://www.npr.org/sections/money/2018/10/11/656700000/chinas-brave-new-world",
+            "archive_url": "https://web.archive.org/web/20181011235959id_/https://www.npr.org/sections/money/2018/10/11/656700000/chinas-brave-new-world",
             "archive_variant": "id_",
             "source": "exact_cdx_alternate_timestamp",
         }
 
         html_ok = """
         <html><head>
-        <title>California's Housing Conundrum : The Indicator from Planet Money : NPR</title>
-        <meta property='article:published_time' content='2018-04-26T16:00:00Z'>
-        <link rel='canonical' href='https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum'>
+        <title>China's Brave New World : The Indicator from Planet Money : NPR</title>
+        <meta property='article:published_time' content='2018-10-11T16:00:00Z'>
+        <link rel='canonical' href='https://www.npr.org/sections/money/2018/10/11/656700000/chinas-brave-new-world'>
         </head><body>showTitle: \"The Indicator from Planet Money\" p=510325</body></html>
         """
 
@@ -120,7 +141,7 @@ class TestAlternateCaptureAfterTimeout(unittest.TestCase):
 
         def fake_fetch(url):
             call_count["n"] += 1
-            if "20180426234034" in url:
+            if "20181011180101" in url:
                 raise OSError("timed out")
             return {"text": html_ok}
 
@@ -138,7 +159,7 @@ class TestAlternateCaptureAfterTimeout(unittest.TestCase):
 
 
 class TestArchiveFailureClassificationSafety(unittest.TestCase):
-    def test_archive_failures_not_reported_as_no_identity(self):
+    def test_archive_failures_not_demoted_to_lower_priority(self):
         diag = {
             "confirmed_identity": None,
             "validated_audio": [],
@@ -146,11 +167,15 @@ class TestArchiveFailureClassificationSafety(unittest.TestCase):
             "archive_captures_failed": 4,
             "archive_captures_tried": [{}],
             "identity_candidates": [],
+            "global_cdx_self_test_passed": True,
+            "bounded_search_completed": True,
+            "exact_cdx_queries": [],
+            "discovery_cdx_queries": [],
         }
         classification, _, _ = probe.classify_result(diag)
         self.assertEqual(classification, "archive_fetch_failed_identity_unresolved")
 
-    def test_no_capture_attempts_not_misreported(self):
+    def test_no_capture_attempts_not_demoted_to_lower_priority(self):
         diag = {
             "confirmed_identity": None,
             "validated_audio": [],
@@ -158,9 +183,63 @@ class TestArchiveFailureClassificationSafety(unittest.TestCase):
             "archive_captures_failed": 0,
             "archive_captures_tried": [],
             "identity_candidates": [],
+            "global_cdx_self_test_passed": True,
+            "bounded_search_completed": False,
+            "exact_cdx_queries": [],
+            "discovery_cdx_queries": [],
         }
         classification, _, _ = probe.classify_result(diag)
-        self.assertEqual(classification, "no_archive_candidates_attempted")
+        self.assertEqual(classification, "incomplete_bounded_search_identity_unresolved")
+
+    def test_completed_search_without_identity_demoted_to_lower_priority(self):
+        diag = {
+            "confirmed_identity": None,
+            "validated_audio": [],
+            "captures_successfully_parsed": 3,
+            "archive_captures_failed": 0,
+            "archive_captures_tried": [{}, {}, {}],
+            "identity_candidates": [],
+            "global_cdx_self_test_passed": True,
+            "bounded_search_completed": True,
+            "exact_cdx_queries": [{"error_type": None}],
+            "discovery_cdx_queries": [{"error_type": None}],
+        }
+        classification, _, _ = probe.classify_result(diag)
+        self.assertEqual(classification, "lower_priority_unresolved")
+
+    def test_trusted_identity_still_takes_precedence(self):
+        diag = {
+            "confirmed_identity": {"trusted": True},
+            "validated_audio": [],
+            "archive_captures_failed": 99,
+            "global_cdx_self_test_passed": False,
+            "bounded_search_completed": False,
+        }
+        classification, _, _ = probe.classify_result(diag)
+        self.assertEqual(classification, "identity_found_audio_unresolved")
+
+
+class TestBlockedAdjacentStories(unittest.TestCase):
+    def test_la_story_rejected_for_apr24_target(self):
+        target = probe.TARGETS[1]
+        plan_item = {
+            "timestamp": "20180424005159",
+            "url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "archive_url": "https://web.archive.org/web/20180424005159id_/https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+            "archive_variant": "id_",
+            "source": "bounded_discovery",
+        }
+        page = """
+        <html><head>
+        <title>3 Things You Didn't Know About LA : Planet Money : NPR</title>
+        <meta property='article:published_time' content='2018-04-23T12:00:00Z'>
+        <link rel='canonical' href='https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la'>
+        </head><body>showTitle: \"The Indicator from Planet Money\" p=510325</body></html>
+        """
+        parsed = probe.parse_capture_result(target, plan_item, page)
+        self.assertFalse(parsed["episode_qualified"])
+        self.assertTrue(parsed["blocked_adjacent_unrelated"])
+        self.assertIn("adjacent_unrelated_story", parsed["rejection_reasons"])
 
 
 class TestProvenanceLinkedAudioRequirement(unittest.TestCase):
@@ -256,6 +335,74 @@ class TestRequestBudgetCoverage(unittest.TestCase):
         workflow_timeout_seconds = int(match.group(1)) * 60
         runtime_ceiling = probe.request_budget()["per_run"]["conservative_timeout_ceiling_seconds"]
         self.assertGreater(workflow_timeout_seconds, runtime_ceiling)
+
+
+class TestNarrowDateBoundedPatterns(unittest.TestCase):
+    def test_patterns_stay_on_exact_reference_date_and_money_section(self):
+        patterns = probe._build_bounded_patterns(probe.TARGETS[0])
+        self.assertEqual(
+            patterns,
+            [
+                "https://www.npr.org/sections/money/2018/10/11/",
+                "http://www.npr.org/sections/money/2018/10/11/",
+            ],
+        )
+
+
+class TestAffiliateExactTitleEvidencePath(unittest.TestCase):
+    def test_affiliate_exact_title_urls_contribute_but_do_not_create_trusted_identity(self):
+        target = probe.TARGETS[1]
+        affiliate_url = "https://www.npr.org/sections/theindicator/2018/04/24/605819103/when-chinas-ships-come-in"
+
+        html = """
+        <html><head>
+        <title>When China's Ships Come In : The Indicator from Planet Money : NPR</title>
+        <meta property='article:published_time' content='2018-04-24T11:00:00Z'>
+        <link rel='canonical' href='https://www.npr.org/sections/theindicator/2018/04/24/605819103/when-chinas-ships-come-in'>
+        </head><body>showTitle: \"The Indicator from Planet Money\" p=510325</body></html>
+        """
+
+        def fake_cdx_exact(url, limit=8):
+            self.assertEqual(url, affiliate_url)
+            return {
+                "rows": [{"timestamp": "20180424110000", "original": affiliate_url}],
+                "query_url": "https://web.archive.org/cdx/search/cdx?...",
+                "error_type": None,
+                "error_message": None,
+            }
+
+        with mock.patch.object(
+            probe,
+            "load_prior_evidence",
+            return_value={"batch2_diag": {}, "sources": {}, "global_cdx_self_test_passed": True},
+        ), mock.patch.object(
+            probe,
+            "_load_affiliate_exact_title_evidence",
+            return_value={
+                "files_scanned": ["indicator_unresolved_affiliate_recovery_00_09.json"],
+                "matched_sources": ["indicator_unresolved_affiliate_recovery_00_09.json"],
+                "matched_source_count": 1,
+                "exact_title_urls": [affiliate_url],
+            },
+        ), mock.patch.object(
+            probe.base,
+            "wayback_cdx_url_exact",
+            side_effect=fake_cdx_exact,
+        ), mock.patch.object(
+            probe,
+            "_with_backoff_fetch",
+            return_value={"text": html},
+        ), mock.patch.object(
+            probe,
+            "_should_run_broad_discovery",
+            return_value=False,
+        ):
+            diag = probe.investigate_target(target)
+
+        self.assertEqual(diag["exact_title_affiliate_archive_evidence"]["matched_source_count"], 1)
+        self.assertTrue(any(q.get("url") == affiliate_url for q in diag["exact_cdx_queries"]))
+        self.assertIsNone(diag["confirmed_identity"])
+        self.assertEqual(diag["final_classification"], "lower_priority_unresolved")
 
 
 if __name__ == "__main__":
