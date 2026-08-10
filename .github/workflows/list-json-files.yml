@@ -16,20 +16,3 @@ jobs:
           echo "JSON files in repository root:"
           echo
           ls -1 *.json || true
-
-      - name: Probe NPR MP3 byte sizes
-        run: |
-          set -euo pipefail
-          urls=(
-            "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180711_indicator_0711_fed_accounts_final_2.mp3"
-            "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/08/20180810_indicator_081018_going_private_final.mp3"
-            "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/09/20180924_indicator_092418_saudi_oil_history_final.mp3"
-          )
-          for url in "${urls[@]}"; do
-            echo
-            echo "URL: $url"
-            echo "HEAD:"
-            curl -sSIL "$url" | egrep -i '^(HTTP/|content-length:|accept-ranges:|location:)'
-            echo "RANGE:"
-            curl -sSI -H 'Range: bytes=0-0' "$url" | egrep -i '^(HTTP/|content-range:|content-length:|accept-ranges:|location:)'
-          done
