@@ -421,9 +421,10 @@ def _build_bounded_patterns(target: dict) -> list:
 def _is_blocked_adjacent_story(target: dict, story_id: str, page_title: str) -> bool:
     if story_id and story_id in target.get("blocked_story_ids", set()):
         return True
-    title = (page_title or "").lower()
+    title = (page_title or "").lower().replace("\u2019", "'").replace("'", "")
     for term in target.get("blocked_title_terms", []):
-        if term in title:
+        term_normalized = (term or "").lower().replace("\u2019", "'").replace("'", "")
+        if term_normalized and term_normalized in title:
             return True
     return False
 
@@ -433,7 +434,7 @@ def _normalized_title(value: str) -> str:
         return ""
     text = value.lower()
     text = text.replace("&", " and ")
-    text = text.replace("’", "'")
+    text = text.replace("\u2019", "'")
     text = text.replace(":", " ")
     text = text.replace("'", "")
     text = "".join(ch if ch.isalnum() else " " for ch in text)
@@ -442,8 +443,16 @@ def _normalized_title(value: str) -> str:
 
 def _exact_title_match(page_title: str, reference_title: str) -> bool:
     normalized_reference = _normalized_title(reference_title)
-    normalized_page = _normalized_title(page_title)
-    return bool(normalized_reference and normalized_reference in normalized_page)
+    if not normalized_reference:
+        return False
+    candidates = [page_title]
+    for separator in (" : ", " | ", " - "):
+        if separator in page_title:
+            candidates.append(page_title.split(separator, 1)[0])
+    for candidate in candidates:
+        if _normalized_title(candidate) == normalized_reference:
+            return True
+    return False
 
 
 def parse_capture_result(target: dict, plan_item: dict, page_text: str) -> dict:
