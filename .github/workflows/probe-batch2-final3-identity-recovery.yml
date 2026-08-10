@@ -1,0 +1,50 @@
+name: Probe Batch 2 Final3 Identity Recovery
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  batch2-final3-identity-recovery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Initialize targeted diagnostic placeholders
+        run: python probe_batch2_final3_identity_recovery.py --write-placeholders-only
+
+      - name: Run unit tests
+        run: python -m unittest test_batch2_final3_identity_recovery -v
+
+      - name: Run targeted final3 recovery probe
+        run: python probe_batch2_final3_identity_recovery.py
+
+      - name: Upload diagnostic artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: batch2-final3-identity-recovery-diagnostics
+          path: |
+            batch2_final3_identity_recovery_*_diag.json
+            batch2_final3_identity_recovery_summary.json
+          if-no-files-found: warn
+          retention-days: 90
+
+      - name: Commit diagnostic JSON files
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add batch2_final3_identity_recovery_*_diag.json batch2_final3_identity_recovery_summary.json
+          git diff --cached --quiet || git commit -m "Batch 2 final3 targeted recovery diagnostics"
+          git push

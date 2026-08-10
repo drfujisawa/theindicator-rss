@@ -1,0 +1,2114 @@
+{
+  "method": "batch2-final3-targeted-recovery",
+  "placeholder": false,
+  "run_complete": true,
+  "run_state": "run_complete",
+  "run_id": "31357286745",
+  "generated_at": "2026-08-10T05:28:22.927549+00:00",
+  "reference_date": "2018-04-26",
+  "reference_title": "California's Housing Conundrum",
+  "reference_episode": 33,
+  "request_budget": {
+    "discovery_cdx_queries": 8,
+    "seeded_exact_cdx_queries": 4,
+    "capture_attempts": 10,
+    "live_player_fetches": 2,
+    "archived_player_cdx_queries": 2,
+    "archived_player_fetches": 2,
+    "audio_validations": 4,
+    "max_logical_requests": 32,
+    "conservative_timeout_ceiling_seconds": 768
+  },
+  "prior_evidence": {
+    "sources": {
+      "batch2_diag": "batch2_fresh_identity_discovery_2018-04-26_diag.json",
+      "batch2_summary": "batch2_fresh_identity_discovery_summary.json",
+      "ranked_report": "indicator_identity_audio_unresolved_ranked_report.json",
+      "consolidated_ledger": "indicator_unresolved_consolidated_evidence_ledger.json",
+      "wayback_npr_probe": "indicator_wayback_npr_probe.json",
+      "wayback_player_probe": "indicator_wayback_player_probe.json"
+    },
+    "batch2_diag": {
+      "method": "fresh-identity-discovery",
+      "placeholder": false,
+      "run_complete": true,
+      "run_state": "run_complete",
+      "run_id": "31354166887",
+      "generated_at": "2026-08-10T04:05:03.927799+00:00",
+      "reference_date": "2018-04-26",
+      "reference_title": "California's Housing Conundrum",
+      "reference_episode": 33,
+      "strategy": "staged_cdx_funnel_identity_first",
+      "date_window": {
+        "from": "20180423",
+        "to": "20180503"
+      },
+      "request_budget": {
+        "stage_a_cdx_queries": 6,
+        "capture_fetches": 4,
+        "live_player_fetches": 2,
+        "player_cdx_queries": 2,
+        "archived_player_fetches": 2,
+        "audio_validations": 4,
+        "max_logical_requests": 20,
+        "conservative_timeout_ceiling_seconds": 384,
+        "realistic_worst_case_runtime_seconds": 92
+      },
+      "id_bounds": {
+        "lower": 605819103,
+        "upper": 606586601,
+        "lower_from_episode": "2018-04-25",
+        "upper_from_episode": "2018-04-27",
+        "advisory_only": true
+      },
+      "slug_filters_used": [
+        "californias-housing-conundrum",
+        "california-housing-conundrum",
+        "california-housing",
+        "housing-conundrum"
+      ],
+      "cdx_queries": [
+        {
+          "pattern": "https://www.npr.org/sections/money/2018/04/25/",
+          "from": "20180423",
+          "to": "20180503",
+          "limit": 40,
+          "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F25%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180423&to=20180503&limit=40",
+          "rows_returned": 0,
+          "error_type": "network_error",
+          "error_message": "<urlopen error timed out>",
+          "response_length": 0,
+          "zero_row_response": false,
+          "scored_candidates": []
+        },
+        {
+          "pattern": "http://www.npr.org/sections/money/2018/04/25/",
+          "from": "20180423",
+          "to": "20180503",
+          "limit": 40,
+          "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F25%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180423&to=20180503&limit=40",
+          "rows_returned": 40,
+          "error_type": null,
+          "error_message": null,
+          "response_length": 6258,
+          "zero_row_response": false,
+          "scored_candidates": [
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought",
+              "timestamp": "20180426190543",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought",
+              "timestamp": "20180427195758",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought",
+              "timestamp": "20180429224237",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought",
+              "timestamp": "20180430232815",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought",
+              "timestamp": "20180502024503",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought",
+              "timestamp": "20180503031209",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20180426190701",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20180427195934",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+              "timestamp": "20180430082702",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+              "timestamp": "20180501092239",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+              "timestamp": "20180502121712",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180426202137",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180427210736",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180428220944",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180429224340",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180502024603",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180503031316",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+              "timestamp": "20180426052122",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+              "timestamp": "20180428065744",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+              "timestamp": "20180501091416",
+              "url_date": "2018-04-25",
+              "score": 0.1
+            }
+          ]
+        },
+        {
+          "pattern": "https://www.npr.org/sections/money/2018/04/26/",
+          "from": "20180423",
+          "to": "20180503",
+          "limit": 40,
+          "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F26%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180423&to=20180503&limit=40",
+          "rows_returned": 27,
+          "error_type": null,
+          "error_message": null,
+          "response_length": 4402,
+          "zero_row_response": false,
+          "scored_candidates": [
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+              "timestamp": "20180426234034",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+              "timestamp": "20180427195754",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+              "timestamp": "20180428205907",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+              "timestamp": "20180429213835",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+              "timestamp": "20180430222230",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+              "timestamp": "20180502024458",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+              "timestamp": "20180503031206",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20180427195907",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20180428210055",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20180429214012",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20180430222400",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+              "timestamp": "20180428065341",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+              "timestamp": "20180501092238",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+              "timestamp": "20180502121711",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+              "timestamp": "20180503134246",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180427210729",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180428220939",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180429224334",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180502024559",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+              "timestamp": "20180427061421",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            }
+          ]
+        },
+        {
+          "pattern": "http://www.npr.org/sections/money/2018/04/26/",
+          "from": "20180423",
+          "to": "20180503",
+          "limit": 40,
+          "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F26%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180423&to=20180503&limit=40",
+          "rows_returned": 27,
+          "error_type": null,
+          "error_message": null,
+          "response_length": 4402,
+          "zero_row_response": false,
+          "scored_candidates": [
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+              "timestamp": "20180426234034",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+              "timestamp": "20180427195754",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+              "timestamp": "20180428205907",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+              "timestamp": "20180429213835",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+              "timestamp": "20180430222230",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+              "timestamp": "20180502024458",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+              "timestamp": "20180503031206",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20180427195907",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20180428210055",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20180429214012",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20180430222400",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+              "timestamp": "20180428065341",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+              "timestamp": "20180501092238",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+              "timestamp": "20180502121711",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+              "timestamp": "20180503134246",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180427210729",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180428220939",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180429224334",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180502024559",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=staceyvaneksmith",
+              "timestamp": "20180427061421",
+              "url_date": "2018-04-26",
+              "score": 1.0
+            }
+          ]
+        },
+        {
+          "pattern": "https://www.npr.org/sections/money/2018/04/27/",
+          "from": "20180423",
+          "to": "20180503",
+          "limit": 40,
+          "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F27%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180423&to=20180503&limit=40",
+          "rows_returned": 24,
+          "error_type": null,
+          "error_message": null,
+          "response_length": 3685,
+          "zero_row_response": false,
+          "scored_candidates": [
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages",
+              "timestamp": "20180428205906",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages",
+              "timestamp": "20180429213834",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages",
+              "timestamp": "20180430222151",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages",
+              "timestamp": "20180501161837",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages",
+              "timestamp": "20180502013812",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages",
+              "timestamp": "20180503031156",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180428220931",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180429224326",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180502024553",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180503031305",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count",
+              "timestamp": "20180428205859",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count",
+              "timestamp": "20180501153135",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count",
+              "timestamp": "20180502013839",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count",
+              "timestamp": "20180503031204",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20180428210010",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20180429213931",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20180430222314",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20180502013957",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180428220936",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180502024557",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            }
+          ]
+        },
+        {
+          "pattern": "http://www.npr.org/sections/money/2018/04/27/",
+          "from": "20180423",
+          "to": "20180503",
+          "limit": 40,
+          "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F27%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180423&to=20180503&limit=40",
+          "rows_returned": 24,
+          "error_type": null,
+          "error_message": null,
+          "response_length": 3685,
+          "zero_row_response": false,
+          "scored_candidates": [
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages",
+              "timestamp": "20180428205906",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages",
+              "timestamp": "20180429213834",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages",
+              "timestamp": "20180430222151",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages",
+              "timestamp": "20180501161837",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages",
+              "timestamp": "20180502013812",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages",
+              "timestamp": "20180503031156",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180428220931",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180429224326",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180502024553",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180503031305",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count",
+              "timestamp": "20180428205859",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count",
+              "timestamp": "20180501153135",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count",
+              "timestamp": "20180502013839",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count",
+              "timestamp": "20180503031204",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20180428210010",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20180429213931",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20180430222314",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count?utm_medium=JSONFeed&utm_campaign=business",
+              "timestamp": "20180502013957",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180428220936",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            },
+            {
+              "url": "https://www.npr.org/sections/money/2018/04/27/606586601/the-homeless-count?utm_medium=JSONFeed&utm_campaign=planetmoney",
+              "timestamp": "20180502024557",
+              "url_date": "2018-04-27",
+              "score": 0.1
+            }
+          ]
+        }
+      ],
+      "slug_variant_probes": [],
+      "date_window_captures": [
+        {
+          "timestamp": "20180426234034",
+          "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "archive_url": "https://web.archive.org/web/20180426234034id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "status": "error",
+          "page_title": null,
+          "pub_date": null,
+          "canonical_url": null,
+          "program_context": null,
+          "match_score": null,
+          "story_id": null,
+          "story_evidence": null,
+          "player_embeds": [],
+          "audio_candidates": [],
+          "numeric_ids": [],
+          "episode_qualified": false,
+          "trust_level": "untrusted",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180426234034",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "archive_capture",
+            "trust_level": "untrusted"
+          },
+          "error": "<urlopen error timed out>",
+          "cdx_score": 1.0,
+          "source": "stage_c_capture_fetch"
+        },
+        {
+          "timestamp": "20180427195907",
+          "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+          "archive_url": "https://web.archive.org/web/20180427195907id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+          "status": "error",
+          "page_title": null,
+          "pub_date": null,
+          "canonical_url": null,
+          "program_context": null,
+          "match_score": null,
+          "story_id": null,
+          "story_evidence": null,
+          "player_embeds": [],
+          "audio_candidates": [],
+          "numeric_ids": [],
+          "episode_qualified": false,
+          "trust_level": "untrusted",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+            "source_capture_timestamp": "20180427195907",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "archive_capture",
+            "trust_level": "untrusted"
+          },
+          "error": "<urlopen error timed out>",
+          "cdx_score": 1.0,
+          "source": "stage_c_capture_fetch"
+        },
+        {
+          "timestamp": "20180428065341",
+          "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+          "archive_url": "https://web.archive.org/web/20180428065341id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+          "status": "error",
+          "page_title": null,
+          "pub_date": null,
+          "canonical_url": null,
+          "program_context": null,
+          "match_score": null,
+          "story_id": null,
+          "story_evidence": null,
+          "player_embeds": [],
+          "audio_candidates": [],
+          "numeric_ids": [],
+          "episode_qualified": false,
+          "trust_level": "untrusted",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+            "source_capture_timestamp": "20180428065341",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "archive_capture",
+            "trust_level": "untrusted"
+          },
+          "error": "<urlopen error timed out>",
+          "cdx_score": 1.0,
+          "source": "stage_c_capture_fetch"
+        },
+        {
+          "timestamp": "20180427210729",
+          "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "archive_url": "https://web.archive.org/web/20180427210729id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "status": "error",
+          "page_title": null,
+          "pub_date": null,
+          "canonical_url": null,
+          "program_context": null,
+          "match_score": null,
+          "story_id": null,
+          "story_evidence": null,
+          "player_embeds": [],
+          "audio_candidates": [],
+          "numeric_ids": [],
+          "episode_qualified": false,
+          "trust_level": "untrusted",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180427210729",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "archive_capture",
+            "trust_level": "untrusted"
+          },
+          "error": "<urlopen error timed out>",
+          "cdx_score": 1.0,
+          "source": "stage_c_capture_fetch"
+        }
+      ],
+      "numeric_id_probes": [],
+      "numeric_probe_status": "disabled_advisory_only",
+      "identity_candidates": [
+        {
+          "timestamp": "20180426234034",
+          "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "archive_url": "https://web.archive.org/web/20180426234034id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+          "status": "error",
+          "page_title": null,
+          "pub_date": null,
+          "canonical_url": null,
+          "program_context": null,
+          "match_score": null,
+          "story_id": null,
+          "story_evidence": null,
+          "player_embeds": [],
+          "audio_candidates": [],
+          "numeric_ids": [],
+          "episode_qualified": false,
+          "trust_level": "untrusted",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+            "source_capture_timestamp": "20180426234034",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "archive_capture",
+            "trust_level": "untrusted"
+          },
+          "error": "<urlopen error timed out>",
+          "cdx_score": 1.0,
+          "source": "stage_c_capture_fetch"
+        },
+        {
+          "timestamp": "20180427195907",
+          "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+          "archive_url": "https://web.archive.org/web/20180427195907id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+          "status": "error",
+          "page_title": null,
+          "pub_date": null,
+          "canonical_url": null,
+          "program_context": null,
+          "match_score": null,
+          "story_id": null,
+          "story_evidence": null,
+          "player_embeds": [],
+          "audio_candidates": [],
+          "numeric_ids": [],
+          "episode_qualified": false,
+          "trust_level": "untrusted",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+            "source_capture_timestamp": "20180427195907",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "archive_capture",
+            "trust_level": "untrusted"
+          },
+          "error": "<urlopen error timed out>",
+          "cdx_score": 1.0,
+          "source": "stage_c_capture_fetch"
+        },
+        {
+          "timestamp": "20180428065341",
+          "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+          "archive_url": "https://web.archive.org/web/20180428065341id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+          "status": "error",
+          "page_title": null,
+          "pub_date": null,
+          "canonical_url": null,
+          "program_context": null,
+          "match_score": null,
+          "story_id": null,
+          "story_evidence": null,
+          "player_embeds": [],
+          "audio_candidates": [],
+          "numeric_ids": [],
+          "episode_qualified": false,
+          "trust_level": "untrusted",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+            "source_capture_timestamp": "20180428065341",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "archive_capture",
+            "trust_level": "untrusted"
+          },
+          "error": "<urlopen error timed out>",
+          "cdx_score": 1.0,
+          "source": "stage_c_capture_fetch"
+        },
+        {
+          "timestamp": "20180427210729",
+          "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "archive_url": "https://web.archive.org/web/20180427210729id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+          "status": "error",
+          "page_title": null,
+          "pub_date": null,
+          "canonical_url": null,
+          "program_context": null,
+          "match_score": null,
+          "story_id": null,
+          "story_evidence": null,
+          "player_embeds": [],
+          "audio_candidates": [],
+          "numeric_ids": [],
+          "episode_qualified": false,
+          "trust_level": "untrusted",
+          "provenance": {
+            "source_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+            "source_capture_timestamp": "20180427210729",
+            "episode_qualified": false,
+            "target_episode": "2018-04-26",
+            "target_title": "California's Housing Conundrum",
+            "evidence_type": "archive_capture",
+            "trust_level": "untrusted"
+          },
+          "error": "<urlopen error timed out>",
+          "cdx_score": 1.0,
+          "source": "stage_c_capture_fetch"
+        }
+      ],
+      "confirmed_identity": null,
+      "player_probes": [],
+      "trusted_audio_evidence": [],
+      "untrusted_audio_evidence": [],
+      "audio_candidates_tested": [],
+      "validated_audio": [],
+      "final_classification": "partial_identity_no_audio",
+      "validation_summary": "Partial identity candidates found (4) but none satisfied the title+date+story-ID proof chain. No trusted audio validated.",
+      "discovery_exhausted_for_window": true,
+      "counts": {
+        "cdx_queries_issued": 6,
+        "cdx_urls_returned": 142,
+        "candidate_urls_scored": 142,
+        "captures_fetched": 0,
+        "captures_failed": 4,
+        "strong_matches": 0,
+        "partial_matches": 4,
+        "player_pages_fetched": 0,
+        "player_pages_failed": 0,
+        "audio_candidates_tested": 0,
+        "audio_validated": 0,
+        "trusted_audio_candidates": 0,
+        "untrusted_audio_candidates": 0,
+        "numeric_ids_probed": 0,
+        "logical_requests_issued": 10
+      }
+    },
+    "batch2_summary_episode": {
+      "reference_date": "2018-04-26",
+      "reference_title": "California's Housing Conundrum",
+      "final_classification": "partial_identity_no_audio",
+      "validation_summary": "Partial identity candidates found (4) but none satisfied the title+date+story-ID proof chain. No trusted audio validated.",
+      "counts": {
+        "cdx_queries_issued": 6,
+        "cdx_urls_returned": 142,
+        "candidate_urls_scored": 142,
+        "captures_fetched": 0,
+        "captures_failed": 4,
+        "strong_matches": 0,
+        "partial_matches": 4,
+        "player_pages_fetched": 0,
+        "player_pages_failed": 0,
+        "audio_candidates_tested": 0,
+        "audio_validated": 0,
+        "trusted_audio_candidates": 0,
+        "untrusted_audio_candidates": 0,
+        "numeric_ids_probed": 0,
+        "logical_requests_issued": 10
+      }
+    },
+    "ranked_report_episode": {
+      "rank": 7,
+      "reference_date": "2018-04-26",
+      "reference_title": "California's Housing Conundrum",
+      "reference_year": 2018,
+      "reference_episode": 33,
+      "identity_confidence": "low",
+      "strongest_evidence": "This episode has the widest surviving NPR-controlled surface area in the ledger: multiple player embeds, multiple audio IDs, and nine Wayback captures. But every preserved story/player chain currently resolves to unrelated California topic pages from 2016, 2017, 2019, or 2023.",
+      "npr_ids_found": {
+        "discovered_story_ids": [
+          "524744989",
+          "488428577",
+          "713616857",
+          "499867678",
+          "1148846720"
+        ],
+        "discovered_player_story_ids": [
+          "524744989",
+          "713616857",
+          "499867678",
+          "1148846720"
+        ],
+        "discovered_audio_ids": [
+          "525551088",
+          "525551085",
+          "713616858",
+          "499867679",
+          "1149148322"
+        ],
+        "verified_episode_specific_story_ids": [],
+        "verified_episode_specific_audio_ids": [],
+        "rejected_or_unverified_ids": [
+          {
+            "id": "524744989",
+            "reason": "2017 NPR story is about the Rodney King riots, not housing."
+          },
+          {
+            "id": "488428577",
+            "reason": "2016 NPR story is about Cesar Chavez, not the target episode."
+          },
+          {
+            "id": "713616857",
+            "reason": "2019 NPR story is about sanctuary cities, not housing."
+          },
+          {
+            "id": "499867678",
+            "reason": "2016 NPR story is about bilingual education in California, not housing."
+          },
+          {
+            "id": "1148846720",
+            "reason": "2023 NPR story is about dismantling death row, not housing."
+          },
+          {
+            "id": "525551088",
+            "reason": "Audio ID is tied to the 2017 Rodney King player chain only."
+          },
+          {
+            "id": "713616858",
+            "reason": "Audio ID is tied to the 2019 sanctuary cities player chain only."
+          }
+        ]
+      },
+      "npr_story_urls": [
+        "https://www.npr.org/2017/04/26/524744989/when-la-erupted-in-anger-a-look-back-at-the-rodney-king-riots",
+        "https://www.npr.org/2016/08/02/488428577/cesar-chavez-the-life-behind-a-legacy-of-farm-labor-rights",
+        "https://www.npr.org/2019/04/15/713616857/officials-in-sanctuary-cities-condemn-trumps-proposal-to-move-immigrant-detainee?t=1567429578598",
+        "https://www.npr.org/sections/ed/2016/10/29/499867678/the-debate-over-bilingual-education-in-california",
+        "https://www.npr.org/2025/11/04/nx-s1-5587742/election-results-california-proposition-50-redistricting",
+        "https://www.npr.org/2023/01/13/1148846720/california-says-it-will-dismantle-death-row-the-move-brings-cheers-and-anger#:~:text=Technically%2C%20the%20death%20penalty%20still,the%20state%20in%2017%20years."
+      ],
+      "player_urls": [
+        "https://www.npr.org/player/embed/524744989/525551088",
+        "https://www.npr.org/player/embed/524744989/525551085",
+        "https://www.npr.org/player/embed/713616857/713616858",
+        "https://www.npr.org/player/embed/499867678/499867679",
+        "https://www.npr.org/player/embed/1148846720/1149148322"
+      ],
+      "affiliate_pages": [],
+      "archived_captures": [
+        {
+          "archive_url": "https://web.archive.org/web/20170504000609id_/https://www.npr.org/player/embed/524744989/525551088",
+          "original_url": "https://www.npr.org/player/embed/524744989/525551088",
+          "timestamp": "20170504000609",
+          "source_file": "indicator_npr_story_found_recovery.json",
+          "source_path": "root.results[0]"
+        },
+        {
+          "archive_url": "https://web.archive.org/web/20170504234210id_/https://www.npr.org/player/embed/524744989/525551088",
+          "original_url": "https://www.npr.org/player/embed/524744989/525551088",
+          "timestamp": "20170504234210",
+          "source_file": "indicator_npr_story_found_recovery.json",
+          "source_path": "root.results[0]"
+        },
+        {
+          "archive_url": "https://web.archive.org/web/20170505231217id_/https://www.npr.org/player/embed/524744989/525551088",
+          "original_url": "https://www.npr.org/player/embed/524744989/525551088",
+          "timestamp": "20170505231217",
+          "source_file": "indicator_npr_story_found_recovery.json",
+          "source_path": "root.results[0]"
+        },
+        {
+          "archive_url": "https://web.archive.org/web/20170506225033id_/https://www.npr.org/player/embed/524744989/525551088",
+          "original_url": "https://www.npr.org/player/embed/524744989/525551088",
+          "timestamp": "20170506225033",
+          "source_file": "indicator_npr_story_found_recovery.json",
+          "source_path": "root.results[0]"
+        },
+        {
+          "archive_url": "https://web.archive.org/web/20170508002358id_/https://www.npr.org/player/embed/524744989/525551088",
+          "original_url": "https://www.npr.org/player/embed/524744989/525551088",
+          "timestamp": "20170508002358",
+          "source_file": "indicator_npr_story_found_recovery.json",
+          "source_path": "root.results[0]"
+        },
+        {
+          "archive_url": "https://web.archive.org/web/20170508235410id_/https://www.npr.org/player/embed/524744989/525551088",
+          "original_url": "https://www.npr.org/player/embed/524744989/525551088",
+          "timestamp": "20170508235410",
+          "source_file": "indicator_npr_story_found_recovery.json",
+          "source_path": "root.results[0]"
+        },
+        {
+          "archive_url": "https://web.archive.org/web/20190416150544id_/https://www.npr.org/player/embed/713616857/713616858",
+          "original_url": "https://www.npr.org/player/embed/713616857/713616858",
+          "timestamp": "20190416150544",
+          "source_file": "indicator_npr_story_found_recovery.json",
+          "source_path": "root.results[0]"
+        },
+        {
+          "archive_url": "https://web.archive.org/web/20250801202822id_/https://www.npr.org/player/embed/713616857/713616858",
+          "original_url": "https://www.npr.org/player/embed/713616857/713616858",
+          "timestamp": "20250801202822",
+          "source_file": "indicator_npr_story_found_recovery.json",
+          "source_path": "root.results[0]"
+        },
+        {
+          "archive_url": "https://web.archive.org/web/20250401014726id_/https://www.npr.org/player/embed/499867678/499867679",
+          "original_url": "https://www.npr.org/player/embed/499867678/499867679",
+          "timestamp": "20250401014726",
+          "source_file": "indicator_npr_story_found_recovery.json",
+          "source_path": "root.results[0]"
+        }
+      ],
+      "known_audio_ids": [
+        "525551088",
+        "525551085",
+        "713616858",
+        "499867679",
+        "1149148322"
+      ],
+      "candidate_audio_urls": [
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2&sc=siteplayer",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "story_pages",
+          "source_url": "https://www.npr.org/2019/04/15/713616857/officials-in-sanctuary-cities-condemn-trumps-proposal-to-move-immigrant-detainee?t=1567429578598",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "story_pages",
+          "source_url": "https://www.npr.org/2019/04/15/713616857/officials-in-sanctuary-cities-condemn-trumps-proposal-to-move-immigrant-detainee?t=1567429578598",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7&sc=siteplayer",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "story_pages",
+          "source_url": "https://www.npr.org/sections/ed/2016/10/29/499867678/the-debate-over-bilingual-education-in-california",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "story_pages",
+          "source_url": "https://www.npr.org/sections/ed/2016/10/29/499867678/the-debate-over-bilingual-education-in-california",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2023/01/20230112_atc_dismantling_cas_death_row.mp3?d=283&size=4542843&e=1148846720&sc=siteplayer",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "story_pages",
+          "source_url": "https://www.npr.org/2023/01/13/1148846720/california-says-it-will-dismantle-death-row-the-move-brings-cheers-and-anger#:~:text=Technically%2C%20the%20death%20penalty%20still,the%20state%20in%2017%20years.",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2023/01/20230112_atc_dismantling_cas_death_row.mp3?d=283&size=4542843&e=1148846720&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "story_pages",
+          "source_url": "https://www.npr.org/2023/01/13/1148846720/california-says-it-will-dismantle-death-row-the-move-brings-cheers-and-anger#:~:text=Technically%2C%20the%20death%20penalty%20still,the%20state%20in%2017%20years.",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_florence.mp3?d=20&e=524744989",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "player_pages",
+          "source_url": "https://www.npr.org/player/embed/524744989/525551088",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_waterfall.mp3?d=38&e=524744989",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "player_pages",
+          "source_url": "https://www.npr.org/player/embed/524744989/525551085",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "player_pages",
+          "source_url": "https://www.npr.org/player/embed/713616857/713616858",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "player_pages",
+          "source_url": "https://www.npr.org/player/embed/499867678/499867679",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2023/01/20230112_atc_dismantling_cas_death_row.mp3?d=283&size=4542843&e=1148846720",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "player_pages",
+          "source_url": "https://www.npr.org/player/embed/1148846720/1149148322",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_waterfall.mp3?orgId=1&topicId=1003&aggIds=525773617&d=38&story=524744989",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "wayback_players",
+          "source_url": "https://web.archive.org/web/20170504000609id_/https://www.npr.org/player/embed/524744989/525551088",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_florence.mp3?orgId=1&topicId=1003&aggIds=525773617&d=20&story=524744989",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "wayback_players",
+          "source_url": "https://web.archive.org/web/20170504000609id_/https://www.npr.org/player/embed/524744989/525551088",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?orgId=150&topicId=1003&d=230&p=2&story=713616857&sc=embed",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "wayback_players",
+          "source_url": "https://web.archive.org/web/20190416150544id_/https://www.npr.org/player/embed/713616857/713616858",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "wayback_players",
+          "source_url": "https://web.archive.org/web/20250801202822id_/https://www.npr.org/player/embed/713616857/713616858",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "wayback_players",
+          "source_url": "https://web.archive.org/web/20250401014726id_/https://www.npr.org/player/embed/499867678/499867679",
+          "source_path": "root.results[0]"
+        }
+      ],
+      "audio_candidates_tested": [
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2&sc=siteplayer",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+          "final_url": null,
+          "status_code": null,
+          "content_type": null,
+          "source_url": "https://www.npr.org/2019/04/15/713616857/officials-in-sanctuary-cities-condemn-trumps-proposal-to-move-immigrant-detainee?t=1567429578598",
+          "source_type": "story_pages",
+          "discovered_from": "indicator_npr_story_found_recovery.json"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+          "final_url": null,
+          "status_code": null,
+          "content_type": null,
+          "source_url": "https://www.npr.org/2019/04/15/713616857/officials-in-sanctuary-cities-condemn-trumps-proposal-to-move-immigrant-detainee?t=1567429578598",
+          "source_type": "story_pages",
+          "discovered_from": "indicator_npr_story_found_recovery.json"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7&sc=siteplayer",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+          "final_url": null,
+          "status_code": null,
+          "content_type": null,
+          "source_url": "https://www.npr.org/sections/ed/2016/10/29/499867678/the-debate-over-bilingual-education-in-california",
+          "source_type": "story_pages",
+          "discovered_from": "indicator_npr_story_found_recovery.json"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+          "final_url": null,
+          "status_code": null,
+          "content_type": null,
+          "source_url": "https://www.npr.org/sections/ed/2016/10/29/499867678/the-debate-over-bilingual-education-in-california",
+          "source_type": "story_pages",
+          "discovered_from": "indicator_npr_story_found_recovery.json"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2023/01/20230112_atc_dismantling_cas_death_row.mp3?d=283&size=4542843&e=1148846720&sc=siteplayer",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+          "final_url": null,
+          "status_code": null,
+          "content_type": null,
+          "source_url": "https://www.npr.org/2023/01/13/1148846720/california-says-it-will-dismantle-death-row-the-move-brings-cheers-and-anger#:~:text=Technically%2C%20the%20death%20penalty%20still,the%20state%20in%2017%20years.",
+          "source_type": "story_pages",
+          "discovered_from": "indicator_npr_story_found_recovery.json"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2023/01/20230112_atc_dismantling_cas_death_row.mp3?d=283&size=4542843&e=1148846720&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+          "final_url": null,
+          "status_code": null,
+          "content_type": null,
+          "source_url": "https://www.npr.org/2023/01/13/1148846720/california-says-it-will-dismantle-death-row-the-move-brings-cheers-and-anger#:~:text=Technically%2C%20the%20death%20penalty%20still,the%20state%20in%2017%20years.",
+          "source_type": "story_pages",
+          "discovered_from": "indicator_npr_story_found_recovery.json"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_florence.mp3?d=20&e=524744989",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+          "final_url": null,
+          "status_code": null,
+          "content_type": null,
+          "source_url": "https://www.npr.org/player/embed/524744989/525551088",
+          "source_type": "player_pages",
+          "discovered_from": "indicator_npr_story_found_recovery.json"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_waterfall.mp3?d=38&e=524744989",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+          "final_url": null,
+          "status_code": null,
+          "content_type": null,
+          "source_url": "https://www.npr.org/player/embed/524744989/525551085",
+          "source_type": "player_pages",
+          "discovered_from": "indicator_npr_story_found_recovery.json"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+          "final_url": null,
+          "status_code": null,
+          "content_type": null,
+          "source_url": "https://www.npr.org/player/embed/713616857/713616858",
+          "source_type": "player_pages",
+          "discovered_from": "indicator_npr_story_found_recovery.json"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+          "final_url": null,
+          "status_code": null,
+          "content_type": null,
+          "source_url": "https://www.npr.org/player/embed/499867678/499867679",
+          "source_type": "player_pages",
+          "discovered_from": "indicator_npr_story_found_recovery.json"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2023/01/20230112_atc_dismantling_cas_death_row.mp3?d=283&size=4542843&e=1148846720",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+          "final_url": null,
+          "status_code": null,
+          "content_type": null,
+          "source_url": "https://www.npr.org/player/embed/1148846720/1149148322",
+          "source_type": "player_pages",
+          "discovered_from": "indicator_npr_story_found_recovery.json"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_waterfall.mp3?orgId=1&topicId=1003&aggIds=525773617&d=38&story=524744989",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>",
+          "final_url": null,
+          "status_code": null,
+          "content_type": null,
+          "source_url": "https://web.archive.org/web/20170504000609id_/https://www.npr.org/player/embed/524744989/525551088",
+          "source_type": "wayback_players",
+          "discovered_from": "indicator_npr_story_found_recovery.json"
+        }
+      ],
+      "validation_result": "Credible NPR identity evidence was found (story/page/player IDs or URLs), but no strong episode-specific working NPR-hosted audio file could be validated. Candidate audio was rejected as rejected_request_error.",
+      "rejected_or_dead_end_evidence": [
+        "Twelve candidate audio URLs were tested and all were rejected as request errors.",
+        "The large number of captures preserves evidence of repeated false trails, but not a single exact 2018 housing-title match."
+      ],
+      "remaining_recovery_avenues": [
+        "Inspect the archived player HTML/JSON from the nine Wayback captures for leaked canonical URLs or related-story metadata.",
+        "Search archived affiliate pages carrying the exact title for hidden `nprStoryId` or `audioId` fields."
+      ],
+      "final_classification": "identity_found_but_audio_unresolved"
+    },
+    "consolidated_ledger_episode": {
+      "reference_date": "2018-04-26",
+      "reference_title": "California's Housing Conundrum",
+      "reference_year": 2018,
+      "reference_episode": 33,
+      "aliases": [
+        "California's Housing Conundrum"
+      ],
+      "affiliate_pages": [],
+      "npr_story_ids": [],
+      "npr_player_story_ids": [
+        "524744989",
+        "713616857",
+        "499867678",
+        "1148846720"
+      ],
+      "npr_audio_ids": [
+        "525551088",
+        "525551085",
+        "713616858",
+        "499867679",
+        "1149148322"
+      ],
+      "npr_story_urls": [
+        "https://www.npr.org/2017/04/26/524744989/when-la-erupted-in-anger-a-look-back-at-the-rodney-king-riots",
+        "https://www.npr.org/2016/08/02/488428577/cesar-chavez-the-life-behind-a-legacy-of-farm-labor-rights",
+        "https://www.npr.org/2019/04/15/713616857/officials-in-sanctuary-cities-condemn-trumps-proposal-to-move-immigrant-detainee?t=1567429578598",
+        "https://www.npr.org/sections/ed/2016/10/29/499867678/the-debate-over-bilingual-education-in-california",
+        "https://www.npr.org/2025/11/04/nx-s1-5587742/election-results-california-proposition-50-redistricting",
+        "https://www.npr.org/2023/01/13/1148846720/california-says-it-will-dismantle-death-row-the-move-brings-cheers-and-anger#:~:text=Technically%2C%20the%20death%20penalty%20still,the%20state%20in%2017%20years."
+      ],
+      "player_urls": [
+        "https://www.npr.org/player/embed/524744989/525551088",
+        "https://www.npr.org/player/embed/524744989/525551085",
+        "https://www.npr.org/player/embed/713616857/713616858",
+        "https://www.npr.org/player/embed/499867678/499867679",
+        "https://www.npr.org/player/embed/1148846720/1149148322"
+      ],
+      "archive_captures": [
+        {
+          "archive_url": "https://web.archive.org/web/20170504000609id_/https://www.npr.org/player/embed/524744989/525551088",
+          "original_url": "https://www.npr.org/player/embed/524744989/525551088",
+          "timestamp": "20170504000609",
+          "source_file": "indicator_npr_story_found_recovery.json",
+          "source_path": "root.results[0]"
+        },
+        {
+          "archive_url": "https://web.archive.org/web/20170504234210id_/https://www.npr.org/player/embed/524744989/525551088",
+          "original_url": "https://www.npr.org/player/embed/524744989/525551088",
+          "timestamp": "20170504234210",
+          "source_file": "indicator_npr_story_found_recovery.json",
+          "source_path": "root.results[0]"
+        },
+        {
+          "archive_url": "https://web.archive.org/web/20170505231217id_/https://www.npr.org/player/embed/524744989/525551088",
+          "original_url": "https://www.npr.org/player/embed/524744989/525551088",
+          "timestamp": "20170505231217",
+          "source_file": "indicator_npr_story_found_recovery.json",
+          "source_path": "root.results[0]"
+        },
+        {
+          "archive_url": "https://web.archive.org/web/20170506225033id_/https://www.npr.org/player/embed/524744989/525551088",
+          "original_url": "https://www.npr.org/player/embed/524744989/525551088",
+          "timestamp": "20170506225033",
+          "source_file": "indicator_npr_story_found_recovery.json",
+          "source_path": "root.results[0]"
+        },
+        {
+          "archive_url": "https://web.archive.org/web/20170508002358id_/https://www.npr.org/player/embed/524744989/525551088",
+          "original_url": "https://www.npr.org/player/embed/524744989/525551088",
+          "timestamp": "20170508002358",
+          "source_file": "indicator_npr_story_found_recovery.json",
+          "source_path": "root.results[0]"
+        },
+        {
+          "archive_url": "https://web.archive.org/web/20170508235410id_/https://www.npr.org/player/embed/524744989/525551088",
+          "original_url": "https://www.npr.org/player/embed/524744989/525551088",
+          "timestamp": "20170508235410",
+          "source_file": "indicator_npr_story_found_recovery.json",
+          "source_path": "root.results[0]"
+        },
+        {
+          "archive_url": "https://web.archive.org/web/20190416150544id_/https://www.npr.org/player/embed/713616857/713616858",
+          "original_url": "https://www.npr.org/player/embed/713616857/713616858",
+          "timestamp": "20190416150544",
+          "source_file": "indicator_npr_story_found_recovery.json",
+          "source_path": "root.results[0]"
+        },
+        {
+          "archive_url": "https://web.archive.org/web/20250801202822id_/https://www.npr.org/player/embed/713616857/713616858",
+          "original_url": "https://www.npr.org/player/embed/713616857/713616858",
+          "timestamp": "20250801202822",
+          "source_file": "indicator_npr_story_found_recovery.json",
+          "source_path": "root.results[0]"
+        },
+        {
+          "archive_url": "https://web.archive.org/web/20250401014726id_/https://www.npr.org/player/embed/499867678/499867679",
+          "original_url": "https://www.npr.org/player/embed/499867678/499867679",
+          "timestamp": "20250401014726",
+          "source_file": "indicator_npr_story_found_recovery.json",
+          "source_path": "root.results[0]"
+        }
+      ],
+      "candidate_audio_urls": [
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2&sc=siteplayer",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "story_pages",
+          "source_url": "https://www.npr.org/2019/04/15/713616857/officials-in-sanctuary-cities-condemn-trumps-proposal-to-move-immigrant-detainee?t=1567429578598",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "story_pages",
+          "source_url": "https://www.npr.org/2019/04/15/713616857/officials-in-sanctuary-cities-condemn-trumps-proposal-to-move-immigrant-detainee?t=1567429578598",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7&sc=siteplayer",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "story_pages",
+          "source_url": "https://www.npr.org/sections/ed/2016/10/29/499867678/the-debate-over-bilingual-education-in-california",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "story_pages",
+          "source_url": "https://www.npr.org/sections/ed/2016/10/29/499867678/the-debate-over-bilingual-education-in-california",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2023/01/20230112_atc_dismantling_cas_death_row.mp3?d=283&size=4542843&e=1148846720&sc=siteplayer",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "story_pages",
+          "source_url": "https://www.npr.org/2023/01/13/1148846720/california-says-it-will-dismantle-death-row-the-move-brings-cheers-and-anger#:~:text=Technically%2C%20the%20death%20penalty%20still,the%20state%20in%2017%20years.",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2023/01/20230112_atc_dismantling_cas_death_row.mp3?d=283&size=4542843&e=1148846720&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "story_pages",
+          "source_url": "https://www.npr.org/2023/01/13/1148846720/california-says-it-will-dismantle-death-row-the-move-brings-cheers-and-anger#:~:text=Technically%2C%20the%20death%20penalty%20still,the%20state%20in%2017%20years.",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_florence.mp3?d=20&e=524744989",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "player_pages",
+          "source_url": "https://www.npr.org/player/embed/524744989/525551088",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_waterfall.mp3?d=38&e=524744989",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "player_pages",
+          "source_url": "https://www.npr.org/player/embed/524744989/525551085",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "player_pages",
+          "source_url": "https://www.npr.org/player/embed/713616857/713616858",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "player_pages",
+          "source_url": "https://www.npr.org/player/embed/499867678/499867679",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2023/01/20230112_atc_dismantling_cas_death_row.mp3?d=283&size=4542843&e=1148846720",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "player_pages",
+          "source_url": "https://www.npr.org/player/embed/1148846720/1149148322",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_waterfall.mp3?orgId=1&topicId=1003&aggIds=525773617&d=38&story=524744989",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "wayback_players",
+          "source_url": "https://web.archive.org/web/20170504000609id_/https://www.npr.org/player/embed/524744989/525551088",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_florence.mp3?orgId=1&topicId=1003&aggIds=525773617&d=20&story=524744989",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "wayback_players",
+          "source_url": "https://web.archive.org/web/20170504000609id_/https://www.npr.org/player/embed/524744989/525551088",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?orgId=150&topicId=1003&d=230&p=2&story=713616857&sc=embed",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "wayback_players",
+          "source_url": "https://web.archive.org/web/20190416150544id_/https://www.npr.org/player/embed/713616857/713616858",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "wayback_players",
+          "source_url": "https://web.archive.org/web/20250801202822id_/https://www.npr.org/player/embed/713616857/713616858",
+          "source_path": "root.results[0]"
+        },
+        {
+          "url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "wayback_players",
+          "source_url": "https://web.archive.org/web/20250401014726id_/https://www.npr.org/player/embed/499867678/499867679",
+          "source_path": "root.results[0]"
+        }
+      ],
+      "validation_results": [
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2&sc=siteplayer",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "story_pages",
+          "source_url": "https://www.npr.org/2019/04/15/713616857/officials-in-sanctuary-cities-condemn-trumps-proposal-to-move-immigrant-detainee?t=1567429578598",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "story_pages",
+          "source_url": "https://www.npr.org/2019/04/15/713616857/officials-in-sanctuary-cities-condemn-trumps-proposal-to-move-immigrant-detainee?t=1567429578598",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7&sc=siteplayer",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "story_pages",
+          "source_url": "https://www.npr.org/sections/ed/2016/10/29/499867678/the-debate-over-bilingual-education-in-california",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "story_pages",
+          "source_url": "https://www.npr.org/sections/ed/2016/10/29/499867678/the-debate-over-bilingual-education-in-california",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2023/01/20230112_atc_dismantling_cas_death_row.mp3?d=283&size=4542843&e=1148846720&sc=siteplayer",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "story_pages",
+          "source_url": "https://www.npr.org/2023/01/13/1148846720/california-says-it-will-dismantle-death-row-the-move-brings-cheers-and-anger#:~:text=Technically%2C%20the%20death%20penalty%20still,the%20state%20in%2017%20years.",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2023/01/20230112_atc_dismantling_cas_death_row.mp3?d=283&size=4542843&e=1148846720&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "story_pages",
+          "source_url": "https://www.npr.org/2023/01/13/1148846720/california-says-it-will-dismantle-death-row-the-move-brings-cheers-and-anger#:~:text=Technically%2C%20the%20death%20penalty%20still,the%20state%20in%2017%20years.",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_florence.mp3?d=20&e=524744989",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "player_pages",
+          "source_url": "https://www.npr.org/player/embed/524744989/525551088",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_waterfall.mp3?d=38&e=524744989",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "player_pages",
+          "source_url": "https://www.npr.org/player/embed/524744989/525551085",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2019/04/20190415_atc_sanctuary_cities_and_border_crossers.mp3?d=230&size=3678357&e=713616857&t=progseg&seg=13&p=2",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "player_pages",
+          "source_url": "https://www.npr.org/player/embed/713616857/713616858",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/wesat/2016/10/20161029_wesat_a_vote_for_california_prop_58_lifts_bilingual_education_ban.mp3?d=257&e=499867678&t=progseg&seg=6&p=7",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "player_pages",
+          "source_url": "https://www.npr.org/player/embed/499867678/499867679",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/atc/2023/01/20230112_atc_dismantling_cas_death_row.mp3?d=283&size=4542843&e=1148846720",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "player_pages",
+          "source_url": "https://www.npr.org/player/embed/1148846720/1149148322",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>"
+        },
+        {
+          "candidate_url": "https://ondemand.npr.org/anon.npr-mp3/npr/specials/2017/04/20170425_specials_waterfall.mp3?orgId=1&topicId=1003&aggIds=525773617&d=38&story=524744989",
+          "discovered_from": "indicator_npr_story_found_recovery.json",
+          "source_type": "wayback_players",
+          "source_url": "https://web.archive.org/web/20170504000609id_/https://www.npr.org/player/embed/524744989/525551088",
+          "validation_status": "rejected_request_error",
+          "reason": "<urlopen error [Errno -5] No address associated with hostname>"
+        }
+      ],
+      "current_affiliate_pages": [],
+      "current_npr_story_pages": [
+        {
+          "requested_url": "https://www.npr.org/2017/04/26/524744989/when-la-erupted-in-anger-a-look-back-at-the-rodney-king-riots",
+          "source_type": "npr_story_page",
+          "source_url": null,
+          "status": "error",
+          "error": "<urlopen error [Errno -5] No address associated with hostname>"
+        },
+        {
+          "requested_url": "https://www.npr.org/2016/08/02/488428577/cesar-chavez-the-life-behind-a-legacy-of-farm-labor-rights",
+          "source_type": "npr_story_page",
+          "source_url": null,
+          "status": "error",
+          "error": "<urlopen error [Errno -5] No address associated with hostname>"
+        },
+        {
+          "requested_url": "https://www.npr.org/2019/04/15/713616857/officials-in-sanctuary-cities-condemn-trumps-proposal-to-move-immigrant-detainee?t=1567429578598",
+          "source_type": "npr_story_page",
+          "source_url": null,
+          "status": "error",
+          "error": "<urlopen error [Errno -5] No address associated with hostname>"
+        }
+      ],
+      "current_player_pages": [
+        {
+          "requested_url": "https://www.npr.org/player/embed/524744989/525551088",
+          "source_type": "npr_player_page",
+          "source_url": null,
+          "status": "error",
+          "error": "<urlopen error [Errno -5] No address associated with hostname>"
+        },
+        {
+          "requested_url": "https://www.npr.org/player/embed/524744989/525551085",
+          "source_type": "npr_player_page",
+          "source_url": null,
+          "status": "error",
+          "error": "<urlopen error [Errno -5] No address associated with hostname>"
+        },
+        {
+          "requested_url": "https://www.npr.org/player/embed/713616857/713616858",
+          "source_type": "npr_player_page",
+          "source_url": null,
+          "status": "error",
+          "error": "<urlopen error [Errno -5] No address associated with hostname>"
+        },
+        {
+          "requested_url": "https://www.npr.org/player/embed/499867678/499867679",
+          "source_type": "npr_player_page",
+          "source_url": null,
+          "status": "error",
+          "error": "<urlopen error [Errno -5] No address associated with hostname>"
+        }
+      ],
+      "prior_evidence": [
+        {
+          "file": "indicator_unresolved_batch_recovery.json",
+          "path": "root.results[4]",
+          "status": "unresolved_with_prior_evidence"
+        },
+        {
+          "file": "indicator_unresolved_strict_review.json",
+          "path": "root.results[4]",
+          "status": "needs_fresh_discovery"
+        },
+        {
+          "file": "indicator_unresolved_web_discovery.json",
+          "path": "root.results[3]",
+          "status": "npr_story_found"
+        },
+        {
+          "file": "indicator_unresolved_affiliate_recovery_00_09.json",
+          "path": "root.results[3]",
+          "status": "no_verified_affiliate_match"
+        },
+        {
+          "file": "indicator_npr_story_found_recovery.json",
+          "path": "root.results[0]",
+          "status": "player_found_no_audio"
+        },
+        {
+          "file": "indicator_npr_story_identity_strict.json",
+          "path": "root.results[0]",
+          "status": "no_strong_npr_story_match"
+        },
+        {
+          "file": "indicator_recovery_validation.json",
+          "path": "root.failed_recoveries[4]",
+          "status": "not_recovered"
+        }
+      ],
+      "final_status": "identity_found_but_audio_unresolved",
+      "evidence_confidence_explanation": "Credible NPR identity evidence was found (story/page/player IDs or URLs), but no strong episode-specific working NPR-hosted audio file could be validated. Candidate audio was rejected as rejected_request_error.",
+      "duplicate_reference_dates": []
+    },
+    "wayback_npr_probe_loaded": true,
+    "wayback_player_probe_loaded": true
+  },
+  "exact_cdx_queries": [
+    {
+      "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F26%2F606151956%2Fcalifornia-s-housing-conundrum&matchType=exact&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=8",
+      "rows_returned": 0,
+      "error_type": "network_error",
+      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=business",
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F26%2F606151956%2Fcalifornia-s-housing-conundrum%3Futm_medium%3DJSONFeed%26utm_campaign%3Dbusiness&matchType=exact&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=8",
+      "rows_returned": 0,
+      "error_type": "network_error",
+      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=cardiffgarcia",
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F26%2F606151956%2Fcalifornia-s-housing-conundrum%3Futm_medium%3DJSONFeed%26utm_campaign%3Dcardiffgarcia&matchType=exact&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=8",
+      "rows_returned": 0,
+      "error_type": "network_error",
+      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum?utm_medium=JSONFeed&utm_campaign=planetmoney",
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F26%2F606151956%2Fcalifornia-s-housing-conundrum%3Futm_medium%3DJSONFeed%26utm_campaign%3Dplanetmoney&matchType=exact&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=8",
+      "rows_returned": 0,
+      "error_type": "network_error",
+      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought",
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F25%2F605819103%2Fthe-farm-labor-drought&matchType=exact&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=8",
+      "rows_returned": 0,
+      "error_type": "network_error",
+      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "url": "https://www.npr.org/sections/money/2018/04/25/605819103/the-farm-labor-drought?utm_medium=JSONFeed&utm_campaign=business",
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F25%2F605819103%2Fthe-farm-labor-drought%3Futm_medium%3DJSONFeed%26utm_campaign%3Dbusiness&matchType=exact&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=8",
+      "rows_returned": 0,
+      "error_type": "network_error",
+      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages",
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F27%2F606528176%2Fepisode-838-a-series-of-mysterious-packages&matchType=exact&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=8",
+      "rows_returned": 0,
+      "error_type": "network_error",
+      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "url": "https://www.npr.org/sections/money/2018/04/27/606528176/episode-838-a-series-of-mysterious-packages?utm_medium=JSONFeed&utm_campaign=planetmoney",
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F27%2F606528176%2Fepisode-838-a-series-of-mysterious-packages%3Futm_medium%3DJSONFeed%26utm_campaign%3Dplanetmoney&matchType=exact&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=8",
+      "rows_returned": 0,
+      "error_type": "network_error",
+      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
+    }
+  ],
+  "discovery_cdx_queries": [
+    {
+      "pattern": "https://www.npr.org/sections/money/2018/04/24/",
+      "from": "20180423",
+      "to": "20180430",
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F24%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180423&to=20180430&limit=40",
+      "rows_returned": 0,
+      "error_type": "network_error",
+      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "pattern": "http://www.npr.org/sections/money/2018/04/24/",
+      "from": "20180423",
+      "to": "20180430",
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F24%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180423&to=20180430&limit=40",
+      "rows_returned": 0,
+      "error_type": "network_error",
+      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "pattern": "https://www.npr.org/sections/theindicator/2018/04/24/",
+      "from": "20180423",
+      "to": "20180430",
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Ftheindicator%2F2018%2F04%2F24%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180423&to=20180430&limit=40",
+      "rows_returned": 0,
+      "error_type": "network_error",
+      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "pattern": "http://www.npr.org/sections/theindicator/2018/04/24/",
+      "from": "20180423",
+      "to": "20180430",
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fsections%2Ftheindicator%2F2018%2F04%2F24%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180423&to=20180430&limit=40",
+      "rows_returned": 0,
+      "error_type": "network_error",
+      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "pattern": "https://www.npr.org/sections/money/theindicator/2018/04/24/",
+      "from": "20180423",
+      "to": "20180430",
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2Ftheindicator%2F2018%2F04%2F24%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180423&to=20180430&limit=40",
+      "rows_returned": 0,
+      "error_type": "network_error",
+      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "pattern": "http://www.npr.org/sections/money/theindicator/2018/04/24/",
+      "from": "20180423",
+      "to": "20180430",
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2Ftheindicator%2F2018%2F04%2F24%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180423&to=20180430&limit=40",
+      "rows_returned": 0,
+      "error_type": "network_error",
+      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "pattern": "https://www.npr.org/sections/money/2018/04/25/",
+      "from": "20180423",
+      "to": "20180430",
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F25%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180423&to=20180430&limit=40",
+      "rows_returned": 0,
+      "error_type": "network_error",
+      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "pattern": "http://www.npr.org/sections/money/2018/04/25/",
+      "from": "20180423",
+      "to": "20180430",
+      "query_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.npr.org%2Fsections%2Fmoney%2F2018%2F04%2F25%2F&matchType=prefix&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&from=20180423&to=20180430&limit=40",
+      "rows_returned": 0,
+      "error_type": "network_error",
+      "error_message": "<urlopen error [Errno -5] No address associated with hostname>"
+    }
+  ],
+  "archive_captures_tried": [
+    {
+      "timestamp": "20180426234034",
+      "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_url": "https://web.archive.org/web/20180426234034id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_variant": "id_",
+      "source": "prior_stage_c",
+      "status": "error",
+      "error": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "timestamp": "20180426234034",
+      "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_url": "https://web.archive.org/web/20180426234034/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_variant": "raw",
+      "source": "prior_stage_c",
+      "status": "error",
+      "error": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "timestamp": "20180427195754",
+      "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_url": "https://web.archive.org/web/20180427195754id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_variant": "id_",
+      "source": "prior_cdx_scored",
+      "status": "error",
+      "error": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "timestamp": "20180427195754",
+      "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_url": "https://web.archive.org/web/20180427195754/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_variant": "raw",
+      "source": "prior_cdx_scored",
+      "status": "error",
+      "error": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "timestamp": "20180428205907",
+      "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_url": "https://web.archive.org/web/20180428205907id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_variant": "id_",
+      "source": "prior_cdx_scored",
+      "status": "error",
+      "error": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "timestamp": "20180428205907",
+      "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_url": "https://web.archive.org/web/20180428205907/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_variant": "raw",
+      "source": "prior_cdx_scored",
+      "status": "error",
+      "error": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "timestamp": "20180429213835",
+      "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_url": "https://web.archive.org/web/20180429213835id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_variant": "id_",
+      "source": "prior_cdx_scored",
+      "status": "error",
+      "error": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "timestamp": "20180429213835",
+      "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_url": "https://web.archive.org/web/20180429213835/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_variant": "raw",
+      "source": "prior_cdx_scored",
+      "status": "error",
+      "error": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "timestamp": "20180430222230",
+      "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_url": "https://web.archive.org/web/20180430222230id_/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_variant": "id_",
+      "source": "prior_cdx_scored",
+      "status": "error",
+      "error": "<urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "timestamp": "20180430222230",
+      "original_url": "https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_url": "https://web.archive.org/web/20180430222230/https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum",
+      "archive_variant": "raw",
+      "source": "prior_cdx_scored",
+      "status": "error",
+      "error": "<urlopen error [Errno -5] No address associated with hostname>"
+    }
+  ],
+  "captures_successfully_parsed": 0,
+  "archive_captures_failed": 10,
+  "identity_candidates": [],
+  "additional_qualified_captures": [],
+  "confirmed_identity": null,
+  "player_probes": [],
+  "audio_candidates_tested": [],
+  "validated_audio": [],
+  "audio_candidates_total": 0,
+  "final_classification": "archive_fetch_failed_identity_unresolved",
+  "validation_summary": "Known archive captures failed to fetch/parse; unresolved due to archive/network retrieval, not no-identity proof.",
+  "remaining_recovery_avenues": [
+    "Retry exact timestamps later and widen alternate timestamp retrieval window."
+  ],
+  "story_id": null,
+  "player_ids": []
+}
