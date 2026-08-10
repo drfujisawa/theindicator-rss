@@ -105,7 +105,7 @@ def _read_json(path: Path):
     try:
         with open(path, encoding="utf-8") as fh:
             return json.load(fh)
-    except Exception:
+    except (OSError, json.JSONDecodeError):
         return None
 
 
@@ -392,6 +392,12 @@ def parse_capture_result(target: dict, plan_item: dict, page_text: str) -> dict:
 
 
 def classify_result(diag: dict) -> tuple[str, str, list]:
+    """Return final classification, summary text, and next-step avenues.
+
+    Precedence is intentional: confirmed identity + validated audio first,
+    then identity-only, then archive retrieval failure (to avoid false
+    no-identity conclusions), then rejected candidates, then bounded no-hit.
+    """
     if diag.get("confirmed_identity") and diag.get("validated_audio"):
         return (
             "recovered",
@@ -404,10 +410,32 @@ def classify_result(diag: dict) -> tuple[str, str, list]:
             "Trusted identity recovered but no validated provenance-linked NPR Indicator audio.",
             ["Expand player/audio capture retrieval around confirmed story/page IDs."],
         )
-    if diag.get("captures_successfully_parsed", 0) == 0 and diag.get("archive_captures_failed", 0) > 0:
+    tried_count = len(diag.get("archive_captures_tried", []))
+    if tried_count == 0:
+        return (
+            "no_archive_candidates_attempted",
+            "No archive capture candidates were available within the bounded targeted plan.",
+            ["Expand bounded URL-prefix discovery window and re-run exact CDX timestamp expansion."],
+        )
+    parsed_count = diag.get("captures_successfully_parsed", 0)
+    failed_count = diag.get("archive_captures_failed", 0)
+    if (
+        failed_count > 0
+        and not diag.get("identity_candidates")
+    ):
+        if parsed_count == 0:
+            summary = (
+                "Known archive captures failed to fetch/parse; unresolved due to "
+                "archive/network retrieval, not no-identity proof."
+            )
+        else:
+            summary = (
+                "Archive retrieval failures blocked completion after partial parsing; "
+                "no trusted identity was confirmed."
+            )
         return (
             "archive_fetch_failed_identity_unresolved",
-            "Known archive captures failed to fetch/parse; unresolved due to archive/network retrieval, not no-identity proof.",
+            summary,
             ["Retry exact timestamps later and widen alternate timestamp retrieval window."],
         )
     if diag.get("identity_candidates"):
@@ -569,8 +597,8 @@ def investigate_target(target: dict) -> dict:
     diag = {
         "method": "batch2-final3-targeted-recovery",
         "placeholder": False,
-        "run_complete": True,
-        "run_state": "run_complete",
+        "run_complete": False,
+        "run_state": "running",
         "run_id": _run_id(),
         "generated_at": _now_iso(),
         "reference_date": target["reference_date"],
@@ -584,6 +612,7 @@ def investigate_target(target: dict) -> dict:
         "captures_successfully_parsed": 0,
         "archive_captures_failed": 0,
         "identity_candidates": [],
+        "additional_qualified_captures": [],
         "confirmed_identity": None,
         "player_probes": [],
         "audio_candidates_tested": [],
@@ -613,7 +642,12 @@ def investigate_target(target: dict) -> dict:
                 diag["captures_successfully_parsed"] += 1
                 if parsed.get("episode_qualified") and best_identity is None:
                     best_identity = parsed
-                elif parsed.get("match_score", {}).get("verdict") != "no_match":
+                elif parsed.get("episode_qualified"):
+                    diag["additional_qualified_captures"].append(parsed)
+                elif (
+                    not parsed.get("blocked_adjacent_unrelated")
+                    and parsed.get("match_score", {}).get("verdict") != "no_match"
+                ):
                     diag["identity_candidates"].append(parsed)
             except Exception as exc:
                 capture_result["status"] = "error"
@@ -657,6 +691,8 @@ def investigate_target(target: dict) -> dict:
             "player_url": pe.get("player_url"),
         })
     diag["player_ids"] = player_ids
+    diag["run_complete"] = True
+    diag["run_state"] = "run_complete"
 
     return diag
 

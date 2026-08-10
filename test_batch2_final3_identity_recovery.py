@@ -142,10 +142,23 @@ class TestArchiveFailureClassificationSafety(unittest.TestCase):
             "validated_audio": [],
             "captures_successfully_parsed": 0,
             "archive_captures_failed": 4,
+            "archive_captures_tried": [{}],
             "identity_candidates": [],
         }
         classification, _, _ = probe.classify_result(diag)
         self.assertEqual(classification, "archive_fetch_failed_identity_unresolved")
+
+    def test_no_capture_attempts_not_misreported(self):
+        diag = {
+            "confirmed_identity": None,
+            "validated_audio": [],
+            "captures_successfully_parsed": 0,
+            "archive_captures_failed": 0,
+            "archive_captures_tried": [],
+            "identity_candidates": [],
+        }
+        classification, _, _ = probe.classify_result(diag)
+        self.assertEqual(classification, "no_archive_candidates_attempted")
 
 
 class TestProvenanceLinkedAudioRequirement(unittest.TestCase):
