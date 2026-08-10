@@ -4966,18 +4966,5 @@ For sponsor-free episodes of The Indicator from Planet Money, subscribe to Plane
       <ns3:encoded>Dude, Where's My Trade War?</ns3:encoded>
       <enclosure length="10599785" type="audio/mpeg" url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/06/20180613_indicator_0613_tariffied_final_2.mp3" />
     </item>
-    <item>
-      <title>California's Housing Conundrum</title>
-      <description>California's Housing Conundrum</description>
-      <pubDate>Thu, 26 Apr 2018 04:00:00 +0000</pubDate>
-      <guid isPermaLink="false">606151956</guid>
-      <link>https://www.npr.org/sections/money/2018/04/26/606151956/california-s-housing-conundrum</link>
-      <ns0:block>no</ns0:block>
-      <ns0:title>California's Housing Conundrum</ns0:title>
-      <ns0:explicit>no</ns0:explicit>
-      <ns0:episodeType>full</ns0:episodeType>
-      <ns3:encoded>California's Housing Conundrum</ns3:encoded>
-      <enclosure length="7845083" type="audio/mpeg" url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180426_indicator_sb_827_raw_tape_final.mp3" />
-    </item>
   </channel>
 </rss>

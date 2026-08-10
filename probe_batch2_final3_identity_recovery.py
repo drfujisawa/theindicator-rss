@@ -215,10 +215,14 @@ def load_prior_evidence(reference_date: str) -> dict:
         "wayback_player_probe": BASE_DIR / "indicator_wayback_player_probe.json",
     }
     loaded = {name: _read_json(path) for name, path in files.items()}
+    batch2_summary = loaded.get("batch2_summary")
+    cdx_self_test = batch2_summary.get("cdx_self_test") if isinstance(batch2_summary, dict) else None
+    global_cdx_self_test_passed = bool(cdx_self_test.get("passed")) if isinstance(cdx_self_test, dict) else False
     return {
         "sources": {name: str(path.name) for name, path in files.items()},
         "batch2_diag": loaded["batch2_diag"],
         "batch2_summary_episode": _extract_episode_entry(loaded["batch2_summary"], reference_date),
+        "global_cdx_self_test_passed": global_cdx_self_test_passed,
         "ranked_report_episode": _extract_episode_entry(loaded["ranked_report"], reference_date),
         "consolidated_ledger_episode": _extract_episode_entry(loaded["consolidated_ledger"], reference_date),
         # These probe files are loaded and tracked as required evidence sources.
@@ -365,8 +369,7 @@ def build_capture_retry_plan(target: dict, prior_diag: dict, supplemental_exact_
                     "source": item["source"],
                 })
 
-        if original_url not in selected_exact_cdx_urls:
-            continue
+    for original_url in sorted(selected_exact_cdx_urls):
         cdx = base.wayback_cdx_url_exact(original_url, limit=8)
         exact_cdx_queries.append({
             "url": original_url,
@@ -375,6 +378,7 @@ def build_capture_retry_plan(target: dict, prior_diag: dict, supplemental_exact_
             "error_type": cdx.get("error_type"),
             "error_message": cdx.get("error_message"),
         })
+        source = "exact_cdx_alternate_timestamp" if original_url in by_url else "affiliate_exact_title_seed"
         for row in cdx.get("rows", []):
             ts = row.get("timestamp")
             if not ts:
@@ -385,7 +389,7 @@ def build_capture_retry_plan(target: dict, prior_diag: dict, supplemental_exact_
                     "url": original_url,
                     "archive_url": variant["archive_url"],
                     "archive_variant": variant["variant"],
-                    "source": "exact_cdx_alternate_timestamp",
+                    "source": source,
                 })
 
     uniq = []
@@ -526,9 +530,10 @@ def parse_capture_result(target: dict, plan_item: dict, page_text: str) -> dict:
 def classify_result(diag: dict) -> tuple[str, str, list]:
     """Return final classification, summary text, and next-step avenues.
 
-    Precedence is intentional: confirmed identity + validated audio first,
-    then identity-only, then archive retrieval failure (to avoid false
-    no-identity conclusions), then rejected candidates, then bounded no-hit.
+    Precedence is intentional: recovered > identity-only unresolved >
+    unresolved failure/incomplete states > lower-priority unresolved.
+    lower_priority_unresolved is reserved for conclusive bounded-search misses
+    only (self-test passed, required stages ran, no unresolved retrieval errors).
     """
     if diag.get("confirmed_identity") and diag.get("validated_audio"):
         return (
@@ -541,6 +546,30 @@ def classify_result(diag: dict) -> tuple[str, str, list]:
             "identity_found_audio_unresolved",
             "Trusted identity recovered but no validated provenance-linked NPR Indicator audio.",
             ["Expand player/audio capture retrieval around confirmed story/page IDs."],
+        )
+    if diag.get("global_cdx_self_test_passed") is not True:
+        return (
+            "network_failure_identity_unresolved",
+            "Global CDX self-test did not pass; investigation is inconclusive and cannot be demoted.",
+            ["Re-run after CDX self-test succeeds."],
+        )
+    had_query_failure = any(q.get("error_type") for q in diag.get("exact_cdx_queries", [])) or any(
+        q.get("error_type") for q in diag.get("discovery_cdx_queries", [])
+    )
+    if diag.get("archive_captures_failed", 0) > 0 or had_query_failure:
+        return (
+            "archive_fetch_failed_identity_unresolved",
+            (
+                "Archive/network retrieval failures occurred during bounded search; "
+                "identity remains unresolved and cannot be demoted."
+            ),
+            ["Retry bounded retrieval when archive/network conditions improve."],
+        )
+    if not diag.get("bounded_search_completed"):
+        return (
+            "incomplete_bounded_search_identity_unresolved",
+            "Bounded search did not complete required discovery/capture stages; unresolved status must remain non-demoted.",
+            ["Complete bounded capture/discovery stages and re-run."],
         )
     return (
         "lower_priority_unresolved",
@@ -716,6 +745,7 @@ def investigate_target(target: dict) -> dict:
         "reference_episode": target["reference_episode"],
         "request_budget": request_budget()["per_episode"],
         "prior_evidence": prior,
+        "global_cdx_self_test_passed": prior.get("global_cdx_self_test_passed") is True,
         "exact_title_affiliate_archive_evidence": affiliate_evidence,
         "exact_cdx_queries": exact_cdx_queries,
         "discovery_cdx_queries": [],
@@ -729,6 +759,9 @@ def investigate_target(target: dict) -> dict:
         "audio_candidates_tested": [],
         "validated_audio": [],
         "audio_candidates_total": 0,
+        "bounded_discovery_required": False,
+        "bounded_discovery_ran": False,
+        "bounded_search_completed": False,
     }
 
     best_identity = None
@@ -769,8 +802,16 @@ def investigate_target(target: dict) -> dict:
     run_capture_attempts(plan)
 
     if _should_run_broad_discovery(target, diag):
+        diag["bounded_discovery_required"] = True
+        diag["bounded_discovery_ran"] = True
         discovery_plan = _collect_discovery_candidates(target, diag)
         run_capture_attempts(discovery_plan)
+
+    capture_stage_ran = len(diag["archive_captures_tried"]) > 0
+    required_stages_ran = capture_stage_ran and (
+        not diag["bounded_discovery_required"] or diag["bounded_discovery_ran"]
+    )
+    diag["bounded_search_completed"] = required_stages_ran
 
     if best_identity is not None:
         diag["confirmed_identity"] = {
