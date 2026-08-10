@@ -1,6 +1,6 @@
 {
   "next_date": "2017-11-05T16:46:00-04:00",
-  "episode_count": 1470,
+  "episode_count": 1473,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -13231,6 +13231,33 @@
       "audio_id": "730090982",
       "player_url": "https://www.npr.org/player/embed/718711109/730090982",
       "description": "The pay-to-play way your supermarket's shelves work."
+    },
+    {
+      "title": "Saudi Arabia & The Paradox of Plenty",
+      "date": "2018-09-24T00:00:00-04:00",
+      "npr_url": "https://www.npr.org/sections/money/2018/09/24/651231709/saudi-arabia-the-paradox-of-plenty",
+      "story_id": "651231709",
+      "audio_id": "651231309",
+      "player_url": "https://www.npr.org/player/embed/651231309/651260169",
+      "description": "Saudi Arabia & The Paradox of Plenty"
+    },
+    {
+      "title": "Privacy Please: Why Public Companies Go Private (Or Vice Versa)",
+      "date": "2018-08-10T00:00:00-04:00",
+      "npr_url": "https://www.npr.org/sections/money/2018/08/10/637642102/privacy-please-why-public-companies-go-private-or-vice-versa",
+      "story_id": "637642102",
+      "audio_id": "637639462",
+      "player_url": "https://www.npr.org/player/embed/637639462/637649784",
+      "description": "Privacy Please: Why Public Companies Go Private (Or Vice Versa)"
+    },
+    {
+      "title": "Fed Accounts For All!",
+      "date": "2018-07-11T00:00:00-04:00",
+      "npr_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
+      "story_id": "628173553",
+      "audio_id": "628169160",
+      "player_url": "https://www.npr.org/player/embed/628169160/628176595",
+      "description": "Fed Accounts For All!"
     }
   ]
 }
