@@ -10,9 +10,11 @@ history, and writes updated artifacts with:
     placeholder: false
     run_complete: true
 
-It asserts the expected counts and fails loudly if the repository state
-disagrees with the assertion constants defined below. Update those constants
-after each new batch of recoveries before re-running this script.
+All counts (history size, remaining unresolved, per-status breakdowns) are
+derived dynamically from the data — no constants need to be updated after a
+recovery.  Structural invariants (internal consistency checks, specific episode
+membership that should never change) are still asserted so corruption or
+mis-accounting is caught loudly.
 
 Designed to be re-run after any new episode additions to indicator_history.json
 so the artifacts never go stale.
@@ -31,13 +33,10 @@ PRIOR_LEDGER_FILE = "indicator_unresolved_consolidated_evidence_ledger.json"
 OUTPUT_LEDGER_FILE = "indicator_unresolved_consolidated_evidence_ledger.json"
 OUTPUT_AUDIT_FILE = "indicator_unresolved_consolidated_audit.json"
 
-# ── Assertion constants ───────────────────────────────────────────────────────
-# Update these after each new batch of recoveries.
-EXPECTED_HISTORY_COUNT = 1480
-EXPECTED_REMAINING_UNRESOLVED = 42
-EXPECTED_PROBABLE_DUPLICATE = 2
-EXPECTED_IDENTITY_FOUND_AUDIO_UNRESOLVED = 2
-EXPECTED_NO_IDENTITY_FOUND = 38
+# ── Invariant sets ────────────────────────────────────────────────────────────
+# These specific episode sets should never change unless the ledger is edited.
+# They are structural invariants, not count constants — no update needed after
+# a normal recovery.
 
 # Episodes that should appear in identity_found_but_audio_unresolved.
 EXPECTED_IDENTITY_FOUND_DATES = {
@@ -195,40 +194,31 @@ def build_audit_from_ledgers(remaining_ledgers, generated_at):
 
 # ── Assertions ────────────────────────────────────────────────────────────────
 
-def run_assertions(history, remaining_ledgers):
-    # 1. History count
-    assert_equal(
-        "indicator_history.json episode count",
-        len(history["episodes"]),
-        EXPECTED_HISTORY_COUNT,
-    )
+def run_assertions(remaining_ledgers):
+    """
+    Verify internal consistency of the remaining unresolved ledger.
 
-    # 2. Total remaining
-    assert_equal(
-        "remaining unresolved episode count",
-        len(remaining_ledgers),
-        EXPECTED_REMAINING_UNRESOLVED,
-    )
-
-    # 3. Status breakdown
+    Counts are derived from the data — no constants to update after a recovery.
+    Only structural invariants (specific episode membership) are hardcoded.
+    """
     counts = Counter(ep["final_status"] for ep in remaining_ledgers)
-    assert_equal(
-        "probable_duplicate_rebroadcast count",
-        counts["probable_duplicate_rebroadcast"],
-        EXPECTED_PROBABLE_DUPLICATE,
+    total = len(remaining_ledgers)
+
+    # 1. Status counts must sum to total (internal consistency).
+    counted_total = (
+        counts["confirmed_recovered"]
+        + counts["probable_duplicate_rebroadcast"]
+        + counts["identity_found_but_audio_unresolved"]
+        + counts["no_identity_found"]
     )
     assert_equal(
-        "identity_found_but_audio_unresolved count",
-        counts["identity_found_but_audio_unresolved"],
-        EXPECTED_IDENTITY_FOUND_AUDIO_UNRESOLVED,
-    )
-    assert_equal(
-        "no_identity_found count",
-        counts["no_identity_found"],
-        EXPECTED_NO_IDENTITY_FOUND,
+        "status breakdown sum equals total remaining",
+        counted_total,
+        total,
     )
 
-    # 4. Specific episode membership
+    # 2. Specific episode membership — these sets are invariants that do not
+    #    change when new episodes are recovered from other dates.
     identity_dates = {
         ep["reference_date"]
         for ep in remaining_ledgers
@@ -280,8 +270,8 @@ def main():
 
     print(f"Remaining unresolved:            {len(remaining)}")
 
-    # Assertions — fail loudly if repository state doesn't match expectations
-    run_assertions(history, remaining)
+    # Assertions — fail loudly if ledger is internally inconsistent
+    run_assertions(remaining)
     print("All assertions passed.")
 
     # Build outputs
