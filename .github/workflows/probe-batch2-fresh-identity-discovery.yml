@@ -9,7 +9,7 @@ permissions:
 jobs:
   batch2-fresh-identity-discovery:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 75
 
     steps:
       - name: Check out repository

@@ -1450,7 +1450,7 @@ class TestWorkflowConfiguration(unittest.TestCase):
         )
         self.assertTrue(wf_path.exists(), "batch-2 workflow file must exist")
 
-    def test_workflow_timeout_is_at_least_60_minutes(self):
+    def test_workflow_timeout_is_at_least_75_minutes(self):
         try:
             wf = self._load_workflow()
         except Exception:
@@ -1459,8 +1459,8 @@ class TestWorkflowConfiguration(unittest.TestCase):
         for job_name, job in jobs.items():
             timeout = job.get("timeout-minutes", 360)
             self.assertGreaterEqual(
-                timeout, 60,
-                f"Job '{job_name}' timeout-minutes={timeout} is less than 60"
+                timeout, 75,
+                f"Job '{job_name}' timeout-minutes={timeout} is less than 75"
             )
 
     def test_workflow_commits_only_batch2_diagnostic_files(self):
