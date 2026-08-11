@@ -51,15 +51,18 @@
   <p>
     This is an unofficial archival RSS feed for NPR's
     <strong>The Indicator from Planet Money</strong>.
+    The archive covers <strong>1,760+ episodes from April 2018 to the present</strong>.
   </p>
 
   <p>
     NPR's official RSS feed only keeps a limited number of recent episodes.
-    This feed preserves episodes instead of removing them as they disappear
-    from NPR's official feed.
+    This feed preserves every episode instead of removing them as they
+    disappear from NPR's official feed.
+    A small number of very early episodes could not be matched to a
+    still-accessible audio file and are excluded.
   </p>
 
-  <h2>RSS Feed</h2>
+  <h2>Subscribe</h2>
 
   <p>
     <a class="button" href="theindicator_feed.xml">
@@ -71,22 +74,36 @@
     https://drfujisawa.github.io/theindicator-rss/theindicator_feed.xml
   </p>
 
+  <p>
+    Paste the URL above into any podcast app that accepts a custom RSS feed
+    (Overcast, Pocket Casts, AntennaPod, Castro, etc.).
+  </p>
+
   <h2>How it works</h2>
 
   <p>
-    The archive automatically checks NPR's official feed for new episodes.
-    New episodes are added to this feed, while previously archived episodes
-    are retained.
+    A GitHub Actions workflow checks NPR's official feed every six hours.
+    New episodes are added to the archive automatically while all previously
+    archived episodes are retained permanently.
   </p>
 
   <p>
-    The next goal is to restore older episodes dating back to the launch of
-    The Indicator in 2017.
+    Historical episodes back to April 2018 were recovered by crawling NPR's
+    web archive and resolving audio URLs from NPR's CDN and affiliate sources.
+  </p>
+
+  <h2>Source</h2>
+
+  <p>
+    <a href="https://github.com/drfujisawa/theindicator-rss">
+      github.com/drfujisawa/theindicator-rss
+    </a>
   </p>
 
   <footer>
-    Unofficial project. The Indicator and NPR are trademarks of their
-    respective owners.
+    Unofficial, independent project — not affiliated with or endorsed by NPR.
+    Podcast audio remains the property of NPR and respective rights holders.
+    This site does not host audio; all links point to NPR/Simplecast-distributed files.
   </footer>
 
 </body>
