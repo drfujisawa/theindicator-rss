@@ -13,9 +13,9 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
 
-INPUT_FILE = str(REPO_ROOT / "indicator_completeness_audit.json")
-OUTPUT_LEDGER_FILE = str(REPO_ROOT / "indicator_unresolved_consolidated_evidence_ledger.json")
-OUTPUT_AUDIT_FILE = str(REPO_ROOT / "indicator_unresolved_consolidated_audit.json")
+INPUT_FILE = str(REPO_ROOT / "data" / "audits" / "indicator_completeness_audit.json")
+OUTPUT_LEDGER_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_unresolved_consolidated_evidence_ledger.json")
+OUTPUT_AUDIT_FILE = str(REPO_ROOT / "data" / "audits" / "indicator_unresolved_consolidated_audit.json")
 PRIOR_ARTIFACT_FILES = [
     "indicator_unresolved_batch_recovery.json",
     "indicator_unresolved_strict_review.json",

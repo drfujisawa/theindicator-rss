@@ -1495,6 +1495,7 @@ class TestProductionFilesUntouched(unittest.TestCase):
         src = self._collect_write_paths()
         # Check that SUMMARY_OUTPUT and per-episode filenames are batch2-specific
         self.assertIn("batch2_fresh_identity_discovery", probe.SUMMARY_OUTPUT)
+        self.assertIn("/data/recovery/", probe.SUMMARY_OUTPUT)
         self.assertNotIn("indicator_history.json", probe.SUMMARY_OUTPUT)
 
     def test_output_filenames_are_batch2_specific(self):

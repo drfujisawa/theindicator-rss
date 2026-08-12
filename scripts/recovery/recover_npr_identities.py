@@ -11,8 +11,8 @@ from urllib.request import Request, urlopen
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
-INPUT_FILE = str(REPO_ROOT / "indicator_recovered_episodes.json")
-OUTPUT_FILE = str(REPO_ROOT / "indicator_npr_identities.json")
+INPUT_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_recovered_episodes.json")
+OUTPUT_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_npr_identities.json")
 TIMEOUT = 30
 
 HEADERS = {

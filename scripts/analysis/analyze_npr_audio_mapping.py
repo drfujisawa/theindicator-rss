@@ -9,10 +9,10 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
 
-RECOVERY_FILE = str(REPO_ROOT / "indicator_npr_audio_recovery.json")
-VALIDATION_FILE = str(REPO_ROOT / "indicator_npr_audio_validation.json")
-PLAYER_FILE = str(REPO_ROOT / "indicator_npr_player_resolution.json")
-OUTPUT_FILE = str(REPO_ROOT / "indicator_npr_audio_mapping.json")
+RECOVERY_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_npr_audio_recovery.json")
+VALIDATION_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_npr_audio_validation.json")
+PLAYER_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_npr_player_resolution.json")
+OUTPUT_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_npr_audio_mapping.json")
 def load_json(filename):
     with open(
         filename,

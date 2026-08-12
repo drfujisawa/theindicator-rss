@@ -9,7 +9,7 @@ from urllib.error import HTTPError, URLError
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
-OUTPUT_FILE = str(REPO_ROOT / "indicator_npr_feed_probe.json")
+OUTPUT_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_npr_feed_probe.json")
 FEEDS = [
     {
         "name": "official_npr_indicator_feed",

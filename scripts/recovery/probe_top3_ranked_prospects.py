@@ -39,9 +39,9 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 BASE_DIR = Path(__file__).parent
 
-RANKED_REPORT_FILE = str(REPO_ROOT / "indicator_identity_audio_unresolved_ranked_report.json")
-LEDGER_FILE = str(REPO_ROOT / "indicator_unresolved_consolidated_evidence_ledger.json")
-SUMMARY_OUTPUT = str(REPO_ROOT / "top3_prospects_summary.json")
+RANKED_REPORT_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_identity_audio_unresolved_ranked_report.json")
+LEDGER_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_unresolved_consolidated_evidence_ledger.json")
+SUMMARY_OUTPUT = str(REPO_ROOT / "archive" / "recovery" / "top3_prospects_summary.json")
 TARGET_RANKS = {1, 2, 3}
 
 HEADERS = {
@@ -616,7 +616,7 @@ def run_investigation():
         diag = investigate_episode(episode, ledger)
 
         out_file = build_episode_output_filename(episode)
-        out_path = BASE_DIR / out_file
+        out_path = REPO_ROOT / "archive" / "recovery" / out_file
         with open(out_path, "w", encoding="utf-8") as fh:
             json.dump(diag, fh, indent=2, ensure_ascii=False)
 
@@ -637,7 +637,7 @@ def run_investigation():
             "validation_summary": diag["validation_summary"],
         })
 
-    summary_path = BASE_DIR / SUMMARY_OUTPUT
+    summary_path = Path(SUMMARY_OUTPUT)
     with open(summary_path, "w", encoding="utf-8") as fh:
         json.dump(summary, fh, indent=2, ensure_ascii=False)
 

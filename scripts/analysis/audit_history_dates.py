@@ -6,7 +6,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
 INPUT_FILE = str(REPO_ROOT / "indicator_history.json")
-OUTPUT_FILE = str(REPO_ROOT / "indicator_history_date_audit.json")
+OUTPUT_FILE = str(REPO_ROOT / "data" / "audits" / "indicator_history_date_audit.json")
 START_DATE = datetime.fromisoformat("2018-03-01")
 END_DATE = datetime.fromisoformat("2019-04-30T23:59:59")
 

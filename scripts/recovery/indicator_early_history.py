@@ -13,7 +13,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
 HISTORY_FILE = str(REPO_ROOT / "indicator_history.json")
-OUTPUT_FILE = str(REPO_ROOT / "indicator_early_audit.json")
+OUTPUT_FILE = str(REPO_ROOT / "data" / "audits" / "indicator_early_audit.json")
 REFERENCE_URLS = {
     2018: (
         "https://thetvdb.com/series/"

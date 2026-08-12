@@ -240,7 +240,7 @@ class TestRankedReportIntegration(unittest.TestCase):
     """
 
     RANKED_REPORT = (
-        REPO_ROOT / "indicator_identity_audio_unresolved_ranked_report.json"
+        REPO_ROOT / "data" / "recovery" / "indicator_identity_audio_unresolved_ranked_report.json"
     )
 
     def setUp(self):

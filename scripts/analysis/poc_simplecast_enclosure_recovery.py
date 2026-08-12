@@ -30,7 +30,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 HISTORY_FILE = str(REPO_ROOT / "indicator_history.json")
 FEED_FILE = str(REPO_ROOT / "theindicator_feed.xml")
-OUTPUT_FILE = str(REPO_ROOT / "poc_simplecast_results.json")
+OUTPUT_FILE = str(REPO_ROOT / "archive" / "recovery" / "poc_simplecast_results.json")
 TIMEOUT = 30
 DELAY = 1.0  # seconds between requests
 

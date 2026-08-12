@@ -12,8 +12,8 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
 
-INPUT_FILE = str(REPO_ROOT / "indicator_unresolved_strict_review.json")
-OUTPUT_FILE = str(REPO_ROOT / "indicator_unresolved_web_discovery.json")
+INPUT_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_unresolved_strict_review.json")
+OUTPUT_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_unresolved_web_discovery.json")
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 "

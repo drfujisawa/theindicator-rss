@@ -8,8 +8,8 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
 
-INPUT_FILE = str(REPO_ROOT / "indicator_npr_filename_neighbors.json")
-OUTPUT_FILE = str(REPO_ROOT / "indicator_npr_filename_slug_analysis.json")
+INPUT_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_npr_filename_neighbors.json")
+OUTPUT_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_npr_filename_slug_analysis.json")
 def normalize(value):
     if not value:
         return ""

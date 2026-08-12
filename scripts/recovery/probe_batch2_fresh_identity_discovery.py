@@ -69,8 +69,9 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 # ---------------------------------------------------------------------------
 
 BASE_DIR = Path(__file__).parent
+OUTPUT_DIR = REPO_ROOT / "data" / "recovery"
 
-SUMMARY_OUTPUT = str(REPO_ROOT / "batch2_fresh_identity_discovery_summary.json")
+SUMMARY_OUTPUT = str(OUTPUT_DIR / "batch2_fresh_identity_discovery_summary.json")
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (compatible; IndicatorFreshIdentityProbe/1.0)"
@@ -1785,8 +1786,8 @@ def _write_json(path: Path, payload: dict):
 
 def write_placeholders():
     for target in TARGETS:
-        _write_json(BASE_DIR / output_filename(target["reference_date"]), _placeholder_diag(target))
-    _write_json(BASE_DIR / SUMMARY_OUTPUT, _placeholder_summary(TARGETS))
+        _write_json(OUTPUT_DIR / output_filename(target["reference_date"]), _placeholder_diag(target))
+    _write_json(Path(SUMMARY_OUTPUT), _placeholder_summary(TARGETS))
 
 
 # ---------------------------------------------------------------------------
@@ -1834,7 +1835,7 @@ def run(write_placeholders_only: bool = False):
                 "recovered": 0,
             },
         }
-        _write_json(BASE_DIR / SUMMARY_OUTPUT, self_test_summary)
+        _write_json(Path(SUMMARY_OUTPUT), self_test_summary)
         print(f"\nSummary written: {SUMMARY_OUTPUT}")
         return self_test_summary
 
@@ -1904,12 +1905,12 @@ def run(write_placeholders_only: bool = False):
         summary["run_state"] = "failed"
 
     for ref_date, diag in episode_results:
-        out_path = BASE_DIR / output_filename(ref_date)
+        out_path = OUTPUT_DIR / output_filename(ref_date)
         _write_json(out_path, diag)
         print(f"  → Written: {out_path.name}")
         print(f"  → {diag.get('validation_summary') or diag.get('final_classification')}")
 
-    summary_path = BASE_DIR / SUMMARY_OUTPUT
+    summary_path = Path(SUMMARY_OUTPUT)
     _write_json(summary_path, summary)
     print(f"\nSummary written: {summary_path.name}")
     return summary

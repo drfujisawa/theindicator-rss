@@ -60,12 +60,13 @@ in `indicator_enclosure_map.json`.
 
 ## Project structure
 
+### Root (production files only)
+
 | File / script | Purpose |
 |---|---|
 | `theindicator_feed.xml` | The published RSS feed (1,760+ episodes) |
 | `theindicator_rss.py` | Automated feed updater (runs every 6 hours) |
 | `theindicator_history.py` | Crawls NPR's archive to build episode history |
-| `scripts/maintenance/build_complete_feed.py` | One-time build: merges history + enclosure map into the feed |
 | `recover_enclosures_bulk.py` | Bulk audio-URL recovery for history entries |
 | `indicator_history.json` | Catalogue of all known episodes (metadata) |
 | `indicator_enclosure_map.json` | Resolved audio URLs for history episodes |
@@ -74,7 +75,37 @@ in `indicator_enclosure_map.json`.
 | `.github/workflows/crawl-history.yml` | Manual history-crawl workflow |
 | `.github/workflows/recover-enclosures-bulk.yml` | Manual enclosure-recovery workflow |
 
-Non-production scripts are organized under `scripts/` (`maintenance`, `recovery`, `analysis`) and tests live under `tests/`. Historical `.json` artifacts remain at repository root as retained evidence/data outputs.
+### scripts/
+
+Non-production scripts organized by function (see `scripts/README.md`):
+
+| Directory | Contents |
+|---|---|
+| `scripts/maintenance/` | Feed build, completeness audit, reconciliation |
+| `scripts/recovery/` | Audio recovery, probing, and identity-resolution tools |
+| `scripts/analysis/` | Analysis, inspection, and reporting tools |
+
+### data/
+
+Active datasets read and written by maintained scripts (see `data/README.md`):
+
+| Directory | Contents |
+|---|---|
+| `data/recovery/` | Active recovery artefacts (audio mappings, resolution results, unresolved-episode sets) |
+| `data/audits/` | Completeness and reconciliation audit datasets |
+
+### archive/
+
+Retained historical evidence (see `archive/recovery/README.md`):
+
+| Directory | Contents |
+|---|---|
+| `archive/diagnostics/` | Per-date diagnostic outputs from earlier probe campaigns |
+| `archive/recovery/` | Completed one-shot probe summaries and identity-discovery evidence |
+
+### tests/
+
+Unit and integration tests: `tests/`.
 
 ## Credits
 
