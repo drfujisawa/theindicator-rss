@@ -20,7 +20,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
 BASE_DIR = Path(__file__).parent
-SUMMARY_OUTPUT = str(REPO_ROOT / "batch2_final3_identity_recovery_summary.json")
+SUMMARY_OUTPUT = str(REPO_ROOT / "archive" / "recovery" / "batch2_final3_identity_recovery_summary.json")
 REQUEST_TIMEOUT_SECONDS = base.REQUEST_TIMEOUT_SECONDS
 WAYBACK_DISCOVERY_RETRIES = base.WAYBACK_DISCOVERY_RETRIES
 CONTENT_RETRIES = 2
@@ -140,7 +140,7 @@ def _placeholder_summary() -> dict:
 
 def write_placeholders():
     for target in TARGETS:
-        _write_json(BASE_DIR / output_filename(target["reference_date"]), _placeholder_diag(target))
+        _write_json(REPO_ROOT / "archive" / "recovery" / output_filename(target["reference_date"]), _placeholder_diag(target))
     _write_json(BASE_DIR / SUMMARY_OUTPUT, _placeholder_summary())
 
 
@@ -208,12 +208,12 @@ def _extract_episode_entry(container, reference_date):
 
 def load_prior_evidence(reference_date: str) -> dict:
     files = {
-        "batch2_diag": BASE_DIR / f"batch2_fresh_identity_discovery_{reference_date}_diag.json",
-        "batch2_summary": BASE_DIR / "batch2_fresh_identity_discovery_summary.json",
-        "ranked_report": BASE_DIR / "indicator_identity_audio_unresolved_ranked_report.json",
-        "consolidated_ledger": BASE_DIR / "indicator_unresolved_consolidated_evidence_ledger.json",
-        "wayback_npr_probe": BASE_DIR / "indicator_wayback_npr_probe.json",
-        "wayback_player_probe": BASE_DIR / "indicator_wayback_player_probe.json",
+        "batch2_diag": REPO_ROOT / "archive" / "recovery" / f"batch2_fresh_identity_discovery_{reference_date}_diag.json",
+        "batch2_summary": REPO_ROOT / "archive" / "recovery" / "batch2_fresh_identity_discovery_summary.json",
+        "ranked_report": REPO_ROOT / "data" / "recovery" / "indicator_identity_audio_unresolved_ranked_report.json",
+        "consolidated_ledger": REPO_ROOT / "data" / "recovery" / "indicator_unresolved_consolidated_evidence_ledger.json",
+        "wayback_npr_probe": REPO_ROOT / "data" / "recovery" / "indicator_wayback_npr_probe.json",
+        "wayback_player_probe": REPO_ROOT / "data" / "recovery" / "indicator_wayback_player_probe.json",
     }
     loaded = {name: _read_json(path) for name, path in files.items()}
     batch2_summary = loaded.get("batch2_summary")
@@ -311,7 +311,7 @@ def _load_affiliate_exact_title_evidence(target: dict) -> dict:
     exact_title_urls = []
 
     for filename in files:
-        payload = _read_json(BASE_DIR / filename)
+        payload = _read_json(REPO_ROOT / "data" / "recovery" / filename)
         if not isinstance(payload, dict):
             continue
         for item in payload.get("results", []):
@@ -912,7 +912,7 @@ def run(write_placeholders_only: bool = False):
         summary["run_state"] = "failed"
 
     for ref_date, diag in episode_diags:
-        _write_json(BASE_DIR / output_filename(ref_date), diag)
+        _write_json(REPO_ROOT / "archive" / "recovery" / output_filename(ref_date), diag)
     _write_json(BASE_DIR / SUMMARY_OUTPUT, summary)
     return summary
 

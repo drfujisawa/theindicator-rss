@@ -8,9 +8,9 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
 
-INPUT_LEDGER_FILE = str(REPO_ROOT / "indicator_unresolved_consolidated_evidence_ledger.json")
-INPUT_AUDIT_FILE = str(REPO_ROOT / "indicator_unresolved_consolidated_audit.json")
-OUTPUT_REPORT_FILE = str(REPO_ROOT / "indicator_identity_audio_unresolved_ranked_report.json")
+INPUT_LEDGER_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_unresolved_consolidated_evidence_ledger.json")
+INPUT_AUDIT_FILE = str(REPO_ROOT / "data" / "audits" / "indicator_unresolved_consolidated_audit.json")
+OUTPUT_REPORT_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_identity_audio_unresolved_ranked_report.json")
 TARGET_STATUS = "identity_found_but_audio_unresolved"
 BASE_DIR = Path(__file__).resolve().parent
 

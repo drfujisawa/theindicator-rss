@@ -9,8 +9,8 @@ from urllib.error import HTTPError, URLError
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
-INPUT_FILE = str(REPO_ROOT / "indicator_npr_audio_review.json")
-OUTPUT_FILE = str(REPO_ROOT / "indicator_npr_player_resolution.json")
+INPUT_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_npr_audio_review.json")
+OUTPUT_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_npr_player_resolution.json")
 TIMEOUT = 30
 
 HEADERS = {

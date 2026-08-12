@@ -10,8 +10,8 @@ from urllib.parse import urljoin
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
-AUDIT_FILE = str(REPO_ROOT / "indicator_early_audit.json")
-OUTPUT_FILE = str(REPO_ROOT / "indicator_recovery_test.json")
+AUDIT_FILE = str(REPO_ROOT / "data" / "audits" / "indicator_early_audit.json")
+OUTPUT_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_recovery_test.json")
 TEST_LIMIT = 10
 TIMEOUT = 30
 

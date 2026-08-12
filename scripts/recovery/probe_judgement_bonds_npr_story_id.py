@@ -11,7 +11,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
 
-OUTPUT_FILE = str(REPO_ROOT / "indicator_judgement_bonds_npr_story_id_probe.json")
+OUTPUT_FILE = str(REPO_ROOT / "archive" / "recovery" / "indicator_judgement_bonds_npr_story_id_probe.json")
 TARGET_TITLE = "Judgement Bonds"
 TARGET_DATE = "2018-10-29"
 NPR_STORY_ID = "661827210"

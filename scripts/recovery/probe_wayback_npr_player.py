@@ -9,7 +9,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
 
-OUTPUT_FILE = str(REPO_ROOT / "indicator_wayback_player_probe.json")
+OUTPUT_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_wayback_player_probe.json")
 TARGETS = [
     {
         "title": "Paranormal Profits",

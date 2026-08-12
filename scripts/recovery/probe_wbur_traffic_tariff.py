@@ -10,7 +10,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
 
-OUTPUT_FILE = str(REPO_ROOT / "indicator_wbur_traffic_tariff_probe.json")
+OUTPUT_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_wbur_traffic_tariff_probe.json")
 PAGE_URL = (
     "https://www.wbur.org/npr/"
     "716127469/the-traffic-tariff"

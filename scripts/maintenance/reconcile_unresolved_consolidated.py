@@ -31,10 +31,10 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 # ── Input / output paths ──────────────────────────────────────────────────────
 HISTORY_FILE = str(REPO_ROOT / "indicator_history.json")
-COMPLETENESS_AUDIT_FILE = str(REPO_ROOT / "indicator_completeness_audit.json")
-PRIOR_LEDGER_FILE = str(REPO_ROOT / "indicator_unresolved_consolidated_evidence_ledger.json")
-OUTPUT_LEDGER_FILE = str(REPO_ROOT / "indicator_unresolved_consolidated_evidence_ledger.json")
-OUTPUT_AUDIT_FILE = str(REPO_ROOT / "indicator_unresolved_consolidated_audit.json")
+COMPLETENESS_AUDIT_FILE = str(REPO_ROOT / "data" / "audits" / "indicator_completeness_audit.json")
+PRIOR_LEDGER_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_unresolved_consolidated_evidence_ledger.json")
+OUTPUT_LEDGER_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_unresolved_consolidated_evidence_ledger.json")
+OUTPUT_AUDIT_FILE = str(REPO_ROOT / "data" / "audits" / "indicator_unresolved_consolidated_audit.json")
 # ── Invariant sets ────────────────────────────────────────────────────────────
 # These specific episode sets should never change unless the ledger is edited.
 # They are structural invariants, not count constants — no update needed after

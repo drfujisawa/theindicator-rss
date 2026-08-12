@@ -5,9 +5,9 @@ from urllib.parse import urlparse
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
-RECOVERED_FILE = REPO_ROOT / "indicator_recovered_episodes.json"
+RECOVERED_FILE = REPO_ROOT / "data" / "recovery" / "indicator_recovered_episodes.json"
 HISTORY_FILE = REPO_ROOT / "indicator_history.json"
-OUTPUT_FILE = REPO_ROOT / "indicator_recovery_validation.json"
+OUTPUT_FILE = REPO_ROOT / "data" / "recovery" / "indicator_recovery_validation.json"
 
 
 def load_json(path):

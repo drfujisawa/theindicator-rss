@@ -10,8 +10,8 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
 
-INPUT_FILE = str(REPO_ROOT / "indicator_npr_audio_recovery.json")
-OUTPUT_FILE = str(REPO_ROOT / "indicator_npr_audio_validation.json")
+INPUT_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_npr_audio_recovery.json")
+OUTPUT_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_npr_audio_validation.json")
 TIMEOUT = 30
 REQUEST_DELAY = 0.15
 

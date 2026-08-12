@@ -8,8 +8,8 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 
 
 
-VALIDATION_FILE = str(REPO_ROOT / "indicator_npr_audio_validation.json")
-OUTPUT_FILE = str(REPO_ROOT / "indicator_npr_e_parameter_test.json")
+VALIDATION_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_npr_audio_validation.json")
+OUTPUT_FILE = str(REPO_ROOT / "archive" / "recovery" / "indicator_npr_e_parameter_test.json")
 TARGETS = [
     {
         "title": "Paranormal Profits",

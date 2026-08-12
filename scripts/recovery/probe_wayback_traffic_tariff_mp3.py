@@ -10,7 +10,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
 
-OUTPUT_FILE = str(REPO_ROOT / "indicator_traffic_tariff_wayback_mp3.json")
+OUTPUT_FILE = str(REPO_ROOT / "archive" / "recovery" / "indicator_traffic_tariff_wayback_mp3.json")
 TARGET_DATE = "2019-04-22"
 TARGET_TITLE = "The Traffic Tariff"
 

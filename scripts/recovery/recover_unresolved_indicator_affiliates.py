@@ -15,7 +15,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
 
-STRICT_REVIEW_FILE = str(REPO_ROOT / "indicator_unresolved_strict_review.json")
+STRICT_REVIEW_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_unresolved_strict_review.json")
 START_INDEX = int(
     os.environ.get(
         "START_INDEX",

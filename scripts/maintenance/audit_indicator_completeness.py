@@ -9,12 +9,12 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
 
-OUTPUT_FILE = str(REPO_ROOT / "indicator_completeness_audit.json")
+OUTPUT_FILE = str(REPO_ROOT / "data" / "audits" / "indicator_completeness_audit.json")
 HISTORY_FILE = str(REPO_ROOT / "indicator_history.json")
-EARLY_AUDIT_FILE = str(REPO_ROOT / "indicator_early_audit.json")
-NPR_VALIDATION_FILE = str(REPO_ROOT / "indicator_npr_audio_validation.json")
-MULTI_ARCHIVE_FILE = str(REPO_ROOT / "indicator_multi_archive_player_probe.json")
-WBUR_FILE = str(REPO_ROOT / "indicator_wbur_traffic_tariff_probe.json")
+EARLY_AUDIT_FILE = str(REPO_ROOT / "data" / "audits" / "indicator_early_audit.json")
+NPR_VALIDATION_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_npr_audio_validation.json")
+MULTI_ARCHIVE_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_multi_archive_player_probe.json")
+WBUR_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_wbur_traffic_tariff_probe.json")
 def load_json(filename):
     try:
         with open(filename, "r", encoding="utf-8") as f:

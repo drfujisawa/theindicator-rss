@@ -11,7 +11,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
 
-OUTPUT_FILE = str(REPO_ROOT / "indicator_april2019_wayback_mp3s.json")
+OUTPUT_FILE = str(REPO_ROOT / "archive" / "recovery" / "indicator_april2019_wayback_mp3s.json")
 TARGET_DATE = "2019-04-22"
 
 WAYBACK_PATTERN = (

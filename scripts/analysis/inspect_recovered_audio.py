@@ -11,8 +11,8 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
 
-RECOVERED_FILE = str(REPO_ROOT / "indicator_recovered_episodes.json")
-OUTPUT_FILE = str(REPO_ROOT / "indicator_audio_inspection.json")
+RECOVERED_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_recovered_episodes.json")
+OUTPUT_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_audio_inspection.json")
 TEST_LIMIT = 10
 TIMEOUT = 30
 
