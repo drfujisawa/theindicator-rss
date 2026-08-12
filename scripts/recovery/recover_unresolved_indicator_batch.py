@@ -702,14 +702,14 @@ unresolved = audit.get(
 json_files = sorted(
     filename
     for filename
-    in os.listdir(".")
+    in os.listdir(REPO_ROOT)
     if (
         filename.endswith(
             ".json"
         )
         and filename
         not in {
-            OUTPUT_FILE,
+            os.path.basename(OUTPUT_FILE),
         }
     )
 )
@@ -719,7 +719,7 @@ loaded_files = {}
 
 for filename in json_files:
     data = load_json(
-        filename
+        REPO_ROOT / filename
     )
 
     if data is not None:
