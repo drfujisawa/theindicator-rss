@@ -637,7 +637,7 @@ def run_investigation():
             "validation_summary": diag["validation_summary"],
         })
 
-    summary_path = BASE_DIR / SUMMARY_OUTPUT
+    summary_path = Path(SUMMARY_OUTPUT)
     with open(summary_path, "w", encoding="utf-8") as fh:
         json.dump(summary, fh, indent=2, ensure_ascii=False)
 

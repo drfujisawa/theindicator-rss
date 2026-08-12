@@ -141,7 +141,7 @@ def _placeholder_summary() -> dict:
 def write_placeholders():
     for target in TARGETS:
         _write_json(REPO_ROOT / "archive" / "recovery" / output_filename(target["reference_date"]), _placeholder_diag(target))
-    _write_json(BASE_DIR / SUMMARY_OUTPUT, _placeholder_summary())
+    _write_json(Path(SUMMARY_OUTPUT), _placeholder_summary())
 
 
 def request_budget() -> dict:
@@ -913,7 +913,7 @@ def run(write_placeholders_only: bool = False):
 
     for ref_date, diag in episode_diags:
         _write_json(REPO_ROOT / "archive" / "recovery" / output_filename(ref_date), diag)
-    _write_json(BASE_DIR / SUMMARY_OUTPUT, summary)
+    _write_json(Path(SUMMARY_OUTPUT), summary)
     return summary
 
 
