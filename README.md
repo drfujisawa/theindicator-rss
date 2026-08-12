@@ -51,7 +51,7 @@ coverage back to 2018, a multi-stage recovery process was run:
    URL for each history entry by probing NPR's audio APIs, Simplecast CDN, and
    affiliate station archives. Results are stored in `indicator_enclosure_map.json`.
 
-3. **Feed build** — `build_complete_feed.py` merged the current NPR feed with all
+3. **Feed build** — `scripts/maintenance/build_complete_feed.py` merged the current NPR feed with all
    resolved history entries into a single complete `theindicator_feed.xml`.
 
 A small number of very early episodes could not be matched to a still-accessible
