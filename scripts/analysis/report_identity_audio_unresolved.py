@@ -588,7 +588,7 @@ def _default_notes_for_episode(ledger):
 
 
 def build_active_notes(episodes):
-    sort_keys = sorted(
+    sorted_episodes = sorted(
         episodes,
         key=lambda ep: (
             MANUAL_REVIEW_NOTES.get(episode_key(ep), {}).get("rank", 10**9),
@@ -597,7 +597,7 @@ def build_active_notes(episodes):
         ),
     )
     notes = {}
-    for rank, episode in enumerate(sort_keys, start=1):
+    for rank, episode in enumerate(sorted_episodes, start=1):
         merged = {
             **_default_notes_for_episode(episode),
             **MANUAL_REVIEW_NOTES.get(episode_key(episode), {}),
