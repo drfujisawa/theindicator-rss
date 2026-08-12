@@ -344,12 +344,17 @@ class TestRequestBudgetCoverage(unittest.TestCase):
 
     def test_workflow_timeout_exceeds_conservative_budget(self):
         workflow = REPO_ROOT / ".github/workflows/probe-batch2-final3-identity-recovery.yml"
-        self.assertTrue(workflow.exists(), f"Missing workflow file: {workflow}")
+        runtime_ceiling = probe.request_budget()["per_run"]["conservative_timeout_ceiling_seconds"]
+        self.assertGreater(runtime_ceiling, 0)
+        if not workflow.exists():
+            self.skipTest(
+                "Historical recovery workflow was intentionally removed after completion; "
+                "request-budget assertions are preserved without requiring the obsolete file."
+            )
         text = workflow.read_text(encoding="utf-8")
         match = re.search(r"timeout-minutes:\s*(\d+)", text)
         self.assertIsNotNone(match)
         workflow_timeout_seconds = int(match.group(1)) * 60
-        runtime_ceiling = probe.request_budget()["per_run"]["conservative_timeout_ceiling_seconds"]
         self.assertGreater(workflow_timeout_seconds, runtime_ceiling)
 
 

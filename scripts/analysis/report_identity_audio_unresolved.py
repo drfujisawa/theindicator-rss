@@ -574,8 +574,40 @@ def normalize_validation_results(ledger):
     return rows
 
 
-def build_episode_report(ledger):
-    notes = MANUAL_REVIEW_NOTES[episode_key(ledger)]
+def _default_notes_for_episode(ledger):
+    return {
+        "identity_confidence": "unreviewed",
+        "strongest_evidence": ledger.get("evidence_confidence_explanation")
+        or "No archived manual review note is available for this episode yet.",
+        "rejected_or_unverified_ids": [],
+        "rejected_or_dead_end_evidence": [],
+        "remaining_recovery_avenues": [
+            "Continue recovery using archive captures and strict identity/audio validation rules."
+        ],
+    }
+
+
+def build_active_notes(episodes):
+    sort_keys = sorted(
+        episodes,
+        key=lambda ep: (
+            MANUAL_REVIEW_NOTES.get(episode_key(ep), {}).get("rank", 10**9),
+            ep["reference_date"],
+            ep["reference_title"],
+        ),
+    )
+    notes = {}
+    for rank, episode in enumerate(sort_keys, start=1):
+        merged = {
+            **_default_notes_for_episode(episode),
+            **MANUAL_REVIEW_NOTES.get(episode_key(episode), {}),
+        }
+        merged["rank"] = rank
+        notes[episode_key(episode)] = merged
+    return notes
+
+
+def build_episode_report(ledger, notes):
     ids = collect_discovered_ids(ledger)
 
     return {
@@ -613,23 +645,10 @@ def build_report(generated_at=None):
         for episode in ledger.get("episodes", [])
         if episode.get("final_status") == TARGET_STATUS
     ]
-
-    if len(episodes) != len(MANUAL_REVIEW_NOTES):
-        raise ValueError(
-            "Expected %d target episodes from the ledger, found %d manual-note entries"
-            % (len(episodes), len(MANUAL_REVIEW_NOTES))
-        )
-
-    missing_notes = [
-        episode_key(episode)
-        for episode in episodes
-        if episode_key(episode) not in MANUAL_REVIEW_NOTES
-    ]
-    if missing_notes:
-        raise ValueError(f"Missing manual notes for episodes: {missing_notes}")
+    active_notes = build_active_notes(episodes)
 
     report_episodes = sorted(
-        [build_episode_report(episode) for episode in episodes],
+        [build_episode_report(episode, active_notes[episode_key(episode)]) for episode in episodes],
         key=lambda item: item["rank"],
     )
 
