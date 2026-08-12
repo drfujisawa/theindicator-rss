@@ -56,7 +56,7 @@ class TestPriorEvidencePaths(unittest.TestCase):
             evidence["sources"]["batch2_summary"],
             "batch2_fresh_identity_discovery_summary.json",
         )
-        self.assertIn("/data/recovery/", str(probe.ACTIVE_INPUT_DIR / evidence["sources"]["batch2_diag"]))
+        self.assertIn("/data/recovery/", str(probe.ACTIVE_RECOVERY_DIR / evidence["sources"]["batch2_diag"]))
 
 
 class TestAdjacentDateContaminationRejection(unittest.TestCase):

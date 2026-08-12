@@ -20,7 +20,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
 BASE_DIR = Path(__file__).parent
-ACTIVE_INPUT_DIR = REPO_ROOT / "data" / "recovery"
+ACTIVE_RECOVERY_DIR = REPO_ROOT / "data" / "recovery"
 SUMMARY_OUTPUT = str(REPO_ROOT / "archive" / "recovery" / "batch2_final3_identity_recovery_summary.json")
 REQUEST_TIMEOUT_SECONDS = base.REQUEST_TIMEOUT_SECONDS
 WAYBACK_DISCOVERY_RETRIES = base.WAYBACK_DISCOVERY_RETRIES
@@ -209,12 +209,12 @@ def _extract_episode_entry(container, reference_date):
 
 def load_prior_evidence(reference_date: str) -> dict:
     files = {
-        "batch2_diag": ACTIVE_INPUT_DIR / f"batch2_fresh_identity_discovery_{reference_date}_diag.json",
-        "batch2_summary": ACTIVE_INPUT_DIR / "batch2_fresh_identity_discovery_summary.json",
-        "ranked_report": REPO_ROOT / "data" / "recovery" / "indicator_identity_audio_unresolved_ranked_report.json",
-        "consolidated_ledger": REPO_ROOT / "data" / "recovery" / "indicator_unresolved_consolidated_evidence_ledger.json",
-        "wayback_npr_probe": REPO_ROOT / "data" / "recovery" / "indicator_wayback_npr_probe.json",
-        "wayback_player_probe": REPO_ROOT / "data" / "recovery" / "indicator_wayback_player_probe.json",
+        "batch2_diag": ACTIVE_RECOVERY_DIR / f"batch2_fresh_identity_discovery_{reference_date}_diag.json",
+        "batch2_summary": ACTIVE_RECOVERY_DIR / "batch2_fresh_identity_discovery_summary.json",
+        "ranked_report": ACTIVE_RECOVERY_DIR / "indicator_identity_audio_unresolved_ranked_report.json",
+        "consolidated_ledger": ACTIVE_RECOVERY_DIR / "indicator_unresolved_consolidated_evidence_ledger.json",
+        "wayback_npr_probe": ACTIVE_RECOVERY_DIR / "indicator_wayback_npr_probe.json",
+        "wayback_player_probe": ACTIVE_RECOVERY_DIR / "indicator_wayback_player_probe.json",
     }
     loaded = {name: _read_json(path) for name, path in files.items()}
     batch2_summary = loaded.get("batch2_summary")
