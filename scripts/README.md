@@ -9,3 +9,5 @@ Root-level production entry points remain intentionally unchanged because existi
 - `theindicator_rss.py`
 - `theindicator_history.py`
 - `recover_enclosures_bulk.py`
+
+Unit tests for the relocated scripts live in `tests/`.
