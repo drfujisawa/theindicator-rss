@@ -39,7 +39,7 @@ jobs:
           retention-days: 90
 
       - name: Commit result artifacts
-        if: always() && github.event.inputs.commit_results == 'true'
+        if: success() && github.event.inputs.commit_results == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

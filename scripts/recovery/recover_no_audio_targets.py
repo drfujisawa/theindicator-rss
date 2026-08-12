@@ -60,8 +60,12 @@ def write_json(path: Path, payload: dict | list) -> None:
 def capture_file_hashes(paths: list[Path] | tuple[Path, ...]) -> dict[str, str]:
     hashes: dict[str, str] = {}
     for path in paths:
+        key = str(path)
+        if not path.exists():
+            hashes[key] = "__missing__"
+            continue
         digest = sha256(path.read_bytes()).hexdigest()
-        hashes[str(path)] = digest
+        hashes[key] = digest
     return hashes
 
 
@@ -255,7 +259,7 @@ def extract_candidate_audio_urls(text: str) -> list[str]:
     if not text:
         return []
     pattern = re.compile(
-        r"https?://[^\"'\\s<>]+(?:\\.mp3|/audio(?:\\?|$)|simplecastaudio\\.com[^\"'\\s<>]*)",
+        r"https?://[^\"'\s<>]+(?:\.mp3|/audio(?:[/?#]|$)|simplecastaudio\.com[^\"'\s<>]*)",
         re.IGNORECASE,
     )
     seen = []
@@ -426,7 +430,8 @@ def investigate_target(
     validated_candidates = [validate_audio_candidate(url) for url in candidate_urls]
     playable = [item for item in validated_candidates if item.get("playable")]
     validated_audio = playable[0] if playable else None
-    source_evidence = source_endpoints_by_candidate.get(validated_audio["candidate_url"], []) if validated_audio else []
+    validated_candidate_url = validated_audio.get("candidate_url") if validated_audio else None
+    source_evidence = source_endpoints_by_candidate.get(validated_candidate_url, []) if validated_candidate_url else []
     provenance = compute_identity_provenance(target, source_evidence, validated_audio)
     duplicate_result = detect_duplicate_underlying_audio(
         validated_audio=validated_audio,
@@ -513,7 +518,6 @@ def run(output_dir: Path, require_21: bool = True) -> dict:
         "results": results,
     }
     output_dir.mkdir(parents=True, exist_ok=True)
-    write_json(output_dir / "no_audio_target_recovery_summary.json", payload)
     write_json(
         output_dir / "no_audio_target_recovery_placeholder.json",
         {
