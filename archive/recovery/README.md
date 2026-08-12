@@ -1,8 +1,8 @@
 # archive/recovery/
 
 Completed historical evidence from one-shot probe and identity-recovery campaigns.
-These files are retained for provenance and audit trail but are **not required by
-any current maintenance script**.
+These files are retained for provenance and audit trail only and are **not required
+by any current maintained script or test**.
 
 ## Contents
 
@@ -12,14 +12,11 @@ any current maintenance script**.
 |------|-------------|
 | `batch2_final3_identity_recovery_summary.json` | Summary of all final-round batch-2 probes |
 
-### batch2 fresh identity discovery (probe_batch2_fresh_identity_discovery.py)
+### Active batch2 fresh identity discovery inputs moved out
 
-| File | Description |
-|------|-------------|
-| `batch2_fresh_identity_discovery_summary.json` | Summary of all batch-2 fresh discovery probes |
-| `batch2_fresh_identity_discovery_2018-04-24_diag.json` | Per-date diagnostic for 2018-04-24 |
-| `batch2_fresh_identity_discovery_2018-10-09_diag.json` | Per-date diagnostic for 2018-10-09 |
-| `batch2_fresh_identity_discovery_2018-10-11_diag.json` | Per-date diagnostic for 2018-10-11 |
+`batch2_fresh_identity_discovery_summary.json` and the actively reused
+`batch2_fresh_identity_discovery_*_diag.json` inputs now live in
+`data/recovery/` because maintained recovery tooling reads them there.
 
 ### fresh identity discovery (probe_fresh_identity_discovery.py)
 

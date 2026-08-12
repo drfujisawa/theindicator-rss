@@ -69,8 +69,9 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 # ---------------------------------------------------------------------------
 
 BASE_DIR = Path(__file__).parent
+OUTPUT_DIR = REPO_ROOT / "data" / "recovery"
 
-SUMMARY_OUTPUT = str(REPO_ROOT / "archive" / "recovery" / "batch2_fresh_identity_discovery_summary.json")
+SUMMARY_OUTPUT = str(OUTPUT_DIR / "batch2_fresh_identity_discovery_summary.json")
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (compatible; IndicatorFreshIdentityProbe/1.0)"
@@ -1785,7 +1786,7 @@ def _write_json(path: Path, payload: dict):
 
 def write_placeholders():
     for target in TARGETS:
-        _write_json(REPO_ROOT / "archive" / "recovery" / output_filename(target["reference_date"]), _placeholder_diag(target))
+        _write_json(OUTPUT_DIR / output_filename(target["reference_date"]), _placeholder_diag(target))
     _write_json(Path(SUMMARY_OUTPUT), _placeholder_summary(TARGETS))
 
 
@@ -1904,7 +1905,7 @@ def run(write_placeholders_only: bool = False):
         summary["run_state"] = "failed"
 
     for ref_date, diag in episode_results:
-        out_path = REPO_ROOT / "archive" / "recovery" / output_filename(ref_date)
+        out_path = OUTPUT_DIR / output_filename(ref_date)
         _write_json(out_path, diag)
         print(f"  → Written: {out_path.name}")
         print(f"  → {diag.get('validation_summary') or diag.get('final_classification')}")

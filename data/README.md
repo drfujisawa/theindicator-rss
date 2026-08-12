@@ -5,11 +5,16 @@ Active recovery and audit datasets used by maintained scripts in `scripts/`.
 ## data/recovery/
 
 Active recovery artefacts — files that recovery, analysis, and maintenance scripts
-still read or write as part of ongoing work.
+still read or write as part of ongoing work. Reusable intermediate recovery inputs
+belong here, even when they were first produced by a historical probe campaign.
 
 | File | Description | Primary consumers |
 |------|-------------|-------------------|
 | `indicator_audio_inspection.json` | Recovered-episode audio inspection results | `scripts/analysis/inspect_recovered_audio.py` |
+| `batch2_fresh_identity_discovery_summary.json` | Summary of reusable batch-2 fresh identity discovery evidence | `scripts/recovery/probe_batch2_fresh_identity_discovery.py`, `scripts/recovery/probe_batch2_final3_identity_recovery.py` |
+| `batch2_fresh_identity_discovery_2018-04-24_diag.json` | Batch-2 fresh identity diagnostic reused by final-round recovery for 2018-04-24 | `scripts/recovery/probe_batch2_fresh_identity_discovery.py`, `scripts/recovery/probe_batch2_final3_identity_recovery.py` |
+| `batch2_fresh_identity_discovery_2018-10-09_diag.json` | Batch-2 fresh identity diagnostic for 2018-10-09 | `scripts/recovery/probe_batch2_fresh_identity_discovery.py` |
+| `batch2_fresh_identity_discovery_2018-10-11_diag.json` | Batch-2 fresh identity diagnostic reused by final-round recovery for 2018-10-11 | `scripts/recovery/probe_batch2_fresh_identity_discovery.py`, `scripts/recovery/probe_batch2_final3_identity_recovery.py` |
 | `indicator_identity_audio_unresolved_ranked_report.json` | Ranked report of unresolved identity–audio episodes | `scripts/analysis/report_identity_audio_unresolved.py`, `scripts/recovery/probe_top3_ranked_prospects.py`, tests |
 | `indicator_multi_archive_player_probe.json` | Multi-archive NPR player probe results | `scripts/recovery/probe_multi_archive_npr_player.py`, `scripts/maintenance/audit_indicator_completeness.py` |
 | `indicator_npr_audio_mapping.json` | NPR audio URL-to-episode mapping | `scripts/analysis/analyze_npr_audio_mapping.py` |

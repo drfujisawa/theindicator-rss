@@ -45,6 +45,20 @@ class TestRetryPlanFromKnownCaptures(unittest.TestCase):
         self.assertEqual(len(exact_queries), 1)
 
 
+class TestPriorEvidencePaths(unittest.TestCase):
+    def test_batch2_prior_evidence_reads_from_active_data_directory(self):
+        evidence = probe.load_prior_evidence("2018-10-11")
+        self.assertEqual(
+            evidence["sources"]["batch2_diag"],
+            "batch2_fresh_identity_discovery_2018-10-11_diag.json",
+        )
+        self.assertEqual(
+            evidence["sources"]["batch2_summary"],
+            "batch2_fresh_identity_discovery_summary.json",
+        )
+        self.assertIn("/data/recovery/", str(probe.ACTIVE_INPUT_DIR / evidence["sources"]["batch2_diag"]))
+
+
 class TestAdjacentDateContaminationRejection(unittest.TestCase):
     def test_student_loan_story_rejected_for_oct11_target(self):
         target = probe.TARGETS[0]
