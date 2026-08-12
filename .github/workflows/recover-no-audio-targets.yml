@@ -1,0 +1,52 @@
+name: Recover No-Audio Targets
+
+on:
+  workflow_dispatch:
+    inputs:
+      commit_results:
+        description: "Commit generated JSON artifacts back to the branch (true/false)"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+
+jobs:
+  recover-no-audio-targets:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Run no-audio target recovery
+        run: |
+          python scripts/recovery/recover_no_audio_targets.py \
+            --output-dir data/recovery/no_audio_targets
+
+      - name: Upload no-audio recovery artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: no-audio-target-recovery
+          path: data/recovery/no_audio_targets/*.json
+          retention-days: 90
+
+      - name: Commit result artifacts
+        if: success() && github.event.inputs.commit_results == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/recovery/no_audio_targets/*.json
+          if git diff --cached --quiet; then
+            echo "No artifact JSON changes to commit."
+          else
+            git commit -m "chore: update no-audio recovery artifacts from Actions run"
+            git push
+          fi
