@@ -65,7 +65,7 @@ in `indicator_enclosure_map.json`.
 | `theindicator_feed.xml` | The published RSS feed (1,760+ episodes) |
 | `theindicator_rss.py` | Automated feed updater (runs every 6 hours) |
 | `theindicator_history.py` | Crawls NPR's archive to build episode history |
-| `build_complete_feed.py` | One-time build: merges history + enclosure map into the feed |
+| `scripts/maintenance/build_complete_feed.py` | One-time build: merges history + enclosure map into the feed |
 | `recover_enclosures_bulk.py` | Bulk audio-URL recovery for history entries |
 | `indicator_history.json` | Catalogue of all known episodes (metadata) |
 | `indicator_enclosure_map.json` | Resolved audio URLs for history episodes |
@@ -74,8 +74,7 @@ in `indicator_enclosure_map.json`.
 | `.github/workflows/crawl-history.yml` | Manual history-crawl workflow |
 | `.github/workflows/recover-enclosures-bulk.yml` | Manual enclosure-recovery workflow |
 
-The remaining `.py` scripts and `.json` files in the repository are research and
-diagnostic artifacts from the recovery project, retained as evidence.
+Non-production scripts are organized under `scripts/` (`maintenance`, `recovery`, `analysis`) and tests live under `tests/`. Historical `.json` artifacts remain at repository root as retained evidence/data outputs.
 
 ## Credits
 
