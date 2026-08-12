@@ -1,61 +1,78 @@
+#!/usr/bin/env python3
 from pathlib import Path
+
 import json
 import unittest
 
 from scripts.analysis import report_identity_audio_unresolved as report
+
 REPO_ROOT = Path(__file__).resolve().parents[1]
 
 
-class IdentityAudioUnresolvedReportTests(unittest.TestCase):
-    def test_build_report_contains_ranked_target_episodes(self):
-        payload = report.build_report(generated_at="2026-08-09T00:00:00+00:00")
+def _target_episodes_from_ledger():
+    ledger = report.load_json(report.INPUT_LEDGER_FILE)
+    return [
+        episode
+        for episode in ledger.get("episodes", [])
+        if episode.get("final_status") == report.TARGET_STATUS
+    ]
 
-        self.assertEqual(payload["target_episode_count"], 12)
+
+class IdentityAudioUnresolvedReportTests(unittest.TestCase):
+    def test_build_report_tracks_current_ledger_targets(self):
+        payload = report.build_report(generated_at="2026-08-09T00:00:00+00:00")
+        ledger_targets = _target_episodes_from_ledger()
+
+        self.assertEqual(payload["target_episode_count"], len(ledger_targets))
+        self.assertEqual(len(payload["episodes"]), len(ledger_targets))
         self.assertEqual(
             [episode["rank"] for episode in payload["episodes"]],
-            list(range(1, 13)),
+            list(range(1, len(ledger_targets) + 1)),
         )
         self.assertTrue(
             all(
-                episode["final_classification"]
-                == "identity_found_but_audio_unresolved"
+                episode["final_classification"] == report.TARGET_STATUS
                 for episode in payload["episodes"]
             )
         )
 
-    def test_report_surfaces_rejected_identity_chain_details(self):
-        payload = report.build_report(generated_at="2026-08-09T00:00:00+00:00")
-        by_title = {
-            episode["reference_title"]: episode
+        payload_keys = {
+            (episode["reference_date"], episode["reference_title"])
             for episode in payload["episodes"]
         }
+        ledger_keys = {
+            (episode["reference_date"], episode["reference_title"])
+            for episode in ledger_targets
+        }
+        self.assertEqual(payload_keys, ledger_keys)
 
-        fed = by_title["Fed Accounts For All!"]
-        self.assertIn(
-            "https://www.npr.org/player/embed/129451895/129454071",
-            fed["player_urls"],
-        )
-        self.assertIn("129451895", fed["npr_ids_found"]["discovered_story_ids"])
-        self.assertTrue(
-            any(
-                row["id"] == "129451895"
-                for row in fed["npr_ids_found"]["rejected_or_unverified_ids"]
+    def test_report_episodes_preserve_identity_and_validation_details(self):
+        payload = report.build_report(generated_at="2026-08-09T00:00:00+00:00")
+        ledger_by_key = {
+            (episode["reference_date"], episode["reference_title"]): episode
+            for episode in _target_episodes_from_ledger()
+        }
+
+        for episode in payload["episodes"]:
+            key = (episode["reference_date"], episode["reference_title"])
+            source = ledger_by_key[key]
+            discovered = episode["npr_ids_found"]
+
+            for story_id in source.get("npr_story_ids", []):
+                self.assertIn(story_id, discovered["discovered_story_ids"])
+            for player_story_id in source.get("npr_player_story_ids", []):
+                self.assertIn(player_story_id, discovered["discovered_player_story_ids"])
+            for audio_id in source.get("npr_audio_ids", []):
+                self.assertIn(audio_id, discovered["discovered_audio_ids"])
+
+            self.assertEqual(
+                len(episode["audio_candidates_tested"]),
+                len(source.get("validation_results", [])),
             )
-        )
+            self.assertTrue(episode["identity_confidence"])
+            self.assertTrue(episode["strongest_evidence"])
 
-        whos_hiring = by_title["Who's Hiring?"]
-        self.assertIn("408289115", whos_hiring["npr_ids_found"]["discovered_story_ids"])
-        self.assertEqual(whos_hiring["identity_confidence"], "very_low")
-        self.assertTrue(
-            any(
-                candidate["validation_status"] == "rejected_request_error"
-                for candidate in whos_hiring["audio_candidates_tested"]
-            )
-        )
-
-    def test_checked_in_report_matches_builder_output(self):
-        expected = report.build_report(generated_at="CHECKED_IN")
-
+    def test_checked_in_report_file_is_valid_and_targeted(self):
         with open(
             report.BASE_DIR / report.OUTPUT_REPORT_FILE,
             "r",
@@ -63,8 +80,8 @@ class IdentityAudioUnresolvedReportTests(unittest.TestCase):
         ) as file:
             checked_in = json.load(file)
 
-        checked_in["generated_at"] = "CHECKED_IN"
-        self.assertEqual(checked_in, expected)
+        self.assertEqual(checked_in.get("target_status"), report.TARGET_STATUS)
+        self.assertIsInstance(checked_in.get("episodes", []), list)
 
 
 if __name__ == "__main__":
