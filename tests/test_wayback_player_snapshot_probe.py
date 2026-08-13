@@ -967,12 +967,12 @@ class TestProductionFileGuard(unittest.TestCase):
 
 
 # ---------------------------------------------------------------------------
-# Scope: exactly 12 targets expected from production enclosure map
+# Scope: expected unresolved target count from production enclosure map
 # ---------------------------------------------------------------------------
 
 class TestProductionTargetCount(unittest.TestCase):
-    def test_production_map_yields_12_targets(self):
-        """The real indicator_enclosure_map.json must produce exactly 12 targets."""
+    def test_production_map_yields_expected_targets(self):
+        """The real indicator_enclosure_map.json must produce the expected target count."""
         if not probe.ENCLOSURE_MAP.exists():
             self.skipTest("indicator_enclosure_map.json not found")
         targets = probe.load_targets()
@@ -982,7 +982,7 @@ class TestProductionTargetCount(unittest.TestCase):
             f"Expected {probe.EXPECTED_TARGET_COUNT} confirmed unresolved targets, got {len(targets)}",
         )
 
-    def test_none_of_the_12_are_two_indicators(self):
+    def test_none_of_the_expected_targets_are_two_indicators(self):
         if not probe.ENCLOSURE_MAP.exists():
             self.skipTest("indicator_enclosure_map.json not found")
         targets = probe.load_targets()

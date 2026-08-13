@@ -137,7 +137,7 @@ MAX_CAPTURE_DIAGNOSTIC_BYTES = 80_000
 # Maximum audio candidates to validate per target.
 MAX_AUDIO_CANDIDATES = 3
 # Expected number of confirmed-unresolved targets (no_audio, excluding Two Indicators).
-EXPECTED_TARGET_COUNT = 12
+EXPECTED_TARGET_COUNT = 2
 
 HEADERS = {
     "User-Agent": (
@@ -1088,7 +1088,7 @@ def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         dest="story_ids",
         metavar="ID",
         action="append",
-        help="Story ID to probe (repeatable; omit to run all 12 targets)",
+        help="Story ID to probe (repeatable; omit to run all expected unresolved targets)",
     )
     target_group.add_argument(
         "--targets",
