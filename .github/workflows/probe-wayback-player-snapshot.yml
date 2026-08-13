@@ -38,15 +38,18 @@ jobs:
           python-version: "3.x"
 
       - name: Run Wayback player-snapshot probe
+        env:
+          TARGETS_INPUT: ${{ github.event.inputs.targets }}
+          FORCE_INPUT: ${{ github.event.inputs.force }}
         run: |
-          ARGS="--output-dir data/recovery/wayback_player_snapshots"
-          if [ -n "${{ github.event.inputs.targets }}" ]; then
-            ARGS="$ARGS --targets '${{ github.event.inputs.targets }}'"
+          CMD=(python scripts/recovery/probe_wayback_player_snapshot.py --output-dir data/recovery/wayback_player_snapshots)
+          if [ -n "$TARGETS_INPUT" ]; then
+            CMD+=(--targets "$TARGETS_INPUT")
           fi
-          if [ "${{ github.event.inputs.force }}" = "true" ]; then
-            ARGS="$ARGS --force"
+          if [ "$FORCE_INPUT" = "true" ]; then
+            CMD+=(--force)
           fi
-          python scripts/recovery/probe_wayback_player_snapshot.py $ARGS
+          "${CMD[@]}"
 
       - name: Upload probe artifacts
         if: always()
