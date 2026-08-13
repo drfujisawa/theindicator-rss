@@ -1,0 +1,48 @@
+name: Probe NPR Player Network (Headless Browser Experiment)
+
+on:
+  workflow_dispatch:
+    inputs:
+      target_ref:
+        description: >
+          Branch or ref that contains probe_npr_player_network.py
+          (e.g. copilot/focused-diagnostic-investigation).
+          Defaults to gh-pages if not supplied.
+        required: false
+        default: "gh-pages"
+
+permissions:
+  contents: read
+
+jobs:
+  probe-npr-player-network:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out target ref
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.target_ref || 'gh-pages' }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install Playwright and Chromium
+        run: |
+          pip install playwright==1.49.0
+          playwright install-deps chromium
+          playwright install chromium
+
+      - name: Run NPR player network probe
+        run: python scripts/recovery/probe_npr_player_network.py
+
+      - name: Upload diagnostic report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: npr-player-network-probe
+          path: data/recovery/npr_player_network_probe.json
+          retention-days: 90
