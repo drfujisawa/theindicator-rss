@@ -11,16 +11,24 @@ Request budget (worst case, all endpoints fail all retries):
   - Per-target maximum:            42 + 48 = 90 requests
   - 21-target maximum:             21 × 90 = 1 890 requests
 
+Batching:
+  - Default batch size: 5 targets.  ceil(21 / 5) = 5 runs to cover all targets.
+  - Batch n selects targets[(n-1)*batch_size : n*batch_size] from the
+    deterministic (date, story_id) sorted order.  The slice is fixed — it does
+    NOT shift when completed checkpoints are removed, avoiding fragile offset
+    logic.  Targets with an existing checkpoint are automatically skipped within
+    the batch (idempotent re-runs are safe).
+
 Conservative runtime bound (worst case, every attempt uses full timeout):
   - Sleep overhead:  per endpoint, retries 1-2 sleep (0.8 + 1.6) = 2.4 s each
                      14 endpoints × 2.4 s = 33.6 s per target
                      8 candidates × 2 probes each × 2.4 s = 38.4 s per target
-                     Total sleep per target: ≈ 72 s; 21 targets: ≈ 1 512 s ≈ 25 min
+                     Total sleep per target: ≈ 72 s; 5 targets: ≈ 360 s ≈ 6 min
   - At TIMEOUT_SECONDS=15 per attempt (not 25 — see below) and all timing out:
-                     1 890 × 15 s = 28 350 s — but the workflow kills at 45 min.
+                     5 × 90 × 15 s = 6 750 s — but the workflow kills at 35 min.
   Since wall-clock timeout kills the workflow, we reduce TIMEOUT_SECONDS to 15 s
-  and rely on the 45-minute workflow ceiling as a hard stop.  A nominal run where
-  servers respond in ~1–3 s completes well under 15 minutes.
+  and rely on the 35-minute workflow ceiling as a hard stop.  A nominal run where
+  servers respond in ~1–3 s completes well under 15 minutes for 5 targets.
 """
 from __future__ import annotations
 
@@ -158,6 +166,40 @@ def baseline_classification(story_id: str) -> str:
     if story_id in TWO_INDICATORS_STORY_IDS:
         return "PROBABLY_NOT_SEPARATE_EPISODE"
     return "CONFIRMED_EPISODE_AUDIO_STILL_UNRESOLVED"
+
+
+def select_batch_targets(targets: list[Target], batch: int, batch_size: int) -> list[Target]:
+    """Return the fixed slice of targets for the given 1-based batch number.
+
+    The slice is derived purely from position in the sorted list, so it is
+    stable even when previously-completed checkpoints are not removed.
+    """
+    if batch < 1:
+        raise ValueError(f"batch must be >= 1, got {batch}")
+    if batch_size < 1:
+        raise ValueError(f"batch_size must be >= 1, got {batch_size}")
+    start = (batch - 1) * batch_size
+    return targets[start : start + batch_size]
+
+
+def partition_by_completion(
+    targets: list[Target], output_dir: Path
+) -> tuple[list[Target], list[Target]]:
+    """Split targets into (to_process, already_completed) based on checkpoint files.
+
+    A target is "already completed" when a per-target checkpoint JSON file
+    ``checkpoint_<story_id>.json`` already exists in *output_dir*.  Such
+    targets are skipped so that re-running the same batch is idempotent.
+    """
+    to_process: list[Target] = []
+    already_completed: list[Target] = []
+    for target in targets:
+        checkpoint_path = output_dir / f"checkpoint_{target.story_id}.json"
+        if checkpoint_path.exists():
+            already_completed.append(target)
+        else:
+            to_process.append(target)
+    return to_process, already_completed
 
 
 def build_endpoint_matrix(target: Target) -> list[dict]:
@@ -615,7 +657,7 @@ def summarize(results: list[dict]) -> dict:
     return counts
 
 
-def run(output_dir: Path, require_21: bool = True) -> dict:
+def run(output_dir: Path, require_21: bool = True, batch: int | None = None, batch_size: int = 5) -> dict:
     pre_hashes = capture_file_hashes(PRODUCTION_FILES)
     enclosure = load_json(ENCLOSURE_MAP)
     episodes = enclosure.get("episodes", {})
@@ -631,6 +673,11 @@ def run(output_dir: Path, require_21: bool = True) -> dict:
     history_index = build_history_index(HISTORY_FILE)
     output_dir.mkdir(parents=True, exist_ok=True)
 
+    # Apply batch selection; fall back to all targets when batch is omitted.
+    active_targets = select_batch_targets(targets, batch, batch_size) if batch is not None else targets
+    effective_batch = batch if batch is not None else 1
+    effective_batch_size = batch_size if batch is not None else len(targets)
+
     generated_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
     # Write placeholder immediately so a workflow timeout doesn't look like a
     # run that never started.
@@ -640,12 +687,16 @@ def run(output_dir: Path, require_21: bool = True) -> dict:
             "note": "Placeholder artifact file for branch commits from workflow runs.",
             "generated_by": "scripts/recovery/recover_no_audio_targets.py",
             "generated_at": generated_at,
+            "batch": effective_batch,
             "run_complete": False,
         },
     )
 
+    # Skip targets whose checkpoint already exists (idempotent re-runs).
+    to_process, completed_previously = partition_by_completion(active_targets, output_dir)
+
     results = []
-    for target in targets:
+    for target in to_process:
         history_item = history_index.get(target.story_id, {})
         results.append(
             investigate_target(target, history_item, resolved_corpus, output_dir=output_dir)
@@ -656,16 +707,49 @@ def run(output_dir: Path, require_21: bool = True) -> dict:
     assert_production_files_unchanged(pre_hashes, post_hashes)
 
     # Derive endpoint count from the matrix itself so the budget stays correct
-    # if endpoints are ever added or removed.
-    _representative_target = targets[0]
+    # if endpoints are ever added or removed.  Use the first active_target so the
+    # count is consistent with the batch context; fall back to the full target
+    # list only if the batch is empty (all already completed).
+    _representative_target = (active_targets or targets)[0]
     _endpoint_count = len(build_endpoint_matrix(_representative_target))
+
+    # Build classification and probe-outcome tallies over newly processed results.
+    classification_counts: dict[str, int] = {}
+    probe_outcome_counts: dict[str, int] = {}
+    for result in results:
+        k = result.get("final_classification", "unknown")
+        classification_counts[k] = classification_counts.get(k, 0) + 1
+        pk = result.get("probe_outcome", "unknown")
+        probe_outcome_counts[pk] = probe_outcome_counts.get(pk, 0) + 1
 
     payload = {
         "generated_at": generated_at,
         "run_complete": True,
+        "batch": effective_batch,
+        "batch_size": effective_batch_size,
+        "total_targets_in_corpus": len(targets),
+        "batch_target_count": len(active_targets),
+        "completed_previously_count": len(completed_previously),
+        "completed_previously_story_ids": [t.story_id for t in completed_previously],
+        "processed_this_run_count": len(results),
+        # Kept for backward compatibility.
         "target_count": len(results),
         "completed_target_count": len(results),
-        "classifications": summarize(results),
+        "classifications": classification_counts,
+        "probe_outcomes": probe_outcome_counts,
+        # Human-readable summary that distinguishes all required categories.
+        # Note: unfinished_in_batch is always 0 in a completed run; a timed-out
+        # run produces no summary JSON, so this field never misrepresents
+        # cancelled targets as negative recovery results.
+        "summary": {
+            "completed_previously": len(completed_previously),
+            "processed_this_run": len(results),
+            "recovered": classification_counts.get("RECOVERED_AND_VALIDATED", 0),
+            "duplicate_or_alternate": classification_counts.get("DUPLICATE_OR_ALTERNATE_OF_EXISTING_RSS_ITEM", 0),
+            "probably_not_separate": classification_counts.get("PROBABLY_NOT_SEPARATE_EPISODE", 0),
+            "unresolved": classification_counts.get("CONFIRMED_EPISODE_AUDIO_STILL_UNRESOLVED", 0),
+            "network_or_timeout": probe_outcome_counts.get("network_failed_all", 0),
+        },
         "results": results,
         "production_files_changed": False,
         "request_budget": {
@@ -686,9 +770,13 @@ def run(output_dir: Path, require_21: bool = True) -> dict:
             "note": "Placeholder artifact file for branch commits from workflow runs.",
             "generated_by": "scripts/recovery/recover_no_audio_targets.py",
             "generated_at": generated_at,
+            "batch": effective_batch,
             "run_complete": True,
         },
     )
+    # Write a batch-specific summary as well as the generic one for back-compat.
+    if batch is not None:
+        write_json(output_dir / f"no_audio_target_recovery_batch{batch}_summary.json", payload)
     write_json(output_dir / "no_audio_target_recovery_summary.json", payload)
     return payload
 
@@ -707,6 +795,23 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Skip strict check that exactly 21 no_audio targets exist.",
     )
+    parser.add_argument(
+        "--batch",
+        type=int,
+        default=None,
+        metavar="N",
+        help=(
+            "1-based batch number.  Selects targets[(N-1)*batch_size : N*batch_size] "
+            "from the deterministic sorted order.  Omit to process all targets."
+        ),
+    )
+    parser.add_argument(
+        "--batch-size",
+        type=int,
+        default=5,
+        metavar="K",
+        help="Number of targets per batch (default: 5).  ceil(21/5) = 5 runs for full coverage.",
+    )
     return parser.parse_args()
 
 
@@ -715,8 +820,10 @@ def main() -> None:
     payload = run(
         output_dir=Path(args.output_dir),
         require_21=not args.allow_non_21,
+        batch=args.batch,
+        batch_size=args.batch_size,
     )
-    print(f"targets={payload['target_count']}")
+    print(f"batch={payload['batch']} targets_processed={payload['target_count']} skipped={payload['completed_previously_count']}")
     print(json.dumps(payload["classifications"], sort_keys=True))
 
 
