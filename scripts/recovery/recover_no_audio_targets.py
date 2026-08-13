@@ -707,17 +707,19 @@ def run(output_dir: Path, require_21: bool = True, batch: int | None = None, bat
     assert_production_files_unchanged(pre_hashes, post_hashes)
 
     # Derive endpoint count from the matrix itself so the budget stays correct
-    # if endpoints are ever added or removed.
-    _representative_target = targets[0]
+    # if endpoints are ever added or removed.  Use the first active_target so the
+    # count is consistent with the batch context; fall back to the full target
+    # list only if the batch is empty (all already completed).
+    _representative_target = (active_targets or targets)[0]
     _endpoint_count = len(build_endpoint_matrix(_representative_target))
 
     # Build classification and probe-outcome tallies over newly processed results.
     classification_counts: dict[str, int] = {}
     probe_outcome_counts: dict[str, int] = {}
     for result in results:
-        k = result["final_classification"]
+        k = result.get("final_classification", "unknown")
         classification_counts[k] = classification_counts.get(k, 0) + 1
-        pk = result["probe_outcome"]
+        pk = result.get("probe_outcome", "unknown")
         probe_outcome_counts[pk] = probe_outcome_counts.get(pk, 0) + 1
 
     payload = {
