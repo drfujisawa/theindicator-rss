@@ -871,7 +871,7 @@ class WaybackArchiveFetchIntegrationTests(unittest.TestCase):
 
         def fake_request(url, method="GET"):
             fetched_urls.append(url)
-            if "api.cdn.com/v2/search" in url or "web.archive.org/cdx" in url:
+            if "web.archive.org/cdx" in url:
                 # CDX response
                 return {"ok": True, "status": 200, "text": self._cdx_response(cdx_ts), "final_url": url}
             if "web.archive.org/web/" in url and "id_/" in url:
@@ -896,7 +896,7 @@ class WaybackArchiveFetchIntegrationTests(unittest.TestCase):
         archive_fetches = []
 
         def fake_request(url, method="GET"):
-            if "web.archive.org/cdx" in url or "api.cdn.com/v2/search" in url:
+            if "web.archive.org/cdx" in url:
                 return {"ok": True, "status": 200, "text": self._cdx_response(many_ts), "final_url": url}
             if "id_/" in url:
                 archive_fetches.append(url)

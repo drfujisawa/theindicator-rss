@@ -261,8 +261,8 @@ def build_endpoint_matrix(target: Target) -> list[dict]:
             "url": (
                 "https://web.archive.org/cdx/search/cdx"
                 f"?url={encoded_player}&output=json&fl=timestamp,original,statuscode,mimetype"
-                f"&from={target.date.replace('-', '')}00000000"
-                f"&to={target.date.replace('-', '')[:-2]}999999999"
+                f"&from={target.date.replace('-', '')}000000"
+                f"&to={target.date.replace('-', '')[:-2]}99999999"
                 "&limit=10"
             ),
         },
