@@ -2,6 +2,7 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 import json
 import unittest
+import unittest.mock
 from urllib.error import URLError
 
 from scripts.recovery import recover_no_audio_targets as recovery
@@ -363,15 +364,20 @@ class CandidateCapTests(unittest.TestCase):
                 npr_url="https://www.npr.org/2020/01/01/1/t",
             )
         ))
-        max_per_target = (
-            endpoints_per_target * recovery.MAX_RETRIES
-            + recovery.MAX_CANDIDATES_PER_TARGET * 2 * recovery.MAX_RETRIES
-        )
-        max_run = 21 * max_per_target
-        # Matches the documented budget in the module docstring.
-        self.assertEqual(endpoints_per_target, 14)
-        self.assertEqual(max_per_target, 14 * 3 + 8 * 2 * 3)   # 42 + 48 = 90
-        self.assertEqual(max_run, 21 * 90)                       # 1 890
+        E = endpoints_per_target
+        W = recovery.WAYBACK_MAX_CAPTURES
+        R = recovery.MAX_RETRIES
+        C = recovery.MAX_CANDIDATES_PER_TARGET
+        max_per_target = E * R + W * R + C * 2 * R
+        max_run = 17 * max_per_target  # 17 genuine unresolved targets
+        # Endpoint matrix was reduced from 14 → 7 generic sources removed.
+        self.assertEqual(E, 7)
+        self.assertEqual(W, 3)   # up to 3 Wayback archive fetches
+        self.assertEqual(R, 2)   # 2 retries per request
+        self.assertEqual(C, 3)   # candidate cap of 3
+        # 7*2 + 3*2 + 3*2*2 = 14 + 6 + 12 = 32 per target
+        self.assertEqual(max_per_target, 32)
+        self.assertEqual(max_run, 17 * 32)   # 544
 
 
 class ProductionSafetyTests(unittest.TestCase):
@@ -613,6 +619,420 @@ class CompletionSkipTests(unittest.TestCase):
             self.assertTrue(placeholder.exists())
             data = json.loads(placeholder.read_text())
             self.assertFalse(data["run_complete"])  # partial run marker
+
+
+class WaybackCaptureSelectionTests(unittest.TestCase):
+    """Tests for select_wayback_captures."""
+
+    def _make_cdx(self, rows):
+        """Build a minimal CDX JSON response with header + data rows."""
+        header = ["urlkey", "timestamp", "statuscode", "digest"]
+        return json.dumps([header] + rows)
+
+    def test_empty_input_returns_empty(self):
+        result = recovery.select_wayback_captures("", "2022-06-09")
+        self.assertEqual(result, [])
+
+    def test_non_200_captures_excluded(self):
+        cdx = self._make_cdx([
+            ["key", "20220609120000", "404", "abc"],
+            ["key", "20220609130000", "301", "def"],
+        ])
+        result = recovery.select_wayback_captures(cdx, "2022-06-09")
+        self.assertEqual(result, [])
+
+    def test_200_captures_included_and_bounded(self):
+        cdx = self._make_cdx([
+            ["key", "20220609110000", "200", "aaa"],
+            ["key", "20220609120000", "200", "bbb"],
+            ["key", "20220609130000", "200", "ccc"],
+            ["key", "20220609140000", "200", "ddd"],
+        ])
+        result = recovery.select_wayback_captures(cdx, "2022-06-09", max_captures=3)
+        self.assertEqual(len(result), 3)
+        self.assertTrue(all("timestamp" in c for c in result))
+
+    def test_sorted_by_proximity_to_target_date(self):
+        # 20220609 is closest; 20220501 and 20221201 are further away.
+        cdx = self._make_cdx([
+            ["key", "20221201000000", "200", "far_future"],
+            ["key", "20220609080000", "200", "close"],
+            ["key", "20220501000000", "200", "far_past"],
+        ])
+        result = recovery.select_wayback_captures(cdx, "2022-06-09", max_captures=3)
+        self.assertEqual(result[0]["timestamp"], "20220609080000")
+
+    def test_cap_respected(self):
+        cdx = self._make_cdx([
+            ["key", f"2022060{i}000000", "200", f"d{i}"] for i in range(1, 8)
+        ])
+        result = recovery.select_wayback_captures(cdx, "2022-06-09", max_captures=2)
+        self.assertEqual(len(result), 2)
+
+    def test_invalid_json_returns_empty(self):
+        result = recovery.select_wayback_captures("not json", "2022-06-09")
+        self.assertEqual(result, [])
+
+
+class FetchWaybackPlayerPageTests(unittest.TestCase):
+    """Tests for fetch_wayback_player_page."""
+
+    def test_builds_id_modifier_url(self):
+        """The id_ modifier must appear in the fetched URL for clean archive HTML."""
+        fetched_urls = []
+
+        def fake_request(url, method="GET"):
+            fetched_urls.append(url)
+            return {"ok": True, "status": 200, "text": "", "final_url": url}
+
+        recovery.fetch_wayback_player_page(
+            "https://www.npr.org/player/embed/999/888",
+            "20220609120000",
+            request_fn=fake_request,
+        )
+        self.assertEqual(len(fetched_urls), 1)
+        url = fetched_urls[0]
+        self.assertIn("id_", url)
+        self.assertIn("20220609120000", url)
+        self.assertIn("player/embed/999/888", url)
+
+    def test_returns_request_fn_result(self):
+        def fake_request(url, method="GET"):
+            return {"ok": False, "status": 404, "text": ""}
+
+        result = recovery.fetch_wayback_player_page(
+            "https://www.npr.org/player/embed/1/2",
+            "20220609000000",
+            request_fn=fake_request,
+        )
+        self.assertFalse(result["ok"])
+
+
+class PlayerProvenanceTests(unittest.TestCase):
+    """Tests for the dual-ID provenance scoring fix."""
+
+    def _target(self, story_id="1104034175", audio_id="1198988725"):
+        return recovery.Target(
+            date="2022-06-09",
+            title="Test Episode",
+            story_id=story_id,
+            audio_id=audio_id,
+            npr_url=f"https://www.npr.org/2022/06/09/{story_id}/test",
+        )
+
+    def test_player_embed_url_with_both_ids_scores_055(self):
+        """source endpoint = player/embed/<story_id>/<audio_id> → +0.55 (both IDs present)."""
+        target = self._target()
+        player_url = f"https://www.npr.org/player/embed/{target.story_id}/{target.audio_id}"
+        prov = recovery.compute_identity_provenance(
+            target,
+            [player_url],
+            validated_audio=None,
+        )
+        self.assertAlmostEqual(prov["score"], 0.55)
+        self.assertEqual(prov["confidence"], "medium")
+
+    def test_player_embed_plus_simplecast_uuid_qualifies_as_high(self):
+        """player embed (0.55) + simplecast_uuid (0.20) = 0.75 ≥ 0.70 → 'high'."""
+        target = self._target()
+        player_url = f"https://www.npr.org/player/embed/{target.story_id}/{target.audio_id}"
+        simplecast_audio = (
+            "https://npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/"
+            "episodes/e9827f64-db6e-4abb-aee9-a9fe394033ae/audio/128/default.mp3"
+        )
+        validated_audio = {
+            "candidate_url": simplecast_audio,
+            "final_url": simplecast_audio,
+            "playable": True,
+            "http_status": 200,
+            "content_type": "audio/mpeg",
+            "content_length": 12345678,
+            "simplecast_uuid": "e9827f64-db6e-4abb-aee9-a9fe394033ae",
+        }
+        prov = recovery.compute_identity_provenance(target, [player_url], validated_audio)
+        self.assertAlmostEqual(prov["score"], 0.75)
+        self.assertEqual(prov["confidence"], "high")
+
+    def test_wayback_archived_player_url_also_scores_055(self):
+        """The archive URL contains both IDs → same +0.55 as the live player."""
+        target = self._target()
+        archive_url = (
+            "https://web.archive.org/web/20220609120000id_/"
+            f"https://www.npr.org/player/embed/{target.story_id}/{target.audio_id}"
+        )
+        prov = recovery.compute_identity_provenance(target, [archive_url], None)
+        self.assertAlmostEqual(prov["score"], 0.55)
+
+    def test_story_only_endpoint_scores_035(self):
+        """Endpoint containing only story_id still gets +0.35 (not +0.55)."""
+        target = self._target()
+        story_url = f"https://www.npr.org/2022/06/09/{target.story_id}/test-episode"
+        prov = recovery.compute_identity_provenance(target, [story_url], None)
+        self.assertAlmostEqual(prov["score"], 0.35)
+
+    def test_generic_endpoint_with_no_ids_scores_zero(self):
+        """An endpoint with neither story_id nor audio_id gives score 0."""
+        target = self._target()
+        generic_url = "https://www.npr.org/podcasts/510325/the-indicator-from-planet-money"
+        prov = recovery.compute_identity_provenance(target, [generic_url], None)
+        self.assertEqual(prov["score"], 0.0)
+        self.assertEqual(prov["confidence"], "low")
+
+    def test_player_embed_chain_qualifies_even_without_ids_in_final_url(self):
+        """The provenance chain qualifies even when the final Simplecast URL has no NPR IDs."""
+        target = self._target()
+        player_url = f"https://www.npr.org/player/embed/{target.story_id}/{target.audio_id}"
+        # Final URL is a pure Simplecast UUID URL: no NPR IDs anywhere in it.
+        simplecast_url = (
+            "https://cdn.simplecast.com/audio/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/"
+            "episodes/deadbeef-0000-0000-0000-000000000001/audio/128/default.mp3"
+        )
+        validated_audio = {
+            "candidate_url": simplecast_url,
+            "final_url": simplecast_url,
+            "playable": True,
+            "http_status": 200,
+            "content_type": "audio/mpeg",
+            "content_length": 9999999,
+            "simplecast_uuid": "deadbeef-0000-0000-0000-000000000001",
+        }
+        prov = recovery.compute_identity_provenance(target, [player_url], validated_audio)
+        # 0.55 (both IDs in endpoint) + 0.00 (no IDs in final URL) + 0.20 (uuid) = 0.75
+        self.assertAlmostEqual(prov["score"], 0.75)
+        self.assertEqual(prov["confidence"], "high")
+
+    def test_wrong_story_archive_capture_cannot_recover_target(self):
+        """An archived page for a *different* story_id cannot recover this target."""
+        target = self._target(story_id="1104034175", audio_id="1198988725")
+        # Archive URL comes from a different story (999999999/888888888).
+        wrong_archive_url = (
+            "https://web.archive.org/web/20220609120000id_/"
+            "https://www.npr.org/player/embed/999999999/888888888"
+        )
+        simplecast_url = (
+            "https://npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/"
+            "episodes/cafecafe-0000-0000-0000-cafecafe0000/audio/128/default.mp3"
+        )
+        validated_audio = {
+            "candidate_url": simplecast_url,
+            "final_url": simplecast_url,
+            "playable": True,
+            "http_status": 200,
+            "content_type": "audio/mpeg",
+            "content_length": 1234567,
+            "simplecast_uuid": "cafecafe-0000-0000-0000-cafecafe0000",
+        }
+        prov = recovery.compute_identity_provenance(target, [wrong_archive_url], validated_audio)
+        # Neither ID from the wrong archive URL matches target → endpoint score 0.
+        # Final URL also has no NPR IDs → score 0 + 0.20 (uuid) = 0.20 < 0.70.
+        self.assertEqual(prov["confidence"], "low")
+        self.assertLess(prov["score"], 0.70)
+
+    def test_generic_simplecast_uuid_is_rejected(self):
+        """UUID from a generic show-page source scores below 0.70 → NOT recovered."""
+        target = self._target()
+        generic_source = "https://www.npr.org/podcasts/510325/the-indicator-from-planet-money"
+        validated_audio = {
+            "candidate_url": "https://cdn.simplecast.com/audio/0a4e8d3b/episodes/aaaaaaaa-0000-0000-0000-aaaaaaaaaaaa/audio/128/default.mp3",
+            "final_url": "https://cdn.simplecast.com/audio/0a4e8d3b/episodes/aaaaaaaa-0000-0000-0000-aaaaaaaaaaaa/audio/128/default.mp3",
+            "playable": True,
+            "http_status": 200,
+            "content_type": "audio/mpeg",
+            "content_length": 99999,
+            "simplecast_uuid": "aaaaaaaa-0000-0000-0000-aaaaaaaaaaaa",
+        }
+        prov = recovery.compute_identity_provenance(target, [generic_source], validated_audio)
+        # Generic source (no NPR IDs) → 0.00 endpoint + 0.20 uuid = 0.20 → low
+        self.assertEqual(prov["confidence"], "low")
+        self.assertLess(prov["score"], 0.70)
+
+
+class WaybackArchiveFetchIntegrationTests(unittest.TestCase):
+    """Integration tests for investigate_target's Wayback archive fetch step."""
+
+    def _make_target(self, story_id="1104034175", audio_id="1198988725"):
+        return recovery.Target(
+            date="2022-06-09",
+            title="Test Episode",
+            story_id=story_id,
+            audio_id=audio_id,
+            npr_url=f"https://www.npr.org/2022/06/09/{story_id}/test",
+        )
+
+    def _cdx_response(self, timestamps):
+        header = ["urlkey", "timestamp", "statuscode", "digest"]
+        rows = [["k", ts, "200", "x"] for ts in timestamps]
+        return json.dumps([header] + rows)
+
+    def test_cdx_result_triggers_archive_fetch(self):
+        """When CDX returns captures, investigate_target fetches each archive page."""
+        cdx_ts = ["20220609110000", "20220609130000"]
+        fetched_urls = []
+
+        def fake_request(url, method="GET"):
+            fetched_urls.append(url)
+            if "api.cdn.com/v2/search" in url or "web.archive.org/cdx" in url:
+                # CDX response
+                return {"ok": True, "status": 200, "text": self._cdx_response(cdx_ts), "final_url": url}
+            if "web.archive.org/web/" in url and "id_/" in url:
+                # Archived player page — no audio candidates
+                return {"ok": True, "status": 200, "text": "<html>archived</html>", "final_url": url}
+            # All other endpoints fail
+            return {"ok": False, "status": 404, "text": "", "final_url": url}
+
+        target = self._make_target()
+        with unittest.mock.patch.object(recovery, "request_with_retries", side_effect=fake_request):
+            result = recovery.investigate_target(target, {}, [], output_dir=None)
+
+        archive_fetches = [u for u in fetched_urls if "id_/" in u]
+        self.assertGreaterEqual(len(archive_fetches), 1, "Expected at least one archive page fetch")
+        for url in archive_fetches:
+            self.assertIn(target.story_id, url)
+            self.assertIn(target.audio_id, url)
+
+    def test_archive_capture_selection_is_bounded(self):
+        """At most WAYBACK_MAX_CAPTURES archive pages are fetched."""
+        many_ts = [f"2022060{i}000000" for i in range(1, 9)]  # 8 captures in CDX
+        archive_fetches = []
+
+        def fake_request(url, method="GET"):
+            if "web.archive.org/cdx" in url or "api.cdn.com/v2/search" in url:
+                return {"ok": True, "status": 200, "text": self._cdx_response(many_ts), "final_url": url}
+            if "id_/" in url:
+                archive_fetches.append(url)
+                return {"ok": True, "status": 200, "text": "<html>archived</html>", "final_url": url}
+            return {"ok": False, "status": 404, "text": "", "final_url": url}
+
+        target = self._make_target()
+        with unittest.mock.patch.object(recovery, "request_with_retries", side_effect=fake_request):
+            recovery.investigate_target(target, {}, [], output_dir=None)
+
+        self.assertLessEqual(len(archive_fetches), recovery.WAYBACK_MAX_CAPTURES)
+
+    def test_live_player_simplecast_uuid_leads_to_recovery(self):
+        """player_embed → Simplecast UUID in page → playable → RECOVERED_AND_VALIDATED."""
+        simplecast_url = (
+            "https://npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/"
+            "episodes/e9827f64-db6e-4abb-aee9-a9fe394033ae/audio/128/default.mp3"
+        )
+        player_html = f'<html><script>var x = {{audioUrl: "{simplecast_url}"}};</script></html>'
+
+        def fake_request(url, method="GET"):
+            if f"player/embed/" in url and "archive" not in url:
+                return {"ok": True, "status": 200, "text": player_html, "final_url": url}
+            if "simplecastaudio" in url:
+                return {"ok": True, "status": 200, "content_type": "audio/mpeg",
+                        "content_length": 9999999, "final_url": url, "text": ""}
+            return {"ok": False, "status": 404, "text": "", "final_url": url}
+
+        target = self._make_target()
+        with unittest.mock.patch.object(recovery, "request_with_retries", side_effect=fake_request):
+            with unittest.mock.patch.object(recovery, "validate_audio_candidate") as mock_val:
+                mock_val.return_value = {
+                    "candidate_url": simplecast_url,
+                    "final_url": simplecast_url,
+                    "playable": True,
+                    "http_status": 200,
+                    "content_type": "audio/mpeg",
+                    "content_length": 9999999,
+                    "simplecast_uuid": "e9827f64-db6e-4abb-aee9-a9fe394033ae",
+                }
+                result = recovery.investigate_target(target, {}, [], output_dir=None)
+
+        self.assertEqual(result["final_classification"], "RECOVERED_AND_VALIDATED")
+
+    def test_archived_player_simplecast_uuid_leads_to_recovery(self):
+        """Wayback archive player page → UUID → playable → RECOVERED_AND_VALIDATED."""
+        simplecast_url = (
+            "https://npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/"
+            "episodes/abcd1234-0000-0000-0000-abcd12340000/audio/128/default.mp3"
+        )
+        archived_html = f'<html><script>window.__STATE__ = {{audioUrl: "{simplecast_url}"}};</script></html>'
+        target = self._make_target()
+        cdx_ts = ["20220609110000"]
+
+        def fake_request(url, method="GET"):
+            if "web.archive.org/cdx" in url:
+                return {"ok": True, "status": 200, "text": self._cdx_response(cdx_ts), "final_url": url}
+            if "id_/" in url:
+                return {"ok": True, "status": 200, "text": archived_html, "final_url": url}
+            return {"ok": False, "status": 404, "text": "", "final_url": url}
+
+        with unittest.mock.patch.object(recovery, "request_with_retries", side_effect=fake_request):
+            with unittest.mock.patch.object(recovery, "validate_audio_candidate") as mock_val:
+                mock_val.return_value = {
+                    "candidate_url": simplecast_url,
+                    "final_url": simplecast_url,
+                    "playable": True,
+                    "http_status": 200,
+                    "content_type": "audio/mpeg",
+                    "content_length": 9999999,
+                    "simplecast_uuid": "abcd1234-0000-0000-0000-abcd12340000",
+                }
+                result = recovery.investigate_target(target, {}, [], output_dir=None)
+
+        self.assertEqual(result["final_classification"], "RECOVERED_AND_VALIDATED")
+
+    def test_two_indicators_skipped_without_network_calls(self):
+        """Two Indicators targets exit immediately with no network probing."""
+        two_indicators_id = next(iter(recovery.TWO_INDICATORS_STORY_IDS))
+        target = recovery.Target(
+            date="2021-07-07",
+            title="Two Indicators: X",
+            story_id=two_indicators_id,
+            audio_id="999999999",
+            npr_url=f"https://www.npr.org/2021/07/07/{two_indicators_id}/two-indicators",
+        )
+        calls = []
+
+        def fake_request(url, method="GET"):
+            calls.append(url)
+            return {"ok": True, "status": 200, "text": "", "final_url": url}
+
+        with unittest.mock.patch.object(recovery, "request_with_retries", side_effect=fake_request):
+            result = recovery.investigate_target(target, {}, [], output_dir=None)
+
+        self.assertEqual(result["final_classification"], "PROBABLY_NOT_SEPARATE_EPISODE")
+        self.assertEqual(len(calls), 0, "Two Indicators must not trigger any network requests")
+        self.assertEqual(result["probe_outcome"], "skipped_two_indicators")
+
+    def test_legacy_api_ondemand_recovery_2020(self):
+        """2020 target: legacy API by story_id returns ondemand.npr.org URL → recovered."""
+        ondemand_url = (
+            "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/"
+            "2020/05/20200512_indicator_pay-cuts-vs-layoffs-abc12345.mp3"
+        )
+        api_json = json.dumps({
+            "list": [{"id": "854889059", "audio": [{"format": {"mp3": [{"$text": ondemand_url}]}}]}]
+        })
+        target = recovery.Target(
+            date="2020-05-12",
+            title="Pay Cuts Vs. Layoffs",
+            story_id="854889059",
+            audio_id="855066846",
+            npr_url="https://www.npr.org/2020/05/12/854889059/pay-cuts-vs-layoffs",
+        )
+
+        def fake_request(url, method="GET"):
+            if "854889059" in url and "api.npr.org" in url:
+                return {"ok": True, "status": 200, "text": api_json, "final_url": url}
+            return {"ok": False, "status": 404, "text": "", "final_url": url}
+
+        with unittest.mock.patch.object(recovery, "request_with_retries", side_effect=fake_request):
+            with unittest.mock.patch.object(recovery, "validate_audio_candidate") as mock_val:
+                mock_val.return_value = {
+                    "candidate_url": ondemand_url,
+                    "final_url": ondemand_url + "?e=854889059",
+                    "playable": True,
+                    "http_status": 200,
+                    "content_type": "audio/mpeg",
+                    "content_length": 8000000,
+                    "simplecast_uuid": None,
+                }
+                result = recovery.investigate_target(target, {}, [], output_dir=None)
+
+        # 0.35 (story_id in API endpoint) + 0.45 (story_id in final URL) = 0.80 → high
+        self.assertEqual(result["final_classification"], "RECOVERED_AND_VALIDATED")
 
 
 if __name__ == "__main__":
