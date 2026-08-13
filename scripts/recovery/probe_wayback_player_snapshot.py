@@ -213,6 +213,133 @@ _LIVE_STREAM_RE = re.compile(
     re.IGNORECASE,
 )
 
+# ---------------------------------------------------------------------------
+# NPR archived audioModel extraction (legacy 2018–2020 NPR player era)
+# ---------------------------------------------------------------------------
+
+# Matches: var audioModel = { ... };
+# The object may span multiple lines; we capture everything between the first
+# '{' after '=' and its matching closing '}'.  We handle simple nesting up to
+# the depth that NPR's player used (no deeply nested arrays needed).
+_AUDIO_MODEL_ASSIGN_RE = re.compile(
+    r"var\s+audioModel\s*=\s*(\{)",
+    re.IGNORECASE,
+)
+
+# Matches bare identifier keys in JS object literals: ``word:`` → ``"word":``
+# Used by the JS-to-JSON normalizer in extract_audio_model.
+_UNQUOTED_KEY_RE = re.compile(r'(?<!["\w])([A-Za-z_$][A-Za-z0-9_$]*)\s*:')
+
+
+def extract_audio_model(html: str, story_id: str, audio_id: str) -> dict | None:
+    """Extract and validate the ``var audioModel = {...}`` object from archived
+    NPR player HTML.
+
+    Returns a dict with these keys on success::
+
+        {
+            "story_id": str,        # from audioModel.storyId
+            "media_id": str,        # from audioModel.mediaId
+            "audio_src": str,       # original wrapper URL (not the cached redirect)
+            "title": str | None,
+            "duration": int | None,
+            "has_audio_available": bool | None,
+            "is_available": bool | None,
+        }
+
+    Returns ``None`` if:
+    - ``var audioModel = {...}`` is not found
+    - the JSON object cannot be parsed
+    - ``audioModel.storyId`` does not match *story_id*
+    - ``audioModel.mediaId`` does not match *audio_id*
+    - ``audioModel.audioSrc`` is absent or empty
+    """
+    m = _AUDIO_MODEL_ASSIGN_RE.search(html)
+    if not m:
+        return None
+
+    # Brace-balance scan starting at the opening '{' to extract the object text
+    start = m.start(1)
+    depth = 0
+    end = start
+    in_string = False
+    escape_next = False
+    for i in range(start, min(start + MAX_TEXT_BYTES, len(html))):
+        ch = html[i]
+        if escape_next:
+            escape_next = False
+            continue
+        if ch == "\\" and in_string:
+            escape_next = True
+            continue
+        if ch == '"':
+            in_string = not in_string
+            continue
+        if in_string:
+            continue
+        if ch == "{":
+            depth += 1
+        elif ch == "}":
+            depth -= 1
+            if depth == 0:
+                end = i + 1
+                break
+    else:
+        return None  # unbalanced braces
+
+    obj_text = html[start:end]
+
+    # Attempt strict JSON parse first; fall back to light JS-literal normalization.
+    # NPR's player used JavaScript object literal notation (unquoted keys, JS booleans)
+    # which is not valid JSON.  We apply two cheap transforms to normalize:
+    #   1. Quote bare identifiers used as object keys: ``word:`` → ``"word":``
+    #   2. Replace single-quoted string values with double-quoted equivalents
+    # These transforms are deliberately limited to the subset of JS object literals
+    # that NPR's archived audioModel actually used.
+
+    def _normalize_js_obj(text: str) -> str:
+        """Convert a simple JS object literal to something json.loads can parse."""
+        normalized = _UNQUOTED_KEY_RE.sub(lambda mo: f'"{mo.group(1)}":', text)
+        normalized = re.sub(r"'([^'\\]*)'", r'"\1"', normalized)
+        return normalized
+
+    parsed: dict | None = None
+    for candidate in (obj_text, _normalize_js_obj(obj_text)):
+        try:
+            parsed = json.loads(candidate)
+            break
+        except (ValueError, TypeError):
+            continue
+    if not isinstance(parsed, dict):
+        return None
+
+    # Validate required identity fields
+    model_story_id = str(parsed.get("storyId", "")).strip()
+    model_media_id = str(parsed.get("mediaId", "")).strip()
+    if model_story_id != str(story_id).strip():
+        return None
+    if model_media_id != str(audio_id).strip():
+        return None
+
+    audio_src = str(parsed.get("audioSrc", "")).strip()
+    if not audio_src:
+        return None
+
+    title_val = parsed.get("title") or parsed.get("programName")
+    duration_val = parsed.get("duration")
+    has_audio = parsed.get("hasAudioAvailable")
+    is_avail = parsed.get("isAvailable")
+
+    return {
+        "story_id": model_story_id,
+        "media_id": model_media_id,
+        "audio_src": audio_src,
+        "title": str(title_val) if title_val is not None else None,
+        "duration": int(duration_val) if isinstance(duration_val, (int, float)) else None,
+        "has_audio_available": bool(has_audio) if has_audio is not None else None,
+        "is_available": bool(is_avail) if is_avail is not None else None,
+    }
+
 
 # ---------------------------------------------------------------------------
 # Production file guard
@@ -452,8 +579,16 @@ def _unique(values: list[str]) -> list[str]:
     return seen
 
 
-def extract_from_player_html(html: str) -> dict:
+def extract_from_player_html(
+    html: str,
+    story_id: str | None = None,
+    audio_id: str | None = None,
+) -> dict:
     """Extract strictly episode-specific audio candidates from archived player HTML.
+
+    When *story_id* and *audio_id* are provided, also attempts to parse the NPR
+    legacy ``var audioModel = {...}`` object.  If found and validated, its
+    ``audioSrc`` is prepended to ``legacy_audio_urls`` (wrapper URL preserved).
 
     Simplecast episode UUID eligibility rules (in order of strength):
       1. URL path ``/episodes/<uuid>/audio/`` — strongest: episode-specific CDN path
@@ -466,6 +601,7 @@ def extract_from_player_html(html: str) -> dict:
     The known Simplecast show UUID (SIMPLECAST_SHOW_UUID) is always rejected.
 
     Legacy audio URLs (2020-era):
+      - audioModel.audioSrc (NPR ``var audioModel`` object, identity-validated)
       - ondemand.npr.org/*.mp3 / *.m4a / *.mp4
       - play.podtrac.com/npr-510325/*.mp3 / *.m4a / *.mp4
 
@@ -477,9 +613,10 @@ def extract_from_player_html(html: str) -> dict:
         {
             "simplecast_episode_uuids": [...],  # episode-specific, show UUID excluded
             "simplecast_audio_urls": [...],     # /episodes/<uuid>/audio CDN URLs
-            "legacy_audio_urls": [...],         # ondemand.npr.org / podtrac URLs
+            "legacy_audio_urls": [...],         # audioModel.audioSrc first, then ondemand/podtrac
             "episode_key_uuids": [...],         # from episodeId/episodeUuid keys
             "aw_episode_id_uuids": [...],       # from awEpisodeId parameter
+            "audio_model": {...} | None,        # parsed audioModel metadata (or None)
         }
     """
     simplecast_episode_uuids: list[str] = []
@@ -487,6 +624,16 @@ def extract_from_player_html(html: str) -> dict:
     legacy_audio_urls: list[str] = []
     episode_key_uuids: list[str] = []
     aw_episode_id_uuids: list[str] = []
+
+    # 0. NPR var audioModel object — highest-fidelity legacy NPR audio source.
+    #    audioSrc is prepended so it is validated first.
+    audio_model: dict | None = None
+    if story_id is not None and audio_id is not None:
+        audio_model = extract_audio_model(html, story_id, audio_id)
+        if audio_model is not None:
+            src = audio_model["audio_src"]
+            if src and src not in legacy_audio_urls:
+                legacy_audio_urls.append(src)
 
     # 1. /episodes/<uuid>/audio CDN URLs — strongest Simplecast episode signal
     for m in _SIMPLECAST_EPISODE_AUDIO_URL_RE.finditer(html):
@@ -542,6 +689,7 @@ def extract_from_player_html(html: str) -> dict:
         "legacy_audio_urls": _unique(legacy_audio_urls),
         "episode_key_uuids": _unique(episode_key_uuids),
         "aw_episode_id_uuids": _unique(aw_episode_id_uuids),
+        "audio_model": audio_model,
     }
 
 
@@ -587,6 +735,9 @@ def validate_audio_candidate(
         "content_type": validation_result.get("content_type"),
         "content_length": validation_result.get("content_length"),
         "error": validation_result.get("error") if not validation_result.get("ok") else None,
+        # final_redirect_url: the URL after following all HTTP redirects (diagnostic only).
+        # The original wrapper URL (candidate_url / audioSrc) is always preserved above.
+        "final_redirect_url": validation_result.get("final_url"),
     }
 
 
@@ -729,6 +880,7 @@ def probe_target(
         "simplecast_episode_uuids": [],
         "simplecast_audio_urls": [],
         "legacy_audio_urls": [],
+        "audio_model": None,
         "validated_audio": None,
         "classification": "NO_WAYBACK_CAPTURES",
     }
@@ -775,6 +927,7 @@ def probe_target(
             "legacy_audio_urls": [],
             "episode_key_uuids": [],
             "aw_episode_id_uuids": [],
+            "audio_model": None,
             "error": None,
         }
 
@@ -796,12 +949,13 @@ def probe_target(
         capture_path = _save_capture_diagnostic_html(effective_dir, story_id, ts, html)
         snap["capture_file"] = capture_path.name
 
-        extracted = extract_from_player_html(html)
+        extracted = extract_from_player_html(html, story_id=story_id, audio_id=audio_id)
         snap["simplecast_episode_uuids"] = extracted["simplecast_episode_uuids"]
         snap["simplecast_audio_urls"] = extracted["simplecast_audio_urls"]
         snap["legacy_audio_urls"] = extracted["legacy_audio_urls"]
         snap["episode_key_uuids"] = extracted["episode_key_uuids"]
         snap["aw_episode_id_uuids"] = extracted["aw_episode_id_uuids"]
+        snap["audio_model"] = extracted["audio_model"]
 
         result["snapshots"].append(snap)
 
@@ -820,6 +974,9 @@ def probe_target(
         for url in extracted["legacy_audio_urls"]:
             if url not in all_legacy_urls:
                 all_legacy_urls.append(url)
+        # Keep the first validated audioModel found across snapshots
+        if extracted["audio_model"] is not None and result["audio_model"] is None:
+            result["audio_model"] = extracted["audio_model"]
 
     result["simplecast_episode_uuids"] = all_uuids
     result["simplecast_audio_urls"] = all_audio_urls
@@ -864,8 +1021,13 @@ def probe_target(
     print(f"    → classification: {result['classification']}")
     if all_uuids:
         print(f"    → episode_uuids: {all_uuids[:3]}")
+    if result["audio_model"]:
+        am = result["audio_model"]
+        print(f"    → audio_model: storyId={am['story_id']} mediaId={am['media_id']} "
+              f"duration={am.get('duration')} title={am.get('title')!r}")
     if validated_audio:
-        print(f"    → validated_audio: {validated_audio.get('final_url')}")
+        print(f"    → validated_audio wrapper: {validated_audio.get('candidate_url')}")
+        print(f"    → final_redirect_url:       {validated_audio.get('final_redirect_url')}")
 
     # Step 8: write checkpoint immediately
     _write_checkpoint(effective_dir, story_id, result)
