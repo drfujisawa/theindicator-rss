@@ -35118,6 +35118,254 @@
       ],
       "audio_url_e_parameter": "718274396",
       "release_classification": "confirmed_indicator_episode"
+    },
+    "614193817": {
+      "story_id": "614193817",
+      "audio_id": "614193084",
+      "date": "2018-05-24",
+      "title": "The Money Detectives",
+      "npr_url": "https://www.npr.org/sections/money/2018/05/24/614193817/two-million-suspicious-transactions",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/05/20180524_indicator_0524_fincen_final.mp3?d=540&e=614188779&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/05/20180524_indicator_0524_fincen_final.mp3?d=540&e=614188779&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": null,
+      "duration_seconds": 540,
+      "extraction_method": "reviewed_early_near_ready_staging",
+      "provenance": [
+        "indicator_early_audit.json",
+        "indicator_npr_audio_recovery.json",
+        "indicator_npr_audio_validation.json",
+        "indicator_npr_identities.json",
+        "indicator_early_near_ready_audit.json"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "614188779",
+        "614193084"
+      ],
+      "audio_url_e_parameter": 614188779,
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "643056045": {
+      "story_id": "643056045",
+      "audio_id": "643055875",
+      "date": "2018-08-29",
+      "title": "Mind the Pay Gap (REBROADCAST)",
+      "npr_url": "https://www.npr.org/sections/money/2018/08/29/643056045/mind-the-pay-gap",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/08/20180829_indicator_0829_wage_gap_final__rerun.mp3?d=502&e=643054655&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/08/20180829_indicator_0829_wage_gap_final__rerun.mp3?d=502&e=643054655&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": null,
+      "duration_seconds": 502,
+      "extraction_method": "reviewed_early_near_ready_staging",
+      "provenance": [
+        "indicator_early_audit.json",
+        "indicator_npr_audio_recovery.json",
+        "indicator_npr_audio_validation.json",
+        "indicator_npr_identities.json",
+        "indicator_early_near_ready_audit.json"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "643054655",
+        "643055875"
+      ],
+      "audio_url_e_parameter": 643054655,
+      "release_classification": "confirmed_indicator_rebroadcast"
+    },
+    "643423980": {
+      "story_id": "643423980",
+      "audio_id": "643423467",
+      "date": "2018-08-30",
+      "title": "Aging Up (REBROADCAST)",
+      "npr_url": "https://www.npr.org/sections/money/2018/08/30/643423980/aging-up",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/08/20180830_indicator_0502_age_of_entrepreneurs_final_rerun_1.mp3?d=598&e=643422612&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/08/20180830_indicator_0502_age_of_entrepreneurs_final_rerun_1.mp3?d=598&e=643422612&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": null,
+      "duration_seconds": 598,
+      "extraction_method": "reviewed_early_near_ready_staging",
+      "provenance": [
+        "indicator_early_audit.json",
+        "indicator_npr_audio_recovery.json",
+        "indicator_npr_audio_validation.json",
+        "indicator_npr_identities.json",
+        "indicator_early_near_ready_audit.json"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "643422612",
+        "643423467"
+      ],
+      "audio_url_e_parameter": 643422612,
+      "release_classification": "confirmed_indicator_rebroadcast"
+    },
+    "644961856": {
+      "story_id": "644961856",
+      "audio_id": "644961097",
+      "date": "2018-09-05",
+      "title": "NAFTA-splainer",
+      "npr_url": "https://www.npr.org/sections/money/2018/09/05/644961856/gsdfgsdf",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/09/20180905_indicator_090518_naftasplainer_final_2.mp3?d=596&e=644947994&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/09/20180905_indicator_090518_naftasplainer_final_2.mp3?d=596&e=644947994&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": null,
+      "duration_seconds": 596,
+      "extraction_method": "reviewed_early_near_ready_staging",
+      "provenance": [
+        "indicator_early_audit.json",
+        "indicator_npr_audio_recovery.json",
+        "indicator_npr_audio_validation.json",
+        "indicator_npr_identities.json",
+        "indicator_early_near_ready_audit.json"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "644947994",
+        "644961097"
+      ],
+      "audio_url_e_parameter": 644947994,
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "662708285": {
+      "story_id": "662708285",
+      "audio_id": "662707862",
+      "date": "2018-10-31",
+      "title": "Paranormal Profits",
+      "npr_url": "https://www.npr.org/sections/money/2018/10/31/662708285/paranormal-profits",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/10/20181031_indicator_1031_horror_final.mp3?orgId=1&d=565&p=510325&story=662706955&t=podcast&e=662706955&sc=embed",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/10/20181031_indicator_1031_horror_final.mp3?orgId=1&d=565&p=510325&story=662706955&t=podcast&e=662706955&sc=embed",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": null,
+      "duration_seconds": 565,
+      "extraction_method": "reviewed_early_near_ready_staging",
+      "provenance": [
+        "indicator_completeness_audit.json:special_recoveries",
+        "indicator_early_audit.json",
+        "indicator_npr_audio_recovery.json",
+        "indicator_npr_identities.json",
+        "indicator_early_near_ready_audit.json"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "662706955",
+        "662707862"
+      ],
+      "audio_url_e_parameter": 662706955,
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "673840278": {
+      "story_id": "673840278",
+      "audio_id": "673888197",
+      "date": "2018-12-05",
+      "title": "Paris Is Burning",
+      "npr_url": "https://www.npr.org/sections/money/2018/12/05/673840278/macron-s-meltdown",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/12/20181205_indicator_120518_yellow_vests_final_final.mp3?d=583&e=673839855&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/12/20181205_indicator_120518_yellow_vests_final_final.mp3?d=583&e=673839855&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": null,
+      "duration_seconds": 583,
+      "extraction_method": "reviewed_early_near_ready_staging",
+      "provenance": [
+        "indicator_early_audit.json",
+        "indicator_npr_audio_recovery.json",
+        "indicator_npr_audio_validation.json",
+        "indicator_npr_identities.json",
+        "indicator_early_near_ready_audit.json"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "673839855",
+        "673888197"
+      ],
+      "audio_url_e_parameter": 673839855,
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "685292915": {
+      "story_id": "685292915",
+      "audio_id": "686020513",
+      "date": "2019-01-14",
+      "title": "10,000 Economists Walk Into A Bar",
+      "npr_url": "https://www.npr.org/sections/money/2019/01/15/685292915/10-000-economists-walk-into-a-bar",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/01/20190116_indicator_011419_aea_vox_final_final_adsfix_2.mp3?d=585&size=9344970&e=685283900&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/01/20190116_indicator_011419_aea_vox_final_final_adsfix_2.mp3?d=585&size=9344970&e=685283900&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9344970,
+      "duration_seconds": 585,
+      "extraction_method": "reviewed_early_near_ready_staging",
+      "provenance": [
+        "indicator_early_audit.json",
+        "indicator_npr_audio_recovery.json",
+        "indicator_npr_audio_validation.json",
+        "indicator_npr_identities.json",
+        "indicator_early_near_ready_audit.json"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "685283900",
+        "686020513"
+      ],
+      "audio_url_e_parameter": 685283900,
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "716132270": {
+      "story_id": "716132270",
+      "audio_id": "730102905",
+      "date": "2019-04-22",
+      "title": "The Traffic Tariff",
+      "npr_url": "https://www.npr.org/sections/money/2019/04/22/716132270/the-traffic-tariff",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/04/20190422_indicator_042219_congestion_pricing_final-a883fa7f-efbe-4a76-9153-043fa9e2c51b.mp3",
+      "final_url": "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/04/20190422_indicator_042219_congestion_pricing_final-a883fa7f-efbe-4a76-9153-043fa9e2c51b.mp3",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": null,
+      "duration_seconds": null,
+      "extraction_method": "reviewed_early_near_ready_staging",
+      "provenance": [
+        "indicator_completeness_audit.json:special_recoveries",
+        "indicator_early_audit.json",
+        "indicator_npr_audio_recovery.json",
+        "indicator_npr_identities.json",
+        "indicator_early_near_ready_audit.json"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "716127469",
+        "730102905"
+      ],
+      "audio_url_e_parameter": null,
+      "release_classification": "confirmed_indicator_episode"
     }
   }
 }

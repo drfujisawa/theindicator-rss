@@ -10,10 +10,10 @@ class EarlyPromotionAuditTests(unittest.TestCase):
 
         self.assertEqual(manifest["summary"]["reference_episode_count"], 287)
         self.assertEqual(sum(counts.values()), 287)
-        self.assertEqual(counts["already_in_production"], 237)
+        self.assertEqual(counts["already_in_production"], 245)
         self.assertNotIn("strong_promotion_candidate", counts)
-        self.assertEqual(counts["identity_review_candidate"], 6)
-        self.assertEqual(counts["special_recovery_review"], 2)
+        self.assertNotIn("identity_review_candidate", counts)
+        self.assertNotIn("special_recovery_review", counts)
         self.assertEqual(counts["probable_duplicate_rebroadcast"], 2)
         self.assertEqual(counts["identity_found_but_audio_unresolved"], 2)
         self.assertEqual(counts["unresolved_candidate"], 38)

@@ -1,0 +1,67 @@
+{
+  "report_version": 1,
+  "mode": "staging_only",
+  "production_files_modified": false,
+  "source_audit": "data\\audits\\indicator_early_near_ready_audit.json",
+  "stage_directory": "work\\early-near-ready-staging",
+  "counts": {
+    "promoted_candidates": 8,
+    "history_before": 1706,
+    "history_after": 1714,
+    "enclosure_map_before": 1706,
+    "enclosure_map_after": 1714,
+    "feed_before": 2007,
+    "feed_after": 2015,
+    "known_content_lengths": 1,
+    "descriptions_present": 8
+  },
+  "checks": {
+    "production_files_unchanged": true,
+    "candidate_count_is_8": true,
+    "candidate_story_ids_unique": true,
+    "history_delta_is_8": true,
+    "history_episode_count_consistent": true,
+    "history_story_ids_unique": true,
+    "enclosure_map_delta_is_8": true,
+    "feed_delta_is_8": true,
+    "feed_story_id_delta_exact": true,
+    "rss_guids_unique": true,
+    "rss_story_ids_unique": true,
+    "rss_sorted_newest_first": true,
+    "rss_xml_parses": true,
+    "all_promoted_history_records_present": true,
+    "all_promoted_feed_items_present": true,
+    "all_promoted_enclosures_resolved": true,
+    "all_promoted_audio_npr_hosted": true,
+    "promoted_audio_paths_unique": true,
+    "all_promoted_have_player_identity": true,
+    "all_promoted_dates_marked_date_only": true
+  },
+  "all_checks_passed": true,
+  "candidate_story_ids": [
+    "614193817",
+    "643056045",
+    "643423980",
+    "644961856",
+    "662708285",
+    "673840278",
+    "685292915",
+    "716132270"
+  ],
+  "production_sha256_before": {
+    "indicator_history.json": "420b3f5aa65c92405ea9b127e4405abee62d8ac6a7c5c7f90331ff7d5001ed59",
+    "indicator_enclosure_map.json": "486b36309074c483c6fed64a00c7454b5533a63ab5b3f2257d86ba3ae3570088",
+    "theindicator_feed.xml": "7581ba78e7f1a60852580311d6828eade168c1a70c932a1556dc6241912b9abf"
+  },
+  "production_sha256_after": {
+    "indicator_history.json": "420b3f5aa65c92405ea9b127e4405abee62d8ac6a7c5c7f90331ff7d5001ed59",
+    "indicator_enclosure_map.json": "486b36309074c483c6fed64a00c7454b5533a63ab5b3f2257d86ba3ae3570088",
+    "theindicator_feed.xml": "7581ba78e7f1a60852580311d6828eade168c1a70c932a1556dc6241912b9abf"
+  },
+  "staged_sha256": {
+    "indicator_history.json": "1d2ddaa81c4760e5e8fa23900253c6de43a8a945030fdcab0947daea2547e466",
+    "indicator_enclosure_map.json": "22b94a0479157eac984b379417ded5389602362c49fb6c7faea5427923ea281a",
+    "theindicator_feed.xml": "07e2d8e8ac0abba26e2915d203318ce132c2778efd67589828cacad0ec9b38b6"
+  },
+  "next_gate": "review the staged diff, then use the existing hash-guarded atomic production workflow"
+}

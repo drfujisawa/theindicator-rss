@@ -1,6 +1,6 @@
 {
   "next_date": "2017-11-05T16:46:00-04:00",
-  "episode_count": 1706,
+  "episode_count": 1714,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -13313,6 +13313,26 @@
       ]
     },
     {
+      "title": "The Traffic Tariff",
+      "date": "2019-04-22",
+      "npr_url": "https://www.npr.org/sections/money/2019/04/22/716132270/the-traffic-tariff",
+      "story_id": "716132270",
+      "audio_id": "730102905",
+      "player_url": "https://www.npr.org/player/embed/716127469/730102905",
+      "description": "New York will soon charge drivers to enter the most crowded parts of the city. Congestion pricing: Does it work? Who's doing it? And is it coming to a city near you?",
+      "description_provenance": "affiliate_mirror",
+      "date_precision": "date_only",
+      "recovery_status": "reviewed_near_ready_candidate",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_completeness_audit.json:special_recoveries",
+        "indicator_early_audit.json",
+        "indicator_npr_audio_recovery.json",
+        "indicator_npr_identities.json",
+        "indicator_early_near_ready_audit.json"
+      ]
+    },
+    {
       "title": "A Brief History of Income Taxes",
       "date": "2019-04-18",
       "npr_url": "https://www.npr.org/sections/money/2019/04/18/714789891/a-brief-history-of-income-taxes",
@@ -14413,6 +14433,26 @@
       ]
     },
     {
+      "title": "10,000 Economists Walk Into A Bar",
+      "date": "2019-01-14",
+      "npr_url": "https://www.npr.org/sections/money/2019/01/15/685292915/10-000-economists-walk-into-a-bar",
+      "story_id": "685292915",
+      "audio_id": "686020513",
+      "player_url": "https://www.npr.org/player/embed/685283900/686020513",
+      "description": "Which economic indicators do we pay too much attention to? Not enough? It's Overrated/Underrated: Economic Indicator edition",
+      "description_provenance": "affiliate_mirror",
+      "date_precision": "date_only",
+      "recovery_status": "reviewed_near_ready_candidate",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_early_audit.json",
+        "indicator_npr_audio_recovery.json",
+        "indicator_npr_audio_validation.json",
+        "indicator_npr_identities.json",
+        "indicator_early_near_ready_audit.json"
+      ]
+    },
+    {
       "title": "Shutdown Economics",
       "date": "2019-01-11",
       "npr_url": "https://www.npr.org/sections/money/2019/01/11/684634998/shutdown-economics",
@@ -14833,6 +14873,26 @@
       ]
     },
     {
+      "title": "Paris Is Burning",
+      "date": "2018-12-05",
+      "npr_url": "https://www.npr.org/sections/money/2018/12/05/673840278/macron-s-meltdown",
+      "story_id": "673840278",
+      "audio_id": "673888197",
+      "player_url": "https://www.npr.org/player/embed/673839855/673888197",
+      "description": "What the yellow vest protests in Paris tell us about economic reform in France and the parallels with politics in the U.S.",
+      "description_provenance": "affiliate_mirror",
+      "date_precision": "date_only",
+      "recovery_status": "reviewed_near_ready_candidate",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_early_audit.json",
+        "indicator_npr_audio_recovery.json",
+        "indicator_npr_audio_validation.json",
+        "indicator_npr_identities.json",
+        "indicator_early_near_ready_audit.json"
+      ]
+    },
+    {
       "title": "Behind The Curve",
       "date": "2018-12-04",
       "npr_url": "https://www.npr.org/sections/money/2018/12/04/673429096/behind-the-curve",
@@ -15230,6 +15290,26 @@
         "indicator_npr_identities.json",
         "indicator_npr_audio_validation.json",
         "indicator_npr_audio_recovery.json"
+      ]
+    },
+    {
+      "title": "Paranormal Profits",
+      "date": "2018-10-31",
+      "npr_url": "https://www.npr.org/sections/money/2018/10/31/662708285/paranormal-profits",
+      "story_id": "662708285",
+      "audio_id": "662707862",
+      "player_url": "https://www.npr.org/player/embed/662706955/662707862",
+      "description": "Horror movies are good business. Scary good. They are more likely to be profitable than any other kind of movie. Today on the show, we look at why.",
+      "description_provenance": "affiliate_mirror",
+      "date_precision": "date_only",
+      "recovery_status": "reviewed_near_ready_candidate",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_completeness_audit.json:special_recoveries",
+        "indicator_early_audit.json",
+        "indicator_npr_audio_recovery.json",
+        "indicator_npr_identities.json",
+        "indicator_early_near_ready_audit.json"
       ]
     },
     {
@@ -15900,6 +15980,26 @@
       ]
     },
     {
+      "title": "NAFTA-splainer",
+      "date": "2018-09-05",
+      "npr_url": "https://www.npr.org/sections/money/2018/09/05/644961856/gsdfgsdf",
+      "story_id": "644961856",
+      "audio_id": "644961097",
+      "player_url": "https://www.npr.org/player/embed/644947994/644961097",
+      "description": "Cardiff gets the lowdown on NAFTA from Soumaya Keynes of The Economist",
+      "description_provenance": "affiliate_mirror",
+      "date_precision": "date_only",
+      "recovery_status": "reviewed_near_ready_candidate",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_early_audit.json",
+        "indicator_npr_audio_recovery.json",
+        "indicator_npr_audio_validation.json",
+        "indicator_npr_identities.json",
+        "indicator_early_near_ready_audit.json"
+      ]
+    },
+    {
       "title": "Making The Case For Removing Tariffs",
       "date": "2018-09-04",
       "npr_url": "https://www.npr.org/sections/money/2018/09/04/644612299/making-the-case-for-removing-tariffs",
@@ -15937,6 +16037,46 @@
         "indicator_npr_identities.json",
         "indicator_npr_audio_validation.json",
         "indicator_npr_audio_recovery.json"
+      ]
+    },
+    {
+      "title": "Aging Up (REBROADCAST)",
+      "date": "2018-08-30",
+      "npr_url": "https://www.npr.org/sections/money/2018/08/30/643423980/aging-up",
+      "story_id": "643423980",
+      "audio_id": "643423467",
+      "player_url": "https://www.npr.org/player/embed/643422612/643423467",
+      "description": "Most people think the best time to start a business is when you're young, but is it?",
+      "description_provenance": "affiliate_mirror",
+      "date_precision": "date_only",
+      "recovery_status": "reviewed_near_ready_candidate",
+      "release_classification": "confirmed_indicator_rebroadcast",
+      "recovery_provenance": [
+        "indicator_early_audit.json",
+        "indicator_npr_audio_recovery.json",
+        "indicator_npr_audio_validation.json",
+        "indicator_npr_identities.json",
+        "indicator_early_near_ready_audit.json"
+      ]
+    },
+    {
+      "title": "Mind the Pay Gap (REBROADCAST)",
+      "date": "2018-08-29",
+      "npr_url": "https://www.npr.org/sections/money/2018/08/29/643056045/mind-the-pay-gap",
+      "story_id": "643056045",
+      "audio_id": "643055875",
+      "player_url": "https://www.npr.org/player/embed/643054655/643055875",
+      "description": "Why do men still make 20 percent more than women in the U.S.?",
+      "description_provenance": "affiliate_mirror",
+      "date_precision": "date_only",
+      "recovery_status": "reviewed_near_ready_candidate",
+      "release_classification": "confirmed_indicator_rebroadcast",
+      "recovery_provenance": [
+        "indicator_early_audit.json",
+        "indicator_npr_audio_recovery.json",
+        "indicator_npr_audio_validation.json",
+        "indicator_npr_identities.json",
+        "indicator_early_near_ready_audit.json"
       ]
     },
     {
@@ -16871,6 +17011,26 @@
         "indicator_npr_identities.json",
         "indicator_npr_audio_validation.json",
         "indicator_npr_audio_recovery.json"
+      ]
+    },
+    {
+      "title": "The Money Detectives",
+      "date": "2018-05-24",
+      "npr_url": "https://www.npr.org/sections/money/2018/05/24/614193817/two-million-suspicious-transactions",
+      "story_id": "614193817",
+      "audio_id": "614193084",
+      "player_url": "https://www.npr.org/player/embed/614188779/614193084",
+      "description": "Recent news has cast a spotlight on a little-known regulatory agency quietly working behind the scenes of our economy. What is FinCEN and why is it so important?",
+      "description_provenance": "affiliate_mirror",
+      "date_precision": "date_only",
+      "recovery_status": "reviewed_near_ready_candidate",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_early_audit.json",
+        "indicator_npr_audio_recovery.json",
+        "indicator_npr_audio_validation.json",
+        "indicator_npr_identities.json",
+        "indicator_early_near_ready_audit.json"
       ]
     },
     {

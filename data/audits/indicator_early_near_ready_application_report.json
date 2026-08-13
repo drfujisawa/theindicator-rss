@@ -1,0 +1,34 @@
+{
+  "report_version": 1,
+  "mode": "production_application",
+  "production_files_modified": true,
+  "counts": {
+    "history": 1714,
+    "enclosure_map": 1714,
+    "feed": 2015
+  },
+  "reviewed_candidate_count": 8,
+  "staged_counts": {
+    "history": 1714,
+    "enclosure_map": 1714,
+    "feed": 2015
+  },
+  "production_sha256_before": {
+    "indicator_history.json": "420b3f5aa65c92405ea9b127e4405abee62d8ac6a7c5c7f90331ff7d5001ed59",
+    "indicator_enclosure_map.json": "486b36309074c483c6fed64a00c7454b5533a63ab5b3f2257d86ba3ae3570088",
+    "theindicator_feed.xml": "7581ba78e7f1a60852580311d6828eade168c1a70c932a1556dc6241912b9abf"
+  },
+  "production_sha256_after": {
+    "indicator_history.json": "1d2ddaa81c4760e5e8fa23900253c6de43a8a945030fdcab0947daea2547e466",
+    "indicator_enclosure_map.json": "22b94a0479157eac984b379417ded5389602362c49fb6c7faea5427923ea281a",
+    "theindicator_feed.xml": "07e2d8e8ac0abba26e2915d203318ce132c2778efd67589828cacad0ec9b38b6"
+  },
+  "reviewed_staged_sha256": {
+    "indicator_history.json": "1d2ddaa81c4760e5e8fa23900253c6de43a8a945030fdcab0947daea2547e466",
+    "indicator_enclosure_map.json": "22b94a0479157eac984b379417ded5389602362c49fb6c7faea5427923ea281a",
+    "theindicator_feed.xml": "07e2d8e8ac0abba26e2915d203318ce132c2778efd67589828cacad0ec9b38b6"
+  },
+  "post_write_hashes_match_staging": true,
+  "rollback_directory": "work\\early-near-ready-rollback\\420b3f5aa65c",
+  "rollback_files_retained": true
+}
