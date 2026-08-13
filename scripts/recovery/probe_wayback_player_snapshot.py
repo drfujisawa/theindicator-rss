@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Strict Wayback player-snapshot recovery probe for the 17 confirmed
+"""Strict Wayback player-snapshot recovery probe for the 12 confirmed
 unresolved Indicator episodes.
 
 Scope
 -----
-By default targets all 17 CONFIRMED_EPISODE_AUDIO_STILL_UNRESOLVED records
+By default targets all 12 CONFIRMED_EPISODE_AUDIO_STILL_UNRESOLVED records
 (``status == "no_audio"`` in ``indicator_enclosure_map.json``, excluding the
 four protected "Two Indicators" story IDs).
 
@@ -137,7 +137,7 @@ MAX_CAPTURE_DIAGNOSTIC_BYTES = 80_000
 # Maximum audio candidates to validate per target.
 MAX_AUDIO_CANDIDATES = 3
 # Expected number of confirmed-unresolved targets (no_audio, excluding Two Indicators).
-EXPECTED_TARGET_COUNT = 17
+EXPECTED_TARGET_COUNT = 12
 
 HEADERS = {
     "User-Agent": (
@@ -1088,7 +1088,7 @@ def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         dest="story_ids",
         metavar="ID",
         action="append",
-        help="Story ID to probe (repeatable; omit to run all 17 targets)",
+        help="Story ID to probe (repeatable; omit to run all 12 targets)",
     )
     target_group.add_argument(
         "--targets",
@@ -1126,7 +1126,7 @@ def main(argv: list[str] | None = None) -> None:
     if requested_ids:
         print(f"Scope: {len(requested_ids)} explicitly requested target(s)")
     else:
-        print("Scope: all 17 CONFIRMED_EPISODE_AUDIO_STILL_UNRESOLVED targets")
+        print("Scope: all 12 CONFIRMED_EPISODE_AUDIO_STILL_UNRESOLVED targets")
     print("=" * 72)
 
     # Capture production-file hashes before any work
@@ -1180,7 +1180,7 @@ def main(argv: list[str] | None = None) -> None:
         "scope": (
             f"{len(requested_ids)}-explicitly-requested-targets"
             if requested_ids
-            else "17-confirmed-unresolved-indicator-episodes"
+            else "12-confirmed-unresolved-indicator-episodes"
         ),
         "description": (
             "Strictly scoped Wayback player-HTML probe: constructs the exact "
