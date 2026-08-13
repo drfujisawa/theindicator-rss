@@ -1,0 +1,60 @@
+name: Probe Wayback Player Snapshots
+
+# Manual-only workflow.  Never triggered automatically.
+on:
+  workflow_dispatch:
+    inputs:
+      targets:
+        description: >
+          Comma-separated story IDs to probe (e.g. 1104792247,1105092405).
+          Omit to run all 17 confirmed-unresolved targets.
+          Five-target validation batch:
+          1104792247,1105092405,1105388082,1105707030,1105986237
+        required: false
+        default: "1104792247,1105092405,1105388082,1105707030,1105986237"
+      force:
+        description: "Re-probe targets even if a checkpoint already exists (true/false)"
+        required: false
+        default: "false"
+
+# Read-only: this probe never modifies production files.
+permissions:
+  contents: read
+
+jobs:
+  probe-wayback-player-snapshot:
+    runs-on: ubuntu-latest
+    # Conservative ceiling based on real request budget:
+    #   5 targets × 18 max attempts × 20 s timeout + overhead ≈ 30 min
+    timeout-minutes: 30
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Run Wayback player-snapshot probe
+        env:
+          TARGETS_INPUT: ${{ github.event.inputs.targets }}
+          FORCE_INPUT: ${{ github.event.inputs.force }}
+        run: |
+          CMD=(python scripts/recovery/probe_wayback_player_snapshot.py --output-dir data/recovery/wayback_player_snapshots)
+          if [ -n "$TARGETS_INPUT" ]; then
+            CMD+=(--targets "$TARGETS_INPUT")
+          fi
+          if [ "$FORCE_INPUT" = "true" ]; then
+            CMD+=(--force)
+          fi
+          "${CMD[@]}"
+
+      - name: Upload probe artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: wayback-player-snapshot-probe-${{ github.run_id }}
+          path: data/recovery/wayback_player_snapshots/
+          retention-days: 90
