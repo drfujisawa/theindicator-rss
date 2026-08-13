@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
-"""Strict Wayback player-snapshot recovery pass for the 17 confirmed
+"""Strict Wayback player-snapshot recovery probe for the 17 confirmed
 unresolved Indicator episodes.
 
 Scope
 -----
-Targets exactly the 17 CONFIRMED_EPISODE_AUDIO_STILL_UNRESOLVED records
+By default targets all 17 CONFIRMED_EPISODE_AUDIO_STILL_UNRESOLVED records
 (``status == "no_audio"`` in ``indicator_enclosure_map.json``, excluding the
 four protected "Two Indicators" story IDs).
+
+Use ``--story-id`` / ``--targets`` to restrict to specific story IDs (e.g. the
+five-target validation batch).
 
 Method
 ------
@@ -16,38 +19,68 @@ For each target:
 
        https://www.npr.org/player/embed/<story_id>/<audio_id>
 
-2. Query the Wayback CDX API for HTTP-200 captures of that URL only.
+2. Query the Wayback CDX API for HTTP-200 captures of that URL only (no
+   wildcard, no related-URL broadening).
 
-3. Fetch up to WAYBACK_MAX_CAPTURES archived player-HTML snapshots using the
-   ``id_/`` modifier (raw page, no Wayback toolbar injection).
+3. Fetch up to WAYBACK_MAX_CAPTURES (3) archived player-HTML snapshots using
+   the ``id_/`` modifier (raw page, no Wayback toolbar injection).
 
-4. Extract Simplecast episode UUIDs **directly from the player HTML**.  The
-   known-good June 22 player page embeds its Simplecast UUID in the bootstrap
-   HTML; we match the same patterns here:
+4. Extract episode-specific audio candidates from each archived page:
 
-   * ``simplecastaudio.com`` URL containing a UUID path segment
-   * ``"episodeId"`` / ``"episode_id"`` JSON key with a UUID value
-   * Bare UUID adjacent to "simplecast" in a 120-character window
+   Simplecast (Simplecast era, ~2021+):
+     * ``/episodes/<uuid>/audio/`` URL path — strong episode-specific signal
+     * ``awEpisodeId=<uuid>`` query parameter
+     * ``"episodeId"`` / ``"episodeUuid"`` JSON key with a UUID value
 
-   Extraction is strictly scoped to the archived player page HTML and never
-   broadened to generic NPR story pages or external resources.
+   Legacy NPR audio (2020-era):
+     * ``ondemand.npr.org/...mp3`` / ``.m4a`` / ``.mp4``
+     * ``play.podtrac.com/npr-510325/...``
 
-5. Extract ``simplecastaudio.com`` audio URLs from the same HTML.
+   Rejected regardless of proximity to "simplecast":
+     * The known Simplecast show UUID 0a4e8d3b-fe23-4948-9e39-20fcf16f9331
+     * Cookie / session / analytics UUIDs (generic nearby UUIDs)
+     * NPR live radio streams (``live.mp3``, ``npr.org/...live``)
+     * Generic MP3 URLs not tied to this episode
 
-6. Record structured results per snapshot and per target.
+5. For each candidate, perform bounded HEAD/GET validation:
+   - Follow redirects
+   - Require HTTP 200 or 206
+   - Require audio MIME type (audio/*, mpeg, mp3)
+   - Record content_length and final_url
+
+6. Assign one of these unambiguous classifications:
+   - RECOVERED_AND_VALIDATED
+   - UUID_FOUND_AUDIO_UNRESOLVED
+   - AUDIO_CANDIDATE_NOT_PLAYABLE
+   - NO_TARGET_MEDIA_FOUND
+   - NO_WAYBACK_CAPTURES
+   - NETWORK_FAILURE
+
+7. Write a per-target checkpoint JSON immediately after completion so a
+   workflow timeout cannot lose completed results.
+
+Request budget (with WAYBACK_MAX_CAPTURES=3, MAX_RETRIES=3):
+  1 CDX request         × 3 attempts  =  3 attempts
+  ≤3 archive fetches    × 3 attempts  =  9 attempts
+  ≤3 audio validations  × 2 attempts  =  6 attempts (HEAD+GET fallback)
+  Per-target maximum:                   18 attempts
+  5-target batch maximum:               90 attempts
 
 Safety
 ------
 This script is **read-only with respect to production files**.  It never
 modifies ``theindicator_feed.xml``, ``indicator_history.json``, or
-``indicator_enclosure_map.json``.  A hash-guard assertion enforces this.
+``indicator_enclosure_map.json``.  A SHA-256 hash-guard assertion enforces
+this before the run, after each target, and at final completion.
 
 Output
 ------
-``data/recovery/indicator_wayback_player_snapshot_probe.json``
+Per-target checkpoints: ``data/recovery/wayback_player_snapshots/checkpoint_<story_id>.json``
+Summary report:         ``data/recovery/wayback_player_snapshots/wayback_player_snapshot_report.json``
 """
 from __future__ import annotations
 
+import argparse
 import json
 import re
 import sys
@@ -65,7 +98,8 @@ from urllib.request import Request, urlopen
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 ENCLOSURE_MAP = REPO_ROOT / "indicator_enclosure_map.json"
-OUTPUT_FILE = REPO_ROOT / "data" / "recovery" / "indicator_wayback_player_snapshot_probe.json"
+OUTPUT_DIR = REPO_ROOT / "data" / "recovery" / "wayback_player_snapshots"
+OUTPUT_FILE = OUTPUT_DIR / "wayback_player_snapshot_report.json"
 
 PRODUCTION_FILES = (
     REPO_ROOT / "theindicator_feed.xml",
@@ -81,13 +115,19 @@ TWO_INDICATORS_STORY_IDS: frozenset[str] = frozenset(
     {"1013954358", "1029846068", "1034085667", "1038307729"}
 )
 
+# The Simplecast show-level UUID for The Indicator.  Episode UUIDs are
+# distinct and must NOT match this value.
+SIMPLECAST_SHOW_UUID = "0a4e8d3b-fe23-4948-9e39-20fcf16f9331"
+
 TIMEOUT_SECONDS = 20
 MAX_RETRIES = 3
 BACKOFF_SECONDS = 1.5
-# Maximum archived player-HTML pages to fetch per target.
-WAYBACK_MAX_CAPTURES = 8
+# Maximum archived player-HTML pages to fetch per target (design spec: 3).
+WAYBACK_MAX_CAPTURES = 3
 # Maximum bytes of archived HTML to read (avoids giant pages).
 MAX_TEXT_BYTES = 300_000
+# Maximum audio candidates to validate per target.
+MAX_AUDIO_CANDIDATES = 3
 # Expected number of confirmed-unresolved targets (no_audio, excluding Two Indicators).
 EXPECTED_TARGET_COUNT = 17
 
@@ -100,44 +140,68 @@ HEADERS = {
     "Accept-Encoding": "identity",
 }
 
-# Compiled patterns for Simplecast UUID and audio URL extraction
+# ---------------------------------------------------------------------------
+# UUID patterns (strictly episode-specific)
+# ---------------------------------------------------------------------------
+
 _UUID_RE = re.compile(
     r"[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}",
     re.IGNORECASE,
 )
 
-# simplecastaudio.com URL with a UUID path segment (the canonical audio CDN)
-_SIMPLECAST_AUDIO_URL_RE = re.compile(
-    r"https?://[^\s\"'<>\\]*simplecastaudio\.com[^\s\"'<>\\]*"
-    r"[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
-    r"[^\s\"'<>\\]*",
+# /episodes/<uuid>/audio/... — canonical Simplecast episode audio path
+_EPISODE_AUDIO_PATH_RE = re.compile(
+    r"/episodes/"
+    r"([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})"
+    r"/audio",
     re.IGNORECASE,
 )
 
-# "episodeId" or "episode_id" JSON key immediately followed by a UUID value
-_EPISODE_ID_KEY_RE = re.compile(
-    r'"episode[_]?[Ii]d"\s*:\s*"'
+# awEpisodeId=<uuid> query parameter (NPR player bootstrap)
+_AW_EPISODE_ID_RE = re.compile(
+    r"awEpisodeId[=:]"
+    r"[\"\s]*([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})",
+    re.IGNORECASE,
+)
+
+# "episodeId" / "episodeUuid" / "episode_id" explicit JSON key
+_EPISODE_KEY_RE = re.compile(
+    r'"episode(?:[_]?[Ii]d|[_]?[Uu]uid)"\s*:\s*"'
     r"([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})"
     r'"',
     re.IGNORECASE,
 )
 
-# Simplecast CDN URL (no UUID required — captures any simplecastaudio.com path)
-_SIMPLECAST_CDN_URL_RE = re.compile(
-    r"https?://[^\s\"'<>\\]*simplecastaudio\.com[^\s\"'<>\\]*",
+# simplecastaudio.com URL that contains an /episodes/<uuid>/audio path
+_SIMPLECAST_EPISODE_AUDIO_URL_RE = re.compile(
+    r"https?://[^\s\"'<>\\]*simplecastaudio\.com"
+    r"[^\s\"'<>\\]*/episodes/"
+    r"([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})"
+    r"/audio[^\s\"'<>\\]*",
     re.IGNORECASE,
 )
 
-# NPR player bootstrap blob patterns — "episodeUuid", "uuid", etc.
-_UUID_KEY_PATTERNS = [
-    re.compile(
-        r'"(?:episode[_]?[Uu]uid|simplecast[_]?[Uu]uid|uuid)"\s*:\s*"'
-        r"([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})"
-        r'"',
-        re.IGNORECASE,
-    ),
-    _EPISODE_ID_KEY_RE,
-]
+# ---------------------------------------------------------------------------
+# Legacy audio URL patterns (2020-era NPR podcast hosting)
+# ---------------------------------------------------------------------------
+
+# ondemand.npr.org episode audio (mp3/m4a/mp4 only — not live streams)
+_NPR_ONDEMAND_RE = re.compile(
+    r"https?://ondemand\.npr\.org/[^\s\"'<>\\]*\.(?:mp3|m4a|mp4)[^\s\"'<>\\]*",
+    re.IGNORECASE,
+)
+
+# play.podtrac.com/npr-510325/... (NPR podcast network)
+_PODTRAC_RE = re.compile(
+    r"https?://play\.podtrac\.com/npr-510325/[^\s\"'<>\\]*\.(?:mp3|m4a|mp4)[^\s\"'<>\\]*",
+    re.IGNORECASE,
+)
+
+# Reject live radio streams — these patterns are NEVER valid episode audio
+_LIVE_STREAM_RE = re.compile(
+    r"(?:live\.mp3|/stream(?:s)?/|/live(?:stream)?/|npr\.org.*live|npr\.org.*stream)",
+    re.IGNORECASE,
+)
 
 
 # ---------------------------------------------------------------------------
@@ -171,19 +235,28 @@ def _assert_production_unchanged(
 # ---------------------------------------------------------------------------
 
 
-def _fetch(url: str, read_bytes: int = MAX_TEXT_BYTES) -> dict:
-    """Fetch *url* with retries.  Returns a result dict."""
+def _fetch(url: str, read_bytes: int = MAX_TEXT_BYTES, method: str = "GET") -> dict:
+    """Fetch *url* with retries.  Returns a result dict.
+
+    For audio validation, pass ``method="HEAD"`` with ``read_bytes=0`` first,
+    then fall back to a partial GET if HEAD fails.
+    """
     last_error: str = ""
+    req_headers = dict(HEADERS)
+    if method == "HEAD":
+        # HEAD requires stripped Accept-Encoding to avoid redirect loops
+        req_headers.pop("Accept-Encoding", None)
     for attempt in range(1, MAX_RETRIES + 1):
         try:
-            req = Request(url, headers=HEADERS)
+            req = Request(url, headers=req_headers, method=method)
             with urlopen(req, timeout=TIMEOUT_SECONDS) as resp:
-                raw = resp.read(read_bytes)
+                raw = resp.read(read_bytes) if read_bytes > 0 else b""
                 return {
                     "ok": True,
                     "final_url": resp.geturl(),
                     "http_status": getattr(resp, "status", None),
                     "content_type": resp.headers.get("Content-Type", ""),
+                    "content_length": resp.headers.get("Content-Length"),
                     "text": raw.decode("utf-8", errors="replace"),
                 }
         except HTTPError as exc:
@@ -217,7 +290,9 @@ def _cdx_url(player_url: str) -> str:
 
 
 def _parse_cdx(cdx_text: str, target_date: str) -> list[str]:
-    """Return timestamps sorted by proximity to *target_date* (YYYY-MM-DD)."""
+    """Return up to WAYBACK_MAX_CAPTURES timestamps sorted by proximity to
+    *target_date* (YYYY-MM-DD).
+    """
     try:
         rows = json.loads(cdx_text)
     except (ValueError, TypeError):
@@ -247,6 +322,22 @@ def _parse_cdx(cdx_text: str, target_date: str) -> list[str]:
 
 
 # ---------------------------------------------------------------------------
+# UUID eligibility — strict episode-specific filtering
+# ---------------------------------------------------------------------------
+
+
+def _is_episode_uuid(uuid: str) -> bool:
+    """Return True only if *uuid* is eligible as a Simplecast episode UUID.
+
+    Rejected:
+    - The known Simplecast show UUID for The Indicator
+    - Any UUID that is not already tied to an episode-specific signal
+      (this is enforced by only calling this after an episode-specific pattern)
+    """
+    return uuid.lower() != SIMPLECAST_SHOW_UUID.lower()
+
+
+# ---------------------------------------------------------------------------
 # Extraction — strictly scoped to player HTML
 # ---------------------------------------------------------------------------
 
@@ -263,77 +354,202 @@ def _unique(values: list[str]) -> list[str]:
 
 
 def extract_from_player_html(html: str) -> dict:
-    """Extract Simplecast UUIDs and audio URLs from player-page HTML only.
+    """Extract strictly episode-specific audio candidates from archived player HTML.
 
-    Extraction is strictly limited to patterns that appear in NPR embed player
-    bootstrap HTML.  No generic audio URL scanning is performed.
+    Simplecast episode UUID eligibility rules (in order of strength):
+      1. URL path ``/episodes/<uuid>/audio/`` — strongest: episode-specific CDN path
+      2. ``awEpisodeId=<uuid>`` query parameter — NPR player bootstrap
+      3. ``"episodeId"`` / ``"episodeUuid"`` JSON key — structured player data
+
+    Generic UUIDs merely near the word "simplecast" are NOT extracted here
+    (they could be show UUIDs, cookie tokens, analytics IDs, or session values).
+
+    The known Simplecast show UUID (SIMPLECAST_SHOW_UUID) is always rejected.
+
+    Legacy audio URLs (2020-era):
+      - ondemand.npr.org/*.mp3 / *.m4a / *.mp4
+      - play.podtrac.com/npr-510325/*.mp3 / *.m4a / *.mp4
+
+    Live streams and generic MP3 URLs not matching the above patterns are
+    silently excluded.
 
     Returns::
 
         {
-            "simplecast_uuids": [...],         # UUIDs found via key patterns
-            "simplecast_audio_urls": [...],    # simplecastaudio.com URLs
-            "uuid_near_simplecast": [...],     # UUIDs within 120 chars of "simplecast"
-            "episode_id_key_uuids": [...],     # from "episodeId"/"episode_id" keys
+            "simplecast_episode_uuids": [...],  # episode-specific, show UUID excluded
+            "simplecast_audio_urls": [...],     # /episodes/<uuid>/audio CDN URLs
+            "legacy_audio_urls": [...],         # ondemand.npr.org / podtrac URLs
+            "episode_key_uuids": [...],         # from episodeId/episodeUuid keys
+            "aw_episode_id_uuids": [...],       # from awEpisodeId parameter
         }
     """
-    simplecast_uuids: list[str] = []
+    simplecast_episode_uuids: list[str] = []
     simplecast_audio_urls: list[str] = []
-    uuid_near_simplecast: list[str] = []
-    episode_id_key_uuids: list[str] = []
+    legacy_audio_urls: list[str] = []
+    episode_key_uuids: list[str] = []
+    aw_episode_id_uuids: list[str] = []
 
-    # 1. UUID from structured key patterns ("episodeUuid", "episodeId", etc.)
-    for pattern in _UUID_KEY_PATTERNS:
-        for m in pattern.finditer(html):
-            uuid = m.group(1).lower()
-            if uuid not in simplecast_uuids:
-                simplecast_uuids.append(uuid)
-            if pattern is _EPISODE_ID_KEY_RE:
-                if uuid not in episode_id_key_uuids:
-                    episode_id_key_uuids.append(uuid)
-
-    # 2. simplecastaudio.com URLs containing a UUID segment
-    for m in _SIMPLECAST_AUDIO_URL_RE.finditer(html):
+    # 1. /episodes/<uuid>/audio CDN URLs — strongest Simplecast episode signal
+    for m in _SIMPLECAST_EPISODE_AUDIO_URL_RE.finditer(html):
         url = m.group(0).replace("\\/", "/")
-        if url not in simplecast_audio_urls:
-            simplecast_audio_urls.append(url)
-        # Also capture the UUID from within the URL
-        uuid_match = _UUID_RE.search(url)
-        if uuid_match:
-            uuid = uuid_match.group(0).lower()
-            if uuid not in simplecast_uuids:
-                simplecast_uuids.append(uuid)
+        uuid = m.group(1).lower()
+        if _is_episode_uuid(uuid):
+            if url not in simplecast_audio_urls:
+                simplecast_audio_urls.append(url)
+            if uuid not in simplecast_episode_uuids:
+                simplecast_episode_uuids.append(uuid)
 
-    # 3. Any UUID within 120 characters of the word "simplecast" in the HTML
-    lower_html = html.lower()
-    sc_pos = 0
-    while True:
-        sc_pos = lower_html.find("simplecast", sc_pos)
-        if sc_pos == -1:
-            break
-        window_start = max(0, sc_pos - 120)
-        window_end = min(len(html), sc_pos + 120)
-        window = html[window_start:window_end]
-        for uuid_m in _UUID_RE.finditer(window):
-            uuid = uuid_m.group(0).lower()
-            if uuid not in uuid_near_simplecast:
-                uuid_near_simplecast.append(uuid)
-            if uuid not in simplecast_uuids:
-                simplecast_uuids.append(uuid)
-        sc_pos += len("simplecast")
+    # Also catch /episodes/<uuid>/audio patterns that aren't a full CDN URL
+    for m in _EPISODE_AUDIO_PATH_RE.finditer(html):
+        uuid = m.group(1).lower()
+        if _is_episode_uuid(uuid) and uuid not in simplecast_episode_uuids:
+            simplecast_episode_uuids.append(uuid)
 
-    # 4. Any simplecastaudio.com URL (including ones without a UUID segment)
-    for m in _SIMPLECAST_CDN_URL_RE.finditer(html):
+    # 2. awEpisodeId=<uuid> (NPR player bootstrap parameter)
+    for m in _AW_EPISODE_ID_RE.finditer(html):
+        uuid = m.group(1).lower()
+        if _is_episode_uuid(uuid):
+            if uuid not in aw_episode_id_uuids:
+                aw_episode_id_uuids.append(uuid)
+            if uuid not in simplecast_episode_uuids:
+                simplecast_episode_uuids.append(uuid)
+
+    # 3. "episodeId" / "episodeUuid" JSON keys
+    for m in _EPISODE_KEY_RE.finditer(html):
+        uuid = m.group(1).lower()
+        if _is_episode_uuid(uuid):
+            if uuid not in episode_key_uuids:
+                episode_key_uuids.append(uuid)
+            if uuid not in simplecast_episode_uuids:
+                simplecast_episode_uuids.append(uuid)
+
+    # 4. Legacy NPR audio URLs — ondemand.npr.org
+    for m in _NPR_ONDEMAND_RE.finditer(html):
         url = m.group(0).replace("\\/", "/")
-        if url not in simplecast_audio_urls:
-            simplecast_audio_urls.append(url)
+        if not _LIVE_STREAM_RE.search(url):
+            if url not in legacy_audio_urls:
+                legacy_audio_urls.append(url)
+
+    # 5. play.podtrac.com/npr-510325 podcast network URLs
+    for m in _PODTRAC_RE.finditer(html):
+        url = m.group(0).replace("\\/", "/")
+        if not _LIVE_STREAM_RE.search(url):
+            if url not in legacy_audio_urls:
+                legacy_audio_urls.append(url)
 
     return {
-        "simplecast_uuids": _unique(simplecast_uuids),
+        "simplecast_episode_uuids": _unique(simplecast_episode_uuids),
         "simplecast_audio_urls": _unique(simplecast_audio_urls),
-        "uuid_near_simplecast": _unique(uuid_near_simplecast),
-        "episode_id_key_uuids": _unique(episode_id_key_uuids),
+        "legacy_audio_urls": _unique(legacy_audio_urls),
+        "episode_key_uuids": _unique(episode_key_uuids),
+        "aw_episode_id_uuids": _unique(aw_episode_id_uuids),
     }
+
+
+# ---------------------------------------------------------------------------
+# Audio validation
+# ---------------------------------------------------------------------------
+
+
+def _is_audio_content_type(content_type: str | None) -> bool:
+    """Return True for audio MIME types (audio/*, mpeg, mp3 substrings)."""
+    ct = (content_type or "").lower()
+    return ct.startswith("audio/") or "mpeg" in ct or "mp3" in ct
+
+
+def validate_audio_candidate(
+    candidate_url: str,
+    fetch_fn: Callable[..., dict] = _fetch,
+) -> dict:
+    """Perform a bounded HEAD → GET validation for *candidate_url*.
+
+    Steps:
+    1. HEAD request — lightweight check
+    2. If HEAD fails, GET with Range: bytes=0-8191
+
+    Requires HTTP 200 or 206 AND audio MIME type for ``playable = True``.
+    """
+    head = fetch_fn(candidate_url, read_bytes=0, method="HEAD")
+    if head.get("ok") and head.get("http_status") in (200, 206):
+        probe = head
+    else:
+        probe = fetch_fn(candidate_url, read_bytes=8192, method="GET")
+
+    playable = bool(
+        probe.get("ok")
+        and probe.get("http_status") in (200, 206)
+        and _is_audio_content_type(probe.get("content_type"))
+    )
+    return {
+        "candidate_url": candidate_url,
+        "playable": playable,
+        "final_url": probe.get("final_url"),
+        "http_status": probe.get("http_status"),
+        "content_type": probe.get("content_type"),
+        "content_length": probe.get("content_length"),
+        "error": probe.get("error") if not probe.get("ok") else None,
+    }
+
+
+# ---------------------------------------------------------------------------
+# Classification
+# ---------------------------------------------------------------------------
+
+
+def _classify(
+    found_uuids: list[str],
+    found_audio_urls: list[str],
+    legacy_audio_urls: list[str],
+    validated_audio: dict | None,
+    cdx_capture_count: int,
+    cdx_ok: bool,
+) -> str:
+    """Assign an unambiguous classification for the target.
+
+    Rules (in priority order):
+    - NETWORK_FAILURE: CDX fetch failed
+    - NO_WAYBACK_CAPTURES: CDX OK but no captures for the exact player URL
+    - RECOVERED_AND_VALIDATED: playable audio confirmed (200/206 + audio MIME)
+    - UUID_FOUND_AUDIO_UNRESOLVED: UUID extracted but no playable audio confirmed
+    - AUDIO_CANDIDATE_NOT_PLAYABLE: candidates exist but none returned audio MIME
+    - NO_TARGET_MEDIA_FOUND: page was fetched but no episode media signals present
+    """
+    if not cdx_ok:
+        return "NETWORK_FAILURE"
+    if cdx_capture_count == 0:
+        return "NO_WAYBACK_CAPTURES"
+    if validated_audio and validated_audio.get("playable"):
+        return "RECOVERED_AND_VALIDATED"
+    if found_uuids:
+        return "UUID_FOUND_AUDIO_UNRESOLVED"
+    if found_audio_urls or legacy_audio_urls:
+        return "AUDIO_CANDIDATE_NOT_PLAYABLE"
+    return "NO_TARGET_MEDIA_FOUND"
+
+
+# ---------------------------------------------------------------------------
+# Checkpoint helpers
+# ---------------------------------------------------------------------------
+
+
+def _checkpoint_path(output_dir: Path, story_id: str) -> Path:
+    return output_dir / f"checkpoint_{story_id}.json"
+
+
+def _write_checkpoint(output_dir: Path, story_id: str, data: dict) -> None:
+    output_dir.mkdir(parents=True, exist_ok=True)
+    path = _checkpoint_path(output_dir, story_id)
+    path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
+def _load_checkpoint(output_dir: Path, story_id: str) -> dict | None:
+    path = _checkpoint_path(output_dir, story_id)
+    if not path.exists():
+        return None
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (ValueError, OSError):
+        return None
 
 
 # ---------------------------------------------------------------------------
@@ -341,16 +557,36 @@ def extract_from_player_html(html: str) -> dict:
 # ---------------------------------------------------------------------------
 
 
-def probe_target(story_id: str, audio_id: str, date: str, title: str) -> dict:
+def probe_target(
+    story_id: str,
+    audio_id: str,
+    date: str,
+    title: str,
+    output_dir: Path | None = None,
+    fetch_fn: Callable[..., dict] = _fetch,
+    force: bool = False,
+) -> dict:
     """Run the full Wayback player-snapshot probe for one episode target.
 
     Steps:
     1. Build the exact player URL.
-    2. Query CDX for HTTP-200 captures of that URL.
-    3. Fetch each archived player page (raw HTML via ``id_/``).
-    4. Extract Simplecast UUIDs from each page's HTML.
-    5. Return structured result.
+    2. Check for an existing checkpoint (skip unless *force* is True).
+    3. Query CDX for HTTP-200 captures of that exact URL.
+    4. Fetch each archived player page (raw HTML via ``id_/``).
+    5. Extract strictly episode-specific Simplecast UUIDs and legacy audio URLs.
+    6. Validate each candidate (HEAD then GET fallback).
+    7. Assign unambiguous classification.
+    8. Write per-target checkpoint immediately.
     """
+    effective_dir = output_dir or OUTPUT_DIR
+
+    # Resume: skip if checkpoint exists and force is not set
+    if not force:
+        prior = _load_checkpoint(effective_dir, story_id)
+        if prior is not None:
+            print(f"  [{date}] {title} — skipping (checkpoint exists)")
+            return prior
+
     player_url = f"https://www.npr.org/player/embed/{story_id}/{audio_id}"
 
     result: dict = {
@@ -360,35 +596,42 @@ def probe_target(story_id: str, audio_id: str, date: str, title: str) -> dict:
         "audio_id": audio_id,
         "player_url": player_url,
         "cdx_capture_count": 0,
+        "cdx_ok": False,
         "cdx_error": None,
         "snapshots": [],
-        "best_simplecast_uuid": None,
-        "best_simplecast_audio_url": None,
-        "recovery_status": "no_captures",
+        "simplecast_episode_uuids": [],
+        "simplecast_audio_urls": [],
+        "legacy_audio_urls": [],
+        "validated_audio": None,
+        "classification": "NO_WAYBACK_CAPTURES",
     }
 
     print(f"  [{date}] {title}")
     print(f"    player_url: {player_url}")
 
-    # Step 2: CDX query
-    cdx_resp = _fetch(_cdx_url(player_url), read_bytes=200_000)
+    # Step 3: CDX query (exact player URL, no wildcards)
+    cdx_resp = fetch_fn(_cdx_url(player_url), read_bytes=200_000)
     if not cdx_resp.get("ok"):
         result["cdx_error"] = cdx_resp.get("error", "unknown")
-        result["recovery_status"] = "cdx_error"
+        result["classification"] = "NETWORK_FAILURE"
         print(f"    CDX error: {result['cdx_error']}")
+        _write_checkpoint(effective_dir, story_id, result)
         return result
 
+    result["cdx_ok"] = True
     timestamps = _parse_cdx(cdx_resp["text"], date)
     result["cdx_capture_count"] = len(timestamps)
     print(f"    CDX captures: {len(timestamps)}")
 
     if not timestamps:
-        result["recovery_status"] = "no_captures"
+        result["classification"] = "NO_WAYBACK_CAPTURES"
+        _write_checkpoint(effective_dir, story_id, result)
         return result
 
-    # Step 3+4: fetch each archived player page and extract
-    found_uuids: list[str] = []
-    found_audio_urls: list[str] = []
+    # Steps 4+5: fetch each archived player page and extract episode media
+    all_uuids: list[str] = []
+    all_audio_urls: list[str] = []
+    all_legacy_urls: list[str] = []
 
     for ts in timestamps:
         archived_url = f"https://web.archive.org/web/{ts}id_/{player_url}"
@@ -396,14 +639,15 @@ def probe_target(story_id: str, audio_id: str, date: str, title: str) -> dict:
             "timestamp": ts,
             "archived_url": archived_url,
             "fetch_status": None,
-            "simplecast_uuids": [],
+            "simplecast_episode_uuids": [],
             "simplecast_audio_urls": [],
-            "uuid_near_simplecast": [],
-            "episode_id_key_uuids": [],
+            "legacy_audio_urls": [],
+            "episode_key_uuids": [],
+            "aw_episode_id_uuids": [],
             "error": None,
         }
 
-        fetch_resp = _fetch(archived_url)
+        fetch_resp = fetch_fn(archived_url)
         if not fetch_resp.get("ok"):
             snap["fetch_status"] = "error"
             snap["error"] = fetch_resp.get("error", "unknown")
@@ -417,38 +661,76 @@ def probe_target(story_id: str, audio_id: str, date: str, title: str) -> dict:
         snap["html_length"] = len(html)
 
         extracted = extract_from_player_html(html)
-        snap["simplecast_uuids"] = extracted["simplecast_uuids"]
+        snap["simplecast_episode_uuids"] = extracted["simplecast_episode_uuids"]
         snap["simplecast_audio_urls"] = extracted["simplecast_audio_urls"]
-        snap["uuid_near_simplecast"] = extracted["uuid_near_simplecast"]
-        snap["episode_id_key_uuids"] = extracted["episode_id_key_uuids"]
+        snap["legacy_audio_urls"] = extracted["legacy_audio_urls"]
+        snap["episode_key_uuids"] = extracted["episode_key_uuids"]
+        snap["aw_episode_id_uuids"] = extracted["aw_episode_id_uuids"]
 
         result["snapshots"].append(snap)
 
         print(
-            f"    {ts}: uuids={len(snap['simplecast_uuids'])} "
-            f"audio_urls={len(snap['simplecast_audio_urls'])}"
+            f"    {ts}: uuids={len(snap['simplecast_episode_uuids'])} "
+            f"audio_urls={len(snap['simplecast_audio_urls'])} "
+            f"legacy_urls={len(snap['legacy_audio_urls'])}"
         )
 
-        for uuid in extracted["simplecast_uuids"]:
-            if uuid not in found_uuids:
-                found_uuids.append(uuid)
+        for uuid in extracted["simplecast_episode_uuids"]:
+            if uuid not in all_uuids:
+                all_uuids.append(uuid)
         for url in extracted["simplecast_audio_urls"]:
-            if url not in found_audio_urls:
-                found_audio_urls.append(url)
+            if url not in all_audio_urls:
+                all_audio_urls.append(url)
+        for url in extracted["legacy_audio_urls"]:
+            if url not in all_legacy_urls:
+                all_legacy_urls.append(url)
 
-    # Determine recovery status
-    if found_uuids or found_audio_urls:
-        result["best_simplecast_uuid"] = found_uuids[0] if found_uuids else None
-        result["best_simplecast_audio_url"] = found_audio_urls[0] if found_audio_urls else None
-        result["recovery_status"] = "uuid_found" if found_uuids else "audio_url_found"
-    else:
-        result["recovery_status"] = "not_found"
+    result["simplecast_episode_uuids"] = all_uuids
+    result["simplecast_audio_urls"] = all_audio_urls
+    result["legacy_audio_urls"] = all_legacy_urls
 
-    print(f"    → status: {result['recovery_status']}")
-    if result["best_simplecast_uuid"]:
-        print(f"    → uuid: {result['best_simplecast_uuid']}")
-    if result["best_simplecast_audio_url"]:
-        print(f"    → audio_url: {result['best_simplecast_audio_url']}")
+    # Step 6: validate audio candidates
+    # Build ordered candidate list: prefer full audio URLs over UUID-only,
+    # then legacy URLs.
+    candidates: list[str] = []
+    for url in all_audio_urls:
+        if url not in candidates:
+            candidates.append(url)
+    for url in all_legacy_urls:
+        if url not in candidates:
+            candidates.append(url)
+
+    validated_audio: dict | None = None
+    validation_attempts: list[dict] = []
+
+    for cand_url in candidates[:MAX_AUDIO_CANDIDATES]:
+        val = validate_audio_candidate(cand_url, fetch_fn=fetch_fn)
+        validation_attempts.append(val)
+        if val.get("playable"):
+            validated_audio = val
+            break
+
+    result["validated_audio"] = validated_audio
+    result["validation_attempts"] = validation_attempts
+
+    # Step 7: classify
+    result["classification"] = _classify(
+        found_uuids=all_uuids,
+        found_audio_urls=all_audio_urls,
+        legacy_audio_urls=all_legacy_urls,
+        validated_audio=validated_audio,
+        cdx_capture_count=result["cdx_capture_count"],
+        cdx_ok=result["cdx_ok"],
+    )
+
+    print(f"    → classification: {result['classification']}")
+    if all_uuids:
+        print(f"    → episode_uuids: {all_uuids[:3]}")
+    if validated_audio:
+        print(f"    → validated_audio: {validated_audio.get('final_url')}")
+
+    # Step 8: write checkpoint immediately
+    _write_checkpoint(effective_dir, story_id, result)
 
     return result
 
@@ -458,11 +740,14 @@ def probe_target(story_id: str, audio_id: str, date: str, title: str) -> dict:
 # ---------------------------------------------------------------------------
 
 
-def load_targets() -> list[dict]:
-    """Load the 17 CONFIRMED_EPISODE_AUDIO_STILL_UNRESOLVED targets.
+def load_targets(story_ids: list[str] | None = None) -> list[dict]:
+    """Load CONFIRMED_EPISODE_AUDIO_STILL_UNRESOLVED targets.
 
     Source: ``indicator_enclosure_map.json``, episodes with
     ``status == "no_audio"``, excluding the four "Two Indicators" story IDs.
+
+    If *story_ids* is provided, only targets whose story_id is in the list
+    are returned (in the same deterministic sorted order).
     """
     payload = json.loads(ENCLOSURE_MAP.read_text(encoding="utf-8"))
     episodes = payload.get("episodes", {})
@@ -470,13 +755,16 @@ def load_targets() -> list[dict]:
     for ep in episodes.values():
         if ep.get("status") != "no_audio":
             continue
-        if str(ep.get("story_id", "")) in TWO_INDICATORS_STORY_IDS:
+        sid = str(ep.get("story_id", ""))
+        if sid in TWO_INDICATORS_STORY_IDS:
+            continue
+        if story_ids is not None and sid not in story_ids:
             continue
         targets.append(
             {
                 "date": str(ep.get("date", "")),
                 "title": str(ep.get("title", "")),
-                "story_id": str(ep.get("story_id", "")),
+                "story_id": sid,
                 "audio_id": str(ep.get("audio_id", "")),
                 "npr_url": str(ep.get("npr_url", "")),
             }
@@ -490,69 +778,134 @@ def load_targets() -> list[dict]:
 # ---------------------------------------------------------------------------
 
 
-def main() -> None:
+def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Wayback player-snapshot recovery probe for unresolved Indicator episodes.",
+    )
+    target_group = parser.add_mutually_exclusive_group()
+    target_group.add_argument(
+        "--story-id",
+        dest="story_ids",
+        metavar="ID",
+        action="append",
+        help="Story ID to probe (repeatable; omit to run all 17 targets)",
+    )
+    target_group.add_argument(
+        "--targets",
+        metavar="ID1,ID2,...",
+        help="Comma-separated story IDs to probe",
+    )
+    parser.add_argument(
+        "--output-dir",
+        metavar="DIR",
+        default=str(OUTPUT_DIR),
+        help="Directory for checkpoint JSON files and the summary report",
+    )
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Re-probe targets even if a checkpoint already exists",
+    )
+    return parser.parse_args(argv)
+
+
+def main(argv: list[str] | None = None) -> None:
+    args = _parse_args(argv)
+
+    output_dir = Path(args.output_dir)
+
+    # Resolve requested story IDs
+    requested_ids: list[str] | None = None
+    if args.story_ids:
+        requested_ids = [s.strip() for s in args.story_ids]
+    elif args.targets:
+        requested_ids = [s.strip() for s in args.targets.split(",") if s.strip()]
+
     print("=" * 72)
     print("Wayback Player-Snapshot Recovery Probe")
-    print("Scope: 17 CONFIRMED_EPISODE_AUDIO_STILL_UNRESOLVED targets")
+    if requested_ids:
+        print(f"Scope: {len(requested_ids)} explicitly requested target(s)")
+    else:
+        print("Scope: all 17 CONFIRMED_EPISODE_AUDIO_STILL_UNRESOLVED targets")
     print("=" * 72)
 
     # Capture production-file hashes before any work
     before_hashes = _capture_hashes(PRODUCTION_FILES)
 
-    targets = load_targets()
-    if len(targets) != EXPECTED_TARGET_COUNT:
+    targets = load_targets(story_ids=requested_ids)
+
+    if requested_ids is not None and len(targets) != len(requested_ids):
+        missing = set(requested_ids) - {t["story_id"] for t in targets}
+        print(f"WARNING: {len(missing)} requested story ID(s) not found in enclosure map: {missing}")
+
+    if not targets:
+        print("No targets to process.  Exiting.")
+        return
+
+    if requested_ids is None and len(targets) != EXPECTED_TARGET_COUNT:
         print(
             f"WARNING: expected {EXPECTED_TARGET_COUNT} targets, found {len(targets)}. "
             "Proceeding anyway."
         )
 
-    print(f"Loaded {len(targets)} targets.\n")
+    print(f"Loaded {len(targets)} target(s).\n")
+    output_dir.mkdir(parents=True, exist_ok=True)
 
     results: list[dict] = []
-    summary = {
-        "total": len(targets),
-        "uuid_found": 0,
-        "audio_url_found": 0,
-        "not_found": 0,
-        "no_captures": 0,
-        "cdx_error": 0,
-    }
+    classification_counts: dict[str, int] = {}
 
     for i, target in enumerate(targets, 1):
         print(f"\n[{i}/{len(targets)}]")
+
+        # Check production files before each target (in addition to before/after run)
+        mid_hashes = _capture_hashes(PRODUCTION_FILES)
+        _assert_production_unchanged(before_hashes, mid_hashes)
+
         result = probe_target(
             story_id=target["story_id"],
             audio_id=target["audio_id"],
             date=target["date"],
             title=target["title"],
+            output_dir=output_dir,
+            force=args.force,
         )
         results.append(result)
 
-        status = result.get("recovery_status", "")
-        if status in summary:
-            summary[status] += 1
-        else:
-            summary[status] = summary.get(status, 0) + 1
+        cl = result.get("classification", "UNKNOWN")
+        classification_counts[cl] = classification_counts.get(cl, 0) + 1
 
     # Build report
     report = {
-        "method": "wayback-player-snapshot-strict-uuid-recovery",
-        "scope": "17-confirmed-unresolved-indicator-episodes",
+        "method": "wayback-player-snapshot-strict-episode-uuid-recovery",
+        "scope": (
+            f"{len(requested_ids)}-explicitly-requested-targets"
+            if requested_ids
+            else "17-confirmed-unresolved-indicator-episodes"
+        ),
         "description": (
             "Strictly scoped Wayback player-HTML probe: constructs the exact "
-            "NPR embed player URL per episode, queries CDX for HTTP-200 captures, "
-            "fetches archived player HTML (id_/ modifier), and extracts Simplecast "
-            "episode UUIDs directly from the page HTML.  No generic page resources "
-            "or story-page endpoints are scanned."
+            "NPR embed player URL per episode, queries CDX for HTTP-200 captures "
+            "(exact URL, no wildcards), fetches archived player HTML (id_/ modifier), "
+            "extracts strictly episode-specific Simplecast UUIDs and legacy audio URLs, "
+            "validates each candidate (HEAD+GET, 200/206, audio MIME), and assigns "
+            "unambiguous classifications.  A UUID alone is never RECOVERED_AND_VALIDATED."
         ),
         "two_indicators_excluded": sorted(TWO_INDICATORS_STORY_IDS),
+        "simplecast_show_uuid_rejected": SIMPLECAST_SHOW_UUID,
         "wayback_max_captures_per_target": WAYBACK_MAX_CAPTURES,
-        "summary": summary,
+        "request_budget": {
+            "cdx_per_target": f"1 × {MAX_RETRIES} = {MAX_RETRIES} attempts",
+            "archive_fetches_per_target": f"≤{WAYBACK_MAX_CAPTURES} × {MAX_RETRIES} = {WAYBACK_MAX_CAPTURES * MAX_RETRIES} attempts",
+            "audio_validation_per_target": f"≤{MAX_AUDIO_CANDIDATES} × 2 (HEAD+GET) = {MAX_AUDIO_CANDIDATES * 2} attempts",
+            "per_target_max": MAX_RETRIES + WAYBACK_MAX_CAPTURES * MAX_RETRIES + MAX_AUDIO_CANDIDATES * 2,
+            "five_target_max": 5 * (MAX_RETRIES + WAYBACK_MAX_CAPTURES * MAX_RETRIES + MAX_AUDIO_CANDIDATES * 2),
+        },
+        "classifications": classification_counts,
         "targets": results,
     }
 
-    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT_FILE.write_text(
+    report_path = output_dir / "wayback_player_snapshot_report.json"
+    report_path.write_text(
         json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8"
     )
 
@@ -561,10 +914,11 @@ def main() -> None:
     _assert_production_unchanged(before_hashes, after_hashes)
 
     print("\n" + "=" * 72)
-    print("Summary:")
-    for k, v in summary.items():
+    print("Classifications:")
+    for k, v in classification_counts.items():
         print(f"  {k}: {v}")
-    print(f"\nSaved: {OUTPUT_FILE}")
+    print(f"\nSaved report: {report_path}")
+    print(f"Checkpoints:  {output_dir}/checkpoint_<story_id>.json")
     print("Production files: UNCHANGED (verified)")
     print("=" * 72)
 
