@@ -1,3 +1,4 @@
 podcast*.xml
 __pycache__/
 *.pyc
+work/

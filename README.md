@@ -1,7 +1,7 @@
 # The Indicator — Full History RSS Feed
 
 An unofficial archival RSS feed for NPR's **The Indicator from Planet Money**, covering
-the complete playable archive from **April 2018** to the present — over **1,760 episodes**.
+the recovered playable archive from **March 2018** to the present — over **2,000 episodes**.
 
 ## Subscribe
 
@@ -45,7 +45,8 @@ coverage back to 2018, a multi-stage recovery process was run:
 
 1. **History crawl** — `theindicator_history.py` scraped NPR's website archive
    to build `indicator_history.json`: a catalogue of episode metadata (title, date,
-   story ID, NPR URL) for every known Indicator episode back to April 2018.
+   story ID, NPR URL) for known Indicator episodes, supplemented by a provenance-
+   preserving recovery audit that reaches March 2018.
 
 2. **Enclosure recovery** — `recover_enclosures_bulk.py` resolved a playable audio
    URL for each history entry by probing NPR's audio APIs, Simplecast CDN, and
@@ -64,7 +65,7 @@ in `indicator_enclosure_map.json`.
 
 | File / script | Purpose |
 |---|---|
-| `theindicator_feed.xml` | The published RSS feed (1,760+ episodes) |
+| `theindicator_feed.xml` | The published RSS feed (2,000+ episodes) |
 | `theindicator_rss.py` | Automated feed updater (runs every 6 hours) |
 | `theindicator_history.py` | Crawls NPR's archive to build episode history |
 | `recover_enclosures_bulk.py` | Bulk audio-URL recovery for history entries |

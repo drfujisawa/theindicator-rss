@@ -165,7 +165,7 @@ def main():
     added = 0
     for story_id, enc_ep in resolved_enc.items():
         # Skip if already in feed
-        if story_id in feed_story_ids:
+        if story_id in feed_story_ids or story_id in feed_guids:
             continue
         # Skip if no matching history entry
         hist_ep = hist_by_id.get(story_id)

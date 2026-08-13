@@ -56,6 +56,12 @@ Active audit datasets — produced and consumed by completeness/reconciliation s
 | `indicator_completeness_audit.json` | Full episode completeness audit | `scripts/maintenance/audit_indicator_completeness.py` (writes), unresolved recovery scripts (reads) |
 | `indicator_early_audit.json` | Early episode history audit | `scripts/recovery/indicator_early_history.py` (writes), `scripts/recovery/recover_missing_episodes.py` (reads) |
 | `indicator_history_date_audit.json` | Publication-date audit of episode history | `scripts/analysis/audit_history_dates.py` |
+| `indicator_early_promotion_manifest.json` | Read-only, provenance-preserving review manifest for early-history promotion candidates | `scripts/analysis/audit_early_promotion_candidates.py` |
+| `indicator_early_promotion_dry_run_report.json` | Validation report for isolated early-history dry-run artifacts; production files are not modified | `scripts/analysis/build_early_promotion_dry_run.py` |
+| `indicator_early_metadata_enrichment_audit.json` | Field-level metadata provenance, rebroadcast flags, and conservative promotion tiers for strong early-history candidates | `scripts/analysis/audit_early_metadata_enrichment.py` |
+| `indicator_early_production_design_review.json` | Production-promotion gate review covering metadata policy, workflow compatibility, atomic writes, and rollback | `scripts/analysis/review_early_production_promotion.py` |
+| `indicator_early_promotion_staging_report.json` | Simulation-only transaction plan and hash report for staging the reviewed early-history promotion | `scripts/maintenance/stage_early_history_promotion.py` |
+| `indicator_early_promotion_application_report.json` | Post-write hashes, counts, and rollback location for the guarded production promotion | `scripts/maintenance/apply_early_history_promotion.py` |
 | `indicator_unresolved_consolidated_audit.json` | Consolidated unresolved-episode audit | `scripts/recovery/recover_unresolved_indicator_consolidated.py`, `scripts/maintenance/reconcile_unresolved_consolidated.py` |
 
 ---

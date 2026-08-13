@@ -1,0 +1,57 @@
+{
+  "report_version": 1,
+  "mode": "dry_run_only",
+  "production_files_modified": false,
+  "source_manifest": "data\\audits\\indicator_early_promotion_manifest.json",
+  "source_enrichment_audit": "data\\audits\\indicator_early_metadata_enrichment_audit.json",
+  "output_directory": "work\\early-promotion-dry-run",
+  "counts": {
+    "promoted_candidates": 226,
+    "history_before": 1480,
+    "history_after": 1706,
+    "enclosure_map_before": 1480,
+    "enclosure_map_after": 1706,
+    "feed_before": 1781,
+    "feed_after": 2007
+  },
+  "checks": {
+    "production_files_unchanged": true,
+    "candidate_count_is_226": true,
+    "candidate_story_ids_unique": true,
+    "history_delta_is_226": true,
+    "enclosure_map_delta_is_226": true,
+    "feed_delta_is_226": true,
+    "feed_story_id_delta_exact": true,
+    "no_duplicate_feed_story_ids": true,
+    "all_candidate_audio_is_npr_hosted": true,
+    "dry_run_xml_parses": true
+  },
+  "all_checks_passed": true,
+  "candidate_audio_hosts": {
+    "ondemand.npr.org": 226
+  },
+  "duplicate_feed_story_ids": [],
+  "known_metadata_omissions": {
+    "canonical_audio_id": 0,
+    "canonical_player_url": 0,
+    "npr_description": 226,
+    "any_description": 0,
+    "exact_publication_time": 226,
+    "audio_content_length": 148
+  },
+  "production_sha256_before": {
+    "indicator_history.json": "d4780ed9d0316ff1be01576f9e9a62e4b29b2333255d06271c4b0bc43f7f0a89",
+    "indicator_enclosure_map.json": "a797468397e7ec49d4d79b32b9a994e680af545c257fa60a810c728946b36f6e",
+    "theindicator_feed.xml": "5ef110bcd236f015f32ffefc14ca58babd61014cddded224dccefd056aa7f7d3"
+  },
+  "production_sha256_after": {
+    "indicator_history.json": "d4780ed9d0316ff1be01576f9e9a62e4b29b2333255d06271c4b0bc43f7f0a89",
+    "indicator_enclosure_map.json": "a797468397e7ec49d4d79b32b9a994e680af545c257fa60a810c728946b36f6e",
+    "theindicator_feed.xml": "5ef110bcd236f015f32ffefc14ca58babd61014cddded224dccefd056aa7f7d3"
+  },
+  "artifacts": {
+    "history": "work\\early-promotion-dry-run\\indicator_history.json",
+    "enclosure_map": "work\\early-promotion-dry-run\\indicator_enclosure_map.json",
+    "feed": "work\\early-promotion-dry-run\\theindicator_feed.xml"
+  }
+}

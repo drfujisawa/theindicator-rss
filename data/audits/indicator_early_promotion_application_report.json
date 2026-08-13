@@ -1,0 +1,28 @@
+{
+  "report_version": 1,
+  "mode": "production_application",
+  "production_files_modified": true,
+  "counts": {
+    "history": 1706,
+    "enclosure_map": 1706,
+    "feed": 2007
+  },
+  "production_sha256_before": {
+    "indicator_history.json": "d4780ed9d0316ff1be01576f9e9a62e4b29b2333255d06271c4b0bc43f7f0a89",
+    "indicator_enclosure_map.json": "a797468397e7ec49d4d79b32b9a994e680af545c257fa60a810c728946b36f6e",
+    "theindicator_feed.xml": "5ef110bcd236f015f32ffefc14ca58babd61014cddded224dccefd056aa7f7d3"
+  },
+  "production_sha256_after": {
+    "indicator_history.json": "420b3f5aa65c92405ea9b127e4405abee62d8ac6a7c5c7f90331ff7d5001ed59",
+    "indicator_enclosure_map.json": "486b36309074c483c6fed64a00c7454b5533a63ab5b3f2257d86ba3ae3570088",
+    "theindicator_feed.xml": "785b95e6d0e2dad2bf68b11953d80a13c2936e54f0e7471a019e86420abfda16"
+  },
+  "reviewed_staged_sha256": {
+    "indicator_history.json": "420b3f5aa65c92405ea9b127e4405abee62d8ac6a7c5c7f90331ff7d5001ed59",
+    "indicator_enclosure_map.json": "486b36309074c483c6fed64a00c7454b5533a63ab5b3f2257d86ba3ae3570088",
+    "theindicator_feed.xml": "785b95e6d0e2dad2bf68b11953d80a13c2936e54f0e7471a019e86420abfda16"
+  },
+  "post_write_hashes_match_staging": true,
+  "rollback_directory": "work\\early-promotion-rollback\\d4780ed9d031",
+  "rollback_files_retained": true
+}

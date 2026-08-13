@@ -1,0 +1,67 @@
+{
+  "review_version": 1,
+  "review_scope": "production promotion design; no production writes",
+  "verdict": "conditionally_ready_after_open_gates",
+  "production_files_modified": false,
+  "summary": {
+    "candidate_count": 226,
+    "confirmed_rebroadcast_count": 2,
+    "descriptions_with_provenance": 226,
+    "known_content_lengths": 78,
+    "exact_publication_times": 0,
+    "checks_passed": 14,
+    "checks_total": 14,
+    "open_blocking_or_decision_gates": 3
+  },
+  "checks": {
+    "dry_run_report_passed": true,
+    "production_hashes_still_match_review_baseline": true,
+    "exactly_226_promoted_records": true,
+    "history_story_ids_unique": true,
+    "all_promoted_have_audio_id": true,
+    "all_promoted_have_player_url": true,
+    "all_promoted_have_description": true,
+    "all_promoted_description_provenance_recorded": true,
+    "all_promoted_dates_marked_date_only": true,
+    "all_promoted_enclosures_resolved": true,
+    "rss_has_exact_promoted_count": true,
+    "rss_guids_unique": true,
+    "rss_sorted_newest_first": true,
+    "scheduled_updater_preserves_items_by_guid": true
+  },
+  "gates": [
+    {
+      "id": "publication_time_policy",
+      "severity": "decision_required",
+      "status": "open",
+      "finding": "All 226 candidates have a verified publication date but no verified time. The dry RSS serializes date-only values as 00:00 UTC.",
+      "recommended_resolution": "Approve 00:00 UTC strictly as an RSS serialization convention and retain date_precision=date_only; do not represent it as an exact NPR publication time."
+    },
+    {
+      "id": "content_length_completion",
+      "severity": "non_blocking_quality",
+      "status": "partial",
+      "finding": "78 of 226 enclosure lengths are known; the remainder serialize as 0.",
+      "recommended_resolution": "Optionally perform validated HEAD/range probes before promotion. Existing feed code already permits a zero length when NPR does not expose one."
+    },
+    {
+      "id": "atomic_promotion_writer",
+      "severity": "blocking_implementation",
+      "status": "open",
+      "finding": "Only the isolated builder exists; there is intentionally no production writer.",
+      "recommended_resolution": "Implement an explicit, hash-guarded promotion command that writes all three files together, validates them, and aborts before replacement on any failure."
+    },
+    {
+      "id": "rollback",
+      "severity": "blocking_process",
+      "status": "open",
+      "finding": "A production promotion must be a dedicated Git commit with no unrelated files.",
+      "recommended_resolution": "Require a clean targeted diff and retain the pre-promotion hashes in the report."
+    }
+  ],
+  "workflow_compatibility": {
+    "scheduled_feed_updater": "Compatible: existing GUIDs are retained and only unseen current-feed GUIDs are appended.",
+    "bulk_enclosure_recovery": "Compatible: promoted map entries are resolved and therefore not re-queued.",
+    "complete_feed_builder": "Compatible, but production promotion should reuse the reviewed atomic writer rather than manually editing generated XML."
+  }
+}
