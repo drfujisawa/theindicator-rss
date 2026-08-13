@@ -22,6 +22,7 @@ import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from unittest.mock import patch
+from urllib.error import URLError
 
 from scripts.recovery import probe_wayback_player_snapshot as probe
 
@@ -89,6 +90,51 @@ def _make_fetch(
                     "text": ""}
         return {"ok": False, "error": "HTTPError 404: Not Found", "text": ""}
     return fake_fetch
+
+
+# ---------------------------------------------------------------------------
+# _fetch retry semantics
+# ---------------------------------------------------------------------------
+
+class _FakeHTTPResponse:
+    def __init__(self, url: str, status: int = 200, content_type: str = "text/html"):
+        self._url = url
+        self.status = status
+        self.headers = {"Content-Type": content_type, "Content-Length": "10"}
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc, tb):
+        return False
+
+    def read(self, read_bytes: int) -> bytes:
+        return b"<html></html>"[:read_bytes]
+
+    def geturl(self) -> str:
+        return self._url
+
+
+class TestFetchRetryBehavior(unittest.TestCase):
+    def test_retries_retryable_url_error_and_records_attempts(self):
+        sequence = [
+            URLError("timed out"),
+            URLError("ssl handshake operation timed out"),
+            _FakeHTTPResponse("https://example.com/final"),
+        ]
+        with patch.object(probe, "urlopen", side_effect=sequence), \
+             patch.object(probe.random, "uniform", return_value=0.0), \
+             patch.object(probe.time, "sleep") as mock_sleep:
+            result = probe._fetch("https://example.com/test")
+
+        self.assertTrue(result["ok"])
+        self.assertEqual(len(result["attempts"]), 3)
+        self.assertEqual(result["attempts"][0]["error_type"], "timeout")
+        self.assertEqual(result["attempts"][1]["error_type"], "ssl_handshake_timeout")
+        self.assertEqual(result["attempts"][2]["status"], "ok")
+        self.assertEqual(mock_sleep.call_count, 2)
+        self.assertEqual(mock_sleep.call_args_list[0].args[0], 2.0)
+        self.assertEqual(mock_sleep.call_args_list[1].args[0], 5.0)
 
 
 # ---------------------------------------------------------------------------
@@ -585,7 +631,7 @@ class TestClassification(unittest.TestCase):
                 story_id="111", audio_id="222", date="2022-06-13", title="T",
                 output_dir=Path(out_dir), fetch_fn=always_fails,
             )
-        self.assertEqual(result["classification"], "NETWORK_FAILURE")
+        self.assertEqual(result["classification"], "CDX_NETWORK_FAILURE")
 
     def test_no_media_found_classification(self):
         fetch = _make_fetch(
@@ -677,14 +723,15 @@ class TestProbeTarget(unittest.TestCase):
 
     def test_cdx_error_gives_network_failure(self):
         def always_fails(url, read_bytes=probe.MAX_TEXT_BYTES, method="GET"):
-            return {"ok": False, "error": "network timeout", "text": ""}
+            return {"ok": False, "error": "network timeout", "text": "", "attempts": [{"attempt": 1, "error_type": "timeout"}]}
         with TemporaryDirectory() as out_dir:
             result = probe.probe_target(
                 story_id="111", audio_id="222", date="2022-06-13", title="T",
                 output_dir=Path(out_dir), fetch_fn=always_fails,
             )
-        self.assertEqual(result["classification"], "NETWORK_FAILURE")
+        self.assertEqual(result["classification"], "CDX_NETWORK_FAILURE")
         self.assertIsNotNone(result["cdx_error"])
+        self.assertEqual(result["cdx_attempts"][0]["error_type"], "timeout")
 
     def test_fetch_error_on_archived_page_recorded_in_snapshot(self):
         def fake_fetch(url, read_bytes=probe.MAX_TEXT_BYTES, method="GET"):
@@ -699,7 +746,49 @@ class TestProbeTarget(unittest.TestCase):
             )
         self.assertEqual(len(result["snapshots"]), 1)
         self.assertEqual(result["snapshots"][0]["fetch_status"], "error")
-        self.assertEqual(result["classification"], "NO_TARGET_MEDIA_FOUND")
+        self.assertEqual(result["classification"], "ARCHIVE_FETCH_FAILED")
+
+    def test_partial_archive_failures_without_media_get_partial_classification(self):
+        cdx_two = json.dumps([
+            ["timestamp", "original", "statuscode", "mimetype", "digest"],
+            ["20220613120000", "url", "200", "text/html", "sha1:A"],
+            ["20220614120000", "url", "200", "text/html", "sha1:B"],
+        ])
+
+        def fake_fetch(url, read_bytes=probe.MAX_TEXT_BYTES, method="GET"):
+            if "cdx/search" in url:
+                return {"ok": True, "text": cdx_two, "final_url": url,
+                        "http_status": 200, "content_type": "", "content_length": None}
+            if "20220613120000" in url:
+                return {"ok": True, "text": "<html><body>no media</body></html>", "final_url": url,
+                        "http_status": 200, "content_type": "text/html", "content_length": None}
+            return {"ok": False, "error": "HTTPError 503: Service Unavailable", "text": "",
+                    "attempts": [{"attempt": 1, "error_type": "http_503", "retryable": True}]}
+
+        with TemporaryDirectory() as out_dir:
+            out_path = Path(out_dir)
+            result = probe.probe_target(
+                story_id="111", audio_id="222", date="2022-06-13", title="T",
+                output_dir=out_path, fetch_fn=fake_fetch,
+            )
+            self.assertTrue((out_path / "capture_111_20220613120000.html").exists())
+        self.assertEqual(result["classification"], "PARTIAL_ARCHIVE_FAILURE_NO_MEDIA")
+
+    def test_successful_archive_fetch_writes_capture_file(self):
+        fetch = _make_fetch(
+            cdx_text=_cdx_one_capture("20220613123000"),
+            page_html="<html><body>No audio here</body></html>",
+        )
+        with TemporaryDirectory() as out_dir:
+            out_path = Path(out_dir)
+            result = probe.probe_target(
+                story_id="111", audio_id="222", date="2022-06-13", title="T",
+                output_dir=out_path, fetch_fn=fetch,
+            )
+            capture_file = out_path / "capture_111_20220613123000.html"
+            self.assertTrue(capture_file.exists())
+            self.assertIn("capture_file", result["snapshots"][0])
+            self.assertEqual(result["snapshots"][0]["capture_file"], capture_file.name)
 
     def test_archived_url_uses_id_modifier(self):
         """Archived page must be fetched with the id_/ modifier."""

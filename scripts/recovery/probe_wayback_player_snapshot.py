@@ -54,7 +54,9 @@ For each target:
    - AUDIO_CANDIDATE_NOT_PLAYABLE
    - NO_TARGET_MEDIA_FOUND
    - NO_WAYBACK_CAPTURES
-   - NETWORK_FAILURE
+   - CDX_NETWORK_FAILURE
+   - ARCHIVE_FETCH_FAILED
+   - PARTIAL_ARCHIVE_FAILURE_NO_MEDIA
 
 7. Write a per-target checkpoint JSON immediately after completion so a
    workflow timeout cannot lose completed results.
@@ -82,7 +84,10 @@ from __future__ import annotations
 
 import argparse
 import json
+import random
 import re
+import socket
+import ssl
 import sys
 import time
 from hashlib import sha256
@@ -121,11 +126,14 @@ SIMPLECAST_SHOW_UUID = "0a4e8d3b-fe23-4948-9e39-20fcf16f9331"
 
 TIMEOUT_SECONDS = 20
 MAX_RETRIES = 3
-BACKOFF_SECONDS = 1.5
+BACKOFF_SCHEDULE_SECONDS = (2.0, 5.0)
+BACKOFF_JITTER_SECONDS = 0.75
 # Maximum archived player-HTML pages to fetch per target (design spec: 3).
 WAYBACK_MAX_CAPTURES = 3
 # Maximum bytes of archived HTML to read (avoids giant pages).
 MAX_TEXT_BYTES = 300_000
+# Maximum bytes saved in per-capture diagnostic HTML files.
+MAX_CAPTURE_DIAGNOSTIC_BYTES = 80_000
 # Maximum audio candidates to validate per target.
 MAX_AUDIO_CANDIDATES = 3
 # Expected number of confirmed-unresolved targets (no_audio, excluding Two Indicators).
@@ -139,6 +147,8 @@ HEADERS = {
     "Accept": "text/html,application/xhtml+xml,*/*;q=0.9",
     "Accept-Encoding": "identity",
 }
+
+RETRYABLE_HTTP_STATUS_CODES = frozenset({429, 502, 503, 504})
 
 # ---------------------------------------------------------------------------
 # UUID patterns (strictly episode-specific)
@@ -241,7 +251,46 @@ def _fetch(url: str, read_bytes: int = MAX_TEXT_BYTES, method: str = "GET") -> d
     For audio validation, pass ``method="HEAD"`` with ``read_bytes=0`` first,
     then fall back to a partial GET if HEAD fails.
     """
+    def _retry_backoff_seconds(attempt: int) -> float:
+        if attempt >= MAX_RETRIES:
+            return 0.0
+        base_idx = min(attempt - 1, len(BACKOFF_SCHEDULE_SECONDS) - 1)
+        base = BACKOFF_SCHEDULE_SECONDS[base_idx]
+        jitter = random.uniform(-BACKOFF_JITTER_SECONDS, BACKOFF_JITTER_SECONDS)
+        return max(0.0, base + jitter)
+
+    def _reason_text(reason: object) -> str:
+        if isinstance(reason, BaseException):
+            return f"{type(reason).__name__}: {reason}"
+        return str(reason)
+
+    def _error_type_from_text(text: str) -> str:
+        lowered = text.lower()
+        if "ssl" in lowered and "handshake" in lowered:
+            return "ssl_handshake_timeout"
+        if "timed out" in lowered or "timeout" in lowered:
+            return "timeout"
+        if "connection reset" in lowered or "connreset" in lowered:
+            return "connection_reset"
+        return "network_error"
+
+    def _is_retryable_network_reason(reason: object) -> tuple[bool, str]:
+        if isinstance(reason, socket.timeout):
+            return True, "timeout"
+        if isinstance(reason, TimeoutError):
+            return True, "timeout"
+        if isinstance(reason, ConnectionResetError):
+            return True, "connection_reset"
+        if isinstance(reason, ssl.SSLError):
+            err_text = _reason_text(reason)
+            err_type = _error_type_from_text(err_text)
+            return err_type in {"ssl_handshake_timeout", "timeout"}, err_type
+        err_text = _reason_text(reason)
+        err_type = _error_type_from_text(err_text)
+        return err_type in {"timeout", "ssl_handshake_timeout", "connection_reset"}, err_type
+
     last_error: str = ""
+    attempts: list[dict] = []
     req_headers = dict(HEADERS)
     if method == "HEAD":
         # HEAD requires stripped Accept-Encoding to avoid redirect loops
@@ -258,18 +307,68 @@ def _fetch(url: str, read_bytes: int = MAX_TEXT_BYTES, method: str = "GET") -> d
                     "content_type": resp.headers.get("Content-Type", ""),
                     "content_length": resp.headers.get("Content-Length"),
                     "text": raw.decode("utf-8", errors="replace"),
+                    "attempts": attempts + [
+                        {
+                            "attempt": attempt,
+                            "status": "ok",
+                            "method": method,
+                            "http_status": getattr(resp, "status", None),
+                        }
+                    ],
                 }
         except HTTPError as exc:
             last_error = f"HTTPError {exc.code}: {exc.reason}"
-            if exc.code in (404, 403, 410):
-                break  # non-retryable
+            retryable = exc.code in RETRYABLE_HTTP_STATUS_CODES
+            attempts.append(
+                {
+                    "attempt": attempt,
+                    "status": "http_error",
+                    "method": method,
+                    "http_status": exc.code,
+                    "error_type": f"http_{exc.code}",
+                    "error": last_error,
+                    "retryable": retryable,
+                }
+            )
+            if not retryable:
+                break
         except URLError as exc:
             last_error = f"URLError: {exc.reason}"
+            retryable, error_type = _is_retryable_network_reason(exc.reason)
+            attempts.append(
+                {
+                    "attempt": attempt,
+                    "status": "url_error",
+                    "method": method,
+                    "error_type": error_type,
+                    "error": last_error,
+                    "retryable": retryable,
+                }
+            )
+            if not retryable:
+                break
         except Exception as exc:  # noqa: BLE001
             last_error = f"{type(exc).__name__}: {exc}"
+            err_type = _error_type_from_text(last_error)
+            retryable = err_type in {"timeout", "ssl_handshake_timeout", "connection_reset"}
+            attempts.append(
+                {
+                    "attempt": attempt,
+                    "status": "exception",
+                    "method": method,
+                    "error_type": err_type,
+                    "error": last_error,
+                    "retryable": retryable,
+                }
+            )
+            if not retryable:
+                break
         if attempt < MAX_RETRIES:
-            time.sleep(BACKOFF_SECONDS)
-    return {"ok": False, "error": last_error, "text": ""}
+            backoff_seconds = _retry_backoff_seconds(attempt)
+            if attempts:
+                attempts[-1]["backoff_seconds"] = backoff_seconds
+            time.sleep(backoff_seconds)
+    return {"ok": False, "error": last_error, "text": "", "attempts": attempts}
 
 
 # ---------------------------------------------------------------------------
@@ -503,19 +602,23 @@ def _classify(
     validated_audio: dict | None,
     cdx_capture_count: int,
     cdx_ok: bool,
+    fetched_snapshot_count: int,
+    failed_snapshot_count: int,
 ) -> str:
     """Assign an unambiguous classification for the target.
 
     Rules (in priority order):
-    - NETWORK_FAILURE: CDX fetch failed
+    - CDX_NETWORK_FAILURE: CDX fetch failed
     - NO_WAYBACK_CAPTURES: CDX OK but no captures for the exact player URL
     - RECOVERED_AND_VALIDATED: playable audio confirmed (200/206 + audio MIME)
     - UUID_FOUND_AUDIO_UNRESOLVED: UUID extracted but no playable audio confirmed
     - AUDIO_CANDIDATE_NOT_PLAYABLE: candidates exist but none returned audio MIME
-    - NO_TARGET_MEDIA_FOUND: page was fetched but no episode media signals present
+    - ARCHIVE_FETCH_FAILED: CDX had captures but none of selected archived pages fetched
+    - PARTIAL_ARCHIVE_FAILURE_NO_MEDIA: some fetches failed, inspected fetches had no media
+    - NO_TARGET_MEDIA_FOUND: one or more pages were fetched/inspected with no media found
     """
     if not cdx_ok:
-        return "NETWORK_FAILURE"
+        return "CDX_NETWORK_FAILURE"
     if cdx_capture_count == 0:
         return "NO_WAYBACK_CAPTURES"
     if validated_audio and validated_audio.get("playable"):
@@ -524,7 +627,30 @@ def _classify(
         return "UUID_FOUND_AUDIO_UNRESOLVED"
     if found_audio_urls or legacy_audio_urls:
         return "AUDIO_CANDIDATE_NOT_PLAYABLE"
+    if fetched_snapshot_count == 0:
+        return "ARCHIVE_FETCH_FAILED"
+    if failed_snapshot_count > 0:
+        return "PARTIAL_ARCHIVE_FAILURE_NO_MEDIA"
     return "NO_TARGET_MEDIA_FOUND"
+
+
+def _save_capture_diagnostic_html(
+    output_dir: Path,
+    story_id: str,
+    timestamp: str,
+    html: str,
+) -> Path:
+    """Save a compact per-capture HTML diagnostic copy in *output_dir*."""
+    output_dir.mkdir(parents=True, exist_ok=True)
+    compact_html = " ".join(html.split())
+    compact_bytes = compact_html.encode("utf-8")
+    if len(compact_bytes) > MAX_CAPTURE_DIAGNOSTIC_BYTES:
+        compact_html = compact_bytes[:MAX_CAPTURE_DIAGNOSTIC_BYTES].decode(
+            "utf-8", errors="ignore"
+        )
+    path = output_dir / f"capture_{story_id}_{timestamp}.html"
+    path.write_text(compact_html, encoding="utf-8")
+    return path
 
 
 # ---------------------------------------------------------------------------
@@ -598,6 +724,7 @@ def probe_target(
         "cdx_capture_count": 0,
         "cdx_ok": False,
         "cdx_error": None,
+        "cdx_attempts": [],
         "snapshots": [],
         "simplecast_episode_uuids": [],
         "simplecast_audio_urls": [],
@@ -611,9 +738,10 @@ def probe_target(
 
     # Step 3: CDX query (exact player URL, no wildcards)
     cdx_resp = fetch_fn(_cdx_url(player_url), read_bytes=200_000)
+    result["cdx_attempts"] = cdx_resp.get("attempts", [])
     if not cdx_resp.get("ok"):
         result["cdx_error"] = cdx_resp.get("error", "unknown")
-        result["classification"] = "NETWORK_FAILURE"
+        result["classification"] = "CDX_NETWORK_FAILURE"
         print(f"    CDX error: {result['cdx_error']}")
         _write_checkpoint(effective_dir, story_id, result)
         return result
@@ -632,6 +760,8 @@ def probe_target(
     all_uuids: list[str] = []
     all_audio_urls: list[str] = []
     all_legacy_urls: list[str] = []
+    fetched_snapshot_count = 0
+    failed_snapshot_count = 0
 
     for ts in timestamps:
         archived_url = f"https://web.archive.org/web/{ts}id_/{player_url}"
@@ -639,6 +769,7 @@ def probe_target(
             "timestamp": ts,
             "archived_url": archived_url,
             "fetch_status": None,
+            "fetch_attempts": [],
             "simplecast_episode_uuids": [],
             "simplecast_audio_urls": [],
             "legacy_audio_urls": [],
@@ -648,10 +779,12 @@ def probe_target(
         }
 
         fetch_resp = fetch_fn(archived_url)
+        snap["fetch_attempts"] = fetch_resp.get("attempts", [])
         if not fetch_resp.get("ok"):
             snap["fetch_status"] = "error"
             snap["error"] = fetch_resp.get("error", "unknown")
             print(f"    {ts}: fetch error — {snap['error']}")
+            failed_snapshot_count += 1
             result["snapshots"].append(snap)
             continue
 
@@ -659,6 +792,9 @@ def probe_target(
         snap["fetch_status"] = "ok"
         snap["content_type"] = fetch_resp.get("content_type", "")
         snap["html_length"] = len(html)
+        fetched_snapshot_count += 1
+        capture_path = _save_capture_diagnostic_html(effective_dir, story_id, ts, html)
+        snap["capture_file"] = capture_path.name
 
         extracted = extract_from_player_html(html)
         snap["simplecast_episode_uuids"] = extracted["simplecast_episode_uuids"]
@@ -721,6 +857,8 @@ def probe_target(
         validated_audio=validated_audio,
         cdx_capture_count=result["cdx_capture_count"],
         cdx_ok=result["cdx_ok"],
+        fetched_snapshot_count=fetched_snapshot_count,
+        failed_snapshot_count=failed_snapshot_count,
     )
 
     print(f"    → classification: {result['classification']}")
