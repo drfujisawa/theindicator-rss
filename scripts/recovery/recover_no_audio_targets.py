@@ -1,34 +1,43 @@
 #!/usr/bin/env python3
-"""No-audio target recovery pipeline.
+"""No-audio target recovery pipeline — audio-ID-first narrow pass.
 
-Request budget (worst case, all endpoints fail all retries):
-  - Endpoints per target:          14
-  - Max retries per endpoint:       3  → max 42 endpoint GET attempts per target
-  - Candidate cap per target:       8  (MAX_CANDIDATES_PER_TARGET)
-  - Max requests per candidate:     2  (HEAD then GET fallback)
-  - Max retries per candidate req:  3  → max 6 attempts per candidate
-  - Max candidate attempts/target:  8 × 6 = 48
-  - Per-target maximum:            42 + 48 = 90 requests
-  - 21-target maximum:             21 × 90 = 1 890 requests
+This is the narrow, audio-ID-first recovery mode.  Generic feed/show-page
+endpoints have been removed to prevent unrelated current-feed Simplecast
+candidates from poisoning the results.
+
+True request budget (actual HTTP attempts including retries):
+  Per-target logical requests:
+    ① Endpoint probes (7 exact endpoints × 2 retries)        = 14 attempts max
+    ② Wayback archive fetches (≤3 captures × 2 retries)      =  6 attempts max
+    ③ Candidate validation (≤3 candidates × 2 probes × 2 retries) = 12 attempts max
+  Per-target maximum:                                         = 32 attempts max
+  5-target batch maximum:                                     = 160 attempts max
+
+Sleep overhead (worst case, every attempt retries once):
+  7 endpoints × (0.8 s backoff) = 5.6 s per target
+  3 archive fetches × 0.8 s     = 2.4 s per target
+  3 candidates × 2 × 0.8 s     = 4.8 s per target
+  Total sleep per target:       ≈ 12.8 s; 5 targets: ≈ 64 s
+
+Conservative runtime at TIMEOUT_SECONDS=10 per attempt, all timing out:
+  5 × 32 × 10 s = 1 600 s ≈ 27 min — safely under the 35-min workflow ceiling.
+  A nominal run (1–3 s responses, few retries) completes in well under 10 min.
 
 Batching:
-  - Default batch size: 5 targets.  ceil(21 / 5) = 5 runs to cover all targets.
+  - Default batch size: 5 targets.
   - Batch n selects targets[(n-1)*batch_size : n*batch_size] from the
     deterministic (date, story_id) sorted order.  The slice is fixed — it does
     NOT shift when completed checkpoints are removed, avoiding fragile offset
     logic.  Targets with an existing checkpoint are automatically skipped within
     the batch (idempotent re-runs are safe).
 
-Conservative runtime bound (worst case, every attempt uses full timeout):
-  - Sleep overhead:  per endpoint, retries 1-2 sleep (0.8 + 1.6) = 2.4 s each
-                     14 endpoints × 2.4 s = 33.6 s per target
-                     8 candidates × 2 probes each × 2.4 s = 38.4 s per target
-                     Total sleep per target: ≈ 72 s; 5 targets: ≈ 360 s ≈ 6 min
-  - At TIMEOUT_SECONDS=15 per attempt (not 25 — see below) and all timing out:
-                     5 × 90 × 15 s = 6 750 s — but the workflow kills at 35 min.
-  Since wall-clock timeout kills the workflow, we reduce TIMEOUT_SECONDS to 15 s
-  and rely on the 35-minute workflow ceiling as a hard stop.  A nominal run where
-  servers respond in ~1–3 s completes well under 15 minutes for 5 targets.
+Audio-ID provenance chain (Simplecast era):
+  exact target player URL player/embed/<story_id>/<audio_id>
+  → live or archived player bootstrap HTML
+  → extracted simplecastaudio.com URL or Simplecast episode UUID
+  → validated playable audio asset
+  This chain scores ≥ 0.75 (≥ 0.7 threshold) and qualifies as RECOVERED_AND_VALIDATED
+  even though the final Simplecast URL does not itself contain the numeric NPR IDs.
 """
 from __future__ import annotations
 
@@ -55,15 +64,22 @@ PRODUCTION_FILES = (
     REPO_ROOT / "indicator_enclosure_map.json",
 )
 
-# Reduced from 25 s to 15 s so the formal request-budget math is tighter.
-TIMEOUT_SECONDS = 15
-MAX_RETRIES = 3
+# Reduced from 15 s: tighter per-attempt ceiling for exact player/archive probes.
+TIMEOUT_SECONDS = 10
+# Reduced from 3: fewer retries for exact player/archive probes.  The workflow
+# hard ceiling handles the worst case; we prefer fast failure over long stalls.
+MAX_RETRIES = 2
 BACKOFF_SECONDS = 0.8
 MAX_TEXT_BYTES = 400_000
 
-# Hard cap on candidates validated per target (fixes blocking issue #3).
-# Candidates are ranked by provenance before the cap is applied.
-MAX_CANDIDATES_PER_TARGET = 8
+# Hard cap on candidates validated per target.  Because all candidate sources
+# are now episode-specific (player embed URL or its Wayback equivalent), 3 is
+# sufficient: the first ranked candidate from a target-specific source wins.
+MAX_CANDIDATES_PER_TARGET = 3
+
+# Maximum number of archived player pages to fetch per target from Wayback.
+# Each fetch consumes one logical request slot (with MAX_RETRIES retries).
+WAYBACK_MAX_CAPTURES = 3
 
 # Minimum provenance confidence required for RECOVERED_AND_VALIDATED
 # (fixes blocking issue #1).  "high" means score >= 0.7 which requires
@@ -203,21 +219,33 @@ def partition_by_completion(
 
 
 def build_endpoint_matrix(target: Target) -> list[dict]:
-    year, month, day = target.date.split("-")
+    """Return the ordered list of episode-specific endpoints to probe.
+
+    Generic endpoints (current NPR feed, NPR show page) and wildcard CDX
+    endpoints (``*story_id*``, ``*audio_id*``) have been intentionally removed
+    from this audio-ID-first pass to prevent unrelated current-feed Simplecast
+    candidates from entering the candidate pool.
+
+    The ``wayback_cdx_player`` entry returns CDX index metadata only; the
+    actual archived player pages are fetched separately in ``investigate_target``
+    via the Wayback archive fetch step.
+    """
     story_url = target.npr_url
     player_url = f"https://www.npr.org/player/embed/{target.story_id}/{target.audio_id}"
-    section_url = f"https://www.npr.org/sections/money/{year}/{month}/{day}/"
-    encoded_story = quote(story_url, safe="")
     encoded_player = quote(player_url, safe="")
-    encoded_section = quote(section_url, safe="")
     return [
         {"endpoint": "story_url", "url": story_url},
+        # Primary source: exact episode player embed page.  Contains both
+        # story_id and audio_id in the URL, giving 0.55 provenance score
+        # when a candidate is found here.
         {"endpoint": "player_embed", "url": player_url},
         {
             "endpoint": "story_template",
             "url": f"https://www.npr.org/templates/story/story.php?storyId={target.story_id}",
         },
         {"endpoint": "transcript", "url": f"https://www.npr.org/transcripts/{target.story_id}"},
+        # 2020-era fallback: NPR Legacy API can return the ondemand.npr.org
+        # enclosure URL directly for pre-Simplecast episodes.
         {
             "endpoint": "legacy_api_story",
             "url": f"https://api.npr.org/query?id={target.story_id}&output=JSON",
@@ -226,48 +254,17 @@ def build_endpoint_matrix(target: Target) -> list[dict]:
             "endpoint": "legacy_api_audio",
             "url": f"https://api.npr.org/query?id={target.audio_id}&output=JSON",
         },
-        {"endpoint": "money_section_date", "url": section_url},
-        {
-            "endpoint": "wayback_cdx_story",
-            "url": (
-                "https://web.archive.org/cdx/search/cdx"
-                f"?url={encoded_story}&output=json&fl=timestamp,original,statuscode,mimetype"
-            ),
-        },
+        # CDX index for the exact player embed URL.  Followed by actual archive
+        # fetch in investigate_target when captures are found.
         {
             "endpoint": "wayback_cdx_player",
             "url": (
                 "https://web.archive.org/cdx/search/cdx"
                 f"?url={encoded_player}&output=json&fl=timestamp,original,statuscode,mimetype"
+                f"&from={target.date.replace('-', '')}000000"
+                f"&to={target.date.replace('-', '')[:-2]}99999999"
+                "&limit=10"
             ),
-        },
-        {
-            "endpoint": "wayback_cdx_section",
-            "url": (
-                "https://web.archive.org/cdx/search/cdx"
-                f"?url={encoded_section}&output=json&fl=timestamp,original,statuscode,mimetype"
-            ),
-        },
-        {
-            "endpoint": "wayback_cdx_story_id",
-            "url": (
-                "https://web.archive.org/cdx/search/cdx"
-                f"?url=https://www.npr.org/*{target.story_id}*&output=json"
-                "&fl=timestamp,original,statuscode,mimetype"
-            ),
-        },
-        {
-            "endpoint": "wayback_cdx_audio_id",
-            "url": (
-                "https://web.archive.org/cdx/search/cdx"
-                f"?url=https://www.npr.org/*{target.audio_id}*&output=json"
-                "&fl=timestamp,original,statuscode,mimetype"
-            ),
-        },
-        {"endpoint": "npr_feed", "url": "https://feeds.npr.org/510325/podcast.xml"},
-        {
-            "endpoint": "npr_show_page",
-            "url": "https://www.npr.org/podcasts/510325/the-indicator-from-planet-money",
         },
     ]
 
@@ -350,17 +347,71 @@ def request_with_retries(
 
 
 def extract_candidate_audio_urls(text: str) -> list[str]:
+    """Extract all plausible audio URLs from page HTML or JSON text.
+
+    Applies multiple extraction strategies adapted from
+    ``poc_simplecast_enclosure_recovery.py``:
+
+    1. Direct regex match for .mp3 URLs and simplecastaudio.com paths.
+    2. ``"audioUrl"`` / ``"audio_url"`` JSON keys.
+    3. ``"enclosureUrl"`` / ``"enclosure"`` JSON keys.
+    4. Inline JSON strings containing known audio CDN hostnames.
+    5. ``__NEXT_DATA__`` / state-blob JSON for embedded audio references.
+
+    Returns a deduplicated list in discovery order.
+    """
     if not text:
         return []
-    pattern = re.compile(
+
+    seen: list[str] = []
+
+    def _add(raw: str) -> None:
+        cleaned = raw.replace("\\/", "/").replace("\\u0026", "&").strip()
+        if cleaned and cleaned not in seen and _is_audio_like(cleaned):
+            seen.append(cleaned)
+
+    def _is_audio_like(url: str) -> bool:
+        u = url.lower()
+        return (
+            "simplecastaudio.com" in u
+            or ".mp3" in u
+            or ("podtrac.com/npr-510325" in u)
+            or "prfx.byspotify.com" in u
+        )
+
+    # 1. Direct regex: .mp3 URLs and full simplecastaudio.com paths.
+    _re_direct = re.compile(
         r"https?://[^\"'\s<>]+(?:\.mp3|/audio(?:[/?#]|$)|simplecastaudio\.com[^\"'\s<>]*)",
         re.IGNORECASE,
     )
-    seen = []
-    for match in pattern.findall(text):
-        cleaned = match.replace("\\/", "/")
-        if cleaned not in seen:
-            seen.append(cleaned)
+    for m in _re_direct.findall(text):
+        _add(m)
+
+    # 2. "audioUrl" / "audio_url" JSON keys.
+    for m in re.findall(r'"audio[Uu]rl"\s*:\s*"([^"]+)"', text):
+        _add(m)
+
+    # 3. "enclosureUrl" / "enclosure" JSON keys.
+    for m in re.findall(r'"enclosure(?:[Uu]rl)?"\s*:\s*"([^"]+)"', text):
+        _add(m)
+
+    # 4. Inline JSON strings containing known audio CDN hostnames anywhere in page.
+    for m in re.findall(
+        r'"(https?://[^"]*(?:simplecastaudio\.com|podtrac\.com/npr-510325|prfx\.byspotify\.com)[^"]*)"',
+        text,
+        re.IGNORECASE,
+    ):
+        _add(m)
+
+    # 5. State blobs (__NEXT_DATA__ etc.): extract .mp3 strings from raw JSON text.
+    for blob in re.findall(
+        r'(?:window\.__(?:STATE|INITIAL_STATE|DATA|PROPS)|__NEXT_DATA__|initialState)\s*=\s*({.{0,500000}?})\s*;?\s*</script>',
+        text,
+        re.IGNORECASE | re.DOTALL,
+    ):
+        for m in re.findall(r'"(https?://[^"]+\.mp3[^"]*)"', blob):
+            _add(m)
+
     return seen
 
 
@@ -373,6 +424,68 @@ def extract_simplecast_uuid(url: str | None) -> str | None:
         re.IGNORECASE,
     )
     return match.group(1) if match else None
+
+
+def select_wayback_captures(
+    cdx_text: str,
+    target_date: str,
+    max_captures: int = WAYBACK_MAX_CAPTURES,
+) -> list[dict]:
+    """Parse a Wayback CDX JSON response and return up to *max_captures* records.
+
+    Only HTTP-200 captures are considered.  Records are sorted by temporal
+    proximity to *target_date* (closest-to-publication first) so that the most
+    relevant archived snapshot is probed first.
+
+    ``cdx_text`` must be the raw JSON string returned by the CDX API with
+    ``output=json&fl=timestamp,...,statuscode,...``.
+    """
+    if not cdx_text:
+        return []
+    try:
+        rows = json.loads(cdx_text)
+    except (ValueError, TypeError):
+        return []
+    if not isinstance(rows, list) or len(rows) < 2:
+        return []
+    # The first row is the header; subsequent rows are data.
+    headers = rows[0]
+    if not isinstance(headers, list):
+        return []
+    try:
+        ts_idx = headers.index("timestamp")
+        sc_idx = headers.index("statuscode")
+    except ValueError:
+        return []
+    captures: list[dict] = []
+    for row in rows[1:]:
+        if not isinstance(row, list) or len(row) <= max(ts_idx, sc_idx):
+            continue
+        status = str(row[sc_idx]).strip()
+        if status != "200":
+            continue
+        ts = str(row[ts_idx]).strip()
+        captures.append({"timestamp": ts})
+    # Sort by proximity: target_date "YYYY-MM-DD" → "YYYYMMDD" integer.
+    target_ymd = int(target_date.replace("-", ""))
+    captures.sort(key=lambda c: abs(int(c["timestamp"][:8]) - target_ymd))
+    return captures[:max_captures]
+
+
+def fetch_wayback_player_page(
+    player_url: str,
+    timestamp: str,
+    request_fn: Callable[..., dict] = request_with_retries,
+) -> dict:
+    """Fetch an archived NPR player embed page from the Wayback Machine.
+
+    The ``id_`` modifier requests the raw archived page without the Wayback
+    toolbar injection, which keeps the HTML cleaner for audio URL extraction.
+
+    Returns the same response dict shape as ``request_with_retries``.
+    """
+    archive_url = f"https://web.archive.org/web/{timestamp}id_/{player_url}"
+    return request_fn(url=archive_url, method="GET")
 
 
 def is_audio_like_content_type(content_type: str | None) -> bool:
@@ -413,11 +526,36 @@ def compute_identity_provenance(
     source_endpoints: list[str],
     validated_audio: dict | None,
 ) -> dict:
+    """Score the provenance chain between the target and a validated audio URL.
+
+    Scoring rules:
+    - +0.55 when the source endpoint contains **both** target story_id and
+      audio_id.  This applies to the exact player embed URL
+      ``player/embed/<story_id>/<audio_id>`` and to its Wayback equivalent
+      ``web.archive.org/web/<ts>id_/.../player/embed/<story_id>/<audio_id>``.
+      It ensures that the chain
+        exact player URL → player bootstrap → Simplecast UUID → validated audio
+      reaches 0.55 + 0.20 = 0.75 ≥ 0.70 ("high") even when the final
+      Simplecast URL does not itself contain the numeric NPR IDs.
+    - +0.35 when only one of the IDs appears in the source endpoint URL.
+    - +0.45 when the validated final URL includes a target ID (strong signal
+      for legacy ondemand.npr.org era where ``?e=<story_id>`` is in the URL).
+    - +0.20 when the validated URL exposes a Simplecast episode UUID.
+
+    Generic Simplecast UUIDs sourced from non-episode-specific pages score 0
+    on the endpoint contribution and therefore never reach "high" confidence,
+    which is the minimum required for RECOVERED_AND_VALIDATED.  This is the
+    primary safety guard against false positives from generic page candidates.
+    (Those generic sources have also been removed from the endpoint matrix.)
+    """
     evidence = []
     confidence = "low"
     score = 0.0
     for endpoint in source_endpoints:
-        if target.story_id in endpoint or target.audio_id in endpoint:
+        if target.story_id in endpoint and target.audio_id in endpoint:
+            evidence.append(f"candidate discovered via exact target player embed URL (both IDs): {endpoint}")
+            score += 0.55
+        elif target.story_id in endpoint or target.audio_id in endpoint:
             evidence.append(f"candidate discovered via endpoint containing target ID: {endpoint}")
             score += 0.35
     if validated_audio and validated_audio.get("final_url"):
@@ -560,6 +698,43 @@ def investigate_target(
     output_dir: Path | None = None,
 ) -> dict:
     baseline = baseline_classification(target.story_id)
+
+    # Two Indicators targets require no network probing; exit immediately.
+    if target.story_id in TWO_INDICATORS_STORY_IDS:
+        result: dict = {
+            "date": target.date,
+            "title": target.title,
+            "story_id": target.story_id,
+            "audio_id": target.audio_id,
+            "baseline_classification": baseline,
+            "history_description": history_item.get("description", ""),
+            "endpoint_attempts": [],
+            "request_counts": {"success": 0, "failed": 0},
+            "candidate_audio_urls_discovered": [],
+            "candidate_audio_urls_deduplicated": [],
+            "candidate_audio_urls_deduplicated_count": 0,
+            "candidate_audio_urls_selected": [],
+            "candidate_audio_urls_skipped_due_to_cap": [],
+            "validated_candidates": [],
+            "validated_audio_url": None,
+            "final_redirected_url": None,
+            "http_status": None,
+            "content_type": None,
+            "content_length": None,
+            "simplecast_uuid": None,
+            "identity_provenance_evidence": [],
+            "provenance_score": 0.0,
+            "provenance_confidence": "low",
+            "final_classification": "PROBABLY_NOT_SEPARATE_EPISODE",
+            "duplicate_check": None,
+            "probe_outcome": "skipped_two_indicators",
+            "recommended_production_action": "do_not_modify_production_files_yet",
+        }
+        if output_dir is not None:
+            checkpoint_path = output_dir / f"checkpoint_{target.story_id}.json"
+            write_json(checkpoint_path, result)
+        return result
+
     endpoint_attempts = []
     candidate_urls: list[str] = []
     source_endpoints_by_candidate: dict[str, list[str]] = {}
@@ -578,6 +753,36 @@ def investigate_target(
                 candidate_urls.append(candidate)
             source_endpoints_by_candidate.setdefault(candidate, [])
             source_endpoints_by_candidate[candidate].append(endpoint["url"])
+
+    # --- Wayback archive fetch step ---
+    # After the endpoint loop, find the CDX result for the player embed URL,
+    # select up to WAYBACK_MAX_CAPTURES closest captures, fetch each archived
+    # page, and extract additional candidates.  Using the id_ modifier returns
+    # the raw archived page without Wayback toolbar injection.  The archive URL
+    # itself contains both story_id and audio_id, so any candidate found via
+    # this path receives dual-ID provenance scoring.
+    cdx_attempt = next(
+        (a for a in endpoint_attempts if a.get("endpoint") == "wayback_cdx_player" and a.get("ok")),
+        None,
+    )
+    if cdx_attempt:
+        player_url = f"https://www.npr.org/player/embed/{target.story_id}/{target.audio_id}"
+        captures = select_wayback_captures(cdx_attempt.get("text", ""), target.date)
+        for capture in captures:
+            archive_url = f"https://web.archive.org/web/{capture['timestamp']}id_/{player_url}"
+            archive_response = request_with_retries(url=archive_url, method="GET")
+            archive_response["endpoint"] = "wayback_player_fetch"
+            archive_response["url"] = archive_url
+            archive_response["wayback_timestamp"] = capture["timestamp"]
+            endpoint_attempts.append(archive_response)
+            if not archive_response.get("ok"):
+                continue
+            discovered = extract_candidate_audio_urls(archive_response.get("text", ""))
+            for candidate in discovered:
+                if candidate not in candidate_urls:
+                    candidate_urls.append(candidate)
+                source_endpoints_by_candidate.setdefault(candidate, [])
+                source_endpoints_by_candidate[candidate].append(archive_url)
 
     # Rank by provenance and apply hard cap before validation.
     ranked = rank_candidates(candidate_urls, target, source_endpoints_by_candidate)
@@ -756,11 +961,22 @@ def run(output_dir: Path, require_21: bool = True, batch: int | None = None, bat
             "endpoints_per_target": _endpoint_count,
             "max_retries_per_endpoint": MAX_RETRIES,
             "max_endpoint_attempts_per_target": _endpoint_count * MAX_RETRIES,
+            "wayback_archive_fetches_per_target": WAYBACK_MAX_CAPTURES,
+            "max_retries_per_wayback_fetch": MAX_RETRIES,
+            "max_wayback_archive_attempts_per_target": WAYBACK_MAX_CAPTURES * MAX_RETRIES,
             "candidate_cap_per_target": MAX_CANDIDATES_PER_TARGET,
             "max_requests_per_candidate": 2 * MAX_RETRIES,
             "max_candidate_attempts_per_target": MAX_CANDIDATES_PER_TARGET * 2 * MAX_RETRIES,
-            "max_requests_per_target": _endpoint_count * MAX_RETRIES + MAX_CANDIDATES_PER_TARGET * 2 * MAX_RETRIES,
-            "max_requests_21_targets": 21 * (_endpoint_count * MAX_RETRIES + MAX_CANDIDATES_PER_TARGET * 2 * MAX_RETRIES),
+            "max_requests_per_target": (
+                _endpoint_count * MAX_RETRIES
+                + WAYBACK_MAX_CAPTURES * MAX_RETRIES
+                + MAX_CANDIDATES_PER_TARGET * 2 * MAX_RETRIES
+            ),
+            "max_requests_17_targets": 17 * (
+                _endpoint_count * MAX_RETRIES
+                + WAYBACK_MAX_CAPTURES * MAX_RETRIES
+                + MAX_CANDIDATES_PER_TARGET * 2 * MAX_RETRIES
+            ),
         },
     }
     # Overwrite placeholder with completed run marker.
