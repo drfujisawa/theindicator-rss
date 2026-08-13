@@ -994,5 +994,333 @@ class TestProductionTargetCount(unittest.TestCase):
             )
 
 
+
+
+# ---------------------------------------------------------------------------
+# extract_audio_model — unit tests
+# ---------------------------------------------------------------------------
+
+# Real-world June 13 audioSrc (wrapper URL, not final cached redirect)
+JUNE13_AUDIO_SRC = (
+    "https://chrt.fm/track/138C95/prfx.byspotify.com/e/play.podtrac.com"
+    "/npr-510325/traffic.megaphone.fm/NPR5593139357.mp3?updated=1234567890"
+)
+
+JUNE13_STORY_ID = "1104792247"
+JUNE13_AUDIO_ID = "1198988717"
+
+def _make_audio_model_html(
+    story_id: str = JUNE13_STORY_ID,
+    media_id: str = JUNE13_AUDIO_ID,
+    audio_src: str = JUNE13_AUDIO_SRC,
+    title: str = "The Price Of Free Stock Trading",
+    duration: int = 555,
+    has_audio_available: bool = True,
+    is_available: bool = True,
+    js_literal: bool = True,
+) -> str:
+    """Build an HTML snippet containing ``var audioModel = {...};``."""
+    if js_literal:
+        # JavaScript object literal (unquoted keys) — matches actual NPR player format
+        return (
+            "<script>\n"
+            f"var audioModel = {{\n"
+            f"  storyId: \"{story_id}\",\n"
+            f"  mediaId: \"{media_id}\",\n"
+            f"  title: \"{title}\",\n"
+            f"  audioSrc: \"{audio_src}\",\n"
+            f"  duration: {duration},\n"
+            f"  hasAudioAvailable: {'true' if has_audio_available else 'false'},\n"
+            f"  isAvailable: {'true' if is_available else 'false'}\n"
+            "}};\n"
+            "</script>"
+        )
+    else:
+        # Strict JSON format (double-quoted keys)
+        import json as _json
+        obj = {
+            "storyId": story_id,
+            "mediaId": media_id,
+            "title": title,
+            "audioSrc": audio_src,
+            "duration": duration,
+            "hasAudioAvailable": has_audio_available,
+            "isAvailable": is_available,
+        }
+        return f"<script>\nvar audioModel = {_json.dumps(obj)};\n</script>"
+
+
+class TestExtractAudioModel(unittest.TestCase):
+    """Unit tests for extract_audio_model()."""
+
+    def test_exact_match_accepted(self):
+        """Exact storyId and mediaId → model returned with all fields."""
+        html = _make_audio_model_html()
+        result = probe.extract_audio_model(html, JUNE13_STORY_ID, JUNE13_AUDIO_ID)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["story_id"], JUNE13_STORY_ID)
+        self.assertEqual(result["media_id"], JUNE13_AUDIO_ID)
+        self.assertEqual(result["audio_src"], JUNE13_AUDIO_SRC)
+        self.assertEqual(result["duration"], 555)
+        self.assertTrue(result["has_audio_available"])
+        self.assertTrue(result["is_available"])
+
+    def test_wrong_story_id_rejected(self):
+        """audioModel with wrong storyId must be rejected."""
+        html = _make_audio_model_html(story_id="9999999")
+        result = probe.extract_audio_model(html, JUNE13_STORY_ID, JUNE13_AUDIO_ID)
+        self.assertIsNone(result)
+
+    def test_wrong_media_id_rejected(self):
+        """audioModel with wrong mediaId must be rejected."""
+        html = _make_audio_model_html(media_id="9999999")
+        result = probe.extract_audio_model(html, JUNE13_STORY_ID, JUNE13_AUDIO_ID)
+        self.assertIsNone(result)
+
+    def test_missing_audio_src_rejected(self):
+        """audioModel without audioSrc must be rejected."""
+        html = (
+            "<script>\nvar audioModel = {\n"
+            f"  storyId: \"{JUNE13_STORY_ID}\",\n"
+            f"  mediaId: \"{JUNE13_AUDIO_ID}\",\n"
+            "  title: \"No Audio\"\n"
+            "};\n</script>"
+        )
+        result = probe.extract_audio_model(html, JUNE13_STORY_ID, JUNE13_AUDIO_ID)
+        self.assertIsNone(result)
+
+    def test_json_format_accepted(self):
+        """audioModel with strictly double-quoted JSON keys is accepted."""
+        html = _make_audio_model_html(js_literal=False)
+        result = probe.extract_audio_model(html, JUNE13_STORY_ID, JUNE13_AUDIO_ID)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["audio_src"], JUNE13_AUDIO_SRC)
+
+    def test_js_literal_unquoted_keys_accepted(self):
+        """audioModel with JS-style unquoted keys is accepted."""
+        html = _make_audio_model_html(js_literal=True)
+        result = probe.extract_audio_model(html, JUNE13_STORY_ID, JUNE13_AUDIO_ID)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["audio_src"], JUNE13_AUDIO_SRC)
+
+    def test_no_audio_model_in_html(self):
+        """HTML without var audioModel returns None."""
+        result = probe.extract_audio_model("<html><body>nothing here</body></html>",
+                                           JUNE13_STORY_ID, JUNE13_AUDIO_ID)
+        self.assertIsNone(result)
+
+    def test_wrapper_url_preserved(self):
+        """The audioSrc wrapper URL is stored as-is, not replaced by any redirect."""
+        html = _make_audio_model_html()
+        result = probe.extract_audio_model(html, JUNE13_STORY_ID, JUNE13_AUDIO_ID)
+        self.assertIsNotNone(result)
+        # Wrapper URL must start with chrt.fm tracker prefix — NOT a megaphone cache URL
+        self.assertTrue(
+            result["audio_src"].startswith("https://chrt.fm/"),
+            f"Expected wrapper URL, got: {result['audio_src']}",
+        )
+        self.assertNotIn("dcs-cached.megaphone.fm", result["audio_src"])
+
+
+# ---------------------------------------------------------------------------
+# extract_from_player_html — audioModel integration
+# ---------------------------------------------------------------------------
+
+class TestExtractFromPlayerHtmlAudioModel(unittest.TestCase):
+    def test_audio_model_audio_src_in_legacy_audio_urls(self):
+        """When audioModel is valid, audioSrc appears first in legacy_audio_urls."""
+        html = _make_audio_model_html()
+        result = probe.extract_from_player_html(html, JUNE13_STORY_ID, JUNE13_AUDIO_ID)
+        self.assertIn(JUNE13_AUDIO_SRC, result["legacy_audio_urls"])
+        self.assertEqual(result["legacy_audio_urls"][0], JUNE13_AUDIO_SRC)
+
+    def test_audio_model_recorded_in_result(self):
+        """extract_from_player_html returns audio_model dict when match found."""
+        html = _make_audio_model_html()
+        result = probe.extract_from_player_html(html, JUNE13_STORY_ID, JUNE13_AUDIO_ID)
+        self.assertIsNotNone(result["audio_model"])
+        self.assertEqual(result["audio_model"]["story_id"], JUNE13_STORY_ID)
+
+    def test_wrong_story_id_audio_model_not_extracted(self):
+        """Wrong story_id causes audio_model to be None and audioSrc not in candidates."""
+        html = _make_audio_model_html()
+        result = probe.extract_from_player_html(html, "WRONG_STORY", JUNE13_AUDIO_ID)
+        self.assertIsNone(result["audio_model"])
+        self.assertNotIn(JUNE13_AUDIO_SRC, result["legacy_audio_urls"])
+
+    def test_no_story_id_provided_skips_audio_model(self):
+        """Without story_id/audio_id, audioModel extraction is skipped → audio_model None."""
+        html = _make_audio_model_html()
+        result = probe.extract_from_player_html(html)
+        self.assertIsNone(result["audio_model"])
+
+
+# ---------------------------------------------------------------------------
+# probe_target — audioModel end-to-end integration
+# ---------------------------------------------------------------------------
+
+class TestProbeTargetAudioModel(unittest.TestCase):
+    def _make_fetch_with_audio_model(
+        self,
+        audio_src: str = JUNE13_AUDIO_SRC,
+        audio_playable: bool = True,
+        final_redirect_url: str = "https://dcs-cached.megaphone.fm/NPR5593139357.mp3",
+    ):
+        """Return a fake fetch_fn that returns archived HTML with a valid audioModel."""
+        page_html = _make_audio_model_html(audio_src=audio_src)
+
+        def fake_fetch(url: str, read_bytes: int = probe.MAX_TEXT_BYTES, method: str = "GET") -> dict:
+            if "cdx/search" in url:
+                return {"ok": True, "text": _cdx_one_capture("20250425101326"),
+                        "final_url": url, "http_status": 200,
+                        "content_type": "application/json", "content_length": None}
+            if "web.archive.org/web/" in url:
+                return {"ok": True, "text": page_html, "final_url": url,
+                        "http_status": 200, "content_type": "text/html", "content_length": None}
+            # Audio validation
+            if audio_playable:
+                return {"ok": True, "final_url": final_redirect_url,
+                        "http_status": 200, "content_type": "audio/mpeg",
+                        "content_length": "8884382", "text": ""}
+            return {"ok": False, "error": "HTTPError 404: Not Found", "text": ""}
+
+        return fake_fetch
+
+    def test_recovered_and_validated_with_audio_model(self):
+        """audioModel audioSrc validated → RECOVERED_AND_VALIDATED."""
+        fetch = self._make_fetch_with_audio_model(audio_playable=True)
+        with TemporaryDirectory() as out_dir:
+            result = probe.probe_target(
+                story_id=JUNE13_STORY_ID, audio_id=JUNE13_AUDIO_ID,
+                date="2022-06-13", title="The Price Of Free Stock Trading",
+                output_dir=Path(out_dir), fetch_fn=fetch,
+            )
+        self.assertEqual(result["classification"], "RECOVERED_AND_VALIDATED")
+        self.assertIsNotNone(result["audio_model"])
+        self.assertEqual(result["audio_model"]["story_id"], JUNE13_STORY_ID)
+        self.assertEqual(result["audio_model"]["media_id"], JUNE13_AUDIO_ID)
+
+    def test_unplayable_audio_src_not_recovered(self):
+        """Unplayable audioSrc must not produce RECOVERED_AND_VALIDATED."""
+        fetch = self._make_fetch_with_audio_model(audio_playable=False)
+        with TemporaryDirectory() as out_dir:
+            result = probe.probe_target(
+                story_id=JUNE13_STORY_ID, audio_id=JUNE13_AUDIO_ID,
+                date="2022-06-13", title="The Price Of Free Stock Trading",
+                output_dir=Path(out_dir), fetch_fn=fetch,
+            )
+        self.assertNotEqual(result["classification"], "RECOVERED_AND_VALIDATED")
+        self.assertEqual(result["classification"], "AUDIO_CANDIDATE_NOT_PLAYABLE")
+
+    def test_wrapper_url_preserved_final_redirect_recorded_separately(self):
+        """Wrapper URL (audioSrc) is preserved; final redirect URL is recorded separately."""
+        final_redirect = "https://dcs-cached.megaphone.fm/NPR5593139357.mp3"
+        fetch = self._make_fetch_with_audio_model(
+            audio_src=JUNE13_AUDIO_SRC,
+            audio_playable=True,
+            final_redirect_url=final_redirect,
+        )
+        with TemporaryDirectory() as out_dir:
+            result = probe.probe_target(
+                story_id=JUNE13_STORY_ID, audio_id=JUNE13_AUDIO_ID,
+                date="2022-06-13", title="The Price Of Free Stock Trading",
+                output_dir=Path(out_dir), fetch_fn=fetch,
+            )
+        validated = result["validated_audio"]
+        self.assertIsNotNone(validated)
+        # Original wrapper URL preserved
+        self.assertEqual(validated["candidate_url"], JUNE13_AUDIO_SRC)
+        # Final redirect URL recorded separately for diagnostics
+        self.assertEqual(validated["final_redirect_url"], final_redirect)
+        # They are different — the wrapper was NOT replaced by the cache URL
+        self.assertNotEqual(validated["candidate_url"], validated["final_redirect_url"])
+
+
+# ---------------------------------------------------------------------------
+# June 13 fixture — full extraction regression test
+# ---------------------------------------------------------------------------
+
+JUNE13_FIXTURE_HTML = (
+    "<html><head></head><body>"
+    "<script type=\"text/javascript\">\n"
+    "var audioModel = {\n"
+    f"  storyId: \"{JUNE13_STORY_ID}\",\n"
+    f"  mediaId: \"{JUNE13_AUDIO_ID}\",\n"
+    "  title: \"The Price Of Free Stock Trading\",\n"
+    f"  audioSrc: \"{JUNE13_AUDIO_SRC}\",\n"
+    "  duration: 555,\n"
+    "  hasAudioAvailable: true,\n"
+    "  isAvailable: true\n"
+    "};\n"
+    "</script></body></html>"
+)
+
+
+class TestJune13Fixture(unittest.TestCase):
+    """Regression tests anchored to the June 13 manually-recovered episode."""
+
+    def test_audio_model_extracted_from_fixture(self):
+        """extract_audio_model correctly parses the June 13 fixture HTML."""
+        result = probe.extract_audio_model(JUNE13_FIXTURE_HTML, JUNE13_STORY_ID, JUNE13_AUDIO_ID)
+        self.assertIsNotNone(result, "audioModel must be found in fixture")
+        self.assertEqual(result["story_id"], JUNE13_STORY_ID)
+        self.assertEqual(result["media_id"], JUNE13_AUDIO_ID)
+        self.assertIn("NPR5593139357.mp3", result["audio_src"])
+        self.assertTrue(result["audio_src"].startswith("https://chrt.fm/"))
+        self.assertEqual(result["duration"], 555)
+        self.assertTrue(result["has_audio_available"])
+        self.assertTrue(result["is_available"])
+
+    def test_extract_from_player_html_fixture(self):
+        """extract_from_player_html places audioSrc first in legacy_audio_urls."""
+        result = probe.extract_from_player_html(
+            JUNE13_FIXTURE_HTML, JUNE13_STORY_ID, JUNE13_AUDIO_ID
+        )
+        self.assertTrue(len(result["legacy_audio_urls"]) > 0)
+        self.assertEqual(result["legacy_audio_urls"][0], JUNE13_AUDIO_SRC)
+        self.assertIn("NPR5593139357.mp3", result["legacy_audio_urls"][0])
+        self.assertIsNotNone(result["audio_model"])
+
+    def test_june13_full_probe_recovered_and_validated(self):
+        """Full probe_target with June 13 fixture → RECOVERED_AND_VALIDATED."""
+        final_redirect = "https://dcs-cached.megaphone.fm/NPR5593139357.mp3"
+
+        def fake_fetch(url: str, read_bytes: int = probe.MAX_TEXT_BYTES, method: str = "GET") -> dict:
+            if "cdx/search" in url:
+                return {"ok": True, "text": _cdx_one_capture("20250425101326"),
+                        "final_url": url, "http_status": 200,
+                        "content_type": "application/json", "content_length": None}
+            if "web.archive.org/web/" in url:
+                return {"ok": True, "text": JUNE13_FIXTURE_HTML, "final_url": url,
+                        "http_status": 200, "content_type": "text/html", "content_length": None}
+            # Audio candidate validation — NPR5593139357.mp3 chain returns 200 audio/mpeg
+            if "NPR5593139357" in url or "chrt.fm" in url:
+                return {"ok": True, "final_url": final_redirect,
+                        "http_status": 200, "content_type": "audio/mpeg",
+                        "content_length": "8884382", "text": ""}
+            return {"ok": False, "error": "HTTPError 404: Not Found", "text": ""}
+
+        with TemporaryDirectory() as out_dir:
+            result = probe.probe_target(
+                story_id=JUNE13_STORY_ID,
+                audio_id=JUNE13_AUDIO_ID,
+                date="2018-06-13",
+                title="The Price Of Free Stock Trading",
+                output_dir=Path(out_dir),
+                fetch_fn=fake_fetch,
+            )
+
+        self.assertEqual(result["classification"], "RECOVERED_AND_VALIDATED",
+                         f"June 13 must be RECOVERED_AND_VALIDATED, got: {result['classification']}")
+        self.assertIsNotNone(result["audio_model"])
+        self.assertEqual(result["audio_model"]["duration"], 555)
+        validated = result["validated_audio"]
+        self.assertIsNotNone(validated)
+        self.assertTrue(validated["playable"])
+        self.assertIn("NPR5593139357.mp3", validated["candidate_url"])
+        self.assertEqual(validated["final_redirect_url"], final_redirect)
+        self.assertNotEqual(validated["candidate_url"], validated["final_redirect_url"])
+
+
 if __name__ == "__main__":
     unittest.main()
