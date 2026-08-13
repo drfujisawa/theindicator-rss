@@ -643,8 +643,11 @@ def _save_capture_diagnostic_html(
     """Save a compact per-capture HTML diagnostic copy in *output_dir*."""
     output_dir.mkdir(parents=True, exist_ok=True)
     compact_html = " ".join(html.split())
-    if len(compact_html.encode("utf-8")) > MAX_CAPTURE_DIAGNOSTIC_BYTES:
-        compact_html = compact_html[:MAX_CAPTURE_DIAGNOSTIC_BYTES]
+    compact_bytes = compact_html.encode("utf-8")
+    if len(compact_bytes) > MAX_CAPTURE_DIAGNOSTIC_BYTES:
+        compact_html = compact_bytes[:MAX_CAPTURE_DIAGNOSTIC_BYTES].decode(
+            "utf-8", errors="ignore"
+        )
     path = output_dir / f"capture_{story_id}_{timestamp}.html"
     path.write_text(compact_html, encoding="utf-8")
     return path

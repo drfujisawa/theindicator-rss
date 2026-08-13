@@ -762,7 +762,8 @@ class TestProbeTarget(unittest.TestCase):
             if "20220613120000" in url:
                 return {"ok": True, "text": "<html><body>no media</body></html>", "final_url": url,
                         "http_status": 200, "content_type": "text/html", "content_length": None}
-            return {"ok": False, "error": "HTTPError 503: Service Unavailable", "text": ""}
+            return {"ok": False, "error": "HTTPError 503: Service Unavailable", "text": "",
+                    "attempts": [{"attempt": 1, "error_type": "http_503", "retryable": True}]}
 
         with TemporaryDirectory() as out_dir:
             out_path = Path(out_dir)
