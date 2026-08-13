@@ -137,7 +137,7 @@ MAX_CAPTURE_DIAGNOSTIC_BYTES = 80_000
 # Maximum audio candidates to validate per target.
 MAX_AUDIO_CANDIDATES = 3
 # Expected number of confirmed-unresolved targets (no_audio, excluding Two Indicators).
-EXPECTED_TARGET_COUNT = 2
+EXPECTED_TARGET_COUNT = 0
 
 HEADERS = {
     "User-Agent": (
