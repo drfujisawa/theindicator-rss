@@ -41,7 +41,7 @@ jobs:
         run: |
           ARGS="--output-dir data/recovery/wayback_player_snapshots"
           if [ -n "${{ github.event.inputs.targets }}" ]; then
-            ARGS="$ARGS --targets ${{ github.event.inputs.targets }}"
+            ARGS="$ARGS --targets '${{ github.event.inputs.targets }}'"
           fi
           if [ "${{ github.event.inputs.force }}" = "true" ]; then
             ARGS="$ARGS --force"

@@ -471,23 +471,23 @@ def validate_audio_candidate(
     """
     head = fetch_fn(candidate_url, read_bytes=0, method="HEAD")
     if head.get("ok") and head.get("http_status") in (200, 206):
-        probe = head
+        validation_result = head
     else:
-        probe = fetch_fn(candidate_url, read_bytes=8192, method="GET")
+        validation_result = fetch_fn(candidate_url, read_bytes=8192, method="GET")
 
     playable = bool(
-        probe.get("ok")
-        and probe.get("http_status") in (200, 206)
-        and _is_audio_content_type(probe.get("content_type"))
+        validation_result.get("ok")
+        and validation_result.get("http_status") in (200, 206)
+        and _is_audio_content_type(validation_result.get("content_type"))
     )
     return {
         "candidate_url": candidate_url,
         "playable": playable,
-        "final_url": probe.get("final_url"),
-        "http_status": probe.get("http_status"),
-        "content_type": probe.get("content_type"),
-        "content_length": probe.get("content_length"),
-        "error": probe.get("error") if not probe.get("ok") else None,
+        "final_url": validation_result.get("final_url"),
+        "http_status": validation_result.get("http_status"),
+        "content_type": validation_result.get("content_type"),
+        "content_length": validation_result.get("content_length"),
+        "error": validation_result.get("error") if not validation_result.get("ok") else None,
     }
 
 
