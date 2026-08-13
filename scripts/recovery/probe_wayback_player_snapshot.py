@@ -88,6 +88,8 @@ BACKOFF_SECONDS = 1.5
 WAYBACK_MAX_CAPTURES = 8
 # Maximum bytes of archived HTML to read (avoids giant pages).
 MAX_TEXT_BYTES = 300_000
+# Expected number of confirmed-unresolved targets (no_audio, excluding Two Indicators).
+EXPECTED_TARGET_COUNT = 17
 
 HEADERS = {
     "User-Agent": (
@@ -250,10 +252,12 @@ def _parse_cdx(cdx_text: str, target_date: str) -> list[str]:
 
 
 def _unique(values: list[str]) -> list[str]:
+    seen_set: set[str] = set()
     seen: list[str] = []
     for v in values:
         v = v.replace("\\/", "/").replace("\\u0026", "&").strip()
-        if v and v not in seen:
+        if v and v not in seen_set:
+            seen_set.add(v)
             seen.append(v)
     return seen
 
@@ -496,9 +500,9 @@ def main() -> None:
     before_hashes = _capture_hashes(PRODUCTION_FILES)
 
     targets = load_targets()
-    if len(targets) != 17:
+    if len(targets) != EXPECTED_TARGET_COUNT:
         print(
-            f"WARNING: expected 17 targets, found {len(targets)}. "
+            f"WARNING: expected {EXPECTED_TARGET_COUNT} targets, found {len(targets)}. "
             "Proceeding anyway."
         )
 

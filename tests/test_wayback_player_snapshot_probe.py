@@ -261,9 +261,7 @@ class TestExtractFromPlayerHtml(unittest.TestCase):
         audio_url = "https://cdn.simplecastaudio.com/pod/audio/test.mp3"
         html = f'<audio src="{audio_url}"></audio>'
         result = probe.extract_from_player_html(html)
-        self.assertTrue(
-            any("simplecastaudio.com" in u for u in result["simplecast_audio_urls"])
-        )
+        self.assertIn(audio_url, result["simplecast_audio_urls"])
 
     def test_case_insensitive_key_matching(self):
         uuid = "aabbccdd-aabb-aabb-aabb-aabbccddeeff"
@@ -471,8 +469,8 @@ class TestProductionTargetCount(unittest.TestCase):
         targets = probe.load_targets()
         self.assertEqual(
             len(targets),
-            17,
-            f"Expected 17 confirmed unresolved targets, got {len(targets)}",
+            probe.EXPECTED_TARGET_COUNT,
+            f"Expected {probe.EXPECTED_TARGET_COUNT} confirmed unresolved targets, got {len(targets)}",
         )
 
     def test_none_of_the_17_are_two_indicators(self):
