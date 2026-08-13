@@ -35366,6 +35366,66 @@
       ],
       "audio_url_e_parameter": null,
       "release_classification": "confirmed_indicator_episode"
+    },
+    "605396270": {
+      "story_id": "605396270",
+      "audio_id": "605396037",
+      "date": "2018-04-24",
+      "title": "When China's Ships Come In",
+      "npr_url": "https://www.npr.org/sections/money/2018/04/24/605396270/when-china-s-ships-come-in",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180424_indicator_0424_ports_final.mp3?d=511&e=605394338&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180424_indicator_0424_ports_final.mp3?d=511&e=605394338&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 8177432,
+      "duration_seconds": 511,
+      "extraction_method": "validated_two_episode_recovery",
+      "provenance": [
+        "indicator_two_episode_audio_discovery.json",
+        "live NPR story page",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "605394338",
+        "605396037",
+        "605396270"
+      ],
+      "audio_url_e_parameter": "605394338",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "656634299": {
+      "story_id": "656634299",
+      "audio_id": "656632142",
+      "date": "2018-10-11",
+      "title": "China's Brave New World",
+      "npr_url": "https://www.npr.org/sections/money/2018/10/11/656634299/chinas-brave-new-world",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/10/20181011_indicator_111018_china3_final_final_wed.mp3?d=588&e=656627240&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/10/20181011_indicator_111018_china3_final_final_wed.mp3?d=588&e=656627240&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9392091,
+      "duration_seconds": 588,
+      "extraction_method": "validated_two_episode_recovery",
+      "provenance": [
+        "indicator_two_episode_audio_discovery.json",
+        "live NPR story page",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "656627240",
+        "656632142",
+        "656634299"
+      ],
+      "audio_url_e_parameter": "656627240",
+      "release_classification": "confirmed_indicator_episode"
     }
   }
 }

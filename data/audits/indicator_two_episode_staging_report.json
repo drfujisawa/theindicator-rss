@@ -1,0 +1,49 @@
+{
+  "report_version": 1,
+  "mode": "staging_only",
+  "production_files_modified": false,
+  "source_discovery": "data\\audits\\indicator_two_episode_audio_discovery.json",
+  "stage_directory": "work\\two-episode-recovery-staging",
+  "counts": {
+    "promoted_candidates": 2,
+    "history_before": 1714,
+    "history_after": 1716,
+    "enclosure_map_before": 1714,
+    "enclosure_map_after": 1716,
+    "feed_before": 2015,
+    "feed_after": 2017
+  },
+  "candidate_story_ids": [
+    "605396270",
+    "656634299"
+  ],
+  "checks": {
+    "production_files_unchanged": true,
+    "candidate_count_is_2": true,
+    "candidate_story_ids_unique": true,
+    "history_delta_is_2": true,
+    "history_count_consistent": true,
+    "enclosure_map_delta_is_2": true,
+    "feed_delta_is_2": true,
+    "feed_story_id_delta_exact": true,
+    "rss_guids_unique": true,
+    "rss_story_ids_unique": true,
+    "rss_sorted_newest_first": true,
+    "rss_xml_parses": true,
+    "all_enclosures_resolved": true,
+    "all_content_lengths_known": true,
+    "all_player_identities_present": true
+  },
+  "all_checks_passed": true,
+  "production_sha256_before": {
+    "indicator_history.json": "1d2ddaa81c4760e5e8fa23900253c6de43a8a945030fdcab0947daea2547e466",
+    "indicator_enclosure_map.json": "22b94a0479157eac984b379417ded5389602362c49fb6c7faea5427923ea281a",
+    "theindicator_feed.xml": "07e2d8e8ac0abba26e2915d203318ce132c2778efd67589828cacad0ec9b38b6"
+  },
+  "production_sha256_after": {
+    "indicator_history.json": "1d2ddaa81c4760e5e8fa23900253c6de43a8a945030fdcab0947daea2547e466",
+    "indicator_enclosure_map.json": "22b94a0479157eac984b379417ded5389602362c49fb6c7faea5427923ea281a",
+    "theindicator_feed.xml": "07e2d8e8ac0abba26e2915d203318ce132c2778efd67589828cacad0ec9b38b6"
+  },
+  "next_gate": "review this staging report before any hash-guarded atomic production application"
+}

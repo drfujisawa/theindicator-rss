@@ -1,6 +1,6 @@
 {
   "next_date": "2017-11-05T16:46:00-04:00",
-  "episode_count": 1714,
+  "episode_count": 1716,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -15553,6 +15553,24 @@
       ]
     },
     {
+      "title": "China's Brave New World",
+      "date": "2018-10-11",
+      "npr_url": "https://www.npr.org/sections/money/2018/10/11/656634299/chinas-brave-new-world",
+      "story_id": "656634299",
+      "audio_id": "656632142",
+      "player_url": "https://www.npr.org/player/embed/656627240/656632142",
+      "description": "China's Brave New World",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_two_episode_recovery",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_two_episode_audio_discovery.json",
+        "live NPR story page",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "China's Social Credit System",
       "date": "2018-10-09T00:00:00-04:00",
       "npr_url": "https://www.npr.org/sections/money/2018/10/09/655921710/chinas-social-credit-system",
@@ -17440,6 +17458,24 @@
         "indicator_npr_identities.json",
         "indicator_npr_audio_validation.json",
         "indicator_npr_audio_recovery.json"
+      ]
+    },
+    {
+      "title": "When China's Ships Come In",
+      "date": "2018-04-24",
+      "npr_url": "https://www.npr.org/sections/money/2018/04/24/605396270/when-china-s-ships-come-in",
+      "story_id": "605396270",
+      "audio_id": "605396037",
+      "player_url": "https://www.npr.org/player/embed/605394338/605396037",
+      "description": "When China's Ships Come In",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_two_episode_recovery",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_two_episode_audio_discovery.json",
+        "live NPR story page",
+        "validated NPR-hosted byte-range response"
       ]
     },
     {

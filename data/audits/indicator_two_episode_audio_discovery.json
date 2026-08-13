@@ -1,0 +1,78 @@
+{
+  "audit_version": 1,
+  "mode": "discovery_only",
+  "production_files_modified": false,
+  "generated_date": "2026-08-13",
+  "summary": {
+    "episodes_investigated": 2,
+    "exact_npr_identities_found": 2,
+    "validated_npr_audio_found": 2,
+    "production_collisions": 0,
+    "classification": "ready_for_isolated_staging"
+  },
+  "episodes": [
+    {
+      "reference_date": "2018-04-24",
+      "reference_title": "When China's Ships Come In",
+      "npr_story_id": "605396270",
+      "npr_url": "https://www.npr.org/sections/money/2018/04/24/605396270/when-china-s-ships-come-in",
+      "player_story_id": "605394338",
+      "audio_id": "605396037",
+      "player_url": "https://www.npr.org/player/embed/605394338/605396037",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180424_indicator_0424_ports_final.mp3?d=511&e=605394338&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 511,
+      "content_length_bytes": 8177432,
+      "validation": {
+        "status_code": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-4095/8177432",
+        "sample_size": 4096,
+        "audio_signature": "ID3",
+        "story_id_collision": false,
+        "audio_path_collision": false
+      },
+      "evidence": [
+        "Exact title and publication date on the canonical NPR story URL",
+        "Unique player pair embedded by the live NPR story page",
+        "Direct Indicator audio URL embedded by the same NPR story page",
+        "NPR audio e parameter matches the player story ID",
+        "Validated byte-range response from ondemand.npr.org"
+      ]
+    },
+    {
+      "reference_date": "2018-10-11",
+      "reference_title": "China's Brave New World",
+      "npr_story_id": "656634299",
+      "npr_url": "https://www.npr.org/sections/money/2018/10/11/656634299/chinas-brave-new-world",
+      "player_story_id": "656627240",
+      "audio_id": "656632142",
+      "player_url": "https://www.npr.org/player/embed/656627240/656632142",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/10/20181011_indicator_111018_china3_final_final_wed.mp3?d=588&e=656627240&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 588,
+      "content_length_bytes": 9392091,
+      "validation": {
+        "status_code": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-4095/9392091",
+        "sample_size": 4096,
+        "audio_signature": "MPEG frame",
+        "story_id_collision": false,
+        "audio_path_collision": false
+      },
+      "evidence": [
+        "Exact title and publication date on the canonical NPR story URL",
+        "Independent WPSU mirror preserves NPR story ID 656634299 and publication timestamp",
+        "Unique player pair embedded by the live NPR story page",
+        "Direct Indicator audio URL embedded by the same NPR story page",
+        "NPR audio e parameter matches the player story ID",
+        "Validated byte-range response from ondemand.npr.org"
+      ],
+      "rejected_false_match": {
+        "npr_story_id": "656978022",
+        "title": "Episode 869: The Student Loan Whistleblower",
+        "reason": "The earlier recovery probe captured an unrelated Planet Money episode from the adjacent date."
+      }
+    }
+  ],
+  "recommendation": "Build a two-episode isolated staging set and run the established promotion invariants before any production write."
+}
