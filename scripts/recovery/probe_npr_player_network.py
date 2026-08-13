@@ -261,7 +261,7 @@ def probe_target(target: dict, playwright_module: Any) -> dict:
         print(f"  Page load error: {exc}")
 
     # Allow additional XHR/fetch to settle
-    time.sleep(PAGE_SETTLE_SECONDS)
+    page.wait_for_timeout(PAGE_SETTLE_SECONDS * 1000)
 
     # --- DOM snapshot ---
     try:
@@ -303,13 +303,10 @@ def probe_target(target: dict, playwright_module: Any) -> dict:
             if audio_url_source_request is None:
                 audio_url_source_request = req["url"]
 
-    # Deduplicate
-    seen: set[str] = set()
-    unique_uuids = [u for u in all_uuids if not (u in seen or seen.add(u))]  # type: ignore[func-returns-value]
-    seen = set()
-    unique_mp3s = [u for u in all_mp3s if not (u in seen or seen.add(u))]  # type: ignore[func-returns-value]
-    seen = set()
-    unique_ondemand = [u for u in all_ondemand if not (u in seen or seen.add(u))]  # type: ignore[func-returns-value]
+    # Deduplicate while preserving insertion order
+    unique_uuids = list(dict.fromkeys(all_uuids))
+    unique_mp3s = list(dict.fromkeys(all_mp3s))
+    unique_ondemand = list(dict.fromkeys(all_ondemand))
 
     result["summary"] = {
         "total_network_requests": len(captured_responses),
@@ -387,10 +384,21 @@ def build_report(results: list[dict]) -> dict:
         ),
         "KNOWN-GOOD UUID SOURCE": known_summary.get("uuid_source_endpoint"),
         "UNRESOLVED NETWORK TRACE": unresolved.get("relevant_requests", []),
+        # The problem statement uses "JUNE 13" as a label for the unresolved
+        # target; we keep those exact keys for matching, but also emit
+        # label-agnostic equivalents so the keys remain meaningful if the
+        # target list is ever updated.
         "JUNE 13 UUID FOUND": "YES" if unresolved_uuid_found else "NO",
         "JUNE 13 UUID VALUE": unresolved_uuids[:5] if unresolved_uuid_found else None,
         "JUNE 13 AUDIO URL FOUND": "YES" if unresolved_audio_found else "NO",
         "JUNE 13 AUDIO URLS": (
+            unresolved_summary.get("all_mp3_urls_seen", [])
+            + unresolved_summary.get("all_ondemand_urls_seen", [])
+        )[:5],
+        "UNRESOLVED_UUID_FOUND": "YES" if unresolved_uuid_found else "NO",
+        "UNRESOLVED_UUID_VALUES": unresolved_uuids[:5] if unresolved_uuid_found else None,
+        "UNRESOLVED_AUDIO_URL_FOUND": "YES" if unresolved_audio_found else "NO",
+        "UNRESOLVED_AUDIO_URLS": (
             unresolved_summary.get("all_mp3_urls_seen", [])
             + unresolved_summary.get("all_ondemand_urls_seen", [])
         )[:5],

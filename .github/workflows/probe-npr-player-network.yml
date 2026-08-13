@@ -22,9 +22,9 @@ jobs:
 
       - name: Install Playwright and Chromium
         run: |
-          pip install playwright
-          playwright install chromium
+          pip install playwright==1.49.0
           playwright install-deps chromium
+          playwright install chromium
 
       - name: Run NPR player network probe
         run: python scripts/recovery/probe_npr_player_network.py
