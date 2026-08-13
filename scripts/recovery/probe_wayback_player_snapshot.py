@@ -226,6 +226,10 @@ _AUDIO_MODEL_ASSIGN_RE = re.compile(
     re.IGNORECASE,
 )
 
+# Matches bare identifier keys in JS object literals: ``word:`` → ``"word":``
+# Used by the JS-to-JSON normalizer in extract_audio_model.
+_UNQUOTED_KEY_RE = re.compile(r'(?<!["\w])([A-Za-z_$][A-Za-z0-9_$]*)\s*:')
+
 
 def extract_audio_model(html: str, story_id: str, audio_id: str) -> dict | None:
     """Extract and validate the ``var audioModel = {...}`` object from archived
@@ -268,7 +272,7 @@ def extract_audio_model(html: str, story_id: str, audio_id: str) -> dict | None:
         if ch == "\\" and in_string:
             escape_next = True
             continue
-        if ch == '"' and not escape_next:
+        if ch == '"':
             in_string = not in_string
             continue
         if in_string:
@@ -292,13 +296,10 @@ def extract_audio_model(html: str, story_id: str, audio_id: str) -> dict | None:
     #   2. Replace single-quoted string values with double-quoted equivalents
     # These transforms are deliberately limited to the subset of JS object literals
     # that NPR's archived audioModel actually used.
-    _UNQUOTED_KEY_RE = re.compile(r'(?<!["\w])([A-Za-z_$][A-Za-z0-9_$]*)\s*:')
 
     def _normalize_js_obj(text: str) -> str:
         """Convert a simple JS object literal to something json.loads can parse."""
-        # Quote unquoted keys
         normalized = _UNQUOTED_KEY_RE.sub(lambda mo: f'"{mo.group(1)}":', text)
-        # Replace single-quoted string values with double-quoted
         normalized = re.sub(r"'([^'\\]*)'", r'"\1"', normalized)
         return normalized
 
