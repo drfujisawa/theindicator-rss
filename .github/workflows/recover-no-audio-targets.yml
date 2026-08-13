@@ -3,6 +3,14 @@ name: Recover No-Audio Targets
 on:
   workflow_dispatch:
     inputs:
+      batch:
+        description: "Batch number to process (1-based; batch 1 = targets 1–5, batch 2 = 6–10, …)"
+        required: false
+        default: "1"
+      batch_size:
+        description: "Targets per batch (default 5; ceil(21/5) = 5 runs for full coverage)"
+        required: false
+        default: "5"
       commit_results:
         description: "Commit generated JSON artifacts back to the branch (true/false)"
         required: false
@@ -14,7 +22,7 @@ permissions:
 jobs:
   recover-no-audio-targets:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 35
 
     steps:
       - name: Check out repository
@@ -25,16 +33,18 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Run no-audio target recovery
+      - name: Run no-audio target recovery (batch ${{ github.event.inputs.batch || '1' }})
         run: |
           python scripts/recovery/recover_no_audio_targets.py \
-            --output-dir data/recovery/no_audio_targets
+            --output-dir data/recovery/no_audio_targets \
+            --batch ${{ github.event.inputs.batch || '1' }} \
+            --batch-size ${{ github.event.inputs.batch_size || '5' }}
 
-      - name: Upload no-audio recovery artifacts
+      - name: Upload no-audio recovery artifacts (batch ${{ github.event.inputs.batch || '1' }})
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: no-audio-target-recovery
+          name: no-audio-batch-${{ github.event.inputs.batch || '1' }}
           path: data/recovery/no_audio_targets/*.json
           retention-days: 90
 
@@ -47,6 +57,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No artifact JSON changes to commit."
           else
-            git commit -m "chore: update no-audio recovery artifacts from Actions run"
+            git commit -m "chore: update no-audio recovery artifacts from Actions run (batch ${{ github.event.inputs.batch || '1' }})"
             git push
           fi
