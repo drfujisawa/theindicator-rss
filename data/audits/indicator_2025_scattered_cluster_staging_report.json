@@ -1,0 +1,67 @@
+{
+  "report_version": 1,
+  "mode": "staging_only",
+  "production_files_modified": false,
+  "source_discovery": "data\\audits\\indicator_2025_scattered_cluster_staging_candidates.json",
+  "stage_directory": "work\\2025-scattered-cluster-staging",
+  "counts": {
+    "promoted_candidates": 3,
+    "history_before": 1812,
+    "history_after": 1815,
+    "enclosure_map_before": 1812,
+    "enclosure_map_after": 1815,
+    "feed_before": 2113,
+    "feed_after": 2116
+  },
+  "candidate_story_ids": [
+    "1233894751",
+    "1247777247",
+    "1253382246"
+  ],
+  "checks": {
+    "production_files_unchanged": true,
+    "candidate_count_is_3": true,
+    "candidate_story_ids_unique": true,
+    "history_delta_is_3": true,
+    "history_count_consistent": true,
+    "enclosure_map_delta_is_3": true,
+    "feed_delta_is_3": true,
+    "feed_story_id_delta_exact": true,
+    "rss_guids_unique": true,
+    "rss_story_ids_unique": true,
+    "rss_sorted_newest_first": true,
+    "rss_xml_parses": true,
+    "all_enclosures_resolved": true,
+    "all_content_lengths_known": true,
+    "all_audio_npr_hosted": true,
+    "existing_1250192002_metadata_corrected": true
+  },
+  "all_checks_passed": true,
+  "production_sha256_before": {
+    "indicator_history.json": "9565e65f94a1f1681d2b7965889275507f07a29bc34a2ea4a5c10194f24a8ccc",
+    "indicator_enclosure_map.json": "9cf8b137f4b28365c950ce79a31fda9565a955359ab7c56f136dae82f7c1ad4a",
+    "theindicator_feed.xml": "d4858bdfeb580c8c99d6ec7675dfdb4bba204899cda92edd850d2b42c2fb37c1"
+  },
+  "production_sha256_after": {
+    "indicator_history.json": "9565e65f94a1f1681d2b7965889275507f07a29bc34a2ea4a5c10194f24a8ccc",
+    "indicator_enclosure_map.json": "9cf8b137f4b28365c950ce79a31fda9565a955359ab7c56f136dae82f7c1ad4a",
+    "theindicator_feed.xml": "d4858bdfeb580c8c99d6ec7675dfdb4bba204899cda92edd850d2b42c2fb37c1"
+  },
+  "staged_sha256": {
+    "indicator_history.json": "4698d8dc9af62a721def9e496615ff5103cc66a1e0db9a75eea4fd3979b2fb64",
+    "indicator_enclosure_map.json": "46d320461429023fcfd7c83fabf0943a0b9d974a9c694ef916aaef53f8e96876",
+    "theindicator_feed.xml": "4762137ecaaaa4843ba98a9f6a9a5e993502a8b88996a5e2b30bf2890ad60a5d"
+  },
+  "next_gate": "review this staging report before any hash-guarded atomic production application",
+  "metadata_corrections": [
+    {
+      "story_id": "1250192002",
+      "old_title": "Prepping for a rainy day and higher used car prices",
+      "new_title": "What's in YOUR wallet?",
+      "fields": [
+        "title",
+        "itunes:title"
+      ]
+    }
+  ]
+}

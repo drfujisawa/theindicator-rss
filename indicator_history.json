@@ -1,6 +1,6 @@
 {
   "next_date": "2017-11-05T16:46:00-04:00",
-  "episode_count": 1812,
+  "episode_count": 1815,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -55,6 +55,25 @@
       "audio_id": "1269404383",
       "player_url": "https://www.npr.org/player/embed/1253522956/1269404383",
       "description": "A significant portion of young people feel like they aren't on solid financial footing. And yet, the numbers show Gen Z adults on average actually earn more and have more wealth than previous generations did at their age. This phenomenon has been dubbed (by the internet) as 'money dysmorphia'. Today on the show, we chat with a neuroscientist who co-wrote a book, Look Again, that helps explain this phenomenon. Related episodes: Relax, Millennials! You're Doing Great.Gen Z's dream job in the influencer industry (Apple / Spotify) There Is Growing Segregation In Millennial Wealth For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Fact-checking by Sierra Juarez. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Let's 'TACO' 'bout General Motors gassing up V-8s and golden shares",
+      "date": "2025-05-30",
+      "npr_url": "https://www.npr.org/2025/05/30/1253382246/trump-taco-gm-v8-golden-change-nippon-steel-tariffs",
+      "story_id": "1253382246",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2025/05/30/1253382246/trump-taco-gm-v8-golden-change-nippon-steel-tariffs",
+      "description": "Let's 'TACO' 'bout General Motors gassing up V-8s and golden shares",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2025_scattered_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2025_scattered_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
     },
     {
       "title": "Are Trump's trade deals the real deal?",
@@ -192,7 +211,7 @@
       "description": "Robots have been a thing for a long time, but they've never quite met expectations. While AI has changed the game for chatbots, it's not quite so clear for robots. NPR science desk correspondent Geoff Brumfiel spoke to our colleagues over on our science podcast Short Wave on how humanoid robots are actually developing with the help of artificial intelligence. It was a fascinating discussion and so we are sharing that conversation with you today on the Indicator. Related episodes: Is AI underrated? (Apple / Spotify) Is AI overrated? (Apple / Spotify) Dial M for Mechanization (Apple / Spotify) For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Fact-checking by Sierra Juarez. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
     },
     {
-      "title": "Prepping for a rainy day and higher used car prices",
+      "title": "What's in YOUR wallet?",
       "date": "2025-05-09T03:00:59-04:00",
       "npr_url": "https://www.npr.org/2025/05/09/1250192002/china-stimulus-used-cars-tariffs-emergency-funds",
       "story_id": "1250192002",
@@ -262,6 +281,25 @@
       "audio_id": "1269230106",
       "player_url": "https://www.npr.org/player/embed/1248091552/1269230106",
       "description": "Stablecoins are the latest digital asset to grab headlines. Congress is considering legislation around the cryptocurrency, and a Trump family-affiliated company is preparing to launch its own Stablecoin. But does this digital currency live up to its own name? Related episodes:What's this about a crypto reserve? (Apple / Spotify) Is 'government crypto' a good idea? (Apple / Spotify) WTF is a Bitcoin ETF? (Apple / Spotify) For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Fact-checking by Sierra Juarez. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Is the US pushing countries towards China?",
+      "date": "2025-04-29",
+      "npr_url": "https://www.npr.org/2025/04/29/1247777247/pakistan-us-china-trade-tariffs-aid",
+      "story_id": "1247777247",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2025/04/29/1247777247/pakistan-us-china-trade-tariffs-aid",
+      "description": "Is the US pushing countries towards China?",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2025_scattered_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2025_scattered_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
     },
     {
       "title": "When do boycotts work?",
@@ -640,6 +678,25 @@
       "audio_id": "1267128420",
       "player_url": "https://www.npr.org/player/embed/1234145477/1267128420",
       "description": "When it comes to defense, one thing looks certain: European members of the North Atlantic Treaty Organization (NATO) are going to have to pay more. Countries that are struggling economically will soon need to spend hundreds of billions of dollars. Can they do it? Related episodes: Can Europe fund its defense ambitions? (Apple / Spotify) The weapons supply chain For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Fact-checking by Sierra Juarez. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "A polite message from Canada to the U.S.",
+      "date": "2025-02-26",
+      "npr_url": "https://www.npr.org/2025/02/26/1233894751/a-polite-message-from-canada-to-the-us",
+      "story_id": "1233894751",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2025/02/26/1233894751/a-polite-message-from-canada-to-the-us",
+      "description": "A polite message from Canada to the U.S.",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2025_scattered_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2025_scattered_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
     },
     {
       "title": "What's the long-term cost of federal layoffs?",
