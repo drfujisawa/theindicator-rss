@@ -1,6 +1,6 @@
 {
   "next_date": "2017-11-05T16:46:00-04:00",
-  "episode_count": 1718,
+  "episode_count": 1722,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -13733,6 +13733,35 @@
       ]
     },
     {
+      "title": "Buying A College Degree: Did Aunt Becky Overpay?",
+      "date": "2019-03-15",
+      "npr_url": "https://www.npr.org/2019/03/15/703928648/buying-a-college-degree-did-aunt-becky-overpay",
+      "story_id": "703928648",
+      "audio_id": "703948228",
+      "player_url": "https://www.npr.org/player/embed/703928648/703948228",
+      "description": "Buying A College Degree: Did Aunt Becky Overpay?",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_batch1",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_remaining_38_ranked_batch1.json",
+        "live NPR story page",
+        "public-radio affiliate mirror",
+        "validated NPR-hosted byte-range response"
+      ],
+      "catalog_correction": {
+        "field": "publication_date",
+        "incorrect_reference_value": "2018-03-15",
+        "verified_value": "2019-03-15",
+        "evidence": [
+          "The canonical NPR URL is dated 2019-03-15",
+          "WBUR, KCLU, and KGOU mirrors all publish the episode on 2019-03-15",
+          "The NPR audio filename embeds 20190315 and 031519"
+        ]
+      }
+    },
+    {
       "title": "Saying 'I Do' To Lab-Grown Diamonds",
       "date": "2019-03-14",
       "npr_url": "https://www.npr.org/sections/money/2019/03/14/703494470/saying-i-do-to-lab-grown-diamonds",
@@ -16674,6 +16703,26 @@
       ]
     },
     {
+      "title": "Sallie Krawcheck on #MeToo, Dodd Frank, & Cronuts",
+      "date": "2018-06-26",
+      "npr_url": "https://www.npr.org/sections/money/2018/06/26/623637446/sallie-krawcheck-on-metoo-dodd-frank-cronuts",
+      "story_id": "623637446",
+      "audio_id": "623648827",
+      "player_url": "https://www.npr.org/player/embed/623648609/623648827",
+      "description": "Sallie Krawcheck on #MeToo, Dodd Frank, & Cronuts",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_batch1",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_remaining_38_ranked_batch1.json",
+        "live NPR story page",
+        "public-radio affiliate mirror",
+        "validated NPR-hosted byte-range response"
+      ],
+      "catalog_correction": null
+    },
+    {
       "title": "The Beautiful Indicator",
       "date": "2018-06-25",
       "npr_url": "https://www.npr.org/sections/money/2018/06/25/623358233/the-beautiful-indicator",
@@ -17030,6 +17079,26 @@
         "indicator_npr_audio_validation.json",
         "indicator_npr_audio_recovery.json"
       ]
+    },
+    {
+      "title": "Banking's Regulation Rollback",
+      "date": "2018-05-29",
+      "npr_url": "https://www.npr.org/sections/money/2018/05/29/615292695/banking-s-regulation-rollback",
+      "story_id": "615292695",
+      "audio_id": "615289039",
+      "player_url": "https://www.npr.org/player/embed/615288510/615289039",
+      "description": "Banking's Regulation Rollback",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_batch1",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_remaining_38_ranked_batch1.json",
+        "live NPR story page",
+        "public-radio affiliate mirror",
+        "validated NPR-hosted byte-range response"
+      ],
+      "catalog_correction": null
     },
     {
       "title": "Earnings Calls Gone Wild",
@@ -17497,6 +17566,26 @@
         "live NPR story page",
         "validated NPR-hosted byte-range response"
       ]
+    },
+    {
+      "title": "3 Things You Didn't Know About LA",
+      "date": "2018-04-23",
+      "npr_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+      "story_id": "605033696",
+      "audio_id": "605032844",
+      "player_url": "https://www.npr.org/player/embed/605032568/605032844",
+      "description": "3 Things You Didn't Know About LA",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_batch1",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_remaining_38_ranked_batch1.json",
+        "live NPR story page",
+        "public-radio affiliate mirror",
+        "validated NPR-hosted byte-range response"
+      ],
+      "catalog_correction": null
     },
     {
       "title": "The New Bond Villain",

@@ -1,0 +1,132 @@
+{
+  "audit_version": 1,
+  "mode": "discovery_only",
+  "production_files_modified": false,
+  "generated_date": "2026-08-13",
+  "ranking_scope": {
+    "unresolved_before_review": 38,
+    "batch_size": 4,
+    "deferred_unresolved": 34,
+    "ranking_signals": [
+      "exact-title public-radio affiliate page",
+      "canonical NPR story URL and numeric story ID",
+      "live NPR page with one unique Indicator player pair",
+      "direct NPR-hosted Indicator MP3 embedded by the NPR page",
+      "successful audio byte-range validation",
+      "absence of story-ID and audio-path collisions in production"
+    ]
+  },
+  "summary": {
+    "ranked_batch_reviewed": 4,
+    "ready_for_isolated_staging": 4,
+    "exact_date_matches": 3,
+    "catalog_date_corrections": 1,
+    "validated_audio_files": 4,
+    "production_collisions": 0
+  },
+  "episodes": [
+    {
+      "rank": 1,
+      "reference_date": "2018-04-23",
+      "publication_date": "2018-04-23",
+      "reference_title": "3 Things You Didn't Know About LA",
+      "classification": "ready_for_isolated_staging",
+      "npr_story_id": "605033696",
+      "npr_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+      "affiliate_url": "https://www.wfae.org/2018-04-23/3-things-you-didnt-know-about-la",
+      "player_story_id": "605032568",
+      "audio_id": "605032844",
+      "player_url": "https://www.npr.org/player/embed/605032568/605032844",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180423_indicator_3_things_about_la_final.mp3?d=585&e=605032568&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 585,
+      "content_length_bytes": 9353789,
+      "validation": {
+        "status_code": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-4095/9353789",
+        "story_id_collision": false,
+        "audio_path_collision": false
+      }
+    },
+    {
+      "rank": 2,
+      "reference_date": "2018-05-29",
+      "publication_date": "2018-05-29",
+      "reference_title": "Banking's Regulation Rollback",
+      "classification": "ready_for_isolated_staging",
+      "npr_story_id": "615292695",
+      "npr_url": "https://www.npr.org/sections/money/2018/05/29/615292695/banking-s-regulation-rollback",
+      "affiliate_url": "https://news.wypr.org/2018-05-29/bankings-regulation-rollback",
+      "player_story_id": "615288510",
+      "audio_id": "615289039",
+      "player_url": "https://www.npr.org/player/embed/615288510/615289039",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/05/20180529_indicator_0529_dodd_frank_final.mp3?d=555&e=615288510&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 555,
+      "content_length_bytes": 8871320,
+      "validation": {
+        "status_code": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-4095/8871320",
+        "story_id_collision": false,
+        "audio_path_collision": false
+      }
+    },
+    {
+      "rank": 3,
+      "reference_date": "2018-06-26",
+      "publication_date": "2018-06-26",
+      "reference_title": "Sallie Krawcheck on #MeToo, Dodd Frank, & Cronuts",
+      "classification": "ready_for_isolated_staging",
+      "npr_story_id": "623637446",
+      "npr_url": "https://www.npr.org/sections/money/2018/06/26/623637446/sallie-krawcheck-on-metoo-dodd-frank-cronuts",
+      "affiliate_url": "https://www.apr.org/business-education/2018-06-26/sallie-krawcheck-on-metoo-dodd-frank-cronuts",
+      "player_story_id": "623648609",
+      "audio_id": "623648827",
+      "player_url": "https://www.npr.org/player/embed/623648609/623648827",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/06/20180626_indicator_0626_sallie_over_under_final.mp3?d=598&e=623648609&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 598,
+      "content_length_bytes": 9557702,
+      "validation": {
+        "status_code": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-4095/9557702",
+        "story_id_collision": false,
+        "audio_path_collision": false
+      }
+    },
+    {
+      "rank": 4,
+      "reference_date": "2018-03-15",
+      "publication_date": "2019-03-15",
+      "reference_title": "Buying A College Degree: Did Aunt Becky Overpay?",
+      "classification": "ready_with_catalog_date_correction",
+      "catalog_correction": {
+        "field": "publication_date",
+        "incorrect_reference_value": "2018-03-15",
+        "verified_value": "2019-03-15",
+        "evidence": [
+          "The canonical NPR URL is dated 2019-03-15",
+          "WBUR, KCLU, and KGOU mirrors all publish the episode on 2019-03-15",
+          "The NPR audio filename embeds 20190315 and 031519"
+        ]
+      },
+      "npr_story_id": "703928648",
+      "npr_url": "https://www.npr.org/2019/03/15/703928648/buying-a-college-degree-did-aunt-becky-overpay",
+      "affiliate_url": "https://www.wbur.org/npr/703928648/buying-a-college-degree-did-aunt-becky-overpay",
+      "player_story_id": "703928648",
+      "audio_id": "703948228",
+      "player_url": "https://www.npr.org/player/embed/703928648/703948228",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/03/20190315_indicator_031519_college_admissions_final_3.mp3?d=583&size=9319950&e=703928648&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 583,
+      "content_length_bytes": 9319950,
+      "validation": {
+        "status_code": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-4095/9319950",
+        "story_id_collision": false,
+        "audio_path_collision": false
+      }
+    }
+  ],
+  "next_gate": "Build an isolated four-episode staging set using the verified publication date for every episode, including the explicit 2019 correction."
+}

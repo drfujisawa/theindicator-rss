@@ -35484,6 +35484,143 @@
       "audio_url_e_parameter": "642672020",
       "release_classification": "confirmed_indicator_rebroadcast",
       "related_story_id": "592961699"
+    },
+    "605033696": {
+      "story_id": "605033696",
+      "audio_id": "605032844",
+      "date": "2018-04-23",
+      "title": "3 Things You Didn't Know About LA",
+      "npr_url": "https://www.npr.org/sections/money/2018/04/23/605033696/3-things-you-didn-t-know-about-la",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180423_indicator_3_things_about_la_final.mp3?d=585&e=605032568&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/04/20180423_indicator_3_things_about_la_final.mp3?d=585&e=605032568&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9353789,
+      "duration_seconds": 585,
+      "extraction_method": "validated_remaining_ranked_batch1",
+      "provenance": [
+        "indicator_remaining_38_ranked_batch1.json",
+        "live NPR story page",
+        "public-radio affiliate mirror",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "605032568",
+        "605032844",
+        "605033696"
+      ],
+      "audio_url_e_parameter": "605032568",
+      "release_classification": "confirmed_indicator_episode",
+      "catalog_correction": null
+    },
+    "615292695": {
+      "story_id": "615292695",
+      "audio_id": "615289039",
+      "date": "2018-05-29",
+      "title": "Banking's Regulation Rollback",
+      "npr_url": "https://www.npr.org/sections/money/2018/05/29/615292695/banking-s-regulation-rollback",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/05/20180529_indicator_0529_dodd_frank_final.mp3?d=555&e=615288510&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/05/20180529_indicator_0529_dodd_frank_final.mp3?d=555&e=615288510&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 8871320,
+      "duration_seconds": 555,
+      "extraction_method": "validated_remaining_ranked_batch1",
+      "provenance": [
+        "indicator_remaining_38_ranked_batch1.json",
+        "live NPR story page",
+        "public-radio affiliate mirror",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "615288510",
+        "615289039",
+        "615292695"
+      ],
+      "audio_url_e_parameter": "615288510",
+      "release_classification": "confirmed_indicator_episode",
+      "catalog_correction": null
+    },
+    "623637446": {
+      "story_id": "623637446",
+      "audio_id": "623648827",
+      "date": "2018-06-26",
+      "title": "Sallie Krawcheck on #MeToo, Dodd Frank, & Cronuts",
+      "npr_url": "https://www.npr.org/sections/money/2018/06/26/623637446/sallie-krawcheck-on-metoo-dodd-frank-cronuts",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/06/20180626_indicator_0626_sallie_over_under_final.mp3?d=598&e=623648609&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/06/20180626_indicator_0626_sallie_over_under_final.mp3?d=598&e=623648609&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9557702,
+      "duration_seconds": 598,
+      "extraction_method": "validated_remaining_ranked_batch1",
+      "provenance": [
+        "indicator_remaining_38_ranked_batch1.json",
+        "live NPR story page",
+        "public-radio affiliate mirror",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "623648609",
+        "623648827",
+        "623637446"
+      ],
+      "audio_url_e_parameter": "623648609",
+      "release_classification": "confirmed_indicator_episode",
+      "catalog_correction": null
+    },
+    "703928648": {
+      "story_id": "703928648",
+      "audio_id": "703948228",
+      "date": "2019-03-15",
+      "title": "Buying A College Degree: Did Aunt Becky Overpay?",
+      "npr_url": "https://www.npr.org/2019/03/15/703928648/buying-a-college-degree-did-aunt-becky-overpay",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/03/20190315_indicator_031519_college_admissions_final_3.mp3?d=583&size=9319950&e=703928648&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/03/20190315_indicator_031519_college_admissions_final_3.mp3?d=583&size=9319950&e=703928648&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9319950,
+      "duration_seconds": 583,
+      "extraction_method": "validated_remaining_ranked_batch1",
+      "provenance": [
+        "indicator_remaining_38_ranked_batch1.json",
+        "live NPR story page",
+        "public-radio affiliate mirror",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "703928648",
+        "703948228",
+        "703928648"
+      ],
+      "audio_url_e_parameter": "703928648",
+      "release_classification": "confirmed_indicator_episode",
+      "catalog_correction": {
+        "field": "publication_date",
+        "incorrect_reference_value": "2018-03-15",
+        "verified_value": "2019-03-15",
+        "evidence": [
+          "The canonical NPR URL is dated 2019-03-15",
+          "WBUR, KCLU, and KGOU mirrors all publish the episode on 2019-03-15",
+          "The NPR audio filename embeds 20190315 and 031519"
+        ]
+      }
     }
   }
 }
