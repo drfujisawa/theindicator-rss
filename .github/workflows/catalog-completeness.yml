@@ -1,0 +1,43 @@
+name: Audit Catalog Completeness
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 9 1 * *"
+
+permissions:
+  contents: read
+
+jobs:
+  audit-catalog:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Run catalog audit regression tests
+        run: python -m unittest tests.test_final_catalog_completeness_audit
+
+      - name: Refresh catalog audit and require complete verdict
+        run: >-
+          python scripts/analysis/audit_final_catalog_completeness.py
+          --require-complete
+          --output catalog-completeness-report.json
+
+      - name: Validate production feed
+        run: python scripts/validate_feed_integrity.py
+
+      - name: Upload catalog audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalog-completeness-report
+          path: catalog-completeness-report.json
+          if-no-files-found: warn
+          retention-days: 30

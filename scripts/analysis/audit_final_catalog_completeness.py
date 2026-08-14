@@ -115,6 +115,11 @@ def plausible_match(candidate: dict, local_by_date: dict, local_titles: set[str]
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=OUTPUT)
+    parser.add_argument(
+        "--require-complete",
+        action="store_true",
+        help="exit nonzero unless the defined program-feed scope is complete",
+    )
     args = parser.parse_args()
     local_root = ET.parse(REPO_ROOT / "theindicator_feed.xml").getroot()
     local = rss_rows(local_root)
@@ -245,6 +250,8 @@ def main() -> None:
         json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
     )
     print(json.dumps(report, indent=2, ensure_ascii=False))
+    if args.require_complete and report["verdict"] != "complete_for_defined_program_feed_scope":
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

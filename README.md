@@ -68,6 +68,18 @@ byte length; items are newest-first; episode count does not decrease; and the
 number of unknown enclosure lengths does not increase. The current feed has
 **zero** unknown enclosure lengths.
 
+A separate read-only `catalog-completeness.yml` workflow runs on the first day
+of every month and can also be started manually. It compares the archive with
+NPR, Apple Podcasts, TheTVDB, and the preserved original launch feed; fails if
+new unresolved catalog omissions appear; and uploads its machine-readable report
+for 30 days. It has no write permission and never commits production changes.
+
+Run the same strict completeness gate locally with:
+
+```shell
+python scripts/analysis/audit_final_catalog_completeness.py --require-complete
+```
+
 ## How the historical archive was recovered
 
 NPR's official feed only covered roughly the most recent 300 episodes. To extend
@@ -128,6 +140,7 @@ treated as missing episodes.
 | `index.html` | GitHub Pages landing page |
 | `.github/workflows/update-feed.yml` | Scheduled feed update workflow |
 | `.github/workflows/feed-integrity.yml` | Read-only feed integrity checks |
+| `.github/workflows/catalog-completeness.yml` | Monthly read-only external catalog audit |
 | `.github/workflows/crawl-history.yml` | Manual history-crawl workflow |
 | `.github/workflows/recover-enclosures-bulk.yml` | Manual enclosure-recovery workflow |
 
