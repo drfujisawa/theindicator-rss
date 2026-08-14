@@ -1,0 +1,410 @@
+{
+  "audit_version": 1,
+  "mode": "discovery_only",
+  "production_files_modified": false,
+  "generated_date": "2026-08-13",
+  "ranking_scope": {
+    "unresolved_before_review": 21,
+    "batch_size": 21,
+    "ready_for_isolated_staging": 11,
+    "deferred_from_batch": 10,
+    "deferred_unreviewed": 0
+  },
+  "summary": {
+    "exact_date_title_matches": 11,
+    "validated_audio_files": 11,
+    "production_collisions": 0,
+    "no_identity_found_in_batch": 10
+  },
+  "episodes": [
+    {
+      "rank": 1,
+      "reference_date": "2018-11-02",
+      "publication_date": "2018-11-02",
+      "reference_title": "How Companies Cope (With A Tight Labor Market)",
+      "classification": "ready_for_isolated_staging",
+      "npr_story_id": "663640858",
+      "npr_url": "https://www.npr.org/sections/money/2018/11/02/663640858/how-companies-cope-with-a-tight-labor-market",
+      "affiliate_url": "https://www.wfae.org/2018-11-02/how-companies-cope-with-a-tight-labor-market",
+      "corroborating_affiliates": [
+        "APR",
+        "WYPR",
+        "KGOU"
+      ],
+      "player_story_id": "663637829",
+      "audio_id": "663639295",
+      "player_url": "https://www.npr.org/player/embed/663637829/663639295",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/11/20181102_indicator_021118_jobsfriday_final.mp3?d=580&e=663637829&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 580,
+      "content_length_bytes": 9266157,
+      "validation": {
+        "status_code": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-4095/9266157",
+        "story_id_collision": false,
+        "audio_path_collision": false
+      }
+    },
+    {
+      "rank": 2,
+      "reference_date": "2018-10-10",
+      "publication_date": "2018-10-10",
+      "reference_title": "Life On China's Blacklist",
+      "classification": "ready_for_isolated_staging",
+      "npr_story_id": "656269912",
+      "npr_url": "https://www.npr.org/sections/money/2018/10/10/656269912/life-on-chinas-blacklist",
+      "affiliate_url": "https://www.wfae.org/2018-10-10/life-on-chinas-blacklist",
+      "corroborating_affiliates": [
+        "APR",
+        "WYPR",
+        "KGOU"
+      ],
+      "player_story_id": "656262681",
+      "audio_id": "656266909",
+      "player_url": "https://www.npr.org/player/embed/656262681/656266909",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/10/20181010_indicator_101018_china2_thisistheend_2_end.mp3?d=601&e=656262681&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 601,
+      "content_length_bytes": 9602676,
+      "validation": {
+        "status_code": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-4095/9602676",
+        "story_id_collision": false,
+        "audio_path_collision": false
+      }
+    },
+    {
+      "rank": 3,
+      "reference_date": "2018-09-06",
+      "publication_date": "2018-09-06",
+      "reference_title": "Why Aren't We More Productive?",
+      "classification": "ready_for_isolated_staging",
+      "npr_story_id": "645291326",
+      "npr_url": "https://www.npr.org/sections/money/2018/09/06/645291326/why-arent-we-more-productive",
+      "affiliate_url": "https://www.wfae.org/2018-09-06/why-arent-we-more-productive",
+      "corroborating_affiliates": [
+        "APR",
+        "WYPR",
+        "KGOU"
+      ],
+      "player_story_id": "645289048",
+      "audio_id": "645330408",
+      "player_url": "https://www.npr.org/player/embed/645289048/645330408",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/09/20180906_indicator_090618_productivity_mystery_final.mp3?d=592&e=645289048&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 592,
+      "content_length_bytes": 9455058,
+      "validation": {
+        "status_code": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-4095/9455058",
+        "story_id_collision": false,
+        "audio_path_collision": false
+      }
+    },
+    {
+      "rank": 4,
+      "reference_date": "2018-08-24",
+      "publication_date": "2018-08-24",
+      "reference_title": "The Art of War. It's Not For Everyone",
+      "classification": "ready_for_isolated_staging",
+      "npr_story_id": "641623813",
+      "npr_url": "https://www.npr.org/sections/money/2018/08/24/641623813/the-art-of-war-its-not-for-everyone",
+      "affiliate_url": "https://www.wfae.org/2018-08-24/the-art-of-war-its-not-for-everyone",
+      "corroborating_affiliates": [
+        "APR",
+        "WYPR",
+        "KGOU"
+      ],
+      "player_story_id": "641618738",
+      "audio_id": "641623005",
+      "player_url": "https://www.npr.org/player/embed/641618738/641623005",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/08/20180824_indicator_082418_beach_reads_-_art_of_war_final_2.mp3?d=535&e=641618738&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 535,
+      "content_length_bytes": 8543496,
+      "validation": {
+        "status_code": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-4095/8543496",
+        "story_id_collision": false,
+        "audio_path_collision": false
+      }
+    },
+    {
+      "rank": 5,
+      "reference_date": "2018-08-21",
+      "publication_date": "2018-08-21",
+      "reference_title": "Why People Can't Get Work Done At Work",
+      "classification": "ready_for_isolated_staging",
+      "npr_story_id": "640596144",
+      "npr_url": "https://www.npr.org/sections/money/2018/08/21/640596144/why-people-cant-get-work-done-at-work",
+      "affiliate_url": "https://www.wfae.org/2018-08-21/why-people-cant-get-work-done-at-work",
+      "corroborating_affiliates": [
+        "APR",
+        "WYPR",
+        "KGOU"
+      ],
+      "player_story_id": "640595850",
+      "audio_id": "640622580",
+      "player_url": "https://www.npr.org/player/embed/640595850/640622580",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/08/20180821_indicator_beach_reads_-_fried_final_2.mp3?d=593&e=640595850&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 593,
+      "content_length_bytes": 9479244,
+      "validation": {
+        "status_code": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-4095/9479244",
+        "story_id_collision": false,
+        "audio_path_collision": false
+      }
+    },
+    {
+      "rank": 6,
+      "reference_date": "2018-08-13",
+      "publication_date": "2018-08-13",
+      "reference_title": "Messy Desks, Light Bulbs & Dune",
+      "classification": "ready_for_isolated_staging",
+      "npr_story_id": "638293909",
+      "npr_url": "https://www.npr.org/sections/money/2018/08/13/638293909/messy-desks-light-bulbs-dune",
+      "affiliate_url": "https://www.wfae.org/2018-08-13/messy-desks-light-bulbs-dune",
+      "corroborating_affiliates": [
+        "APR",
+        "WYPR",
+        "KGOU"
+      ],
+      "player_story_id": "638280325",
+      "audio_id": "638280700",
+      "player_url": "https://www.npr.org/player/embed/638280325/638280700",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/08/20180813_indicator_081018_harford_final_3.mp3?d=575&e=638280325&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 575,
+      "content_length_bytes": 9184425,
+      "validation": {
+        "status_code": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-4095/9184425",
+        "story_id_collision": false,
+        "audio_path_collision": false
+      }
+    },
+    {
+      "rank": 7,
+      "reference_date": "2018-08-03",
+      "publication_date": "2018-08-03",
+      "reference_title": "Beating The Clock On Jobs (Summer) Friday",
+      "classification": "ready_for_isolated_staging",
+      "npr_story_id": "635463414",
+      "npr_url": "https://www.npr.org/sections/money/2018/08/03/635463414/beating-the-clock-on-jobs-summer-friday",
+      "affiliate_url": "https://www.wfae.org/2018-08-03/beating-the-clock-on-jobs-summer-friday",
+      "corroborating_affiliates": [
+        "APR",
+        "WYPR",
+        "KGOU"
+      ],
+      "player_story_id": "635457937",
+      "audio_id": "638272835",
+      "player_url": "https://www.npr.org/player/embed/635457937/638272835",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/08/20180813_indicator_080318_jobs_friday_final_2.mp3?d=451&e=635457937&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 451,
+      "content_length_bytes": 7201590,
+      "validation": {
+        "status_code": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-4095/7201590",
+        "story_id_collision": false,
+        "audio_path_collision": false
+      }
+    },
+    {
+      "rank": 8,
+      "reference_date": "2018-07-31",
+      "publication_date": "2018-07-31",
+      "reference_title": "What's In Your Paycheck?",
+      "classification": "ready_for_isolated_staging",
+      "npr_story_id": "634384070",
+      "npr_url": "https://www.npr.org/sections/money/2018/07/31/634384070/whats-in-your-paycheck",
+      "affiliate_url": "https://www.wfae.org/2018-07-31/whats-in-your-paycheck",
+      "corroborating_affiliates": [
+        "APR",
+        "WYPR",
+        "KGOU"
+      ],
+      "player_story_id": "634380579",
+      "audio_id": "634423921",
+      "player_url": "https://www.npr.org/player/embed/634380579/634423921",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180731_indicator_073118_wage_growth_final.mp3?d=651&e=634380579&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 651,
+      "content_length_bytes": 10407131,
+      "validation": {
+        "status_code": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-4095/10407131",
+        "story_id_collision": false,
+        "audio_path_collision": false
+      }
+    },
+    {
+      "rank": 9,
+      "reference_date": "2018-07-30",
+      "publication_date": "2018-07-30",
+      "reference_title": "Putin Vs. Russia's Economy",
+      "classification": "ready_for_isolated_staging",
+      "npr_story_id": "634082530",
+      "npr_url": "https://www.npr.org/sections/money/2018/07/30/634082530/putin-vs-russias-economy",
+      "affiliate_url": "https://www.wfae.org/2018-07-30/putin-vs-russias-economy",
+      "corroborating_affiliates": [
+        "APR",
+        "WYPR",
+        "KGOU"
+      ],
+      "player_story_id": "634080940",
+      "audio_id": "634082705",
+      "player_url": "https://www.npr.org/player/embed/634080940/634082705",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180730_indicator_073018_russia_economy_final.mp3?d=487&e=634080940&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 487,
+      "content_length_bytes": 7798379,
+      "validation": {
+        "status_code": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-4095/7798379",
+        "story_id_collision": false,
+        "audio_path_collision": false
+      }
+    },
+    {
+      "rank": 10,
+      "reference_date": "2018-07-16",
+      "publication_date": "2018-07-16",
+      "reference_title": "Japan's Ninja Shortage",
+      "classification": "ready_for_isolated_staging",
+      "npr_story_id": "629586025",
+      "npr_url": "https://www.npr.org/sections/money/2018/07/16/629586025/japans-ninja-shortage",
+      "affiliate_url": "https://www.wfae.org/2018-07-16/japans-ninja-shortage",
+      "corroborating_affiliates": [
+        "APR",
+        "WYPR",
+        "KGOU"
+      ],
+      "player_story_id": "629584186",
+      "audio_id": "632878626",
+      "player_url": "https://www.npr.org/player/embed/629584186/632878626",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180726_indicator_0716_ninja_shortage_correction_1.mp3?d=592&e=629584186&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 592,
+      "content_length_bytes": 9463877,
+      "validation": {
+        "status_code": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-4095/9463877",
+        "story_id_collision": false,
+        "audio_path_collision": false
+      }
+    },
+    {
+      "rank": 11,
+      "reference_date": "2018-06-29",
+      "publication_date": "2018-06-29",
+      "reference_title": "Dungeons & Dragons & Balance Sheets",
+      "classification": "ready_for_isolated_staging",
+      "npr_story_id": "624806713",
+      "npr_url": "https://www.npr.org/sections/money/2018/06/29/624806713/dungeons-dragons-balance-sheets",
+      "affiliate_url": "https://www.wfae.org/2018-06-29/dungeons-dragons-balance-sheets",
+      "corroborating_affiliates": [
+        "APR",
+        "WYPR",
+        "KGOU"
+      ],
+      "player_story_id": "624805008",
+      "audio_id": "624811595",
+      "player_url": "https://www.npr.org/player/embed/624805008/624811595",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/06/20180629_indicator_0629_stress_tests_final_3.mp3?d=576&e=624805008&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 576,
+      "content_length_bytes": 9220766,
+      "validation": {
+        "status_code": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-4095/9220766",
+        "story_id_collision": false,
+        "audio_path_collision": false
+      }
+    },
+    {
+      "rank": 12,
+      "reference_date": "2019-03-27",
+      "publication_date": null,
+      "reference_title": "An Economist in Caracas: Day In The Life",
+      "classification": "no_identity_found",
+      "reason": "No exact affiliate identity resolved from tested title/date URL variants; no player or audio identity was inferred."
+    },
+    {
+      "rank": 13,
+      "reference_date": "2019-01-25",
+      "publication_date": null,
+      "reference_title": "The End Of The Shutdown?",
+      "classification": "no_identity_found",
+      "reason": "No exact affiliate identity resolved from tested title/date URL variants; no player or audio identity was inferred."
+    },
+    {
+      "rank": 14,
+      "reference_date": "2018-12-11",
+      "publication_date": null,
+      "reference_title": "Citi Bike's Better Angels",
+      "classification": "no_identity_found",
+      "reason": "No exact affiliate identity resolved from tested title/date URL variants; no player or audio identity was inferred."
+    },
+    {
+      "rank": 15,
+      "reference_date": "2018-11-09",
+      "publication_date": null,
+      "reference_title": "The 401(k) Turns 40",
+      "classification": "no_identity_found",
+      "reason": "No exact affiliate identity resolved from tested title/date URL variants; no player or audio identity was inferred."
+    },
+    {
+      "rank": 16,
+      "reference_date": "2018-10-29",
+      "publication_date": null,
+      "reference_title": "Judgement Bonds",
+      "classification": "no_identity_found",
+      "reason": "No exact affiliate identity resolved from tested title/date URL variants; no player or audio identity was inferred."
+    },
+    {
+      "rank": 17,
+      "reference_date": "2018-07-19",
+      "publication_date": null,
+      "reference_title": "Three Indicators To Keep A (Side)eye On",
+      "classification": "no_identity_found",
+      "reason": "No exact affiliate identity resolved from tested title/date URL variants; no player or audio identity was inferred."
+    },
+    {
+      "rank": 18,
+      "reference_date": "2018-07-17",
+      "publication_date": null,
+      "reference_title": "Saving Women",
+      "classification": "no_identity_found",
+      "reason": "No exact affiliate identity resolved from tested title/date URL variants; no player or audio identity was inferred."
+    },
+    {
+      "rank": 19,
+      "reference_date": "2018-07-13",
+      "publication_date": null,
+      "reference_title": "We Hear You",
+      "classification": "no_identity_found",
+      "reason": "No exact affiliate identity resolved from tested title/date URL variants; no player or audio identity was inferred."
+    },
+    {
+      "rank": 20,
+      "reference_date": "2018-07-12",
+      "publication_date": null,
+      "reference_title": "The Last Straw",
+      "classification": "no_identity_found",
+      "reason": "No exact affiliate identity resolved from tested title/date URL variants; no player or audio identity was inferred."
+    },
+    {
+      "rank": 21,
+      "reference_date": "2018-07-10",
+      "publication_date": null,
+      "reference_title": "The Price of A Hyundai in Iran",
+      "classification": "no_identity_found",
+      "reason": "No exact affiliate identity resolved from tested title/date URL variants; no player or audio identity was inferred."
+    }
+  ],
+  "next_gate": "Build an isolated eleven-episode staging set; keep ten unresolved titles deferred."
+}

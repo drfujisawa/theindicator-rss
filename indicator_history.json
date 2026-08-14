@@ -1,6 +1,6 @@
 {
   "next_date": "2017-11-05T16:46:00-04:00",
-  "episode_count": 1735,
+  "episode_count": 1746,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -15549,6 +15549,25 @@
       ]
     },
     {
+      "title": "How Companies Cope (With A Tight Labor Market)",
+      "date": "2018-11-02",
+      "npr_url": "https://www.npr.org/sections/money/2018/11/02/663640858/how-companies-cope-with-a-tight-labor-market",
+      "story_id": "663640858",
+      "audio_id": "663639295",
+      "player_url": "https://www.npr.org/player/embed/663637829/663639295",
+      "description": "How Companies Cope (With A Tight Labor Market)",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_batch5",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_remaining_21_ranked_batch5.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "Why Ecuador Uses The Dollar?",
       "date": "2018-11-01",
       "npr_url": "https://www.npr.org/sections/money/2018/11/01/663124743/why-ecuador-uses-the-dollar",
@@ -15843,6 +15862,25 @@
       "recovery_provenance": [
         "indicator_two_episode_audio_discovery.json",
         "live NPR story page",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "Life On China's Blacklist",
+      "date": "2018-10-10",
+      "npr_url": "https://www.npr.org/sections/money/2018/10/10/656269912/life-on-chinas-blacklist",
+      "story_id": "656269912",
+      "audio_id": "656266909",
+      "player_url": "https://www.npr.org/player/embed/656262681/656266909",
+      "description": "Life On China's Blacklist",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_batch5",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_remaining_21_ranked_batch5.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
         "validated NPR-hosted byte-range response"
       ]
     },
@@ -16274,6 +16312,25 @@
       ]
     },
     {
+      "title": "Why Aren't We More Productive?",
+      "date": "2018-09-06",
+      "npr_url": "https://www.npr.org/sections/money/2018/09/06/645291326/why-arent-we-more-productive",
+      "story_id": "645291326",
+      "audio_id": "645330408",
+      "player_url": "https://www.npr.org/player/embed/645289048/645330408",
+      "description": "Why Aren't We More Productive?",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_batch5",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_remaining_21_ranked_batch5.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "NAFTA-splainer",
       "date": "2018-09-05",
       "npr_url": "https://www.npr.org/sections/money/2018/09/05/644961856/gsdfgsdf",
@@ -16414,6 +16471,25 @@
       ]
     },
     {
+      "title": "The Art of War. It's Not For Everyone",
+      "date": "2018-08-24",
+      "npr_url": "https://www.npr.org/sections/money/2018/08/24/641623813/the-art-of-war-its-not-for-everyone",
+      "story_id": "641623813",
+      "audio_id": "641623005",
+      "player_url": "https://www.npr.org/player/embed/641618738/641623005",
+      "description": "The Art of War. It's Not For Everyone",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_batch5",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_remaining_21_ranked_batch5.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "Beyond GDP",
       "date": "2018-08-23",
       "npr_url": "https://www.npr.org/sections/money/2018/08/23/641278187/beyond-gdp",
@@ -16451,6 +16527,25 @@
         "indicator_npr_identities.json",
         "indicator_npr_audio_validation.json",
         "indicator_npr_audio_recovery.json"
+      ]
+    },
+    {
+      "title": "Why People Can't Get Work Done At Work",
+      "date": "2018-08-21",
+      "npr_url": "https://www.npr.org/sections/money/2018/08/21/640596144/why-people-cant-get-work-done-at-work",
+      "story_id": "640596144",
+      "audio_id": "640622580",
+      "player_url": "https://www.npr.org/player/embed/640595850/640622580",
+      "description": "Why People Can't Get Work Done At Work",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_batch5",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_remaining_21_ranked_batch5.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
       ]
     },
     {
@@ -16543,6 +16638,25 @@
       ]
     },
     {
+      "title": "Messy Desks, Light Bulbs & Dune",
+      "date": "2018-08-13",
+      "npr_url": "https://www.npr.org/sections/money/2018/08/13/638293909/messy-desks-light-bulbs-dune",
+      "story_id": "638293909",
+      "audio_id": "638280700",
+      "player_url": "https://www.npr.org/player/embed/638280325/638280700",
+      "description": "Messy Desks, Light Bulbs & Dune",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_batch5",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_remaining_21_ranked_batch5.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "Privacy Please: Why Public Companies Go Private (Or Vice Versa)",
       "date": "2018-08-10T00:00:00-04:00",
       "npr_url": "https://www.npr.org/sections/money/2018/08/10/637642102/privacy-please-why-public-companies-go-private-or-vice-versa",
@@ -16632,6 +16746,25 @@
       ]
     },
     {
+      "title": "Beating The Clock On Jobs (Summer) Friday",
+      "date": "2018-08-03",
+      "npr_url": "https://www.npr.org/sections/money/2018/08/03/635463414/beating-the-clock-on-jobs-summer-friday",
+      "story_id": "635463414",
+      "audio_id": "638272835",
+      "player_url": "https://www.npr.org/player/embed/635457937/638272835",
+      "description": "Beating The Clock On Jobs (Summer) Friday",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_batch5",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_remaining_21_ranked_batch5.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "Grey Poupon And The Cultural Divide",
       "date": "2018-08-02",
       "npr_url": "https://www.npr.org/sections/money/2018/08/02/635129556/grey-poupon-and-the-cultural-divide",
@@ -16669,6 +16802,44 @@
         "indicator_npr_identities.json",
         "indicator_npr_audio_validation.json",
         "indicator_npr_audio_recovery.json"
+      ]
+    },
+    {
+      "title": "What's In Your Paycheck?",
+      "date": "2018-07-31",
+      "npr_url": "https://www.npr.org/sections/money/2018/07/31/634384070/whats-in-your-paycheck",
+      "story_id": "634384070",
+      "audio_id": "634423921",
+      "player_url": "https://www.npr.org/player/embed/634380579/634423921",
+      "description": "What's In Your Paycheck?",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_batch5",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_remaining_21_ranked_batch5.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "Putin Vs. Russia's Economy",
+      "date": "2018-07-30",
+      "npr_url": "https://www.npr.org/sections/money/2018/07/30/634082530/putin-vs-russias-economy",
+      "story_id": "634082530",
+      "audio_id": "634082705",
+      "player_url": "https://www.npr.org/player/embed/634080940/634082705",
+      "description": "Putin Vs. Russia's Economy",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_batch5",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_remaining_21_ranked_batch5.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
       ]
     },
     {
@@ -16801,6 +16972,25 @@
       ]
     },
     {
+      "title": "Japan's Ninja Shortage",
+      "date": "2018-07-16",
+      "npr_url": "https://www.npr.org/sections/money/2018/07/16/629586025/japans-ninja-shortage",
+      "story_id": "629586025",
+      "audio_id": "632878626",
+      "player_url": "https://www.npr.org/player/embed/629584186/632878626",
+      "description": "Japan's Ninja Shortage",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_batch5",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_remaining_21_ranked_batch5.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "Fed Accounts For All!",
       "date": "2018-07-11T00:00:00-04:00",
       "npr_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
@@ -16907,6 +17097,25 @@
         "indicator_npr_identities.json",
         "indicator_npr_audio_validation.json",
         "indicator_npr_audio_recovery.json"
+      ]
+    },
+    {
+      "title": "Dungeons & Dragons & Balance Sheets",
+      "date": "2018-06-29",
+      "npr_url": "https://www.npr.org/sections/money/2018/06/29/624806713/dungeons-dragons-balance-sheets",
+      "story_id": "624806713",
+      "audio_id": "624811595",
+      "player_url": "https://www.npr.org/player/embed/624805008/624811595",
+      "description": "Dungeons & Dragons & Balance Sheets",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_batch5",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_remaining_21_ranked_batch5.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
       ]
     },
     {

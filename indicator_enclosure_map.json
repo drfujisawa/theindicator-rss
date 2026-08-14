@@ -36024,6 +36024,347 @@
       ],
       "audio_url_e_parameter": "669760345",
       "release_classification": "confirmed_indicator_episode"
+    },
+    "663640858": {
+      "story_id": "663640858",
+      "audio_id": "663639295",
+      "date": "2018-11-02",
+      "title": "How Companies Cope (With A Tight Labor Market)",
+      "npr_url": "https://www.npr.org/sections/money/2018/11/02/663640858/how-companies-cope-with-a-tight-labor-market",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/11/20181102_indicator_021118_jobsfriday_final.mp3?d=580&e=663637829&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/11/20181102_indicator_021118_jobsfriday_final.mp3?d=580&e=663637829&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9266157,
+      "duration_seconds": 580,
+      "extraction_method": "validated_remaining_ranked_batch5",
+      "provenance": [
+        "indicator_remaining_21_ranked_batch5.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "663637829",
+        "663639295",
+        "663640858"
+      ],
+      "audio_url_e_parameter": "663637829",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "656269912": {
+      "story_id": "656269912",
+      "audio_id": "656266909",
+      "date": "2018-10-10",
+      "title": "Life On China's Blacklist",
+      "npr_url": "https://www.npr.org/sections/money/2018/10/10/656269912/life-on-chinas-blacklist",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/10/20181010_indicator_101018_china2_thisistheend_2_end.mp3?d=601&e=656262681&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/10/20181010_indicator_101018_china2_thisistheend_2_end.mp3?d=601&e=656262681&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9602676,
+      "duration_seconds": 601,
+      "extraction_method": "validated_remaining_ranked_batch5",
+      "provenance": [
+        "indicator_remaining_21_ranked_batch5.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "656262681",
+        "656266909",
+        "656269912"
+      ],
+      "audio_url_e_parameter": "656262681",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "645291326": {
+      "story_id": "645291326",
+      "audio_id": "645330408",
+      "date": "2018-09-06",
+      "title": "Why Aren't We More Productive?",
+      "npr_url": "https://www.npr.org/sections/money/2018/09/06/645291326/why-arent-we-more-productive",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/09/20180906_indicator_090618_productivity_mystery_final.mp3?d=592&e=645289048&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/09/20180906_indicator_090618_productivity_mystery_final.mp3?d=592&e=645289048&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9455058,
+      "duration_seconds": 592,
+      "extraction_method": "validated_remaining_ranked_batch5",
+      "provenance": [
+        "indicator_remaining_21_ranked_batch5.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "645289048",
+        "645330408",
+        "645291326"
+      ],
+      "audio_url_e_parameter": "645289048",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "641623813": {
+      "story_id": "641623813",
+      "audio_id": "641623005",
+      "date": "2018-08-24",
+      "title": "The Art of War. It's Not For Everyone",
+      "npr_url": "https://www.npr.org/sections/money/2018/08/24/641623813/the-art-of-war-its-not-for-everyone",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/08/20180824_indicator_082418_beach_reads_-_art_of_war_final_2.mp3?d=535&e=641618738&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/08/20180824_indicator_082418_beach_reads_-_art_of_war_final_2.mp3?d=535&e=641618738&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 8543496,
+      "duration_seconds": 535,
+      "extraction_method": "validated_remaining_ranked_batch5",
+      "provenance": [
+        "indicator_remaining_21_ranked_batch5.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "641618738",
+        "641623005",
+        "641623813"
+      ],
+      "audio_url_e_parameter": "641618738",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "640596144": {
+      "story_id": "640596144",
+      "audio_id": "640622580",
+      "date": "2018-08-21",
+      "title": "Why People Can't Get Work Done At Work",
+      "npr_url": "https://www.npr.org/sections/money/2018/08/21/640596144/why-people-cant-get-work-done-at-work",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/08/20180821_indicator_beach_reads_-_fried_final_2.mp3?d=593&e=640595850&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/08/20180821_indicator_beach_reads_-_fried_final_2.mp3?d=593&e=640595850&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9479244,
+      "duration_seconds": 593,
+      "extraction_method": "validated_remaining_ranked_batch5",
+      "provenance": [
+        "indicator_remaining_21_ranked_batch5.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "640595850",
+        "640622580",
+        "640596144"
+      ],
+      "audio_url_e_parameter": "640595850",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "638293909": {
+      "story_id": "638293909",
+      "audio_id": "638280700",
+      "date": "2018-08-13",
+      "title": "Messy Desks, Light Bulbs & Dune",
+      "npr_url": "https://www.npr.org/sections/money/2018/08/13/638293909/messy-desks-light-bulbs-dune",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/08/20180813_indicator_081018_harford_final_3.mp3?d=575&e=638280325&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/08/20180813_indicator_081018_harford_final_3.mp3?d=575&e=638280325&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9184425,
+      "duration_seconds": 575,
+      "extraction_method": "validated_remaining_ranked_batch5",
+      "provenance": [
+        "indicator_remaining_21_ranked_batch5.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "638280325",
+        "638280700",
+        "638293909"
+      ],
+      "audio_url_e_parameter": "638280325",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "635463414": {
+      "story_id": "635463414",
+      "audio_id": "638272835",
+      "date": "2018-08-03",
+      "title": "Beating The Clock On Jobs (Summer) Friday",
+      "npr_url": "https://www.npr.org/sections/money/2018/08/03/635463414/beating-the-clock-on-jobs-summer-friday",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/08/20180813_indicator_080318_jobs_friday_final_2.mp3?d=451&e=635457937&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/08/20180813_indicator_080318_jobs_friday_final_2.mp3?d=451&e=635457937&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 7201590,
+      "duration_seconds": 451,
+      "extraction_method": "validated_remaining_ranked_batch5",
+      "provenance": [
+        "indicator_remaining_21_ranked_batch5.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "635457937",
+        "638272835",
+        "635463414"
+      ],
+      "audio_url_e_parameter": "635457937",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "634384070": {
+      "story_id": "634384070",
+      "audio_id": "634423921",
+      "date": "2018-07-31",
+      "title": "What's In Your Paycheck?",
+      "npr_url": "https://www.npr.org/sections/money/2018/07/31/634384070/whats-in-your-paycheck",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180731_indicator_073118_wage_growth_final.mp3?d=651&e=634380579&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180731_indicator_073118_wage_growth_final.mp3?d=651&e=634380579&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 10407131,
+      "duration_seconds": 651,
+      "extraction_method": "validated_remaining_ranked_batch5",
+      "provenance": [
+        "indicator_remaining_21_ranked_batch5.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "634380579",
+        "634423921",
+        "634384070"
+      ],
+      "audio_url_e_parameter": "634380579",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "634082530": {
+      "story_id": "634082530",
+      "audio_id": "634082705",
+      "date": "2018-07-30",
+      "title": "Putin Vs. Russia's Economy",
+      "npr_url": "https://www.npr.org/sections/money/2018/07/30/634082530/putin-vs-russias-economy",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180730_indicator_073018_russia_economy_final.mp3?d=487&e=634080940&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180730_indicator_073018_russia_economy_final.mp3?d=487&e=634080940&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 7798379,
+      "duration_seconds": 487,
+      "extraction_method": "validated_remaining_ranked_batch5",
+      "provenance": [
+        "indicator_remaining_21_ranked_batch5.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "634080940",
+        "634082705",
+        "634082530"
+      ],
+      "audio_url_e_parameter": "634080940",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "629586025": {
+      "story_id": "629586025",
+      "audio_id": "632878626",
+      "date": "2018-07-16",
+      "title": "Japan's Ninja Shortage",
+      "npr_url": "https://www.npr.org/sections/money/2018/07/16/629586025/japans-ninja-shortage",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180726_indicator_0716_ninja_shortage_correction_1.mp3?d=592&e=629584186&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180726_indicator_0716_ninja_shortage_correction_1.mp3?d=592&e=629584186&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9463877,
+      "duration_seconds": 592,
+      "extraction_method": "validated_remaining_ranked_batch5",
+      "provenance": [
+        "indicator_remaining_21_ranked_batch5.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "629584186",
+        "632878626",
+        "629586025"
+      ],
+      "audio_url_e_parameter": "629584186",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "624806713": {
+      "story_id": "624806713",
+      "audio_id": "624811595",
+      "date": "2018-06-29",
+      "title": "Dungeons & Dragons & Balance Sheets",
+      "npr_url": "https://www.npr.org/sections/money/2018/06/29/624806713/dungeons-dragons-balance-sheets",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/06/20180629_indicator_0629_stress_tests_final_3.mp3?d=576&e=624805008&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/06/20180629_indicator_0629_stress_tests_final_3.mp3?d=576&e=624805008&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9220766,
+      "duration_seconds": 576,
+      "extraction_method": "validated_remaining_ranked_batch5",
+      "provenance": [
+        "indicator_remaining_21_ranked_batch5.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "624805008",
+        "624811595",
+        "624806713"
+      ],
+      "audio_url_e_parameter": "624805008",
+      "release_classification": "confirmed_indicator_episode"
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "method": "consolidated-recovery-pipeline-for-unresolved-indicator-episodes",
-  "generated_at": "2026-08-14T05:04:46+00:00",
+  "generated_at": "2026-08-14T05:16:34+00:00",
   "canonical_input": "data/audits/indicator_completeness_audit.json",
   "placeholder": false,
   "run_complete": true,
@@ -8,22 +8,15 @@
     "confirmed_recovered": 0,
     "probable_duplicate_rebroadcast": 0,
     "identity_found_but_audio_unresolved": 0,
-    "no_identity_found": 21,
+    "no_identity_found": 10,
     "rejected_false_positive_count": 5,
-    "input_unresolved_count": 21,
-    "unique_missing_production_count_excluding_probable_duplicates": 21
+    "input_unresolved_count": 10,
+    "unique_missing_production_count_excluding_probable_duplicates": 10
   },
   "confirmed_recovered": [],
   "probable_duplicate_rebroadcast": [],
   "identity_found_but_audio_unresolved": [],
   "no_identity_found": [
-    {
-      "reference_date": "2018-06-29",
-      "reference_title": "Dungeons & Dragons & Balance Sheets",
-      "reference_year": 2018,
-      "reference_episode": 78,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
     {
       "reference_date": "2018-07-10",
       "reference_title": "The Price of A Hyundai in Iran",
@@ -46,13 +39,6 @@
       "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
     },
     {
-      "reference_date": "2018-07-16",
-      "reference_title": "Japan's Ninja Shortage",
-      "reference_year": 2018,
-      "reference_episode": 88,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
-    {
       "reference_date": "2018-07-17",
       "reference_title": "Saving Women",
       "reference_year": 2018,
@@ -67,73 +53,10 @@
       "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
     },
     {
-      "reference_date": "2018-07-30",
-      "reference_title": "Putin Vs. Russia's Economy",
-      "reference_year": 2018,
-      "reference_episode": 98,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
-    {
-      "reference_date": "2018-07-31",
-      "reference_title": "What's In Your Paycheck?",
-      "reference_year": 2018,
-      "reference_episode": 99,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
-    {
-      "reference_date": "2018-08-03",
-      "reference_title": "Beating The Clock On Jobs (Summer) Friday",
-      "reference_year": 2018,
-      "reference_episode": 102,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
-    {
-      "reference_date": "2018-08-13",
-      "reference_title": "Messy Desks, Light Bulbs & Dune",
-      "reference_year": 2018,
-      "reference_episode": 108,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
-    {
-      "reference_date": "2018-08-21",
-      "reference_title": "Why People Can't Get Work Done At Work",
-      "reference_year": 2018,
-      "reference_episode": 114,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
-    {
-      "reference_date": "2018-08-24",
-      "reference_title": "The Art of War. It's Not For Everyone",
-      "reference_year": 2018,
-      "reference_episode": 117,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
-    {
-      "reference_date": "2018-09-06",
-      "reference_title": "Why Aren't We More Productive?",
-      "reference_year": 2018,
-      "reference_episode": 125,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
-    {
-      "reference_date": "2018-10-10",
-      "reference_title": "Life On China's Blacklist",
-      "reference_year": 2018,
-      "reference_episode": 149,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
-    {
       "reference_date": "2018-10-29",
       "reference_title": "Judgement Bonds",
       "reference_year": 2018,
       "reference_episode": 162,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
-    {
-      "reference_date": "2018-11-02",
-      "reference_title": "How Companies Cope (With A Tight Labor Market)",
-      "reference_year": 2018,
-      "reference_episode": 166,
       "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
     },
     {
