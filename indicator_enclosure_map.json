@@ -37109,6 +37109,161 @@
       ],
       "audio_url_e_parameter": "1197961990",
       "release_classification": "confirmed_indicator_episode"
+    },
+    "1197963467": {
+      "story_id": "1197963467",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2024-04-03",
+      "title": "Can an old law bring down grocery prices?",
+      "npr_url": "https://www.npr.org/2024/03/29/1197963467/can-an-old-law-bring-down-grocery-prices",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/a9747c35-1c64-4504-bf18-e57a982563ad/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=a9747c35-1c64-4504-bf18-e57a982563ad&t=podcast&e=1197963467&p=510325&d=555&size=8895888&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/a9747c35-1c64-4504-bf18-e57a982563ad/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=a9747c35-1c64-4504-bf18-e57a982563ad&t=podcast&e=1197963467&p=510325&d=555&size=8895888&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 10047066,
+      "duration_seconds": 555,
+      "extraction_method": "validated_remaining_ranked_2024_scattered_cluster",
+      "provenance": [
+        "indicator_2024_scattered_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1197963467",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1197963467"
+      ],
+      "audio_url_e_parameter": "1197963467",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1197964551": {
+      "story_id": "1197964551",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2024-05-10",
+      "title": "A new gold rush and other indicators",
+      "npr_url": "https://www.npr.org/2024/05/10/1197964551/a-new-gold-rush-and-other-indicators",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/6a10f027-2e9c-40eb-bcc4-c2addebfed75/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=6a10f027-2e9c-40eb-bcc4-c2addebfed75&t=podcast&e=1197964551&p=510325&d=560&size=8975761&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/6a10f027-2e9c-40eb-bcc4-c2addebfed75/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=6a10f027-2e9c-40eb-bcc4-c2addebfed75&t=podcast&e=1197964551&p=510325&d=560&size=8975761&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 10126892,
+      "duration_seconds": 560,
+      "extraction_method": "validated_remaining_ranked_2024_scattered_cluster",
+      "provenance": [
+        "indicator_2024_scattered_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1197964551",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1197964551"
+      ],
+      "audio_url_e_parameter": "1197964551",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1197964709": {
+      "story_id": "1197964709",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2024-05-17",
+      "title": "Trade wars and talent shortages",
+      "npr_url": "https://www.npr.org/2024/05/17/1197964709/trade-wars-and-talent-shortages",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/a715cd3f-d2df-49f0-941c-d47983d56a9c/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=a715cd3f-d2df-49f0-941c-d47983d56a9c&t=podcast&e=1197964709&p=510325&d=569&size=9119539&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/a715cd3f-d2df-49f0-941c-d47983d56a9c/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=a715cd3f-d2df-49f0-941c-d47983d56a9c&t=podcast&e=1197964709&p=510325&d=569&size=9119539&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 10511826,
+      "duration_seconds": 569,
+      "extraction_method": "validated_remaining_ranked_2024_scattered_cluster",
+      "provenance": [
+        "indicator_2024_scattered_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1197964709",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1197964709"
+      ],
+      "audio_url_e_parameter": "1197964709",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1197965006": {
+      "story_id": "1197965006",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2024-05-31",
+      "title": "The cutest indicator in the world",
+      "npr_url": "https://www.npr.org/2024/05/31/1197965006/the-cutest-indicator-in-the-world",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/f366c7fe-2e0c-48db-b4b6-3db6c70e9738/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=f366c7fe-2e0c-48db-b4b6-3db6c70e9738&t=podcast&e=1197965006&p=510325&d=558&size=8932293&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/f366c7fe-2e0c-48db-b4b6-3db6c70e9738/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=f366c7fe-2e0c-48db-b4b6-3db6c70e9738&t=podcast&e=1197965006&p=510325&d=558&size=8932293&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 10083420,
+      "duration_seconds": 558,
+      "extraction_method": "validated_remaining_ranked_2024_scattered_cluster",
+      "provenance": [
+        "indicator_2024_scattered_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1197965006",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1197965006"
+      ],
+      "audio_url_e_parameter": "1197965006",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1197967993": {
+      "story_id": "1197967993",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2024-08-06",
+      "title": "Markets have a bad case of the Mondays",
+      "npr_url": "https://www.npr.org/2024/08/06/1197967993/markets-have-a-bad-case-of-the-mondays",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/c017b805-c4e8-43cb-8e85-6e34fa8b2051/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=c017b805-c4e8-43cb-8e85-6e34fa8b2051&t=podcast&e=1197967993&p=510325&d=546&size=8749645&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/c017b805-c4e8-43cb-8e85-6e34fa8b2051/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=c017b805-c4e8-43cb-8e85-6e34fa8b2051&t=podcast&e=1197967993&p=510325&d=546&size=8749645&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9900777,
+      "duration_seconds": 546,
+      "extraction_method": "validated_remaining_ranked_2024_scattered_cluster",
+      "provenance": [
+        "indicator_2024_scattered_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1197967993",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1197967993"
+      ],
+      "audio_url_e_parameter": "1197967993",
+      "release_classification": "confirmed_indicator_episode"
     }
   }
 }

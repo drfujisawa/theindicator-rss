@@ -20,6 +20,9 @@ REPO_ROOT = engine.REPO_ROOT
 DISCOVERY = REPO_ROOT / "data/audits/indicator_2024_february_mid_cluster_staging_candidates.json"
 DEFAULT_STAGE_DIR = REPO_ROOT / "work/2024-february-mid-cluster-staging"
 REPORT = REPO_ROOT / "data/audits/indicator_2024_february_mid_cluster_staging_report.json"
+EXPECTED_COUNT = 8
+BATCH_LABEL = "2024_february_mid_cluster"
+DISCOVERY_LABEL = DISCOVERY.name
 
 EPISODES = [
     ("2024-02-07", "Is Wall Street's hottest trend finally over?", "1197961691", "is-wall-streets-hottest-trend-finally-over", "https://www.gpb.org/news/planet-money/2024/02/07/wall-streets-hottest-trend-finally-over"),
@@ -42,8 +45,9 @@ def request(url: str, *, byte_range: bool = False):
 
 def discover() -> dict:
     records = []
-    for date, title, story_id, slug, evidence_url in EPISODES:
-        npr_url = f"https://www.npr.org/{date.replace('-', '/')}/{story_id}/{slug}"
+    for values in EPISODES:
+        date, title, story_id, slug, evidence_url = values[:5]
+        npr_url = values[5] if len(values) > 5 else f"https://www.npr.org/{date.replace('-', '/')}/{story_id}/{slug}"
         with request(npr_url) as response:
             page = response.read().decode("utf-8", "replace")
         audio_urls = sorted(set(
@@ -83,15 +87,15 @@ def discover() -> dict:
 
 def stage(repo_root=REPO_ROOT, stage_dir=None):
     discovery = discover()
-    if len(discovery["episodes"]) != 8:
-        raise RuntimeError("Expected exactly eight discovered episodes.")
+    if len(discovery["episodes"]) != EXPECTED_COUNT:
+        raise RuntimeError(f"Expected exactly {EXPECTED_COUNT} discovered episodes.")
     values = {
         "DISCOVERY": DISCOVERY,
         "DEFAULT_STAGE_DIR": DEFAULT_STAGE_DIR,
         "REPORT": REPORT,
-        "EXPECTED_COUNT": 8,
-        "BATCH_LABEL": "2024_february_mid_cluster",
-        "DISCOVERY_LABEL": DISCOVERY.name,
+        "EXPECTED_COUNT": EXPECTED_COUNT,
+        "BATCH_LABEL": BATCH_LABEL,
+        "DISCOVERY_LABEL": DISCOVERY_LABEL,
     }
     prior = {name: getattr(engine, name) for name in values}
     try:

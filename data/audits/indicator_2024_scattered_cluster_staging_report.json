@@ -1,0 +1,57 @@
+{
+  "report_version": 1,
+  "mode": "staging_only",
+  "production_files_modified": false,
+  "source_discovery": "data\\audits\\indicator_2024_scattered_cluster_staging_candidates.json",
+  "stage_directory": "work\\2024-scattered-cluster-staging",
+  "counts": {
+    "promoted_candidates": 5,
+    "history_before": 1770,
+    "history_after": 1775,
+    "enclosure_map_before": 1770,
+    "enclosure_map_after": 1775,
+    "feed_before": 2071,
+    "feed_after": 2076
+  },
+  "candidate_story_ids": [
+    "1197963467",
+    "1197964551",
+    "1197964709",
+    "1197965006",
+    "1197967993"
+  ],
+  "checks": {
+    "production_files_unchanged": true,
+    "candidate_count_is_5": true,
+    "candidate_story_ids_unique": true,
+    "history_delta_is_5": true,
+    "history_count_consistent": true,
+    "enclosure_map_delta_is_5": true,
+    "feed_delta_is_5": true,
+    "feed_story_id_delta_exact": true,
+    "rss_guids_unique": true,
+    "rss_story_ids_unique": true,
+    "rss_sorted_newest_first": true,
+    "rss_xml_parses": true,
+    "all_enclosures_resolved": true,
+    "all_content_lengths_known": true,
+    "all_audio_npr_hosted": true
+  },
+  "all_checks_passed": true,
+  "production_sha256_before": {
+    "indicator_history.json": "5d480a7ea5ef9845dfd93973dd8b442fdb473ac49cbba3b00bc6dcb83f65803e",
+    "indicator_enclosure_map.json": "bcb396b6219bc8d45fef4f115d431597cccc628a157de8cb83da72f20cb761d3",
+    "theindicator_feed.xml": "398c4f1bdc760e2e0d84a8137747ab7b3d91dd15d8e5766f94697011852ca848"
+  },
+  "production_sha256_after": {
+    "indicator_history.json": "5d480a7ea5ef9845dfd93973dd8b442fdb473ac49cbba3b00bc6dcb83f65803e",
+    "indicator_enclosure_map.json": "bcb396b6219bc8d45fef4f115d431597cccc628a157de8cb83da72f20cb761d3",
+    "theindicator_feed.xml": "398c4f1bdc760e2e0d84a8137747ab7b3d91dd15d8e5766f94697011852ca848"
+  },
+  "staged_sha256": {
+    "indicator_history.json": "dd6a7c38a761d32ced7625e575eedb419a24d7618fe9dd0ea086e0205743a377",
+    "indicator_enclosure_map.json": "ba86a187377dfde53745a2f89381629956ba9537238544a687a9c44fc032f6bd",
+    "theindicator_feed.xml": "524885628127851ee0afe386e9ece2d7682547168ef8dfb95a5a083e2061f4af"
+  },
+  "next_gate": "review this staging report before any hash-guarded atomic production application"
+}
