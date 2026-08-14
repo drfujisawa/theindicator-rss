@@ -1,0 +1,1254 @@
+{
+  "report_version": 1,
+  "targets": 155,
+  "measured": 155,
+  "remaining_zero_lengths": 0,
+  "measurements": [
+    {
+      "story_id": "593261790",
+      "title": "Bonds... Japanese Bonds",
+      "content_length": 10194044,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/10194044"
+    },
+    {
+      "story_id": "593606142",
+      "title": "What Trade Organization?",
+      "content_length": 7659101,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/7659101"
+    },
+    {
+      "story_id": "594058000",
+      "title": "Calculated Risk, Calculated Caution",
+      "content_length": 8084858,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8084858"
+    },
+    {
+      "story_id": "594366500",
+      "title": "The Bear Necessities",
+      "content_length": 7719149,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/7719149"
+    },
+    {
+      "story_id": "595012527",
+      "title": "The Reinvention Of The IPO",
+      "content_length": 10686521,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/10686521"
+    },
+    {
+      "story_id": "595338556",
+      "title": "A Brief History of Tariffs",
+      "content_length": 8197865,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8197865"
+    },
+    {
+      "story_id": "595769659",
+      "title": "Trump vs. Trudeau: Both Right, Both Wrong",
+      "content_length": 8445563,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8445563"
+    },
+    {
+      "story_id": "596162292",
+      "title": "Too Small To Fail",
+      "content_length": 7771274,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/7771274"
+    },
+    {
+      "story_id": "596526299",
+      "title": "The Oil Rig Count",
+      "content_length": 7205822,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/7205822"
+    },
+    {
+      "story_id": "597036173",
+      "title": "Dollars for Data",
+      "content_length": 8930534,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8930534"
+    },
+    {
+      "story_id": "597393265",
+      "title": "Costly Care In America",
+      "content_length": 6687074,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/6687074"
+    },
+    {
+      "story_id": "597738521",
+      "title": "Dollars And Census",
+      "content_length": 7222919,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/7222919"
+    },
+    {
+      "story_id": "598057493",
+      "title": "Disability In Decline",
+      "content_length": 7867601,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/7867601"
+    },
+    {
+      "story_id": "598920609",
+      "title": "China, Tariffs, And The Hogs Of War",
+      "content_length": 7104908,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/7104908"
+    },
+    {
+      "story_id": "599238600",
+      "title": "The Original Bailout",
+      "content_length": 9490982,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9490982"
+    },
+    {
+      "story_id": "599560851",
+      "title": "Stop, Collaborate, And Listen",
+      "content_length": 7965596,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/7965596"
+    },
+    {
+      "story_id": "599896596",
+      "title": "Morbidity, Peak Child, And Collective Pessimism",
+      "content_length": 7966013,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/7966013"
+    },
+    {
+      "story_id": "600290178",
+      "title": "Where The Jobs Are",
+      "content_length": 7951001,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/7951001"
+    },
+    {
+      "story_id": "600931069",
+      "title": "Mind The Pay Gap",
+      "content_length": 8061923,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8061923"
+    },
+    {
+      "story_id": "601240387",
+      "title": "Tyler Cowen Rates America",
+      "content_length": 7510232,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/7510232"
+    },
+    {
+      "story_id": "601629178",
+      "title": "Deficit Attention Disorder",
+      "content_length": 8683253,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8683253"
+    },
+    {
+      "story_id": "601948521",
+      "title": "Unsung Indicators",
+      "content_length": 6833024,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/6833024"
+    },
+    {
+      "story_id": "602269482",
+      "title": "Congress Does Not Compute",
+      "content_length": 9940863,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9940863"
+    },
+    {
+      "story_id": "602985918",
+      "title": "The Loan Ranger",
+      "content_length": 8861312,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8861312"
+    },
+    {
+      "story_id": "603328265",
+      "title": "Tax Refunds, A Habitual Health Problem",
+      "content_length": 8763672,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8763672"
+    },
+    {
+      "story_id": "603661785",
+      "title": "Lawn Chair Economics",
+      "content_length": 8580671,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8580671"
+    },
+    {
+      "story_id": "604092038",
+      "title": "Amazon vs Trump Goes Postal",
+      "content_length": 9804574,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9804574"
+    },
+    {
+      "story_id": "604419798",
+      "title": "The New Bond Villain",
+      "content_length": 8966396,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8966396"
+    },
+    {
+      "story_id": "605819103",
+      "title": "The Farm Labor Drought",
+      "content_length": 9136532,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9136532"
+    },
+    {
+      "story_id": "606586601",
+      "title": "The Homeless Count",
+      "content_length": 8704937,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8704937"
+    },
+    {
+      "story_id": "607169989",
+      "title": "Inflation Target Acquired",
+      "content_length": 8124890,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8124890"
+    },
+    {
+      "story_id": "607479206",
+      "title": "The Only Prescription Is More Transparency",
+      "content_length": 9171560,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9171560"
+    },
+    {
+      "story_id": "607815836",
+      "title": "Aging Up",
+      "content_length": 9453869,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9453869"
+    },
+    {
+      "story_id": "608272912",
+      "title": "Baby Bubbles",
+      "content_length": 8172011,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8172011"
+    },
+    {
+      "story_id": "608600600",
+      "title": "The Perks Of Counting The Wallflowers",
+      "content_length": 8948048,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8948048"
+    },
+    {
+      "story_id": "609192263",
+      "title": "The 'I' Of The LIBOR",
+      "content_length": 9490565,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9490565"
+    },
+    {
+      "story_id": "609492762",
+      "title": "The Good, The Bad and The Tax Cuts",
+      "content_length": 8011466,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8011466"
+    },
+    {
+      "story_id": "609839680",
+      "title": "Indicator and Beyond",
+      "content_length": 8918858,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8918858"
+    },
+    {
+      "story_id": "610171827",
+      "title": "Failing College",
+      "content_length": 8943461,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8943461"
+    },
+    {
+      "story_id": "610537790",
+      "title": "In Vino, Veritas by Numbers",
+      "content_length": 9140702,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9140702"
+    },
+    {
+      "story_id": "611116116",
+      "title": "The Semiconductor Standoff",
+      "content_length": 8609861,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8609861"
+    },
+    {
+      "story_id": "611386612",
+      "title": "Rising Rates Vs. The Housing Market",
+      "content_length": 7880528,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/7880528"
+    },
+    {
+      "story_id": "611743503",
+      "title": "All Bets Are On",
+      "content_length": 8199950,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8199950"
+    },
+    {
+      "story_id": "612087773",
+      "title": "SNAP Back To Reality",
+      "content_length": 8081105,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8081105"
+    },
+    {
+      "story_id": "612455155",
+      "title": "Time Bandits",
+      "content_length": 8713694,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8713694"
+    },
+    {
+      "story_id": "613144360",
+      "title": "Stacey And Cardiff Take On The Commencement Speech",
+      "content_length": 9147374,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9147374"
+    },
+    {
+      "story_id": "613452451",
+      "title": "Women in Bondland",
+      "content_length": 8921360,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8921360"
+    },
+    {
+      "story_id": "613834765",
+      "title": "Most Inane Deduction?",
+      "content_length": 7791290,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/7791290"
+    },
+    {
+      "story_id": "614193817",
+      "title": "The Money Detectives",
+      "content_length": 8644055,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8644055"
+    },
+    {
+      "story_id": "614544660",
+      "title": "Earnings Calls Gone Wild",
+      "content_length": 9519755,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9519755"
+    },
+    {
+      "story_id": "615599129",
+      "title": "Money For Moms",
+      "content_length": 9141119,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9141119"
+    },
+    {
+      "story_id": "615934640",
+      "title": "Internet a la Carte",
+      "content_length": 10404629,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/10404629"
+    },
+    {
+      "story_id": "616283803",
+      "title": "To Err Is Human, To Revise Divine",
+      "content_length": 9557702,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9557702"
+    },
+    {
+      "story_id": "616930076",
+      "title": "The Economics of Vaccines",
+      "content_length": 8349236,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8349236"
+    },
+    {
+      "story_id": "617267989",
+      "title": "Do You Have $400?",
+      "content_length": 6853874,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/6853874"
+    },
+    {
+      "story_id": "617662100",
+      "title": "Social Insecurity",
+      "content_length": 9584390,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9584390"
+    },
+    {
+      "story_id": "618026828",
+      "title": "When Retirement Advice Goes Viral",
+      "content_length": 9579803,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9579803"
+    },
+    {
+      "story_id": "618360002",
+      "title": "Positively 23rd Street",
+      "content_length": 9419258,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9419258"
+    },
+    {
+      "story_id": "618957143",
+      "title": "Let Them Eat Marshmallows",
+      "content_length": 9531014,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9531014"
+    },
+    {
+      "story_id": "619309279",
+      "title": "CBO vs. POTUS",
+      "content_length": 9569378,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9569378"
+    },
+    {
+      "story_id": "620106332",
+      "title": "Trading Spaces",
+      "content_length": 9414671,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9414671"
+    },
+    {
+      "story_id": "620473579",
+      "title": "Gettin' Giggy With It",
+      "content_length": 9563123,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9563123"
+    },
+    {
+      "story_id": "621141813",
+      "title": "The Art Of The Trade War",
+      "content_length": 9430100,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9430100"
+    },
+    {
+      "story_id": "621570477",
+      "title": "The Measure Of A Tragedy",
+      "content_length": 9247454,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9247454"
+    },
+    {
+      "story_id": "622042080",
+      "title": "The Plight Of The Living Dead",
+      "content_length": 9578135,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9578135"
+    },
+    {
+      "story_id": "622699133",
+      "title": "MoviePass / Fail?",
+      "content_length": 10265351,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/10265351"
+    },
+    {
+      "story_id": "623358233",
+      "title": "The Beautiful Indicator",
+      "content_length": 9527678,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9527678"
+    },
+    {
+      "story_id": "624017220",
+      "title": "Happy Birthday, Smith v. Keynes",
+      "content_length": 9556451,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9556451"
+    },
+    {
+      "story_id": "624419011",
+      "title": "Bubble, Bubble, Oil And Trouble",
+      "content_length": 6840947,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/6840947"
+    },
+    {
+      "story_id": "625451458",
+      "title": "The Problem With Unobservable Variables",
+      "content_length": 9524342,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9524342"
+    },
+    {
+      "story_id": "625796777",
+      "title": "Star Spangled Indicator",
+      "content_length": 8800847,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8800847"
+    },
+    {
+      "story_id": "626274795",
+      "title": "The Long French Goodbye",
+      "content_length": 9212009,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9212009"
+    },
+    {
+      "story_id": "626664491",
+      "title": "Jobs: 10 Questions in 10 Minutes",
+      "content_length": 11144387,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/11144387"
+    },
+    {
+      "story_id": "627432984",
+      "title": "The Recession Predictor, Still Predictive?",
+      "content_length": 8416373,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8416373"
+    },
+    {
+      "story_id": "630265851",
+      "title": "Trade Wars And The Batman Problem",
+      "content_length": 9798311,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9798311"
+    },
+    {
+      "story_id": "630949390",
+      "title": "The Market For Air",
+      "content_length": 9431351,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9431351"
+    },
+    {
+      "story_id": "632080018",
+      "title": "Trump Vs. The Fed, Or Trump Vs... Trump?",
+      "content_length": 9366716,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9366716"
+    },
+    {
+      "story_id": "632473671",
+      "title": "The Diamond-Water Paradox",
+      "content_length": 9102338,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9102338"
+    },
+    {
+      "story_id": "632865910",
+      "title": "When Oracles Err",
+      "content_length": 9740765,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9740765"
+    },
+    {
+      "story_id": "633230414",
+      "title": "GDP, OMG!",
+      "content_length": 9500573,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9500573"
+    },
+    {
+      "story_id": "634761599",
+      "title": "What A Tariff Looks Like",
+      "content_length": 9681134,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9681134"
+    },
+    {
+      "story_id": "635129556",
+      "title": "Grey Poupon And The Cultural Divide",
+      "content_length": 9294158,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9294158"
+    },
+    {
+      "story_id": "636103035",
+      "title": "Tariffs, Now With Extra Cheese",
+      "content_length": 9578135,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9578135"
+    },
+    {
+      "story_id": "636444453",
+      "title": "Sanctions, Iran, And The Battle Over SWIFT",
+      "content_length": 8399631,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8399631"
+    },
+    {
+      "story_id": "636867779",
+      "title": "Trickle-down Economics: Pricing H2O",
+      "content_length": 8731563,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8731563"
+    },
+    {
+      "story_id": "637226188",
+      "title": "The OG Yield Curve Whisperer",
+      "content_length": 9491337,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9491337"
+    },
+    {
+      "story_id": "638649723",
+      "title": "From Prison To The Workforce",
+      "content_length": 9845787,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9845787"
+    },
+    {
+      "story_id": "639035177",
+      "title": "Cryptokitties: The Download On Digital Cats",
+      "content_length": 9796998,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9796998"
+    },
+    {
+      "story_id": "639346300",
+      "title": "We Buy A Cryptokitty!",
+      "content_length": 9569733,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9569733"
+    },
+    {
+      "story_id": "640319086",
+      "title": "The Indicator Goes To The Beach With Tim Harford",
+      "content_length": 9447552,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9447552"
+    },
+    {
+      "story_id": "641002632",
+      "title": "The Underrated Economists",
+      "content_length": 9363318,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9363318"
+    },
+    {
+      "story_id": "641278187",
+      "title": "Beyond GDP",
+      "content_length": 9416277,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9416277"
+    },
+    {
+      "story_id": "642268824",
+      "title": "The Measure Of A Tragedy",
+      "content_length": 9533871,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9533871"
+    },
+    {
+      "story_id": "643056045",
+      "title": "Mind the Pay Gap (REBROADCAST)",
+      "content_length": 8015157,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8015157"
+    },
+    {
+      "story_id": "643423980",
+      "title": "Aging Up (REBROADCAST)",
+      "content_length": 9554721,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9554721"
+    },
+    {
+      "story_id": "643777774",
+      "title": "The Original Bailout",
+      "content_length": 9579324,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9579324"
+    },
+    {
+      "story_id": "644612299",
+      "title": "Making The Case For Removing Tariffs",
+      "content_length": 9461730,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9461730"
+    },
+    {
+      "story_id": "644961856",
+      "title": "NAFTA-splainer",
+      "content_length": 9514689,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9514689"
+    },
+    {
+      "story_id": "645649007",
+      "title": "Your Jobs Questions, Answered",
+      "content_length": 9172749,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9172749"
+    },
+    {
+      "story_id": "646417218",
+      "title": "Call The Midwife Back",
+      "content_length": 8816631,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8816631"
+    },
+    {
+      "story_id": "646735351",
+      "title": "The Liars Of Romance",
+      "content_length": 9410856,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9410856"
+    },
+    {
+      "story_id": "647178680",
+      "title": "Free Tuition; False Economy?",
+      "content_length": 9280335,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9280335"
+    },
+    {
+      "story_id": "647215845",
+      "title": "The Price Of Rice In Japan",
+      "content_length": 9133968,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9133968"
+    },
+    {
+      "story_id": "648018562",
+      "title": "Handle With Care",
+      "content_length": 9523863,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9523863"
+    },
+    {
+      "story_id": "648864273",
+      "title": "Down Clown",
+      "content_length": 9129798,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9129798"
+    },
+    {
+      "story_id": "649244723",
+      "title": "Work Work Work",
+      "content_length": 6910524,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/6910524"
+    },
+    {
+      "story_id": "649645247",
+      "title": "The Psychological Effects Of The Financial Crisis, Lingering",
+      "content_length": 8314146,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8314146"
+    },
+    {
+      "story_id": "650064969",
+      "title": "The Young And The Restless",
+      "content_length": 8091051,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8091051"
+    },
+    {
+      "story_id": "650564123",
+      "title": "Rent!",
+      "content_length": 8456343,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8456343"
+    },
+    {
+      "story_id": "651545562",
+      "title": "Less Risky Business",
+      "content_length": 9416694,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9416694"
+    },
+    {
+      "story_id": "651865781",
+      "title": "Tariffs And Tourists And Trade Wars, Oh My!",
+      "content_length": 9518025,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9518025"
+    },
+    {
+      "story_id": "652256969",
+      "title": "Baby Got Buybacks",
+      "content_length": 7913826,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/7913826"
+    },
+    {
+      "story_id": "652766991",
+      "title": "The Case Of The Pricey Frito",
+      "content_length": 9074337,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9074337"
+    },
+    {
+      "story_id": "653437042",
+      "title": "D.C.'s Billion-Dollar Lawsuit",
+      "content_length": 8618139,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8618139"
+    },
+    {
+      "story_id": "653771134",
+      "title": "Zeitgeist-y Bubbles",
+      "content_length": 9411690,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9411690"
+    },
+    {
+      "story_id": "654141402",
+      "title": "What Happened To GE?",
+      "content_length": 9584745,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9584745"
+    },
+    {
+      "story_id": "654533556",
+      "title": "What Comes Afta NAFTA",
+      "content_length": 9335379,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9335379"
+    },
+    {
+      "story_id": "655634932",
+      "title": "The Iron Lotus",
+      "content_length": 8587281,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8587281"
+    },
+    {
+      "story_id": "657023877",
+      "title": "The Economics of Apologies",
+      "content_length": 9244056,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9244056"
+    },
+    {
+      "story_id": "657572937",
+      "title": "Overrated/Underrated: Nobel Prizes, Conversations, And Our Descendants",
+      "content_length": 9452973,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9452973"
+    },
+    {
+      "story_id": "657879485",
+      "title": "A Snapshot Of Poverty In America",
+      "content_length": 8776599,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8776599"
+    },
+    {
+      "story_id": "658256782",
+      "title": "Gross Dank Product",
+      "content_length": 5959347,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/5959347"
+    },
+    {
+      "story_id": "658542073",
+      "title": "Beating Bollywood",
+      "content_length": 9515106,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9515106"
+    },
+    {
+      "story_id": "658952925",
+      "title": "Tears For Sears",
+      "content_length": 9555555,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9555555"
+    },
+    {
+      "story_id": "659620667",
+      "title": "Short Shrift For Short Sellers",
+      "content_length": 8811627,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8811627"
+    },
+    {
+      "story_id": "659970769",
+      "title": "Of Wages And Warehouses",
+      "content_length": 9097689,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9097689"
+    },
+    {
+      "story_id": "660297140",
+      "title": "The Rise of the Machines",
+      "content_length": 9575988,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9575988"
+    },
+    {
+      "story_id": "660668139",
+      "title": "Difficulty With The Deficit",
+      "content_length": 9563478,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9563478"
+    },
+    {
+      "story_id": "661131755",
+      "title": "Lotteries And Happiness",
+      "content_length": 9491754,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9491754"
+    },
+    {
+      "story_id": "662225481",
+      "title": "The Best Day For Payday",
+      "content_length": 8641491,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8641491"
+    },
+    {
+      "story_id": "662708285",
+      "title": "Paranormal Profits",
+      "content_length": 9034722,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9034722"
+    },
+    {
+      "story_id": "663124743",
+      "title": "Why Ecuador Uses The Dollar?",
+      "content_length": 9475908,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9475908"
+    },
+    {
+      "story_id": "664488545",
+      "title": "Ode On A Grecian Tax",
+      "content_length": 9313278,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9313278"
+    },
+    {
+      "story_id": "664815482",
+      "title": "Stacey And Cardiff Answer To The People",
+      "content_length": 9480495,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9480495"
+    },
+    {
+      "story_id": "665392227",
+      "title": "Your Lifetime Value Score",
+      "content_length": 8831226,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8831226"
+    },
+    {
+      "story_id": "665897380",
+      "title": "All Aboard The Bankmobile!",
+      "content_length": 8766591,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8766591"
+    },
+    {
+      "story_id": "667107400",
+      "title": "Recession Suppression Needs Policy Aggression",
+      "content_length": 9578490,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9578490"
+    },
+    {
+      "story_id": "667539767",
+      "title": "The Problem With The Pink Tax",
+      "content_length": 9555972,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9555972"
+    },
+    {
+      "story_id": "667936543",
+      "title": "Oil Up, Oil Down",
+      "content_length": 8063112,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8063112"
+    },
+    {
+      "story_id": "668391493",
+      "title": "The Lucky Country",
+      "content_length": 8984265,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8984265"
+    },
+    {
+      "story_id": "668745229",
+      "title": "Recession Indicators, Pt 1",
+      "content_length": 9409188,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9409188"
+    },
+    {
+      "story_id": "669368782",
+      "title": "Recession Indicators, Pt 2",
+      "content_length": 7742856,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/7742856"
+    },
+    {
+      "story_id": "670092489",
+      "title": "The Price Of Your Turkey Dinner",
+      "content_length": 8665677,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8665677"
+    },
+    {
+      "story_id": "670174334",
+      "title": "See Stocks Run",
+      "content_length": 9547632,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9547632"
+    },
+    {
+      "story_id": "670966722",
+      "title": "Bonds, Rating Agencies And Chocolate",
+      "content_length": 8571435,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8571435"
+    },
+    {
+      "story_id": "671284334",
+      "title": "College Side Hustle",
+      "content_length": 9376574,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9376574"
+    },
+    {
+      "story_id": "671672042",
+      "title": "Do Sanctions Work?",
+      "content_length": 8982926,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/8982926"
+    },
+    {
+      "story_id": "671998811",
+      "title": "Space Economics",
+      "content_length": 9556718,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9556718"
+    },
+    {
+      "story_id": "672383350",
+      "title": "The Voyages Of The Starship Indicator",
+      "content_length": 9270744,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9270744"
+    },
+    {
+      "story_id": "673034381",
+      "title": "Trade War And Peace",
+      "content_length": 9262821,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9262821"
+    },
+    {
+      "story_id": "673429096",
+      "title": "Behind The Curve",
+      "content_length": 9494256,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9494256"
+    },
+    {
+      "story_id": "673840278",
+      "title": "Paris Is Burning",
+      "content_length": 9308274,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9308274"
+    },
+    {
+      "story_id": "674764689",
+      "title": "More Jobs, Less Pay",
+      "content_length": 9279501,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9279501"
+    },
+    {
+      "story_id": "675413395",
+      "title": "Unto The Brexit",
+      "content_length": 9288675,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9288675"
+    },
+    {
+      "story_id": "716132270",
+      "title": "The Traffic Tariff",
+      "content_length": 9276788,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_range": "bytes 0-0/9276788"
+    }
+  ],
+  "staged_sha256": {
+    "indicator_enclosure_map.json": "7381b69fef74df35cf1cc1fcb98d7d3fd948f9fb2cf0dded15650bdb96a30abf",
+    "theindicator_feed.xml": "98cc9ab3a432ce24e8462ce1da0470b11cbb16f6830fc5ff3a6c1f4bc8f4ad78"
+  },
+  "production_applied": true,
+  "rollback_directory": "work\\zero-length-repair-staging\\rollback"
+}
