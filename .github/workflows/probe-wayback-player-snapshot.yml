@@ -30,10 +30,10 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.x"
 
@@ -53,7 +53,7 @@ jobs:
 
       - name: Upload probe artifacts
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: wayback-player-snapshot-probe-${{ github.run_id }}
           path: data/recovery/wayback_player_snapshots/
