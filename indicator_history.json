@@ -1,6 +1,6 @@
 {
   "next_date": "2017-11-05T16:46:00-04:00",
-  "episode_count": 1815,
+  "episode_count": 1821,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -3797,6 +3797,25 @@
       "description": "The conflict between Israel and Hamas has been going on for more than three months, and is now beginning to spill into other parts of the Middle East. That includes attacks on commercial ships in the Red Sea, rocket attacks by Hezbollah and U.S. airstrikes in Yemen. On today's show, we'll consider what escalation could mean for global trade and the region's most important export: oil. Related episodes: Red Sea tensions spell trouble for global supply chains (Apple / Spotify) Oil prices and the Israel-Hamas war (Apple / Spotify) What could convince Egypt to take in Gaza's refugees (Apple / Spotify) For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
     },
     {
+      "title": "Offloading EVs, vacating offices and reaping windfalls",
+      "date": "2024-01-12",
+      "npr_url": "https://www.npr.org/2024/01/12/1197961087/hertz-evs-office-vacancies-iphone-settlement",
+      "story_id": "1197961087",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2024/01/12/1197961087/hertz-evs-office-vacancies-iphone-settlement",
+      "description": "Offloading EVs, vacating offices and reaping windfalls",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2023_early2024_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2023_early2024_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "The lawsuit that could shake up the rental market",
       "date": "2024-01-11T20:26:12-05:00",
       "npr_url": "https://www.npr.org/2024/01/11/1197961038/the-indicator-from-planet-money-realpage-antitrust-lawsuit-01-11-2024",
@@ -4112,7 +4131,7 @@
       "description": "It's an Indicator Friendsgiving! You're not alone in feeling the news has been awfully grim this year. So we're taking a collective breath and sitting down at the table to find some economic indicators to be thankful for. That includes an end to global shipping turmoil, the green-blue bubble détente and a palatable salary. Related Episodes:The great turnaround in shipping (Apple Podcasts / Spotify)Wisdom from the top For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
     },
     {
-      "title": "How political campaigns raise millions through unwitting donors",
+      "title": "How \"dark defaults\" could cost you",
       "date": "2023-11-21T20:14:45-05:00",
       "npr_url": "https://www.npr.org/2023/11/21/1197958421/dark-defaults-political-campaigns-donors",
       "story_id": "1197958421",
@@ -4472,6 +4491,25 @@
       "description": "How often do you hang out with people in a different socioeconomic bracket than you? And where do you meet and congregate? Economist Maxim Massenkoff, and his co-author Nathan Wilmers, looked at cell phone location data to figure out where people with vastly different incomes commune together. Today on the show, Maxim discusses his research, and Darian and Alexi head to a restaurant to try and witness some of this class mixing in action.Related Episode: The Secret to Upward Mobility: Friends For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
     },
     {
+      "title": "Is the Canada, Meta news standoff coming to the US?",
+      "date": "2023-09-25",
+      "npr_url": "https://www.npr.org/2023/09/25/1197954327/the-indicator-from-planet-money-canada-vs-meta-fight",
+      "story_id": "1197954327",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2023/09/25/1197954327/the-indicator-from-planet-money-canada-vs-meta-fight",
+      "description": "Is the Canada, Meta news standoff coming to the US?",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2023_early2024_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2023_early2024_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "A million-dollar fossil, and other indicators",
       "date": "2023-09-22T19:13:39-04:00",
       "npr_url": "https://www.npr.org/2023/09/22/1197954276/the-indicator-from-planet-money-09-22-2023",
@@ -4488,6 +4526,25 @@
       "audio_id": "1200913840",
       "player_url": "https://www.npr.org/player/embed/1197954265/1200913840",
       "description": "Wildfires are becoming more frequent and serious due to human-caused climate change. This is prompting a new industry focused on residential wildfire preparedness. Today, we consider the new technology addressing wildfire risk and the cost of protecting yourself.Related Episodes:Gambling, literally, on climate change (Apple Podcasts / Spotify) For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "The rat under the Fed's hat",
+      "date": "2023-09-20",
+      "npr_url": "https://www.npr.org/2023/09/20/1197954200/the-indicator-how-the-fed-controls-interest-rates",
+      "story_id": "1197954200",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2023/09/20/1197954200/the-indicator-how-the-fed-controls-interest-rates",
+      "description": "The rat under the Fed's hat",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2023_early2024_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2023_early2024_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
     },
     {
       "title": "The Beigie Awards: Manufacturing takes center stage",
@@ -4920,6 +4977,25 @@
       "audio_id": "1198987246",
       "player_url": "https://www.npr.org/player/embed/1187590049/1198987246",
       "description": "Stress tests are one of the many tools the Federal Reserve has to regulate the financial system. So why didn't stress tests help prevent the bank failures of Silicon Valley, Signature and First Republic? Today, we explain how stress tests work and why the Fed is considering an overhaul.For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "What's behind the China deflation scare",
+      "date": "2023-07-12",
+      "npr_url": "https://www.npr.org/2023/07/12/1187372320/whats-behind-the-china-deflation-scare",
+      "story_id": "1187372320",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2023/07/12/1187372320/whats-behind-the-china-deflation-scare",
+      "description": "What's behind the China deflation scare",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2023_early2024_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2023_early2024_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
     },
     {
       "title": "The Indicator Quiz: Jobs and Employment",
@@ -5624,6 +5700,25 @@
       "description": "Recent banking turmoil is shining a spotlight on the people whose job it is to monitor banks themselves. Today, we examine the bank examiners and learn why their job is so important for the banking sector. Plus, a recent government report that shows they could be in short supply very soon. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
     },
     {
+      "title": "The demise of Credit Suisse",
+      "date": "2023-03-20",
+      "npr_url": "https://www.npr.org/2023/03/20/1164823375/the-demise-of-credit-suisse",
+      "story_id": "1164823375",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2023/03/20/1164823375/the-demise-of-credit-suisse",
+      "description": "The demise of Credit Suisse",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2023_early2024_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2023_early2024_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "Banks gone wild: SVB, Signature and moral hazard",
       "date": "2023-03-17T19:18:41-04:00",
       "npr_url": "https://www.npr.org/2023/03/16/1163863926/banks-gone-wild-svb-signature-and-moral-hazard",
@@ -5919,6 +6014,25 @@
       "audio_id": "1198987894",
       "player_url": "https://www.npr.org/player/embed/1152940408/1198987894",
       "description": "Chinese citizens are once again allowed to travel internationally and the global tourism industry is ready to welcome them with open arms. Why? Chinese tourism has meant big money in the past. In 2019, Chinese travelers spent a fifth of all tourist dollars. But a full rebound in Chinese tourism might be a ways off. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org."
+    },
+    {
+      "title": "Artists vs. AI",
+      "date": "2023-01-30",
+      "npr_url": "https://www.npr.org/2023/01/30/1152653269/artists-vs-ai",
+      "story_id": "1152653269",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2023/01/30/1152653269/artists-vs-ai",
+      "description": "Artists vs. AI",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2023_early2024_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2023_early2024_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
     },
     {
       "title": "Indicators of the Week: tips, eggs and whisky",

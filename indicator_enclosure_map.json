@@ -38504,6 +38504,192 @@
       ],
       "audio_url_e_parameter": "1253382246",
       "release_classification": "confirmed_indicator_episode"
+    },
+    "1152653269": {
+      "story_id": "1152653269",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2023-01-30",
+      "title": "Artists vs. AI",
+      "npr_url": "https://www.npr.org/2023/01/30/1152653269/artists-vs-ai",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/97927861-3526-4f6b-ad5d-f89f8c44cf8f/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=97927861-3526-4f6b-ad5d-f89f8c44cf8f&t=podcast&e=1152653269&p=510325&d=540&size=8648874&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/97927861-3526-4f6b-ad5d-f89f8c44cf8f/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=97927861-3526-4f6b-ad5d-f89f8c44cf8f&t=podcast&e=1152653269&p=510325&d=540&size=8648874&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 10041187,
+      "duration_seconds": 540,
+      "extraction_method": "validated_remaining_ranked_2023_early2024_cluster",
+      "provenance": [
+        "indicator_2023_early2024_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1152653269",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1152653269"
+      ],
+      "audio_url_e_parameter": "1152653269",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1164823375": {
+      "story_id": "1164823375",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2023-03-20",
+      "title": "The demise of Credit Suisse",
+      "npr_url": "https://www.npr.org/2023/03/20/1164823375/the-demise-of-credit-suisse",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/266eb92c-a28d-4daf-8e37-e452d707773f/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=266eb92c-a28d-4daf-8e37-e452d707773f&t=podcast&e=1164823375&p=510325&d=569&size=9111973&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/266eb92c-a28d-4daf-8e37-e452d707773f/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=266eb92c-a28d-4daf-8e37-e452d707773f&t=podcast&e=1164823375&p=510325&d=569&size=9111973&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 10263137,
+      "duration_seconds": 569,
+      "extraction_method": "validated_remaining_ranked_2023_early2024_cluster",
+      "provenance": [
+        "indicator_2023_early2024_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1164823375",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1164823375"
+      ],
+      "audio_url_e_parameter": "1164823375",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1187372320": {
+      "story_id": "1187372320",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2023-07-12",
+      "title": "What's behind the China deflation scare",
+      "npr_url": "https://www.npr.org/2023/07/12/1187372320/whats-behind-the-china-deflation-scare",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/24e21286-2ba0-44ba-9dec-5024f8e1514d/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=24e21286-2ba0-44ba-9dec-5024f8e1514d&t=podcast&e=1187372320&p=510325&d=553&size=8914696&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/24e21286-2ba0-44ba-9dec-5024f8e1514d/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=24e21286-2ba0-44ba-9dec-5024f8e1514d&t=podcast&e=1187372320&p=510325&d=553&size=8914696&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 10065872,
+      "duration_seconds": 553,
+      "extraction_method": "validated_remaining_ranked_2023_early2024_cluster",
+      "provenance": [
+        "indicator_2023_early2024_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1187372320",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1187372320"
+      ],
+      "audio_url_e_parameter": "1187372320",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1197954200": {
+      "story_id": "1197954200",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2023-09-20",
+      "title": "The rat under the Fed's hat",
+      "npr_url": "https://www.npr.org/2023/09/20/1197954200/the-indicator-how-the-fed-controls-interest-rates",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/9c8f0e60-c002-456b-81d1-40d1dd7715e5/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=9c8f0e60-c002-456b-81d1-40d1dd7715e5&t=podcast&e=1197954200&p=510325&d=476&size=7622784&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/9c8f0e60-c002-456b-81d1-40d1dd7715e5/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=9c8f0e60-c002-456b-81d1-40d1dd7715e5&t=podcast&e=1197954200&p=510325&d=476&size=7622784&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 8773948,
+      "duration_seconds": 476,
+      "extraction_method": "validated_remaining_ranked_2023_early2024_cluster",
+      "provenance": [
+        "indicator_2023_early2024_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1197954200",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1197954200"
+      ],
+      "audio_url_e_parameter": "1197954200",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1197954327": {
+      "story_id": "1197954327",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2023-09-25",
+      "title": "Is the Canada, Meta news standoff coming to the US?",
+      "npr_url": "https://www.npr.org/2023/09/25/1197954327/the-indicator-from-planet-money-canada-vs-meta-fight",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/3dceba23-c48d-4c54-b304-30503f55eae2/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=3dceba23-c48d-4c54-b304-30503f55eae2&t=podcast&e=1197954327&p=510325&d=563&size=9014588&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/3dceba23-c48d-4c54-b304-30503f55eae2/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=3dceba23-c48d-4c54-b304-30503f55eae2&t=podcast&e=1197954327&p=510325&d=563&size=9014588&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 10165776,
+      "duration_seconds": 563,
+      "extraction_method": "validated_remaining_ranked_2023_early2024_cluster",
+      "provenance": [
+        "indicator_2023_early2024_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1197954327",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1197954327"
+      ],
+      "audio_url_e_parameter": "1197954327",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1197961087": {
+      "story_id": "1197961087",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2024-01-12",
+      "title": "Offloading EVs, vacating offices and reaping windfalls",
+      "npr_url": "https://www.npr.org/2024/01/12/1197961087/hertz-evs-office-vacancies-iphone-settlement",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/9773754a-5ac5-4843-b79a-619c54dd4d54/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=9773754a-5ac5-4843-b79a-619c54dd4d54&t=podcast&e=1197961087&p=510325&d=556&size=8904665&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/9773754a-5ac5-4843-b79a-619c54dd4d54/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=9773754a-5ac5-4843-b79a-619c54dd4d54&t=podcast&e=1197961087&p=510325&d=556&size=8904665&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 10055856,
+      "duration_seconds": 556,
+      "extraction_method": "validated_remaining_ranked_2023_early2024_cluster",
+      "provenance": [
+        "indicator_2023_early2024_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1197961087",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1197961087"
+      ],
+      "audio_url_e_parameter": "1197961087",
+      "release_classification": "confirmed_indicator_episode"
     }
   }
 }
