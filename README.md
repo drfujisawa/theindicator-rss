@@ -37,8 +37,10 @@ A GitHub Actions workflow (`update-feed.yml`) runs every six hours. It:
 1. Downloads NPR's current RSS feed.
 2. Loads the existing `theindicator_feed.xml` from the repository.
 3. Finds any episodes in NPR's feed that are not yet in the archive (matched by GUID).
-4. Appends those new episodes to the archive.
-5. Sorts all episodes newest-first and writes the file back.
+4. If no new GUIDs are found, exits without rewriting the archive or changing
+   show-level metadata.
+5. Otherwise, appends the new episodes, sorts all episodes newest-first, and
+   writes the file back.
 6. Validates XML structure, unique GUIDs, reverse-chronological ordering,
    enclosure metadata, and non-decreasing episode and known-length counts before
    committing anything.

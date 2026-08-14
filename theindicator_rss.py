@@ -125,6 +125,10 @@ def build_feed():
 
         print(f"Found {len(new_items)} new episode(s).")
 
+        if not new_items:
+            print("Feed is already current; leaving the archive unchanged.")
+            return
+
         for item in new_items:
             existing_channel.append(item)
 
