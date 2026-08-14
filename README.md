@@ -1,9 +1,10 @@
 # The Indicator — Full History RSS Feed
 
 An unofficial archival RSS feed for NPR's **The Indicator from Planet Money**, covering
-the recovered playable archive from **March 2018** to the present.
+the recovered playable archive from the **December 2017 launch** to the present.
 
-As of August 14, 2026, the published feed contains **2,136 episodes**, all with
+As of August 14, 2026, the published feed contains **2,195 items**—2,194 full
+episodes and NPR's original one-minute launch trailer. All have
 unique GUIDs, playable enclosure URLs, and positive enclosure byte lengths.
 
 ## Subscribe
@@ -75,7 +76,7 @@ coverage back to 2018, a multi-stage recovery process was run:
 1. **History crawl** — `theindicator_history.py` scraped NPR's website archive
    to build `indicator_history.json`: a catalogue of episode metadata (title, date,
    story ID, NPR URL) for known Indicator episodes, supplemented by a provenance-
-   preserving recovery audit that reaches March 2018.
+   preserving recovery audit that reaches the December 2017 launch.
 
 2. **Enclosure recovery** — `recover_enclosures_bulk.py` resolved a playable audio
    URL for each history entry by probing NPR's audio APIs, Simplecast CDN, and
@@ -92,7 +93,14 @@ coverage back to 2018, a multi-stage recovery process was run:
    `data/audits/indicator_final_catalog_completeness_audit.md` and the associated
    staging/application reports.
 
-5. **Enclosure-length repair** — 155 legacy entries whose byte length was unknown
+5. **Original launch-catalog recovery** — a preserved March 2018 snapshot of NPR's
+   original program feed established that 58 episodes plus the launch trailer were
+   missing before the former March 12 cutoff. All 59 canonical NPR identities and
+   audio files were verified, collision-reviewed, staged, and applied. The trailer
+   is retained as the feed's first item with `itunes:episodeType="trailer"`. The
+   audit and staging evidence are under `data/audits/indicator_pre_march_2018_*`.
+
+6. **Enclosure-length repair** — 155 legacy entries whose byte length was unknown
    were measured with one-byte HTTP range probes. All 155 were repaired; no
    `length="0"` enclosures remain. The measurements and before/after hashes are in
    `data/audits/indicator_zero_length_repair_report.json`.
@@ -111,7 +119,7 @@ treated as missing episodes.
 
 | File / script | Purpose |
 |---|---|
-| `theindicator_feed.xml` | The published RSS feed (2,136 episodes as of August 14, 2026) |
+| `theindicator_feed.xml` | The published RSS feed (2,195 items as of August 14, 2026) |
 | `theindicator_rss.py` | Automated feed updater (runs every 6 hours) |
 | `theindicator_history.py` | Crawls NPR's archive to build episode history |
 | `recover_enclosures_bulk.py` | Bulk audio-URL recovery for history entries |

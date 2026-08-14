@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss xmlns:ns0="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:ns1="http://search.yahoo.com/mrss/" xmlns:ns2="https://podcastindex.org/namespace/1.0" xmlns:ns3="http://purl.org/rss/1.0/modules/content/" version="2.0">
+<rss xmlns:ns3="http://purl.org/rss/1.0/modules/content/" xmlns:ns0="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:ns1="http://search.yahoo.com/mrss/" xmlns:ns2="https://podcastindex.org/namespace/1.0" version="2.0">
   <channel>
     <title>The Indicator from Planet Money</title>
     <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
@@ -25077,6 +25077,655 @@ For sponsor-free episodes of The Indicator from Planet Money, subscribe to Plane
       <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180312_indicator_0312_graphing_calculator_final.mp3?d=509&amp;e=592961699&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="8138651" type="audio/mpeg" />
       <ns0:title>Hurricane Joseph &amp; The Calculator That Time Forgot</ns0:title>
       <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>The Jobs Report: Where The Ladies At?</title>
+      <description>Why has the share of women in the labor force been stagnant for almost two decades?</description>
+      <pubDate>Fri, 09 Mar 2018 14:34:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/03/09/592372971/the-jobs-report-where-the-ladies-at</link>
+      <guid isPermaLink="false">592372971</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180309_indicator_0309_femal_labor_force_final.mp3?orgId=1&amp;d=471&amp;p=510325&amp;story=592372971&amp;t=podcast&amp;e=592372971&amp;ft=pod&amp;f=510325" length="7536086" type="audio/mpeg" />
+      <ns0:title>The Jobs Report: Where The Ladies At?</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Let's Get Ready to Retail!</title>
+      <description>In the red corner: the uncontested retail champion of the world: WalMart. In the blue corner, the behemoth of online sales: Amazon.</description>
+      <pubDate>Thu, 08 Mar 2018 15:57:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/03/08/592036102/lets-get-ready-to-retail</link>
+      <guid isPermaLink="false">592036102</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180308_indicator_0308_amazalmart_final.mp3?orgId=1&amp;d=500&amp;p=510325&amp;story=592036102&amp;t=podcast&amp;e=592036102&amp;ft=pod&amp;f=510325" length="7994786" type="audio/mpeg" />
+      <ns0:title>Let's Get Ready to Retail!</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>A Child Prodigy, A Nervous Breakdown, and The Discovery of Romantic Poetry</title>
+      <description>What happens when a classical economist finds out the world is much more complicated than he thought?</description>
+      <pubDate>Wed, 07 Mar 2018 15:21:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/03/07/591646010/a-child-prodigy-a-nervous-breakdown-and-the-discovery-of-romantic-poetry</link>
+      <guid isPermaLink="false">591646010</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180307_indicator_0307_tyler_cowen_favorites_final_final.mp3?orgId=1&amp;d=440&amp;p=510325&amp;story=591646010&amp;t=podcast&amp;e=591646010&amp;ft=pod&amp;f=510325" length="7033601" type="audio/mpeg" />
+      <ns0:title>A Child Prodigy, A Nervous Breakdown, and The Discovery of Romantic Poetry</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Cobalt: Rare and Everywhere</title>
+      <description>Cobalt used to be a sideshow on the periodic table. Now it's the main event.</description>
+      <pubDate>Tue, 06 Mar 2018 16:06:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/03/06/591264651/cobalt-rare-and-everywhere</link>
+      <guid isPermaLink="false">591264651</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180306_indicator_0306_cobalt_final.mp3?orgId=1&amp;d=742&amp;p=510325&amp;story=591264651&amp;t=podcast&amp;e=591264651&amp;ft=pod&amp;f=510325" length="11874137" type="audio/mpeg" />
+      <ns0:title>Cobalt: Rare and Everywhere</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Sticker Shock: The State Of The American Car Industry</title>
+      <description>The average American car is now more expensive than it's ever been. And guess what? Sales of new cars are falling.</description>
+      <pubDate>Mon, 05 Mar 2018 16:40:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/03/05/590970916/sticker-shock-the-state-of-the-american-car-industry</link>
+      <guid isPermaLink="false">590970916</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180305_indicator_0305_car_talk_w_sonari_final_3.mp3?orgId=1&amp;p=510325&amp;story=590970916&amp;t=podcast&amp;e=590970916&amp;ft=pod&amp;f=510325" length="6460581" type="audio/mpeg" />
+      <ns0:title>Sticker Shock: The State Of The American Car Industry</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Oil's Magic Price</title>
+      <description>There's a sweet spot for every oil well in America.</description>
+      <pubDate>Fri, 02 Mar 2018 15:56:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/03/02/590375048/oils-magic-price</link>
+      <guid isPermaLink="false">590375048</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180302_indicator_0302_baker_hughes_final.mp3?orgId=1&amp;d=319&amp;p=510325&amp;story=590375048&amp;t=podcast&amp;e=590375048&amp;ft=pod&amp;f=510325" length="5106227" type="audio/mpeg" />
+      <ns0:title>Oil's Magic Price</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>The Cost of Life in America</title>
+      <description>Over the past two decades, prices on average have increased. But certain things have gotten cheaper while others have gotten more expensive, and which is which can tell us a lot.</description>
+      <pubDate>Thu, 01 Mar 2018 16:04:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/03/01/590017044/the-cost-of-life-in-america</link>
+      <guid isPermaLink="false">590017044</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180301_indicator_0301_cost_of_life_final.mp3?orgId=1&amp;d=477&amp;p=510325&amp;story=590017044&amp;t=podcast&amp;e=590017044&amp;ft=pod&amp;f=510325" length="7626575" type="audio/mpeg" />
+      <ns0:title>The Cost of Life in America</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>More Band For Your Buck</title>
+      <description>To understand the Trump administration's approach to trade tariffs, look no further than the humble rubber band.</description>
+      <pubDate>Wed, 28 Feb 2018 16:02:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/02/28/589591745/more-band-for-your-buck</link>
+      <guid isPermaLink="false">589591745</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180228_indicator_0228_rubber_bands_final.mp3?orgId=1&amp;d=536&amp;p=510325&amp;story=589591745&amp;t=podcast&amp;e=589591745&amp;ft=pod&amp;f=510325" length="8574416" type="audio/mpeg" />
+      <ns0:title>More Band For Your Buck</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>The Case For Overshooting</title>
+      <description>We have a new Federal Reserve chair. His name is Jerome Powell. Here's what we can expect.</description>
+      <pubDate>Tue, 27 Feb 2018 15:59:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/02/27/589278128/the-case-for-overshooting</link>
+      <guid isPermaLink="false">589278128</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180227_indicator_0227_powell_final.mp3?orgId=1&amp;d=508&amp;p=510325&amp;story=589278128&amp;t=podcast&amp;e=589278128&amp;ft=pod&amp;f=510325" length="8124890" type="audio/mpeg" />
+      <ns0:title>The Case For Overshooting</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Productivity With A Side Of Chicken</title>
+      <description>Why productivity could be the most important data point in the economy...and how did KFC manage to run out of chicken?</description>
+      <pubDate>Mon, 26 Feb 2018 16:09:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/02/26/588928689/productivity-with-a-side-of-chicken</link>
+      <guid isPermaLink="false">588928689</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180226_indicator_0226_2_minute_explainers_final.mp3?orgId=1&amp;d=510&amp;p=510325&amp;story=588928689&amp;t=podcast&amp;e=588928689&amp;ft=pod&amp;f=510325" length="8160335" type="audio/mpeg" />
+      <ns0:title>Productivity With A Side Of Chicken</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Guns And The Trump Slump</title>
+      <description>Today more than two thirds of the guns in America are owned by just 20 percent of gun owners. That's not always good for gunmakers.</description>
+      <pubDate>Fri, 23 Feb 2018 16:04:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/02/23/588370876/guns-and-the-trump-slump</link>
+      <guid isPermaLink="false">588370876</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180223_indicator_0223_guns_final_2.mp3?orgId=1&amp;d=445&amp;p=510325&amp;story=588370876&amp;t=podcast&amp;e=588370876&amp;ft=pod&amp;f=510325" length="7116584" type="audio/mpeg" />
+      <ns0:title>Guns And The Trump Slump</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>The 28-Hour Work Week</title>
+      <description>Imagine being able to work fewer hours during a difficult time in your life, without having to quit your job or interrupt your career. In Germany, for many workers, that's now a reality.</description>
+      <pubDate>Thu, 22 Feb 2018 15:55:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/02/22/588059313/the-28-hour-work-week</link>
+      <guid isPermaLink="false">588059313</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180222_indicator_0222_work_week_final.mp3?orgId=1&amp;d=416&amp;p=510325&amp;story=588059313&amp;t=podcast&amp;e=588059313&amp;ft=pod&amp;f=510325" length="6662888" type="audio/mpeg" />
+      <ns0:title>The 28-Hour Work Week</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>The Olympics, Afrofuturism and Sichuan Food</title>
+      <description>Our guest, Tyler Cowen, has smart insights into a ridiculously wide range of subjects. Our conversation is a lightning round that touches everything from Afrofuturist flicks to the mouth-numbing qualities of the Sichuan peppercorn.</description>
+      <pubDate>Wed, 21 Feb 2018 15:59:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/02/21/587729163/the-olympics-afrofuturism-and-sichuan-food</link>
+      <guid isPermaLink="false">587729163</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180221_indicator_0221_tyler_over_under_final.mp3?orgId=1&amp;d=423&amp;p=510325&amp;story=587729163&amp;t=podcast&amp;e=587729163&amp;ft=pod&amp;f=510325" length="6765887" type="audio/mpeg" />
+      <ns0:title>The Olympics, Afrofuturism and Sichuan Food</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>The Spy Who Trolled Me</title>
+      <description>Russia spent 73 million Rubles a month to influence an American election. But what did they get for their money?</description>
+      <pubDate>Tue, 20 Feb 2018 16:06:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/02/20/587369589/the-spy-who-trolled-me</link>
+      <guid isPermaLink="false">587369589</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180220_indicator_0220_russia_indictment_final.mp3?orgId=1&amp;d=384&amp;p=510325&amp;story=587369589&amp;t=podcast&amp;e=587369589&amp;ft=pod&amp;f=510325" length="6144140" type="audio/mpeg" />
+      <ns0:title>The Spy Who Trolled Me</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Craft Beer Hops the Shark</title>
+      <description>As craft beer exploded over the last decade, the hops business boomed. Then came the bust.</description>
+      <pubDate>Fri, 16 Feb 2018 15:58:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/02/16/586600403/craft-beer-hops-the-shark</link>
+      <guid isPermaLink="false">586600403</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180216_indicator_0216_hops_final.mp3?orgId=1&amp;d=362&amp;p=510325&amp;story=586600403&amp;t=podcast&amp;e=586600403&amp;ft=pod&amp;f=510325" length="5798447" type="audio/mpeg" />
+      <ns0:title>Craft Beer Hops the Shark</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Overshooting, Tipping Points, and ABBA</title>
+      <description>How a classic econ book explains ABBA's costumes (among other things).</description>
+      <pubDate>Thu, 15 Feb 2018 16:08:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/02/15/586151683/overshooting-tipping-points-and-abba</link>
+      <guid isPermaLink="false">586151683</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180215_indicator_coylefinal.mp3?orgId=1&amp;d=357&amp;p=510325&amp;story=586151683&amp;t=podcast&amp;e=586151683&amp;ft=pod&amp;f=510325" length="5716653" type="audio/mpeg" />
+      <ns0:title>Overshooting, Tipping Points, and ABBA</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Stimulus Response</title>
+      <description>An economist from the Obama administration thinks the economy still needs stimulus. Will the Republican tax and spending bills provide it?</description>
+      <pubDate>Wed, 14 Feb 2018 15:59:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/02/14/585840266/stimulus-response</link>
+      <guid isPermaLink="false">585840266</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180214_indicator_0214_bernstein_final.mp3?orgId=1&amp;d=390&amp;p=510325&amp;story=585840266&amp;t=podcast&amp;e=585840266&amp;ft=pod&amp;f=510325" length="6244637" type="audio/mpeg" />
+      <ns0:title>Stimulus Response</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Sanctions on Ice</title>
+      <description>A story of sanctions, the Olympics, and a secret wing of the North Korean government.</description>
+      <pubDate>Tue, 13 Feb 2018 16:04:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/02/13/585530189/sanctions-on-ice</link>
+      <guid isPermaLink="false">585530189</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180213_indicator_0213_north_korea_sanctions_final.mp3?orgId=1&amp;d=321&amp;p=510325&amp;story=585530189&amp;t=podcast&amp;e=585530189&amp;ft=pod&amp;f=510325" length="5135417" type="audio/mpeg" />
+      <ns0:title>Sanctions on Ice</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Fear: The Index</title>
+      <description>An index that was invented to measure people's expectations about the stock market may be driving the market itself.</description>
+      <pubDate>Mon, 12 Feb 2018 15:43:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/02/12/585143966/fear-the-index</link>
+      <guid isPermaLink="false">585143966</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180212_indicator_0212_vix_finalv4.mp3?orgId=1&amp;d=435&amp;p=510325&amp;story=585143966&amp;t=podcast&amp;e=585143966&amp;ft=pod&amp;f=510325" length="7008998" type="audio/mpeg" />
+      <ns0:title>Fear: The Index</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>The Job Market Is Almost There</title>
+      <description>Today on the show: What our three favorite jobs numbers tell us about the state of the economy.</description>
+      <pubDate>Fri, 09 Feb 2018 15:59:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/02/09/584617938/the-job-market-is-almost-there</link>
+      <guid isPermaLink="false">584617938</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180209_indicator_0209_sam_sanders_final.mp3?orgId=1&amp;d=516&amp;p=510325&amp;story=584617938&amp;t=podcast&amp;e=584617938&amp;ft=pod&amp;f=510325" length="8261666" type="audio/mpeg" />
+      <ns0:title>The Job Market Is Almost There</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>The Market for Stolen Passwords</title>
+      <description>A stolen Amazon password costs $10. Bank of America is $25. What a price list discovered on the dark web says about about the market for your stolen passwords.</description>
+      <pubDate>Thu, 08 Feb 2018 15:06:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/02/08/584302052/the-market-for-stolen-passwords</link>
+      <guid isPermaLink="false">584302052</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180208_indicator_0208_passwords_final.mp3?orgId=1&amp;d=413&amp;p=510325&amp;story=584302052&amp;t=podcast&amp;e=584302052&amp;ft=pod&amp;f=510325" length="6616601" type="audio/mpeg" />
+      <ns0:title>The Market for Stolen Passwords</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Obama, Trump, And Trade</title>
+      <description>President Trump's new tariff on solar panels kicks in this week. But the story of where that tariff comes from goes back to the Obama administration.</description>
+      <pubDate>Wed, 07 Feb 2018 14:42:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/02/07/584007212/obama-trump-and-trade</link>
+      <guid isPermaLink="false">584007212</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180207_indicator_0207_tariffs_final.mp3?orgId=1&amp;d=318&amp;p=510325&amp;story=584007212&amp;t=podcast&amp;e=584007212&amp;ft=pod&amp;f=510325" length="5092049" type="audio/mpeg" />
+      <ns0:title>Obama, Trump, And Trade</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Dow De Ching</title>
+      <description>The stock market's drop over the past few days wasn't weird. What was weird was what the market did for all of 2017.</description>
+      <pubDate>Tue, 06 Feb 2018 16:36:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/02/06/583771088/dow-de-ching</link>
+      <guid isPermaLink="false">583771088</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180206_indicator_0206_stocks_final2.mp3?orgId=1&amp;d=334&amp;p=510325&amp;story=583771088&amp;t=podcast&amp;e=583771088&amp;ft=pod&amp;f=510325" length="5351006" type="audio/mpeg" />
+      <ns0:title>Dow De Ching</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Wells Fargo's Corset</title>
+      <description>The Federal Reserve just told Wells Fargo it can't grow. On today's show: Why that's a big deal for Wells Fargo, and for other big banks.</description>
+      <pubDate>Mon, 05 Feb 2018 15:59:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/02/05/583456932/wells-fargos-corset</link>
+      <guid isPermaLink="false">583456932</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180207_indicator_0205_wells_final_slack.mp3?orgId=1&amp;d=322&amp;p=510325&amp;story=583456932&amp;t=podcast&amp;e=583456932&amp;ft=pod&amp;f=510325" length="5160443" type="audio/mpeg" />
+      <ns0:title>Wells Fargo's Corset</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>How Are They Doing Now?</title>
+      <description>We look at three groups that got hammered especially hard during the recession and ask: How are they doing now?</description>
+      <pubDate>Fri, 02 Feb 2018 16:01:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/02/02/582841254/how-are-they-doing-now</link>
+      <guid isPermaLink="false">582841254</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180202_indicator_0202_jobs_final.mp3?orgId=1&amp;d=335&amp;p=510325&amp;story=582841254&amp;t=podcast&amp;e=582841254&amp;ft=pod&amp;f=510325" length="5355593" type="audio/mpeg" />
+      <ns0:title>How Are They Doing Now?</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>What America Sells To The World</title>
+      <description>U.S. exports include airplanes, education and lots of blood.</description>
+      <pubDate>Thu, 01 Feb 2018 15:59:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/02/01/582509923/what-america-sells-to-the-world</link>
+      <guid isPermaLink="false">582509923</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180201_indicator_0201_trade_final.mp3?orgId=1&amp;d=374&amp;p=510325&amp;story=582509923&amp;t=podcast&amp;e=582509923&amp;ft=pod&amp;f=510325" length="5991518" type="audio/mpeg" />
+      <ns0:title>What America Sells To The World</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Janet Yellen's Mystery Story</title>
+      <description>It's Janet Yellen's last week running the Federal Reserve. A speech she gave last year illuminates an economic mystery — and the boldness she brought to the Fed.</description>
+      <pubDate>Wed, 31 Jan 2018 16:01:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/01/31/582222698/janet-yellens-mystery-story</link>
+      <guid isPermaLink="false">582222698</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180131_indicator_0131_yellen_final_2.mp3?orgId=1&amp;d=408&amp;p=510325&amp;story=582222698&amp;t=podcast&amp;e=582222698&amp;ft=pod&amp;f=510325" length="6527363" type="audio/mpeg" />
+      <ns0:title>Janet Yellen's Mystery Story</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Weed GDP</title>
+      <description>When Canada decided to legalize marijuana, James Tebrake decided to learn everything he could about Canada's marijuana economy.</description>
+      <pubDate>Tue, 30 Jan 2018 15:44:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/01/30/581921246/weed-gdp</link>
+      <guid isPermaLink="false">581921246</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180130_indicator_0130_canada_weed_final.mp3?orgId=1&amp;d=364&amp;p=510325&amp;story=581921246&amp;t=podcast&amp;e=581921246&amp;ft=pod&amp;f=510325" length="5830973" type="audio/mpeg" />
+      <ns0:title>Weed GDP</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>The Black Car Fund</title>
+      <description>There's lots of talk about the problems of the gig economy. On today's show, we talk about a solution.</description>
+      <pubDate>Mon, 29 Jan 2018 14:46:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/01/29/581626325/the-black-car-fund</link>
+      <guid isPermaLink="false">581626325</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180129_indicator_0129_black_car_final.mp3?orgId=1&amp;d=417&amp;p=510325&amp;story=581626325&amp;t=podcast&amp;e=581626325&amp;ft=pod&amp;f=510325" length="6672062" type="audio/mpeg" />
+      <ns0:title>The Black Car Fund</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Amazon, IPOs, and the Queen of the Demonweb Pits</title>
+      <description>We play overrated/underrated with Glenn Kelman, CEO of Redfin. Topics include home ownership, taking a company public, and twin telepathy.</description>
+      <pubDate>Fri, 26 Jan 2018 15:36:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/01/26/581128170/amazon-ipos-and-the-queen-of-the-demonweb-pits</link>
+      <guid isPermaLink="false">581128170</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180126_indicator_0126_glen_over_under_final_2.mp3?orgId=1&amp;d=436&amp;p=510325&amp;story=581128170&amp;t=podcast&amp;e=581128170&amp;ft=pod&amp;f=510325" length="6984395" type="audio/mpeg" />
+      <ns0:title>Amazon, IPOs, and the Queen of the Demonweb Pits</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>A Mafia Story With a Twist</title>
+      <description>Today on the show: citrus, globalization, and the birth of the mafia.</description>
+      <pubDate>Thu, 25 Jan 2018 15:55:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/01/25/580820776/a-mafia-story-with-a-twist</link>
+      <guid isPermaLink="false">580820776</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180125_indicator_0125_mafia_final_2.mp3?orgId=1&amp;d=471&amp;p=510325&amp;story=580820776&amp;t=podcast&amp;e=580820776&amp;ft=pod&amp;f=510325" length="7533167" type="audio/mpeg" />
+      <ns0:title>A Mafia Story With a Twist</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>A Long-Term Bet Gone Bust</title>
+      <description>Long-term-care insurance seemed like the next big thing. Then insurance companies started losing billions of dollars. What went wrong?</description>
+      <pubDate>Wed, 24 Jan 2018 15:57:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/01/24/580429420/a-long-term-bet-gone-bust</link>
+      <guid isPermaLink="false">580429420</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180124_indicator_0124_ltc_insurance_final.mp3?orgId=1&amp;d=390&amp;p=510325&amp;story=580429420&amp;t=podcast&amp;e=580429420&amp;ft=pod&amp;f=510325" length="6245888" type="audio/mpeg" />
+      <ns0:title>A Long-Term Bet Gone Bust</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Google Selfies</title>
+      <description>Today's Indicator: Your face. It's worth money. It's the next big thing. And, if you're like most of us, you're giving it away.</description>
+      <pubDate>Tue, 23 Jan 2018 15:58:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/01/23/580072616/google-selfies</link>
+      <guid isPermaLink="false">580072616</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180123_indicator_0123_selfies_almost_final.mp3?orgId=1&amp;d=324&amp;p=510325&amp;story=580072616&amp;t=podcast&amp;e=580072616&amp;ft=pod&amp;f=510325" length="5182955" type="audio/mpeg" />
+      <ns0:title>Google Selfies</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>I Can't Believe It's Not Budget</title>
+      <description>The government shutdown was a symptom of a bigger problem: Congress seems incapable of passing a proper budget.</description>
+      <pubDate>Mon, 22 Jan 2018 16:15:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/01/22/579783785/i-cant-believe-its-not-budget</link>
+      <guid isPermaLink="false">579783785</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180122_indicator_0122_shutdown_final_3.mp3?orgId=1&amp;d=357&amp;p=510325&amp;story=579783785&amp;t=podcast&amp;e=579783785&amp;ft=pod&amp;f=510325" length="5708792" type="audio/mpeg" />
+      <ns0:title>I Can't Believe It's Not Budget</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>The Rise and Fall and Rise of Oil Prices</title>
+      <description>Last summer, the price of oil was $44 a barrel. This week, it briefly hit $70. What happened? And what does it mean for the future of oil prices?</description>
+      <pubDate>Fri, 19 Jan 2018 16:03:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/01/19/579229468/the-rise-and-fall-and-rise-of-oil-prices</link>
+      <guid isPermaLink="false">579229468</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180119_indicator_0119_oil_final.mp3?orgId=1&amp;d=424&amp;p=510325&amp;story=579229468&amp;t=podcast&amp;e=579229468&amp;ft=pod&amp;f=510325" length="6779231" type="audio/mpeg" />
+      <ns0:title>The Rise and Fall and Rise of Oil Prices</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>The Beigies</title>
+      <description>Welcome to the Beigies, the only awards show honoring the best economic stories in the Fed's Beige Book.</description>
+      <pubDate>Thu, 18 Jan 2018 16:09:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/01/18/578954679/the-beigies</link>
+      <guid isPermaLink="false">578954679</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180118_indicator_0118_beigies_final.mp3?orgId=1&amp;d=559&amp;p=510325&amp;story=578954679&amp;t=podcast&amp;e=578954679&amp;ft=pod&amp;f=510325" length="8948882" type="audio/mpeg" />
+      <ns0:title>The Beigies</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Saudi Arabia After Oil: An IPO, Tech Jobs, and Yanni</title>
+      <description>The young crown prince is trying to figure out how to save his country before the money runs out.</description>
+      <pubDate>Wed, 17 Jan 2018 16:02:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/01/17/578663186/saudi-arabia-after-oil-an-ipo-tech-jobs-and-yanni</link>
+      <guid isPermaLink="false">578663186</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180117_indicator_0117_saudi_arabia_final.mp3?orgId=1&amp;d=439&amp;p=510325&amp;story=578663186&amp;t=podcast&amp;e=578663186&amp;ft=pod&amp;f=510325" length="7024435" type="audio/mpeg" />
+      <ns0:title>Saudi Arabia After Oil: An IPO, Tech Jobs, and Yanni</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>The Case For Earmarks</title>
+      <description>Congressional earmarks have a bad reputation. But, our guest argues, they're just what America needs.</description>
+      <pubDate>Tue, 16 Jan 2018 15:59:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/01/16/578413567/the-case-for-earmarks</link>
+      <guid isPermaLink="false">578413567</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180116_indicator_0116_earmarks_final_2.mp3?orgId=1&amp;d=428&amp;p=510325&amp;story=578413567&amp;t=podcast&amp;e=578413567&amp;ft=pod&amp;f=510325" length="6845951" type="audio/mpeg" />
+      <ns0:title>The Case For Earmarks</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>The Recession Predictor</title>
+      <description>There's a warning sign for the economy with an amazing track record. It's not flashing now, but it's close enough to make us nervous.</description>
+      <pubDate>Fri, 12 Jan 2018 16:00:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/01/12/577709190/the-recession-predictor</link>
+      <guid isPermaLink="false">577709190</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180112_indicator_0112_yield_curve_final.mp3?orgId=1&amp;d=545&amp;p=510325&amp;story=577709190&amp;t=podcast&amp;e=577709190&amp;ft=pod&amp;f=510325" length="8718281" type="audio/mpeg" />
+      <ns0:title>The Recession Predictor</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Such Cryptocurrency. So Amaze.</title>
+      <description>Dogecoin, a bitcoin spinoff created as a joke, is now worth $1.4 billion. The coin's creator tells us how the joke became real — and explains why he has mixed feelings about the whole thing.</description>
+      <pubDate>Thu, 11 Jan 2018 15:56:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/01/11/577434458/such-cryptocurrency-so-amaze</link>
+      <guid isPermaLink="false">577434458</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180111_indicator_0111_doge_finalv2.mp3?orgId=1&amp;d=490&amp;p=510325&amp;story=577434458&amp;t=podcast&amp;e=577434458&amp;ft=pod&amp;f=510325" length="7844666" type="audio/mpeg" />
+      <ns0:title>Such Cryptocurrency. So Amaze.</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>The War On Coal</title>
+      <description>President Trump's Energy Secretary, Rick Perry, had a plan to prop up the coal industry. This week, a federal commission—led by a Trump appointee—rejected it.</description>
+      <pubDate>Wed, 10 Jan 2018 15:47:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/01/10/577036632/the-war-on-coal</link>
+      <guid isPermaLink="false">577036632</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180110_indicator_v2_0110_coal_final.mp3?orgId=1&amp;d=275&amp;p=510325&amp;story=577036632&amp;t=podcast&amp;e=577036632&amp;ft=pod&amp;f=510325" length="4403999" type="audio/mpeg" />
+      <ns0:title>The War On Coal</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Why Quitting Is Awesome</title>
+      <description>The state of the American job market, as revealed by jobs numbers released this morning.</description>
+      <pubDate>Tue, 09 Jan 2018 15:42:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/01/09/576852329/why-quitting-is-awesome</link>
+      <guid isPermaLink="false">576852329</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180109_indicator_0109_jolts_final.mp3?orgId=1&amp;d=368&amp;p=510325&amp;story=576852329&amp;t=podcast&amp;e=576852329&amp;ft=pod&amp;f=510325" length="5877677" type="audio/mpeg" />
+      <ns0:title>Why Quitting Is Awesome</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>What To Do About Inequality</title>
+      <description>A lot of popular plans for boosting middle-class wages don't work as well as as they used to. Here are a few ideas that might work now.</description>
+      <pubDate>Mon, 08 Jan 2018 15:52:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/01/08/576563462/what-to-do-about-inequality</link>
+      <guid isPermaLink="false">576563462</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180108_indicator_0108_inequality_final.mp3?orgId=1&amp;d=426&amp;p=510325&amp;story=576563462&amp;t=podcast&amp;e=576563462&amp;ft=pod&amp;f=510325" length="6814259" type="audio/mpeg" />
+      <ns0:title>What To Do About Inequality</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Hidden Gems of the Jobs Report</title>
+      <description>Here are three illuminating but largely overlooked numbers from today's jobs report.</description>
+      <pubDate>Fri, 05 Jan 2018 15:35:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/01/05/576048959/hidden-gems-of-the-jobs-report</link>
+      <guid isPermaLink="false">576048959</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180105_indicator_0105jobsfinalv2.mp3?orgId=1&amp;d=366&amp;p=510325&amp;story=576048959&amp;t=podcast&amp;e=576048959&amp;ft=pod&amp;f=510325" length="5864339" type="audio/mpeg" />
+      <ns0:title>Hidden Gems of the Jobs Report</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Just Another Manic January</title>
+      <description>It's going to be a huge month for economic policy.</description>
+      <pubDate>Thu, 04 Jan 2018 16:03:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/01/04/575761065/just-another-manic-january</link>
+      <guid isPermaLink="false">575761065</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180104_indicator_0104_manic_january_final.mp3?orgId=1&amp;d=355&amp;p=510325&amp;story=575761065&amp;t=podcast&amp;e=575761065&amp;ft=pod&amp;f=510325" length="5676266" type="audio/mpeg" />
+      <ns0:title>Just Another Manic January</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Corruption, Protests, and the Price of Eggs in Iran</title>
+      <description>Thousands of people are protesting in the streets of Iran. Part of the reason: the price of eggs just went through the roof.</description>
+      <pubDate>Wed, 03 Jan 2018 16:03:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/01/03/575428585/corruption-protests-and-the-price-of-eggs-in-iran</link>
+      <guid isPermaLink="false">575428585</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180103_indicator_0103_iran_final.mp3?orgId=1&amp;d=361&amp;p=510325&amp;story=575428585&amp;t=podcast&amp;e=575428585&amp;ft=pod&amp;f=510325" length="5784686" type="audio/mpeg" />
+      <ns0:title>Corruption, Protests, and the Price of Eggs in Iran</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>The Next Debt Crunch</title>
+      <description>The U.S. economy is doing great. Here's something to worry about.</description>
+      <pubDate>Tue, 02 Jan 2018 15:58:00 -0500</pubDate>
+      <link>https://www.npr.org/2018/01/02/575166434/the-next-debt-crunch</link>
+      <guid isPermaLink="false">575166434</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180102_indicator_0102_reasons_to_worry_final.mp3?orgId=1&amp;d=455&amp;p=510325&amp;story=575166434&amp;t=podcast&amp;e=575166434&amp;ft=pod&amp;f=510325" length="7282550" type="audio/mpeg" />
+      <ns0:title>The Next Debt Crunch</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>The 50-Year Newspaper</title>
+      <description>Daily news coverage gives us a lopsided view of the world. What would the top stories be if we only got a news update once every 50 years?</description>
+      <pubDate>Fri, 29 Dec 2017 15:28:00 -0500</pubDate>
+      <link>https://www.npr.org/2017/12/29/574662798/the-50-year-newspaper</link>
+      <guid isPermaLink="false">574662798</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171229_indicator_1229_fifty_year_newspaper_final.mp3?orgId=1&amp;d=442&amp;p=510325&amp;story=574662798&amp;t=podcast&amp;e=574662798&amp;ft=pod&amp;f=510325" length="7067795" type="audio/mpeg" />
+      <ns0:title>The 50-Year Newspaper</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Our Indicators Of The Year</title>
+      <description>Despite all the protectionist rhetoric, global trade grew really quickly this year. Also: a crazy, 80-year ride from sun god to TMI.</description>
+      <pubDate>Wed, 27 Dec 2017 16:00:00 -0500</pubDate>
+      <link>https://www.npr.org/2017/12/27/573861613/our-indicators-of-the-year</link>
+      <guid isPermaLink="false">573861613</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171227_indicator_12227_noty_final_2.mp3?orgId=1&amp;d=550&amp;p=510325&amp;story=573861613&amp;t=podcast&amp;e=573861613&amp;ft=pod&amp;f=510325" length="8798345" type="audio/mpeg" />
+      <ns0:title>Our Indicators Of The Year</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>How Airfare Is Changing</title>
+      <description>Why some routes are getting more expensive while others are getting cheaper.</description>
+      <pubDate>Fri, 22 Dec 2017 15:35:00 -0500</pubDate>
+      <link>https://www.npr.org/2017/12/22/573018682/how-airfare-is-changing</link>
+      <guid isPermaLink="false">573018682</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171222_indicator_1222_airfare_final.mp3?orgId=1&amp;d=341&amp;p=510325&amp;story=573018682&amp;t=podcast&amp;e=573018682&amp;ft=pod&amp;f=510325" length="5466098" type="audio/mpeg" />
+      <ns0:title>How Airfare Is Changing</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Could The Republican Tax Bill Help Democrats Later?</title>
+      <description>The Democrats have been struggling with a problem for a while now. The new tax bill could ultimately help them solve it.</description>
+      <pubDate>Wed, 20 Dec 2017 15:39:00 -0500</pubDate>
+      <link>https://www.npr.org/2017/12/20/572351839/could-the-republican-tax-bill-help-democrats-later</link>
+      <guid isPermaLink="false">572351839</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171220_indicator_1220_taxes_barro_final_v2.mp3?orgId=1&amp;d=418&amp;p=510325&amp;story=572351839&amp;t=podcast&amp;e=572351839&amp;ft=pod&amp;f=510325" length="6681236" type="audio/mpeg" />
+      <ns0:title>Could The Republican Tax Bill Help Democrats Later?</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>The Toll Also Rises</title>
+      <description>Basic economics says a new toll for commuters makes everybody better off. But what if basic economics is wrong?</description>
+      <pubDate>Mon, 18 Dec 2017 15:59:00 -0500</pubDate>
+      <link>https://www.npr.org/2017/12/18/571728752/the-toll-also-rises</link>
+      <guid isPermaLink="false">571728752</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171218_indicator_1218_toll_road_finalv2.mp3?orgId=1&amp;d=387&amp;p=510325&amp;story=571728752&amp;t=podcast&amp;e=571728752&amp;ft=pod&amp;f=510325" length="6193354" type="audio/mpeg" />
+      <ns0:title>The Toll Also Rises</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Forget Neutrality</title>
+      <description>Most Americans have at most one choice for broadband internet. On today's show: How it got that way, and what it means for the debate over net neutrality.</description>
+      <pubDate>Fri, 15 Dec 2017 15:48:00 -0500</pubDate>
+      <link>https://www.npr.org/2017/12/15/571176019/forget-neutrality</link>
+      <guid isPermaLink="false">571176019</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171215_indicator_1215_net_neutrality_final.mp3?orgId=1&amp;d=451&amp;p=510325&amp;story=571176019&amp;t=podcast&amp;e=571176019&amp;ft=pod&amp;f=510325" length="7215836" type="audio/mpeg" />
+      <ns0:title>Forget Neutrality</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Full Employment: Are We There Yet?</title>
+      <description>Why is it so hard to figure out when the economy is at full employment? And why does the Fed keep getting it wrong?</description>
+      <pubDate>Wed, 13 Dec 2017 15:52:00 -0500</pubDate>
+      <link>https://www.npr.org/2017/12/13/570574239/full-employment-are-we-there-yet</link>
+      <guid isPermaLink="false">570574239</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171213_indicator_1213_kocherlakota_final.mp3?orgId=1&amp;d=365&amp;p=510325&amp;story=570574239&amp;t=podcast&amp;e=570574239&amp;ft=pod&amp;f=510325" length="5836819" type="audio/mpeg" />
+      <ns0:title>Full Employment: Are We There Yet?</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Bitcoin, Unemployment, and Mythical Beasts</title>
+      <description>Our guest, Tyler Cowen, has smart insights into a ridiculously wide range of subjects. Our conversation is a lightning round that touches everything from the stock market to dystopian novels.</description>
+      <pubDate>Mon, 11 Dec 2017 15:36:00 -0500</pubDate>
+      <link>https://www.npr.org/2017/12/11/569932205/bitcoin-unemployment-and-mythical-beasts</link>
+      <guid isPermaLink="false">569932205</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171211_indicator_1211_tyler_cowen_final.mp3?orgId=1&amp;d=445&amp;p=510325&amp;story=569932205&amp;t=podcast&amp;e=569932205&amp;ft=pod&amp;f=510325" length="7112837" type="audio/mpeg" />
+      <ns0:title>Bitcoin, Unemployment, and Mythical Beasts</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Where's My Raise?</title>
+      <description>The unemployment rate is really low, but wages are barely rising. What's going on?</description>
+      <pubDate>Fri, 08 Dec 2017 14:32:00 -0500</pubDate>
+      <link>https://www.npr.org/2017/12/08/569461387/wheres-my-raise</link>
+      <guid isPermaLink="false">569461387</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171208_indicator_1208_wages_final_v3.mp3?orgId=1&amp;d=477&amp;p=510325&amp;story=569461387&amp;t=podcast&amp;e=569461387&amp;ft=pod&amp;f=510325" length="7628660" type="audio/mpeg" />
+      <ns0:title>Where's My Raise?</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Loopholes And Deficits</title>
+      <description>Republicans have been complaining about deficits forever. This was their big chance to do something. Why didn't they?</description>
+      <pubDate>Wed, 06 Dec 2017 15:41:00 -0500</pubDate>
+      <link>https://www.npr.org/2017/12/06/568901525/loopholes-and-deficits</link>
+      <guid isPermaLink="false">568901525</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171206_indicator_1206_loopholes_and_deficits_final_v2.mp3?orgId=1&amp;d=396&amp;p=510325&amp;story=568901525&amp;t=podcast&amp;e=568901525&amp;ft=pod&amp;f=510325" length="6338045" type="audio/mpeg" />
+      <ns0:title>Loopholes And Deficits</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Power Pinch</title>
+      <description>The history of sexual harassment training videos, and the surprising insight it gives us into the current wave of sexual harassment cases.</description>
+      <pubDate>Mon, 04 Dec 2017 15:53:00 -0500</pubDate>
+      <link>https://www.npr.org/2017/12/04/568341883/power-pinch</link>
+      <guid isPermaLink="false">568341883</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171204_indicator_1204_power_pinch_finalv2.mp3?orgId=1&amp;d=447&amp;p=510325&amp;story=568341883&amp;t=podcast&amp;e=568341883&amp;ft=pod&amp;f=510325" length="7158701" type="audio/mpeg" />
+      <ns0:title>Power Pinch</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Coming Soon</title>
+      <description>A new podcast from the people who make Planet Money.</description>
+      <pubDate>Fri, 01 Dec 2017 12:13:00 -0500</pubDate>
+      <link>https://www.npr.org/2017/12/01/567752488/coming-soon</link>
+      <guid isPermaLink="false">567752488</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171201_indicator_actual_final_trailer_for_feed_1201.mp3?orgId=1&amp;d=60&amp;p=510325&amp;story=567752488&amp;t=podcast&amp;e=567752488&amp;ft=pod&amp;f=510325" length="967085" type="audio/mpeg" />
+      <ns0:title>Coming Soon</ns0:title>
+      <ns0:episodeType>trailer</ns0:episodeType>
       <ns0:explicit>no</ns0:explicit>
     </item>
   </channel>
