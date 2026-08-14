@@ -1,7 +1,10 @@
 # The Indicator — Full History RSS Feed
 
 An unofficial archival RSS feed for NPR's **The Indicator from Planet Money**, covering
-the recovered playable archive from **March 2018** to the present — over **2,000 episodes**.
+the recovered playable archive from **March 2018** to the present.
+
+As of August 14, 2026, the published feed contains **2,136 episodes**, all with
+unique GUIDs, playable enclosure URLs, and positive enclosure byte lengths.
 
 ## Subscribe
 
@@ -39,14 +42,30 @@ A GitHub Actions workflow (`update-feed.yml`) runs every six hours. It:
    enclosure metadata, and non-decreasing episode and known-length counts before
    committing anything.
 
-Historical episodes already in the archive are **never removed**.
+Historical episodes already in the archive are **never removed**. The updater
+must pass the integrity gate before it can commit a changed feed.
 
 The same checks run in the read-only `feed-integrity.yml` workflow on relevant
-pushes and pull requests. Run them locally with:
+pushes and pull requests. Run the unit tests and validate the current feed locally
+with:
+
+```shell
+python -m unittest tests.test_feed_integrity
+python scripts/validate_feed_integrity.py
+```
+
+When reviewing a proposed feed change, compare it with the committed feed to
+reject episode-count or enclosure-length regressions:
 
 ```shell
 python scripts/validate_feed_integrity.py --baseline-ref HEAD
 ```
+
+The validator checks that the XML is readable; every item has a title, valid
+publication date, unique non-empty GUID, HTTP(S) MP3 enclosure, and non-negative
+byte length; items are newest-first; episode count does not decrease; and the
+number of unknown enclosure lengths does not increase. The current feed has
+**zero** unknown enclosure lengths.
 
 ## How the historical archive was recovered
 
@@ -62,12 +81,29 @@ coverage back to 2018, a multi-stage recovery process was run:
    URL for each history entry by probing NPR's audio APIs, Simplecast CDN, and
    affiliate station archives. Results are stored in `indicator_enclosure_map.json`.
 
-3. **Feed build** — `scripts/maintenance/build_complete_feed.py` merged the current NPR feed with all
-   resolved history entries into a single complete `theindicator_feed.xml`.
+3. **Feed build** — `scripts/maintenance/build_complete_feed.py` merged the current
+   NPR feed with all resolved history entries into a single
+   `theindicator_feed.xml`.
 
-A small number of very early episodes could not be matched to a still-accessible
-audio file and are excluded from the feed. These are recorded with status `no_audio`
-in `indicator_enclosure_map.json`.
+4. **Independent completeness audit** — the local archive was compared with NPR,
+   Apple Podcasts, TheTVDB, and other catalog evidence. Candidate omissions were
+   admitted only after first-party identity and audio validation, collision checks,
+   isolated staging, and hash-guarded application. The final audit trail is in
+   `data/audits/indicator_final_catalog_completeness_audit.md` and the associated
+   staging/application reports.
+
+5. **Enclosure-length repair** — 155 legacy entries whose byte length was unknown
+   were measured with one-byte HTTP range probes. All 155 were repaired; no
+   `length="0"` enclosures remain. The measurements and before/after hashes are in
+   `data/audits/indicator_zero_length_repair_report.json`.
+
+Four catalog records remain intentionally outside the RSS. They are Planet Money
+“Two Indicators” compilation pages that reuse existing Indicator segments, not
+missing standalone releases, and have status `no_audio` in
+`indicator_enclosure_map.json`. Two cross-feed/bonus comparison records were also
+excluded because the evidence did not establish them as standalone Indicator feed
+episodes. These exclusions are documented in the audit data rather than silently
+treated as missing episodes.
 
 ## Project structure
 
@@ -75,7 +111,7 @@ in `indicator_enclosure_map.json`.
 
 | File / script | Purpose |
 |---|---|
-| `theindicator_feed.xml` | The published RSS feed (2,000+ episodes) |
+| `theindicator_feed.xml` | The published RSS feed (2,136 episodes as of August 14, 2026) |
 | `theindicator_rss.py` | Automated feed updater (runs every 6 hours) |
 | `theindicator_history.py` | Crawls NPR's archive to build episode history |
 | `recover_enclosures_bulk.py` | Bulk audio-URL recovery for history entries |
@@ -96,6 +132,7 @@ Non-production scripts organized by function (see `scripts/README.md`):
 | `scripts/maintenance/` | Feed build, completeness audit, reconciliation |
 | `scripts/recovery/` | Audio recovery, probing, and identity-resolution tools |
 | `scripts/analysis/` | Analysis, inspection, and reporting tools |
+| `scripts/validate_feed_integrity.py` | Production feed invariant and regression checks |
 
 ### data/
 
