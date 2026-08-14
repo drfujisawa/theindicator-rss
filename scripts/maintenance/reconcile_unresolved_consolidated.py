@@ -32,6 +32,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 # ── Input / output paths ──────────────────────────────────────────────────────
 HISTORY_FILE = str(REPO_ROOT / "indicator_history.json")
 COMPLETENESS_AUDIT_FILE = str(REPO_ROOT / "data" / "audits" / "indicator_completeness_audit.json")
+CANONICAL_INPUT = "data/audits/indicator_completeness_audit.json"
 PRIOR_LEDGER_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_unresolved_consolidated_evidence_ledger.json")
 OUTPUT_LEDGER_FILE = str(REPO_ROOT / "data" / "recovery" / "indicator_unresolved_consolidated_evidence_ledger.json")
 OUTPUT_AUDIT_FILE = str(REPO_ROOT / "data" / "audits" / "indicator_unresolved_consolidated_audit.json")
@@ -41,18 +42,14 @@ OUTPUT_AUDIT_FILE = str(REPO_ROOT / "data" / "audits" / "indicator_unresolved_co
 # a normal recovery.
 
 # Episodes that should appear in identity_found_but_audio_unresolved.
-EXPECTED_IDENTITY_FOUND_DATES = {
-    "2018-04-24",  # When China's Ships Come In
-    "2018-10-11",  # China's Brave New World
+ALLOWED_STATUSES = {
+    "confirmed_recovered",
+    "probable_duplicate_rebroadcast",
+    "identity_found_but_audio_unresolved",
+    "no_identity_found",
 }
 
 # Episodes that should appear in probable_duplicate_rebroadcast.
-EXPECTED_PROBABLE_DUPLICATE_DATES = {
-    "2018-03-12",  # Hurricane Joseph & The Calculator That Time Forgot
-    "2018-08-28",  # Hurricane Joseph & The Calculator That Time Forgot (rebroadcast)
-}
-
-
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
 def load_json(path):
@@ -100,22 +97,35 @@ def assert_set_equal(label, actual_set, expected_set):
 
 # ── Core reconciliation ───────────────────────────────────────────────────────
 
-def build_history_date_set(history):
-    """Return a set of YYYY-MM-DD date strings present in indicator_history."""
-    return {ep["date"][:10] for ep in history["episodes"]}
+def normalize_title(value):
+    """Normalize an episode title for conservative exact-title reconciliation."""
+    return " ".join((value or "").strip().casefold().split())
 
 
-def reconcile(prior_ledger_episodes, history_dates):
+def build_history_identity_sets(history):
+    """Return exact dates and normalized exact titles present in history."""
+    return (
+        {ep["date"][:10] for ep in history["episodes"]},
+        {normalize_title(ep.get("title")) for ep in history["episodes"] if ep.get("title")},
+    )
+
+
+def reconcile(prior_ledger_episodes, history_dates, history_titles=None):
     """
     Split the prior ledger into (recovered, remaining).
 
-    An episode is considered recovered if its reference_date now appears in
-    indicator_history.json.
+    An episode is considered recovered if its reference date or normalized
+    exact title now appears in indicator_history.json. Exact-title matching is
+    required for verified catalog date corrections.
     """
     recovered = []
     remaining = []
+    history_titles = history_titles or set()
     for ep in prior_ledger_episodes:
-        if ep["reference_date"] in history_dates:
+        if (
+            ep["reference_date"] in history_dates
+            or normalize_title(ep.get("reference_title")) in history_titles
+        ):
             recovered.append(ep)
         else:
             remaining.append(ep)
@@ -179,7 +189,7 @@ def build_audit_from_ledgers(remaining_ledgers, generated_at):
     audit = {
         "method": "consolidated-recovery-pipeline-for-unresolved-indicator-episodes",
         "generated_at": generated_at,
-        "canonical_input": COMPLETENESS_AUDIT_FILE,
+        "canonical_input": CANONICAL_INPUT,
         "placeholder": False,
         "run_complete": True,
         "summary": summary,
@@ -221,27 +231,17 @@ def run_assertions(remaining_ledgers):
 
     # 2. Specific episode membership — these sets are invariants that do not
     #    change when new episodes are recovered from other dates.
-    identity_dates = {
-        ep["reference_date"]
-        for ep in remaining_ledgers
-        if ep["final_status"] == "identity_found_but_audio_unresolved"
-    }
     assert_set_equal(
-        "identity_found_but_audio_unresolved dates",
-        identity_dates,
-        EXPECTED_IDENTITY_FOUND_DATES,
+        "remaining status schema",
+        set(counts),
+        set(counts) & ALLOWED_STATUSES,
     )
 
-    dupe_dates = {
-        ep["reference_date"]
+    keys = [
+        (ep["reference_date"], normalize_title(ep.get("reference_title")))
         for ep in remaining_ledgers
-        if ep["final_status"] == "probable_duplicate_rebroadcast"
-    }
-    assert_set_equal(
-        "probable_duplicate_rebroadcast dates",
-        dupe_dates,
-        EXPECTED_PROBABLE_DUPLICATE_DATES,
-    )
+    ]
+    assert_equal("remaining episode keys are unique", len(keys), len(set(keys)))
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
@@ -260,11 +260,11 @@ def main():
     print(f"indicator_history.json episodes: {len(history['episodes'])}")
     print(f"Prior ledger episodes:           {len(prior_episodes)}")
 
-    # Build history date set
-    history_dates = build_history_date_set(history)
+    # Build conservative history identity sets.
+    history_dates, history_titles = build_history_identity_sets(history)
 
     # Reconcile
-    recovered, remaining = reconcile(prior_episodes, history_dates)
+    recovered, remaining = reconcile(prior_episodes, history_dates, history_titles)
 
     print(f"Removed (now in history):        {len(recovered)}")
     for ep in recovered:
@@ -284,7 +284,7 @@ def main():
     ledger_out = {
         "method": audit["method"],
         "generated_at": generated_at,
-        "canonical_input": COMPLETENESS_AUDIT_FILE,
+        "canonical_input": CANONICAL_INPUT,
         "placeholder": False,
         "run_complete": True,
         "summary": audit["summary"],

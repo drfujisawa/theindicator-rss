@@ -1,80 +1,22 @@
 {
   "method": "consolidated-recovery-pipeline-for-unresolved-indicator-episodes",
-  "generated_at": "2026-08-10T07:58:31+00:00",
-  "canonical_input": "indicator_completeness_audit.json",
+  "generated_at": "2026-08-14T04:11:35+00:00",
+  "canonical_input": "data/audits/indicator_completeness_audit.json",
   "placeholder": false,
   "run_complete": true,
   "summary": {
     "confirmed_recovered": 0,
-    "probable_duplicate_rebroadcast": 2,
-    "identity_found_but_audio_unresolved": 2,
-    "no_identity_found": 38,
+    "probable_duplicate_rebroadcast": 0,
+    "identity_found_but_audio_unresolved": 0,
+    "no_identity_found": 31,
     "rejected_false_positive_count": 5,
-    "input_unresolved_count": 42,
-    "unique_missing_production_count_excluding_probable_duplicates": 40
+    "input_unresolved_count": 31,
+    "unique_missing_production_count_excluding_probable_duplicates": 31
   },
   "confirmed_recovered": [],
-  "probable_duplicate_rebroadcast": [
-    {
-      "reference_date": "2018-03-12",
-      "reference_title": "Hurricane Joseph & The Calculator That Time Forgot",
-      "reference_year": 2018,
-      "reference_episode": 1,
-      "evidence_confidence_explanation": "Reference audit links this episode to duplicate/rebroadcast date(s) 2018-08-28. No independent NPR identity chain was established to count both entries as separate missing productions."
-    },
-    {
-      "reference_date": "2018-08-28",
-      "reference_title": "Hurricane Joseph & The Calculator That Time Forgot",
-      "reference_year": 2018,
-      "reference_episode": 119,
-      "evidence_confidence_explanation": "Reference audit links this episode to duplicate/rebroadcast date(s) 2018-03-12. No independent NPR identity chain was established to count both entries as separate missing productions."
-    }
-  ],
-  "identity_found_but_audio_unresolved": [
-    {
-      "reference_date": "2018-04-24",
-      "reference_title": "When China's Ships Come In",
-      "reference_year": 2018,
-      "reference_episode": 31,
-      "evidence_confidence_explanation": "Credible NPR identity evidence was found (story/page/player IDs or URLs), but no strong episode-specific working NPR-hosted audio file could be validated. Candidate audio was rejected as rejected_request_error."
-    },
-    {
-      "reference_date": "2018-10-11",
-      "reference_title": "China's Brave New World",
-      "reference_year": 2018,
-      "reference_episode": 150,
-      "evidence_confidence_explanation": "Credible NPR identity evidence was found (story/page/player IDs or URLs), but no strong episode-specific working NPR-hosted audio file could be validated. Candidate audio was rejected as rejected_request_error."
-    }
-  ],
+  "probable_duplicate_rebroadcast": [],
+  "identity_found_but_audio_unresolved": [],
   "no_identity_found": [
-    {
-      "reference_date": "2018-03-15",
-      "reference_title": "Buying A College Degree: Did Aunt Becky Overpay?",
-      "reference_year": 2019,
-      "reference_episode": 51,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
-    {
-      "reference_date": "2018-04-23",
-      "reference_title": "3 Things You Didn't Know About LA",
-      "reference_year": 2018,
-      "reference_episode": 30,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
-    {
-      "reference_date": "2018-05-29",
-      "reference_title": "Banking's Regulation Rollback",
-      "reference_year": 2018,
-      "reference_episode": 55,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
-    {
-      "reference_date": "2018-06-26",
-      "reference_title": "Sallie Krawcheck on #MeToo, Dodd Frank, & Cronuts",
-      "reference_year": 2018,
-      "reference_episode": 75,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
     {
       "reference_date": "2018-06-29",
       "reference_title": "Dungeons & Dragons & Balance Sheets",
@@ -286,31 +228,10 @@
       "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
     },
     {
-      "reference_date": "2019-03-25",
-      "reference_title": "Spotify's Long, Winding Road To India",
-      "reference_year": 2019,
-      "reference_episode": 57,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
-    {
       "reference_date": "2019-03-27",
       "reference_title": "An Economist in Caracas: Day In The Life",
       "reference_year": 2019,
       "reference_episode": 59,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
-    {
-      "reference_date": "2019-04-09",
-      "reference_title": "Trade War With Cheese: Trump's New EU Tariffs",
-      "reference_year": 2019,
-      "reference_episode": 68,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
-    {
-      "reference_date": "2019-04-26",
-      "reference_title": "Why Superman Doesn't Take Over The World",
-      "reference_year": 2019,
-      "reference_episode": 80,
       "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
     }
   ],

@@ -1,6 +1,6 @@
 {
   "next_date": "2017-11-05T16:46:00-04:00",
-  "episode_count": 1722,
+  "episode_count": 1725,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -13253,6 +13253,25 @@
       ]
     },
     {
+      "title": "Why Superman Doesn't Take Over The World",
+      "date": "2019-04-26",
+      "npr_url": "https://www.npr.org/sections/money/2019/04/26/717651281/why-superman-doesnt-take-over-the-world",
+      "story_id": "717651281",
+      "audio_id": "730095010",
+      "player_url": "https://www.npr.org/player/embed/717645608/730095010",
+      "description": "Why Superman Doesn't Take Over The World",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_batch2",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_remaining_34_ranked_batch2.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "Selling A T-Rex On eBay",
       "date": "2019-04-25",
       "npr_url": "https://www.npr.org/sections/money/2019/04/25/717274444/selling-a-t-rex-on-ebay",
@@ -13473,6 +13492,25 @@
       ]
     },
     {
+      "title": "Trade War With Cheese: Trump's New EU Tariffs",
+      "date": "2019-04-09",
+      "npr_url": "https://www.npr.org/sections/money/2019/04/09/711569150/trade-war-with-cheese-trump-s-new-eu-tariffs",
+      "story_id": "711569150",
+      "audio_id": "730089544",
+      "player_url": "https://www.npr.org/player/embed/711568666/730089544",
+      "description": "Trade War With Cheese: Trump's New EU Tariffs",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_batch2",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_remaining_34_ranked_batch2.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "How To Measure Happiness",
       "date": "2019-04-08",
       "npr_url": "https://www.npr.org/sections/money/2019/04/08/711132741/how-to-measure-happiness",
@@ -13650,6 +13688,25 @@
         "indicator_npr_identities.json",
         "indicator_npr_audio_validation.json",
         "indicator_npr_audio_recovery.json"
+      ]
+    },
+    {
+      "title": "Spotify's Long, Winding Road To India",
+      "date": "2019-03-25",
+      "npr_url": "https://www.npr.org/sections/money/2019/03/25/706611154/spotifys-long-winding-road-to-india",
+      "story_id": "706611154",
+      "audio_id": "706606755",
+      "player_url": "https://www.npr.org/player/embed/706604411/706606755",
+      "description": "Spotify's Long, Winding Road To India",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_batch2",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_remaining_34_ranked_batch2.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
       ]
     },
     {

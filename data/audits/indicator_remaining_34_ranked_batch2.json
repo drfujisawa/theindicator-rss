@@ -1,0 +1,84 @@
+{
+  "audit_version": 1,
+  "mode": "discovery_only",
+  "production_files_modified": false,
+  "generated_date": "2026-08-13",
+  "ranking_scope": {
+    "unresolved_before_review": 34,
+    "batch_size": 4,
+    "ready_for_isolated_staging": 3,
+    "deferred_from_batch": 1,
+    "deferred_unreviewed": 30
+  },
+  "summary": {
+    "exact_date_title_matches": 3,
+    "validated_audio_files": 3,
+    "production_collisions": 0,
+    "no_identity_found_in_batch": 1
+  },
+  "episodes": [
+    {
+      "rank": 1,
+      "reference_date": "2019-04-26",
+      "publication_date": "2019-04-26",
+      "reference_title": "Why Superman Doesn't Take Over The World",
+      "classification": "ready_for_isolated_staging",
+      "npr_story_id": "717651281",
+      "npr_url": "https://www.npr.org/sections/money/2019/04/26/717651281/why-superman-doesnt-take-over-the-world",
+      "affiliate_url": "https://www.wfae.org/2019-04-26/why-superman-doesnt-take-over-the-world",
+      "corroborating_affiliates": ["APR", "WYPR", "KGOU"],
+      "player_story_id": "717645608",
+      "audio_id": "730095010",
+      "player_url": "https://www.npr.org/player/embed/717645608/730095010",
+      "audio_url": "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/04/20190426_indicator_both_wonder_woman___superman_1-9d39bfd1-11f0-4ead-a6c2-bb7af22de98c.mp3?d=600&size=9590789&e=717645608&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 600,
+      "content_length_bytes": 9590789,
+      "validation": {"status_code": 206, "content_type": "audio/mpeg", "content_range": "bytes 0-4095/9590789", "story_id_collision": false, "audio_path_collision": false}
+    },
+    {
+      "rank": 2,
+      "reference_date": "2019-04-09",
+      "publication_date": "2019-04-09",
+      "reference_title": "Trade War With Cheese: Trump's New EU Tariffs",
+      "classification": "ready_for_isolated_staging",
+      "npr_story_id": "711569150",
+      "npr_url": "https://www.npr.org/sections/money/2019/04/09/711569150/trade-war-with-cheese-trump-s-new-eu-tariffs",
+      "affiliate_url": "https://www.wfae.org/2019-04-09/trade-war-with-cheese-trumps-new-eu-tariffs",
+      "corroborating_affiliates": ["APR", "WYPR", "KGOU"],
+      "player_story_id": "711568666",
+      "audio_id": "730089544",
+      "player_url": "https://www.npr.org/player/embed/711568666/730089544",
+      "audio_url": "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/04/20190409_indicator_040919_chad_bown_april_2019_final_2-f40e0313-2095-420e-8c65-fa855e8d7f5b.mp3?d=541&size=8652122&e=711568666&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 541,
+      "content_length_bytes": 8652122,
+      "validation": {"status_code": 206, "content_type": "audio/mpeg", "content_range": "bytes 0-4095/8652122", "story_id_collision": false, "audio_path_collision": false}
+    },
+    {
+      "rank": 3,
+      "reference_date": "2019-03-25",
+      "publication_date": "2019-03-25",
+      "reference_title": "Spotify's Long, Winding Road To India",
+      "classification": "ready_for_isolated_staging",
+      "npr_story_id": "706611154",
+      "npr_url": "https://www.npr.org/sections/money/2019/03/25/706611154/spotifys-long-winding-road-to-india",
+      "affiliate_url": "https://www.wfae.org/2019-03-25/spotifys-long-winding-road-to-india",
+      "corroborating_affiliates": ["APR", "WYPR", "KGOU"],
+      "player_story_id": "706604411",
+      "audio_id": "706606755",
+      "player_url": "https://www.npr.org/player/embed/706604411/706606755",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/03/20190325_indicator_spotify_india_final.mp3?d=557&size=8900031&e=706604411&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 557,
+      "content_length_bytes": 8900031,
+      "validation": {"status_code": 206, "content_type": "audio/mpeg", "content_range": "bytes 0-4095/8900031", "story_id_collision": false, "audio_path_collision": false}
+    },
+    {
+      "rank": 4,
+      "reference_date": "2019-03-27",
+      "publication_date": null,
+      "reference_title": "An Economist in Caracas: Day In The Life",
+      "classification": "no_identity_found",
+      "reason": "No exact affiliate or canonical NPR page resolved from the tested title/date URL patterns; no player or audio identity was inferred."
+    }
+  ],
+  "next_gate": "Build an isolated three-episode staging set; keep the Caracas episode unresolved."
+}

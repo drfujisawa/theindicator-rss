@@ -35621,6 +35621,99 @@
           "The NPR audio filename embeds 20190315 and 031519"
         ]
       }
+    },
+    "717651281": {
+      "story_id": "717651281",
+      "audio_id": "730095010",
+      "date": "2019-04-26",
+      "title": "Why Superman Doesn't Take Over The World",
+      "npr_url": "https://www.npr.org/sections/money/2019/04/26/717651281/why-superman-doesnt-take-over-the-world",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/04/20190426_indicator_both_wonder_woman___superman_1-9d39bfd1-11f0-4ead-a6c2-bb7af22de98c.mp3?d=600&size=9590789&e=717645608&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/04/20190426_indicator_both_wonder_woman___superman_1-9d39bfd1-11f0-4ead-a6c2-bb7af22de98c.mp3?d=600&size=9590789&e=717645608&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9590789,
+      "duration_seconds": 600,
+      "extraction_method": "validated_remaining_ranked_batch2",
+      "provenance": [
+        "indicator_remaining_34_ranked_batch2.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "717645608",
+        "730095010",
+        "717651281"
+      ],
+      "audio_url_e_parameter": "717645608",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "711569150": {
+      "story_id": "711569150",
+      "audio_id": "730089544",
+      "date": "2019-04-09",
+      "title": "Trade War With Cheese: Trump's New EU Tariffs",
+      "npr_url": "https://www.npr.org/sections/money/2019/04/09/711569150/trade-war-with-cheese-trump-s-new-eu-tariffs",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/04/20190409_indicator_040919_chad_bown_april_2019_final_2-f40e0313-2095-420e-8c65-fa855e8d7f5b.mp3?d=541&size=8652122&e=711568666&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/04/20190409_indicator_040919_chad_bown_april_2019_final_2-f40e0313-2095-420e-8c65-fa855e8d7f5b.mp3?d=541&size=8652122&e=711568666&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 8652122,
+      "duration_seconds": 541,
+      "extraction_method": "validated_remaining_ranked_batch2",
+      "provenance": [
+        "indicator_remaining_34_ranked_batch2.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "711568666",
+        "730089544",
+        "711569150"
+      ],
+      "audio_url_e_parameter": "711568666",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "706611154": {
+      "story_id": "706611154",
+      "audio_id": "706606755",
+      "date": "2019-03-25",
+      "title": "Spotify's Long, Winding Road To India",
+      "npr_url": "https://www.npr.org/sections/money/2019/03/25/706611154/spotifys-long-winding-road-to-india",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/03/20190325_indicator_spotify_india_final.mp3?d=557&size=8900031&e=706604411&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/03/20190325_indicator_spotify_india_final.mp3?d=557&size=8900031&e=706604411&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 8900031,
+      "duration_seconds": 557,
+      "extraction_method": "validated_remaining_ranked_batch2",
+      "provenance": [
+        "indicator_remaining_34_ranked_batch2.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "706604411",
+        "706606755",
+        "706611154"
+      ],
+      "audio_url_e_parameter": "706604411",
+      "release_classification": "confirmed_indicator_episode"
     }
   }
 }

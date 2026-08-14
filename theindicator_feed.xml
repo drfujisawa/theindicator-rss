@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss xmlns:ns0="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:ns1="http://search.yahoo.com/mrss/" xmlns:ns2="https://podcastindex.org/namespace/1.0" xmlns:ns3="http://purl.org/rss/1.0/modules/content/" version="2.0">
+<rss xmlns:ns3="http://purl.org/rss/1.0/modules/content/" xmlns:ns0="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:ns1="http://search.yahoo.com/mrss/" xmlns:ns2="https://podcastindex.org/namespace/1.0" version="2.0">
   <channel>
     <title>The Indicator from Planet Money</title>
     <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
@@ -21051,6 +21051,17 @@ For sponsor-free episodes of The Indicator from Planet Money, subscribe to Plane
       <ns0:explicit>no</ns0:explicit>
     </item>
     <item>
+      <title>Why Superman Doesn't Take Over The World</title>
+      <description>Why Superman Doesn't Take Over The World</description>
+      <pubDate>Fri, 26 Apr 2019 00:00:00 +0000</pubDate>
+      <link>https://www.npr.org/sections/money/2019/04/26/717651281/why-superman-doesnt-take-over-the-world</link>
+      <guid isPermaLink="false">717651281</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/04/20190426_indicator_both_wonder_woman___superman_1-9d39bfd1-11f0-4ead-a6c2-bb7af22de98c.mp3?d=600&amp;size=9590789&amp;e=717645608&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9590789" type="audio/mpeg" />
+      <ns0:title>Why Superman Doesn't Take Over The World</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
       <title>Selling A T-Rex On eBay</title>
       <description>On eBay right now: A baby T-Rex. The price? $2.95 million.</description>
       <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
@@ -21172,6 +21183,17 @@ For sponsor-free episodes of The Indicator from Planet Money, subscribe to Plane
       <ns0:explicit>no</ns0:explicit>
     </item>
     <item>
+      <title>Trade War With Cheese: Trump's New EU Tariffs</title>
+      <description>Trade War With Cheese: Trump's New EU Tariffs</description>
+      <pubDate>Tue, 09 Apr 2019 00:00:00 +0000</pubDate>
+      <link>https://www.npr.org/sections/money/2019/04/09/711569150/trade-war-with-cheese-trump-s-new-eu-tariffs</link>
+      <guid isPermaLink="false">711569150</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/04/20190409_indicator_040919_chad_bown_april_2019_final_2-f40e0313-2095-420e-8c65-fa855e8d7f5b.mp3?d=541&amp;size=8652122&amp;e=711568666&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="8652122" type="audio/mpeg" />
+      <ns0:title>Trade War With Cheese: Trump's New EU Tariffs</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
       <title>How To Measure Happiness</title>
       <description>The U.S. is one of the world's largest economies, but it lags when it comes to happiness: the World Happiness Report ranks America number 19.</description>
       <pubDate>Mon, 08 Apr 2019 00:00:00 +0000</pubDate>
@@ -21267,6 +21289,17 @@ For sponsor-free episodes of The Indicator from Planet Money, subscribe to Plane
       <guid isPermaLink="false">706968994</guid>
       <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/03/20190326_indicator_032619_venezuela_ditl_pt_1_final.mp3?d=599&amp;size=9567648&amp;e=706966272&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9567648" type="audio/mpeg" />
       <ns0:title>Venezuela By The Numbers</ns0:title>
+      <ns0:episodeType>full</ns0:episodeType>
+      <ns0:explicit>no</ns0:explicit>
+    </item>
+    <item>
+      <title>Spotify's Long, Winding Road To India</title>
+      <description>Spotify's Long, Winding Road To India</description>
+      <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
+      <link>https://www.npr.org/sections/money/2019/03/25/706611154/spotifys-long-winding-road-to-india</link>
+      <guid isPermaLink="false">706611154</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/03/20190325_indicator_spotify_india_final.mp3?d=557&amp;size=8900031&amp;e=706604411&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="8900031" type="audio/mpeg" />
+      <ns0:title>Spotify's Long, Winding Road To India</ns0:title>
       <ns0:episodeType>full</ns0:episodeType>
       <ns0:explicit>no</ns0:explicit>
     </item>
