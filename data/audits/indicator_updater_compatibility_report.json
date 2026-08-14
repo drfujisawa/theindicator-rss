@@ -1,0 +1,37 @@
+{
+  "report_version": 1,
+  "generated_at": "2026-08-14T08:48:21.060455+00:00",
+  "mode": "isolated_updater_compatibility_test",
+  "production_files_modified": false,
+  "production_feed_sha256_before": "e6c04bb77d4715f5c5a2cae0cb22086a1e957bf4e9916c0d8d874f1d3fc63375",
+  "production_feed_sha256_after": "e6c04bb77d4715f5c5a2cae0cb22086a1e957bf4e9916c0d8d874f1d3fc63375",
+  "isolated_feed_sha256_after": "43ffc136a5edc09ebda7ef2ff2a8769d35ffc7578aee334570610033832e494e",
+  "counts": {
+    "before": 2195,
+    "after": 2195,
+    "added": 0,
+    "removed": 0,
+    "semantically_changed_existing_items": 0,
+    "launch_items_preserved": 59,
+    "unknown_or_zero_lengths_after": 0
+  },
+  "added_guids": [],
+  "removed_guids": [],
+  "changed_existing_guids": [],
+  "checks": {
+    "production_feed_unchanged": true,
+    "updater_exit_code_zero": true,
+    "no_existing_guids_removed": true,
+    "no_existing_items_semantically_changed": true,
+    "all_59_launch_items_preserved": true,
+    "trailer_preserved": true,
+    "trailer_type_preserved": true,
+    "trailer_timestamp_preserved": true,
+    "trailer_length_preserved": true,
+    "all_enclosure_lengths_positive": true,
+    "all_added_guids_from_current_npr_feed": true,
+    "all_output_guids_unique": true
+  },
+  "all_checks_passed": true,
+  "updater_stdout": "Downloading current NPR Indicator feed...\nLoading existing theindicator_feed.xml...\nFound 0 new episode(s).\n\nSaved theindicator_feed.xml\nFeed now contains 2195 episodes."
+}

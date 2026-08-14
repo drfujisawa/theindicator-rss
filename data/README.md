@@ -67,6 +67,7 @@ Active audit datasets — produced and consumed by completeness/reconciliation s
 | `indicator_pre_march_2018_staging_candidates.json` | Canonical NPR metadata and freshly verified audio evidence for the 59-item isolated stage | `scripts/analysis/stage_pre_march_2018_catalog.py` |
 | `indicator_pre_march_2018_staging_report.json` | Collision, preservation, metadata, trailer, hash, and integrity results for the isolated 59-item stage | `scripts/analysis/stage_pre_march_2018_catalog.py`, `tests/test_pre_march_2018_staging.py` |
 | `indicator_pre_march_2018_application_report.json` | Atomic application hashes, counts, and retained rollback location for the 59-item launch catalog | `scripts/maintenance/apply_pre_march_2018_catalog.py` |
+| `indicator_updater_compatibility_report.json` | Isolated scheduled-updater preservation and collision results against the complete production feed | `scripts/analysis/test_updater_compatibility.py` |
 | `indicator_zero_length_repair_report.json` | Exact byte measurements and hashes for the 155 repaired legacy enclosure lengths | `scripts/maintenance/repair_zero_enclosure_lengths.py` |
 
 ---
