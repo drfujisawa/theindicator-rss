@@ -1,6 +1,6 @@
 {
   "next_date": "2017-11-05T16:46:00-04:00",
-  "episode_count": 1746,
+  "episode_count": 1756,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -13671,6 +13671,25 @@
       ]
     },
     {
+      "title": "An Economist in Caracas: Day In The Life",
+      "date": "2019-03-27",
+      "npr_url": "https://www.npr.org/sections/money/2019/03/27/707396339/an-economist-in-caracas-day-in-the-life",
+      "story_id": "707396339",
+      "audio_id": "707405520",
+      "player_url": "https://www.npr.org/player/embed/707396332/707405520",
+      "description": "An Economist in Caracas: Day In The Life",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_final10",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_final_10_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "Venezuela By The Numbers",
       "date": "2019-03-26",
       "npr_url": "https://www.npr.org/sections/money/2019/03/26/706968994/venezuela-by-the-numbers",
@@ -14493,6 +14512,25 @@
       ]
     },
     {
+      "title": "The End Of The Shutdown?",
+      "date": "2019-01-25",
+      "npr_url": "https://www.npr.org/sections/money/2019/01/25/688905589/the-end-of-the-shutdown",
+      "story_id": "688905589",
+      "audio_id": "688905309",
+      "player_url": "https://www.npr.org/player/embed/688899558/688905309",
+      "description": "The End Of The Shutdown?",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_final10",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_final_10_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "HAIL To College Access",
       "date": "2019-01-24",
       "npr_url": "https://www.npr.org/sections/money/2019/01/24/688395248/hail-to-college-access",
@@ -15071,6 +15109,25 @@
       ]
     },
     {
+      "title": "Citi Bike's Better Angels",
+      "date": "2018-12-11",
+      "npr_url": "https://www.npr.org/2018/12/11/675828921/citi-bikes-better-angels",
+      "story_id": "675828921",
+      "audio_id": "675836600",
+      "player_url": "https://www.npr.org/player/embed/675828921/675836600",
+      "description": "Citi Bike's Better Angels",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_final10",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_final_10_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "Unto The Brexit",
       "date": "2018-12-10",
       "npr_url": "https://www.npr.org/sections/money/2018/12/10/675413395/unto-the-brexit",
@@ -15469,6 +15526,25 @@
       ]
     },
     {
+      "title": "The 401(k) Turns 40",
+      "date": "2018-11-09",
+      "npr_url": "https://www.npr.org/sections/money/2018/11/09/666385019/the-401-k-turns-40",
+      "story_id": "666385019",
+      "audio_id": "666392198",
+      "player_url": "https://www.npr.org/player/embed/666383770/666392198",
+      "description": "The 401(k) Turns 40",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_final10",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_final_10_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "All Aboard The Bankmobile!",
       "date": "2018-11-08",
       "npr_url": "https://www.npr.org/sections/money/2018/11/08/665897380/all-aboard-the-bankmobile",
@@ -15625,6 +15701,25 @@
         "indicator_npr_identities.json",
         "indicator_npr_audio_validation.json",
         "indicator_npr_audio_recovery.json"
+      ]
+    },
+    {
+      "title": "Judgement Bonds",
+      "date": "2018-10-29",
+      "npr_url": "https://www.npr.org/sections/money/2018/10/29/661827210/judgement-bonds",
+      "story_id": "661827210",
+      "audio_id": "661823932",
+      "player_url": "https://www.npr.org/player/embed/661823224/661823932",
+      "description": "Judgement Bonds",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_final10",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_final_10_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
       ]
     },
     {
@@ -16952,6 +17047,25 @@
       ]
     },
     {
+      "title": "Three Indicators To Keep A (Side)eye On",
+      "date": "2018-07-19",
+      "npr_url": "https://www.npr.org/sections/money/2018/07/19/630639437/three-indicators-to-keep-a-side-eye-on",
+      "story_id": "630639437",
+      "audio_id": "630635899",
+      "player_url": "https://www.npr.org/player/embed/630633315/630635899",
+      "description": "Three Indicators To Keep A (Side)eye On",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_final10",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_final_10_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "Trade Wars And The Batman Problem",
       "date": "2018-07-18",
       "npr_url": "https://www.npr.org/sections/money/2018/07/18/630265851/trade-wars-and-the-batman-problem",
@@ -16969,6 +17083,25 @@
         "indicator_npr_identities.json",
         "indicator_npr_audio_validation.json",
         "indicator_npr_audio_recovery.json"
+      ]
+    },
+    {
+      "title": "Saving Women",
+      "date": "2018-07-17",
+      "npr_url": "https://www.npr.org/sections/money/2018/07/17/629858218/saving-women",
+      "story_id": "629858218",
+      "audio_id": "629901138",
+      "player_url": "https://www.npr.org/player/embed/629883983/629901138",
+      "description": "Saving Women",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_final10",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_final_10_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
       ]
     },
     {
@@ -16991,6 +17124,44 @@
       ]
     },
     {
+      "title": "We Hear You",
+      "date": "2018-07-13",
+      "npr_url": "https://www.npr.org/sections/money/2018/07/13/628896537/we-hear-you",
+      "story_id": "628896537",
+      "audio_id": "628915436",
+      "player_url": "https://www.npr.org/player/embed/628907652/628915436",
+      "description": "We Hear You",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_final10",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_final_10_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "The Last Straw",
+      "date": "2018-07-12",
+      "npr_url": "https://www.npr.org/sections/money/2018/07/12/628548830/the-last-straw",
+      "story_id": "628548830",
+      "audio_id": "628554109",
+      "player_url": "https://www.npr.org/player/embed/628543846/628554109",
+      "description": "The Last Straw",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_final10",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_final_10_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "Fed Accounts For All!",
       "date": "2018-07-11T00:00:00-04:00",
       "npr_url": "https://www.npr.org/sections/money/2018/07/11/628173553/fed-accounts-for-all",
@@ -16998,6 +17169,25 @@
       "audio_id": "628169160",
       "player_url": "https://www.npr.org/player/embed/628169160/628176595",
       "description": "Fed Accounts For All!"
+    },
+    {
+      "title": "The Price of A Hyundai in Iran",
+      "date": "2018-07-10",
+      "npr_url": "https://www.npr.org/sections/money/2018/07/10/627818329/the-price-of-a-hyundai-in-iran",
+      "story_id": "627818329",
+      "audio_id": "627838941",
+      "player_url": "https://www.npr.org/player/embed/627810568/627838941",
+      "description": "The Price of A Hyundai in Iran",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_final10",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_final_10_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
     },
     {
       "title": "The Recession Predictor, Still Predictive?",

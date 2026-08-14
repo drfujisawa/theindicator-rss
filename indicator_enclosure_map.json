@@ -36365,6 +36365,316 @@
       ],
       "audio_url_e_parameter": "624805008",
       "release_classification": "confirmed_indicator_episode"
+    },
+    "707396339": {
+      "story_id": "707396339",
+      "audio_id": "707405520",
+      "date": "2019-03-27",
+      "title": "An Economist in Caracas: Day In The Life",
+      "npr_url": "https://www.npr.org/sections/money/2019/03/27/707396339/an-economist-in-caracas-day-in-the-life",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/03/20190327_indicator_032719_venezuela_ditl_pt_2_final.mp3?d=593&size=9481746&e=707396332&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/03/20190327_indicator_032719_venezuela_ditl_pt_2_final.mp3?d=593&size=9481746&e=707396332&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9481746,
+      "duration_seconds": 593,
+      "extraction_method": "validated_remaining_ranked_final10",
+      "provenance": [
+        "indicator_final_10_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "707396332",
+        "707405520",
+        "707396339"
+      ],
+      "audio_url_e_parameter": "707396332",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "688905589": {
+      "story_id": "688905589",
+      "audio_id": "688905309",
+      "date": "2019-01-25",
+      "title": "The End Of The Shutdown?",
+      "npr_url": "https://www.npr.org/sections/money/2019/01/25/688905589/the-end-of-the-shutdown",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/01/20190125_indicator_012519_shutdown_mess_final_final.mp3?d=453&size=7232865&e=688899558&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/01/20190125_indicator_012519_shutdown_mess_final_final.mp3?d=453&size=7232865&e=688899558&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 7232865,
+      "duration_seconds": 453,
+      "extraction_method": "validated_remaining_ranked_final10",
+      "provenance": [
+        "indicator_final_10_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "688899558",
+        "688905309",
+        "688905589"
+      ],
+      "audio_url_e_parameter": "688899558",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "675828921": {
+      "story_id": "675828921",
+      "audio_id": "675836600",
+      "date": "2018-12-11",
+      "title": "Citi Bike's Better Angels",
+      "npr_url": "https://www.npr.org/2018/12/11/675828921/citi-bikes-better-angels",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/12/20181211_indicator_citibikes_econ_final.mp3?d=587&e=675828921&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/12/20181211_indicator_citibikes_econ_final.mp3?d=587&e=675828921&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9383334,
+      "duration_seconds": 587,
+      "extraction_method": "validated_remaining_ranked_final10",
+      "provenance": [
+        "indicator_final_10_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "675828921",
+        "675836600",
+        "675828921"
+      ],
+      "audio_url_e_parameter": "675828921",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "666385019": {
+      "story_id": "666385019",
+      "audio_id": "666392198",
+      "date": "2018-11-09",
+      "title": "The 401(k) Turns 40",
+      "npr_url": "https://www.npr.org/sections/money/2018/11/09/666385019/the-401-k-turns-40",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/11/20181109_indicator_110918_401k_bday_final_dar.mp3?d=581&e=666383770&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/11/20181109_indicator_110918_401k_bday_final_dar.mp3?d=581&e=666383770&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9288675,
+      "duration_seconds": 581,
+      "extraction_method": "validated_remaining_ranked_final10",
+      "provenance": [
+        "indicator_final_10_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "666383770",
+        "666392198",
+        "666385019"
+      ],
+      "audio_url_e_parameter": "666383770",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "661827210": {
+      "story_id": "661827210",
+      "audio_id": "661823932",
+      "date": "2018-10-29",
+      "title": "Judgement Bonds",
+      "npr_url": "https://www.npr.org/sections/money/2018/10/29/661827210/judgement-bonds",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/10/20181029_indicator_102918_judgementbonds_final.mp3?d=600&e=661823224&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/10/20181029_indicator_102918_judgementbonds_final.mp3?d=600&e=661823224&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9581826,
+      "duration_seconds": 600,
+      "extraction_method": "validated_remaining_ranked_final10",
+      "provenance": [
+        "indicator_final_10_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "661823224",
+        "661823932",
+        "661827210"
+      ],
+      "audio_url_e_parameter": "661823224",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "630639437": {
+      "story_id": "630639437",
+      "audio_id": "630635899",
+      "date": "2018-07-19",
+      "title": "Three Indicators To Keep A (Side)eye On",
+      "npr_url": "https://www.npr.org/sections/money/2018/07/19/630639437/three-indicators-to-keep-a-side-eye-on",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180719_indicator_0719_three_indicators_final.mp3?d=487&e=630633315&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180719_indicator_0719_three_indicators_final.mp3?d=487&e=630633315&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 7784618,
+      "duration_seconds": 487,
+      "extraction_method": "validated_remaining_ranked_final10",
+      "provenance": [
+        "indicator_final_10_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "630633315",
+        "630635899",
+        "630639437"
+      ],
+      "audio_url_e_parameter": "630633315",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "629858218": {
+      "story_id": "629858218",
+      "audio_id": "629901138",
+      "date": "2018-07-17",
+      "title": "Saving Women",
+      "npr_url": "https://www.npr.org/sections/money/2018/07/17/629858218/saving-women",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180717_indicator_0717_women_investing_final2.mp3?d=549&e=629883983&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180717_indicator_0717_women_investing_final2.mp3?d=549&e=629883983&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 8788337,
+      "duration_seconds": 549,
+      "extraction_method": "validated_remaining_ranked_final10",
+      "provenance": [
+        "indicator_final_10_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "629883983",
+        "629901138",
+        "629858218"
+      ],
+      "audio_url_e_parameter": "629883983",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "628896537": {
+      "story_id": "628896537",
+      "audio_id": "628915436",
+      "date": "2018-07-13",
+      "title": "We Hear You",
+      "npr_url": "https://www.npr.org/sections/money/2018/07/13/628896537/we-hear-you",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180713_indicator_0713_listener_mail_final.mp3?d=591&e=628907652&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180713_indicator_0713_listener_mail_final.mp3?d=591&e=628907652&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9457205,
+      "duration_seconds": 591,
+      "extraction_method": "validated_remaining_ranked_final10",
+      "provenance": [
+        "indicator_final_10_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "628907652",
+        "628915436",
+        "628896537"
+      ],
+      "audio_url_e_parameter": "628907652",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "628548830": {
+      "story_id": "628548830",
+      "audio_id": "628554109",
+      "date": "2018-07-12",
+      "title": "The Last Straw",
+      "npr_url": "https://www.npr.org/sections/money/2018/07/12/628548830/the-last-straw",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180712_indicator_corrected_0712_straws.mp3?d=624&e=628543846&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180712_indicator_corrected_0712_straws.mp3?d=624&e=628543846&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9983876,
+      "duration_seconds": 624,
+      "extraction_method": "validated_remaining_ranked_final10",
+      "provenance": [
+        "indicator_final_10_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "628543846",
+        "628554109",
+        "628548830"
+      ],
+      "audio_url_e_parameter": "628543846",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "627818329": {
+      "story_id": "627818329",
+      "audio_id": "627838941",
+      "date": "2018-07-10",
+      "title": "The Price of A Hyundai in Iran",
+      "npr_url": "https://www.npr.org/sections/money/2018/07/10/627818329/the-price-of-a-hyundai-in-iran",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180710_indicator_0710_iran_inflation_final_2.mp3?d=538&e=627810568&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180710_indicator_0710_iran_inflation_final_2.mp3?d=538&e=627810568&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 8603606,
+      "duration_seconds": 538,
+      "extraction_method": "validated_remaining_ranked_final10",
+      "provenance": [
+        "indicator_final_10_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "627810568",
+        "627838941",
+        "627818329"
+      ],
+      "audio_url_e_parameter": "627810568",
+      "release_classification": "confirmed_indicator_episode"
     }
   }
 }

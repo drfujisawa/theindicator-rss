@@ -1,0 +1,133 @@
+{
+  "audit_date": "2026-08-13",
+  "scope": "Deep discovery and validation of the final 10 unresolved Indicator episodes",
+  "production_touched": false,
+  "validation_policy": {
+    "identity": "Exact dated affiliate or independent source, canonical NPR page, and matching NPR story/player identity",
+    "audio": "HTTP byte-range request returned 206, Content-Type audio/mpeg, 4096 bytes, and an ID3 or MPEG frame signature",
+    "collision_check": "NPR story IDs were absent from indicator_history.json at validation time"
+  },
+  "summary": {
+    "investigated": 10,
+    "recovered": 10,
+    "unresolved": 0,
+    "story_id_collisions": 0
+  },
+  "episodes": [
+    {
+      "date": "2019-03-27",
+      "title": "An Economist in Caracas: Day In The Life",
+      "story_id": "707396339",
+      "player_url": "https://www.npr.org/player/embed/707396332/707405520",
+      "canonical_url": "https://www.npr.org/sections/money/2019/03/27/707396339/an-economist-in-caracas-day-in-the-life",
+      "affiliate_url": "https://www.nprillinois.org/generationlisten/2019-03-27/an-economist-in-caracas-day-in-the-life",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/03/20190327_indicator_032719_venezuela_ditl_pt_2_final.mp3?d=593&size=9481746&e=707396332&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "audio_signature": "MPEG",
+      "validated": true
+    },
+    {
+      "date": "2019-01-25",
+      "title": "The End Of The Shutdown?",
+      "story_id": "688905589",
+      "player_url": "https://www.npr.org/player/embed/688899558/688905309",
+      "canonical_url": "https://www.npr.org/sections/money/2019/01/25/688905589/the-end-of-the-shutdown",
+      "affiliate_url": "https://radio.wpsu.org/2019-01-25/the-end-of-the-shutdown",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/01/20190125_indicator_012519_shutdown_mess_final_final.mp3?d=453&size=7232865&e=688899558&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "audio_signature": "MPEG",
+      "validated": true
+    },
+    {
+      "date": "2018-12-11",
+      "title": "Citi Bike's Better Angels",
+      "story_id": "675828921",
+      "player_url": "https://www.npr.org/player/embed/675828921/675836600",
+      "canonical_url": "https://www.npr.org/2018/12/11/675828921/citi-bikes-better-angels",
+      "corroborating_url": "https://www.npr.org/transcripts/675828921",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/12/20181211_indicator_citibikes_econ_final.mp3?d=587&e=675828921&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "audio_signature": "MPEG",
+      "validated": true
+    },
+    {
+      "date": "2018-11-09",
+      "title": "The 401(k) Turns 40",
+      "story_id": "666385019",
+      "player_url": "https://www.npr.org/player/embed/666383770/666392198",
+      "canonical_url": "https://www.npr.org/sections/money/2018/11/09/666385019/the-401-k-turns-40",
+      "affiliate_url": "https://www.wfae.org/2018-11-09/the-401k-turns-40",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/11/20181109_indicator_110918_401k_bday_final_dar.mp3?d=581&e=666383770&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "audio_signature": "MPEG",
+      "validated": true
+    },
+    {
+      "date": "2018-10-29",
+      "title": "Judgement Bonds",
+      "story_id": "661827210",
+      "player_url": "https://www.npr.org/player/embed/661823224/661823932",
+      "canonical_url": "https://www.npr.org/sections/money/2018/10/29/661827210/judgement-bonds",
+      "affiliate_urls": [
+        "https://www.wfae.org/2018-10-29/judgment-bonds",
+        "https://www.apr.org/business-education/2018-10-29/judgement-bonds",
+        "https://news.wypr.org/2018-10-29/judgement-bonds",
+        "https://www.kgou.org/business-and-economy/2018-10-29/judgement-bonds"
+      ],
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/10/20181029_indicator_102918_judgementbonds_final.mp3?d=600&e=661823224&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "audio_signature": "MPEG",
+      "validated": true
+    },
+    {
+      "date": "2018-07-19",
+      "title": "Three Indicators To Keep A (Side)eye On",
+      "story_id": "630639437",
+      "player_url": "https://www.npr.org/player/embed/630633315/630635899",
+      "canonical_url": "https://www.npr.org/sections/money/2018/07/19/630639437/three-indicators-to-keep-a-side-eye-on",
+      "affiliate_url": "https://www.wfae.org/2018-07-19/three-indicators-to-keep-a-sideeye-on",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180719_indicator_0719_three_indicators_final.mp3?d=487&e=630633315&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "audio_signature": "ID3",
+      "validated": true
+    },
+    {
+      "date": "2018-07-17",
+      "title": "Saving Women",
+      "story_id": "629858218",
+      "player_url": "https://www.npr.org/player/embed/629883983/629901138",
+      "canonical_url": "https://www.npr.org/sections/money/2018/07/17/629858218/saving-women",
+      "corroborating_url": "https://www.npr.org/2019/08/14/751251429/the-gender-gap-series-saving-women",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180717_indicator_0717_women_investing_final2.mp3?d=549&e=629883983&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "audio_signature": "ID3",
+      "validated": true
+    },
+    {
+      "date": "2018-07-13",
+      "title": "We Hear You",
+      "story_id": "628896537",
+      "player_url": "https://www.npr.org/player/embed/628907652/628915436",
+      "canonical_url": "https://www.npr.org/sections/money/2018/07/13/628896537/we-hear-you",
+      "affiliate_url": "https://radio.wpsu.org/2018-07-13/we-hear-you",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180713_indicator_0713_listener_mail_final.mp3?d=591&e=628907652&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "audio_signature": "ID3",
+      "validated": true
+    },
+    {
+      "date": "2018-07-12",
+      "title": "The Last Straw",
+      "story_id": "628548830",
+      "player_url": "https://www.npr.org/player/embed/628543846/628554109",
+      "canonical_url": "https://www.npr.org/sections/money/2018/07/12/628548830/the-last-straw",
+      "affiliate_url": "https://radio.wpsu.org/2018-07-12/the-last-straw",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180712_indicator_corrected_0712_straws.mp3?d=624&e=628543846&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "audio_signature": "ID3",
+      "validated": true
+    },
+    {
+      "date": "2018-07-10",
+      "title": "The Price of A Hyundai in Iran",
+      "story_id": "627818329",
+      "player_url": "https://www.npr.org/player/embed/627810568/627838941",
+      "canonical_url": "https://www.npr.org/sections/money/2018/07/10/627818329/the-price-of-a-hyundai-in-iran",
+      "affiliate_url": "https://radio.wpsu.org/2018-07-10/the-price-of-a-hyundai-in-iran",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/07/20180710_indicator_0710_iran_inflation_final_2.mp3?d=538&e=627810568&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "audio_signature": "ID3",
+      "validated": true
+    }
+  ]
+}
