@@ -1,6 +1,6 @@
 {
   "next_date": "2017-11-05T16:46:00-04:00",
-  "episode_count": 1756,
+  "episode_count": 1758,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -2586,9 +2586,47 @@
       "description": "In business, the million-dollar question is how to get people to buy stuff. But in wildlife conservation, the challenge is: how do we get people to not buy stuff? How do we bring down demand for fur, ivory and rhino horns? Today on the show, the story of a business trying to make lab-grown rhino horns and the backlash that followed. Check out more of Juliana Kim's reporting for NPR here. Related: Supply, demand, extinction (Apple / Spotify) Rhino Bonds Shooting Bambi to Save Mother Nature For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
     },
     {
-      "title": "The Military Industry ... It's Complex",
+      "title": "How to transform a war economy for peacetime",
+      "date": "2024-01-31",
+      "npr_url": "https://www.npr.org/2024/01/31/1197961524/how-to-transform-a-war-economy-for-peacetime",
+      "story_id": "1197961524",
+      "audio_id": "58b58327-4bba-45c6-a62c-1dc60bfc5b4d",
+      "player_url": "https://www.npr.org/2024/01/31/1197961524/how-to-transform-a-war-economy-for-peacetime",
+      "description": "How to transform a war economy for peacetime",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2024_defense_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2024_defense_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "Can Just-In-Time handle a new era of war?",
+      "date": "2024-01-30",
+      "npr_url": "https://www.npr.org/2024/01/30/1197961507/can-just-in-time-handle-a-new-era-of-war",
+      "story_id": "1197961507",
+      "audio_id": "f74c3537-379d-4120-b8b1-896ab77c69fe",
+      "player_url": "https://www.npr.org/2024/01/30/1197961507/can-just-in-time-handle-a-new-era-of-war",
+      "description": "Can Just-In-Time handle a new era of war?",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2024_defense_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2024_defense_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "Are we overpaying for military equipment?",
       "date": "2024-01-29",
-      "npr_url": "https://www.npr.org/series/1232696155/the-complexity-of-the-military-industry",
+      "npr_url": "https://www.npr.org/2024/01/29/1197961492/are-we-overpaying-for-military-equipment",
       "story_id": "1197961492",
       "audio_id": "1227146259",
       "player_url": "https://www.npr.org/player/embed/1197961492/1227146259",

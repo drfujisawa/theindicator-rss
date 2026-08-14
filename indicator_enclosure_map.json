@@ -36675,6 +36675,68 @@
       ],
       "audio_url_e_parameter": "627810568",
       "release_classification": "confirmed_indicator_episode"
+    },
+    "1197961507": {
+      "story_id": "1197961507",
+      "audio_id": "f74c3537-379d-4120-b8b1-896ab77c69fe",
+      "date": "2024-01-30",
+      "title": "Can Just-In-Time handle a new era of war?",
+      "npr_url": "https://www.npr.org/2024/01/30/1197961507/can-just-in-time-handle-a-new-era-of-war",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/f74c3537-379d-4120-b8b1-896ab77c69fe/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=f74c3537-379d-4120-b8b1-896ab77c69fe&t=podcast&e=1197961507&p=510325&d=569&size=9118660&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/f74c3537-379d-4120-b8b1-896ab77c69fe/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=f74c3537-379d-4120-b8b1-896ab77c69fe&t=podcast&e=1197961507&p=510325&d=569&size=9118660&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 10269838,
+      "duration_seconds": 569,
+      "extraction_method": "validated_remaining_ranked_2024_defense_cluster",
+      "provenance": [
+        "indicator_2024_defense_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1197961507",
+        "f74c3537-379d-4120-b8b1-896ab77c69fe",
+        "1197961507"
+      ],
+      "audio_url_e_parameter": "1197961507",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1197961524": {
+      "story_id": "1197961524",
+      "audio_id": "58b58327-4bba-45c6-a62c-1dc60bfc5b4d",
+      "date": "2024-01-31",
+      "title": "How to transform a war economy for peacetime",
+      "npr_url": "https://www.npr.org/2024/01/31/1197961524/how-to-transform-a-war-economy-for-peacetime",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/58b58327-4bba-45c6-a62c-1dc60bfc5b4d/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=58b58327-4bba-45c6-a62c-1dc60bfc5b4d&t=podcast&e=1197961524&p=510325&d=528&size=8459120&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/58b58327-4bba-45c6-a62c-1dc60bfc5b4d/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=58b58327-4bba-45c6-a62c-1dc60bfc5b4d&t=podcast&e=1197961524&p=510325&d=528&size=8459120&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9846447,
+      "duration_seconds": 528,
+      "extraction_method": "validated_remaining_ranked_2024_defense_cluster",
+      "provenance": [
+        "indicator_2024_defense_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1197961524",
+        "58b58327-4bba-45c6-a62c-1dc60bfc5b4d",
+        "1197961524"
+      ],
+      "audio_url_e_parameter": "1197961524",
+      "release_classification": "confirmed_indicator_episode"
     }
   }
 }
