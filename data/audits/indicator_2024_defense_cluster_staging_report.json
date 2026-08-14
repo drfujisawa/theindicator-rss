@@ -1,0 +1,67 @@
+{
+  "report_version": 1,
+  "mode": "staging_only",
+  "production_files_modified": false,
+  "source_discovery": "data\\audits\\indicator_2024_defense_cluster_staging_candidates.json",
+  "stage_directory": "work\\2024-defense-cluster-staging",
+  "counts": {
+    "promoted_candidates": 2,
+    "history_before": 1756,
+    "history_after": 1758,
+    "enclosure_map_before": 1756,
+    "enclosure_map_after": 1758,
+    "feed_before": 2057,
+    "feed_after": 2059
+  },
+  "candidate_story_ids": [
+    "1197961507",
+    "1197961524"
+  ],
+  "checks": {
+    "production_files_unchanged": true,
+    "candidate_count_is_2": true,
+    "candidate_story_ids_unique": true,
+    "history_delta_is_2": true,
+    "history_count_consistent": true,
+    "enclosure_map_delta_is_2": true,
+    "feed_delta_is_2": true,
+    "feed_story_id_delta_exact": true,
+    "rss_guids_unique": true,
+    "rss_story_ids_unique": true,
+    "rss_sorted_newest_first": true,
+    "rss_xml_parses": true,
+    "all_enclosures_resolved": true,
+    "all_content_lengths_known": true,
+    "all_audio_npr_hosted": true,
+    "existing_1197961492_metadata_corrected": true
+  },
+  "all_checks_passed": true,
+  "production_sha256_before": {
+    "indicator_history.json": "60f025c376b085ad8c62d69a16c5f2d90ef9b9cdc2106fa44f014806819630c1",
+    "indicator_enclosure_map.json": "afe10e930d3e3fd73392954bda0de65cbbc4c1cd1c427b487bd9dd8bf2db32a8",
+    "theindicator_feed.xml": "cd7a5f989528c56584f8e890336645a9b7a26fa6675fc81cab051ca356614a5b"
+  },
+  "production_sha256_after": {
+    "indicator_history.json": "60f025c376b085ad8c62d69a16c5f2d90ef9b9cdc2106fa44f014806819630c1",
+    "indicator_enclosure_map.json": "afe10e930d3e3fd73392954bda0de65cbbc4c1cd1c427b487bd9dd8bf2db32a8",
+    "theindicator_feed.xml": "cd7a5f989528c56584f8e890336645a9b7a26fa6675fc81cab051ca356614a5b"
+  },
+  "staged_sha256": {
+    "indicator_history.json": "42d72bf0d21f29ba439886ed4696b3655da046b85bbb4e0fbd4e2b59587e90b6",
+    "indicator_enclosure_map.json": "f8f2464a5e3b7351dd82bba6f3b6b15637ad9ea6df50fde78fe02f9960a4241d",
+    "theindicator_feed.xml": "d4a17d5f9a1f9858d0978bf083f43def149dea854f1eaa1832f6f9429f9659fc"
+  },
+  "next_gate": "review this staging report before any hash-guarded atomic production application",
+  "metadata_corrections": [
+    {
+      "story_id": "1197961492",
+      "old_title": "The Military Industry ... It's Complex",
+      "new_title": "Are we overpaying for military equipment?",
+      "fields": [
+        "title",
+        "itunes:title",
+        "link"
+      ]
+    }
+  ]
+}

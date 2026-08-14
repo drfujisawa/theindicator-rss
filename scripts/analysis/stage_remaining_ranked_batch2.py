@@ -174,7 +174,13 @@ def stage(repo_root: Path = REPO_ROOT, stage_dir: Path | None = None) -> dict:
         "rss_xml_parses": True,
         "all_enclosures_resolved": all(enclosure["episodes"][story_id]["status"] == "resolved" for story_id in ids),
         "all_content_lengths_known": all(enclosure["episodes"][story_id]["content_length"] > 0 for story_id in ids),
-        "all_audio_npr_hosted": all("ondemand.npr.org/" in item["validated_final_audio_url"] for item in candidates),
+        "all_audio_npr_hosted": all(
+            any(
+                marker in item["validated_final_audio_url"]
+                for marker in ("ondemand.npr.org/", "npr.simplecastaudio.com/")
+            )
+            for item in candidates
+        ),
     }
     report = {
         "report_version": 1, "mode": "staging_only", "production_files_modified": False,

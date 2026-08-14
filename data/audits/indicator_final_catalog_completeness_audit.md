@@ -19,7 +19,10 @@ Production was not modified by this audit.
 - Yearly RSS counts: 2018: 205; 2019: 248; 2020: 254; 2021: 248;
   2022: 246; 2023: 246; 2024: 208; 2025: 242; 2026: 160
 
-Four recovered history/map records are absent from the RSS itself:
+Four history/map records are absent from the RSS itself. Follow-up review found
+that all four have enclosure status `no_audio` and are Planet Money "Two
+Indicators" compilation pages describing reused Indicator segments. They are
+not currently classified as missing standalone Indicator feed episodes:
 
 - 1013954358 — 2021-07-07 — Two Indicators: Clogged Ports And Corporate Vets
 - 1029846068 — 2021-08-20 — Two Indicators: Will Remote Work Kill The Office?
@@ -64,6 +67,26 @@ The largest suspicious clusters are January–February and November–December
 holiday gaps. They require first-party identity and audio validation before any
 production change.
 
+### First resolved cluster: January 29–31, 2024
+
+First-party follow-up changed the interpretation of three comparison candidates:
+
+- `1197961492`, January 29, is already in the archive with the correct enclosure
+  and GUID, but its title/link were replaced by the collection metadata "The
+  Military Industry ... It's Complex." It needs a metadata correction, not a
+  second RSS item.
+- `1197961507`, January 30, and `1197961524`, January 31, are genuine omitted
+  Indicator episodes. Each now has a canonical NPR page, distinct Apple episode
+  ID, Simplecast episode UUID, live NPR-program audio response, duration, and
+  measured byte length.
+
+An isolated stage at `work/2024-defense-cluster-staging` adds the two omitted
+episodes and corrects the January 29 title/link. All staging checks pass and the
+three production artifacts remain byte-for-byte unchanged. Consequently, the
+raw comparison list remains reproducibly 84 records, but only 83 remain
+possible omissions after identifying the January 29 metadata alias; two of
+those 83 are now fully validated and staged.
+
 Source: https://thetvdb.com/series/the-indicator-from-planet-money-podcast
 
 ### Other catalog signals
@@ -93,8 +116,9 @@ numbers, and TheTVDB evidence URLs, along with fresh NPR and Apple comparisons.
 
 ## Recommended next gate
 
-Treat the 84 records as candidates, not accepted episodes. Resolve them in
+Treat the remaining comparison records as candidates, not accepted episodes. Resolve them in
 date-clustered batches using the established strict standard: canonical NPR
 identity, matching player identity, validated NPR-hosted audio, collision
-checks, isolated staging, and hash-guarded application. Separately repair or
-explain the four known history records missing from the RSS.
+checks, isolated staging, and hash-guarded application. Keep the four
+`no_audio` compilation pages out of the RSS unless new evidence proves they are
+standalone Indicator releases with their own valid enclosures.

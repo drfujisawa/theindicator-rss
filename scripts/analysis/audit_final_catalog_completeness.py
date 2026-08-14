@@ -99,6 +99,9 @@ def main() -> None:
     history = json.loads(
         (REPO_ROOT / "indicator_history.json").read_text(encoding="utf-8")
     )["episodes"]
+    enclosure_map = json.loads(
+        (REPO_ROOT / "indicator_enclosure_map.json").read_text(encoding="utf-8")
+    )["episodes"]
 
     npr = rss_rows(ET.fromstring(fetch(NPR_FEED)))
     apple_payload = json.loads(fetch(APPLE_API))
@@ -130,6 +133,8 @@ def main() -> None:
             "story_id": str(row["story_id"]),
             "date": row["date"],
             "title": row["title"],
+            "enclosure_status": enclosure_map[str(row["story_id"])]["status"],
+            "classification": "non_feed_history_record_pending_scope_review",
         }
         for row in history
         if str(row["story_id"]) not in feed_guids
