@@ -38690,6 +38690,130 @@
       ],
       "audio_url_e_parameter": "1197961087",
       "release_classification": "confirmed_indicator_episode"
+    },
+    "1091790773": {
+      "story_id": "1091790773",
+      "audio_id": "1091790773",
+      "date": "2022-04-08",
+      "title": "Inflation indicators: Fed chatter, global inflation and used cars",
+      "npr_url": "https://www.npr.org/2022/04/08/1091790773/inflation-indicators-fed-chatter-global-inflation-and-used-cars",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2022/04/20220408_indicator_220408_iow_for_publication.mp3?d=581&size=9307203&e=1091790773&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2022/04/20220408_indicator_220408_iow_for_publication.mp3?d=581&size=9307203&e=1091790773&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9307488,
+      "duration_seconds": 581,
+      "extraction_method": "validated_remaining_ranked_2022_confirmed_cluster",
+      "provenance": [
+        "indicator_2022_confirmed_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1091790773",
+        "1091790773",
+        "1091790773"
+      ],
+      "audio_url_e_parameter": "1091790773",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1100277520": {
+      "story_id": "1100277520",
+      "audio_id": "1100277520",
+      "date": "2022-05-19",
+      "title": "Economists weigh in on the abortion debate",
+      "npr_url": "https://www.npr.org/2022/05/19/1100277520/economists-weigh-in-on-the-abortion-debate",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2022/05/20220519_indicator_220519_economists_on_roe_for_publication.mp3?d=582&size=9324757&e=1100277520&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2022/05/20220519_indicator_220519_economists_on_roe_for_publication.mp3?d=582&size=9324757&e=1100277520&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9325105,
+      "duration_seconds": 582,
+      "extraction_method": "validated_remaining_ranked_2022_confirmed_cluster",
+      "provenance": [
+        "indicator_2022_confirmed_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1100277520",
+        "1100277520",
+        "1100277520"
+      ],
+      "audio_url_e_parameter": "1100277520",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1101600846": {
+      "story_id": "1101600846",
+      "audio_id": "1101600846",
+      "date": "2022-05-26",
+      "title": "The pros and cons of a strong dollar",
+      "npr_url": "https://www.npr.org/2022/05/26/1101600846/the-pros-and-cons-of-a-strong-dollar",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2022/05/20220526_indicator_strong_dollar_ready_to_upload.mp3?d=543&size=8693221&e=1101600846&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2022/05/20220526_indicator_strong_dollar_ready_to_upload.mp3?d=543&size=8693221&e=1101600846&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 8693425,
+      "duration_seconds": 543,
+      "extraction_method": "validated_remaining_ranked_2022_confirmed_cluster",
+      "provenance": [
+        "indicator_2022_confirmed_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1101600846",
+        "1101600846",
+        "1101600846"
+      ],
+      "audio_url_e_parameter": "1101600846",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1119307426": {
+      "story_id": "1119307426",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2022-08-24",
+      "title": "SCOTUS: de facto pro-business?",
+      "npr_url": "https://www.npr.org/2022/08/24/1119307426/scotus-de-facto-pro-business",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/404c3ef8-5872-4daf-a3b0-a8ee1953a977/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=404c3ef8-5872-4daf-a3b0-a8ee1953a977&t=podcast&e=1119307426&p=510325&d=563&size=9292339&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/404c3ef8-5872-4daf-a3b0-a8ee1953a977/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=404c3ef8-5872-4daf-a3b0-a8ee1953a977&t=podcast&e=1119307426&p=510325&d=563&size=9292339&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 10933545,
+      "duration_seconds": 563,
+      "extraction_method": "validated_remaining_ranked_2022_confirmed_cluster",
+      "provenance": [
+        "indicator_2022_confirmed_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1119307426",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1119307426"
+      ],
+      "audio_url_e_parameter": "1119307426",
+      "release_classification": "confirmed_indicator_episode"
     }
   }
 }
