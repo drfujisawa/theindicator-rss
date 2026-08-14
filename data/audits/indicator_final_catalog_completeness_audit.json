@@ -1,0 +1,105 @@
+{
+  "report_version": 2,
+  "generated_at": "2026-08-14T01:52:20.339982-07:00",
+  "scope": "original NPR program 510325 feed from its 2017-12-01 trailer through present",
+  "local": {
+    "feed_items": 2195,
+    "unique_guids": 2195,
+    "year_counts": {
+      "2017": 12,
+      "2018": 252,
+      "2019": 250,
+      "2020": 257,
+      "2021": 251,
+      "2022": 251,
+      "2023": 251,
+      "2024": 254,
+      "2025": 256,
+      "2026": 161
+    },
+    "history_records_absent_from_feed": [
+      {
+        "story_id": "1038307729",
+        "date": "2021-09-17T20:35:11-04:00",
+        "title": "Two Indicators: Women And Work",
+        "enclosure_status": "no_audio",
+        "classification": "planet_money_compilation_reusing_indicator_segments"
+      },
+      {
+        "story_id": "1034085667",
+        "date": "2021-09-03T19:15:57-04:00",
+        "title": "Two Indicators: Water Pressure",
+        "enclosure_status": "no_audio",
+        "classification": "planet_money_compilation_reusing_indicator_segments"
+      },
+      {
+        "story_id": "1029846068",
+        "date": "2021-08-20T19:10:23-04:00",
+        "title": "Two Indicators: Will Remote Work Kill The Office?",
+        "enclosure_status": "no_audio",
+        "classification": "planet_money_compilation_reusing_indicator_segments"
+      },
+      {
+        "story_id": "1013954358",
+        "date": "2021-07-07T19:51:26-04:00",
+        "title": "Two Indicators: Clogged Ports And Corporate Vets",
+        "enclosure_status": "no_audio",
+        "classification": "planet_money_compilation_reusing_indicator_segments"
+      }
+    ],
+    "unknown_or_zero_enclosure_lengths": 0
+  },
+  "npr_current_feed": {
+    "items": 300,
+    "missing_from_local_by_date_title": []
+  },
+  "apple_current_catalog": {
+    "items": 200,
+    "missing_from_local_by_date_title": []
+  },
+  "tvdb": {
+    "items": 2105,
+    "candidate_omissions": 2,
+    "candidate_counts_by_year": {
+      "2021": 2
+    },
+    "classified_catalog_mismatches": [
+      {
+        "season": 2021,
+        "episode": 207,
+        "date": "2021-10-29",
+        "title": "Are you afraid of inflation?",
+        "url": "https://thetvdb.com/series/the-indicator-from-planet-money-podcast/episodes/8831807",
+        "classification": "alternate_title_for_existing_indicator_episode",
+        "local_story_id": "1050665635",
+        "local_title": "Night of the living inflation",
+        "basis": "same 2021-10-29 Indicator release under an alternate catalog title"
+      },
+      {
+        "season": 2021,
+        "episode": 223,
+        "date": "2021-11-21",
+        "title": "BONUS: Wisdom From The Top",
+        "url": "https://thetvdb.com/series/the-indicator-from-planet-money-podcast/episodes/8871967",
+        "classification": "non_indicator_cross_feed_promotion",
+        "source_show": "Consider This from NPR",
+        "basis": "59-minute promotion from another NPR show, not program 510325"
+      }
+    ],
+    "unresolved_candidate_omissions": []
+  },
+  "original_launch_feed": {
+    "source_snapshot": {
+      "original_feed": "https://www.npr.org/rss/podcast.php?id=510325",
+      "wayback_timestamp": "20180310110945",
+      "snapshot_url": "https://web.archive.org/web/20180310110945id_/https://www.npr.org/rss/podcast.php?id=510325",
+      "snapshot_sha256": "f9ce58899b77ff051d7749a60c9e2f92a03d91d0debef8873b3a84a77f8301c5"
+    },
+    "historical_items": 59,
+    "episodes": 58,
+    "launch_trailers": 1,
+    "exact_live_audio_responses": 59,
+    "all_present_in_current_feed": true
+  },
+  "verdict": "complete_for_defined_program_feed_scope"
+}

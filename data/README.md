@@ -56,6 +56,8 @@ Active audit datasets — produced and consumed by completeness/reconciliation s
 | `indicator_completeness_audit.json` | Full episode completeness audit | `scripts/maintenance/audit_indicator_completeness.py` (writes), unresolved recovery scripts (reads) |
 | `indicator_early_audit.json` | Early episode history audit | `scripts/recovery/indicator_early_history.py` (writes), `scripts/recovery/recover_missing_episodes.py` (reads) |
 | `indicator_history_date_audit.json` | Publication-date audit of episode history | `scripts/analysis/audit_history_dates.py` |
+| `indicator_final_catalog_completeness_audit.json` | Current machine-readable NPR, Apple, TheTVDB, launch-feed, exclusion, and completeness verdict | `scripts/analysis/audit_final_catalog_completeness.py` |
+| `indicator_final_catalog_completeness_audit.md` | Human-readable final catalog audit and defined-scope verdict | `scripts/analysis/audit_final_catalog_completeness.py` |
 | `indicator_early_promotion_manifest.json` | Read-only, provenance-preserving review manifest for early-history promotion candidates | `scripts/analysis/audit_early_promotion_candidates.py` |
 | `indicator_early_promotion_dry_run_report.json` | Validation report for isolated early-history dry-run artifacts; production files are not modified | `scripts/analysis/build_early_promotion_dry_run.py` |
 | `indicator_early_metadata_enrichment_audit.json` | Field-level metadata provenance, rebroadcast flags, and conservative promotion tiers for strong early-history candidates | `scripts/analysis/audit_early_metadata_enrichment.py` |
