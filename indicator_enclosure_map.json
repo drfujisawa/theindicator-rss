@@ -38070,6 +38070,347 @@
       ],
       "audio_url_e_parameter": "1222340422",
       "release_classification": "confirmed_indicator_episode"
+    },
+    "1222474621": {
+      "story_id": "1222474621",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2025-01-02",
+      "title": "Why to look twice when your portfolio is doing well",
+      "npr_url": "https://www.npr.org/2025/01/02/1222474621/why-to-look-twice-when-your-portfolio-is-doing-well",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/53737039-3dad-4cf7-bca1-8a88fc97af2c/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=53737039-3dad-4cf7-bca1-8a88fc97af2c&t=podcast&e=1222474621&p=510325&d=505&size=8088434&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/53737039-3dad-4cf7-bca1-8a88fc97af2c/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=53737039-3dad-4cf7-bca1-8a88fc97af2c&t=podcast&e=1222474621&p=510325&d=505&size=8088434&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9239579,
+      "duration_seconds": 505,
+      "extraction_method": "validated_remaining_ranked_2025_january_cluster",
+      "provenance": [
+        "indicator_2025_january_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1222474621",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1222474621"
+      ],
+      "audio_url_e_parameter": "1222474621",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1222640171": {
+      "story_id": "1222640171",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2025-01-03",
+      "title": "President Jimmy Carter's economic legacy",
+      "npr_url": "https://www.npr.org/2025/01/03/1222640171/president-jimmy-carters-economic-legacy",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/bdd17289-b330-4fe1-a3fc-ef3f8936a122/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=bdd17289-b330-4fe1-a3fc-ef3f8936a122&t=podcast&e=1222640171&p=510325&d=553&size=8855389&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/bdd17289-b330-4fe1-a3fc-ef3f8936a122/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=bdd17289-b330-4fe1-a3fc-ef3f8936a122&t=podcast&e=1222640171&p=510325&d=553&size=8855389&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 10006523,
+      "duration_seconds": 553,
+      "extraction_method": "validated_remaining_ranked_2025_january_cluster",
+      "provenance": [
+        "indicator_2025_january_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1222640171",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1222640171"
+      ],
+      "audio_url_e_parameter": "1222640171",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1223291772": {
+      "story_id": "1223291772",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2025-01-06",
+      "title": "The water mystery unfolding in the western U.S.",
+      "npr_url": "https://www.npr.org/2025/01/06/1223291772/the-water-mystery-unfolding-in-the-western-us",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/d074febc-9154-41a2-9966-dcd66530861d/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=d074febc-9154-41a2-9966-dcd66530861d&t=podcast&e=1223291772&p=510325&d=514&size=8227614&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/d074febc-9154-41a2-9966-dcd66530861d/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=d074febc-9154-41a2-9966-dcd66530861d&t=podcast&e=1223291772&p=510325&d=514&size=8227614&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9378755,
+      "duration_seconds": 514,
+      "extraction_method": "validated_remaining_ranked_2025_january_cluster",
+      "provenance": [
+        "indicator_2025_january_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1223291772",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1223291772"
+      ],
+      "audio_url_e_parameter": "1223291772",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1223358002": {
+      "story_id": "1223358002",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2025-01-07",
+      "title": "Why Netflix spent billions for WWE",
+      "npr_url": "https://www.npr.org/2025/01/07/1223358002/the-indicator-from-planet-money-why-netflix-spent-billions-for-wwe-01-07-2025",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/9ba278b3-1087-49d3-8fd7-1dea8077efdf/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=9ba278b3-1087-49d3-8fd7-1dea8077efdf&t=podcast&e=1223358002&p=510325&d=475&size=7606527&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/9ba278b3-1087-49d3-8fd7-1dea8077efdf/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=9ba278b3-1087-49d3-8fd7-1dea8077efdf&t=podcast&e=1223358002&p=510325&d=475&size=7606527&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 8998818,
+      "duration_seconds": 475,
+      "extraction_method": "validated_remaining_ranked_2025_january_cluster",
+      "provenance": [
+        "indicator_2025_january_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1223358002",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1223358002"
+      ],
+      "audio_url_e_parameter": "1223358002",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1223466594": {
+      "story_id": "1223466594",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2025-01-08",
+      "title": "What's a moneyline bet anyway?",
+      "npr_url": "https://www.npr.org/2025/01/08/1223466594/investopedia-top-financial-terms-2024",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/b8faae8e-2f91-4d81-b1a7-ea4bc99b4bb1/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=b8faae8e-2f91-4d81-b1a7-ea4bc99b4bb1&t=podcast&e=1223466594&p=510325&d=558&size=8942742&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/b8faae8e-2f91-4d81-b1a7-ea4bc99b4bb1/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=b8faae8e-2f91-4d81-b1a7-ea4bc99b4bb1&t=podcast&e=1223466594&p=510325&d=558&size=8942742&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 10093866,
+      "duration_seconds": 558,
+      "extraction_method": "validated_remaining_ranked_2025_january_cluster",
+      "provenance": [
+        "indicator_2025_january_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1223466594",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1223466594"
+      ],
+      "audio_url_e_parameter": "1223466594",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1223918032": {
+      "story_id": "1223918032",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2025-01-10",
+      "title": "What's going on with men's labor force participation?",
+      "npr_url": "https://www.npr.org/2025/01/10/1223918032/economy-men-labor-force-unemployment-inflation",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/1e57522e-740c-4639-9595-9bd386e6f98a/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=1e57522e-740c-4639-9595-9bd386e6f98a&t=podcast&e=1223918032&p=510325&d=541&size=8670233&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/1e57522e-740c-4639-9595-9bd386e6f98a/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=1e57522e-740c-4639-9595-9bd386e6f98a&t=podcast&e=1223918032&p=510325&d=541&size=8670233&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 10062542,
+      "duration_seconds": 541,
+      "extraction_method": "validated_remaining_ranked_2025_january_cluster",
+      "provenance": [
+        "indicator_2025_january_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1223918032",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1223918032"
+      ],
+      "audio_url_e_parameter": "1223918032",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1224599777": {
+      "story_id": "1224599777",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2025-01-13",
+      "title": "How batteries are already changing the grid",
+      "npr_url": "https://www.npr.org/2025/01/13/1224599777/the-indicator-from-planet-money-how-batteries-are-changing-the-us-01-13-2025",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/d3799be1-d5a3-40aa-ac89-ac2139b1a809/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=d3799be1-d5a3-40aa-ac89-ac2139b1a809&t=podcast&e=1224599777&p=510325&d=563&size=9013377&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/d3799be1-d5a3-40aa-ac89-ac2139b1a809/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=d3799be1-d5a3-40aa-ac89-ac2139b1a809&t=podcast&e=1224599777&p=510325&d=563&size=9013377&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 10405676,
+      "duration_seconds": 563,
+      "extraction_method": "validated_remaining_ranked_2025_january_cluster",
+      "provenance": [
+        "indicator_2025_january_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1224599777",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1224599777"
+      ],
+      "audio_url_e_parameter": "1224599777",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1224682730": {
+      "story_id": "1224682730",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2025-01-14",
+      "title": "How batteries are riding the free market rodeo in Texas",
+      "npr_url": "https://www.npr.org/2025/01/14/1224682730/how-batteries-are-riding-the-free-market-rodeo-in-texas",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/f769e29a-478c-42f4-8edc-f2ad332785a0/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=f769e29a-478c-42f4-8edc-f2ad332785a0&t=podcast&e=1224682730&p=510325&d=487&size=7806729&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/f769e29a-478c-42f4-8edc-f2ad332785a0/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=f769e29a-478c-42f4-8edc-f2ad332785a0&t=podcast&e=1224682730&p=510325&d=487&size=7806729&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 8957878,
+      "duration_seconds": 487,
+      "extraction_method": "validated_remaining_ranked_2025_january_cluster",
+      "provenance": [
+        "indicator_2025_january_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1224682730",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1224682730"
+      ],
+      "audio_url_e_parameter": "1224682730",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1224776146": {
+      "story_id": "1224776146",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2025-01-15",
+      "title": "The race to produce lithium",
+      "npr_url": "https://www.npr.org/2025/01/15/1224776146/the-race-to-produce-lithium",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/e96ee283-3576-4bbd-b80d-9a5951c2be11/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=e96ee283-3576-4bbd-b80d-9a5951c2be11&t=podcast&e=1224776146&p=510325&d=497&size=7962628&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/e96ee283-3576-4bbd-b80d-9a5951c2be11/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=e96ee283-3576-4bbd-b80d-9a5951c2be11&t=podcast&e=1224776146&p=510325&d=497&size=7962628&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9113749,
+      "duration_seconds": 497,
+      "extraction_method": "validated_remaining_ranked_2025_january_cluster",
+      "provenance": [
+        "indicator_2025_january_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1224776146",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1224776146"
+      ],
+      "audio_url_e_parameter": "1224776146",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1224897145": {
+      "story_id": "1224897145",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2025-01-16",
+      "title": "Who's on the hook for California's uninsurable homes?",
+      "npr_url": "https://www.npr.org/2025/01/16/1224897145/the-indicator-from-planet-money-california-wildfire-fair-plan-01-16-2025",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/2d99b878-ae4a-4cbb-a89f-75344d817150/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=2d99b878-ae4a-4cbb-a89f-75344d817150&t=podcast&e=1224897145&p=510325&d=499&size=7999408&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/2d99b878-ae4a-4cbb-a89f-75344d817150/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=2d99b878-ae4a-4cbb-a89f-75344d817150&t=podcast&e=1224897145&p=510325&d=499&size=7999408&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9150555,
+      "duration_seconds": 499,
+      "extraction_method": "validated_remaining_ranked_2025_january_cluster",
+      "provenance": [
+        "indicator_2025_january_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1224897145",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1224897145"
+      ],
+      "audio_url_e_parameter": "1224897145",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1225172104": {
+      "story_id": "1225172104",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2025-01-17",
+      "title": "Student loans, savings accounts, and goodbye to artificial red dye",
+      "npr_url": "https://www.npr.org/2025/01/17/1225172104/biden-trump-fda-student-loans-capital-one-red-dye",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/4fec2c01-4160-487d-b3c2-33c765727286/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=4fec2c01-4160-487d-b3c2-33c765727286&t=podcast&e=1225172104&p=510325&d=567&size=9078579&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/4fec2c01-4160-487d-b3c2-33c765727286/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=4fec2c01-4160-487d-b3c2-33c765727286&t=podcast&e=1225172104&p=510325&d=567&size=9078579&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 10229739,
+      "duration_seconds": 567,
+      "extraction_method": "validated_remaining_ranked_2025_january_cluster",
+      "provenance": [
+        "indicator_2025_january_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1225172104",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1225172104"
+      ],
+      "audio_url_e_parameter": "1225172104",
+      "release_classification": "confirmed_indicator_episode"
     }
   }
 }

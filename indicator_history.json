@@ -1,6 +1,6 @@
 {
   "next_date": "2017-11-05T16:46:00-04:00",
-  "episode_count": 1801,
+  "episode_count": 1812,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -874,6 +874,215 @@
       "audio_id": "1264988903",
       "player_url": "https://www.npr.org/player/embed/1225890655/1264988903",
       "description": "President Donald Trump's proposal that the United States take \"ownership\" of Greenland has raised a lot of eyebrows. Can the U.S. just buy itself this big territory? Is that a thing? Turns out if you look at U.S. history, it's absolutely a thing.Today on the show: how massive land deals called \"sovereignty purchases\" have shaped the country we live in today, and why the idea of the U.S. buying Greenland is a lot more complicated than it would have been in the past. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Fact-checking by Sierra Juarez. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Student loans, savings accounts, and goodbye to artificial red dye",
+      "date": "2025-01-17",
+      "npr_url": "https://www.npr.org/2025/01/17/1225172104/biden-trump-fda-student-loans-capital-one-red-dye",
+      "story_id": "1225172104",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2025/01/17/1225172104/biden-trump-fda-student-loans-capital-one-red-dye",
+      "description": "Student loans, savings accounts, and goodbye to artificial red dye",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2025_january_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2025_january_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "Who's on the hook for California's uninsurable homes?",
+      "date": "2025-01-16",
+      "npr_url": "https://www.npr.org/2025/01/16/1224897145/the-indicator-from-planet-money-california-wildfire-fair-plan-01-16-2025",
+      "story_id": "1224897145",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2025/01/16/1224897145/the-indicator-from-planet-money-california-wildfire-fair-plan-01-16-2025",
+      "description": "Who's on the hook for California's uninsurable homes?",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2025_january_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2025_january_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "The race to produce lithium",
+      "date": "2025-01-15",
+      "npr_url": "https://www.npr.org/2025/01/15/1224776146/the-race-to-produce-lithium",
+      "story_id": "1224776146",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2025/01/15/1224776146/the-race-to-produce-lithium",
+      "description": "The race to produce lithium",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2025_january_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2025_january_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "How batteries are riding the free market rodeo in Texas",
+      "date": "2025-01-14",
+      "npr_url": "https://www.npr.org/2025/01/14/1224682730/how-batteries-are-riding-the-free-market-rodeo-in-texas",
+      "story_id": "1224682730",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2025/01/14/1224682730/how-batteries-are-riding-the-free-market-rodeo-in-texas",
+      "description": "How batteries are riding the free market rodeo in Texas",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2025_january_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2025_january_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "How batteries are already changing the grid",
+      "date": "2025-01-13",
+      "npr_url": "https://www.npr.org/2025/01/13/1224599777/the-indicator-from-planet-money-how-batteries-are-changing-the-us-01-13-2025",
+      "story_id": "1224599777",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2025/01/13/1224599777/the-indicator-from-planet-money-how-batteries-are-changing-the-us-01-13-2025",
+      "description": "How batteries are already changing the grid",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2025_january_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2025_january_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "What's going on with men's labor force participation?",
+      "date": "2025-01-10",
+      "npr_url": "https://www.npr.org/2025/01/10/1223918032/economy-men-labor-force-unemployment-inflation",
+      "story_id": "1223918032",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2025/01/10/1223918032/economy-men-labor-force-unemployment-inflation",
+      "description": "What's going on with men's labor force participation?",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2025_january_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2025_january_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "What's a moneyline bet anyway?",
+      "date": "2025-01-08",
+      "npr_url": "https://www.npr.org/2025/01/08/1223466594/investopedia-top-financial-terms-2024",
+      "story_id": "1223466594",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2025/01/08/1223466594/investopedia-top-financial-terms-2024",
+      "description": "What's a moneyline bet anyway?",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2025_january_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2025_january_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "Why Netflix spent billions for WWE",
+      "date": "2025-01-07",
+      "npr_url": "https://www.npr.org/2025/01/07/1223358002/the-indicator-from-planet-money-why-netflix-spent-billions-for-wwe-01-07-2025",
+      "story_id": "1223358002",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2025/01/07/1223358002/the-indicator-from-planet-money-why-netflix-spent-billions-for-wwe-01-07-2025",
+      "description": "Why Netflix spent billions for WWE",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2025_january_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2025_january_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "The water mystery unfolding in the western U.S.",
+      "date": "2025-01-06",
+      "npr_url": "https://www.npr.org/2025/01/06/1223291772/the-water-mystery-unfolding-in-the-western-us",
+      "story_id": "1223291772",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2025/01/06/1223291772/the-water-mystery-unfolding-in-the-western-us",
+      "description": "The water mystery unfolding in the western U.S.",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2025_january_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2025_january_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "President Jimmy Carter's economic legacy",
+      "date": "2025-01-03",
+      "npr_url": "https://www.npr.org/2025/01/03/1222640171/president-jimmy-carters-economic-legacy",
+      "story_id": "1222640171",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2025/01/03/1222640171/president-jimmy-carters-economic-legacy",
+      "description": "President Jimmy Carter's economic legacy",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2025_january_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2025_january_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "Why to look twice when your portfolio is doing well",
+      "date": "2025-01-02",
+      "npr_url": "https://www.npr.org/2025/01/02/1222474621/why-to-look-twice-when-your-portfolio-is-doing-well",
+      "story_id": "1222474621",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2025/01/02/1222474621/why-to-look-twice-when-your-portfolio-is-doing-well",
+      "description": "Why to look twice when your portfolio is doing well",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2025_january_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2025_january_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
     },
     {
       "title": "The curious rise of novelty popcorn buckets (Encore)",
