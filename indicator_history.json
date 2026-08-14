@@ -1,6 +1,6 @@
 {
   "next_date": "2017-11-05T16:46:00-04:00",
-  "episode_count": 1827,
+  "episode_count": 1834,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -6341,6 +6341,25 @@
       "description": "Should we be worried about a recession? New polling shows that auto dealers certainly are. But leftover pandemic stimulus money is one of the biggest buffers holding one off.2022 is almost over and we want to know what your favorite Indicator episode of the year is ... Email us at indicator@npr.org and put \"favorite Indicator\" in the subject line. We'll reveal some of them at the end of the month!"
     },
     {
+      "title": "Where inflation hits hardest",
+      "date": "2022-12-08",
+      "npr_url": "https://www.npr.org/2022/12/08/1141665565/where-inflation-hits-hardest",
+      "story_id": "1141665565",
+      "audio_id": "05abf0a1-e4b0-456e-84cf-ddba16432fdd",
+      "player_url": "https://www.npr.org/2022/12/08/1141665565/where-inflation-hits-hardest",
+      "description": "Where inflation hits hardest",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_final_eight_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_final_eight_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "Impact investing, part 2: Can money meet morals?",
       "date": "2022-12-07T19:24:14-05:00",
       "npr_url": "https://www.npr.org/2022/12/07/1141432421/impact-investing-part-2-can-money-meet-morals",
@@ -9928,6 +9947,25 @@
       "description": "The U.S. unemployment rate is still high... so why are we in a labor shortage? Sam chats with Stacey Vanek Smith, host of NPR's The Indicator, and Cardiff Garcia, former co-host of The Indicator, about the American job market and why businesses are having such a hard time hiring. Then, as vaccines have become more widely available and pandemic restrictions lift across the country, people are wandering back out into the world, having experiences they haven't had in over a year. We drop in on a few of these: a dance party, a first date, a game with friends — the small pleasures folks have missed that now feel monumental.You can follow us on Twitter @NPRItsBeenAMin and email us at samsanders@npr.org."
     },
     {
+      "title": "Dogecoin, Retail And The Cafe Table Indicator",
+      "date": "2021-05-21",
+      "npr_url": "https://www.npr.org/2021/05/21/999259034/dogecoin-retail-and-the-cafe-table-indicator",
+      "story_id": "999259034",
+      "audio_id": "999259034",
+      "player_url": "https://www.npr.org/2021/05/21/999259034/dogecoin-retail-and-the-cafe-table-indicator",
+      "description": "Dogecoin, Retail And The Cafe Table Indicator",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_final_eight_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_final_eight_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "America's Best-Selling Truck Goes Electric",
       "date": "2021-05-20T16:30:51-04:00",
       "npr_url": "https://www.npr.org/2021/05/20/998750991/americas-best-selling-truck-goes-electric",
@@ -10829,6 +10867,25 @@
       "description": "Rare earths are essential to a wide variety of strategically important components, but the vast majority of rare earths are produced by mines in China. That's something that the U.S. is working to correct."
     },
     {
+      "title": "Healthcare: The Pandemic's Financial Fallout",
+      "date": "2020-12-24",
+      "npr_url": "https://www.npr.org/2020/12/22/949242597/healthcare-the-pandemics-financial-fallout",
+      "story_id": "949242597",
+      "audio_id": "949242597",
+      "player_url": "https://www.npr.org/2020/12/22/949242597/healthcare-the-pandemics-financial-fallout",
+      "description": "Healthcare: The Pandemic's Financial Fallout",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_final_eight_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_final_eight_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "Coming Back From Covid",
       "date": "2020-12-23T17:01:41-05:00",
       "npr_url": "https://www.npr.org/2020/12/21/948955784/coming-back-from-covid",
@@ -11025,6 +11082,25 @@
       "audio_id": "938158673",
       "player_url": "https://www.npr.org/player/embed/938129386/938158673",
       "description": "The U.S. is down around 3.5 million hospitality jobs since the pandemic took hold. But in spite of setbacks, hotels continue to open."
+    },
+    {
+      "title": "A Face-Punching Legal Battle",
+      "date": "2020-11-20",
+      "npr_url": "https://www.npr.org/2020/11/20/937158506/a-face-punching-legal-battle",
+      "story_id": "937158506",
+      "audio_id": "937158506",
+      "player_url": "https://www.npr.org/2020/11/20/937158506/a-face-punching-legal-battle",
+      "description": "A Face-Punching Legal Battle",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_final_eight_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_final_eight_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
     },
     {
       "title": "Make Trade Stale Again",
@@ -12809,6 +12885,25 @@
       "description": "Cardiff takes on the national debt, minimum wage, and gender-fluid tadpoles to get answers to your burning questions."
     },
     {
+      "title": "How Economists Do Valentines",
+      "date": "2020-02-14",
+      "npr_url": "https://www.npr.org/2020/02/14/806153805/how-economists-do-valentines",
+      "story_id": "806153805",
+      "audio_id": "806153805",
+      "player_url": "https://www.npr.org/2020/02/14/806153805/how-economists-do-valentines",
+      "description": "How Economists Do Valentines",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_final_eight_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_final_eight_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "For Rent: Fast Fashion",
       "date": "2020-02-13T18:18:57-05:00",
       "npr_url": "https://www.npr.org/2020/02/13/805821902/for-rent-fast-fashion",
@@ -13412,6 +13507,25 @@
       "description": "The leather manufacturing industry was once a backbone of the American economy. Now the industry is in decline, and the trade war isn't helping."
     },
     {
+      "title": "Openness Versus National Security: A Dilemma For U.S. Schools",
+      "date": "2019-11-05",
+      "npr_url": "https://www.npr.org/2019/11/05/776504323/openness-versus-national-security-a-dilemma-for-u-s-schools",
+      "story_id": "776504323",
+      "audio_id": "776504323",
+      "player_url": "https://www.npr.org/2019/11/05/776504323/openness-versus-national-security-a-dilemma-for-u-s-schools",
+      "description": "Openness Versus National Security: A Dilemma For U.S. Schools",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_final_eight_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_final_eight_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "The American Dream And The Children Of Immigrants",
       "date": "2019-11-04T18:22:42-05:00",
       "npr_url": "https://www.npr.org/2019/11/04/776191773/the-american-dream-and-the-children-of-immigrants",
@@ -13590,6 +13704,25 @@
       "audio_id": "768095062",
       "player_url": "https://www.npr.org/player/embed/768058323/768095062",
       "description": "Forever 21's bankruptcy filing highlights the flaws in fast fashion."
+    },
+    {
+      "title": "Jobs Friday: Crunching The Numbers",
+      "date": "2019-10-04",
+      "npr_url": "https://www.npr.org/2019/10/03/766998707/jobs-friday-crunching-the-numbers",
+      "story_id": "766998707",
+      "audio_id": "766998707",
+      "player_url": "https://www.npr.org/2019/10/03/766998707/jobs-friday-crunching-the-numbers",
+      "description": "Jobs Friday: Crunching The Numbers",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_final_eight_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_final_eight_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
     },
     {
       "title": "How Iceland's Tourism Bubble Deflated",
@@ -13997,7 +14130,7 @@
       "description": "Some presidential candidates have supported a policy — known as co-determination — that would see workers represented on corporate boards. We talked to one worker who already has a seat at the table."
     },
     {
-      "title": "What If Workers Sat On Corporate Boards?",
+      "title": "Workers Take A Seat At The Table?",
       "date": "2019-07-31T17:24:43-04:00",
       "npr_url": "https://www.npr.org/2019/07/31/747044058/what-if-workers-sat-on-corporate-boards",
       "story_id": "747044058",

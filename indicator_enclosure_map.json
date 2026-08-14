@@ -38876,6 +38876,223 @@
       ],
       "audio_url_e_parameter": "1024401554",
       "release_classification": "confirmed_indicator_episode"
+    },
+    "766998707": {
+      "story_id": "766998707",
+      "audio_id": "766998707",
+      "date": "2019-10-04",
+      "title": "Jobs Friday: Crunching The Numbers",
+      "npr_url": "https://www.npr.org/2019/10/03/766998707/jobs-friday-crunching-the-numbers",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/10/20191004_indicator_191004_jobs_friday_final-e80d0cec-1fb2-4221-9124-0123ae0da535.mp3?awCollectionId=510325&awEpisodeId=766998707&orgId=1&topicId=1006&d=600&p=510325&story=766998707&t=podcast&e=766998707&size=9579947&ft=pod&f=510325",
+      "final_url": "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/10/20191004_indicator_191004_jobs_friday_final-e80d0cec-1fb2-4221-9124-0123ae0da535.mp3?awCollectionId=510325&awEpisodeId=766998707&orgId=1&topicId=1006&d=600&p=510325&story=766998707&t=podcast&e=766998707&size=9579947&ft=pod&f=510325",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9579947,
+      "duration_seconds": 600,
+      "extraction_method": "validated_remaining_ranked_final_eight_cluster",
+      "provenance": [
+        "indicator_final_eight_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "766998707",
+        "766998707",
+        "766998707"
+      ],
+      "audio_url_e_parameter": "766998707",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "776504323": {
+      "story_id": "776504323",
+      "audio_id": "776504323",
+      "date": "2019-11-05",
+      "title": "Openness Versus National Security: A Dilemma For U.S. Schools",
+      "npr_url": "https://www.npr.org/2019/11/05/776504323/openness-versus-national-security-a-dilemma-for-u-s-schools",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/11/20191105_indicator_191104_chinese_influence_us_universities_final-4f2300b8-4bd5-4470-b665-fd365e8a6ac7-f346c45f-62a8-42d4-8703-32272c0f764f.mp3?awCollectionId=510325&awEpisodeId=776504323&orgId=1&topicId=1006&d=598&p=510325&story=776504323&t=podcast&e=776504323&size=9560765&ft=pod&f=510325",
+      "final_url": "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/11/20191105_indicator_191104_chinese_influence_us_universities_final-4f2300b8-4bd5-4470-b665-fd365e8a6ac7-f346c45f-62a8-42d4-8703-32272c0f764f.mp3?awCollectionId=510325&awEpisodeId=776504323&orgId=1&topicId=1006&d=598&p=510325&story=776504323&t=podcast&e=776504323&size=9560765&ft=pod&f=510325",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9560765,
+      "duration_seconds": 598,
+      "extraction_method": "validated_remaining_ranked_final_eight_cluster",
+      "provenance": [
+        "indicator_final_eight_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "776504323",
+        "776504323",
+        "776504323"
+      ],
+      "audio_url_e_parameter": "776504323",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "806153805": {
+      "story_id": "806153805",
+      "audio_id": "806153805",
+      "date": "2020-02-14",
+      "title": "How Economists Do Valentines",
+      "npr_url": "https://www.npr.org/2020/02/14/806153805/how-economists-do-valentines",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2020/02/20200214_indicator_econ_valentine_s_final-01c50f2c-b99f-4b0c-a01f-63c7cc6e1395.mp3?awCollectionId=510325&awEpisodeId=806153805&orgId=1&topicId=1006&d=591&p=510325&story=806153805&t=podcast&e=806153805&size=9441503&ft=pod&f=510325",
+      "final_url": "https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2020/02/20200214_indicator_econ_valentine_s_final-01c50f2c-b99f-4b0c-a01f-63c7cc6e1395.mp3?awCollectionId=510325&awEpisodeId=806153805&orgId=1&topicId=1006&d=591&p=510325&story=806153805&t=podcast&e=806153805&size=9441503&ft=pod&f=510325",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9441503,
+      "duration_seconds": 591,
+      "extraction_method": "validated_remaining_ranked_final_eight_cluster",
+      "provenance": [
+        "indicator_final_eight_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "806153805",
+        "806153805",
+        "806153805"
+      ],
+      "audio_url_e_parameter": "806153805",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "937158506": {
+      "story_id": "937158506",
+      "audio_id": "937158506",
+      "date": "2020-11-20",
+      "title": "A Face-Punching Legal Battle",
+      "npr_url": "https://www.npr.org/2020/11/20/937158506/a-face-punching-legal-battle",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2020/11/20201120_indicator_ufc_lawsuit_ready_to_publish_1.mp3?awCollectionId=510325&awEpisodeId=937158506&orgId=1&topicId=1017&d=592&p=510325&story=937158506&t=podcast&e=937158506&size=9452556&ft=pod&f=510325",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2020/11/20201120_indicator_ufc_lawsuit_ready_to_publish_1.mp3?awCollectionId=510325&awEpisodeId=937158506&orgId=1&topicId=1017&d=592&p=510325&story=937158506&t=podcast&e=937158506&size=9452556&ft=pod&f=510325",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9452805,
+      "duration_seconds": 592,
+      "extraction_method": "validated_remaining_ranked_final_eight_cluster",
+      "provenance": [
+        "indicator_final_eight_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "937158506",
+        "937158506",
+        "937158506"
+      ],
+      "audio_url_e_parameter": "937158506",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "949242597": {
+      "story_id": "949242597",
+      "audio_id": "949242597",
+      "date": "2020-12-24",
+      "title": "Healthcare: The Pandemic's Financial Fallout",
+      "npr_url": "https://www.npr.org/2020/12/22/949242597/healthcare-the-pandemics-financial-fallout",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2020/12/20201224_indicator_patrick_cawley_ready_to_publish.mp3?awCollectionId=510325&awEpisodeId=949242597&orgId=1&d=599&p=510325&story=949242597&t=podcast&e=949242597&size=9578490&ft=pod&f=510325",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2020/12/20201224_indicator_patrick_cawley_ready_to_publish.mp3?awCollectionId=510325&awEpisodeId=949242597&orgId=1&d=599&p=510325&story=949242597&t=podcast&e=949242597&size=9578490&ft=pod&f=510325",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9578739,
+      "duration_seconds": 599,
+      "extraction_method": "validated_remaining_ranked_final_eight_cluster",
+      "provenance": [
+        "indicator_final_eight_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "949242597",
+        "949242597",
+        "949242597"
+      ],
+      "audio_url_e_parameter": "949242597",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "999259034": {
+      "story_id": "999259034",
+      "audio_id": "999259034",
+      "date": "2021-05-21",
+      "title": "Dogecoin, Retail And The Cafe Table Indicator",
+      "npr_url": "https://www.npr.org/2021/05/21/999259034/dogecoin-retail-and-the-cafe-table-indicator",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2021/05/20210521_indicator_indicators_of_the_week_for_publish.mp3?awCollectionId=510325&awEpisodeId=999259034&orgId=1&topicId=1006&d=556&p=510325&story=999259034&t=podcast&e=999259034&size=8906380&ft=pod&f=510325",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2021/05/20210521_indicator_indicators_of_the_week_for_publish.mp3?awCollectionId=510325&awEpisodeId=999259034&orgId=1&topicId=1006&d=556&p=510325&story=999259034&t=podcast&e=999259034&size=8906380&ft=pod&f=510325",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 8906606,
+      "duration_seconds": 556,
+      "extraction_method": "validated_remaining_ranked_final_eight_cluster",
+      "provenance": [
+        "indicator_final_eight_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "999259034",
+        "999259034",
+        "999259034"
+      ],
+      "audio_url_e_parameter": "999259034",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1141665565": {
+      "story_id": "1141665565",
+      "audio_id": "05abf0a1-e4b0-456e-84cf-ddba16432fdd",
+      "date": "2022-12-08",
+      "title": "Where inflation hits hardest",
+      "npr_url": "https://www.npr.org/2022/12/08/1141665565/where-inflation-hits-hardest",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2022/12/20221208_indicator_05abf0a1-e4b0-456e-84cf-ddba16432fdd.mp3?awCollectionId=510325&awEpisodeId=1141665565&orgId=1&topicId=1017&d=561&p=510325&story=1141665565&t=podcast&e=1141665565&size=8992436&ft=pod&f=510325",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2022/12/20221208_indicator_05abf0a1-e4b0-456e-84cf-ddba16432fdd.mp3?awCollectionId=510325&awEpisodeId=1141665565&orgId=1&topicId=1017&d=561&p=510325&story=1141665565&t=podcast&e=1141665565&size=8992436&ft=pod&f=510325",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 8992786,
+      "duration_seconds": 561,
+      "extraction_method": "validated_remaining_ranked_final_eight_cluster",
+      "provenance": [
+        "indicator_final_eight_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1141665565",
+        "05abf0a1-e4b0-456e-84cf-ddba16432fdd",
+        "1141665565"
+      ],
+      "audio_url_e_parameter": "1141665565",
+      "release_classification": "confirmed_indicator_episode"
     }
   }
 }
