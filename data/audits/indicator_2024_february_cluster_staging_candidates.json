@@ -1,0 +1,61 @@
+{
+  "source_audit": "indicator_final_catalog_completeness_audit.md",
+  "episodes": [
+    {
+      "publication_date": "2024-02-01",
+      "reference_title": "Why the FTC is cracking down on location data brokers",
+      "npr_story_id": "1197961569",
+      "npr_url": "https://www.npr.org/2024/02/01/1197961569/why-the-ftc-is-cracking-down-on-location-data-brokers",
+      "player_story_id": "1197961569",
+      "audio_id": "573ce02b-2417-4d4a-9e87-6aa7d1b7d7c9",
+      "player_url": "https://www.npr.org/2024/02/01/1197961569/why-the-ftc-is-cracking-down-on-location-data-brokers",
+      "affiliate_url": "https://podcasts.apple.com/xk/podcast/why-the-ftc-is-cracking-down-on-location-data-brokers/id1320118593?i=1000643857447",
+      "audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/573ce02b-2417-4d4a-9e87-6aa7d1b7d7c9/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=573ce02b-2417-4d4a-9e87-6aa7d1b7d7c9&t=podcast&e=1197961569&p=510325&d=539&size=8625468&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "content_length_bytes": 10014894,
+      "duration_seconds": 539,
+      "classification": "ready_for_isolated_staging"
+    },
+    {
+      "publication_date": "2024-02-02",
+      "reference_title": "How local government is propping up the U.S. labor market",
+      "npr_story_id": "1197961640",
+      "npr_url": "https://www.npr.org/2024/02/02/1197961640/the-indicator-from-planet-money-jobs-friday-local-government-02-02-2024",
+      "player_story_id": "1197961640",
+      "audio_id": "3b71c674-8978-449f-9c03-e2961a935229",
+      "player_url": "https://www.npr.org/2024/02/02/1197961640/the-indicator-from-planet-money-jobs-friday-local-government-02-02-2024",
+      "affiliate_url": "https://www.npr.org/2024/02/02/1197961640/the-indicator-from-planet-money-jobs-friday-local-government-02-02-2024",
+      "audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/3b71c674-8978-449f-9c03-e2961a935229/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=3b71c674-8978-449f-9c03-e2961a935229&t=podcast&e=1197961640&p=510325&d=481&size=7702614&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "content_length_bytes": 8853809,
+      "duration_seconds": 481,
+      "classification": "ready_for_isolated_staging"
+    },
+    {
+      "publication_date": "2024-02-05",
+      "reference_title": "Could cash payments ease recessions?",
+      "npr_story_id": "1197961671",
+      "npr_url": "https://www.npr.org/2024/02/05/1197961671/could-cash-payments-ease-recessions",
+      "player_story_id": "1197961671",
+      "audio_id": "44e30444-6035-47b9-aacc-3e184c4b1aa5",
+      "player_url": "https://www.npr.org/2024/02/05/1197961671/could-cash-payments-ease-recessions",
+      "affiliate_url": "https://podcasts.apple.com/us/podcast/could-cash-payments-ease-recessions/id1320118593?i=1000644274745",
+      "audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/44e30444-6035-47b9-aacc-3e184c4b1aa5/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=44e30444-6035-47b9-aacc-3e184c4b1aa5&t=podcast&e=1197961671&p=510325&d=521&size=8344182&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "content_length_bytes": 9733591,
+      "duration_seconds": 521,
+      "classification": "ready_for_isolated_staging"
+    },
+    {
+      "publication_date": "2024-02-06",
+      "reference_title": "Did pandemic business support work?",
+      "npr_story_id": "1197961679",
+      "npr_url": "https://www.npr.org/2024/02/06/1197961679/paycheck-protection-program-did-pandemic-loans-work",
+      "player_story_id": "1197961679",
+      "audio_id": "65eee67b-cc80-41f9-95d6-dbeae992b406",
+      "player_url": "https://www.npr.org/2024/02/06/1197961679/paycheck-protection-program-did-pandemic-loans-work",
+      "affiliate_url": "https://podcasts.apple.com/us/podcast/did-pandemic-business-support-work/id1320118593?i=1000644413415",
+      "audio_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/65eee67b-cc80-41f9-95d6-dbeae992b406/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=65eee67b-cc80-41f9-95d6-dbeae992b406&t=podcast&e=1197961679&p=510325&d=562&size=8993272&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "content_length_bytes": 10144444,
+      "duration_seconds": 562,
+      "classification": "ready_for_isolated_staging"
+    }
+  ]
+}

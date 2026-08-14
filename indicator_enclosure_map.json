@@ -36737,6 +36737,130 @@
       ],
       "audio_url_e_parameter": "1197961524",
       "release_classification": "confirmed_indicator_episode"
+    },
+    "1197961569": {
+      "story_id": "1197961569",
+      "audio_id": "573ce02b-2417-4d4a-9e87-6aa7d1b7d7c9",
+      "date": "2024-02-01",
+      "title": "Why the FTC is cracking down on location data brokers",
+      "npr_url": "https://www.npr.org/2024/02/01/1197961569/why-the-ftc-is-cracking-down-on-location-data-brokers",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/573ce02b-2417-4d4a-9e87-6aa7d1b7d7c9/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=573ce02b-2417-4d4a-9e87-6aa7d1b7d7c9&t=podcast&e=1197961569&p=510325&d=539&size=8625468&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/573ce02b-2417-4d4a-9e87-6aa7d1b7d7c9/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=573ce02b-2417-4d4a-9e87-6aa7d1b7d7c9&t=podcast&e=1197961569&p=510325&d=539&size=8625468&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 10014894,
+      "duration_seconds": 539,
+      "extraction_method": "validated_remaining_ranked_2024_february_cluster",
+      "provenance": [
+        "indicator_2024_february_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1197961569",
+        "573ce02b-2417-4d4a-9e87-6aa7d1b7d7c9",
+        "1197961569"
+      ],
+      "audio_url_e_parameter": "1197961569",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1197961640": {
+      "story_id": "1197961640",
+      "audio_id": "3b71c674-8978-449f-9c03-e2961a935229",
+      "date": "2024-02-02",
+      "title": "How local government is propping up the U.S. labor market",
+      "npr_url": "https://www.npr.org/2024/02/02/1197961640/the-indicator-from-planet-money-jobs-friday-local-government-02-02-2024",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/3b71c674-8978-449f-9c03-e2961a935229/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=3b71c674-8978-449f-9c03-e2961a935229&t=podcast&e=1197961640&p=510325&d=481&size=7702614&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/3b71c674-8978-449f-9c03-e2961a935229/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=3b71c674-8978-449f-9c03-e2961a935229&t=podcast&e=1197961640&p=510325&d=481&size=7702614&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 8853809,
+      "duration_seconds": 481,
+      "extraction_method": "validated_remaining_ranked_2024_february_cluster",
+      "provenance": [
+        "indicator_2024_february_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1197961640",
+        "3b71c674-8978-449f-9c03-e2961a935229",
+        "1197961640"
+      ],
+      "audio_url_e_parameter": "1197961640",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1197961671": {
+      "story_id": "1197961671",
+      "audio_id": "44e30444-6035-47b9-aacc-3e184c4b1aa5",
+      "date": "2024-02-05",
+      "title": "Could cash payments ease recessions?",
+      "npr_url": "https://www.npr.org/2024/02/05/1197961671/could-cash-payments-ease-recessions",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/44e30444-6035-47b9-aacc-3e184c4b1aa5/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=44e30444-6035-47b9-aacc-3e184c4b1aa5&t=podcast&e=1197961671&p=510325&d=521&size=8344182&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/44e30444-6035-47b9-aacc-3e184c4b1aa5/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=44e30444-6035-47b9-aacc-3e184c4b1aa5&t=podcast&e=1197961671&p=510325&d=521&size=8344182&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9733591,
+      "duration_seconds": 521,
+      "extraction_method": "validated_remaining_ranked_2024_february_cluster",
+      "provenance": [
+        "indicator_2024_february_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1197961671",
+        "44e30444-6035-47b9-aacc-3e184c4b1aa5",
+        "1197961671"
+      ],
+      "audio_url_e_parameter": "1197961671",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1197961679": {
+      "story_id": "1197961679",
+      "audio_id": "65eee67b-cc80-41f9-95d6-dbeae992b406",
+      "date": "2024-02-06",
+      "title": "Did pandemic business support work?",
+      "npr_url": "https://www.npr.org/2024/02/06/1197961679/paycheck-protection-program-did-pandemic-loans-work",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/65eee67b-cc80-41f9-95d6-dbeae992b406/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=65eee67b-cc80-41f9-95d6-dbeae992b406&t=podcast&e=1197961679&p=510325&d=562&size=8993272&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/65eee67b-cc80-41f9-95d6-dbeae992b406/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=65eee67b-cc80-41f9-95d6-dbeae992b406&t=podcast&e=1197961679&p=510325&d=562&size=8993272&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 10144444,
+      "duration_seconds": 562,
+      "extraction_method": "validated_remaining_ranked_2024_february_cluster",
+      "provenance": [
+        "indicator_2024_february_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1197961679",
+        "65eee67b-cc80-41f9-95d6-dbeae992b406",
+        "1197961679"
+      ],
+      "audio_url_e_parameter": "1197961679",
+      "release_classification": "confirmed_indicator_episode"
     }
   }
 }
