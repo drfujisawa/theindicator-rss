@@ -35838,6 +35838,192 @@
       ],
       "audio_url_e_parameter": "692145296",
       "release_classification": "confirmed_indicator_episode"
+    },
+    "691782578": {
+      "story_id": "691782578",
+      "audio_id": "691783438",
+      "date": "2019-02-05",
+      "title": "The Fed's Sweet Spot For Interest Rates",
+      "npr_url": "https://www.npr.org/sections/money/2019/02/05/691782578/the-fed-s-sweet-spot-for-interest-rates",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/02/20190205_indicator_020519_fed_pause_final_2.mp3?d=589&size=9411690&e=691779589&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/02/20190205_indicator_020519_fed_pause_final_2.mp3?d=589&size=9411690&e=691779589&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9411690,
+      "duration_seconds": 589,
+      "extraction_method": "validated_remaining_ranked_batch4",
+      "provenance": [
+        "indicator_remaining_27_ranked_batch4.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "691779589",
+        "691783438",
+        "691782578"
+      ],
+      "audio_url_e_parameter": "691779589",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "690508923": {
+      "story_id": "690508923",
+      "audio_id": "690522481",
+      "date": "2019-01-31",
+      "title": "Lights Out For PG&E?",
+      "npr_url": "https://www.npr.org/sections/money/2019/01/31/690508923/lights-out-for-pg-e",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/01/20190131_indicator_pge_final.mp3?d=585&size=9352476&e=690501571&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/01/20190131_indicator_pge_final.mp3?d=585&size=9352476&e=690501571&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9352476,
+      "duration_seconds": 585,
+      "extraction_method": "validated_remaining_ranked_batch4",
+      "provenance": [
+        "indicator_remaining_27_ranked_batch4.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "690501571",
+        "690522481",
+        "690508923"
+      ],
+      "audio_url_e_parameter": "690501571",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "683323818": {
+      "story_id": "683323818",
+      "audio_id": "683338133",
+      "date": "2019-01-08",
+      "title": "Don't Fear The Fear Index",
+      "npr_url": "https://www.npr.org/sections/money/2019/01/08/683323818/dont-fear-the-fear-index",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/01/20190108_indicator_010819_market_fear_index_final.mp3?d=585&size=9339966&e=683323617&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/01/20190108_indicator_010819_market_fear_index_final.mp3?d=585&size=9339966&e=683323617&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9339966,
+      "duration_seconds": 585,
+      "extraction_method": "validated_remaining_ranked_batch4",
+      "provenance": [
+        "indicator_remaining_27_ranked_batch4.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "683323617",
+        "683338133",
+        "683323818"
+      ],
+      "audio_url_e_parameter": "683323617",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "678327898": {
+      "story_id": "678327898",
+      "audio_id": "678328851",
+      "date": "2018-12-19",
+      "title": "You've Got Mail!",
+      "npr_url": "https://www.npr.org/sections/money/2018/12/19/678327898/youve-got-mail",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/12/20181219_indicator_121918_listener_response_final_withfundra.mp3?d=599&size=9575154&e=678326114&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/12/20181219_indicator_121918_listener_response_final_withfundra.mp3?d=599&size=9575154&e=678326114&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9575154,
+      "duration_seconds": 599,
+      "extraction_method": "validated_remaining_ranked_batch4",
+      "provenance": [
+        "indicator_remaining_27_ranked_batch4.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "678326114",
+        "678328851",
+        "678327898"
+      ],
+      "audio_url_e_parameter": "678326114",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "674297137": {
+      "story_id": "674297137",
+      "audio_id": "674302781",
+      "date": "2018-12-06",
+      "title": "The Fed's Mistake?",
+      "npr_url": "https://www.npr.org/sections/money/2018/12/06/674297137/the-fed-s-mistake",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/12/20181206_indicator_120618_fed_s_mistake_final.mp3?d=579&e=674295306&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/12/20181206_indicator_120618_fed_s_mistake_final.mp3?d=579&e=674295306&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9248643,
+      "duration_seconds": 579,
+      "extraction_method": "validated_remaining_ranked_batch4",
+      "provenance": [
+        "indicator_remaining_27_ranked_batch4.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "674295306",
+        "674302781",
+        "674297137"
+      ],
+      "audio_url_e_parameter": "674295306",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "669768474": {
+      "story_id": "669768474",
+      "audio_id": "669768239",
+      "date": "2018-11-20",
+      "title": "The Ins & Outs Of The Minimum Wage",
+      "npr_url": "https://www.npr.org/sections/money/2018/11/20/669768474/the-ins-outs-of-the-minimum-wage",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/pmoney/2018/11/20181120_pmoney_mwage.mp3?d=595&e=669760345&t=podcast&p=510325",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/pmoney/2018/11/20181120_pmoney_mwage.mp3?d=595&e=669760345&t=podcast&p=510325",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9510519,
+      "duration_seconds": 595,
+      "extraction_method": "validated_remaining_ranked_batch4",
+      "provenance": [
+        "indicator_remaining_27_ranked_batch4.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "669760345",
+        "669768239",
+        "669768474"
+      ],
+      "audio_url_e_parameter": "669760345",
+      "release_classification": "confirmed_indicator_episode"
     }
   }
 }

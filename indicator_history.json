@@ -1,6 +1,6 @@
 {
   "next_date": "2017-11-05T16:46:00-04:00",
-  "episode_count": 1729,
+  "episode_count": 1735,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -14355,6 +14355,25 @@
       ]
     },
     {
+      "title": "The Fed's Sweet Spot For Interest Rates",
+      "date": "2019-02-05",
+      "npr_url": "https://www.npr.org/sections/money/2019/02/05/691782578/the-fed-s-sweet-spot-for-interest-rates",
+      "story_id": "691782578",
+      "audio_id": "691783438",
+      "player_url": "https://www.npr.org/player/embed/691779589/691783438",
+      "description": "The Fed's Sweet Spot For Interest Rates",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_batch4",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_remaining_27_ranked_batch4.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "Cold-o-nomics",
       "date": "2019-02-04",
       "npr_url": "https://www.npr.org/sections/money/2019/02/04/691380575/cold-o-nomics",
@@ -14392,6 +14411,25 @@
         "indicator_npr_identities.json",
         "indicator_npr_audio_validation.json",
         "indicator_npr_audio_recovery.json"
+      ]
+    },
+    {
+      "title": "Lights Out For PG&E?",
+      "date": "2019-01-31",
+      "npr_url": "https://www.npr.org/sections/money/2019/01/31/690508923/lights-out-for-pg-e",
+      "story_id": "690508923",
+      "audio_id": "690522481",
+      "player_url": "https://www.npr.org/player/embed/690501571/690522481",
+      "description": "Lights Out For PG&E?",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_batch4",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_remaining_27_ranked_batch4.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
       ]
     },
     {
@@ -14675,6 +14713,25 @@
       ]
     },
     {
+      "title": "Don't Fear The Fear Index",
+      "date": "2019-01-08",
+      "npr_url": "https://www.npr.org/sections/money/2019/01/08/683323818/dont-fear-the-fear-index",
+      "story_id": "683323818",
+      "audio_id": "683338133",
+      "player_url": "https://www.npr.org/player/embed/683323617/683338133",
+      "description": "Don't Fear The Fear Index",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_batch4",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_remaining_27_ranked_batch4.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "Jobs, Inflation And The Phillips Curve",
       "date": "2019-01-07",
       "npr_url": "https://www.npr.org/sections/money/2019/01/07/683039249/jobs-inflation-and-the-phillips-curve",
@@ -14895,6 +14952,25 @@
       ]
     },
     {
+      "title": "You've Got Mail!",
+      "date": "2018-12-19",
+      "npr_url": "https://www.npr.org/sections/money/2018/12/19/678327898/youve-got-mail",
+      "story_id": "678327898",
+      "audio_id": "678328851",
+      "player_url": "https://www.npr.org/player/embed/678326114/678328851",
+      "description": "You've Got Mail!",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_batch4",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_remaining_27_ranked_batch4.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "The Crypto Crash",
       "date": "2018-12-18",
       "npr_url": "https://www.npr.org/sections/money/2018/12/18/677938162/the-crypto-crash",
@@ -15032,6 +15108,25 @@
         "indicator_npr_identities.json",
         "indicator_npr_audio_validation.json",
         "indicator_npr_audio_recovery.json"
+      ]
+    },
+    {
+      "title": "The Fed's Mistake?",
+      "date": "2018-12-06",
+      "npr_url": "https://www.npr.org/sections/money/2018/12/06/674297137/the-fed-s-mistake",
+      "story_id": "674297137",
+      "audio_id": "674302781",
+      "player_url": "https://www.npr.org/player/embed/674295306/674302781",
+      "description": "The Fed's Mistake?",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_batch4",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_remaining_27_ranked_batch4.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
       ]
     },
     {
@@ -15232,6 +15327,25 @@
         "indicator_npr_identities.json",
         "indicator_npr_audio_validation.json",
         "indicator_npr_audio_recovery.json"
+      ]
+    },
+    {
+      "title": "The Ins & Outs Of The Minimum Wage",
+      "date": "2018-11-20",
+      "npr_url": "https://www.npr.org/sections/money/2018/11/20/669768474/the-ins-outs-of-the-minimum-wage",
+      "story_id": "669768474",
+      "audio_id": "669768239",
+      "player_url": "https://www.npr.org/player/embed/669760345/669768239",
+      "description": "The Ins & Outs Of The Minimum Wage",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_batch4",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_remaining_27_ranked_batch4.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
       ]
     },
     {

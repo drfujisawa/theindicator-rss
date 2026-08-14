@@ -1,0 +1,73 @@
+{
+  "audit_version": 1,
+  "mode": "discovery_only",
+  "production_files_modified": false,
+  "generated_date": "2026-08-13",
+  "ranking_scope": {"unresolved_before_review": 27, "batch_size": 8, "ready_for_isolated_staging": 6, "deferred_from_batch": 2, "deferred_unreviewed": 19},
+  "summary": {"exact_date_title_matches": 6, "validated_audio_files": 6, "production_collisions": 0, "no_identity_found_in_batch": 2},
+  "episodes": [
+    {
+      "rank": 1, "reference_date": "2019-02-05", "publication_date": "2019-02-05",
+      "reference_title": "The Fed's Sweet Spot For Interest Rates", "classification": "ready_for_isolated_staging",
+      "npr_story_id": "691782578", "npr_url": "https://www.npr.org/sections/money/2019/02/05/691782578/the-fed-s-sweet-spot-for-interest-rates",
+      "affiliate_url": "https://www.wfae.org/2019-02-05/the-feds-sweet-spot-for-interest-rates", "corroborating_affiliates": ["APR", "WYPR", "KGOU"],
+      "player_story_id": "691779589", "audio_id": "691783438", "player_url": "https://www.npr.org/player/embed/691779589/691783438",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/02/20190205_indicator_020519_fed_pause_final_2.mp3?d=589&size=9411690&e=691779589&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 589, "content_length_bytes": 9411690,
+      "validation": {"status_code": 206, "content_type": "audio/mpeg", "content_range": "bytes 0-4095/9411690", "story_id_collision": false, "audio_path_collision": false}
+    },
+    {
+      "rank": 2, "reference_date": "2019-01-31", "publication_date": "2019-01-31",
+      "reference_title": "Lights Out For PG&E?", "classification": "ready_for_isolated_staging",
+      "npr_story_id": "690508923", "npr_url": "https://www.npr.org/sections/money/2019/01/31/690508923/lights-out-for-pg-e",
+      "affiliate_url": "https://www.wfae.org/2019-01-31/lights-out-for-pg-e", "corroborating_affiliates": ["APR", "WYPR", "KGOU"],
+      "player_story_id": "690501571", "audio_id": "690522481", "player_url": "https://www.npr.org/player/embed/690501571/690522481",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/01/20190131_indicator_pge_final.mp3?d=585&size=9352476&e=690501571&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 585, "content_length_bytes": 9352476,
+      "validation": {"status_code": 206, "content_type": "audio/mpeg", "content_range": "bytes 0-4095/9352476", "story_id_collision": false, "audio_path_collision": false}
+    },
+    {
+      "rank": 3, "reference_date": "2019-01-08", "publication_date": "2019-01-08",
+      "reference_title": "Don't Fear The Fear Index", "classification": "ready_for_isolated_staging",
+      "npr_story_id": "683323818", "npr_url": "https://www.npr.org/sections/money/2019/01/08/683323818/dont-fear-the-fear-index",
+      "affiliate_url": "https://www.wfae.org/2019-01-08/dont-fear-the-fear-index", "corroborating_affiliates": ["APR", "WYPR", "KGOU"],
+      "player_story_id": "683323617", "audio_id": "683338133", "player_url": "https://www.npr.org/player/embed/683323617/683338133",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/01/20190108_indicator_010819_market_fear_index_final.mp3?d=585&size=9339966&e=683323617&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 585, "content_length_bytes": 9339966,
+      "validation": {"status_code": 206, "content_type": "audio/mpeg", "content_range": "bytes 0-4095/9339966", "story_id_collision": false, "audio_path_collision": false}
+    },
+    {
+      "rank": 4, "reference_date": "2018-12-19", "publication_date": "2018-12-19",
+      "reference_title": "You've Got Mail!", "classification": "ready_for_isolated_staging",
+      "npr_story_id": "678327898", "npr_url": "https://www.npr.org/sections/money/2018/12/19/678327898/youve-got-mail",
+      "affiliate_url": "https://www.wfae.org/2018-12-19/youve-got-mail", "corroborating_affiliates": ["APR", "WYPR", "KGOU"],
+      "player_story_id": "678326114", "audio_id": "678328851", "player_url": "https://www.npr.org/player/embed/678326114/678328851",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/12/20181219_indicator_121918_listener_response_final_withfundra.mp3?d=599&size=9575154&e=678326114&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 599, "content_length_bytes": 9575154,
+      "validation": {"status_code": 206, "content_type": "audio/mpeg", "content_range": "bytes 0-4095/9575154", "story_id_collision": false, "audio_path_collision": false}
+    },
+    {
+      "rank": 5, "reference_date": "2018-12-06", "publication_date": "2018-12-06",
+      "reference_title": "The Fed's Mistake?", "classification": "ready_for_isolated_staging",
+      "npr_story_id": "674297137", "npr_url": "https://www.npr.org/sections/money/2018/12/06/674297137/the-fed-s-mistake",
+      "affiliate_url": "https://www.wfae.org/2018-12-06/the-feds-mistake", "corroborating_affiliates": ["APR", "WYPR", "KGOU"],
+      "player_story_id": "674295306", "audio_id": "674302781", "player_url": "https://www.npr.org/player/embed/674295306/674302781",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/12/20181206_indicator_120618_fed_s_mistake_final.mp3?d=579&e=674295306&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 579, "content_length_bytes": 9248643,
+      "validation": {"status_code": 206, "content_type": "audio/mpeg", "content_range": "bytes 0-4095/9248643", "story_id_collision": false, "audio_path_collision": false}
+    },
+    {
+      "rank": 6, "reference_date": "2018-11-20", "publication_date": "2018-11-20",
+      "reference_title": "The Ins & Outs Of The Minimum Wage", "classification": "ready_for_isolated_staging",
+      "npr_story_id": "669768474", "npr_url": "https://www.npr.org/sections/money/2018/11/20/669768474/the-ins-outs-of-the-minimum-wage",
+      "affiliate_url": "https://www.wfae.org/2018-11-20/the-ins-outs-of-the-minimum-wage", "corroborating_affiliates": ["APR", "WYPR", "KGOU"],
+      "player_story_id": "669760345", "audio_id": "669768239", "player_url": "https://www.npr.org/player/embed/669760345/669768239",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/pmoney/2018/11/20181120_pmoney_mwage.mp3?d=595&e=669760345&t=podcast&p=510325",
+      "duration_seconds": 595, "content_length_bytes": 9510519,
+      "validation": {"status_code": 206, "content_type": "audio/mpeg", "content_range": "bytes 0-4095/9510519", "story_id_collision": false, "audio_path_collision": false, "provenance_note": "The exact NPR Indicator player embeds this older NPR pmoney storage path with podcast ID 510325."}
+    },
+    {"rank": 7, "reference_date": "2019-01-25", "publication_date": null, "reference_title": "The End Of The Shutdown?", "classification": "no_identity_found", "reason": "No exact affiliate page resolved across tested title/date and nearby-date URL variants."},
+    {"rank": 8, "reference_date": "2018-12-11", "publication_date": null, "reference_title": "Citi Bike's Better Angels", "classification": "no_identity_found", "reason": "No exact affiliate page resolved across tested title/date and nearby-date URL variants."}
+  ],
+  "next_gate": "Build an isolated six-episode staging set; keep the two unresolved titles deferred."
+}

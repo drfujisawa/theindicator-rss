@@ -1,6 +1,6 @@
 {
   "method": "consolidated-recovery-pipeline-for-unresolved-indicator-episodes",
-  "generated_at": "2026-08-14T04:41:47+00:00",
+  "generated_at": "2026-08-14T05:04:46+00:00",
   "canonical_input": "data/audits/indicator_completeness_audit.json",
   "placeholder": false,
   "run_complete": true,
@@ -8,10 +8,10 @@
     "confirmed_recovered": 0,
     "probable_duplicate_rebroadcast": 0,
     "identity_found_but_audio_unresolved": 0,
-    "no_identity_found": 27,
+    "no_identity_found": 21,
     "rejected_false_positive_count": 5,
-    "input_unresolved_count": 27,
-    "unique_missing_production_count_excluding_probable_duplicates": 27
+    "input_unresolved_count": 21,
+    "unique_missing_production_count_excluding_probable_duplicates": 21
   },
   "confirmed_recovered": [],
   "probable_duplicate_rebroadcast": [],
@@ -144,20 +144,6 @@
       "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
     },
     {
-      "reference_date": "2018-11-20",
-      "reference_title": "The Ins & Outs Of The Minimum Wage",
-      "reference_year": 2018,
-      "reference_episode": 178,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
-    {
-      "reference_date": "2018-12-06",
-      "reference_title": "The Fed's Mistake?",
-      "reference_year": 2018,
-      "reference_episode": 189,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
-    {
       "reference_date": "2018-12-11",
       "reference_title": "Citi Bike's Better Angels",
       "reference_year": 2018,
@@ -165,38 +151,10 @@
       "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
     },
     {
-      "reference_date": "2018-12-19",
-      "reference_title": "You've Got Mail!",
-      "reference_year": 2018,
-      "reference_episode": 198,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
-    {
-      "reference_date": "2019-01-08",
-      "reference_title": "Don't Fear The Fear Index",
-      "reference_year": 2019,
-      "reference_episode": 5,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
-    {
       "reference_date": "2019-01-25",
       "reference_title": "The End Of The Shutdown?",
       "reference_year": 2019,
       "reference_episode": 17,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
-    {
-      "reference_date": "2019-01-31",
-      "reference_title": "Lights Out For PG&E?",
-      "reference_year": 2019,
-      "reference_episode": 21,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
-    {
-      "reference_date": "2019-02-05",
-      "reference_title": "The Fed's Sweet Spot For Interest Rates",
-      "reference_year": 2019,
-      "reference_episode": 24,
       "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
     },
     {
