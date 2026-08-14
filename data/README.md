@@ -63,6 +63,8 @@ Active audit datasets — produced and consumed by completeness/reconciliation s
 | `indicator_early_promotion_staging_report.json` | Simulation-only transaction plan and hash report for staging the reviewed early-history promotion | `scripts/maintenance/stage_early_history_promotion.py` |
 | `indicator_early_promotion_application_report.json` | Post-write hashes, counts, and rollback location for the guarded production promotion | `scripts/maintenance/apply_early_history_promotion.py` |
 | `indicator_unresolved_consolidated_audit.json` | Consolidated unresolved-episode audit | `scripts/recovery/recover_unresolved_indicator_consolidated.py`, `scripts/maintenance/reconcile_unresolved_consolidated.py` |
+| `indicator_pre_march_2018_catalog_audit.json` | Reproducible audit of the original December 2017–March 11, 2018 NPR feed items and their live audio | `scripts/analysis/audit_pre_march_2018_catalog.py` |
+| `indicator_zero_length_repair_report.json` | Exact byte measurements and hashes for the 155 repaired legacy enclosure lengths | `scripts/maintenance/repair_zero_enclosure_lengths.py` |
 
 ---
 

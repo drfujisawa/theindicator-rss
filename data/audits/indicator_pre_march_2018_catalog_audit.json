@@ -1,0 +1,1147 @@
+{
+  "report_version": 1,
+  "generated_at": "2026-08-14T08:31:20.079320+00:00",
+  "scope": {
+    "start_inclusive": "2017-12-01T00:00:00+00:00",
+    "end_exclusive": "2018-03-12T00:00:00+00:00"
+  },
+  "source": {
+    "original_feed": "https://www.npr.org/rss/podcast.php?id=510325",
+    "wayback_timestamp": "20180310110945",
+    "snapshot_url": "https://web.archive.org/web/20180310110945id_/https://www.npr.org/rss/podcast.php?id=510325",
+    "snapshot_sha256": "f9ce58899b77ff051d7749a60c9e2f92a03d91d0debef8873b3a84a77f8301c5"
+  },
+  "production_unchanged": true,
+  "production_feed_sha256": "98cc9ab3a432ce24e8462ce1da0470b11cbb16f6830fc5ff3a6c1f4bc8f4ad78",
+  "summary": {
+    "historical_items": 59,
+    "episodes": 58,
+    "launch_trailers": 1,
+    "already_in_current_feed": 0,
+    "missing_from_current_feed": 59,
+    "exact_live_audio_responses": 59
+  },
+  "items": [
+    {
+      "title": "Coming Soon",
+      "description": "A new podcast from the people who make Planet Money.",
+      "published": "2017-12-01T12:13:00-05:00",
+      "guid": "890c89e7-be44-4414-9529-387f7239e20b",
+      "story_id": "567752488",
+      "duration_seconds": 60,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2017/12/20171201_indicator_actual_final_trailer_for_feed_1201.mp3?orgId=1&d=60&p=510325&story=567752488&t=podcast&e=567752488&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171201_indicator_actual_final_trailer_for_feed_1201.mp3?orgId=1&d=60&p=510325&story=567752488&t=podcast&e=567752488&ft=pod&f=510325",
+      "classification": "launch_trailer",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/967085",
+        "content_length": 967085,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171201_indicator_actual_final_trailer_for_feed_1201.mp3?orgId=1&d=60&p=510325&story=567752488&t=podcast&e=567752488&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Power Pinch",
+      "description": "The history of sexual harassment training videos, and the surprising insight it gives us into the current wave of sexual harassment cases.",
+      "published": "2017-12-04T15:53:00-05:00",
+      "guid": "e4137de9-9998-4263-ab13-310273cded27",
+      "story_id": "568341883",
+      "duration_seconds": 447,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2017/12/20171204_indicator_1204_power_pinch_finalv2.mp3?orgId=1&d=447&p=510325&story=568341883&t=podcast&e=568341883&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171204_indicator_1204_power_pinch_finalv2.mp3?orgId=1&d=447&p=510325&story=568341883&t=podcast&e=568341883&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/7158701",
+        "content_length": 7158701,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171204_indicator_1204_power_pinch_finalv2.mp3?orgId=1&d=447&p=510325&story=568341883&t=podcast&e=568341883&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Loopholes And Deficits",
+      "description": "Republicans have been complaining about deficits forever. This was their big chance to do something. Why didn't they?",
+      "published": "2017-12-06T15:41:00-05:00",
+      "guid": "99dbab7f-af38-450d-97b5-2ee217e77c5e",
+      "story_id": "568901525",
+      "duration_seconds": 396,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2017/12/20171206_indicator_1206_loopholes_and_deficits_final_v2.mp3?orgId=1&d=396&p=510325&story=568901525&t=podcast&e=568901525&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171206_indicator_1206_loopholes_and_deficits_final_v2.mp3?orgId=1&d=396&p=510325&story=568901525&t=podcast&e=568901525&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/6338045",
+        "content_length": 6338045,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171206_indicator_1206_loopholes_and_deficits_final_v2.mp3?orgId=1&d=396&p=510325&story=568901525&t=podcast&e=568901525&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Where's My Raise?",
+      "description": "The unemployment rate is really low, but wages are barely rising. What's going on?",
+      "published": "2017-12-08T14:32:00-05:00",
+      "guid": "7c794587-b9a8-46c9-8ebb-15bc06888e42",
+      "story_id": "569461387",
+      "duration_seconds": 477,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2017/12/20171208_indicator_1208_wages_final_v3.mp3?orgId=1&d=477&p=510325&story=569461387&t=podcast&e=569461387&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171208_indicator_1208_wages_final_v3.mp3?orgId=1&d=477&p=510325&story=569461387&t=podcast&e=569461387&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/7628660",
+        "content_length": 7628660,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171208_indicator_1208_wages_final_v3.mp3?orgId=1&d=477&p=510325&story=569461387&t=podcast&e=569461387&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Bitcoin, Unemployment, and Mythical Beasts",
+      "description": "Our guest, Tyler Cowen, has smart insights into a ridiculously wide range of subjects. Our conversation is a lightning round that touches everything from the stock market to dystopian novels.",
+      "published": "2017-12-11T15:36:00-05:00",
+      "guid": "dc7b0c83-2737-4dc8-a59c-81cc73ef8dd6",
+      "story_id": "569932205",
+      "duration_seconds": 445,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2017/12/20171211_indicator_1211_tyler_cowen_final.mp3?orgId=1&d=445&p=510325&story=569932205&t=podcast&e=569932205&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171211_indicator_1211_tyler_cowen_final.mp3?orgId=1&d=445&p=510325&story=569932205&t=podcast&e=569932205&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/7112837",
+        "content_length": 7112837,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171211_indicator_1211_tyler_cowen_final.mp3?orgId=1&d=445&p=510325&story=569932205&t=podcast&e=569932205&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Full Employment: Are We There Yet?",
+      "description": "Why is it so hard to figure out when the economy is at full employment? And why does the Fed keep getting it wrong?",
+      "published": "2017-12-13T15:52:00-05:00",
+      "guid": "0fc5bb05-84df-4339-8b76-4f47a19641e6",
+      "story_id": "570574239",
+      "duration_seconds": 365,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2017/12/20171213_indicator_1213_kocherlakota_final.mp3?orgId=1&d=365&p=510325&story=570574239&t=podcast&e=570574239&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171213_indicator_1213_kocherlakota_final.mp3?orgId=1&d=365&p=510325&story=570574239&t=podcast&e=570574239&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/5836819",
+        "content_length": 5836819,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171213_indicator_1213_kocherlakota_final.mp3?orgId=1&d=365&p=510325&story=570574239&t=podcast&e=570574239&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Forget Neutrality",
+      "description": "Most Americans have at most one choice for broadband internet. On today's show: How it got that way, and what it means for the debate over net neutrality.",
+      "published": "2017-12-15T15:48:00-05:00",
+      "guid": "0a49841d-fec6-4733-90b5-61559f1d18b0",
+      "story_id": "571176019",
+      "duration_seconds": 451,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2017/12/20171215_indicator_1215_net_neutrality_final.mp3?orgId=1&d=451&p=510325&story=571176019&t=podcast&e=571176019&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171215_indicator_1215_net_neutrality_final.mp3?orgId=1&d=451&p=510325&story=571176019&t=podcast&e=571176019&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/7215836",
+        "content_length": 7215836,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171215_indicator_1215_net_neutrality_final.mp3?orgId=1&d=451&p=510325&story=571176019&t=podcast&e=571176019&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "The Toll Also Rises",
+      "description": "Basic economics says a new toll for commuters makes everybody better off. But what if basic economics is wrong?",
+      "published": "2017-12-18T15:59:00-05:00",
+      "guid": "9f06696d-d2fb-489e-ae5e-f280b1b7a25c",
+      "story_id": "571728752",
+      "duration_seconds": 387,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2017/12/20171218_indicator_1218_toll_road_finalv2.mp3?orgId=1&d=387&p=510325&story=571728752&t=podcast&e=571728752&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171218_indicator_1218_toll_road_finalv2.mp3?orgId=1&d=387&p=510325&story=571728752&t=podcast&e=571728752&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/6193354",
+        "content_length": 6193354,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171218_indicator_1218_toll_road_finalv2.mp3?orgId=1&d=387&p=510325&story=571728752&t=podcast&e=571728752&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Could The Republican Tax Bill Help Democrats Later?",
+      "description": "The Democrats have been struggling with a problem for a while now. The new tax bill could ultimately help them solve it.",
+      "published": "2017-12-20T15:39:00-05:00",
+      "guid": "7dd82c4e-9fbb-4e9a-83e7-8c9fb83bb6fa",
+      "story_id": "572351839",
+      "duration_seconds": 418,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2017/12/20171220_indicator_1220_taxes_barro_final_v2.mp3?orgId=1&d=418&p=510325&story=572351839&t=podcast&e=572351839&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171220_indicator_1220_taxes_barro_final_v2.mp3?orgId=1&d=418&p=510325&story=572351839&t=podcast&e=572351839&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/6681236",
+        "content_length": 6681236,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171220_indicator_1220_taxes_barro_final_v2.mp3?orgId=1&d=418&p=510325&story=572351839&t=podcast&e=572351839&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "How Airfare Is Changing",
+      "description": "Why some routes are getting more expensive while others are getting cheaper.",
+      "published": "2017-12-22T15:35:00-05:00",
+      "guid": "f0a0b52c-4d91-43ec-b002-c10a6595aafb",
+      "story_id": "573018682",
+      "duration_seconds": 341,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2017/12/20171222_indicator_1222_airfare_final.mp3?orgId=1&d=341&p=510325&story=573018682&t=podcast&e=573018682&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171222_indicator_1222_airfare_final.mp3?orgId=1&d=341&p=510325&story=573018682&t=podcast&e=573018682&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/5466098",
+        "content_length": 5466098,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171222_indicator_1222_airfare_final.mp3?orgId=1&d=341&p=510325&story=573018682&t=podcast&e=573018682&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Our Indicators Of The Year",
+      "description": "Despite all the protectionist rhetoric, global trade grew really quickly this year. Also: a crazy, 80-year ride from sun god to TMI.",
+      "published": "2017-12-27T16:00:00-05:00",
+      "guid": "074843fd-79fd-4314-be2d-915e1c949c11",
+      "story_id": "573861613",
+      "duration_seconds": 550,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2017/12/20171227_indicator_12227_noty_final_2.mp3?orgId=1&d=550&p=510325&story=573861613&t=podcast&e=573861613&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171227_indicator_12227_noty_final_2.mp3?orgId=1&d=550&p=510325&story=573861613&t=podcast&e=573861613&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/8798345",
+        "content_length": 8798345,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171227_indicator_12227_noty_final_2.mp3?orgId=1&d=550&p=510325&story=573861613&t=podcast&e=573861613&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "The 50-Year Newspaper",
+      "description": "Daily news coverage gives us a lopsided view of the world. What would the top stories be if we only got a news update once every 50 years?",
+      "published": "2017-12-29T15:28:00-05:00",
+      "guid": "96a83071-100b-4b31-b0f9-dc6510ac8b2c",
+      "story_id": "574662798",
+      "duration_seconds": 442,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2017/12/20171229_indicator_1229_fifty_year_newspaper_final.mp3?orgId=1&d=442&p=510325&story=574662798&t=podcast&e=574662798&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171229_indicator_1229_fifty_year_newspaper_final.mp3?orgId=1&d=442&p=510325&story=574662798&t=podcast&e=574662798&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/7067795",
+        "content_length": 7067795,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2017/12/20171229_indicator_1229_fifty_year_newspaper_final.mp3?orgId=1&d=442&p=510325&story=574662798&t=podcast&e=574662798&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "The Next Debt Crunch",
+      "description": "The U.S. economy is doing great. Here's something to worry about.",
+      "published": "2018-01-02T15:58:00-05:00",
+      "guid": "ed49e7df-85b3-486e-8c01-287236f435aa",
+      "story_id": "575166434",
+      "duration_seconds": 455,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/01/20180102_indicator_0102_reasons_to_worry_final.mp3?orgId=1&d=455&p=510325&story=575166434&t=podcast&e=575166434&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180102_indicator_0102_reasons_to_worry_final.mp3?orgId=1&d=455&p=510325&story=575166434&t=podcast&e=575166434&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/7282550",
+        "content_length": 7282550,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180102_indicator_0102_reasons_to_worry_final.mp3?orgId=1&d=455&p=510325&story=575166434&t=podcast&e=575166434&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Corruption, Protests, and the Price of Eggs in Iran",
+      "description": "Thousands of people are protesting in the streets of Iran. Part of the reason: the price of eggs just went through the roof.",
+      "published": "2018-01-03T16:03:00-05:00",
+      "guid": "809a142b-dfd6-414f-a692-bf203b2dbc98",
+      "story_id": "575428585",
+      "duration_seconds": 361,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/01/20180103_indicator_0103_iran_final.mp3?orgId=1&d=361&p=510325&story=575428585&t=podcast&e=575428585&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180103_indicator_0103_iran_final.mp3?orgId=1&d=361&p=510325&story=575428585&t=podcast&e=575428585&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/5784686",
+        "content_length": 5784686,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180103_indicator_0103_iran_final.mp3?orgId=1&d=361&p=510325&story=575428585&t=podcast&e=575428585&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Just Another Manic January",
+      "description": "It's going to be a huge month for economic policy.",
+      "published": "2018-01-04T16:03:00-05:00",
+      "guid": "f47a58e6-ac35-4e39-8b32-4fdfbcefae9e",
+      "story_id": "575761065",
+      "duration_seconds": 355,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/01/20180104_indicator_0104_manic_january_final.mp3?orgId=1&d=355&p=510325&story=575761065&t=podcast&e=575761065&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180104_indicator_0104_manic_january_final.mp3?orgId=1&d=355&p=510325&story=575761065&t=podcast&e=575761065&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/5676266",
+        "content_length": 5676266,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180104_indicator_0104_manic_january_final.mp3?orgId=1&d=355&p=510325&story=575761065&t=podcast&e=575761065&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Hidden Gems of the Jobs Report",
+      "description": "Here are three illuminating but largely overlooked numbers from today's jobs report.",
+      "published": "2018-01-05T15:35:00-05:00",
+      "guid": "4fed5490-6655-4f81-86dc-7cf56cdbff4e",
+      "story_id": "576048959",
+      "duration_seconds": 366,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/01/20180105_indicator_0105jobsfinalv2.mp3?orgId=1&d=366&p=510325&story=576048959&t=podcast&e=576048959&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180105_indicator_0105jobsfinalv2.mp3?orgId=1&d=366&p=510325&story=576048959&t=podcast&e=576048959&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/5864339",
+        "content_length": 5864339,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180105_indicator_0105jobsfinalv2.mp3?orgId=1&d=366&p=510325&story=576048959&t=podcast&e=576048959&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "What To Do About Inequality",
+      "description": "A lot of popular plans for boosting middle-class wages don't work as well as as they used to. Here are a few ideas that might work now.",
+      "published": "2018-01-08T15:52:00-05:00",
+      "guid": "0815b0dd-56aa-4611-91b4-f516974f2124",
+      "story_id": "576563462",
+      "duration_seconds": 426,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/01/20180108_indicator_0108_inequality_final.mp3?orgId=1&d=426&p=510325&story=576563462&t=podcast&e=576563462&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180108_indicator_0108_inequality_final.mp3?orgId=1&d=426&p=510325&story=576563462&t=podcast&e=576563462&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/6814259",
+        "content_length": 6814259,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180108_indicator_0108_inequality_final.mp3?orgId=1&d=426&p=510325&story=576563462&t=podcast&e=576563462&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Why Quitting Is Awesome",
+      "description": "The state of the American job market, as revealed by jobs numbers released this morning.",
+      "published": "2018-01-09T15:42:00-05:00",
+      "guid": "a1ace05b-0f38-4319-a273-6febe9137d70",
+      "story_id": "576852329",
+      "duration_seconds": 368,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/01/20180109_indicator_0109_jolts_final.mp3?orgId=1&d=368&p=510325&story=576852329&t=podcast&e=576852329&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180109_indicator_0109_jolts_final.mp3?orgId=1&d=368&p=510325&story=576852329&t=podcast&e=576852329&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/5877677",
+        "content_length": 5877677,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180109_indicator_0109_jolts_final.mp3?orgId=1&d=368&p=510325&story=576852329&t=podcast&e=576852329&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "The War On Coal",
+      "description": "President Trump's Energy Secretary, Rick Perry, had a plan to prop up the coal industry. This week, a federal commission\u2014led by a Trump appointee\u2014rejected it.",
+      "published": "2018-01-10T15:47:00-05:00",
+      "guid": "06a80194-b00b-4e8e-a18b-d5e3181bb805",
+      "story_id": "577036632",
+      "duration_seconds": 275,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/01/20180110_indicator_v2_0110_coal_final.mp3?orgId=1&d=275&p=510325&story=577036632&t=podcast&e=577036632&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180110_indicator_v2_0110_coal_final.mp3?orgId=1&d=275&p=510325&story=577036632&t=podcast&e=577036632&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/4403999",
+        "content_length": 4403999,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180110_indicator_v2_0110_coal_final.mp3?orgId=1&d=275&p=510325&story=577036632&t=podcast&e=577036632&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Such Cryptocurrency. So Amaze.",
+      "description": "Dogecoin, a bitcoin spinoff created as a joke, is now worth $1.4 billion. The coin's creator tells us how the joke became real \u2014 and explains why he has mixed feelings about the whole thing.",
+      "published": "2018-01-11T15:56:00-05:00",
+      "guid": "934806af-3299-4172-a0d3-7d682f22b656",
+      "story_id": "577434458",
+      "duration_seconds": 490,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/01/20180111_indicator_0111_doge_finalv2.mp3?orgId=1&d=490&p=510325&story=577434458&t=podcast&e=577434458&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180111_indicator_0111_doge_finalv2.mp3?orgId=1&d=490&p=510325&story=577434458&t=podcast&e=577434458&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/7844666",
+        "content_length": 7844666,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180111_indicator_0111_doge_finalv2.mp3?orgId=1&d=490&p=510325&story=577434458&t=podcast&e=577434458&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "The Recession Predictor",
+      "description": "There's a warning sign for the economy with an amazing track record. It's not flashing now, but it's close enough to make us nervous.",
+      "published": "2018-01-12T16:00:00-05:00",
+      "guid": "9daacff3-8428-4b8e-bd26-c65785cc170f",
+      "story_id": "577709190",
+      "duration_seconds": 545,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/01/20180112_indicator_0112_yield_curve_final.mp3?orgId=1&d=545&p=510325&story=577709190&t=podcast&e=577709190&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180112_indicator_0112_yield_curve_final.mp3?orgId=1&d=545&p=510325&story=577709190&t=podcast&e=577709190&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/8718281",
+        "content_length": 8718281,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180112_indicator_0112_yield_curve_final.mp3?orgId=1&d=545&p=510325&story=577709190&t=podcast&e=577709190&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "The Case For Earmarks",
+      "description": "Congressional earmarks have a bad reputation. But, our guest argues, they're just what America needs.",
+      "published": "2018-01-16T15:59:00-05:00",
+      "guid": "ae061dfb-0378-4b55-9ed0-d4cae5d070b3",
+      "story_id": "578413567",
+      "duration_seconds": 428,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/01/20180116_indicator_0116_earmarks_final_2.mp3?orgId=1&d=428&p=510325&story=578413567&t=podcast&e=578413567&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180116_indicator_0116_earmarks_final_2.mp3?orgId=1&d=428&p=510325&story=578413567&t=podcast&e=578413567&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/6845951",
+        "content_length": 6845951,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180116_indicator_0116_earmarks_final_2.mp3?orgId=1&d=428&p=510325&story=578413567&t=podcast&e=578413567&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Saudi Arabia After Oil: An IPO, Tech Jobs, and Yanni",
+      "description": "The young crown prince is trying to figure out how to save his country before the money runs out.",
+      "published": "2018-01-17T16:02:00-05:00",
+      "guid": "6adf9c18-c82f-4c6d-b8d6-19c33643617f",
+      "story_id": "578663186",
+      "duration_seconds": 439,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/01/20180117_indicator_0117_saudi_arabia_final.mp3?orgId=1&d=439&p=510325&story=578663186&t=podcast&e=578663186&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180117_indicator_0117_saudi_arabia_final.mp3?orgId=1&d=439&p=510325&story=578663186&t=podcast&e=578663186&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/7024435",
+        "content_length": 7024435,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180117_indicator_0117_saudi_arabia_final.mp3?orgId=1&d=439&p=510325&story=578663186&t=podcast&e=578663186&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "The Beigies",
+      "description": "Welcome to the Beigies, the only awards show honoring the best economic stories in the Fed's Beige Book.",
+      "published": "2018-01-18T16:09:00-05:00",
+      "guid": "9c8e769f-4dbc-4a0e-948e-f386e43e3d63",
+      "story_id": "578954679",
+      "duration_seconds": 559,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/01/20180118_indicator_0118_beigies_final.mp3?orgId=1&d=559&p=510325&story=578954679&t=podcast&e=578954679&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180118_indicator_0118_beigies_final.mp3?orgId=1&d=559&p=510325&story=578954679&t=podcast&e=578954679&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/8948882",
+        "content_length": 8948882,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180118_indicator_0118_beigies_final.mp3?orgId=1&d=559&p=510325&story=578954679&t=podcast&e=578954679&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "The Rise and Fall and Rise of Oil Prices",
+      "description": "Last summer, the price of oil was $44 a barrel. This week, it briefly hit $70. What happened? And what does it mean for the future of oil prices?",
+      "published": "2018-01-19T16:03:00-05:00",
+      "guid": "d08be6a4-230e-49c1-8975-976b5cb7fa8e",
+      "story_id": "579229468",
+      "duration_seconds": 424,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/01/20180119_indicator_0119_oil_final.mp3?orgId=1&d=424&p=510325&story=579229468&t=podcast&e=579229468&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180119_indicator_0119_oil_final.mp3?orgId=1&d=424&p=510325&story=579229468&t=podcast&e=579229468&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/6779231",
+        "content_length": 6779231,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180119_indicator_0119_oil_final.mp3?orgId=1&d=424&p=510325&story=579229468&t=podcast&e=579229468&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "I Can't Believe It's Not Budget",
+      "description": "The government shutdown was a symptom of a bigger problem: Congress seems incapable of passing a proper budget.",
+      "published": "2018-01-22T16:15:00-05:00",
+      "guid": "21105878-5706-4a72-a4ea-40c139925797",
+      "story_id": "579783785",
+      "duration_seconds": 357,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/01/20180122_indicator_0122_shutdown_final_3.mp3?orgId=1&d=357&p=510325&story=579783785&t=podcast&e=579783785&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180122_indicator_0122_shutdown_final_3.mp3?orgId=1&d=357&p=510325&story=579783785&t=podcast&e=579783785&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/5708792",
+        "content_length": 5708792,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180122_indicator_0122_shutdown_final_3.mp3?orgId=1&d=357&p=510325&story=579783785&t=podcast&e=579783785&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Google Selfies",
+      "description": "Today's Indicator: Your face. It's worth money. It's the next big thing. And, if you're like most of us, you're giving it away.",
+      "published": "2018-01-23T15:58:00-05:00",
+      "guid": "58e9e782-83bd-422f-b706-3fbbdaca72ca",
+      "story_id": "580072616",
+      "duration_seconds": 324,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/01/20180123_indicator_0123_selfies_almost_final.mp3?orgId=1&d=324&p=510325&story=580072616&t=podcast&e=580072616&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180123_indicator_0123_selfies_almost_final.mp3?orgId=1&d=324&p=510325&story=580072616&t=podcast&e=580072616&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/5182955",
+        "content_length": 5182955,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180123_indicator_0123_selfies_almost_final.mp3?orgId=1&d=324&p=510325&story=580072616&t=podcast&e=580072616&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "A Long-Term Bet Gone Bust",
+      "description": "Long-term-care insurance seemed like the next big thing. Then insurance companies started losing billions of dollars. What went wrong?",
+      "published": "2018-01-24T15:57:00-05:00",
+      "guid": "94d6ce3d-9d9f-4469-b9d1-c87ad4b4d685",
+      "story_id": "580429420",
+      "duration_seconds": 390,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/01/20180124_indicator_0124_ltc_insurance_final.mp3?orgId=1&d=390&p=510325&story=580429420&t=podcast&e=580429420&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180124_indicator_0124_ltc_insurance_final.mp3?orgId=1&d=390&p=510325&story=580429420&t=podcast&e=580429420&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/6245888",
+        "content_length": 6245888,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180124_indicator_0124_ltc_insurance_final.mp3?orgId=1&d=390&p=510325&story=580429420&t=podcast&e=580429420&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "A Mafia Story With a Twist",
+      "description": "Today on the show: citrus, globalization, and the birth of the mafia.",
+      "published": "2018-01-25T15:55:00-05:00",
+      "guid": "25419ffe-9096-41e2-886f-a68195f01cdd",
+      "story_id": "580820776",
+      "duration_seconds": 471,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/01/20180125_indicator_0125_mafia_final_2.mp3?orgId=1&d=471&p=510325&story=580820776&t=podcast&e=580820776&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180125_indicator_0125_mafia_final_2.mp3?orgId=1&d=471&p=510325&story=580820776&t=podcast&e=580820776&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/7533167",
+        "content_length": 7533167,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180125_indicator_0125_mafia_final_2.mp3?orgId=1&d=471&p=510325&story=580820776&t=podcast&e=580820776&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Amazon, IPOs, and the Queen of the Demonweb Pits",
+      "description": "We play overrated/underrated with Glenn Kelman, CEO of Redfin. Topics include home ownership, taking a company public, and twin telepathy.",
+      "published": "2018-01-26T15:36:00-05:00",
+      "guid": "120cf9b4-7d01-41fd-9e08-0bce30d020bb",
+      "story_id": "581128170",
+      "duration_seconds": 436,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/01/20180126_indicator_0126_glen_over_under_final_2.mp3?orgId=1&d=436&p=510325&story=581128170&t=podcast&e=581128170&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180126_indicator_0126_glen_over_under_final_2.mp3?orgId=1&d=436&p=510325&story=581128170&t=podcast&e=581128170&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/6984395",
+        "content_length": 6984395,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180126_indicator_0126_glen_over_under_final_2.mp3?orgId=1&d=436&p=510325&story=581128170&t=podcast&e=581128170&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "The Black Car Fund",
+      "description": "There's lots of talk about the problems of the gig economy. On today's show, we talk about a solution.",
+      "published": "2018-01-29T14:46:00-05:00",
+      "guid": "c9947c5d-8ec6-48ca-b190-3125c7012e21",
+      "story_id": "581626325",
+      "duration_seconds": 417,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/01/20180129_indicator_0129_black_car_final.mp3?orgId=1&d=417&p=510325&story=581626325&t=podcast&e=581626325&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180129_indicator_0129_black_car_final.mp3?orgId=1&d=417&p=510325&story=581626325&t=podcast&e=581626325&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/6672062",
+        "content_length": 6672062,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180129_indicator_0129_black_car_final.mp3?orgId=1&d=417&p=510325&story=581626325&t=podcast&e=581626325&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Weed GDP",
+      "description": "When Canada decided to legalize marijuana, James Tebrake decided to learn everything he could about Canada's marijuana economy.",
+      "published": "2018-01-30T15:44:00-05:00",
+      "guid": "78fdf7ee-2ca9-43e2-8346-9319e2f22ec1",
+      "story_id": "581921246",
+      "duration_seconds": 364,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/01/20180130_indicator_0130_canada_weed_final.mp3?orgId=1&d=364&p=510325&story=581921246&t=podcast&e=581921246&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180130_indicator_0130_canada_weed_final.mp3?orgId=1&d=364&p=510325&story=581921246&t=podcast&e=581921246&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/5830973",
+        "content_length": 5830973,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180130_indicator_0130_canada_weed_final.mp3?orgId=1&d=364&p=510325&story=581921246&t=podcast&e=581921246&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Janet Yellen's Mystery Story",
+      "description": "It's Janet Yellen's last week running the Federal Reserve. A speech she gave last year illuminates an economic mystery \u2014 and the boldness she brought to the Fed.",
+      "published": "2018-01-31T16:01:00-05:00",
+      "guid": "c323a03f-bfc3-4e70-b4e1-1d173631b05f",
+      "story_id": "582222698",
+      "duration_seconds": 408,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/01/20180131_indicator_0131_yellen_final_2.mp3?orgId=1&d=408&p=510325&story=582222698&t=podcast&e=582222698&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180131_indicator_0131_yellen_final_2.mp3?orgId=1&d=408&p=510325&story=582222698&t=podcast&e=582222698&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/6527363",
+        "content_length": 6527363,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/01/20180131_indicator_0131_yellen_final_2.mp3?orgId=1&d=408&p=510325&story=582222698&t=podcast&e=582222698&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "What America Sells To The World",
+      "description": "U.S. exports include airplanes, education and lots of blood.",
+      "published": "2018-02-01T15:59:00-05:00",
+      "guid": "f644d70b-7857-4b83-be4b-5a3d4227154d",
+      "story_id": "582509923",
+      "duration_seconds": 374,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/02/20180201_indicator_0201_trade_final.mp3?orgId=1&d=374&p=510325&story=582509923&t=podcast&e=582509923&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180201_indicator_0201_trade_final.mp3?orgId=1&d=374&p=510325&story=582509923&t=podcast&e=582509923&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/5991518",
+        "content_length": 5991518,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180201_indicator_0201_trade_final.mp3?orgId=1&d=374&p=510325&story=582509923&t=podcast&e=582509923&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "How Are They Doing Now?",
+      "description": "We look at three groups that got hammered especially hard during the recession and ask: How are they doing now?",
+      "published": "2018-02-02T16:01:00-05:00",
+      "guid": "1c359c5d-0f6e-42bd-a162-6d9e19131004",
+      "story_id": "582841254",
+      "duration_seconds": 335,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/02/20180202_indicator_0202_jobs_final.mp3?orgId=1&d=335&p=510325&story=582841254&t=podcast&e=582841254&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180202_indicator_0202_jobs_final.mp3?orgId=1&d=335&p=510325&story=582841254&t=podcast&e=582841254&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/5355593",
+        "content_length": 5355593,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180202_indicator_0202_jobs_final.mp3?orgId=1&d=335&p=510325&story=582841254&t=podcast&e=582841254&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Wells Fargo's Corset",
+      "description": "The Federal Reserve just told Wells Fargo it can't grow. On today's show: Why that's a big deal for Wells Fargo, and for other big banks.",
+      "published": "2018-02-05T15:59:00-05:00",
+      "guid": "e525256f-3807-4f9e-88c6-56f09576cfa8",
+      "story_id": "583456932",
+      "duration_seconds": 322,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/02/20180207_indicator_0205_wells_final_slack.mp3?orgId=1&d=322&p=510325&story=583456932&t=podcast&e=583456932&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180207_indicator_0205_wells_final_slack.mp3?orgId=1&d=322&p=510325&story=583456932&t=podcast&e=583456932&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/5160443",
+        "content_length": 5160443,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180207_indicator_0205_wells_final_slack.mp3?orgId=1&d=322&p=510325&story=583456932&t=podcast&e=583456932&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Dow De Ching",
+      "description": "The stock market's drop over the past few days wasn't weird. What was weird was what the market did for all of 2017.",
+      "published": "2018-02-06T16:36:00-05:00",
+      "guid": "9808a689-8b9e-4ba9-9195-7e3285f31adf",
+      "story_id": "583771088",
+      "duration_seconds": 334,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/02/20180206_indicator_0206_stocks_final2.mp3?orgId=1&d=334&p=510325&story=583771088&t=podcast&e=583771088&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180206_indicator_0206_stocks_final2.mp3?orgId=1&d=334&p=510325&story=583771088&t=podcast&e=583771088&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/5351006",
+        "content_length": 5351006,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180206_indicator_0206_stocks_final2.mp3?orgId=1&d=334&p=510325&story=583771088&t=podcast&e=583771088&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Obama, Trump, And Trade",
+      "description": "President Trump's new tariff on solar panels kicks in this week. But the story of where that tariff comes from goes back to the Obama administration.",
+      "published": "2018-02-07T14:42:00-05:00",
+      "guid": "7734a56c-1efb-4d71-90f5-cc37d66664e8",
+      "story_id": "584007212",
+      "duration_seconds": 318,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/02/20180207_indicator_0207_tariffs_final.mp3?orgId=1&d=318&p=510325&story=584007212&t=podcast&e=584007212&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180207_indicator_0207_tariffs_final.mp3?orgId=1&d=318&p=510325&story=584007212&t=podcast&e=584007212&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/5092049",
+        "content_length": 5092049,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180207_indicator_0207_tariffs_final.mp3?orgId=1&d=318&p=510325&story=584007212&t=podcast&e=584007212&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "The Market for Stolen Passwords",
+      "description": "A stolen Amazon password costs $10. Bank of America is $25. What a price list discovered on the dark web says about about the market for your stolen passwords.",
+      "published": "2018-02-08T15:06:00-05:00",
+      "guid": "8e1cc6a9-45d3-4e48-9958-dcbede194958",
+      "story_id": "584302052",
+      "duration_seconds": 413,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/02/20180208_indicator_0208_passwords_final.mp3?orgId=1&d=413&p=510325&story=584302052&t=podcast&e=584302052&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180208_indicator_0208_passwords_final.mp3?orgId=1&d=413&p=510325&story=584302052&t=podcast&e=584302052&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/6616601",
+        "content_length": 6616601,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180208_indicator_0208_passwords_final.mp3?orgId=1&d=413&p=510325&story=584302052&t=podcast&e=584302052&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "The Job Market Is Almost There",
+      "description": "Today on the show: What our three favorite jobs numbers tell us about the state of the economy.",
+      "published": "2018-02-09T15:59:00-05:00",
+      "guid": "9e5b3913-725f-478f-8c35-c261e9224266",
+      "story_id": "584617938",
+      "duration_seconds": 516,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/02/20180209_indicator_0209_sam_sanders_final.mp3?orgId=1&d=516&p=510325&story=584617938&t=podcast&e=584617938&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180209_indicator_0209_sam_sanders_final.mp3?orgId=1&d=516&p=510325&story=584617938&t=podcast&e=584617938&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/8261666",
+        "content_length": 8261666,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180209_indicator_0209_sam_sanders_final.mp3?orgId=1&d=516&p=510325&story=584617938&t=podcast&e=584617938&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Fear: The Index",
+      "description": "An index that was invented to measure people's expectations about the stock market may be driving the market itself.",
+      "published": "2018-02-12T15:43:00-05:00",
+      "guid": "1a1ce5ff-f0f3-4308-8332-73101083222a",
+      "story_id": "585143966",
+      "duration_seconds": 435,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/02/20180212_indicator_0212_vix_finalv4.mp3?orgId=1&d=435&p=510325&story=585143966&t=podcast&e=585143966&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180212_indicator_0212_vix_finalv4.mp3?orgId=1&d=435&p=510325&story=585143966&t=podcast&e=585143966&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/7008998",
+        "content_length": 7008998,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180212_indicator_0212_vix_finalv4.mp3?orgId=1&d=435&p=510325&story=585143966&t=podcast&e=585143966&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Sanctions on Ice",
+      "description": "A story of sanctions, the Olympics, and a secret wing of the North Korean government.",
+      "published": "2018-02-13T16:04:00-05:00",
+      "guid": "aeb3c54e-9cb7-4268-97bf-a55b700cfb55",
+      "story_id": "585530189",
+      "duration_seconds": 321,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/02/20180213_indicator_0213_north_korea_sanctions_final.mp3?orgId=1&d=321&p=510325&story=585530189&t=podcast&e=585530189&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180213_indicator_0213_north_korea_sanctions_final.mp3?orgId=1&d=321&p=510325&story=585530189&t=podcast&e=585530189&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/5135417",
+        "content_length": 5135417,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180213_indicator_0213_north_korea_sanctions_final.mp3?orgId=1&d=321&p=510325&story=585530189&t=podcast&e=585530189&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Stimulus Response",
+      "description": "An economist from the Obama administration thinks the economy still needs stimulus. Will the Republican tax and spending bills provide it?",
+      "published": "2018-02-14T15:59:00-05:00",
+      "guid": "a554fec6-a6ce-4443-bd4b-cf028630869f",
+      "story_id": "585840266",
+      "duration_seconds": 390,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/02/20180214_indicator_0214_bernstein_final.mp3?orgId=1&d=390&p=510325&story=585840266&t=podcast&e=585840266&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180214_indicator_0214_bernstein_final.mp3?orgId=1&d=390&p=510325&story=585840266&t=podcast&e=585840266&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/6244637",
+        "content_length": 6244637,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180214_indicator_0214_bernstein_final.mp3?orgId=1&d=390&p=510325&story=585840266&t=podcast&e=585840266&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Overshooting, Tipping Points, and ABBA",
+      "description": "How a classic econ book explains ABBA's costumes (among other things).",
+      "published": "2018-02-15T16:08:00-05:00",
+      "guid": "b3d30e25-4d0b-4deb-9675-02260200bb18",
+      "story_id": "586151683",
+      "duration_seconds": 357,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/02/20180215_indicator_coylefinal.mp3?orgId=1&d=357&p=510325&story=586151683&t=podcast&e=586151683&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180215_indicator_coylefinal.mp3?orgId=1&d=357&p=510325&story=586151683&t=podcast&e=586151683&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/5716653",
+        "content_length": 5716653,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180215_indicator_coylefinal.mp3?orgId=1&d=357&p=510325&story=586151683&t=podcast&e=586151683&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Craft Beer Hops the Shark",
+      "description": "As craft beer exploded over the last decade, the hops business boomed. Then came the bust.",
+      "published": "2018-02-16T15:58:00-05:00",
+      "guid": "a3c31b71-dd9d-493e-8744-af8804f4a7ca",
+      "story_id": "586600403",
+      "duration_seconds": 362,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/02/20180216_indicator_0216_hops_final.mp3?orgId=1&d=362&p=510325&story=586600403&t=podcast&e=586600403&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180216_indicator_0216_hops_final.mp3?orgId=1&d=362&p=510325&story=586600403&t=podcast&e=586600403&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/5798447",
+        "content_length": 5798447,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180216_indicator_0216_hops_final.mp3?orgId=1&d=362&p=510325&story=586600403&t=podcast&e=586600403&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "The Spy Who Trolled Me",
+      "description": "Russia spent 73 million Rubles a month to influence an American election. But what did they get for their money?",
+      "published": "2018-02-20T16:06:00-05:00",
+      "guid": "9cd5fda2-3acd-4681-a914-11cc049a1808",
+      "story_id": "587369589",
+      "duration_seconds": 384,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/02/20180220_indicator_0220_russia_indictment_final.mp3?orgId=1&d=384&p=510325&story=587369589&t=podcast&e=587369589&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180220_indicator_0220_russia_indictment_final.mp3?orgId=1&d=384&p=510325&story=587369589&t=podcast&e=587369589&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/6144140",
+        "content_length": 6144140,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180220_indicator_0220_russia_indictment_final.mp3?orgId=1&d=384&p=510325&story=587369589&t=podcast&e=587369589&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "The Olympics, Afrofuturism and Sichuan Food",
+      "description": "Our guest, Tyler Cowen, has smart insights into a ridiculously wide range of subjects. Our conversation is a lightning round that touches everything from Afrofuturist flicks to the mouth-numbing qualities of the Sichuan peppercorn.",
+      "published": "2018-02-21T15:59:00-05:00",
+      "guid": "b1c36c57-4b04-4fd1-ba42-4d3f74175740",
+      "story_id": "587729163",
+      "duration_seconds": 423,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/02/20180221_indicator_0221_tyler_over_under_final.mp3?orgId=1&d=423&p=510325&story=587729163&t=podcast&e=587729163&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180221_indicator_0221_tyler_over_under_final.mp3?orgId=1&d=423&p=510325&story=587729163&t=podcast&e=587729163&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/6765887",
+        "content_length": 6765887,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180221_indicator_0221_tyler_over_under_final.mp3?orgId=1&d=423&p=510325&story=587729163&t=podcast&e=587729163&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "The 28-Hour Work Week",
+      "description": "Imagine being able to work fewer hours during a difficult time in your life, without having to quit your job or interrupt your career. In Germany, for many workers, that's now a reality.",
+      "published": "2018-02-22T15:55:00-05:00",
+      "guid": "2101e8f0-3602-46ee-92c1-2e6ca8a5827d",
+      "story_id": "588059313",
+      "duration_seconds": 416,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/02/20180222_indicator_0222_work_week_final.mp3?orgId=1&d=416&p=510325&story=588059313&t=podcast&e=588059313&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180222_indicator_0222_work_week_final.mp3?orgId=1&d=416&p=510325&story=588059313&t=podcast&e=588059313&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/6662888",
+        "content_length": 6662888,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180222_indicator_0222_work_week_final.mp3?orgId=1&d=416&p=510325&story=588059313&t=podcast&e=588059313&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Guns And The Trump Slump",
+      "description": "Today more than two thirds of the guns in America are owned by just 20 percent of gun owners. That's not always good for gunmakers.",
+      "published": "2018-02-23T16:04:00-05:00",
+      "guid": "18914d5c-d9b1-4993-a569-4dff9526c0b9",
+      "story_id": "588370876",
+      "duration_seconds": 445,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/02/20180223_indicator_0223_guns_final_2.mp3?orgId=1&d=445&p=510325&story=588370876&t=podcast&e=588370876&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180223_indicator_0223_guns_final_2.mp3?orgId=1&d=445&p=510325&story=588370876&t=podcast&e=588370876&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/7116584",
+        "content_length": 7116584,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180223_indicator_0223_guns_final_2.mp3?orgId=1&d=445&p=510325&story=588370876&t=podcast&e=588370876&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Productivity With A Side Of Chicken",
+      "description": "Why productivity could be the most important data point in the economy...and how did KFC manage to run out of chicken?",
+      "published": "2018-02-26T16:09:00-05:00",
+      "guid": "57cd9303-2043-40e7-ab41-27dfcf5ac175",
+      "story_id": "588928689",
+      "duration_seconds": 510,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/02/20180226_indicator_0226_2_minute_explainers_final.mp3?orgId=1&d=510&p=510325&story=588928689&t=podcast&e=588928689&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180226_indicator_0226_2_minute_explainers_final.mp3?orgId=1&d=510&p=510325&story=588928689&t=podcast&e=588928689&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/8160335",
+        "content_length": 8160335,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180226_indicator_0226_2_minute_explainers_final.mp3?orgId=1&d=510&p=510325&story=588928689&t=podcast&e=588928689&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "The Case For Overshooting",
+      "description": "We have a new Federal Reserve chair. His name is Jerome Powell. Here's what we can expect.",
+      "published": "2018-02-27T15:59:00-05:00",
+      "guid": "856aaf46-7201-4b7e-8b79-499fe080feb2",
+      "story_id": "589278128",
+      "duration_seconds": 508,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/02/20180227_indicator_0227_powell_final.mp3?orgId=1&d=508&p=510325&story=589278128&t=podcast&e=589278128&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180227_indicator_0227_powell_final.mp3?orgId=1&d=508&p=510325&story=589278128&t=podcast&e=589278128&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/8124890",
+        "content_length": 8124890,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180227_indicator_0227_powell_final.mp3?orgId=1&d=508&p=510325&story=589278128&t=podcast&e=589278128&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "More Band For Your Buck",
+      "description": "To understand the Trump administration's approach to trade tariffs, look no further than the humble rubber band.",
+      "published": "2018-02-28T16:02:00-05:00",
+      "guid": "ce472b74-43a8-4991-b9fa-e5cdacbe548a",
+      "story_id": "589591745",
+      "duration_seconds": 536,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/02/20180228_indicator_0228_rubber_bands_final.mp3?orgId=1&d=536&p=510325&story=589591745&t=podcast&e=589591745&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180228_indicator_0228_rubber_bands_final.mp3?orgId=1&d=536&p=510325&story=589591745&t=podcast&e=589591745&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/8574416",
+        "content_length": 8574416,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/02/20180228_indicator_0228_rubber_bands_final.mp3?orgId=1&d=536&p=510325&story=589591745&t=podcast&e=589591745&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "The Cost of Life in America",
+      "description": "Over the past two decades, prices on average have increased. But certain things have gotten cheaper while others have gotten more expensive, and which is which can tell us a lot.",
+      "published": "2018-03-01T16:04:00-05:00",
+      "guid": "7a524bcd-52e6-43b3-b299-dba6c99e4ff7",
+      "story_id": "590017044",
+      "duration_seconds": 477,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/03/20180301_indicator_0301_cost_of_life_final.mp3?orgId=1&d=477&p=510325&story=590017044&t=podcast&e=590017044&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180301_indicator_0301_cost_of_life_final.mp3?orgId=1&d=477&p=510325&story=590017044&t=podcast&e=590017044&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/7626575",
+        "content_length": 7626575,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180301_indicator_0301_cost_of_life_final.mp3?orgId=1&d=477&p=510325&story=590017044&t=podcast&e=590017044&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Oil's Magic Price",
+      "description": "There's a sweet spot for every oil well in America.",
+      "published": "2018-03-02T15:56:00-05:00",
+      "guid": "178f10ad-b25a-42b0-8eec-d205af214ae9",
+      "story_id": "590375048",
+      "duration_seconds": 319,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/03/20180302_indicator_0302_baker_hughes_final.mp3?orgId=1&d=319&p=510325&story=590375048&t=podcast&e=590375048&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180302_indicator_0302_baker_hughes_final.mp3?orgId=1&d=319&p=510325&story=590375048&t=podcast&e=590375048&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/5106227",
+        "content_length": 5106227,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180302_indicator_0302_baker_hughes_final.mp3?orgId=1&d=319&p=510325&story=590375048&t=podcast&e=590375048&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Sticker Shock: The State Of The American Car Industry",
+      "description": "The average American car is now more expensive than it's ever been. And guess what? Sales of new cars are falling.",
+      "published": "2018-03-05T16:40:00-05:00",
+      "guid": "c7b798a5-30d4-4608-a9d8-09deb58d955c",
+      "story_id": "590970916",
+      "duration_seconds": null,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/03/20180305_indicator_0305_car_talk_w_sonari_final_3.mp3?orgId=1&p=510325&story=590970916&t=podcast&e=590970916&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180305_indicator_0305_car_talk_w_sonari_final_3.mp3?orgId=1&p=510325&story=590970916&t=podcast&e=590970916&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/6460581",
+        "content_length": 6460581,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180305_indicator_0305_car_talk_w_sonari_final_3.mp3?orgId=1&p=510325&story=590970916&t=podcast&e=590970916&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Cobalt: Rare and Everywhere",
+      "description": "Cobalt used to be a sideshow on the periodic table. Now it's the main event.",
+      "published": "2018-03-06T16:06:00-05:00",
+      "guid": "f367ebc5-d989-4f6f-9ec7-02f26fbab229",
+      "story_id": "591264651",
+      "duration_seconds": 742,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/03/20180306_indicator_0306_cobalt_final.mp3?orgId=1&d=742&p=510325&story=591264651&t=podcast&e=591264651&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180306_indicator_0306_cobalt_final.mp3?orgId=1&d=742&p=510325&story=591264651&t=podcast&e=591264651&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/11874137",
+        "content_length": 11874137,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180306_indicator_0306_cobalt_final.mp3?orgId=1&d=742&p=510325&story=591264651&t=podcast&e=591264651&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "A Child Prodigy, A Nervous Breakdown, and The Discovery of Romantic Poetry",
+      "description": "What happens when a classical economist finds out the world is much more complicated than he thought?",
+      "published": "2018-03-07T15:21:00-05:00",
+      "guid": "38e2107a-a8f4-4a01-b22c-fca83fc7ab6f",
+      "story_id": "591646010",
+      "duration_seconds": 440,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/03/20180307_indicator_0307_tyler_cowen_favorites_final_final.mp3?orgId=1&d=440&p=510325&story=591646010&t=podcast&e=591646010&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180307_indicator_0307_tyler_cowen_favorites_final_final.mp3?orgId=1&d=440&p=510325&story=591646010&t=podcast&e=591646010&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/7033601",
+        "content_length": 7033601,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180307_indicator_0307_tyler_cowen_favorites_final_final.mp3?orgId=1&d=440&p=510325&story=591646010&t=podcast&e=591646010&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "Let's Get Ready to Retail!",
+      "description": "In the red corner: the uncontested retail champion of the world: WalMart. In the blue corner, the behemoth of online sales: Amazon.",
+      "published": "2018-03-08T15:57:00-05:00",
+      "guid": "4f330c2a-de4f-4aa2-98bd-5efbfaee76ff",
+      "story_id": "592036102",
+      "duration_seconds": 500,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/03/20180308_indicator_0308_amazalmart_final.mp3?orgId=1&d=500&p=510325&story=592036102&t=podcast&e=592036102&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180308_indicator_0308_amazalmart_final.mp3?orgId=1&d=500&p=510325&story=592036102&t=podcast&e=592036102&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/7994786",
+        "content_length": 7994786,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180308_indicator_0308_amazalmart_final.mp3?orgId=1&d=500&p=510325&story=592036102&t=podcast&e=592036102&ft=pod&f=510325"
+      }
+    },
+    {
+      "title": "The Jobs Report: Where The Ladies At?",
+      "description": "Why has the share of women in the labor force been stagnant for almost two decades?",
+      "published": "2018-03-09T14:34:00-05:00",
+      "guid": "fce6699b-76fa-4aa7-b39c-6d0d4235917b",
+      "story_id": "592372971",
+      "duration_seconds": 471,
+      "archived_enclosure_url": "https://play.podtrac.com/npr-510325/npr.mc.tritondigital.com/NPR_510325/media/anon.npr-mp3/npr/indicator/2018/03/20180309_indicator_0309_femal_labor_force_final.mp3?orgId=1&d=471&p=510325&story=592372971&t=podcast&e=592372971&ft=pod&f=510325",
+      "candidate_audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180309_indicator_0309_femal_labor_force_final.mp3?orgId=1&d=471&p=510325&story=592372971&t=podcast&e=592372971&ft=pod&f=510325",
+      "classification": "episode",
+      "present_in_current_feed": false,
+      "audio_probe": {
+        "http_status": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-0/7536086",
+        "content_length": 7536086,
+        "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180309_indicator_0309_femal_labor_force_final.mp3?orgId=1&d=471&p=510325&story=592372971&t=podcast&e=592372971&ft=pod&f=510325"
+      }
+    }
+  ]
+}
