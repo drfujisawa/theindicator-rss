@@ -1,0 +1,50 @@
+{
+  "report_version": 1,
+  "mode": "staging_only",
+  "production_files_modified": false,
+  "source_review": "data\\audits\\indicator_calculator_releases_review.json",
+  "stage_directory": "work\\calculator-releases-staging",
+  "counts": {
+    "promoted_candidates": 2,
+    "history_before": 1716,
+    "history_after": 1718,
+    "enclosure_map_before": 1716,
+    "enclosure_map_after": 1718,
+    "feed_before": 2017,
+    "feed_after": 2019
+  },
+  "candidate_story_ids": [
+    "592961699",
+    "642675050"
+  ],
+  "checks": {
+    "production_files_unchanged": true,
+    "release_count_is_2": true,
+    "one_original_and_one_rebroadcast": true,
+    "history_delta_is_2": true,
+    "history_count_consistent": true,
+    "enclosure_map_delta_is_2": true,
+    "feed_delta_is_2": true,
+    "feed_story_id_delta_exact": true,
+    "rss_guids_unique": true,
+    "rss_story_ids_unique": true,
+    "rss_sorted_newest_first": true,
+    "rss_xml_parses": true,
+    "all_enclosures_resolved": true,
+    "all_lengths_known": true,
+    "relationship_is_bidirectional": true,
+    "original_exact_timestamp_preserved": true
+  },
+  "all_checks_passed": true,
+  "production_sha256_before": {
+    "indicator_history.json": "bdf8d2a2771274b1c2944c6c2b6f5dabc997e89964c9f0b907e757d8c6d2b998",
+    "indicator_enclosure_map.json": "28a9e30a65d0a5e83c552f52d10d5e36fc32a9426816a7b35312368ca124526b",
+    "theindicator_feed.xml": "e66e9528f707a3ca26bc6687aa72ee611dce324019236470ac70d8e5c9135db0"
+  },
+  "production_sha256_after": {
+    "indicator_history.json": "bdf8d2a2771274b1c2944c6c2b6f5dabc997e89964c9f0b907e757d8c6d2b998",
+    "indicator_enclosure_map.json": "28a9e30a65d0a5e83c552f52d10d5e36fc32a9426816a7b35312368ca124526b",
+    "theindicator_feed.xml": "e66e9528f707a3ca26bc6687aa72ee611dce324019236470ac70d8e5c9135db0"
+  },
+  "next_gate": "review before hash-guarded atomic production application"
+}

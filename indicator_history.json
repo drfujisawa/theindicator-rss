@@ -1,6 +1,6 @@
 {
   "next_date": "2017-11-05T16:46:00-04:00",
-  "episode_count": 1716,
+  "episode_count": 1718,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -16098,6 +16098,26 @@
       ]
     },
     {
+      "title": "Hurricane Joseph & The Calculator That Time Forgot",
+      "date": "2018-08-28T00:00:00+00:00",
+      "npr_url": "https://www.npr.org/sections/money/2018/08/28/642675050/hurricane-joseph-the-calculator-that-time-forgot",
+      "story_id": "642675050",
+      "audio_id": "642674606",
+      "player_url": "https://www.npr.org/player/embed/642672020/642674606",
+      "description": "Creative destruction is a fact of economic life that few products can resist. Graphing calculators are a notable exception.",
+      "description_provenance": "archived_npr_feed_shared_episode_description",
+      "date_precision": "date_only",
+      "recovery_status": "reviewed_calculator_release",
+      "release_classification": "confirmed_indicator_rebroadcast",
+      "same_title_relationship": "dated_rebroadcast_of_original_release",
+      "related_story_id": "592961699",
+      "recovery_provenance": [
+        "indicator_calculator_releases_review.json",
+        "live NPR story page",
+        "KAWC affiliate mirror"
+      ]
+    },
+    {
       "title": "The Measure Of A Tragedy",
       "date": "2018-08-27",
       "npr_url": "https://www.npr.org/sections/money/2018/08/27/642268824/the-measure-of-a-tragedy",
@@ -18036,6 +18056,26 @@
         "indicator_npr_identities.json",
         "indicator_npr_audio_validation.json",
         "indicator_npr_audio_recovery.json"
+      ]
+    },
+    {
+      "title": "Hurricane Joseph & The Calculator That Time Forgot",
+      "date": "2018-03-12T16:07:00-04:00",
+      "npr_url": "https://www.npr.org/2018/03/12/592961699/hurricane-joseph-the-calculator-that-time-forgot",
+      "story_id": "592961699",
+      "audio_id": "592963534",
+      "player_url": "https://www.npr.org/player/embed/592961699/592963534",
+      "description": "Creative destruction is a fact of economic life that few products can resist. Graphing calculators are a notable exception.",
+      "description_provenance": "archived_npr_feed",
+      "date_precision": "exact",
+      "recovery_status": "reviewed_calculator_release",
+      "release_classification": "confirmed_indicator_episode",
+      "same_title_relationship": "original_release_with_later_rebroadcast",
+      "related_story_id": "642675050",
+      "recovery_provenance": [
+        "indicator_calculator_releases_review.json",
+        "live NPR story page",
+        "archived NPR feed"
       ]
     }
   ]

@@ -35426,6 +35426,64 @@
       ],
       "audio_url_e_parameter": "656627240",
       "release_classification": "confirmed_indicator_episode"
+    },
+    "592961699": {
+      "story_id": "592961699",
+      "audio_id": "592963534",
+      "date": "2018-03-12",
+      "title": "Hurricane Joseph & The Calculator That Time Forgot",
+      "npr_url": "https://www.npr.org/2018/03/12/592961699/hurricane-joseph-the-calculator-that-time-forgot",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180312_indicator_0312_graphing_calculator_final.mp3?d=509&e=592961699&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180312_indicator_0312_graphing_calculator_final.mp3?d=509&e=592961699&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": "f48d6121-9759-4d03-9216-f597a8b8e5f0",
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 8138651,
+      "duration_seconds": 509,
+      "extraction_method": "reviewed_calculator_release",
+      "provenance": [
+        "indicator_calculator_releases_review.json"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "592961699",
+        "592963534",
+        "592961699"
+      ],
+      "audio_url_e_parameter": "592961699",
+      "release_classification": "confirmed_indicator_episode",
+      "related_story_id": "642675050"
+    },
+    "642675050": {
+      "story_id": "642675050",
+      "audio_id": "642674606",
+      "date": "2018-08-28",
+      "title": "Hurricane Joseph & The Calculator That Time Forgot",
+      "npr_url": "https://www.npr.org/sections/money/2018/08/28/642675050/hurricane-joseph-the-calculator-that-time-forgot",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/08/20180828_indicator_082818_graphing_calculator_rerun_1.mp3?d=513&e=642672020&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/08/20180828_indicator_082818_graphing_calculator_rerun_1.mp3?d=513&e=642672020&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 8202390,
+      "duration_seconds": 513,
+      "extraction_method": "reviewed_calculator_release",
+      "provenance": [
+        "indicator_calculator_releases_review.json"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "642672020",
+        "642674606",
+        "642675050"
+      ],
+      "audio_url_e_parameter": "642672020",
+      "release_classification": "confirmed_indicator_rebroadcast",
+      "related_story_id": "592961699"
     }
   }
 }

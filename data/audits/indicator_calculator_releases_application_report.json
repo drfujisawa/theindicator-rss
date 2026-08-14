@@ -1,0 +1,37 @@
+{
+  "report_version": 1,
+  "mode": "production_application",
+  "production_files_modified": true,
+  "candidate_story_ids": [
+    "592961699",
+    "642675050"
+  ],
+  "counts": {
+    "history": 1718,
+    "enclosure_map": 1718,
+    "feed": 2019
+  },
+  "staged_counts": {
+    "history": 1718,
+    "enclosure_map": 1718,
+    "feed": 2019
+  },
+  "production_sha256_before": {
+    "indicator_history.json": "bdf8d2a2771274b1c2944c6c2b6f5dabc997e89964c9f0b907e757d8c6d2b998",
+    "indicator_enclosure_map.json": "28a9e30a65d0a5e83c552f52d10d5e36fc32a9426816a7b35312368ca124526b",
+    "theindicator_feed.xml": "e66e9528f707a3ca26bc6687aa72ee611dce324019236470ac70d8e5c9135db0"
+  },
+  "production_sha256_after": {
+    "indicator_history.json": "490dfb457c42666e630bec56dac8292a43de1a2f64af6307d7ca567987aabf72",
+    "indicator_enclosure_map.json": "a34d4cbfef982dbc44448b347bd34649def9b83f0196da10e1218d5ff6b02856",
+    "theindicator_feed.xml": "b9f02bb294410b772a4154ca5280c82ecd705e38726cee3386b15d03c47f9830"
+  },
+  "reviewed_staged_sha256": {
+    "indicator_history.json": "490dfb457c42666e630bec56dac8292a43de1a2f64af6307d7ca567987aabf72",
+    "indicator_enclosure_map.json": "a34d4cbfef982dbc44448b347bd34649def9b83f0196da10e1218d5ff6b02856",
+    "theindicator_feed.xml": "b9f02bb294410b772a4154ca5280c82ecd705e38726cee3386b15d03c47f9830"
+  },
+  "post_write_hashes_match_staging": true,
+  "rollback_directory": "work\\calculator-releases-rollback\\bdf8d2a27712",
+  "rollback_files_retained": true
+}

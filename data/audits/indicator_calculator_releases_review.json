@@ -1,0 +1,85 @@
+{
+  "audit_version": 1,
+  "mode": "review_only",
+  "production_files_modified": false,
+  "generated_date": "2026-08-13",
+  "prior_classification": "probable_duplicate_rebroadcast",
+  "review_conclusion": "two_legitimate_dated_indicator_releases",
+  "summary": {
+    "releases_reviewed": 2,
+    "confirmed_original_releases": 1,
+    "confirmed_rebroadcast_releases": 1,
+    "validated_npr_audio_files": 2,
+    "production_collisions": 0,
+    "recommendation": "stage both releases as separate feed items"
+  },
+  "releases": [
+    {
+      "reference_date": "2018-03-12",
+      "reference_title": "Hurricane Joseph & The Calculator That Time Forgot",
+      "release_classification": "confirmed_indicator_episode",
+      "npr_story_id": "592961699",
+      "npr_url": "https://www.npr.org/2018/03/12/592961699/hurricane-joseph-the-calculator-that-time-forgot",
+      "player_story_id": "592961699",
+      "audio_id": "592963534",
+      "player_url": "https://www.npr.org/player/embed/592961699/592963534",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/03/20180312_indicator_0312_graphing_calculator_final.mp3?d=509&e=592961699&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 509,
+      "content_length_bytes": 8138651,
+      "archived_feed_guid": "f48d6121-9759-4d03-9216-f597a8b8e5f0",
+      "archived_feed_publication_time": "Mon, 12 Mar 2018 16:07:00 -0400",
+      "validation": {
+        "status_code": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-4095/8138651",
+        "story_id_collision": false,
+        "audio_path_collision": false
+      },
+      "evidence": [
+        "Live NPR story page has the exact title and date",
+        "Live NPR story page embeds a unique Indicator player and direct Indicator MP3",
+        "NPR feed snapshot captured 2018-03-13 preserves the same title, March 12 publication timestamp, duration, and audio filename",
+        "The audio e parameter matches the NPR player story ID",
+        "The NPR-hosted MP3 returned a valid audio byte range"
+      ]
+    },
+    {
+      "reference_date": "2018-08-28",
+      "reference_title": "Hurricane Joseph & The Calculator That Time Forgot",
+      "release_classification": "confirmed_indicator_rebroadcast",
+      "npr_story_id": "642675050",
+      "npr_url": "https://www.npr.org/sections/money/2018/08/28/642675050/hurricane-joseph-the-calculator-that-time-forgot",
+      "player_story_id": "642672020",
+      "audio_id": "642674606",
+      "player_url": "https://www.npr.org/player/embed/642672020/642674606",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2018/08/20180828_indicator_082818_graphing_calculator_rerun_1.mp3?d=513&e=642672020&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 513,
+      "content_length_bytes": 8202390,
+      "validation": {
+        "status_code": 206,
+        "content_type": "audio/mpeg",
+        "content_range": "bytes 0-4095/8202390",
+        "story_id_collision": false,
+        "audio_path_collision": false
+      },
+      "evidence": [
+        "Live NPR story page has the exact title and August 28 publication date",
+        "KAWC affiliate page independently preserves NPR story ID 642675050",
+        "Live NPR story page embeds a unique Indicator player and direct Indicator MP3",
+        "The MP3 filename explicitly contains rerun",
+        "The story ID, player IDs, filename, and duration differ from the March original",
+        "The NPR-hosted MP3 returned a valid audio byte range"
+      ],
+      "relationship_to": {
+        "npr_story_id": "592961699",
+        "relationship": "dated_rebroadcast_of_original_release"
+      }
+    }
+  ],
+  "archive_provenance": {
+    "feed_url": "https://www.npr.org/rss/podcast.php?id=510325",
+    "capture_timestamp": "20180313125046",
+    "capture_url": "https://web.archive.org/web/20180313125046id_/https://www.npr.org/rss/podcast.php?id=510325"
+  },
+  "next_gate": "Build an isolated two-release staging set and run the established promotion invariants before any production write."
+}
