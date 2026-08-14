@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss xmlns:ns3="http://purl.org/rss/1.0/modules/content/" xmlns:ns0="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:ns1="http://search.yahoo.com/mrss/" xmlns:ns2="https://podcastindex.org/namespace/1.0" version="2.0">
+<rss xmlns:ns0="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:ns1="http://search.yahoo.com/mrss/" xmlns:ns2="https://podcastindex.org/namespace/1.0" xmlns:ns3="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
     <title>The Indicator from Planet Money</title>
     <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
