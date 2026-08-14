@@ -48,16 +48,20 @@ def discover() -> dict:
     for values in EPISODES:
         date, title, story_id, slug, evidence_url = values[:5]
         npr_url = values[5] if len(values) > 5 else f"https://www.npr.org/{date.replace('-', '/')}/{story_id}/{slug}"
-        with request(npr_url) as response:
-            page = response.read().decode("utf-8", "replace")
-        audio_urls = sorted(set(
-            html.unescape(value).replace("\\u0026", "&")
-            for value in re.findall(r'https?[^"<>\\ ]+\.mp3[^"<>\\ ]*', page)
-            if "siteplayer" in value
-        ))
-        if len(audio_urls) != 1:
-            raise RuntimeError(f"Expected one NPR enclosure for {story_id}; found {len(audio_urls)}")
-        audio_url = audio_urls[0]
+        direct_audio_url = values[6] if len(values) > 6 else None
+        if direct_audio_url:
+            audio_url = direct_audio_url
+        else:
+            with request(npr_url) as response:
+                page = response.read().decode("utf-8", "replace")
+            audio_urls = sorted(set(
+                html.unescape(value).replace("\\u0026", "&")
+                for value in re.findall(r'https?[^"<>\\ ]+\.mp3[^"<>\\ ]*', page)
+                if "siteplayer" in value
+            ))
+            if len(audio_urls) != 1:
+                raise RuntimeError(f"Expected one NPR enclosure for {story_id}; found {len(audio_urls)}")
+            audio_url = audio_urls[0]
         with request(audio_url, byte_range=True) as response:
             if response.status != 206 or response.headers.get("Content-Type") != "audio/mpeg":
                 raise RuntimeError(f"Invalid audio response for {story_id}")

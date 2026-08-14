@@ -1,0 +1,37 @@
+{
+  "report_version": 1,
+  "mode": "production_application",
+  "production_files_modified": true,
+  "candidate_story_ids": [
+    "1024401554",
+    "987341168"
+  ],
+  "counts": {
+    "history": 1827,
+    "enclosure_map": 1827,
+    "feed": 2128
+  },
+  "staged_counts": {
+    "history": 1827,
+    "enclosure_map": 1827,
+    "feed": 2128
+  },
+  "production_sha256_before": {
+    "indicator_history.json": "aaab17c227172c856a9de427043921275abdfa501ff34414a61c3b62f3639158",
+    "indicator_enclosure_map.json": "2269b2988d81ebd191002685fef8834a3789e76c81595a0bd60c6cc6d4cd04c1",
+    "theindicator_feed.xml": "1fcca9e004850d092f9f6daf97b05eefd629d332f00508c95038a20abef22e41"
+  },
+  "production_sha256_after": {
+    "indicator_history.json": "864933aabb308b990400538cb4ef648dfc4b12700098e1613a517f9520abb189",
+    "indicator_enclosure_map.json": "69b2ba20c42ef34ac08314766c2b1918aa84e550e046ddeb0c8e080fa8da6bb4",
+    "theindicator_feed.xml": "e7ebaf9a3a10ca3b9ec46300a83cd994701eed8063bebf63727c56239066c2c7"
+  },
+  "reviewed_staged_sha256": {
+    "indicator_history.json": "864933aabb308b990400538cb4ef648dfc4b12700098e1613a517f9520abb189",
+    "indicator_enclosure_map.json": "69b2ba20c42ef34ac08314766c2b1918aa84e550e046ddeb0c8e080fa8da6bb4",
+    "theindicator_feed.xml": "e7ebaf9a3a10ca3b9ec46300a83cd994701eed8063bebf63727c56239066c2c7"
+  },
+  "post_write_hashes_match_staging": true,
+  "rollback_directory": "work\\remaining-ranked-2021-confirmed-cluster-rollback\\aaab17c22717",
+  "rollback_files_retained": true
+}

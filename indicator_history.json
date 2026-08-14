@@ -1,6 +1,6 @@
 {
   "next_date": "2017-11-05T16:46:00-04:00",
-  "episode_count": 1825,
+  "episode_count": 1827,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -9459,6 +9459,25 @@
       "description": "History is full of financial bubbles. People speculate on real estate, stocks, coins, even flowers. Why do bubbles happen? The answer may lie in a concept known as the greater fools theory."
     },
     {
+      "title": "The Time the US Paid Off All Its Debt",
+      "date": "2021-08-03",
+      "npr_url": "https://www.npr.org/2021/08/03/1024401554/the-time-the-us-paid-off-all-its-debt",
+      "story_id": "1024401554",
+      "audio_id": "1024401554",
+      "player_url": "https://www.npr.org/2021/08/03/1024401554/the-time-the-us-paid-off-all-its-debt",
+      "description": "The Time the US Paid Off All Its Debt",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2021_confirmed_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2021_confirmed_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "The Rise And Fall Of WeWork",
       "date": "2021-08-02T14:56:28-04:00",
       "npr_url": "https://www.npr.org/2021/08/02/1023917646/the-rise-and-fall-of-wework",
@@ -10141,6 +10160,25 @@
       "audio_id": "987798764",
       "player_url": "https://www.npr.org/player/embed/987795618/987798764",
       "description": "The Covid-19 pandemic has accelerated the decline of in-person banking. But after a bank branch finally closes down, what happens to the community left behind?"
+    },
+    {
+      "title": "What McDonald's Tells Us About The Minimum Wage",
+      "date": "2021-04-14",
+      "npr_url": "https://www.npr.org/2021/04/14/987341168/what-mcdonalds-tells-us-about-the-minimum-wage",
+      "story_id": "987341168",
+      "audio_id": "987341168",
+      "player_url": "https://www.npr.org/2021/04/14/987341168/what-mcdonalds-tells-us-about-the-minimum-wage",
+      "description": "What McDonald's Tells Us About The Minimum Wage",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2021_confirmed_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2021_confirmed_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
     },
     {
       "title": "How Burlington Powered Through 2020 Without A Website",

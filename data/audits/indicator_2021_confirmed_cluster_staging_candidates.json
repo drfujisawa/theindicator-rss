@@ -1,0 +1,33 @@
+{
+  "source_audit": "indicator_final_catalog_completeness_audit.md",
+  "episodes": [
+    {
+      "publication_date": "2021-04-14",
+      "reference_title": "What McDonald's Tells Us About The Minimum Wage",
+      "npr_story_id": "987341168",
+      "npr_url": "https://www.npr.org/2021/04/14/987341168/what-mcdonalds-tells-us-about-the-minimum-wage",
+      "player_story_id": "987341168",
+      "audio_id": "987341168",
+      "player_url": "https://www.npr.org/2021/04/14/987341168/what-mcdonalds-tells-us-about-the-minimum-wage",
+      "affiliate_url": "https://www.podchaser.com/podcasts/the-indicator-from-planet-mone-595555/episodes/what-mcdonalds-tells-us-about-89262186/reviews/60762",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2021/04/20210414_indicator_2104xx_mcdonalds_min_wage_upload.mp3?awCollectionId=510325&awEpisodeId=987341168&orgId=1&topicId=1017&aggIds=94427042&d=567&p=510325&story=987341168&t=podcast&e=987341168&size=9076071&ft=pod&f=510325",
+      "content_length_bytes": 9076297,
+      "duration_seconds": 567,
+      "classification": "ready_for_isolated_staging"
+    },
+    {
+      "publication_date": "2021-08-03",
+      "reference_title": "The Time the US Paid Off All Its Debt",
+      "npr_story_id": "1024401554",
+      "npr_url": "https://www.npr.org/2021/08/03/1024401554/the-time-the-us-paid-off-all-its-debt",
+      "player_story_id": "1024401554",
+      "audio_id": "1024401554",
+      "player_url": "https://www.npr.org/2021/08/03/1024401554/the-time-the-us-paid-off-all-its-debt",
+      "affiliate_url": "https://www.podchaser.com/podcasts/the-indicator-from-planet-mone-595555/episodes/the-time-the-us-paid-off-all-i-96146916",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2021/08/20210803_indicator_andrew_jackson_ready_to_publish.mp3?awCollectionId=510325&awEpisodeId=1024401554&orgId=1&topicId=1006&d=597&p=510325&story=1024401554&t=podcast&e=1024401554&size=9568427&ft=pod&f=510325",
+      "content_length_bytes": 9568653,
+      "duration_seconds": 597,
+      "classification": "ready_for_isolated_staging"
+    }
+  ]
+}
