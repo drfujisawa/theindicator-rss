@@ -1,6 +1,6 @@
 {
   "method": "consolidated-recovery-pipeline-for-unresolved-indicator-episodes",
-  "generated_at": "2026-08-14T04:11:35+00:00",
+  "generated_at": "2026-08-14T04:41:47+00:00",
   "canonical_input": "data/audits/indicator_completeness_audit.json",
   "placeholder": false,
   "run_complete": true,
@@ -8,10 +8,10 @@
     "confirmed_recovered": 0,
     "probable_duplicate_rebroadcast": 0,
     "identity_found_but_audio_unresolved": 0,
-    "no_identity_found": 31,
+    "no_identity_found": 27,
     "rejected_false_positive_count": 5,
-    "input_unresolved_count": 31,
-    "unique_missing_production_count_excluding_probable_duplicates": 31
+    "input_unresolved_count": 27,
+    "unique_missing_production_count_excluding_probable_duplicates": 27
   },
   "episodes": [
     {
@@ -1705,210 +1705,6 @@
         {
           "file": "indicator_recovery_validation.json",
           "path": "root.failed_recoveries[42]",
-          "status": "not_recovered"
-        }
-      ],
-      "final_status": "no_identity_found",
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages.",
-      "duplicate_reference_dates": []
-    },
-    {
-      "reference_date": "2019-02-06",
-      "reference_title": "India's Poverty Paradox",
-      "reference_year": 2019,
-      "reference_episode": 25,
-      "aliases": [
-        "India's Poverty Paradox"
-      ],
-      "affiliate_pages": [],
-      "npr_story_ids": [],
-      "npr_player_story_ids": [],
-      "npr_audio_ids": [],
-      "npr_story_urls": [],
-      "player_urls": [],
-      "archive_captures": [],
-      "candidate_audio_urls": [],
-      "validation_results": [],
-      "current_affiliate_pages": [],
-      "current_npr_story_pages": [],
-      "current_player_pages": [],
-      "prior_evidence": [
-        {
-          "file": "indicator_unresolved_batch_recovery.json",
-          "path": "root.results[44]",
-          "status": "unresolved_with_prior_evidence"
-        },
-        {
-          "file": "indicator_unresolved_strict_review.json",
-          "path": "root.results[44]",
-          "status": "needs_fresh_discovery"
-        },
-        {
-          "file": "indicator_unresolved_web_discovery.json",
-          "path": "root.results[42]",
-          "status": "pages_found_no_npr_identity"
-        },
-        {
-          "file": "indicator_unresolved_affiliate_recovery_20_49.json",
-          "path": "root.results[22]",
-          "status": "no_verified_affiliate_match"
-        },
-        {
-          "file": "indicator_recovery_validation.json",
-          "path": "root.failed_recoveries[43]",
-          "status": "not_recovered"
-        }
-      ],
-      "final_status": "no_identity_found",
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages.",
-      "duplicate_reference_dates": []
-    },
-    {
-      "reference_date": "2019-02-20",
-      "reference_title": "Why Americans Can't Quit Tipping",
-      "reference_year": 2019,
-      "reference_episode": 34,
-      "aliases": [
-        "Why Americans Can't Quit Tipping"
-      ],
-      "affiliate_pages": [],
-      "npr_story_ids": [],
-      "npr_player_story_ids": [],
-      "npr_audio_ids": [],
-      "npr_story_urls": [],
-      "player_urls": [],
-      "archive_captures": [],
-      "candidate_audio_urls": [],
-      "validation_results": [],
-      "current_affiliate_pages": [],
-      "current_npr_story_pages": [],
-      "current_player_pages": [],
-      "prior_evidence": [
-        {
-          "file": "indicator_unresolved_batch_recovery.json",
-          "path": "root.results[45]",
-          "status": "unresolved_with_prior_evidence"
-        },
-        {
-          "file": "indicator_unresolved_strict_review.json",
-          "path": "root.results[45]",
-          "status": "needs_fresh_discovery"
-        },
-        {
-          "file": "indicator_unresolved_web_discovery.json",
-          "path": "root.results[43]",
-          "status": "pages_found_no_npr_identity"
-        },
-        {
-          "file": "indicator_unresolved_affiliate_recovery_20_49.json",
-          "path": "root.results[23]",
-          "status": "no_verified_affiliate_match"
-        },
-        {
-          "file": "indicator_recovery_validation.json",
-          "path": "root.failed_recoveries[44]",
-          "status": "not_recovered"
-        }
-      ],
-      "final_status": "no_identity_found",
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages.",
-      "duplicate_reference_dates": []
-    },
-    {
-      "reference_date": "2019-02-26",
-      "reference_title": "TV Vs. Video Games: Who's Winning?",
-      "reference_year": 2019,
-      "reference_episode": 38,
-      "aliases": [
-        "TV Vs. Video Games: Who's Winning?"
-      ],
-      "affiliate_pages": [],
-      "npr_story_ids": [],
-      "npr_player_story_ids": [],
-      "npr_audio_ids": [],
-      "npr_story_urls": [],
-      "player_urls": [],
-      "archive_captures": [],
-      "candidate_audio_urls": [],
-      "validation_results": [],
-      "current_affiliate_pages": [],
-      "current_npr_story_pages": [],
-      "current_player_pages": [],
-      "prior_evidence": [
-        {
-          "file": "indicator_unresolved_batch_recovery.json",
-          "path": "root.results[46]",
-          "status": "unresolved_with_prior_evidence"
-        },
-        {
-          "file": "indicator_unresolved_strict_review.json",
-          "path": "root.results[46]",
-          "status": "needs_fresh_discovery"
-        },
-        {
-          "file": "indicator_unresolved_web_discovery.json",
-          "path": "root.results[44]",
-          "status": "pages_found_no_npr_identity"
-        },
-        {
-          "file": "indicator_unresolved_affiliate_recovery_20_49.json",
-          "path": "root.results[24]",
-          "status": "no_verified_affiliate_match"
-        },
-        {
-          "file": "indicator_recovery_validation.json",
-          "path": "root.failed_recoveries[45]",
-          "status": "not_recovered"
-        }
-      ],
-      "final_status": "no_identity_found",
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages.",
-      "duplicate_reference_dates": []
-    },
-    {
-      "reference_date": "2019-03-22",
-      "reference_title": "Are Neighbors Overrated? (And Other Questions)",
-      "reference_year": 2019,
-      "reference_episode": 56,
-      "aliases": [
-        "Are Neighbors Overrated? (And Other Questions)"
-      ],
-      "affiliate_pages": [],
-      "npr_story_ids": [],
-      "npr_player_story_ids": [],
-      "npr_audio_ids": [],
-      "npr_story_urls": [],
-      "player_urls": [],
-      "archive_captures": [],
-      "candidate_audio_urls": [],
-      "validation_results": [],
-      "current_affiliate_pages": [],
-      "current_npr_story_pages": [],
-      "current_player_pages": [],
-      "prior_evidence": [
-        {
-          "file": "indicator_unresolved_batch_recovery.json",
-          "path": "root.results[47]",
-          "status": "unresolved_with_prior_evidence"
-        },
-        {
-          "file": "indicator_unresolved_strict_review.json",
-          "path": "root.results[47]",
-          "status": "needs_fresh_discovery"
-        },
-        {
-          "file": "indicator_unresolved_web_discovery.json",
-          "path": "root.results[45]",
-          "status": "pages_found_no_npr_identity"
-        },
-        {
-          "file": "indicator_unresolved_affiliate_recovery_20_49.json",
-          "path": "root.results[25]",
-          "status": "no_verified_affiliate_match"
-        },
-        {
-          "file": "indicator_recovery_validation.json",
-          "path": "root.failed_recoveries[46]",
           "status": "not_recovered"
         }
       ],

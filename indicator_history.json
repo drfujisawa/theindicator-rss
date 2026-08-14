@@ -1,6 +1,6 @@
 {
   "next_date": "2017-11-05T16:46:00-04:00",
-  "episode_count": 1725,
+  "episode_count": 1729,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -13710,6 +13710,25 @@
       ]
     },
     {
+      "title": "Are Neighbors Overrated? (And Other Questions)",
+      "date": "2019-03-22",
+      "npr_url": "https://www.npr.org/sections/money/2019/03/22/705944777/are-neighbors-overrated-and-other-questions",
+      "story_id": "705944777",
+      "audio_id": "705941165",
+      "player_url": "https://www.npr.org/player/embed/705923476/705941165",
+      "description": "Are Neighbors Overrated? (And Other Questions)",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_batch3",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_remaining_31_ranked_batch3.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "Lyft Going Public: The Dual-Class Share Dilemma",
       "date": "2019-03-21",
       "npr_url": "https://www.npr.org/sections/money/2019/03/21/705321265/lyft-going-public-the-dual-class-share-dilemma",
@@ -14059,6 +14078,25 @@
       ]
     },
     {
+      "title": "TV Vs. Video Games: Who's Winning?",
+      "date": "2019-02-26",
+      "npr_url": "https://www.npr.org/sections/money/2019/02/26/698360321/tv-vs-video-games-who-s-winning",
+      "story_id": "698360321",
+      "audio_id": "698358702",
+      "player_url": "https://www.npr.org/player/embed/698354898/698358702",
+      "description": "TV Vs. Video Games: Who's Winning?",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_batch3",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_remaining_31_ranked_batch3.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "Payday Loans And Debt Traps",
       "date": "2019-02-25",
       "npr_url": "https://www.npr.org/sections/money/2019/02/25/697873308/payday-loans-and-debt-traps",
@@ -14116,6 +14154,25 @@
         "indicator_npr_identities.json",
         "indicator_npr_audio_validation.json",
         "indicator_npr_audio_recovery.json"
+      ]
+    },
+    {
+      "title": "Why Americans Can't Quit Tipping",
+      "date": "2019-02-20",
+      "npr_url": "https://www.npr.org/sections/money/2019/02/20/696426869/why-americans-can-t-quit-tipping",
+      "story_id": "696426869",
+      "audio_id": "696426459",
+      "player_url": "https://www.npr.org/player/embed/696421086/696426459",
+      "description": "Why Americans Can't Quit Tipping",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_batch3",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_remaining_31_ranked_batch3.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
       ]
     },
     {
@@ -14276,6 +14333,25 @@
         "indicator_npr_identities.json",
         "indicator_npr_audio_validation.json",
         "indicator_npr_audio_recovery.json"
+      ]
+    },
+    {
+      "title": "India's Poverty Paradox",
+      "date": "2019-02-06",
+      "npr_url": "https://www.npr.org/sections/money/2019/02/06/692150886/indias-poverty-paradox",
+      "story_id": "692150886",
+      "audio_id": "692151017",
+      "player_url": "https://www.npr.org/player/embed/692145296/692151017",
+      "description": "India's Poverty Paradox",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_batch3",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_remaining_31_ranked_batch3.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
       ]
     },
     {

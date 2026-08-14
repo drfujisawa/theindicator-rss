@@ -22,6 +22,9 @@ from scripts.analysis.build_early_promotion_dry_run import (  # noqa: E402
 DISCOVERY = REPO_ROOT / "data/audits/indicator_remaining_34_ranked_batch2.json"
 DEFAULT_STAGE_DIR = REPO_ROOT / "work/remaining-ranked-batch2-staging"
 REPORT = REPO_ROOT / "data/audits/indicator_remaining_ranked_batch2_staging_report.json"
+EXPECTED_COUNT = 3
+BATCH_LABEL = "batch2"
+DISCOVERY_LABEL = "indicator_remaining_34_ranked_batch2.json"
 
 
 def preserve_namespace_style(production_feed: Path, staged_feed: Path) -> None:
@@ -65,7 +68,7 @@ def candidate(item: dict) -> dict:
         "audio_url_e_parameter": item["player_story_id"],
         "release_classification": "confirmed_indicator_episode",
         "provenance": [
-            "indicator_remaining_34_ranked_batch2.json",
+            DISCOVERY_LABEL,
             "live NPR story page",
             "multiple public-radio affiliate mirrors",
             "validated NPR-hosted byte-range response",
@@ -81,7 +84,7 @@ def history_record(item: dict) -> dict:
         "audio_id": player["audio_id"], "player_url": player["player_url"],
         "description": item["reference_title"],
         "description_provenance": "reference_title_fallback", "date_precision": "date_only",
-        "recovery_status": "validated_remaining_ranked_batch2",
+        "recovery_status": f"validated_remaining_ranked_{BATCH_LABEL}",
         "release_classification": item["release_classification"],
         "recovery_provenance": item["provenance"],
     }
@@ -98,7 +101,7 @@ def enclosure_record(item: dict) -> dict:
         "http_status": 206, "content_type": "audio/mpeg",
         "content_length": item["declared_file_size_bytes"],
         "duration_seconds": item["duration_seconds"],
-        "extraction_method": "validated_remaining_ranked_batch2",
+        "extraction_method": f"validated_remaining_ranked_{BATCH_LABEL}",
         "provenance": item["provenance"], "retry_count": 0, "resolved_at": None,
         "observed_player_ids": item["observed_player_ids"],
         "audio_url_e_parameter": item["audio_url_e_parameter"],
@@ -113,8 +116,8 @@ def stage(repo_root: Path = REPO_ROOT, stage_dir: Path | None = None) -> dict:
     discovery = json.loads((repo_root / DISCOVERY.relative_to(REPO_ROOT)).read_text(encoding="utf-8"))
     candidates = [candidate(item) for item in discovery["episodes"] if item["classification"] == "ready_for_isolated_staging"]
     ids = {item["npr_story_id"] for item in candidates}
-    if len(candidates) != 3 or len(ids) != 3:
-        raise RuntimeError("Discovery must contain exactly three unique approved episodes.")
+    if len(candidates) != EXPECTED_COUNT or len(ids) != EXPECTED_COUNT:
+        raise RuntimeError(f"Discovery must contain exactly {EXPECTED_COUNT} unique approved episodes.")
 
     history = json.loads((repo_root / "indicator_history.json").read_text(encoding="utf-8"))
     enclosure = json.loads((repo_root / "indicator_enclosure_map.json").read_text(encoding="utf-8"))
@@ -158,12 +161,12 @@ def stage(repo_root: Path = REPO_ROOT, stage_dir: Path | None = None) -> dict:
     after = production_hashes(repo_root)
     checks = {
         "production_files_unchanged": before == after,
-        "candidate_count_is_3": len(candidates) == 3,
-        "candidate_story_ids_unique": len(ids) == 3,
-        "history_delta_is_3": len(history["episodes"]) - history_before == 3,
+        f"candidate_count_is_{EXPECTED_COUNT}": len(candidates) == EXPECTED_COUNT,
+        "candidate_story_ids_unique": len(ids) == EXPECTED_COUNT,
+        f"history_delta_is_{EXPECTED_COUNT}": len(history["episodes"]) - history_before == EXPECTED_COUNT,
         "history_count_consistent": history["episode_count"] == len(history["episodes"]),
-        "enclosure_map_delta_is_3": len(enclosure["episodes"]) - map_before == 3,
-        "feed_delta_is_3": len(parsed_items) - feed_before == 3,
+        f"enclosure_map_delta_is_{EXPECTED_COUNT}": len(enclosure["episodes"]) - map_before == EXPECTED_COUNT,
+        f"feed_delta_is_{EXPECTED_COUNT}": len(parsed_items) - feed_before == EXPECTED_COUNT,
         "feed_story_id_delta_exact": feed_story_ids(feed_path) - feed_story_ids(repo_root / "theindicator_feed.xml") == ids,
         "rss_guids_unique": not any(value > 1 for value in Counter(guids).values()),
         "rss_story_ids_unique": len([x for x in story_ids if x]) == len(set(x for x in story_ids if x)),
@@ -178,7 +181,7 @@ def stage(repo_root: Path = REPO_ROOT, stage_dir: Path | None = None) -> dict:
         "source_discovery": str(DISCOVERY.relative_to(REPO_ROOT)),
         "stage_directory": str(stage_dir.relative_to(repo_root)),
         "counts": {
-            "promoted_candidates": 3, "history_before": history_before,
+            "promoted_candidates": EXPECTED_COUNT, "history_before": history_before,
             "history_after": len(history["episodes"]), "enclosure_map_before": map_before,
             "enclosure_map_after": len(enclosure["episodes"]), "feed_before": feed_before,
             "feed_after": len(parsed_items),

@@ -1,6 +1,6 @@
 {
   "method": "consolidated-recovery-pipeline-for-unresolved-indicator-episodes",
-  "generated_at": "2026-08-14T04:11:35+00:00",
+  "generated_at": "2026-08-14T04:41:47+00:00",
   "canonical_input": "data/audits/indicator_completeness_audit.json",
   "placeholder": false,
   "run_complete": true,
@@ -8,10 +8,10 @@
     "confirmed_recovered": 0,
     "probable_duplicate_rebroadcast": 0,
     "identity_found_but_audio_unresolved": 0,
-    "no_identity_found": 31,
+    "no_identity_found": 27,
     "rejected_false_positive_count": 5,
-    "input_unresolved_count": 31,
-    "unique_missing_production_count_excluding_probable_duplicates": 31
+    "input_unresolved_count": 27,
+    "unique_missing_production_count_excluding_probable_duplicates": 27
   },
   "confirmed_recovered": [],
   "probable_duplicate_rebroadcast": [],
@@ -197,34 +197,6 @@
       "reference_title": "The Fed's Sweet Spot For Interest Rates",
       "reference_year": 2019,
       "reference_episode": 24,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
-    {
-      "reference_date": "2019-02-06",
-      "reference_title": "India's Poverty Paradox",
-      "reference_year": 2019,
-      "reference_episode": 25,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
-    {
-      "reference_date": "2019-02-20",
-      "reference_title": "Why Americans Can't Quit Tipping",
-      "reference_year": 2019,
-      "reference_episode": 34,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
-    {
-      "reference_date": "2019-02-26",
-      "reference_title": "TV Vs. Video Games: Who's Winning?",
-      "reference_year": 2019,
-      "reference_episode": 38,
-      "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
-    },
-    {
-      "reference_date": "2019-03-22",
-      "reference_title": "Are Neighbors Overrated? (And Other Questions)",
-      "reference_year": 2019,
-      "reference_episode": 56,
       "evidence_confidence_explanation": "No credible NPR identity was found after consolidating prior evidence and inspecting current/archived affiliate pages."
     },
     {

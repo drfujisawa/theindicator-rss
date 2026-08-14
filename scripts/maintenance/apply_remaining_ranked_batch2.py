@@ -25,6 +25,9 @@ PRODUCTION_FILES = ("indicator_history.json", "indicator_enclosure_map.json", "t
 DEFAULT_STAGE_DIR = REPO_ROOT / "work/remaining-ranked-batch2-staging"
 STAGING_REPORT = REPO_ROOT / "data/audits/indicator_remaining_ranked_batch2_staging_report.json"
 APPLICATION_REPORT = REPO_ROOT / "data/audits/indicator_remaining_ranked_batch2_application_report.json"
+EXPECTED_COUNT = 3
+REQUIRED_IDS = {"706611154", "711569150", "717651281"}
+BATCH_LABEL = "batch2"
 
 
 def sha256(path: Path) -> str:
@@ -72,11 +75,11 @@ def apply(repo_root: Path = REPO_ROOT, stage_dir: Path | None = None, staging_re
     report = json.loads(staging_report_path.read_text(encoding="utf-8"))
     if report.get("mode") != "staging_only" or not report.get("all_checks_passed"):
         raise RuntimeError("Staging report is not approved for application.")
-    if report.get("counts", {}).get("promoted_candidates") != 3:
-        raise RuntimeError("Staging report does not contain the reviewed three-episode cohort.")
+    if report.get("counts", {}).get("promoted_candidates") != EXPECTED_COUNT:
+        raise RuntimeError(f"Staging report does not contain the reviewed {EXPECTED_COUNT}-episode cohort.")
     required_ids = set(report["candidate_story_ids"])
-    if required_ids != {"706611154", "711569150", "717651281"}:
-        raise RuntimeError("The reviewed three-episode story-ID set changed.")
+    if required_ids != REQUIRED_IDS:
+        raise RuntimeError("The reviewed story-ID set changed.")
 
     before = production_hashes(repo_root)
     if before != report["production_sha256_before"]:
@@ -91,13 +94,13 @@ def apply(repo_root: Path = REPO_ROOT, stage_dir: Path | None = None, staging_re
     if staged_hashes != report.get("staged_sha256"):
         raise RuntimeError("Staged artifacts changed after review; re-stage before applying.")
 
-    rollback_dir = repo_root / "work/remaining-ranked-batch2-rollback" / before["indicator_history.json"][:12]
+    rollback_dir = repo_root / f"work/remaining-ranked-{BATCH_LABEL}-rollback" / before["indicator_history.json"][:12]
     rollback_dir.mkdir(parents=True, exist_ok=True)
     for name in PRODUCTION_FILES:
         shutil.copy2(repo_root / name, rollback_dir / name)
     prepared = {}
     for name in PRODUCTION_FILES:
-        temp = repo_root / f".{name}.remaining-ranked-batch2.tmp"
+        temp = repo_root / f".{name}.remaining-ranked-{BATCH_LABEL}.tmp"
         shutil.copy2(stage_dir / name, temp)
         prepared[name] = temp
     replaced = []
@@ -111,7 +114,7 @@ def apply(repo_root: Path = REPO_ROOT, stage_dir: Path | None = None, staging_re
             raise RuntimeError("Post-write hashes do not match reviewed staging artifacts.")
     except Exception:
         for name in replaced:
-            restore = repo_root / f".{name}.remaining-ranked-batch2.rollback.tmp"
+            restore = repo_root / f".{name}.remaining-ranked-{BATCH_LABEL}.rollback.tmp"
             shutil.copy2(rollback_dir / name, restore)
             os.replace(restore, repo_root / name)
         for temp in prepared.values():

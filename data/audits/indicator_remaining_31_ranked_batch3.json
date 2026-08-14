@@ -1,0 +1,93 @@
+{
+  "audit_version": 1,
+  "mode": "discovery_only",
+  "production_files_modified": false,
+  "generated_date": "2026-08-13",
+  "ranking_scope": {
+    "unresolved_before_review": 31,
+    "batch_size": 4,
+    "ready_for_isolated_staging": 4,
+    "deferred_unreviewed": 27,
+    "ranking_note": "The previously probed Caracas episode was deprioritized after no exact identity resolved."
+  },
+  "summary": {
+    "exact_date_title_matches": 4,
+    "validated_audio_files": 4,
+    "production_collisions": 0
+  },
+  "episodes": [
+    {
+      "rank": 1,
+      "reference_date": "2019-03-22",
+      "publication_date": "2019-03-22",
+      "reference_title": "Are Neighbors Overrated? (And Other Questions)",
+      "classification": "ready_for_isolated_staging",
+      "npr_story_id": "705944777",
+      "npr_url": "https://www.npr.org/sections/money/2019/03/22/705944777/are-neighbors-overrated-and-other-questions",
+      "affiliate_url": "https://www.wfae.org/2019-03-22/are-neighbors-overrated-and-other-questions",
+      "corroborating_affiliates": ["APR", "WYPR", "KGOU"],
+      "player_story_id": "705923476",
+      "audio_id": "705941165",
+      "player_url": "https://www.npr.org/player/embed/705923476/705941165",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/03/20190322_indicator_tyler_over_under_march_2019_final.mp3?d=444&size=7097340&e=705923476&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 444,
+      "content_length_bytes": 7097340,
+      "validation": {"status_code": 206, "content_type": "audio/mpeg", "content_range": "bytes 0-4095/7097340", "story_id_collision": false, "audio_path_collision": false}
+    },
+    {
+      "rank": 2,
+      "reference_date": "2019-02-26",
+      "publication_date": "2019-02-26",
+      "reference_title": "TV Vs. Video Games: Who's Winning?",
+      "classification": "ready_for_isolated_staging",
+      "npr_story_id": "698360321",
+      "npr_url": "https://www.npr.org/sections/money/2019/02/26/698360321/tv-vs-video-games-who-s-winning",
+      "affiliate_url": "https://www.wfae.org/2019-02-26/tv-vs-video-games-whos-winning",
+      "corroborating_affiliates": ["APR", "WYPR", "KGOU"],
+      "player_story_id": "698354898",
+      "audio_id": "698358702",
+      "player_url": "https://www.npr.org/player/embed/698354898/698358702",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/02/20190226_indicator_022619_netflix_vs_fortnite_draft_3.mp3?d=591&size=9450471&e=698354898&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 591,
+      "content_length_bytes": 9450471,
+      "validation": {"status_code": 206, "content_type": "audio/mpeg", "content_range": "bytes 0-4095/9450471", "story_id_collision": false, "audio_path_collision": false}
+    },
+    {
+      "rank": 3,
+      "reference_date": "2019-02-20",
+      "publication_date": "2019-02-20",
+      "reference_title": "Why Americans Can't Quit Tipping",
+      "classification": "ready_for_isolated_staging",
+      "npr_story_id": "696426869",
+      "npr_url": "https://www.npr.org/sections/money/2019/02/20/696426869/why-americans-can-t-quit-tipping",
+      "affiliate_url": "https://www.wfae.org/2019-02-20/why-americans-cant-quit-tipping",
+      "corroborating_affiliates": ["APR", "WYPR", "KGOU"],
+      "player_story_id": "696421086",
+      "audio_id": "696426459",
+      "player_url": "https://www.npr.org/player/embed/696421086/696426459",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/02/20190220_indicator_022019_tipping_final.mp3?d=554&size=8860416&e=696421086&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 554,
+      "content_length_bytes": 8860416,
+      "validation": {"status_code": 206, "content_type": "audio/mpeg", "content_range": "bytes 0-4095/8860416", "story_id_collision": false, "audio_path_collision": false}
+    },
+    {
+      "rank": 4,
+      "reference_date": "2019-02-06",
+      "publication_date": "2019-02-06",
+      "reference_title": "India's Poverty Paradox",
+      "classification": "ready_for_isolated_staging",
+      "npr_story_id": "692150886",
+      "npr_url": "https://www.npr.org/sections/money/2019/02/06/692150886/indias-poverty-paradox",
+      "affiliate_url": "https://www.wfae.org/2019-02-06/indias-poverty-paradox",
+      "corroborating_affiliates": ["APR", "WYPR", "KGOU"],
+      "player_story_id": "692145296",
+      "audio_id": "692151017",
+      "player_url": "https://www.npr.org/player/embed/692145296/692151017",
+      "audio_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/02/20190206_indicator_india_farmers_final_2.mp3?d=487&size=7780386&e=692145296&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "duration_seconds": 487,
+      "content_length_bytes": 7780386,
+      "validation": {"status_code": 206, "content_type": "audio/mpeg", "content_range": "bytes 0-4095/7780386", "story_id_collision": false, "audio_path_collision": false}
+    }
+  ],
+  "next_gate": "Build an isolated four-episode staging set."
+}

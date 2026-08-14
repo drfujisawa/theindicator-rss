@@ -35714,6 +35714,130 @@
       ],
       "audio_url_e_parameter": "706604411",
       "release_classification": "confirmed_indicator_episode"
+    },
+    "705944777": {
+      "story_id": "705944777",
+      "audio_id": "705941165",
+      "date": "2019-03-22",
+      "title": "Are Neighbors Overrated? (And Other Questions)",
+      "npr_url": "https://www.npr.org/sections/money/2019/03/22/705944777/are-neighbors-overrated-and-other-questions",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/03/20190322_indicator_tyler_over_under_march_2019_final.mp3?d=444&size=7097340&e=705923476&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/03/20190322_indicator_tyler_over_under_march_2019_final.mp3?d=444&size=7097340&e=705923476&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 7097340,
+      "duration_seconds": 444,
+      "extraction_method": "validated_remaining_ranked_batch3",
+      "provenance": [
+        "indicator_remaining_31_ranked_batch3.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "705923476",
+        "705941165",
+        "705944777"
+      ],
+      "audio_url_e_parameter": "705923476",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "698360321": {
+      "story_id": "698360321",
+      "audio_id": "698358702",
+      "date": "2019-02-26",
+      "title": "TV Vs. Video Games: Who's Winning?",
+      "npr_url": "https://www.npr.org/sections/money/2019/02/26/698360321/tv-vs-video-games-who-s-winning",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/02/20190226_indicator_022619_netflix_vs_fortnite_draft_3.mp3?d=591&size=9450471&e=698354898&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/02/20190226_indicator_022619_netflix_vs_fortnite_draft_3.mp3?d=591&size=9450471&e=698354898&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9450471,
+      "duration_seconds": 591,
+      "extraction_method": "validated_remaining_ranked_batch3",
+      "provenance": [
+        "indicator_remaining_31_ranked_batch3.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "698354898",
+        "698358702",
+        "698360321"
+      ],
+      "audio_url_e_parameter": "698354898",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "696426869": {
+      "story_id": "696426869",
+      "audio_id": "696426459",
+      "date": "2019-02-20",
+      "title": "Why Americans Can't Quit Tipping",
+      "npr_url": "https://www.npr.org/sections/money/2019/02/20/696426869/why-americans-can-t-quit-tipping",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/02/20190220_indicator_022019_tipping_final.mp3?d=554&size=8860416&e=696421086&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/02/20190220_indicator_022019_tipping_final.mp3?d=554&size=8860416&e=696421086&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 8860416,
+      "duration_seconds": 554,
+      "extraction_method": "validated_remaining_ranked_batch3",
+      "provenance": [
+        "indicator_remaining_31_ranked_batch3.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "696421086",
+        "696426459",
+        "696426869"
+      ],
+      "audio_url_e_parameter": "696421086",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "692150886": {
+      "story_id": "692150886",
+      "audio_id": "692151017",
+      "date": "2019-02-06",
+      "title": "India's Poverty Paradox",
+      "npr_url": "https://www.npr.org/sections/money/2019/02/06/692150886/indias-poverty-paradox",
+      "status": "resolved",
+      "enclosure_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/02/20190206_indicator_india_farmers_final_2.mp3?d=487&size=7780386&e=692145296&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/02/20190206_indicator_india_farmers_final_2.mp3?d=487&size=7780386&e=692145296&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 7780386,
+      "duration_seconds": 487,
+      "extraction_method": "validated_remaining_ranked_batch3",
+      "provenance": [
+        "indicator_remaining_31_ranked_batch3.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "692145296",
+        "692151017",
+        "692150886"
+      ],
+      "audio_url_e_parameter": "692145296",
+      "release_classification": "confirmed_indicator_episode"
     }
   }
 }
