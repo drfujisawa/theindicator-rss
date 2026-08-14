@@ -36861,6 +36861,254 @@
       ],
       "audio_url_e_parameter": "1197961679",
       "release_classification": "confirmed_indicator_episode"
+    },
+    "1197961691": {
+      "story_id": "1197961691",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2024-02-07",
+      "title": "Is Wall Street's hottest trend finally over?",
+      "npr_url": "https://www.npr.org/2024/02/07/1197961691/is-wall-streets-hottest-trend-finally-over",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/cce46682-111b-44f2-b8c5-41203f9c8120/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=cce46682-111b-44f2-b8c5-41203f9c8120&t=podcast&e=1197961691&p=510325&d=522&size=8368005&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/cce46682-111b-44f2-b8c5-41203f9c8120/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=cce46682-111b-44f2-b8c5-41203f9c8120&t=podcast&e=1197961691&p=510325&d=522&size=8368005&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9755332,
+      "duration_seconds": 522,
+      "extraction_method": "validated_remaining_ranked_2024_february_mid_cluster",
+      "provenance": [
+        "indicator_2024_february_mid_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1197961691",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1197961691"
+      ],
+      "audio_url_e_parameter": "1197961691",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1197961699": {
+      "story_id": "1197961699",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2024-02-08",
+      "title": "Why Saudi Arabia is building a new city in the desert",
+      "npr_url": "https://www.npr.org/2024/02/08/1197961699/the-indicator-from-planet-money-saudi-arabia-vision-2030-02-08-2024",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/1a8da5db-a5d6-49f2-8821-baf8d5ecea1a/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=1a8da5db-a5d6-49f2-8821-baf8d5ecea1a&t=podcast&e=1197961699&p=510325&d=555&size=8893380&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/1a8da5db-a5d6-49f2-8821-baf8d5ecea1a/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=1a8da5db-a5d6-49f2-8821-baf8d5ecea1a&t=podcast&e=1197961699&p=510325&d=555&size=8893380&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 10044571,
+      "duration_seconds": 555,
+      "extraction_method": "validated_remaining_ranked_2024_february_mid_cluster",
+      "provenance": [
+        "indicator_2024_february_mid_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1197961699",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1197961699"
+      ],
+      "audio_url_e_parameter": "1197961699",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1197961749": {
+      "story_id": "1197961749",
+      "audio_id": "9405754b-bcac-4f10-b1ac-0adb0a6fdd4a",
+      "date": "2024-02-09",
+      "title": "A Swiftie Super Bowl, a stumbling bank, and other indicators",
+      "npr_url": "https://www.npr.org/2024/02/09/1197961749/taylor-swift-super-bowl-mexico-imports-china-nycb",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2024/02/20240209_indicator_9405754b-bcac-4f10-b1ac-0adb0a6fdd4a.mp3?d=526&size=8423594&e=1197961749&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2024/02/20240209_indicator_9405754b-bcac-4f10-b1ac-0adb0a6fdd4a.mp3?d=526&size=8423594&e=1197961749&t=podcast&p=510325&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 8423594,
+      "duration_seconds": 526,
+      "extraction_method": "validated_remaining_ranked_2024_february_mid_cluster",
+      "provenance": [
+        "indicator_2024_february_mid_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1197961749",
+        "9405754b-bcac-4f10-b1ac-0adb0a6fdd4a",
+        "1197961749"
+      ],
+      "audio_url_e_parameter": "1197961749",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1197961810": {
+      "story_id": "1197961810",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2024-02-12",
+      "title": "What's really happening with the Evergrande liquidation",
+      "npr_url": "https://www.npr.org/2024/02/12/1197961810/whats-really-happening-with-the-evergrande-liquidation",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/96975c91-c7b3-4f17-89d3-3fb60c16db7f/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=96975c91-c7b3-4f17-89d3-3fb60c16db7f&t=podcast&e=1197961810&p=510325&d=559&size=8946879&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/96975c91-c7b3-4f17-89d3-3fb60c16db7f/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=96975c91-c7b3-4f17-89d3-3fb60c16db7f&t=podcast&e=1197961810&p=510325&d=559&size=8946879&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 10098071,
+      "duration_seconds": 559,
+      "extraction_method": "validated_remaining_ranked_2024_february_mid_cluster",
+      "provenance": [
+        "indicator_2024_february_mid_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1197961810",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1197961810"
+      ],
+      "audio_url_e_parameter": "1197961810",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1197961826": {
+      "story_id": "1197961826",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2024-02-13",
+      "title": "How's your defense industry knowledge?",
+      "npr_url": "https://www.npr.org/2024/02/13/1197961826/indicator-quiz-defense-industry",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/df383fd4-71a9-4782-9dbc-aaebd9464ddd/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=df383fd4-71a9-4782-9dbc-aaebd9464ddd&t=podcast&e=1197961826&p=510325&d=531&size=8506768&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/df383fd4-71a9-4782-9dbc-aaebd9464ddd/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=df383fd4-71a9-4782-9dbc-aaebd9464ddd&t=podcast&e=1197961826&p=510325&d=531&size=8506768&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 9802139,
+      "duration_seconds": 531,
+      "extraction_method": "validated_remaining_ranked_2024_february_mid_cluster",
+      "provenance": [
+        "indicator_2024_february_mid_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1197961826",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1197961826"
+      ],
+      "audio_url_e_parameter": "1197961826",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1197961858": {
+      "story_id": "1197961858",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2024-02-14",
+      "title": "How Egypt's military is dragging down its economy",
+      "npr_url": "https://www.npr.org/2024/02/14/1197961858/how-egypts-military-is-dragging-down-its-economy",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/8152d4eb-872c-4b4c-bb00-23f5757a4ba4/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=8152d4eb-872c-4b4c-bb00-23f5757a4ba4&t=podcast&e=1197961858&p=510325&d=561&size=8981987&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/8152d4eb-872c-4b4c-bb00-23f5757a4ba4/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=8152d4eb-872c-4b4c-bb00-23f5757a4ba4&t=podcast&e=1197961858&p=510325&d=561&size=8981987&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 10359706,
+      "duration_seconds": 561,
+      "extraction_method": "validated_remaining_ranked_2024_february_mid_cluster",
+      "provenance": [
+        "indicator_2024_february_mid_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1197961858",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1197961858"
+      ],
+      "audio_url_e_parameter": "1197961858",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1197961870": {
+      "story_id": "1197961870",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2024-02-15",
+      "title": "Why banks are fighting changes to an anti-redlining program",
+      "npr_url": "https://www.npr.org/2024/02/15/1197961870/why-banks-are-fighting-changes-to-an-anti-redlining-program",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/64415e72-f09c-45b6-b653-ab4aed09f3bb/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=64415e72-f09c-45b6-b653-ab4aed09f3bb&t=podcast&e=1197961870&p=510325&d=542&size=8678549&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/64415e72-f09c-45b6-b653-ab4aed09f3bb/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=64415e72-f09c-45b6-b653-ab4aed09f3bb&t=podcast&e=1197961870&p=510325&d=542&size=8678549&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 10070907,
+      "duration_seconds": 542,
+      "extraction_method": "validated_remaining_ranked_2024_february_mid_cluster",
+      "provenance": [
+        "indicator_2024_february_mid_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1197961870",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1197961870"
+      ],
+      "audio_url_e_parameter": "1197961870",
+      "release_classification": "confirmed_indicator_episode"
+    },
+    "1197961990": {
+      "story_id": "1197961990",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "date": "2024-02-16",
+      "title": "Chocolate, Lyft's typo and India's election bonds",
+      "npr_url": "https://www.npr.org/2024/02/16/1197961990/indicators-cocoa-prices-lyft-india-elections",
+      "status": "resolved",
+      "enclosure_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/f887770b-4b7c-4e36-8fa5-414da9df67cb/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=f887770b-4b7c-4e36-8fa5-414da9df67cb&t=podcast&e=1197961990&p=510325&d=558&size=8938938&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "final_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/npr.simplecastaudio.com/0a4e8d3b-fe23-4948-9e39-20fcf16f9331/episodes/f887770b-4b7c-4e36-8fa5-414da9df67cb/audio/128/default.mp3?awCollectionId=0a4e8d3b-fe23-4948-9e39-20fcf16f9331&awEpisodeId=f887770b-4b7c-4e36-8fa5-414da9df67cb&t=podcast&e=1197961990&p=510325&d=558&size=8938938&sc=siteplayer&aw_0_1st.playerid=siteplayer",
+      "episode_uuid": null,
+      "http_status": 206,
+      "content_type": "audio/mpeg",
+      "content_length": 10090124,
+      "duration_seconds": 558,
+      "extraction_method": "validated_remaining_ranked_2024_february_mid_cluster",
+      "provenance": [
+        "indicator_2024_february_mid_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ],
+      "retry_count": 0,
+      "resolved_at": null,
+      "observed_player_ids": [
+        "1197961990",
+        "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+        "1197961990"
+      ],
+      "audio_url_e_parameter": "1197961990",
+      "release_classification": "confirmed_indicator_episode"
     }
   }
 }
