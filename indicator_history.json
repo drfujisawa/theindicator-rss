@@ -1,6 +1,6 @@
 {
   "next_date": "2017-11-05T16:46:00-04:00",
-  "episode_count": 1775,
+  "episode_count": 1801,
   "episodes": [
     {
       "title": "How doctors helped tank universal health care",
@@ -876,6 +876,120 @@
       "description": "President Donald Trump's proposal that the United States take \"ownership\" of Greenland has raised a lot of eyebrows. Can the U.S. just buy itself this big territory? Is that a thing? Turns out if you look at U.S. history, it's absolutely a thing.Today on the show: how massive land deals called \"sovereignty purchases\" have shaped the country we live in today, and why the idea of the U.S. buying Greenland is a lot more complicated than it would have been in the past. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Fact-checking by Sierra Juarez. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
     },
     {
+      "title": "The curious rise of novelty popcorn buckets (Encore)",
+      "date": "2024-12-31",
+      "npr_url": "https://www.npr.org/2024/12/31/1222340422/the-curious-rise-of-novelty-popcorn-buckets",
+      "story_id": "1222340422",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2024/12/31/1222340422/the-curious-rise-of-novelty-popcorn-buckets",
+      "description": "The curious rise of novelty popcorn buckets (Encore)",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2024_november_december_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2024_november_december_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "Invest like a Congress member (Encore)",
+      "date": "2024-12-30",
+      "npr_url": "https://www.npr.org/2024/12/30/1222276534/stock-trading-congress-etfs-unusual-whales",
+      "story_id": "1222276534",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2024/12/30/1222276534/stock-trading-congress-etfs-unusual-whales",
+      "description": "Invest like a Congress member (Encore)",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2024_november_december_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2024_november_december_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "Half a billion people need reading glasses. Why can't they get them? (Encore)",
+      "date": "2024-12-27",
+      "npr_url": "https://www.npr.org/2024/12/27/1221795522/half-a-billion-people-need-reading-glasses-why-cant-they-get-them-encore",
+      "story_id": "1221795522",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2024/12/27/1221795522/half-a-billion-people-need-reading-glasses-why-cant-they-get-them-encore",
+      "description": "Half a billion people need reading glasses. Why can't they get them? (Encore)",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2024_november_december_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2024_november_december_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "How video games become more accessible (Encore)",
+      "date": "2024-12-26",
+      "npr_url": "https://www.npr.org/2024/12/26/1221596349/designing-disability-video-gaming-accessibility-encore",
+      "story_id": "1221596349",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2024/12/26/1221596349/designing-disability-video-gaming-accessibility-encore",
+      "description": "How video games become more accessible (Encore)",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2024_november_december_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2024_november_december_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "How TV holiday rom-coms got so successful (Encore)",
+      "date": "2024-12-24",
+      "npr_url": "https://www.npr.org/2024/12/24/1221471002/tv-holiday-rom-com-successful-encore",
+      "story_id": "1221471002",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2024/12/24/1221471002/tv-holiday-rom-com-successful-encore",
+      "description": "How TV holiday rom-coms got so successful (Encore)",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2024_november_december_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2024_november_december_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "What indicators will 2025 bring?",
+      "date": "2024-12-23",
+      "npr_url": "https://www.npr.org/2024/12/23/1221439465/indicators-of-the-year-economy-tariffs-inflation-soft-landing",
+      "story_id": "1221439465",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2024/12/23/1221439465/indicators-of-the-year-economy-tariffs-inflation-soft-landing",
+      "description": "What indicators will 2025 bring?",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2024_november_december_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2024_november_december_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
       "title": "Help us pick the indicator of the year!",
       "date": "2024-12-20T03:00:59-05:00",
       "npr_url": "https://www.npr.org/2024/12/20/1220579271/bitcoin-economy-inflation-consumer-sentiment-family-feud",
@@ -919,6 +1033,25 @@
       "audio_id": "1263575196",
       "player_url": "https://www.npr.org/player/embed/1219830879/1263575196",
       "description": "President-elect Donald Trump's administration picks are shaping up to be a very affluent bunch. If all are confirmed, Trump's incoming administration would be the wealthiest in the nation's history with a combined net worth upwards of $300 billion.Today on the show, we talk to a few experts about how massive amounts of wealth in high levels of government can impact policy. For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org.Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "Why the US economy is still the envy of the world",
+      "date": "2024-12-14",
+      "npr_url": "https://www.npr.org/2026/01/01/1198001428/simon-rabinovitch-us-economy-envy-of-the-world",
+      "story_id": "1198001428",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2026/01/01/1198001428/simon-rabinovitch-us-economy-envy-of-the-world",
+      "description": "Why the US economy is still the envy of the world",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2024_november_december_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2024_november_december_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
     },
     {
       "title": "A supermarket beef, a quantum leap, and Christmas trees for cheap",
@@ -1009,6 +1142,367 @@
       "audio_id": "1262894815",
       "player_url": "https://www.npr.org/player/embed/1216727936/1262894815",
       "description": "President-elect Donald Trump made a lot of economic promises on the campaign trail, but none as sweeping as his plan to enact tariffs. Trump believes taxing imports from other countries will help reduce the U.S. trade deficit and raise money for things like tax cuts. Today on the show, how might these tariffs work and will they work? Or is everything about to get more expensive? Find more of Kyla Scanlon's work on YouTube and TikTok. Related episodes: What are Trump's economic plans (Apple / Spotify) Why tariffs are SO back (Apple / Spotify) Trade wars and talent shortages (Apple / Spotify) A brief history of tariffs For sponsor-free episodes of The Indicator from Planet Money, subscribe to Planet Money+ via Apple Podcasts or at plus.npr.org. Music by Drop Electric. Find us: TikTok, Instagram, Facebook, Newsletter."
+    },
+    {
+      "title": "What's in your wallet? Ask the new Treasury Secretary",
+      "date": "2024-11-27",
+      "npr_url": "https://www.npr.org/2024/11/27/1215355317/whats-in-your-wallet-ask-the-new-treasury-secretary",
+      "story_id": "1215355317",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2024/11/27/1215355317/whats-in-your-wallet-ask-the-new-treasury-secretary",
+      "description": "What's in your wallet? Ask the new Treasury Secretary",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2024_november_december_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2024_november_december_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "Trump's plans for the housing market",
+      "date": "2024-11-26",
+      "npr_url": "https://www.npr.org/2024/11/26/1215240061/indicator-trump-plan-housing-market",
+      "story_id": "1215240061",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2024/11/26/1215240061/indicator-trump-plan-housing-market",
+      "description": "Trump's plans for the housing market",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2024_november_december_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2024_november_december_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "How big is the US housing shortage?",
+      "date": "2024-11-25",
+      "npr_url": "https://www.npr.org/2024/11/25/1215189230/how-trump-tariffs-imports",
+      "story_id": "1215189230",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2024/11/25/1215189230/how-trump-tariffs-imports",
+      "description": "How big is the US housing shortage?",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2024_november_december_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2024_november_december_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "The most expensive banana in the world and other indicators",
+      "date": "2024-11-22",
+      "npr_url": "https://www.npr.org/2024/11/22/1214662562/the-most-expensive-banana-in-the-world-and-other-indicators",
+      "story_id": "1214662562",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2024/11/22/1214662562/the-most-expensive-banana-in-the-world-and-other-indicators",
+      "description": "The most expensive banana in the world and other indicators",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2024_november_december_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2024_november_december_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "Bond vigilantes. Who they are, what they want, and how you'll know they're coming",
+      "date": "2024-11-21",
+      "npr_url": "https://www.npr.org/2024/11/21/1214380327/who-are-the-bond-vigilantes",
+      "story_id": "1214380327",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2024/11/21/1214380327/who-are-the-bond-vigilantes",
+      "description": "Bond vigilantes. Who they are, what they want, and how you'll know they're coming",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2024_november_december_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2024_november_december_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "How Magic Johnson's Starbucks created new neighborhood businesses",
+      "date": "2024-11-20",
+      "npr_url": "https://www.npr.org/2024/11/20/1214145113/magic-johnson-lakers-starbucks-entrepreneurship-los-angeles-harlem",
+      "story_id": "1214145113",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2024/11/20/1214145113/magic-johnson-lakers-starbucks-entrepreneurship-los-angeles-harlem",
+      "description": "How Magic Johnson's Starbucks created new neighborhood businesses",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2024_november_december_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2024_november_december_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "How to shop during a crisis",
+      "date": "2024-11-19",
+      "npr_url": "https://www.npr.org/2024/11/19/1214051393/the-indicator-from-planet-money-how-to-shop-during-a-crisis-11-19-2024",
+      "story_id": "1214051393",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2024/11/19/1214051393/the-indicator-from-planet-money-how-to-shop-during-a-crisis-11-19-2024",
+      "description": "How to shop during a crisis",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2024_november_december_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2024_november_december_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "A fraught climate change conference, how are US home builders doing, and more",
+      "date": "2024-11-18",
+      "npr_url": "https://www.npr.org/2024/11/18/1213978431/cop29-trump-manufacturing-home-building",
+      "story_id": "1213978431",
+      "audio_id": "3793ab38-bf27-4d69-b998-993124489089",
+      "player_url": "https://www.npr.org/2024/11/18/1213978431/cop29-trump-manufacturing-home-building",
+      "description": "A fraught climate change conference, how are US home builders doing, and more",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2024_november_december_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2024_november_december_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "The Economics of Everyday Things: Pizza (Box) Time!",
+      "date": "2024-11-17",
+      "npr_url": "https://www.npr.org/2026/01/01/1198001375/freakonomics-the-economics-of-everyday-things-pizza-boxes",
+      "story_id": "1198001375",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2026/01/01/1198001375/freakonomics-the-economics-of-everyday-things-pizza-boxes",
+      "description": "The Economics of Everyday Things: Pizza (Box) Time!",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2024_november_december_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2024_november_december_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "23andMe's financial troubles, Paul vs. Tyson and Bitcoin to the moon",
+      "date": "2024-11-15",
+      "npr_url": "https://www.npr.org/2024/11/15/1213159038/the-indicator-from-planet-money-23andme-paul-tyson-boxing-bitcoin-11-15-2024",
+      "story_id": "1213159038",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2024/11/15/1213159038/the-indicator-from-planet-money-23andme-paul-tyson-boxing-bitcoin-11-15-2024",
+      "description": "23andMe's financial troubles, Paul vs. Tyson and Bitcoin to the moon",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2024_november_december_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2024_november_december_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "Who's powering nuclear energy's comeback?",
+      "date": "2024-11-14",
+      "npr_url": "https://www.npr.org/2024/11/14/1212866790/whos-powering-nuclear-energys-comeback",
+      "story_id": "1212866790",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2024/11/14/1212866790/whos-powering-nuclear-energys-comeback",
+      "description": "Who's powering nuclear energy's comeback?",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2024_november_december_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2024_november_december_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "Why the government's flood insurance program is underwater",
+      "date": "2024-11-13",
+      "npr_url": "https://www.npr.org/2024/11/13/1212604199/indicator-problems-with-national-flood-insurance-program",
+      "story_id": "1212604199",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2024/11/13/1212604199/indicator-problems-with-national-flood-insurance-program",
+      "description": "Why the government's flood insurance program is underwater",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2024_november_december_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2024_november_december_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "Why this former banking regulator is writing kids books",
+      "date": "2024-11-12",
+      "npr_url": "https://www.npr.org/2024/11/12/1212541658/sheila-bair-fdic-compound-interest-predatory-lenders-kids-books",
+      "story_id": "1212541658",
+      "audio_id": "8b1ee67c-43f1-44fa-bb86-f6f8c1862774",
+      "player_url": "https://www.npr.org/2024/11/12/1212541658/sheila-bair-fdic-compound-interest-predatory-lenders-kids-books",
+      "description": "Why this former banking regulator is writing kids books",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2024_november_december_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2024_november_december_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "What's a weather forecast worth?",
+      "date": "2024-11-11",
+      "npr_url": "https://www.npr.org/2024/11/11/1212475049/indicator-what-is-weather-forecasts-worth",
+      "story_id": "1212475049",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2024/11/11/1212475049/indicator-what-is-weather-forecasts-worth",
+      "description": "What's a weather forecast worth?",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2024_november_december_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2024_november_december_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "Stocks jump, the temperamental peso, and other election aftermath indicators",
+      "date": "2024-11-08",
+      "npr_url": "https://www.npr.org/2024/11/08/1211598002/trump-election-stocks-peso-mexico-minimum-wage",
+      "story_id": "1211598002",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2024/11/08/1211598002/trump-election-stocks-peso-mexico-minimum-wage",
+      "description": "Stocks jump, the temperamental peso, and other election aftermath indicators",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2024_november_december_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2024_november_december_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "The story behind Cuba's economic dysfunction",
+      "date": "2024-11-07",
+      "npr_url": "https://www.npr.org/2024/11/07/1211597969/the-story-behind-cubas-economic-dysfunction",
+      "story_id": "1211597969",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2024/11/07/1211597969/the-story-behind-cubas-economic-dysfunction",
+      "description": "The story behind Cuba's economic dysfunction",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2024_november_december_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2024_november_december_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "America's economy is the envy of the world. Will it stay that way?",
+      "date": "2024-11-06",
+      "npr_url": "https://www.npr.org/2024/11/06/1211597925/americas-economy-is-the-envy-of-the-world",
+      "story_id": "1211597925",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2024/11/06/1211597925/americas-economy-is-the-envy-of-the-world",
+      "description": "America's economy is the envy of the world. Will it stay that way?",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2024_november_december_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2024_november_december_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "Why Midwest crop farmers are having a logistics problem",
+      "date": "2024-11-05",
+      "npr_url": "https://www.npr.org/2024/11/05/1211597784/chicago-midwest-farmers-soybeans-mexico-mississippi",
+      "story_id": "1211597784",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2024/11/05/1211597784/chicago-midwest-farmers-soybeans-mexico-mississippi",
+      "description": "Why Midwest crop farmers are having a logistics problem",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2024_november_december_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2024_november_december_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
+    },
+    {
+      "title": "Why the US government is buying more apples than ever before",
+      "date": "2024-11-04",
+      "npr_url": "https://www.npr.org/2024/11/04/1211597740/america-apple-abundance-problem",
+      "story_id": "1211597740",
+      "audio_id": "0a4e8d3b-fe23-4948-9e39-20fcf16f9331",
+      "player_url": "https://www.npr.org/2024/11/04/1211597740/america-apple-abundance-problem",
+      "description": "Why the US government is buying more apples than ever before",
+      "description_provenance": "reference_title_fallback",
+      "date_precision": "date_only",
+      "recovery_status": "validated_remaining_ranked_2024_november_december_cluster",
+      "release_classification": "confirmed_indicator_episode",
+      "recovery_provenance": [
+        "indicator_2024_november_december_cluster_staging_candidates.json",
+        "live NPR story page",
+        "multiple public-radio affiliate mirrors",
+        "validated NPR-hosted byte-range response"
+      ]
     },
     {
       "title": "Cool, cool, cooling jobs",

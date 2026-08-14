@@ -1,0 +1,78 @@
+{
+  "report_version": 1,
+  "mode": "staging_only",
+  "production_files_modified": false,
+  "source_discovery": "data\\audits\\indicator_2024_november_december_cluster_staging_candidates.json",
+  "stage_directory": "work\\2024-november-december-cluster-staging",
+  "counts": {
+    "promoted_candidates": 26,
+    "history_before": 1775,
+    "history_after": 1801,
+    "enclosure_map_before": 1775,
+    "enclosure_map_after": 1801,
+    "feed_before": 2076,
+    "feed_after": 2102
+  },
+  "candidate_story_ids": [
+    "1198001375",
+    "1198001428",
+    "1211597740",
+    "1211597784",
+    "1211597925",
+    "1211597969",
+    "1211598002",
+    "1212475049",
+    "1212541658",
+    "1212604199",
+    "1212866790",
+    "1213159038",
+    "1213978431",
+    "1214051393",
+    "1214145113",
+    "1214380327",
+    "1214662562",
+    "1215189230",
+    "1215240061",
+    "1215355317",
+    "1221439465",
+    "1221471002",
+    "1221596349",
+    "1221795522",
+    "1222276534",
+    "1222340422"
+  ],
+  "checks": {
+    "production_files_unchanged": true,
+    "candidate_count_is_26": true,
+    "candidate_story_ids_unique": true,
+    "history_delta_is_26": true,
+    "history_count_consistent": true,
+    "enclosure_map_delta_is_26": true,
+    "feed_delta_is_26": true,
+    "feed_story_id_delta_exact": true,
+    "rss_guids_unique": true,
+    "rss_story_ids_unique": true,
+    "rss_sorted_newest_first": true,
+    "rss_xml_parses": true,
+    "all_enclosures_resolved": true,
+    "all_content_lengths_known": true,
+    "all_audio_npr_hosted": true
+  },
+  "all_checks_passed": true,
+  "production_sha256_before": {
+    "indicator_history.json": "dd6a7c38a761d32ced7625e575eedb419a24d7618fe9dd0ea086e0205743a377",
+    "indicator_enclosure_map.json": "ba86a187377dfde53745a2f89381629956ba9537238544a687a9c44fc032f6bd",
+    "theindicator_feed.xml": "524885628127851ee0afe386e9ece2d7682547168ef8dfb95a5a083e2061f4af"
+  },
+  "production_sha256_after": {
+    "indicator_history.json": "dd6a7c38a761d32ced7625e575eedb419a24d7618fe9dd0ea086e0205743a377",
+    "indicator_enclosure_map.json": "ba86a187377dfde53745a2f89381629956ba9537238544a687a9c44fc032f6bd",
+    "theindicator_feed.xml": "524885628127851ee0afe386e9ece2d7682547168ef8dfb95a5a083e2061f4af"
+  },
+  "staged_sha256": {
+    "indicator_history.json": "a7118ab940e577cbe0bcfb5a03398e21736b79c65510f0ab7030a5f3ca148f9d",
+    "indicator_enclosure_map.json": "676693cdc06d25dbbed65b8a021958ab6435618bd5268e15ff813f27fe7390df",
+    "theindicator_feed.xml": "25d2ff7b0494816a1a6b010663f142ec7a6b7a80f574c129a98535625d28ba62"
+  },
+  "next_gate": "review this staging report before any hash-guarded atomic production application"
+}
