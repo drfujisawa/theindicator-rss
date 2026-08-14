@@ -1,0 +1,43 @@
+name: Validate Feed Integrity
+
+on:
+  push:
+    paths:
+      - "theindicator_feed.xml"
+      - "scripts/validate_feed_integrity.py"
+      - "tests/test_feed_integrity.py"
+      - ".github/workflows/feed-integrity.yml"
+  pull_request:
+    paths:
+      - "theindicator_feed.xml"
+      - "scripts/validate_feed_integrity.py"
+      - "tests/test_feed_integrity.py"
+      - ".github/workflows/feed-integrity.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-feed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Run integrity unit tests
+        run: python -m unittest tests.test_feed_integrity
+
+      - name: Validate committed feed
+        run: python scripts/validate_feed_integrity.py
+
+      - name: Reject regressions from parent commit
+        if: github.event_name != 'workflow_dispatch'
+        run: python scripts/validate_feed_integrity.py --baseline-ref HEAD^

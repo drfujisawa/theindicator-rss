@@ -24,6 +24,9 @@ jobs:
       - name: Update RSS feed
         run: python theindicator_rss.py
 
+      - name: Validate updated feed
+        run: python scripts/validate_feed_integrity.py --baseline-ref HEAD
+
       - name: Commit updated feed
         run: |
           git config user.name "github-actions[bot]"

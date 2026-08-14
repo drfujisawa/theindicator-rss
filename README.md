@@ -35,8 +35,18 @@ A GitHub Actions workflow (`update-feed.yml`) runs every six hours. It:
 3. Finds any episodes in NPR's feed that are not yet in the archive (matched by GUID).
 4. Appends those new episodes to the archive.
 5. Sorts all episodes newest-first and writes the file back.
+6. Validates XML structure, unique GUIDs, reverse-chronological ordering,
+   enclosure metadata, and non-decreasing episode and known-length counts before
+   committing anything.
 
 Historical episodes already in the archive are **never removed**.
+
+The same checks run in the read-only `feed-integrity.yml` workflow on relevant
+pushes and pull requests. Run them locally with:
+
+```shell
+python scripts/validate_feed_integrity.py --baseline-ref HEAD
+```
 
 ## How the historical archive was recovered
 
@@ -73,6 +83,7 @@ in `indicator_enclosure_map.json`.
 | `indicator_enclosure_map.json` | Resolved audio URLs for history episodes |
 | `index.html` | GitHub Pages landing page |
 | `.github/workflows/update-feed.yml` | Scheduled feed update workflow |
+| `.github/workflows/feed-integrity.yml` | Read-only feed integrity checks |
 | `.github/workflows/crawl-history.yml` | Manual history-crawl workflow |
 | `.github/workflows/recover-enclosures-bulk.yml` | Manual enclosure-recovery workflow |
 
