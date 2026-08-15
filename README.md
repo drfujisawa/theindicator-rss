@@ -15,11 +15,17 @@ https://drfujisawa.github.io/theindicator-rss/theindicator_feed.xml
 
 [Open in browser / copy RSS link](https://drfujisawa.github.io/theindicator-rss/theindicator_feed.xml)
 
-Overcast users can subscribe separately to the older portion of the archive:
+The main feed contains more than 2,000 items, but Overcast displays only the
+newest 2,000. As a result, older episodes in the complete feed are not visible
+there. Overcast users can subscribe to this second feed for the older portion of
+the catalog:
 
 ```
 https://drfujisawa.github.io/theindicator-rss/theindicator_overcast_archive.xml
 ```
+
+The archive includes a 250-episode overlap with the main feed to avoid gaps from
+episodes retained in Overcast's cache.
 
 Paste the URL above into any podcast app that accepts a custom RSS feed
 (Overcast, Pocket Casts, AntennaPod, Castro, etc.).
