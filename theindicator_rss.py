@@ -6,6 +6,8 @@ import xml.etree.ElementTree as ET
 from copy import deepcopy
 from email.utils import parsedate_to_datetime
 
+from theindicator_archive import build_overcast_archive
+
 
 OFFICIAL_FEED = "https://feeds.npr.org/510325/podcast.xml"
 OUTPUT_FILE = "theindicator_feed.xml"
@@ -188,6 +190,7 @@ def build_feed():
     print()
     print(f"Saved {OUTPUT_FILE}")
     print(f"Feed now contains {count} episodes.")
+    build_overcast_archive(OUTPUT_FILE)
 
 
 if __name__ == "__main__":

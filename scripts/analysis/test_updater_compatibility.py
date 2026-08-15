@@ -16,6 +16,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 PRODUCTION_FEED = REPO_ROOT / "theindicator_feed.xml"
 UPDATER = REPO_ROOT / "theindicator_rss.py"
+ARCHIVE_BUILDER = REPO_ROOT / "theindicator_archive.py"
 STAGE_DIR = REPO_ROOT / "work/updater-compatibility-test"
 REPORT = REPO_ROOT / "data/audits/indicator_updater_compatibility_report.json"
 AUDIT = REPO_ROOT / "data/audits/indicator_pre_march_2018_catalog_audit.json"
@@ -60,8 +61,10 @@ def main() -> int:
     STAGE_DIR.mkdir(parents=True, exist_ok=True)
     isolated_feed = STAGE_DIR / "theindicator_feed.xml"
     isolated_updater = STAGE_DIR / "theindicator_rss.py"
+    isolated_archive_builder = STAGE_DIR / "theindicator_archive.py"
     shutil.copy2(PRODUCTION_FEED, isolated_feed)
     shutil.copy2(UPDATER, isolated_updater)
+    shutil.copy2(ARCHIVE_BUILDER, isolated_archive_builder)
 
     before = by_guid(isolated_feed)
     launch_ids = {

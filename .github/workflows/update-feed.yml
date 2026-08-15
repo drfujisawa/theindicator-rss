@@ -31,6 +31,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add theindicator_feed.xml
+          git add theindicator_feed.xml theindicator_overcast_archive.xml
           git diff --cached --quiet || git commit -m "Update The Indicator RSS feed"
           git push

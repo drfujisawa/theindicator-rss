@@ -15,6 +15,12 @@ https://drfujisawa.github.io/theindicator-rss/theindicator_feed.xml
 
 [Open in browser / copy RSS link](https://drfujisawa.github.io/theindicator-rss/theindicator_feed.xml)
 
+Overcast users can subscribe separately to the older portion of the archive:
+
+```
+https://drfujisawa.github.io/theindicator-rss/theindicator_overcast_archive.xml
+```
+
 Paste the URL above into any podcast app that accepts a custom RSS feed
 (Overcast, Pocket Casts, AntennaPod, Castro, etc.).
 
@@ -44,6 +50,10 @@ A GitHub Actions workflow (`update-feed.yml`) runs every six hours. It:
 6. Validates XML structure, unique GUIDs, reverse-chronological ordering,
    enclosure metadata, and non-decreasing episode and known-length counts before
    committing anything.
+7. Generates `theindicator_overcast_archive.xml` from older items, including a
+   250-episode overlap before Overcast's nominal 2,000-episode boundary. The
+   overlap accommodates episodes retained in Overcast's cache but no longer
+   present in the current feed.
 
 Historical episodes already in the archive are **never removed**. The updater
 must pass the integrity gate before it can commit a changed feed.
@@ -134,6 +144,7 @@ treated as missing episodes.
 | File / script | Purpose |
 |---|---|
 | `theindicator_feed.xml` | The published RSS feed (2,195 items as of August 14, 2026) |
+| `theindicator_overcast_archive.xml` | Older episodes with a 250-item Overcast safety overlap |
 | `theindicator_rss.py` | Automated feed updater (runs every 6 hours) |
 | `theindicator_history.py` | Crawls NPR's archive to build episode history |
 | `recover_enclosures_bulk.py` | Bulk audio-URL recovery for history entries |

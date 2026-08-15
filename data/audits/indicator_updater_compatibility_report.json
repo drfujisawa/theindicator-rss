@@ -1,10 +1,10 @@
 {
   "report_version": 1,
-  "generated_at": "2026-08-14T08:48:21.060455+00:00",
+  "generated_at": "2026-08-15T00:26:01.901087+00:00",
   "mode": "isolated_updater_compatibility_test",
   "production_files_modified": false,
-  "production_feed_sha256_before": "e6c04bb77d4715f5c5a2cae0cb22086a1e957bf4e9916c0d8d874f1d3fc63375",
-  "production_feed_sha256_after": "e6c04bb77d4715f5c5a2cae0cb22086a1e957bf4e9916c0d8d874f1d3fc63375",
+  "production_feed_sha256_before": "43ffc136a5edc09ebda7ef2ff2a8769d35ffc7578aee334570610033832e494e",
+  "production_feed_sha256_after": "43ffc136a5edc09ebda7ef2ff2a8769d35ffc7578aee334570610033832e494e",
   "isolated_feed_sha256_after": "43ffc136a5edc09ebda7ef2ff2a8769d35ffc7578aee334570610033832e494e",
   "counts": {
     "before": 2195,
@@ -33,5 +33,5 @@
     "all_output_guids_unique": true
   },
   "all_checks_passed": true,
-  "updater_stdout": "Downloading current NPR Indicator feed...\nLoading existing theindicator_feed.xml...\nFound 0 new episode(s).\n\nSaved theindicator_feed.xml\nFeed now contains 2195 episodes."
+  "updater_stdout": "Downloading current NPR Indicator feed...\nLoading existing theindicator_feed.xml...\nFound 0 new episode(s).\nFeed is already current; leaving the archive unchanged."
 }

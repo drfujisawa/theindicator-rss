@@ -19,7 +19,11 @@ import xml.etree.ElementTree as ET
 from copy import deepcopy
 from email.utils import parsedate_to_datetime, format_datetime
 from datetime import datetime, timezone, timedelta
+import sys
 REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT))
+
+from theindicator_archive import build_overcast_archive
 
 
 HISTORY_FILE = str(REPO_ROOT / "indicator_history.json")
@@ -209,6 +213,7 @@ def main():
     print()
     print(f"Saved {FEED_FILE}")
     print(f"Feed now contains {total} episodes.")
+    build_overcast_archive(FEED_FILE, REPO_ROOT / "theindicator_overcast_archive.xml")
 
 
 if __name__ == "__main__":
