@@ -2,3 +2,7 @@ podcast*.xml
 __pycache__/
 *.pyc
 work/
+/*-headers.txt
+/*-player*.html
+/indicator-dates.txt
+/indicator-weekday-gaps.txt
