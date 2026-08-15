@@ -1,7 +1,13 @@
 import unittest
 import xml.etree.ElementTree as ET
 
-from scripts.validate_feed_integrity import IntegrityError, validate_items, validate_regression
+from scripts.validate_feed_integrity import (
+    ARCHIVE_TITLE,
+    IntegrityError,
+    validate_archive_roots,
+    validate_items,
+    validate_regression,
+)
 
 
 def feed_items(*items: str):
@@ -52,6 +58,36 @@ class FeedIntegrityTests(unittest.TestCase):
         current = validate_items(feed_items(item("1", length="0")))
         with self.assertRaisesRegex(IntegrityError, "Unknown enclosure lengths increased"):
             validate_regression(current, baseline)
+
+    def test_archive_must_equal_expected_main_feed_slice(self):
+        main = ET.fromstring(
+            "<rss><channel><title>Main</title><description>Metadata</description>"
+            + "".join(item(str(number)) for number in range(5, 0, -1))
+            + "</channel></rss>"
+        )
+        archive = ET.fromstring(
+            f"<rss><channel><title>{ARCHIVE_TITLE}</title>"
+            "<description>Metadata</description>"
+            + item("3") + item("2") + item("1")
+            + "</channel></rss>"
+        )
+        summary = validate_archive_roots(main, archive, item_limit=3, overlap=1)
+        self.assertEqual(summary.items, 3)
+
+    def test_archive_rejects_a_gap(self):
+        main = ET.fromstring(
+            "<rss><channel><title>Main</title><description>Metadata</description>"
+            + item("3") + item("2") + item("1")
+            + "</channel></rss>"
+        )
+        archive = ET.fromstring(
+            f"<rss><channel><title>{ARCHIVE_TITLE}</title>"
+            "<description>Metadata</description>"
+            + item("1")
+            + "</channel></rss>"
+        )
+        with self.assertRaisesRegex(IntegrityError, "item count"):
+            validate_archive_roots(main, archive, item_limit=2, overlap=1)
 
 
 if __name__ == "__main__":

@@ -4,14 +4,20 @@ on:
   push:
     paths:
       - "theindicator_feed.xml"
+      - "theindicator_overcast_archive.xml"
+      - "theindicator_archive.py"
       - "scripts/validate_feed_integrity.py"
       - "tests/test_feed_integrity.py"
+      - "tests/test_theindicator_archive.py"
       - ".github/workflows/feed-integrity.yml"
   pull_request:
     paths:
       - "theindicator_feed.xml"
+      - "theindicator_overcast_archive.xml"
+      - "theindicator_archive.py"
       - "scripts/validate_feed_integrity.py"
       - "tests/test_feed_integrity.py"
+      - "tests/test_theindicator_archive.py"
       - ".github/workflows/feed-integrity.yml"
   workflow_dispatch:
 
@@ -33,9 +39,9 @@ jobs:
           python-version: "3.x"
 
       - name: Run integrity unit tests
-        run: python -m unittest tests.test_feed_integrity
+        run: python -m unittest tests.test_feed_integrity tests.test_theindicator_archive
 
-      - name: Validate committed feed
+      - name: Validate committed feeds
         run: python scripts/validate_feed_integrity.py
 
       - name: Reject regressions from parent commit

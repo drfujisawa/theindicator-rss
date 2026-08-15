@@ -86,6 +86,9 @@ byte length; items are newest-first; episode count does not decrease; and the
 number of unknown enclosure lengths does not increase. The current feed has
 **zero** unknown enclosure lengths.
 
+It also verifies that the Overcast archive preserves the main feed's channel
+metadata, uses the archive title, and exactly matches main-feed item #1751 onward.
+
 A separate read-only `catalog-completeness.yml` workflow runs on the first day
 of every month and can also be started manually. It compares the archive with
 NPR, Apple Podcasts, TheTVDB, and the preserved original launch feed; fails if
