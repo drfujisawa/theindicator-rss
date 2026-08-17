@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Fri, 14 Aug 2026 07:00:11 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 07:00:12 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>Finance Fridays With Mary, Volume 5: Why Fees Matter</title>
+      <description>Do hedge funds and private equity firms charge too much money to their investors — including, potentially, your pension fund?</description>
+      <pubDate>Fri, 20 Sep 2019 18:14:26 -0400</pubDate>
+      <link>https://www.npr.org/2019/09/20/762906211/finance-fridays-with-mary-volume-5-why-fees-matter</link>
+      <guid isPermaLink="false">762906211</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/09/20190920_indicator_092019-finance_fridays_with_mary__installment_v__v6-c9f3024a-64eb-42bc-8cce-7fbeb365d6c4.mp3?d=599&amp;size=9562850&amp;e=762906211&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9562850" type="audio/mpeg" />
+      <itunes:title>Finance Fridays With Mary, Volume 5: Why Fees Matter</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Unsung Economists: Edith Penrose</title>
       <description>Edith Penrose transformed our understanding of how businesses grow, and also lived a remarkable life full of adventure, intrigue, and tragedy.</description>
