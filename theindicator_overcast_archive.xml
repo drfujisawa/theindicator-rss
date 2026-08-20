@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Wed, 19 Aug 2026 07:00:04 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2026 07:00:09 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>Millennial Mythbusting</title>
+      <description>Data shows that many of the popular assumptions about millennials are dead wrong.</description>
+      <pubDate>Wed, 25 Sep 2019 17:24:19 -0400</pubDate>
+      <link>https://www.npr.org/2019/09/18/762099021/millennial-mythbusting</link>
+      <guid isPermaLink="false">762099021</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/09/20190925_indicator_192509_young_adult_myths_final-258c44d4-95c6-4b39-b5d8-01ba7c8ed085.mp3?d=597&amp;size=9534911&amp;e=762099021&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9534911" type="audio/mpeg" />
+      <itunes:title>Millennial Mythbusting</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>How Much Are Thoughts And Prayers Worth?</title>
       <description>A gesture which is given out freely to victims of big, catastrophic events are thoughts and prayers. But what if you could assign a monetary value to this gesture?</description>
