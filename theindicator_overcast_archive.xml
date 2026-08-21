@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Thu, 20 Aug 2026 07:00:09 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Aug 2026 07:00:12 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>The Probiotics Heist</title>
+      <description>Probiotics are increasingly popular — flying off of the shelves, even being stolen from pharmacies. But the jury's still out on their safety and efficacy. So, how did they get on store shelves?</description>
+      <pubDate>Thu, 26 Sep 2019 17:52:45 -0400</pubDate>
+      <link>https://www.npr.org/2019/09/26/764815498/the-probiotics-heist</link>
+      <guid isPermaLink="false">764815498</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/09/20190926_indicator_092419_probiotics_final-ce6d9811-ff81-4040-ba72-da006e7f8d97.mp3?d=565&amp;size=9025754&amp;e=764815498&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9025754" type="audio/mpeg" />
+      <itunes:title>The Probiotics Heist</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Millennial Mythbusting</title>
       <description>Data shows that many of the popular assumptions about millennials are dead wrong.</description>
