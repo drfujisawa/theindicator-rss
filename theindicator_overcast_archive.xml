@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Fri, 21 Aug 2026 07:00:12 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2026 07:00:08 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>Finance Fridays With Mary, Volume 6: Nuns &amp; Guns</title>
+      <description>In an attempt to stem the tide of gun violence, a group of religious organizations turned to an unlikely place: the markets.</description>
+      <pubDate>Fri, 27 Sep 2019 17:08:00 -0400</pubDate>
+      <link>https://www.npr.org/2019/09/27/765208461/finance-fridays-with-mary-volume-6-nuns-guns</link>
+      <guid isPermaLink="false">765208461</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/09/20190927_indicator_190927_nuns_n_guns_final-e1ec5d33-ab8c-4fc8-ad9d-919d9d0e714b.mp3?d=598&amp;size=9550340&amp;e=765208461&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9550340" type="audio/mpeg" />
+      <itunes:title>Finance Fridays With Mary, Volume 6: Nuns &amp; Guns</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>The Probiotics Heist</title>
       <description>Probiotics are increasingly popular — flying off of the shelves, even being stolen from pharmacies. But the jury's still out on their safety and efficacy. So, how did they get on store shelves?</description>
