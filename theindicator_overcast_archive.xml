@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Mon, 24 Aug 2026 07:00:08 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Aug 2026 07:00:06 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>What's Gonna Trip Us Up In Q4?</title>
+      <description>Another quarter ends today, but the news is nuts right now, so we take a step back and guide you through the big themes we'll be looking at in the fourth quarter of the year.</description>
+      <pubDate>Mon, 30 Sep 2019 17:00:08 -0400</pubDate>
+      <link>https://www.npr.org/2019/09/30/765849402/whats-gonna-trip-us-up-in-q4</link>
+      <guid isPermaLink="false">765849402</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/09/20190930_indicator_103009_q4_preview_final-f2369c83-66e8-4a13-ab44-d3d7c9933e0f.mp3?d=599&amp;size=9574943&amp;e=765849402&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9574943" type="audio/mpeg" />
+      <itunes:title>What's Gonna Trip Us Up In Q4?</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Finance Fridays With Mary, Volume 6: Nuns &amp; Guns</title>
       <description>In an attempt to stem the tide of gun violence, a group of religious organizations turned to an unlikely place: the markets.</description>
