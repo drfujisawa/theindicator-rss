@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Tue, 25 Aug 2026 07:00:06 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 26 Aug 2026 07:00:01 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>Is Cash Overrated? And Other Questions</title>
+      <description>We play Overrated, Underrated with Jill Schlesinger, CBS business analyst and author of The Dumb Things Smart People Do With Their Money.</description>
+      <pubDate>Tue, 01 Oct 2019 18:04:01 -0400</pubDate>
+      <link>https://www.npr.org/2019/10/01/766232769/is-cash-overrated-and-other-questions</link>
+      <guid isPermaLink="false">766232769</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/10/20191001_indicator_jill_-_overrated_underrated_final-a12253d2-f899-442b-bd8c-e99a3af90aa2.mp3?d=586&amp;size=9370613&amp;e=766232769&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9370613" type="audio/mpeg" />
+      <itunes:title>Is Cash Overrated? And Other Questions</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>What's Gonna Trip Us Up In Q4?</title>
       <description>Another quarter ends today, but the news is nuts right now, so we take a step back and guide you through the big themes we'll be looking at in the fourth quarter of the year.</description>
