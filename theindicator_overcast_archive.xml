@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Wed, 26 Aug 2026 07:00:01 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Aug 2026 07:00:09 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>The Rise And Fall Of Iceland's WOW Air</title>
+      <description>A budget airline, WOW Air, helped fly the tiny island nation of Iceland out of a financial crisis — but then it all came crashing down.</description>
+      <pubDate>Wed, 02 Oct 2019 18:08:44 -0400</pubDate>
+      <link>https://www.npr.org/2019/10/02/766609057/the-rise-and-fall-of-icelands-wow-air</link>
+      <guid isPermaLink="false">766609057</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/10/20191002_indicator_191002_iceland_pt_1_-_wow_final_3-8c9b1040-ff5f-4a24-8333-043d26f37a88.mp3?d=542&amp;size=8664632&amp;e=766609057&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="8664632" type="audio/mpeg" />
+      <itunes:title>The Rise And Fall Of Iceland's WOW Air</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Is Cash Overrated? And Other Questions</title>
       <description>We play Overrated, Underrated with Jill Schlesinger, CBS business analyst and author of The Dumb Things Smart People Do With Their Money.</description>
