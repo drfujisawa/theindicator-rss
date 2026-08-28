@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Thu, 27 Aug 2026 07:00:09 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Aug 2026 07:00:10 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>How Iceland's Tourism Bubble Deflated</title>
+      <description>The tourism explosion in Iceland helped the tiny island recover from the 2008 financial crisis, but did the tourism industry grow too big, too fast?</description>
+      <pubDate>Thu, 03 Oct 2019 18:16:55 -0400</pubDate>
+      <link>https://www.npr.org/2019/10/03/766992410/how-icelands-tourism-bubble-deflated</link>
+      <guid isPermaLink="false">766992410</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/10/20191003_indicator_191003_iceland_pt_2_-_tourism_final-fa30def7-45ce-41ba-ae5d-4875741af7ff.mp3?d=599&amp;size=9577862&amp;e=766992410&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9577862" type="audio/mpeg" />
+      <itunes:title>How Iceland's Tourism Bubble Deflated</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>The Rise And Fall Of Iceland's WOW Air</title>
       <description>A budget airline, WOW Air, helped fly the tiny island nation of Iceland out of a financial crisis — but then it all came crashing down.</description>
