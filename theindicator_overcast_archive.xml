@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Mon, 31 Aug 2026 07:00:12 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 07:00:13 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>Forever 21's Fast Fashion Fail</title>
+      <description>Forever 21's bankruptcy filing highlights the flaws in fast fashion.</description>
+      <pubDate>Mon, 07 Oct 2019 18:46:00 -0400</pubDate>
+      <link>https://www.npr.org/2019/10/07/768058323/forever-21s-fast-fashion-fail</link>
+      <guid isPermaLink="false">768058323</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/10/20191007_indicator_191007_forever_21_final-ed0bd2cd-0188-4b1f-b547-e9cb676bca0c.mp3?d=589&amp;size=9418985&amp;e=768058323&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9418985" type="audio/mpeg" />
+      <itunes:title>Forever 21's Fast Fashion Fail</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Jobs Friday: Crunching The Numbers</title>
       <description>Jobs Friday: Crunching The Numbers</description>
