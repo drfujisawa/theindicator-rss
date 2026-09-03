@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Wed, 02 Sep 2026 07:00:03 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 07:00:09 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>The Cost Of Climate Change</title>
+      <description>Climate activists have long used political and social pressures to decrease the use of fossil fuels and preserve forests... but now many are following the money to try and affect change.</description>
+      <pubDate>Wed, 09 Oct 2019 16:41:50 -0400</pubDate>
+      <link>https://www.npr.org/2019/10/09/768686886/the-cost-of-climate-change</link>
+      <guid isPermaLink="false">768686886</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/10/20191009_indicator_191009_climate_change_final-e11b1bf8-d141-445f-82a5-ad4394f1ae1d.mp3?d=592&amp;size=9458183&amp;e=768686886&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9458183" type="audio/mpeg" />
+      <itunes:title>The Cost Of Climate Change</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Five Economic Firsts</title>
       <description>We're seeing a lot of firsts in this economy. Some good, some not so good, some surprising.</description>
