@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Thu, 03 Sep 2026 07:00:09 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2026 14:34:42 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>The U.S. And Global Economy: A New Relationship</title>
+      <description>The global economy used to have a simple rule: the US leads, everybody else follows. Things have changed.</description>
+      <pubDate>Thu, 10 Oct 2019 18:40:53 -0400</pubDate>
+      <link>https://www.npr.org/2019/10/10/769102674/the-u-s-and-global-economy-a-new-relationship</link>
+      <guid isPermaLink="false">769102674</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/10/20191010_indicator_191010_global_economy_final__final__1-f9ad6f8e-bf5e-4510-ae69-fd20f20364cd.mp3?d=571&amp;size=9126251&amp;e=769102674&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9126251" type="audio/mpeg" />
+      <itunes:title>The U.S. And Global Economy: A New Relationship</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>The Cost Of Climate Change</title>
       <description>Climate activists have long used political and social pressures to decrease the use of fossil fuels and preserve forests... but now many are following the money to try and affect change.</description>
