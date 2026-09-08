@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Mon, 07 Sep 2026 09:14:21 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2026 07:00:06 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>Of Diet Coke And Nobel Prizes</title>
+      <description>We talk to newly-minted Nobel Prize winner Michael Kremer about using economics to solve real-world problems and what it's like to receive his field's highest honor.</description>
+      <pubDate>Tue, 15 Oct 2019 18:38:03 -0400</pubDate>
+      <link>https://www.npr.org/2019/10/15/770455768/of-diet-coke-and-nobel-prizes</link>
+      <guid isPermaLink="false">770455768</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/10/20191015_indicator_191015_nobel_w_kremer_final_2-1e61f42b-6260-423e-84a9-779376086670.mp3?d=535&amp;size=8556629&amp;e=770455768&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="8556629" type="audio/mpeg" />
+      <itunes:title>Of Diet Coke And Nobel Prizes</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>What The %!&amp;$# Is The Repo Market?</title>
       <description>Lots of people have been freaking out over the repo market... but what IS the repo market?</description>
