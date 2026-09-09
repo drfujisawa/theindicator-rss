@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Tue, 08 Sep 2026 07:00:06 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2026 11:12:43 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>How Stories Shape The Economy</title>
+      <description>Nobel Laureate Robert Shiller talks about his new book, which looks at how narratives drive economic change and may help economists more accurately forecast recessions.</description>
+      <pubDate>Wed, 16 Oct 2019 15:55:54 -0400</pubDate>
+      <link>https://www.npr.org/2019/10/16/770686962/how-stories-shape-the-economy</link>
+      <guid isPermaLink="false">770686962</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/10/20191016_indicator_191015_shiller_narrative_economics_final-694b2b79-d7a9-4bb9-8865-5d22985aa9e1.mp3?d=568&amp;size=9081632&amp;e=770686962&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9081632" type="audio/mpeg" />
+      <itunes:title>How Stories Shape The Economy</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Of Diet Coke And Nobel Prizes</title>
       <description>We talk to newly-minted Nobel Prize winner Michael Kremer about using economics to solve real-world problems and what it's like to receive his field's highest honor.</description>
