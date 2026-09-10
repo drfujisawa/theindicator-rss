@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Wed, 09 Sep 2026 11:12:43 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Sep 2026 07:00:12 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>The Jekyll And Hyde Economy</title>
+      <description>There are so many conflicting indicators about the economy's health, it's difficult to know where we're headed. We present the Jekyll and Hyde economy.</description>
+      <pubDate>Thu, 17 Oct 2019 18:35:08 -0400</pubDate>
+      <link>https://www.npr.org/2019/10/17/771143899/the-jekyll-and-hyde-economy</link>
+      <guid isPermaLink="false">771143899</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/10/20191017_indicator_191017_jekyll___hyde_econ_final-77e17e81-a8ca-40b4-8c60-0fc32b13b749.mp3?d=541&amp;size=8652956&amp;e=771143899&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="8652956" type="audio/mpeg" />
+      <itunes:title>The Jekyll And Hyde Economy</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>How Stories Shape The Economy</title>
       <description>Nobel Laureate Robert Shiller talks about his new book, which looks at how narratives drive economic change and may help economists more accurately forecast recessions.</description>
