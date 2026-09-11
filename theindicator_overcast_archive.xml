@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Thu, 10 Sep 2026 07:00:12 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2026 07:00:14 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>The 2019 IPO Awards!</title>
+      <description>2019 has been a very dramatic year for the IPO market. From Uber to Pinterest to WeWork--the headlines just kept coming. We celebrate it all with the first Annual IPO Awards!</description>
+      <pubDate>Fri, 18 Oct 2019 19:42:34 -0400</pubDate>
+      <link>https://www.npr.org/2019/10/18/771468453/the-2019-ipo-awards</link>
+      <guid isPermaLink="false">771468453</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/10/20191018_indicator_191015_ipo_awards_final.mp3?d=580&amp;size=9266574&amp;e=771468453&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9266574" type="audio/mpeg" />
+      <itunes:title>The 2019 IPO Awards!</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>The Jekyll And Hyde Economy</title>
       <description>There are so many conflicting indicators about the economy's health, it's difficult to know where we're headed. We present the Jekyll and Hyde economy.</description>
