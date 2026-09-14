@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Fri, 11 Sep 2026 07:00:14 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 14 Sep 2026 07:00:10 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>Brexit: It's Complicated</title>
+      <description>Tomorrow the UK Parliament will vote on Brexit... again. Today, we take a look at what's happening, why Brexit is taking so long and what's at stake.</description>
+      <pubDate>Mon, 21 Oct 2019 17:27:17 -0400</pubDate>
+      <link>https://www.npr.org/2019/10/21/772060583/brexit-its-complicated</link>
+      <guid isPermaLink="false">772060583</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/10/20191021_indicator_191021_brexit_update_-_harford_draft_2-dfd566c5-2e98-40cb-a579-261a1d3e47d2.mp3?d=599&amp;size=9570773&amp;e=772060583&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9570773" type="audio/mpeg" />
+      <itunes:title>Brexit: It's Complicated</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>The 2019 IPO Awards!</title>
       <description>2019 has been a very dramatic year for the IPO market. From Uber to Pinterest to WeWork--the headlines just kept coming. We celebrate it all with the first Annual IPO Awards!</description>
