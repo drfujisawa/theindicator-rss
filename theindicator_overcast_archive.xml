@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Wed, 16 Sep 2026 07:00:09 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2026 07:00:11 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>Is The Unemployment Rate Broken?</title>
+      <description>Economist Jared Bernstein thinks it's about time we admit that the unemployment rate is not as useful as it used to be. He offers three alternative indicators.</description>
+      <pubDate>Thu, 24 Oct 2019 16:44:38 -0400</pubDate>
+      <link>https://www.npr.org/2019/10/24/773161382/is-the-unemployment-rate-broken</link>
+      <guid isPermaLink="false">773161382</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/10/20191024_indicator_191024_jared_bernstein_final-81dc8e8e-fefa-4680-82fe-507b5e56270b.mp3?d=546&amp;size=8730518&amp;e=773161382&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="8730518" type="audio/mpeg" />
+      <itunes:title>Is The Unemployment Rate Broken?</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Scary Stories From The Eek-conomy</title>
       <description>We ask economists what scares them about the US economy right now.</description>
