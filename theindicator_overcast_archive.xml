@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Thu, 17 Sep 2026 07:00:11 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Sep 2026 07:00:14 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>WeWork And The Future Of Co-Working</title>
+      <description>WeWork has had a rough few weeks — its CEO was fired, it's lost billions of dollars and it's laying off thousands of workers. What happened? And what does that mean for the business of co-working?</description>
+      <pubDate>Fri, 25 Oct 2019 17:53:21 -0400</pubDate>
+      <link>https://www.npr.org/2019/10/25/773573885/wework-and-the-future-of-co-working</link>
+      <guid isPermaLink="false">773573885</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/10/20191025_indicator_191025_wework_goes_down_final_2-f42790af-c1f8-4fa7-96db-c604b47db655.mp3?d=581&amp;size=9287213&amp;e=773573885&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9287213" type="audio/mpeg" />
+      <itunes:title>WeWork And The Future Of Co-Working</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Is The Unemployment Rate Broken?</title>
       <description>Economist Jared Bernstein thinks it's about time we admit that the unemployment rate is not as useful as it used to be. He offers three alternative indicators.</description>
