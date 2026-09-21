@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Fri, 18 Sep 2026 07:00:14 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2026 12:25:21 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>Can Global Shipping Go Zero Carbon?</title>
+      <description>A lot of the stuff we buy comes via ship, using a particularly dirty kind of fuel. Now the shipping industry wants to change.</description>
+      <pubDate>Mon, 28 Oct 2019 15:55:00 -0400</pubDate>
+      <link>https://www.npr.org/2019/10/28/774165708/can-global-shipping-go-zero-carbon</link>
+      <guid isPermaLink="false">774165708</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/10/20191028_indicator_191028_short_wave_final_-344bf721-8b46-445c-8b2e-177c7d95dfd2.mp3?d=599&amp;size=9576611&amp;e=774165708&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9576611" type="audio/mpeg" />
+      <itunes:title>Can Global Shipping Go Zero Carbon?</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>WeWork And The Future Of Co-Working</title>
       <description>WeWork has had a rough few weeks — its CEO was fired, it's lost billions of dollars and it's laying off thousands of workers. What happened? And what does that mean for the business of co-working?</description>
