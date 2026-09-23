@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Tue, 22 Sep 2026 07:00:08 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2026 07:00:14 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>Lights Out For California</title>
+      <description>PG&amp;E announced it was shutting off power to thousands of Californians to lessen the risk of wildfire. This is costing residents and businesses dearly and PG&amp;E says it will likely be the new normal.</description>
+      <pubDate>Wed, 30 Oct 2019 18:33:46 -0400</pubDate>
+      <link>https://www.npr.org/2019/10/30/774904179/lights-out-for-california</link>
+      <guid isPermaLink="false">774904179</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/10/20191030_indicator_191030_pg_and_e_outages_final-21c1d374-abf2-4ac2-b148-07c755b94ac3.mp3?d=571&amp;size=9126251&amp;e=774904179&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9126251" type="audio/mpeg" />
+      <itunes:title>Lights Out For California</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Are The Humanities Underrated? (And Other Questions)</title>
       <description>We invite Tyler Cowen once again to play another round of overrated/underrated.</description>
