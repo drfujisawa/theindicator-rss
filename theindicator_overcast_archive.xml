@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Wed, 23 Sep 2026 07:00:14 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2026 07:00:11 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>Scary Stories From The Eek-conomy: Part II</title>
+      <description>In our second episode on scary stories on the economy we ask Tim Harford and Jared Bernstein what keeps them up at night. Also, has anxiety about the economy spooked off the Halloween spirit?</description>
+      <pubDate>Thu, 31 Oct 2019 18:18:58 -0400</pubDate>
+      <link>https://www.npr.org/2019/10/31/775223245/scary-stories-from-the-eek-conomy-part-ii</link>
+      <guid isPermaLink="false">775223245</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/10/20191031_indicator_191031_halloween__final_-195f8c91-6948-47a2-954e-6f4973d36ac6.mp3?d=599&amp;size=9567437&amp;e=775223245&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9567437" type="audio/mpeg" />
+      <itunes:title>Scary Stories From The Eek-conomy: Part II</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Lights Out For California</title>
       <description>PG&amp;E announced it was shutting off power to thousands of Californians to lessen the risk of wildfire. This is costing residents and businesses dearly and PG&amp;E says it will likely be the new normal.</description>
