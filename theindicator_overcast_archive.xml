@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Thu, 24 Sep 2026 07:00:11 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2026 07:00:10 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>Jobs Friday: The Broken Unemployment Insurance System</title>
+      <description>In this week's edition of jobs friday, we look into why 72% of unemployed people do not have unemployment insurance.</description>
+      <pubDate>Fri, 01 Nov 2019 14:45:37 -0400</pubDate>
+      <link>https://www.npr.org/2019/11/01/775457996/jobs-friday-the-broken-unemployment-insurance-system</link>
+      <guid isPermaLink="false">775457996</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/11/20191101_indicator_191016_jobs_friday_final-ebdfff2c-3d93-4473-900b-bdaa09e4ae56.mp3?d=585&amp;size=9347261&amp;e=775457996&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9347261" type="audio/mpeg" />
+      <itunes:title>Jobs Friday: The Broken Unemployment Insurance System</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Scary Stories From The Eek-conomy: Part II</title>
       <description>In our second episode on scary stories on the economy we ask Tim Harford and Jared Bernstein what keeps them up at night. Also, has anxiety about the economy spooked off the Halloween spirit?</description>
