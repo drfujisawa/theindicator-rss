@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Fri, 25 Sep 2026 07:00:10 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2026 07:00:06 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>The American Dream And The Children Of Immigrants</title>
+      <description>A new working paper suggests that children of poor immigrants have higher rates of upward economic mobility than children of poor US-born parents. What factors are at play?</description>
+      <pubDate>Mon, 04 Nov 2019 18:22:42 -0500</pubDate>
+      <link>https://www.npr.org/2019/11/04/776191773/the-american-dream-and-the-children-of-immigrants</link>
+      <guid isPermaLink="false">776191773</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-mp3/npr/indicator/2019/11/20191104_indicator_191104_immigration_mix_2.mp3?d=674&amp;size=10763187&amp;e=776191773&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="10763187" type="audio/mpeg" />
+      <itunes:title>The American Dream And The Children Of Immigrants</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Jobs Friday: The Broken Unemployment Insurance System</title>
       <description>In this week's edition of jobs friday, we look into why 72% of unemployed people do not have unemployment insurance.</description>
