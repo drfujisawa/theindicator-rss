@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Mon, 28 Sep 2026 07:00:06 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 07:00:08 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>Openness Versus National Security: A Dilemma For U.S. Schools</title>
+      <description>Openness Versus National Security: A Dilemma For U.S. Schools</description>
+      <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
+      <link>https://www.npr.org/2019/11/05/776504323/openness-versus-national-security-a-dilemma-for-u-s-schools</link>
+      <guid isPermaLink="false">776504323</guid>
+      <enclosure url="https://ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/11/20191105_indicator_191104_chinese_influence_us_universities_final-4f2300b8-4bd5-4470-b665-fd365e8a6ac7-f346c45f-62a8-42d4-8703-32272c0f764f.mp3?awCollectionId=510325&amp;awEpisodeId=776504323&amp;orgId=1&amp;topicId=1006&amp;d=598&amp;p=510325&amp;story=776504323&amp;t=podcast&amp;e=776504323&amp;size=9560765&amp;ft=pod&amp;f=510325" length="9560765" type="audio/mpeg" />
+      <itunes:title>Openness Versus National Security: A Dilemma For U.S. Schools</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>The American Dream And The Children Of Immigrants</title>
       <description>A new working paper suggests that children of poor immigrants have higher rates of upward economic mobility than children of poor US-born parents. What factors are at play?</description>
