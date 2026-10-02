@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Thu, 01 Oct 2026 12:06:21 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 14:13:33 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>The Lancaster, Pa., Puzzle</title>
+      <description>A heavily rural county with a big manufacturing base and a low share of college graduates has found a way to thrive.</description>
+      <pubDate>Fri, 08 Nov 2019 18:16:30 -0500</pubDate>
+      <link>https://www.npr.org/2019/11/08/777804090/the-lancaster-pa-puzzle</link>
+      <guid isPermaLink="false">777804090</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/11/20191108_indicator_191108_lancaster_part_1_final-4041e523-a57f-46a6-9966-3d9549feee74.mp3?d=565&amp;size=9030758&amp;e=777804090&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9030758" type="audio/mpeg" />
+      <itunes:title>The Lancaster, Pa., Puzzle</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Your Secret Score</title>
       <description>It's no secret that every online platform you use is keeping track of your information. But what if this data is being used to give you a 'score' as a customer?</description>
