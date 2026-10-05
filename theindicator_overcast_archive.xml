@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Fri, 02 Oct 2026 14:13:33 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 13:26:04 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>Why Sam Sanders Is Binging 'Friends'</title>
+      <description>Netflix, HBO, Amazon, Hulu, Disney, NBC, they're all at war for your eyeballs. Today on the show, the streaming wars. Who the major players are, what's at stake and what it will mean for you.</description>
+      <pubDate>Mon, 11 Nov 2019 17:43:44 -0500</pubDate>
+      <link>https://www.npr.org/2019/11/11/778359482/why-sam-sanders-is-binging-friends</link>
+      <guid isPermaLink="false">778359482</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/11/20191111_indicator_191111_streaming_wars_draft_5-f1c0c8ce-d808-4d69-9abd-a789444c088f.mp3?d=579&amp;size=9245096&amp;e=778359482&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9245096" type="audio/mpeg" />
+      <itunes:title>Why Sam Sanders Is Binging 'Friends'</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>The Lancaster, Pa., Puzzle</title>
       <description>A heavily rural county with a big manufacturing base and a low share of college graduates has found a way to thrive.</description>
