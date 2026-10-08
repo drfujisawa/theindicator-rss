@@ -5,7 +5,7 @@
     <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     <description>A bite-sized show about big ideas. From the people who make &lt;em&gt;Planet Money&lt;/em&gt;, &lt;em&gt;The Indicator&lt;/em&gt; helps you make sense of what's happening in today's economy. It's a quick hit of insight into money, work, and business. Monday through Friday, in 10 minutes or less. &lt;br&gt;Sign up for our &lt;a href="https://www.npr.org/newsletter/indicator"target="_blank"   &gt;newsletter&lt;/a&gt;.&lt;br&gt;&lt;br&gt;&lt;em&gt; Support public media by joining NPR+ at plus.npr.org. You’ll get perks for over 25 NPR podcasts, including bonus episodes for Planet Money and sponsor-free listening for The Indicator.&lt;/em&gt;</description>
     <copyright>Copyright 2015-2026 NPR - For Personal Use Only</copyright>
-    <generator>NPR Feed Publish Service v2.3.25</generator>
+    <generator>NPR Feed Publish Service v2.4.0</generator>
     <language>en-us</language>
     <itunes:author>NPR</itunes:author>
     <itunes:block>no</itunes:block>
@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Wed, 07 Oct 2026 07:00:10 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 07:00:10 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>Winning The Nobel</title>
+      <description>Esther Duflo and Abhijit Banerjee talk about their work and what happens when you win a Nobel Prize.</description>
+      <pubDate>Thu, 14 Nov 2019 17:08:12 -0500</pubDate>
+      <link>https://www.npr.org/2019/11/14/779402503/winning-the-nobel</link>
+      <guid isPermaLink="false">779402503</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/pmoney/2019/11/20191114_pmoney_191114_duflo_and_banerjee_draft_5-cb5c9090-6995-4585-acd9-7d2c4afd7fcc.mp3?d=555&amp;size=8865626&amp;e=779402503&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="8865626" type="audio/mpeg" />
+      <itunes:title>Winning The Nobel</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Politics And The Trade War</title>
       <description>Did President Trump's trade policies cost Republican votes last year? We talk to economist Chad Bown to find out.</description>
