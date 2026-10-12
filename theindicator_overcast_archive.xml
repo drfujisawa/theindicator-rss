@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Fri, 09 Oct 2026 07:00:11 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 07:00:10 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>How Does The Economy Influence Voters?</title>
+      <description>The economy is one of the most important factors in how people vote. But its influence has been changing and it has everything to do with politics.</description>
+      <pubDate>Mon, 18 Nov 2019 17:22:00 -0500</pubDate>
+      <link>https://www.npr.org/2019/11/18/780598819/how-does-the-economy-influence-voters</link>
+      <guid isPermaLink="false">780598819</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/pmoney/2019/11/20191118_pmoney_191118_voter_economy_2nd_draft-6aa9fd93-4685-4ea3-9e2f-8dc896196597.mp3?d=419&amp;size=6692639&amp;e=780598819&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="6692639" type="audio/mpeg" />
+      <itunes:title>How Does The Economy Influence Voters?</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Fun Facts Fridays</title>
       <description>Cardiff surprises Stacey with three feel-good facts about the economy, and she decides whether or not those facts are awesome.</description>
