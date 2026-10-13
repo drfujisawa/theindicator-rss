@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Mon, 12 Oct 2026 07:00:10 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 07:00:10 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>Grocery Store Wars</title>
+      <description>The profit margin for groceries is razor thin. To stay competitive against increasingly large competitors like Amazon Prime, retailers are turning to a new service: curbside pickup.</description>
+      <pubDate>Tue, 19 Nov 2019 15:29:54 -0500</pubDate>
+      <link>https://www.npr.org/2019/11/19/780890196/the-growing-market-of-curbside-grocery-pickups</link>
+      <guid isPermaLink="false">780890196</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/11/20191119_indicator_191119_curbside_final-5dd81b49-f98e-4363-bcd2-96e7d67c75a7.mp3?d=582&amp;size=9296387&amp;e=780890196&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9296387" type="audio/mpeg" />
+      <itunes:title>Grocery Store Wars</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>How Does The Economy Influence Voters?</title>
       <description>The economy is one of the most important factors in how people vote. But its influence has been changing and it has everything to do with politics.</description>
