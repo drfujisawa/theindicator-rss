@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Tue, 13 Oct 2026 07:00:10 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 12:37:33 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>Lancaster Spotlight, Part 2: A Refugee's Tale</title>
+      <description>In our second spotlight episode on Lancaster County, we look into what Lancaster's success can tell us about the relationship between refugees and the local economy.</description>
+      <pubDate>Wed, 20 Nov 2019 17:51:32 -0500</pubDate>
+      <link>https://www.npr.org/2019/11/20/781388618/lancaster-spotlight-part-2-a-refugees-tale</link>
+      <guid isPermaLink="false">781388618</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/11/20191120_indicator_191120_lancaster_final_-d28a42e8-c62e-49c4-b310-9d8304ad542f.mp3?d=591&amp;size=9447758&amp;e=781388618&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9447758" type="audio/mpeg" />
+      <itunes:title>Lancaster Spotlight, Part 2: A Refugee's Tale</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Grocery Store Wars</title>
       <description>The profit margin for groceries is razor thin. To stay competitive against increasingly large competitors like Amazon Prime, retailers are turning to a new service: curbside pickup.</description>
