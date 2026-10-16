@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Thu, 15 Oct 2026 07:00:12 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 07:00:11 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>Saudi Arabia's IPO Fail?</title>
+      <description>After years of teasing, deliberating and negotiating, oil behemoth Saudi Aramco finally looks poised to go public. But the IPO is shaping up to be a lot more modest than the original plan.</description>
+      <pubDate>Fri, 22 Nov 2019 16:13:24 -0500</pubDate>
+      <link>https://www.npr.org/2019/11/22/782093132/saudi-arabias-ipo-fail</link>
+      <guid isPermaLink="false">782093132</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/11/20191122_indicator_191122_aramco___draft_5_1-450e4a29-e222-4fce-b865-576373dee398.mp3?d=566&amp;size=9039098&amp;e=782093132&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9039098" type="audio/mpeg" />
+      <itunes:title>Saudi Arabia's IPO Fail?</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Ready Your Wallet For Thanksgiving Dinner</title>
       <description>What will Thanksgiving dinner cost you this year? Also, Cardiff brings back the debate on which is better, pumpkin or pecan pie.</description>
