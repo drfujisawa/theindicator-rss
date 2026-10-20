@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Mon, 19 Oct 2026 07:00:11 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 10:32:51 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>The Sahm Rule With The Eponymous Economist</title>
+      <description>Economist Claudia Sahm explains the eponymous Sahm Rule, and how changes in the unemployment rate point to whether or not we are in a recession.</description>
+      <pubDate>Wed, 27 Nov 2019 11:48:31 -0500</pubDate>
+      <link>https://www.npr.org/2019/11/26/783120728/the-sahm-rule-with-the-eponymous-economist</link>
+      <guid isPermaLink="false">783120728</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/11/20191127_indicator_191127_sahm_rule_final-accdbacd-9ee4-49b0-95c6-9c5f510b9126.mp3?d=523&amp;size=8351048&amp;e=783120728&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="8351048" type="audio/mpeg" />
+      <itunes:title>The Sahm Rule With The Eponymous Economist</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Niche Products In Our Grocery Stores</title>
       <description>Niche food products at grocery stores have been getting more and more popular. But, what took so long?</description>
