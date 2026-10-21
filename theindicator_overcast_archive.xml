@@ -5,7 +5,7 @@
     <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     <description>A bite-sized show about big ideas. From the people who make &lt;em&gt;Planet Money&lt;/em&gt;, &lt;em&gt;The Indicator&lt;/em&gt; helps you make sense of what's happening in today's economy. It's a quick hit of insight into money, work, and business. Monday through Friday, in 10 minutes or less. &lt;br&gt;Sign up for our &lt;a href="https://www.npr.org/newsletter/indicator"target="_blank"   &gt;newsletter&lt;/a&gt;.&lt;br&gt;&lt;br&gt;&lt;em&gt; Support public media by joining NPR+ at plus.npr.org. You’ll get perks for over 25 NPR podcasts, including bonus episodes for Planet Money and sponsor-free listening for The Indicator.&lt;/em&gt;</description>
     <copyright>Copyright 2015-2026 NPR - For Personal Use Only</copyright>
-    <generator>NPR Feed Publish Service v2.4.0</generator>
+    <generator>NPR Feed Publish Service v2.5.0</generator>
     <language>en-us</language>
     <itunes:author>NPR</itunes:author>
     <itunes:block>no</itunes:block>
@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Tue, 20 Oct 2026 10:32:51 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 09:28:37 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>Hudson's Kill</title>
+      <description>Back in the early 1800s, Manhattan was a wild, sparsely populated place, but it was just about to be developed big-time. There was a lot of money to be made knowing what would go where.</description>
+      <pubDate>Mon, 02 Dec 2019 15:11:01 -0500</pubDate>
+      <link>https://www.npr.org/2019/12/02/784192825/hudsons-kill</link>
+      <guid isPermaLink="false">784192825</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/12/20191202_indicator_191202_hudson_s_kill_final_-bbad5c64-dcc6-4ab8-9575-bd2a329c078a.mp3?d=577&amp;size=9224246&amp;e=784192825&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9224246" type="audio/mpeg" />
+      <itunes:title>Hudson's Kill</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>The Sahm Rule With The Eponymous Economist</title>
       <description>Economist Claudia Sahm explains the eponymous Sahm Rule, and how changes in the unemployment rate point to whether or not we are in a recession.</description>
