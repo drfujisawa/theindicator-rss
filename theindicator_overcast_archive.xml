@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Wed, 21 Oct 2026 09:28:37 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 10:07:06 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>The Map That Made Manhattan</title>
+      <description>Manhattan is known for being a grid. But 200 years ago, it was a hilly, bucolic wilderness. The transformation all started with a secret map. And the reason was all about economics.</description>
+      <pubDate>Tue, 03 Dec 2019 15:26:00 -0500</pubDate>
+      <link>https://www.npr.org/2019/12/03/784511905/the-map-that-made-manhattan</link>
+      <guid isPermaLink="false">784511905</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/12/20191203_indicator_gridonomics_final-a931eb91-d537-4657-8112-a9fe403f6b57.mp3?d=599&amp;size=9577028&amp;e=784511905&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9577028" type="audio/mpeg" />
+      <itunes:title>The Map That Made Manhattan</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Hudson's Kill</title>
       <description>Back in the early 1800s, Manhattan was a wild, sparsely populated place, but it was just about to be developed big-time. There was a lot of money to be made knowing what would go where.</description>
