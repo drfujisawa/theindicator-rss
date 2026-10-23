@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Thu, 22 Oct 2026 10:07:06 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 07:00:10 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>The Case For Hope In 2020</title>
+      <description>Today, the show takes a distinctly positive stance in making the case for being optimistic about the economy in 2020. Five reasons why you should, plus kittens and rainbows.</description>
+      <pubDate>Wed, 04 Dec 2019 17:27:00 -0500</pubDate>
+      <link>https://www.npr.org/2019/12/04/784896632/the-case-for-hope-in-2020</link>
+      <guid isPermaLink="false">784896632</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/12/20191204_indicator_191204_the_case_for_optimism_final-91f60806-ce3b-4ea9-a18c-c075ae3bc67c.mp3?d=598&amp;size=9562850&amp;e=784896632&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9562850" type="audio/mpeg" />
+      <itunes:title>The Case For Hope In 2020</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>The Map That Made Manhattan</title>
       <description>Manhattan is known for being a grid. But 200 years ago, it was a hilly, bucolic wilderness. The transformation all started with a secret map. And the reason was all about economics.</description>
