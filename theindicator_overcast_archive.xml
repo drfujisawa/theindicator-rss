@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Fri, 23 Oct 2026 07:00:10 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 14:00:05 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>Nike Swooshes Out Of Amazon</title>
+      <description>Nike, the country's largest sporting brand, is pulling its products off of Amazon. What spurred this decision, and will other companies follow suit?</description>
+      <pubDate>Thu, 05 Dec 2019 15:24:26 -0500</pubDate>
+      <link>https://www.npr.org/2019/12/05/785202028/nike-swooshes-out-of-amazon</link>
+      <guid isPermaLink="false">785202028</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/12/20191205_indicator_191205_nike_v_amazon_v3-73490016-2e2e-4a02-b205-f21389f95b8e.mp3?d=584&amp;size=9329330&amp;e=785202028&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9329330" type="audio/mpeg" />
+      <itunes:title>Nike Swooshes Out Of Amazon</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>The Case For Hope In 2020</title>
       <description>Today, the show takes a distinctly positive stance in making the case for being optimistic about the economy in 2020. Five reasons why you should, plus kittens and rainbows.</description>
