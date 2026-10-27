@@ -5,7 +5,7 @@
     <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     <description>A bite-sized show about big ideas. From the people who make &lt;em&gt;Planet Money&lt;/em&gt;, &lt;em&gt;The Indicator&lt;/em&gt; helps you make sense of what's happening in today's economy. It's a quick hit of insight into money, work, and business. Monday through Friday, in 10 minutes or less. &lt;br&gt;Sign up for our &lt;a href="https://www.npr.org/newsletter/indicator"target="_blank"   &gt;newsletter&lt;/a&gt;.&lt;br&gt;&lt;br&gt;&lt;em&gt; Support public media by joining NPR+ at plus.npr.org. You’ll get perks for over 25 NPR podcasts, including bonus episodes for Planet Money and sponsor-free listening for The Indicator.&lt;/em&gt;</description>
     <copyright>Copyright 2015-2026 NPR - For Personal Use Only</copyright>
-    <generator>NPR Feed Publish Service v2.5.0</generator>
+    <generator>NPR Feed Publish Service v2.5.1</generator>
     <language>en-us</language>
     <itunes:author>NPR</itunes:author>
     <itunes:block>no</itunes:block>
@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Mon, 26 Oct 2026 14:00:05 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 09:57:06 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>Job(-switch) Friday!</title>
+      <description>It's time for our favorite Friday of every month: Jobs Friday! This week, we look at job switching and what it reflects about the tightening labor market.</description>
+      <pubDate>Fri, 06 Dec 2019 16:31:51 -0500</pubDate>
+      <link>https://www.npr.org/2019/12/06/785651134/job-switch-friday</link>
+      <guid isPermaLink="false">785651134</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/12/20191206_indicator_191206_jobs_friday_final-b07479ed-9f18-41cb-a06c-3e0f7f24c65b.mp3?d=585&amp;size=9347678&amp;e=785651134&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9347678" type="audio/mpeg" />
+      <itunes:title>Job(-switch) Friday!</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Nike Swooshes Out Of Amazon</title>
       <description>Nike, the country's largest sporting brand, is pulling its products off of Amazon. What spurred this decision, and will other companies follow suit?</description>
