@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Tue, 27 Oct 2026 09:57:06 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 09:41:39 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>New York City's Luxury Condo Hangover</title>
+      <description>When the rich stop buying luxury condos, sale prices drop for everyone. But rents are a different story.</description>
+      <pubDate>Mon, 09 Dec 2019 15:49:33 -0500</pubDate>
+      <link>https://www.npr.org/2019/12/09/786419552/new-york-citys-luxury-condo-hangover</link>
+      <guid isPermaLink="false">786419552</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/12/20191209_indicator_191209_luxury_real_estate_final-8134cbe4-fbfb-4e90-8eeb-b167416217cf.mp3?d=592&amp;size=9456932&amp;e=786419552&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9456932" type="audio/mpeg" />
+      <itunes:title>New York City's Luxury Condo Hangover</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>Job(-switch) Friday!</title>
       <description>It's time for our favorite Friday of every month: Jobs Friday! This week, we look at job switching and what it reflects about the tightening labor market.</description>
