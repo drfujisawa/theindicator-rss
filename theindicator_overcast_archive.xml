@@ -5,7 +5,7 @@
     <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     <description>A bite-sized show about big ideas. From the people who make &lt;em&gt;Planet Money&lt;/em&gt;, &lt;em&gt;The Indicator&lt;/em&gt; helps you make sense of what's happening in today's economy. It's a quick hit of insight into money, work, and business. Monday through Friday, in 10 minutes or less. &lt;br&gt;Sign up for our &lt;a href="https://www.npr.org/newsletter/indicator"target="_blank"   &gt;newsletter&lt;/a&gt;.&lt;br&gt;&lt;br&gt;&lt;em&gt; Support public media by joining NPR+ at plus.npr.org. You’ll get perks for over 25 NPR podcasts, including bonus episodes for Planet Money and sponsor-free listening for The Indicator.&lt;/em&gt;</description>
     <copyright>Copyright 2015-2026 NPR - For Personal Use Only</copyright>
-    <generator>NPR Feed Publish Service v2.5.1</generator>
+    <generator>NPR Feed Publish Service v2.5.2</generator>
     <language>en-us</language>
     <itunes:author>NPR</itunes:author>
     <itunes:block>no</itunes:block>
@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Thu, 29 Oct 2026 10:34:27 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 09:52:48 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>Debt And The Dairy Farmer</title>
+      <description>Mary Rieckmann and her husband run a small dairy in rural Wisconsin. But a perfect storm of factors has plunged farmers like her into crippling debt.</description>
+      <pubDate>Wed, 11 Dec 2019 15:58:54 -0500</pubDate>
+      <link>https://www.npr.org/2019/12/11/787130824/debt-and-the-dairy-farmer</link>
+      <guid isPermaLink="false">787130824</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/12/20191211_indicator_191211_farmer_2_final-b45594d1-2f0f-4e5e-a165-8400628f77b5.mp3?d=599&amp;size=9570356&amp;e=787130824&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9570356" type="audio/mpeg" />
+      <itunes:title>Debt And The Dairy Farmer</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>The Disappearing Small Farmer</title>
       <description>It's been a tough year for small farmers hit by trade wars and extreme weather. And as Time's Alana Semuels reports, this latest trouble is just part of a decades-long decline in small-scale farming.</description>
