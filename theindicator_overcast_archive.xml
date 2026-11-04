@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Tue, 03 Nov 2026 10:35:43 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 11:43:21 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>The Efficient Christmas: Why Economists Hate Gifts</title>
+      <description>When economists see holiday gifts, they see waste: sweaters that never get worn; books that never get read. Many recommend cash or no gift at all. Economist Tim Harford may have a compromise.</description>
+      <pubDate>Mon, 16 Dec 2019 16:17:00 -0500</pubDate>
+      <link>https://www.npr.org/2019/12/16/788587668/the-efficient-christmas-why-economists-hate-gifts</link>
+      <guid isPermaLink="false">788587668</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/12/20191216_indicator_eg-24c0511c-d652-47a4-ac06-e5601eaae83e.mp3?d=592&amp;size=9457766&amp;e=788587668&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9457766" type="audio/mpeg" />
+      <itunes:title>The Efficient Christmas: Why Economists Hate Gifts</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>A Trade War Truce?</title>
       <description>The Trump administration announced it would hit the brakes on a new set of tariffs that were set to go into effect on Dec. 15. Could it be the start of a détente in the ongoing trade war?</description>
