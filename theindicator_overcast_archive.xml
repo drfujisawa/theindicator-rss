@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Wed, 04 Nov 2026 11:43:21 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 08:00:16 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>A Guide To Holiday Scams</title>
+      <description>"It's the most wonderful time of the year. But for consumers, it's also the most dangerous." David Lazarus of the Los Angeles Times discusses some of the major scams that arise during the holidays.</description>
+      <pubDate>Tue, 17 Dec 2019 14:48:38 -0500</pubDate>
+      <link>https://www.npr.org/2019/12/17/788975082/a-guide-to-holiday-scams</link>
+      <guid isPermaLink="false">788975082</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/12/20191217_indicator_191217_lazarus_scamming_final_-b9212e65-8814-481b-94a4-c452a29c99e4.mp3?d=599&amp;size=9574526&amp;e=788975082&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9574526" type="audio/mpeg" />
+      <itunes:title>A Guide To Holiday Scams</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>The Efficient Christmas: Why Economists Hate Gifts</title>
       <description>When economists see holiday gifts, they see waste: sweaters that never get worn; books that never get read. Many recommend cash or no gift at all. Economist Tim Harford may have a compromise.</description>
