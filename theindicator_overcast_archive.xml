@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Fri, 06 Nov 2026 15:35:45 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 10:18:12 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>We Buy A Junk Bond!</title>
+      <description>Cardiff said the best gift he could imagine getting was a junk bond... so we thought, "Can we actually buy one of those? Also, what exactly is a junk bond?"</description>
+      <pubDate>Thu, 19 Dec 2019 18:17:40 -0500</pubDate>
+      <link>https://www.npr.org/2019/12/19/790000078/we-buy-a-junk-bond</link>
+      <guid isPermaLink="false">790000078</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/12/20191219_indicator_191219_we_buy_a_junk_bond_final-eeff3617-ce60-4d67-b18a-74f1c7a5b70f.mp3?d=599&amp;size=9566186&amp;e=790000078&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9566186" type="audio/mpeg" />
+      <itunes:title>We Buy A Junk Bond!</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>How Economics Excludes Black Women</title>
       <description>Economics is an academic field notorious for its lack of diversity. This is especially true for black female economists. Why are they being left out?</description>
