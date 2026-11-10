@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Mon, 09 Nov 2026 10:18:12 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 10:41:18 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>Fun Fact Friday!</title>
+      <description>Stacey busts out the funometer and casts judgment on Cardiff's facts.</description>
+      <pubDate>Fri, 20 Dec 2019 13:27:14 -0500</pubDate>
+      <link>https://www.npr.org/2019/12/20/790193610/fun-fact-friday</link>
+      <guid isPermaLink="false">790193610</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/12/20191220_indicator_191213_fun_fact_friday_alt_final-2f09e938-45d6-4dbf-af32-5b7dadbedc42.mp3?d=598&amp;size=9557846&amp;e=790193610&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9557846" type="audio/mpeg" />
+      <itunes:title>Fun Fact Friday!</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>We Buy A Junk Bond!</title>
       <description>Cardiff said the best gift he could imagine getting was a junk bond... so we thought, "Can we actually buy one of those? Also, what exactly is a junk bond?"</description>
