@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Wed, 11 Nov 2026 10:44:36 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 11:14:18 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>The Work Week, Episode 2: What Happened To U.S. Workers?</title>
+      <description>The share of people aged 25 to 54 in the labor force has fallen in the past couple of decades. What happened?</description>
+      <pubDate>Tue, 24 Dec 2019 13:13:13 -0500</pubDate>
+      <link>https://www.npr.org/2019/12/19/789780723/the-work-week-episode-2-what-happened-to-u-s-workers</link>
+      <guid isPermaLink="false">789780723</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/12/20191224_indicator_191224_ft_panel_final_-a48e7fc6-d791-4f09-a5ce-0cd041ae435f.mp3?d=588&amp;size=9391463&amp;e=789780723&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9391463" type="audio/mpeg" />
+      <itunes:title>The Work Week, Episode 2: What Happened To U.S. Workers?</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>The Work Week, Episode 1: The Strike That Changed U.S. Labor</title>
       <description>The 1937 union agreement between General Motors and the United Auto Workers union ushered in a period of tremendous worker prosperity and union strength. But today, labor is nowhere near a powerful as it used to be. What happened?</description>
