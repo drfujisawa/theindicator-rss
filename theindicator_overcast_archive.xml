@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Fri, 13 Nov 2026 10:32:30 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 10:46:54 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>The Work Week, Episode 4: Is The Unemployment Rate Broken?</title>
+      <description>Economist Jared Bernstein thinks it's about time we admit that the unemployment rate is not as useful as it used to be. He offers three alternative indicators.</description>
+      <pubDate>Fri, 27 Dec 2019 13:48:47 -0500</pubDate>
+      <link>https://www.npr.org/2019/12/19/789847664/the-work-week-episode-4-is-the-unemployment-rate-broken</link>
+      <guid isPermaLink="false">789847664</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/12/20191227_indicator_191227_unemployment_rate_final_-fa5f3d57-be91-4a00-a0a6-42bf78db404d.mp3?d=599&amp;size=9577862&amp;e=789847664&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9577862" type="audio/mpeg" />
+      <itunes:title>The Work Week, Episode 4: Is The Unemployment Rate Broken?</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>The Work Week, Episode 3: Gender Segregation In The Workplace</title>
       <description>The most common jobs for men and the most common jobs for women tend to be different — and this separation has big effects for everyone.</description>
