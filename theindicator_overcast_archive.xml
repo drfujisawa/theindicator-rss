@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Mon, 16 Nov 2026 10:46:54 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 11:08:51 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>The Roman Financial Crisis Of A.D. 33</title>
+      <description>What lessons should we learn from one of the earliest documented financial crises in history?</description>
+      <pubDate>Mon, 30 Dec 2019 13:02:39 -0500</pubDate>
+      <link>https://www.npr.org/2019/12/30/792386687/the-roman-financial-crisis-of-a-d-33</link>
+      <guid isPermaLink="false">792386687</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/12/20191230_indicator_191230_ad_33_final-584359fd-0cfc-4ee1-9968-888dc5b69418.mp3?d=589&amp;size=9403556&amp;e=792386687&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9403556" type="audio/mpeg" />
+      <itunes:title>The Roman Financial Crisis Of A.D. 33</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>The Work Week, Episode 4: Is The Unemployment Rate Broken?</title>
       <description>Economist Jared Bernstein thinks it's about time we admit that the unemployment rate is not as useful as it used to be. He offers three alternative indicators.</description>
