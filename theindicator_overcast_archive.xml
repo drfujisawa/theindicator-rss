@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Tue, 17 Nov 2026 11:08:51 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 11:19:18 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>The Great British Bicycle Bubble</title>
+      <description>We continue our series on financial bubbles with the British bicycle mania of the 1890s and the trail of bankrupt companies it left behind.</description>
+      <pubDate>Tue, 31 Dec 2019 14:13:00 -0500</pubDate>
+      <link>https://www.npr.org/2019/12/31/792677087/the-great-british-bicycle-bubble</link>
+      <guid isPermaLink="false">792677087</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2019/12/20191231_indicator_200103_bicycle_bubble_final-cd26cea8-e296-43ef-9c0f-bc2253bf8641.mp3?d=573&amp;size=9155024&amp;e=792677087&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9155024" type="audio/mpeg" />
+      <itunes:title>The Great British Bicycle Bubble</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>The Roman Financial Crisis Of A.D. 33</title>
       <description>What lessons should we learn from one of the earliest documented financial crises in history?</description>
