@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Fri, 20 Nov 2026 08:00:13 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 08:00:12 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>The Business Behind The Color Of The Year</title>
+      <description>Since 2000, the Pantone Color Institute has announced a "color of the year." This year's color: Classic Blue.</description>
+      <pubDate>Mon, 06 Jan 2020 16:40:00 -0500</pubDate>
+      <link>https://www.npr.org/2020/01/06/794040112/the-business-behind-the-color-of-the-year</link>
+      <guid isPermaLink="false">794040112</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2020/01/20200106_indicator_191203_pantone_color_of_the_year_final-32d5c1cf-55f1-4a20-8eaa-3b814ad12ff4.mp3?d=599&amp;size=9576611&amp;e=794040112&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9576611" type="audio/mpeg" />
+      <itunes:title>The Business Behind The Color Of The Year</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>The Skyrocketing Cost Of Air Ambulances</title>
       <description>After a catastrophic accident, you may be rushed to the hospital in an air ambulance. It could save your life, but there's no way to predict how much it will cost.</description>
