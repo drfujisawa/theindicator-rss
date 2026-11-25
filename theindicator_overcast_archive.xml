@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Tue, 24 Nov 2026 08:00:10 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 08:00:18 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>The Popularity Of (And Problem With) Municipal Bonds</title>
+      <description>Thirsty for yield, and eager for tax breaks, investors are falling over themselves to buy municipal bonds. That could be a problem if the economy turns sour.</description>
+      <pubDate>Wed, 08 Jan 2020 14:56:47 -0500</pubDate>
+      <link>https://www.npr.org/2020/01/08/794648421/the-popularity-of-and-problem-with-municipal-bonds</link>
+      <guid isPermaLink="false">794648421</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2020/01/20200108_indicator_200108_municipal_bonds_final-50dc718e-35f7-4505-83b3-8b10d87c66bc.mp3?d=560&amp;size=8952362&amp;e=794648421&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="8952362" type="audio/mpeg" />
+      <itunes:title>The Popularity Of (And Problem With) Municipal Bonds</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>All The Single Ladies...Are Losing In The Housing Market</title>
       <description>A home is the largest purchase most Americans will ever make. Why single women are losing out in both buying and selling compared to their male counterparts.</description>
