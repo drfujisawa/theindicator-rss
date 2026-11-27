@@ -22,9 +22,20 @@
       <title>The Indicator from Planet Money</title>
       <link>https://www.npr.org/podcasts/510325/the-indicator-from-planet-money</link>
     </image>
-    <lastBuildDate>Wed, 25 Nov 2026 08:00:18 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 08:00:10 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
+    <item>
+      <title>What To Watch In 2020</title>
+      <description>Predictions can be a fool's errand. Instead, we take a look at economic trends that we're planning to keep an eye on this year.</description>
+      <pubDate>Thu, 09 Jan 2020 15:54:16 -0500</pubDate>
+      <link>https://www.npr.org/2020/01/09/794999571/what-to-watch-in-2020</link>
+      <guid isPermaLink="false">794999571</guid>
+      <enclosure url="https://prfx.byspotify.com/e/play.podtrac.com/npr-510325/ondemand.npr.org/anon.npr-podcasts/podcast/npr/indicator/2020/01/20200109_indicator_200109_2020_non-predictions_final-2c91ef34-b677-4529-8896-b792f7539ca5.mp3?d=579&amp;size=9244262&amp;e=794999571&amp;t=podcast&amp;p=510325&amp;sc=siteplayer&amp;aw_0_1st.playerid=siteplayer" length="9244262" type="audio/mpeg" />
+      <itunes:title>What To Watch In 2020</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
     <item>
       <title>The Popularity Of (And Problem With) Municipal Bonds</title>
       <description>Thirsty for yield, and eager for tax breaks, investors are falling over themselves to buy municipal bonds. That could be a problem if the economy turns sour.</description>
